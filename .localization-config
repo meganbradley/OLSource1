@@ -1,0 +1,10 @@
+{
+  "locales": [ "zh-cn"],
+  "files": [
+    "OLSource1/v1/*.md",
+    "OLSource1/v2/*.md"
+  ],
+  "includeDependencies": true,
+  "autoPush": true,
+  "xliffVersion": "1.2"
+}
