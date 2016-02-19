@@ -1,5 +1,5 @@
 {
-  "locales": [ "it-it"],
+  "locales": [ "zh-tw"],
   "files": [
     "OLSource1/v1/*.md",
     "OLSource1/v2/*.md"
