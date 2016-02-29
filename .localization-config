@@ -1,5 +1,5 @@
 {
-  "locales": [ "pl-pl"],
+  "locales": [ "ru-ru"],
   "files": [
     "OLSource1/v1/*.md",
     "OLSource1/v2/*.md"
