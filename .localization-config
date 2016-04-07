@@ -1,5 +1,5 @@
 {
-  "locales": [ "bac"],
+  "locales": [ "vd"],
   "files": [
     "OLSource1/v1/*.md",
     "OLSource1/v2/*.md"
