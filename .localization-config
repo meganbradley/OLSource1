@@ -1,10 +1,19 @@
 {
-  "locales": [ "vd"],
-  "files": [
-    "OLSource1/v1/*.md",
-    "OLSource1/v2/*.md"
+  "Filters": [
+    {
+      "Files": [
+        "**/*.md"
+      ],
+      "Priorities": [
+        {
+          "Priority": "ht",
+          "Locales": []
+        }
+      ]
+    }
   ],
-  "includeDependencies": true,
-  "autoPush": true,
-  "xliffVersion": "1.2"
+  "IncludeDependencies": true,
+  "AutoPush": true,
+  "XliffVersion": "1.2",
+  "UseJavascriptMarkdownTransformer": true
 }
