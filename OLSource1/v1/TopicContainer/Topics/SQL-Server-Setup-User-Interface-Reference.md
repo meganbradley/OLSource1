@@ -19,7 +19,7 @@ translation.priority.ht:
   - zh-tw
 ---
 # SQL Server Setup User Interface Reference
-  This topic describes the installation options presented by the [!INCLUDE[ssNoVersion](TokenContainer\ssNoVersion_md.md)] Installation Center. Use this topic to get more information more about the settings on the SQL Server installation user\-interface.
+  This topic describes the installation options presented by the [!INCLUDE[ssNoVersion](\TokenContainer\ssNoVersion_md.md)] Installation Center. Use this topic to get more information more about the settings on the SQL Server installation user\-interface.
 
 ## New SQL Server stand\-alone installation or add features to an existing installation
  This section contains a link for each dialog in the SQL Server installation user interface.  Some dialogs are only visible if you choose the related features. For information about a specific dialog click on the relevant link below:
