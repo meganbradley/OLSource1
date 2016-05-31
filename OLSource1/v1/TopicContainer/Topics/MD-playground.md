@@ -24,9 +24,9 @@ Welcome to CAPS Markdown Editor!
 
 CAPS is using GitHub Flavored Markdown(GFM) which is one of the most popular Markdown flavor. Lets' learn how to make your customized document with below rules.  
 
-*View the [Markdown Basics](https://help.github.com/articles/markdown-basics/)*
-*View the [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)*
-*View the [Online sample](http://github.github.com/github-flavored-markdown/sample_content.html).*
+*View the [Markdown Basics](https://help.github.com/articles/markdown-basics/ )*
+*View the [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/ )*
+*View the [Online sample](http://github.github.com/github-flavored-markdown/sample_content.html ).*
   
 Quick Guidance
 ---
@@ -118,7 +118,7 @@ Add Reference to your content
 ---
 - **Insert Links**
   You can create an inline link by wrapping link text in brackets `[Link Label]`, and then wrapping the link in    parentheses `(http://URL)`. 
-  [Bing.com](http://www.bing.com)
+  [Bing.com](http://www.bing.com )
   
   You can also create a link to an existing topic in CAPS with the authoring toolbar
   
@@ -158,7 +158,7 @@ A colon on the **left-most** side indicates a left-aligned column; a colon on th
 HTML
 ---
 You can use a subset of HTML within your content. 
-A full list of our supported tags and attributes can be found [here](https://github.com/github/markup/tree/master#html-sanitization)
+A full list of our supported tags and attributes can be found [here](https://github.com/github/markup/tree/master#html-sanitization )
 
 
   

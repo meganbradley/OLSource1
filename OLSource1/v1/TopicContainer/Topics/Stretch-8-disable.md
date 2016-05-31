@@ -29,7 +29,7 @@ To disable Stretch Database for a table, select **Stretch** for a table in SQL S
   
  You can also use Transact\-SQL to disable Stretch Database for a table or for a database.  
   
- If you simply want to pause data migration, see [Pause and resume Stretch Database](assetId:///65d6a990-b295-41b2-97f9-7b6bf3000e4d).  
+ If you simply want to pause data migration, see [Pause and resume Stretch Database](assetId:///65d6a990-b295-41b2-97f9-7b6bf3000e4d ).  
   
 ## Disable Stretch Database for a table  
   
@@ -41,7 +41,7 @@ To disable Stretch Database for a table, select **Stretch** for a table in SQL S
   
     -   **Disable &#124; Bring data back from Azure**. Copy the remote data for the table from Azure back to SQL Server, then disable Stretch Database for the table. This command can't be canceled.  
   
-         This operation incurs data transfer costs. For more info, see [Data Transfers Pricing Details](https://azure.microsoft.com/en-us/pricing/details/data-transfers/).  
+         This operation incurs data transfer costs. For more info, see [Data Transfers Pricing Details](https://azure.microsoft.com/en-us/pricing/details/data-transfers/ ).  
   
          After all the remote data has been copied from Azure back to SQL Server, Stretch is disabled for the table.  
   
@@ -58,7 +58,7 @@ To disable Stretch Database for a table, select **Stretch** for a table in SQL S
        SET ( REMOTE_DATA_ARCHIVE ( MIGRATION_STATE = OUTBOUND ) ) ;  
     ```  
   
-     This operation incurs data transfer costs. For more info, see [Data Transfers Pricing Details](https://azure.microsoft.com/en-us/pricing/details/data-transfers/).  
+     This operation incurs data transfer costs. For more info, see [Data Transfers Pricing Details](https://azure.microsoft.com/en-us/pricing/details/data-transfers/ ).  
   
      After all the remote data has been copied from Azure back to SQL Server, Stretch is disabled for the table.  
   
@@ -93,5 +93,5 @@ ALTER DATABASE <database name>
  Dropping a database that was enabled for Stretch Database drops the local database but does not remove the remote data. If you want to delete the remote data, you have to drop the remote database by using the Azure management portal.  
   
 ## See Also  
- [ALTER DATABASE SET Options \(Transact\-SQL\)](assetId:///f76fbd84-df59-4404-806b-8ecb4497c9cc)   
- [Pause and resume Stretch Database](assetId:///65d6a990-b295-41b2-97f9-7b6bf3000e4d)
+ [ALTER DATABASE SET Options \(Transact\-SQL\)](assetId:///f76fbd84-df59-4404-806b-8ecb4497c9cc )   
+ [Pause and resume Stretch Database](assetId:///65d6a990-b295-41b2-97f9-7b6bf3000e4d )

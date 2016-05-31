@@ -22,16 +22,16 @@ translation.priority.ht:
 To manage and troubleshoot Stretch Database, use the tools and methods described in this topic .  
   
 ##  <a name="LocalInfo"></a> Get info about local databases and tables enabled for Stretch Database  
- Open the catalog views **sys.databases** and **sys.tables** to see info about Stretch\-enabled SQL Server databases and tables. For more info, see [sys.databases \(Transact\-SQL\)](assetId:///46c288c1-3410-4d68-a027-3bbf33239289) and [sys.tables \(Transact\-SQL\)](assetId:///8c42eba1-c19f-4045-ac82-b97a5e994090).  
+ Open the catalog views **sys.databases** and **sys.tables** to see info about Stretch\-enabled SQL Server databases and tables. For more info, see [sys.databases \(Transact\-SQL\)](assetId:///46c288c1-3410-4d68-a027-3bbf33239289 ) and [sys.tables \(Transact\-SQL\)](assetId:///8c42eba1-c19f-4045-ac82-b97a5e994090 ).  
   
 ##  <a name="RemoteInfo"></a> Get info about remote databases and tables used by Stretch Database  
- Open the catalog views **sys.remote\_data\_archive\_databases** and **sys.remote\_data\_archive\_tables** to see info about the remote databases and tables in which migrated data is stored. For more info, see [sys.remote\_data\_archive\_databases \(Transact\-SQL\)](assetId:///25bffb0c-9821-40b4-88cf-75f854891a09) and [sys.remote\_data\_archive\_tables \(Transact\-SQL\)](assetId:///765069b7-60fd-414c-875f-3455460b75cd).  
+ Open the catalog views **sys.remote\_data\_archive\_databases** and **sys.remote\_data\_archive\_tables** to see info about the remote databases and tables in which migrated data is stored. For more info, see [sys.remote\_data\_archive\_databases \(Transact\-SQL\)](assetId:///25bffb0c-9821-40b4-88cf-75f854891a09 ) and [sys.remote\_data\_archive\_tables \(Transact\-SQL\)](assetId:///765069b7-60fd-414c-875f-3455460b75cd ).  
   
 ## Check the filter predicate applied to a table  
- Open the catalog view **sys.remote\_data\_archive\_tables** and check the value of the **filter\_predicate** column. If the value is null, the entire table is eligible to be migrated. For more info, see [sys.remote\_data\_archive\_tables \(Transact\-SQL\)](assetId:///765069b7-60fd-414c-875f-3455460b75cd).  
+ Open the catalog view **sys.remote\_data\_archive\_tables** and check the value of the **filter\_predicate** column. If the value is null, the entire table is eligible to be migrated. For more info, see [sys.remote\_data\_archive\_tables \(Transact\-SQL\)](assetId:///765069b7-60fd-414c-875f-3455460b75cd ).  
   
 ##  <a name="Migration"></a> Check the status of data migration  
- Select **Tasks &#124; Stretch &#124; Monitor** for a database in SQL Server Management Studio to monitor data migration in Stretch Database Monitor. For more info, see [Monitor Stretch Database](assetId:///06950858-8c02-4ec6-9c59-42b787316a2d).  
+ Select **Tasks &#124; Stretch &#124; Monitor** for a database in SQL Server Management Studio to monitor data migration in Stretch Database Monitor. For more info, see [Monitor Stretch Database](assetId:///06950858-8c02-4ec6-9c59-42b787316a2d ).  
   
  Or, open the dynamic management view **sys.dm\_db\_rda\_migration\_status** to see how many batches and rows of data have been migrated.  
   
@@ -42,7 +42,7 @@ To manage and troubleshoot Stretch Database, use the tools and methods described
  Don't change the schema of a remote Azure table that's associated with a SQL Server table configured for Stretch Database. In particular, don't modify the name or the data type of a column. The Stretch Database feature makes various assumptions about the schema of the remote table in relation to the schema of the SQL Server table. If you change the remote schema, Stretch Database stops working for the changed table.  
   
 ##  <a name="Firewall"></a> Troubleshoot data migration  
- For troubleshooting suggestions, see [Monitor and troubleshoot data migration \(Stretch Database\)](assetId:///06950858-8c02-4ec6-9c59-42b787316a2d).  
+ For troubleshooting suggestions, see [Monitor and troubleshoot data migration \(Stretch Database\)](assetId:///06950858-8c02-4ec6-9c59-42b787316a2d ).  
   
 ## Troubleshoot query performance  
  **Queries that include my Stretch\-enabled table are slow.**  
@@ -53,5 +53,5 @@ To manage and troubleshoot Stretch Database, use the tools and methods described
 -   Your network conditions may have degraded. Contact your network administrator for info about recent issues or outages.  
   
 ## See Also  
- [Monitor Stretch Database](assetId:///06950858-8c02-4ec6-9c59-42b787316a2d)   
- [Backup and restore Stretch\-enabled databases](assetId:///18f0dff0-d8ce-4bee-a935-76ed6dfb3208)
+ [Monitor Stretch Database](assetId:///06950858-8c02-4ec6-9c59-42b787316a2d )   
+ [Backup and restore Stretch\-enabled databases](assetId:///18f0dff0-d8ce-4bee-a935-76ed6dfb3208 )
