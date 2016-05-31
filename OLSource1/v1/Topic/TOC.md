@@ -1,0 +1,16 @@
+# HelpViewer
+# SQL Agnostic
+# SQL Server Setup User Interface Reference
+# SQLReleaseNotes
+# Stretch migration
+## [Stretch 1 overview](Stretch-1-overview.md)
+### [Stretch 2 identify](Stretch-2-identify.md)
+### [Stretch 3 surface](Stretch-3-surface.md)
+### [Stretch 4 enable database](Stretch-4-enable-database.md)
+### [Stretch 5 enable wizard](Stretch-5-enable-wizard.md)
+### [Stretch 7 enable table](Stretch-7-enable-table.md)
+### [Stretch 8 disable](Stretch-8-disable.md)
+### [Stretch 9 monitor](Stretch-9-monitor.md)
+### [Stretch 11 manage](Stretch-11-manage.md)
+### [Stretch 12 backup](Stretch-12-backup.md)
+### [MDtest](MDtest.md)
