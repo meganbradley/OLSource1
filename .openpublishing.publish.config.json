@@ -10,7 +10,7 @@
             "type_mapping": { 
                 "Conceptual": "Content"
             } 
-        }，
+        },
         {
             "docset_name": "OLSource11",
             "build_output_subfolder": "OLSource1/v2",
