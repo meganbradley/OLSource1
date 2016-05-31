@@ -22,7 +22,7 @@ translation.priority.ht:
 Learn about blocking issues that you have to resolve before you can enable Stretch Database.
 
 ## <a name="Limitations"></a>Blocking issues
-In [!INCLUDE[ssSQL15](../Token/ssSQL15_md.md )], the following items make a table ineligible for Stretch.
+In SQL 2014, the following items make a table ineligible for Stretch.
 
 **Table properties**
 -   More than 1,023 columns
@@ -76,7 +76,7 @@ In [!INCLUDE[ssSQL15](../Token/ssSQL15_md.md )], the following items make a tabl
 -   Indexed views that reference the table
 
 ## <a name="Caveats"></a>Limitations and caveats for Stretch\-enabled tables
-In [!INCLUDE[ssSQL15](../Token/ssSQL15_md.md )], Stretch\-enabled tables have the following limitations or caveats.
+In SQL 2014, Stretch\-enabled tables have the following limitations or caveats.
 
 -   Uniqueness is not enforced for UNIQUE constraints and PRIMARY KEY constraints on a Stretch\-enabled table.
 

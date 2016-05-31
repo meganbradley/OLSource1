@@ -81,7 +81,7 @@ Stretch Database migrates your historical data transparently and securely to the
  Yes. For more info, see [Disable Stretch Database and bring back remote data](assetId:///c1bbb24e-47e3-46aa-b786-fcadf9fb65ce ).  
   
 ## Terms  
- **Local database**. The on\-premises [!INCLUDE[ssSQL15]( )] database.  
+ **Local database**. The on\-premises SQL 2015 database.  
   
  **Remote endpoint**. The location in Microsoft Azure that contains the database’s remote data.  
   

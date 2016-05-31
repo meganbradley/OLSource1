@@ -43,7 +43,7 @@ To back up and restore Stretch\-enabled databases, you can continue to use  the 
     ```  
   
 ##  <a name="MoreInfo"></a> More info about backup and restore  
- Backups on a database with Stretch Database enabled contain only local data and eligible data at the point in time when the backup runs. These backups also contain information about the remote endpoint where the database’s remote data resides. This is known as a "shallow backup". Deep backups that contain all data in the database, both local and remote, are not supported in [!INCLUDE[ssSQL15]( )].  
+ Backups on a database with Stretch Database enabled contain only local data and eligible data at the point in time when the backup runs. These backups also contain information about the remote endpoint where the database’s remote data resides. This is known as a "shallow backup". Deep backups that contain all data in the database, both local and remote, are not supported in SQL 2014.  
   
  c6a383e8-72ac-4e55-b9e5-61b7790bed9d  
   
@@ -51,7 +51,7 @@ To back up and restore Stretch\-enabled databases, you can continue to use  the 
   
  376db23b-0d30-4ec4-a72e-7bc1c872ef56  
   
- You have to run the stored procedure **sys.sp\_rda\_reauthorize\_db** to re\-establish the connection between the local database and its remote endpoint. Only a db\_owner can perform this operation. This stored procedure also requires the remote endpoint’s administrator user name and password. \(In [!INCLUDE[ssSQL15]( )], this means that you have to provide the administrator login and password for the target Azure server\).  
+ You have to run the stored procedure **sys.sp\_rda\_reauthorize\_db** to re\-establish the connection between the local database and its remote endpoint. Only a db\_owner can perform this operation. This stored procedure also requires the remote endpoint’s administrator user name and password. \(In SQL 2014, this means that you have to provide the administrator login and password for the target Azure server\).  
   
  6225340f-6bb2-4603-9d03-14444d35b9ad  
   
