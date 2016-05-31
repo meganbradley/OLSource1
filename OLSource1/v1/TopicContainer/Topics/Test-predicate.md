@@ -21,7 +21,7 @@ translation.priority.ht:
 # Test predicate
 If you store historical data in a separate table, you can configure Stretch Database to migrate the entire table. If your table contains both historical and current data, on the other hand, you can specify a filter predicate to select the rows to migrate. The filter predicate must call an inline table\-valued function. This topic describes how to write an inline table\-valued function to select rows to migrate.  
   
- In CTP 3.1 through RC0, the option to specify a predicate isn't available in the Enable Database for Stretch wizard. You have to use the ALTER TABLE statement to configure Stretch Database with this option. For more info, see [ALTER TABLE \(Transact\-SQL\)](assetId:///f1745145-182d-4301-a334-18f799d361d1 ).  
+ In CTP 3.1 through RC0, the option to specify a predicate isn't available in the Enable Database for Stretch wizard. You have to use the ALTER TABLE statement to configure Stretch Database with this option. For more info, see [ALTER TABLE \(Transact\-SQL\)](assetId:///f1745145-182d-4301-a334-18f799d361d1).  
   
  If you don't specify a filter predicate, the entire table is migrated.  
   
@@ -440,7 +440,7 @@ GO
  You can't drop the inline table\-valued function as long as a table is using the function as its filter predicate.  
   
 ## Check the filter predicate applied to a table  
- To check the filter predicate applied to a table, open the catalog view **sys.remote\_data\_archive\_tables** and check the value of the **filter\_predicate** column. If the value is null, the entire table is eligible for archiving. For more info, see [sys.remote\_data\_archive\_tables \(Transact\-SQL\)](assetId:///765069b7-60fd-414c-875f-3455460b75cd ).  
+ To check the filter predicate applied to a table, open the catalog view **sys.remote\_data\_archive\_tables** and check the value of the **filter\_predicate** column. If the value is null, the entire table is eligible for archiving. For more info, see [sys.remote\_data\_archive\_tables \(Transact\-SQL\)](assetId:///765069b7-60fd-414c-875f-3455460b75cd).  
   
 ## See Also  
- [ALTER TABLE \(Transact\-SQL\)](assetId:///f1745145-182d-4301-a334-18f799d361d1 )
+ [ALTER TABLE \(Transact\-SQL\)](assetId:///f1745145-182d-4301-a334-18f799d361d1)

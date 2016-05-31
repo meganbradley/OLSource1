@@ -22,7 +22,7 @@ translation.priority.ht:
 To identify databases and tables that are candidates for Stretch Database, download SQL Server 2016 Upgrade Advisor and run the Stretch Database Advisor. Stretch Database Advisor also identifies blocking issues.  
   
 ## Download and install Upgrade Advisor  
- Download and install Upgrade Advisor from [here](http://go.microsoft.com/fwlink/?LinkID=613421 ). This tool is not included on the SQL 2014 installation media.  
+ Download and install Upgrade Advisor from [here](http://go.microsoft.com/fwlink/?LinkID=613421). This tool is not included on the [!INCLUDE[ssSQL15]()] installation media.  
   
 ## Run the Stretch Database Advisor  
   
@@ -34,7 +34,7 @@ To identify databases and tables that are candidates for Stretch Database, downl
   
 4.  On the **Select databases** blade, click **SQL INSTANCE**.  
   
-5.  On the **Connect to SQL Instance** blade, enter the name of the [!INCLUDE[ssNoVersion](../../TokenContainer/ssNoVersion_md.md )] instance. Then click **Connect**.  
+5.  On the **Connect to SQL Instance** blade, enter the name of the [!INCLUDE[ssNoVersion](../../TokenContainer/ssNoVersion_md.md)] instance. Then click **Connect**.  
   
 6.  On the **Select databases** blade, select the databases to analyze. Then click **Select**.  
   
@@ -48,7 +48,7 @@ To identify databases and tables that are candidates for Stretch Database, downl
   
 2.  In the list of recommended tables on the **Analysis results** blade, select one of the recommended tables to display the **Table results** blade.  
   
-     The **Table results** blade lists the blocking issues for the selected table. For information about blocking issues detected by Stretch Database Advisor, see [Surface area limitations and blocking issues for Stretch Database](assetId:///2b1fbec1-7859-44fc-8417-724fc57a59c0 ).  
+     The **Table results** blade lists the blocking issues for the selected table. For information about blocking issues detected by Stretch Database Advisor, see [Surface area limitations and blocking issues for Stretch Database](assetId:///2b1fbec1-7859-44fc-8417-724fc57a59c0).  
   
 3.  In the list of blocking issues on the **Table results** blade, select one of the issues to display the **Rule result** blade.  
   
@@ -57,11 +57,11 @@ To identify databases and tables that are candidates for Stretch Database, downl
 ## Next step  
  Enable Stretch Database.  
   
--   To enable Stretch Database on a **database**, see [Enable Stretch Database for a database](assetId:///37854256-8c99-4566-a552-432e3ea7c6da ).  
+-   To enable Stretch Database on a **database**, see [Enable Stretch Database for a database](assetId:///37854256-8c99-4566-a552-432e3ea7c6da).  
   
--   To enable Stretch Database on another **table**, when Stretch is already enabled on the database, see [Enable Stretch Database for a table](assetId:///de4ac0c5-46ef-4593-a11e-9dd9bcd3ccdc ).  
+-   To enable Stretch Database on another **table**, when Stretch is already enabled on the database, see [Enable Stretch Database for a table](assetId:///de4ac0c5-46ef-4593-a11e-9dd9bcd3ccdc).  
   
 ## See Also  
- [Surface area limitations and blocking issues for Stretch Database](assetId:///2b1fbec1-7859-44fc-8417-724fc57a59c0 )   
- [Enable Stretch Database for a database](assetId:///37854256-8c99-4566-a552-432e3ea7c6da )   
- [Enable Stretch Database for a table](assetId:///de4ac0c5-46ef-4593-a11e-9dd9bcd3ccdc )
+ [Surface area limitations and blocking issues for Stretch Database](assetId:///2b1fbec1-7859-44fc-8417-724fc57a59c0)   
+ [Enable Stretch Database for a database](assetId:///37854256-8c99-4566-a552-432e3ea7c6da)   
+ [Enable Stretch Database for a table](assetId:///de4ac0c5-46ef-4593-a11e-9dd9bcd3ccdc)

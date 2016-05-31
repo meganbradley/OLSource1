@@ -20,24 +20,24 @@ translation.priority.ht:
   - zh-tw
 ---
 # SQL Server 2014 Release Notes
-This Release Notes document describes known issues that you should read about before you install or troubleshoot [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md )].  
+This Release Notes document describes known issues that you should read about before you install or troubleshoot [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md)].  
   
 ##  <a name="top"></a> Contents  
- [1.0 Before You Install](#BeforeInstall )  
+ [1.0 Before You Install](#BeforeInstall)  
   
- [2.0 Product Documentation](#ProdDoc )  
+ [2.0 Product Documentation](#ProdDoc)  
   
- [3.0 Database Engine](#DBEngine )  
+ [3.0 Database Engine](#DBEngine)  
   
- [4.0 Reporting Services](#SSRS )  
+ [4.0 Reporting Services](#SSRS)  
   
- [5.0 SQL Server 2014 on Windows Azure Virtual Machines](#AzureVM )  
+ [5.0 SQL Server 2014 on Windows Azure Virtual Machines](#AzureVM)  
   
- [6.0 Analysis Services](#SSAS )  
+ [6.0 Analysis Services](#SSAS)  
   
- [7.0 Data Quality Services](#DQS )  
+ [7.0 Data Quality Services](#DQS)  
   
- [8.0 Upgrade Advisor](#UA )  
+ [8.0 Upgrade Advisor](#UA)  
   
 ##  <a name="BeforeInstall"></a> 1.0 Before You Install  
   
@@ -64,7 +64,7 @@ This Release Notes document describes known issues that you should read about be
   
 3.  In\-place upgrade to SQL Server 2014 RTM.  
   
-4.  Rolling upgrade to SQL Server 2014 RTM. You are required to switch to manual failover mode before initiating the rolling upgrade. Please refer to [Upgrade and Update of Availability Group Servers with Minimal Downtime and Data Loss](http://msdn.microsoft.com/library/dn178483.aspx ) for details.  
+4.  Rolling upgrade to SQL Server 2014 RTM. You are required to switch to manual failover mode before initiating the rolling upgrade. Please refer to [Upgrade and Update of Availability Group Servers with Minimal Downtime and Data Loss](http://msdn.microsoft.com/library/dn178483.aspx) for details.  
   
 5.  Data collected by Transaction Performance Collection Sets installed in SQL Server 2014 CTP 2 cannot be viewed through SQL Server Management Studio in SQL Server 2014 RTM, and vice versa. Use SQL Server Management Studio in SQL Server 2014 CTP 2 to view data collected by the Collection Set installed in SQL Server 2014 CTP 2, and use SQL Server Management Studio in SQL Server 2014 RTM to view data collected by the Collection Set installed in SQL Server 2014 RTM.  
   
@@ -73,12 +73,12 @@ This Release Notes document describes known issues that you should read about be
   
  **Workaround:** There is no workaround for downgrade. We recommend that you back\-up the database before upgrading to SQL Server 2014 RTM.  
   
- ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top )  
+ ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top)  
   
 ## 1.3 Incorrect version of StreamInsight Client on SQL Server 2014 media\/ISO\/CAB  
  The wrong version of StreamInsight.msi and StreamInsightClient.msi is located in the following path on the SQL Server media\/ISO\/CAB \(StreamInsight\\\<Architecture\\\<Language ID\>\).  
   
- **Workaround:** Download and install the correct version from the [SQL Server 2014 Feature Pack download page](http://go.microsoft.com/fwlink/?LinkID=306709 ).  
+ **Workaround:** Download and install the correct version from the [SQL Server 2014 Feature Pack download page](http://go.microsoft.com/fwlink/?LinkID=306709).  
   
 ##  <a name="ProdDoc"></a> 2.0 Product Documentation  
   
@@ -93,7 +93,7 @@ This Release Notes document describes known issues that you should read about be
   
 -   Danish \(da\-DK\)  
   
- In [!INCLUDE[ssSQL11](../../TokenContainer/ssSQL11_md.md )], this content was available in a CHM file that shipped with the product and was available in these languages. The CHM files no longer ship with the product and the Report Builder content is only available on MSDN. MSDN does not support these languages. Report Builder was also removed from TechNet and is no longer available in those supported languages.  
+ In [!INCLUDE[ssSQL11](../../TokenContainer/ssSQL11_md.md)], this content was available in a CHM file that shipped with the product and was available in these languages. The CHM files no longer ship with the product and the Report Builder content is only available on MSDN. MSDN does not support these languages. Report Builder was also removed from TechNet and is no longer available in those supported languages.  
   
  **Workaround:** None.  
   
@@ -122,11 +122,11 @@ This Release Notes document describes known issues that you should read about be
   
 -   Portuguese \(Portugal\) \(pt\-PT\)  
   
- In [!INCLUDE[ssSQL11](../../TokenContainer/ssSQL11_md.md )], this content was available on TechNet and was available in these languages. This content was removed from TechNet and is no longer available in these supported languages.  
+ In [!INCLUDE[ssSQL11](../../TokenContainer/ssSQL11_md.md)], this content was available on TechNet and was available in these languages. This content was removed from TechNet and is no longer available in these supported languages.  
   
  **Workaround:** None.  
   
- ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top )  
+ ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top)  
   
 ##  <a name="DBEngine"></a> 3.0 Database Engine  
   
@@ -140,7 +140,7 @@ This Release Notes document describes known issues that you should read about be
 ### 3.2 In\-Memory OLTP Issues  
   
 #### 3.2.1 Memory Optimization Advisor flags default constraints as incompatible  
- **Issue:** The Memory Optimized Advisor in SQL Server Management Studio flags all default constraints as incompatible. Not all default constraints are supported in a memory\-optimized table; the Advisor does not distinguish between supported and unsupported types of default constraints. Supported default constraints include all constants, expressions and built\-in functions supported within natively compiled stored procedures. To see the list of functions supported in natively compiled stored procedures, refer to [Supported Constructs in Natively Compiled Stored Procedures](http://msdn.microsoft.com/library/dn452279\(v=sql.120\).aspx ).  
+ **Issue:** The Memory Optimized Advisor in SQL Server Management Studio flags all default constraints as incompatible. Not all default constraints are supported in a memory\-optimized table; the Advisor does not distinguish between supported and unsupported types of default constraints. Supported default constraints include all constants, expressions and built\-in functions supported within natively compiled stored procedures. To see the list of functions supported in natively compiled stored procedures, refer to [Supported Constructs in Natively Compiled Stored Procedures](http://msdn.microsoft.com/library/dn452279\(v=sql.120\).aspx).  
   
  **Workaround:** If you want to use the advisor to identify blockers, please ignore the compatible default constraints. To use the Memory Optimization Advisor to migrate tables that have compatible default constraints, but no other blockers, follow these steps:  
   
@@ -258,7 +258,7 @@ DATEPART(weekday, @d)
 ### 3.3 Register through SSMS adds DAC meta\-data with mismatched instance IDs  
  **Issue:** When registering or deleting a Data\-Tier Application package \(.dacpac\) through SQL Server Management Studio, the sysdac\* tables are not updated correctly to allow a user to query dacpac history for the database.  The instance\_id for sysdac\_history\_internal and sysdac\_instances\_internal do not match to allow for a join.  
   
- **Workaround:** This issue is fixed with the feature pack redistribution of the [Data\-Tier Application Framework](http://go.microsoft.com.fwlink/?LinkID=391074 ).  After the update is applied, all new history entries will use the value listed for the instance\_id in the sysdac\_instances\_internal table.  
+ **Workaround:** This issue is fixed with the feature pack redistribution of the [Data\-Tier Application Framework](http://go.microsoft.com.fwlink/?LinkID=391074).  After the update is applied, all new history entries will use the value listed for the instance\_id in the sysdac\_instances\_internal table.  
   
  If you already have the issue with mismatched instance\_id values, the only way to correct the mismatched values is to connect to the server as a user with privileges to write to MSDB database and update the instance\_id values to match.  If there has been multiple register and unregister events of the same database, you may need to look at the time\/date to see what records match with the current instance\_id values.  
   
@@ -280,24 +280,24 @@ DATEPART(weekday, @d)
   
      `update` sysdac\_history\_internal `set` instance\_id \= '\<value from step 3\>' `where` \<expression that matches the rows you want to update\>  
   
- ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top )  
+ ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top)  
   
 ##  <a name="SSRS"></a> 4.0 Reporting Services  
   
 ### 4.1 The SQL Server 2012 Reporting Services Native Mode report server cannot run side\-by\-side with SQL Server 2014 Reporting Services SharePoint Components  
- **Issue:** The [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md )] Native mode Windows service ‘SQL Server Reporting Services’ \(ReportingServicesService.exe\) fails to start if there are [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md )] [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md )] SharePoint components installed on the same server.  
+ **Issue:** The [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md)] Native mode Windows service ‘SQL Server Reporting Services’ \(ReportingServicesService.exe\) fails to start if there are [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md)] [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md)] SharePoint components installed on the same server.  
   
- **Workaround:** Uninstall [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md )] [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md )] SharePoint components and restart Microsoft SQL Server 2012 Reporting Services Windows service.  
+ **Workaround:** Uninstall [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md)] [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md)] SharePoint components and restart Microsoft SQL Server 2012 Reporting Services Windows service.  
   
  **More Information:**  
   
- [!INCLUDE[ssSQL11](../../TokenContainer/ssSQL11_md.md )] [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md )] Native Mode cannot run side\-by\-side with either of the following:  
+ [!INCLUDE[ssSQL11](../../TokenContainer/ssSQL11_md.md)] [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md)] Native Mode cannot run side\-by\-side with either of the following:  
   
--   [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md )] [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md )] Add\-in for SharePoint Products  
+-   [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md)] [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md)] Add\-in for SharePoint Products  
   
--   [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md )] [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md )] SharePoint Shared Service  
+-   [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md)] [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md)] SharePoint Shared Service  
   
- The side\-by\-side installation prevents the [!INCLUDE[ssSQL11](../../TokenContainer/ssSQL11_md.md )] [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md )] Native Mode Windows Service from starting. Error messages similar to the following will be seen in the Windows Event log:  
+ The side\-by\-side installation prevents the [!INCLUDE[ssSQL11](../../TokenContainer/ssSQL11_md.md)] [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md)] Native Mode Windows Service from starting. Error messages similar to the following will be seen in the Windows Event log:  
   
 ```  
 Log Name:   Application  
@@ -318,20 +318,20 @@ Description:   Report Server (DENALI) cannot connect to the report server databa
   
 ```  
   
- For more information, see [SQL Server 2014 Reporting Services Tips, Tricks, and Troubleshooting](http://go.microsoft.com/fwlink/?LinkID=391254 ).  
+ For more information, see [SQL Server 2014 Reporting Services Tips, Tricks, and Troubleshooting](http://go.microsoft.com/fwlink/?LinkID=391254).  
   
 ### 4.2 Required Upgrade Order for Multi\-node SharePoint Farm to SQL Server 2014 Reporting Services  
- **Issue:** Report rendering in a multi\-node farm fails if instances of the [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md )] SharePoint Shared Service are upgraded before all instances of the [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md )] Add\-in for SharePoint Products.  
+ **Issue:** Report rendering in a multi\-node farm fails if instances of the [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md)] SharePoint Shared Service are upgraded before all instances of the [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md)] Add\-in for SharePoint Products.  
   
  **Workaround:** In a multi\-node SharePoint farm:  
   
-1.  First upgrade all instances of the [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md )] Add\-in for SharePoint Products.  
+1.  First upgrade all instances of the [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md)] Add\-in for SharePoint Products.  
   
-2.  Then upgrade all instances of the [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md )] SharePoint Shared Service.  
+2.  Then upgrade all instances of the [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md)] SharePoint Shared Service.  
   
- For more information, see [SQL Server 2014 Reporting Services Tips, Tricks, and Troubleshooting](http://go.microsoft.com/fwlink/?LinkID=391254 )  
+ For more information, see [SQL Server 2014 Reporting Services Tips, Tricks, and Troubleshooting](http://go.microsoft.com/fwlink/?LinkID=391254)  
   
- ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top )  
+ ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top)  
   
 ##  <a name="AzureVM"></a> 5.0 SQL Server 2014 RTM on Windows Azure Virtual Machines  
   
@@ -346,9 +346,9 @@ Description:   Report Server (DENALI) cannot connect to the report server databa
   
      This will allow the Wizard to complete adding the replica in Windows Azure.  
   
-2.  After the Wizard completes, you will need to finish the configuration of the Listener in Windows Azure as described in [Listener Configuration for AlwaysOn Availability Groups in Windows Azure](http://msdn.microsoft.com/library/dn376546.aspx )  
+2.  After the Wizard completes, you will need to finish the configuration of the Listener in Windows Azure as described in [Listener Configuration for AlwaysOn Availability Groups in Windows Azure](http://msdn.microsoft.com/library/dn376546.aspx)  
   
- ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top )  
+ ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top)  
   
 ##  <a name="SSAS"></a> 6.0 Analysis Services  
   
@@ -359,28 +359,28 @@ Description:   Report Server (DENALI) cannot connect to the report server databa
   
  **Workaround:**  
   
-1.  Download the MSOLAP.5 provider from the [!INCLUDE[ssSQL11SP1](../../TokenContainer/ssSQL11SP1_md.md )] Feature Pack. Install the provider on the application servers running Excel Services. For more information, see the section “Microsoft Analysis Services OLE DB Provider for Microsoft SQL Server 2012 SP1” [Microsoft SQL Server 2012 SP1 Feature Pack](http://www.microsoft.com/download/details.aspx?id=35580 ).  
+1.  Download the MSOLAP.5 provider from the [!INCLUDE[ssSQL11SP1](../../TokenContainer/ssSQL11SP1_md.md)] Feature Pack. Install the provider on the application servers running Excel Services. For more information, see the section “Microsoft Analysis Services OLE DB Provider for Microsoft SQL Server 2012 SP1” [Microsoft SQL Server 2012 SP1 Feature Pack](http://www.microsoft.com/download/details.aspx?id=35580).  
   
-2.  Register MSOLAP.5 as a trusted provider with SharePoint Excel Services. For more information, see [Add MSOLAP.5 as a Trusted Data Provider in Excel Services](http://technet.microsoft.com/library/hh758436.aspx ).  
+2.  Register MSOLAP.5 as a trusted provider with SharePoint Excel Services. For more information, see [Add MSOLAP.5 as a Trusted Data Provider in Excel Services](http://technet.microsoft.com/library/hh758436.aspx).  
   
  **More Information:**  
   
--   [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md )] includes MSOLAP.6. [!INCLUDE[ssSQL11](../../TokenContainer/ssSQL11_md.md )] and [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md )][!INCLUDE[ssGemini](../../TokenContainer/ssGemini_md.md )] workbooks use MSOLAP.5. If MSOLAP.5 is not installed on the computer running Excel Services, Excel Services cannot load the data models.  
+-   [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md)] includes MSOLAP.6. [!INCLUDE[ssSQL11](../../TokenContainer/ssSQL11_md.md)] and [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md)][!INCLUDE[ssGemini](../../TokenContainer/ssGemini_md.md)] workbooks use MSOLAP.5. If MSOLAP.5 is not installed on the computer running Excel Services, Excel Services cannot load the data models.  
   
 ### 6.2 MSOLAP.5 must be downloaded, installed and registered for a SharePoint 2013 new farm configured with SQL Server 2014  
  **Issue:**  
   
--   For a SharePoint 2013 farm configured with a [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md )] deployment, Excel workbooks referencing the MSOLAP.5 provider cannot connect to tabula data models because the provider referenced in the connection string is not installed.  
+-   For a SharePoint 2013 farm configured with a [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md)] deployment, Excel workbooks referencing the MSOLAP.5 provider cannot connect to tabula data models because the provider referenced in the connection string is not installed.  
   
  **Workaround:**  
   
-1.  Download the MSOLAP.5 provider from the [!INCLUDE[ssSQL11SP1](../../TokenContainer/ssSQL11SP1_md.md )] Feature Pack. Install the provider on the application servers running Excel Services. For more information, see the section “Microsoft Analysis Services OLE DB Provider for Microsoft SQL Server 2012 SP1” [Microsoft SQL Server 2012 SP1 Feature Pack](http://www.microsoft.com/download/details.aspx?id=35580 ).  
+1.  Download the MSOLAP.5 provider from the [!INCLUDE[ssSQL11SP1](../../TokenContainer/ssSQL11SP1_md.md)] Feature Pack. Install the provider on the application servers running Excel Services. For more information, see the section “Microsoft Analysis Services OLE DB Provider for Microsoft SQL Server 2012 SP1” [Microsoft SQL Server 2012 SP1 Feature Pack](http://www.microsoft.com/download/details.aspx?id=35580).  
   
-2.  Register MSOLAP.5 as a trusted provider with SharePoint Excel Services. For more information, see [Add MSOLAP.5 as a Trusted Data Provider in Excel Services](http://technet.microsoft.com/library/hh758436.aspx ).  
+2.  Register MSOLAP.5 as a trusted provider with SharePoint Excel Services. For more information, see [Add MSOLAP.5 as a Trusted Data Provider in Excel Services](http://technet.microsoft.com/library/hh758436.aspx).  
   
  **More Information:**  
   
--   [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md )] includes MSOLAP.6. but SQL Server 2014 PowerPivot workbooks use MSOLAP.5. If MSOLAP.5 is not installed on the computer running Excel Services, Excel Services cannot load the data models.  
+-   [!INCLUDE[ssSQL14](../../TokenContainer/ssSQL14_md.md)] includes MSOLAP.6. but SQL Server 2014 PowerPivot workbooks use MSOLAP.5. If MSOLAP.5 is not installed on the computer running Excel Services, Excel Services cannot load the data models.  
   
 ### 6.3 Corrupt Data Refresh Schedules  
  **Issue:**  
@@ -389,13 +389,13 @@ Description:   Report Server (DENALI) cannot connect to the report server databa
   
  **Workaround:**  
   
-1.  In Microsoft Excel, clear the custom advanced properties. Please see the “Workaround” section of the following knowledge base article [KB 2927748](http://support.microsoft.com/kb/2927748 ).  
+1.  In Microsoft Excel, clear the custom advanced properties. Please see the “Workaround” section of the following knowledge base article [KB 2927748](http://support.microsoft.com/kb/2927748).  
   
  **More Information:**  
   
 -   When you update a data refresh schedule for a workbook, if the serialized length of the refresh schedule is smaller than the original schedule, the buffer size is not correctly updated and the new schedule information is merged with the old schedule information resulting in a corrupt schedule.  
   
- ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top )  
+ ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top)  
   
 ##  <a name="DQS"></a> 7.0 Data Quality Services  
   
@@ -408,14 +408,14 @@ Description:   Report Server (DENALI) cannot connect to the report server databa
   
  **Workaround:** Use the same version of Master Data Services as the Database Engine database and Data Quality Services.  
   
- ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top )  
+ ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top)  
   
 ##  <a name="UA"></a> 8.0 Upgrade Advisor Issues  
   
 ### 8.1  SQL Server 2014 Upgrade Advisor reports irrelevant upgrade issues for SQL Server Reporting Services  
  **Issue:** SQL Server Upgrade Advisor \(SSUA\) shipped with the SQL Server 2014 media incorrectly reports multiple errors when analyzing SQL Server Reporting Services server.  
   
- **Workaround:** This issue is fixed in the SQL Server Upgrade Advisor provided in the [SQL Server 2014 Feature Pack for SSUA](http://go.microsoft.com/fwlink/?LinkID=306709 ).  
+ **Workaround:** This issue is fixed in the SQL Server Upgrade Advisor provided in the [SQL Server 2014 Feature Pack for SSUA](http://go.microsoft.com/fwlink/?LinkID=306709).  
   
 ### 8.2  SQL Server 2014 Upgrade Advisor reports an error when analyzing SQL Server Integration Services server  
  **Issue:** SQL Server Upgrade Advisor \(SSUA\) shipped with the SQL Server 2014 media reports an error when analyzing SQL Server Integration Services server.  The error that is displayed to the user is:  
@@ -426,6 +426,6 @@ The assembly information is "Microsoft.SqlServer.ManagedDTS, Version=11.0.0.0,
 Culture=neutral, PublicKeyToken=89845dcd8080cc91  
 ```  
   
- **Workaround:** This issue is fixed in the SQL Server Upgrade Advisor provided in the [SQL Server 2014 Feature Pack for SSUA](http://go.microsoft.com/fwlink/?LinkID=306709 ).  
+ **Workaround:** This issue is fixed in the SQL Server Upgrade Advisor provided in the [SQL Server 2014 Feature Pack for SSUA](http://go.microsoft.com/fwlink/?LinkID=306709).  
   
- ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top )
+ ![Arrow icon used with Back to Top link](../../ImageContainer/Images/Image/UpArrow16x16.gif "UpArrow16x16") [Top](#top)

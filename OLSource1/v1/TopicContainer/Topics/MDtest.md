@@ -34,12 +34,12 @@ test how some terms convert from ddueml to markdown
   
  This contains **UI text**  
   
- Internal Link: [Stretch 1 overview](../../TopicContainer/Topics/Stretch-1-overview.md )  
+ Internal Link: [Stretch 1 overview](../../TopicContainer/Topics/Stretch-1-overview.md)  
   
- External link: [Text of external link](https://msdn.microsoft.com/en-us/library/dn876712.aspx )  
+ External link: [Text of external link](https://msdn.microsoft.com/en-us/library/dn876712.aspx)  
   
 ## 3d section images and bookmarks  
- The ssrs token is [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md )]  
+ The ssrs token is [!INCLUDE[ssRSnoversion](../../TokenContainer/ssRSnoversion_md.md)]  
   
  an inline image: ![ssrs&#95;fyi&#95;note](../../ImageContainer/Images/Image/ssrs_fyi_note.png "ssrs\_fyi\_note")  
   

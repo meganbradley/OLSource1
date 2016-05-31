@@ -59,4 +59,4 @@ ALTER TABLE <table name>
 ```  
   
 ## See Also  
- [ALTER TABLE \(Transact\-SQL\)](assetId:///f1745145-182d-4301-a334-18f799d361d1 )
+ [ALTER TABLE \(Transact\-SQL\)](assetId:///f1745145-182d-4301-a334-18f799d361d1)

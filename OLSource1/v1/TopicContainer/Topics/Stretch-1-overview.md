@@ -25,7 +25,7 @@ Stretch Database migrates your historical data transparently and securely to the
  Stretch Database provides the following benefits:  
   
  **Provides cost\-effective availability for cold data**  
- Stretch warm and cold transactional data dynamically from SQL Server to Microsoft Azure with SQL Server Stretch Database. Unlike typical cold data storage, your data is always online and available to query. You can provide longer data retention timelines without breaking the bank for large tables like Customer Order History. Benefit from the low cost of Azure rather than scaling expensive, on\-premises storage. You choose the pricing tier and configure settings in the Azure Portal to maintain control over price and data access speeds. Scale up or down as needed. Visit the [SQL Server Stretch Database Pricing](https://azure.microsoft.com/en-us/pricing/details/sql-server-stretch-database/ ) for details.  
+ Stretch warm and cold transactional data dynamically from SQL Server to Microsoft Azure with SQL Server Stretch Database. Unlike typical cold data storage, your data is always online and available to query. You can provide longer data retention timelines without breaking the bank for large tables like Customer Order History. Benefit from the low cost of Azure rather than scaling expensive, on\-premises storage. You choose the pricing tier and configure settings in the Azure Portal to maintain control over price and data access speeds. Scale up or down as needed. Visit the [SQL Server Stretch Database Pricing](https://azure.microsoft.com/en-us/pricing/details/sql-server-stretch-database/) for details.  
   
  **Doesn’t require changes to queries or applications**  
  Access your SQL Server data seamlessly regardless of whether it’s on\-premises or stretched to the cloud.  You set the policy that determines where data is stored, and SQL Server handles the data movement in the background. The entire table is always online and queryable. And, Stretch Database doesn’t require any changes to existing queries or applications – the location of the data is completely transparent to the application.  
@@ -64,24 +64,24 @@ Stretch Database migrates your historical data transparently and securely to the
 ## What kind of databases and tables are candidates for Stretch Database?  
  Stretch Database targets transactional databases with large amounts of historical data, typically stored in a small number of tables. These tables may contain more than a billion rows.  
   
- If you use the temporal table feature of [!INCLUDE[ssNoVersion](../../TokenContainer/ssNoVersion_md.md )], use Stretch Database to migrate all or part of the associated history table to cost\-effective storage in Azure. For more info, see [Manage Retention of Historical Data in System\-Versioned Temporal Tables](assetId:///7925ebef-cdb1-4cfe-b660-a8604b9d2153 ).  
+ If you use the temporal table feature of [!INCLUDE[ssNoVersion](../../TokenContainer/ssNoVersion_md.md)], use Stretch Database to migrate all or part of the associated history table to cost\-effective storage in Azure. For more info, see [Manage Retention of Historical Data in System\-Versioned Temporal Tables](assetId:///7925ebef-cdb1-4cfe-b660-a8604b9d2153).  
   
- Use Stretch Database Advisor, a feature of SQL Server 2016 Upgrade Advisor, to identify databases and tables for Stretch Database. For more info, see [Identify databases and tables for Stretch Database](assetId:///81bd93d8-eef8-4572-88d7-5c37ab5ac2bf ). To learn more about potential blocking issues, see [Surface area limitations and blocking issues for Stretch Database](assetId:///2b1fbec1-7859-44fc-8417-724fc57a59c0 ).  
+ Use Stretch Database Advisor, a feature of SQL Server 2016 Upgrade Advisor, to identify databases and tables for Stretch Database. For more info, see [Identify databases and tables for Stretch Database](assetId:///81bd93d8-eef8-4572-88d7-5c37ab5ac2bf). To learn more about potential blocking issues, see [Surface area limitations and blocking issues for Stretch Database](assetId:///2b1fbec1-7859-44fc-8417-724fc57a59c0).  
   
 ##  <a name="FAQ"></a> Frequently asked questions about Stretch Database  
  **Does Stretch Database work with \<SQL Server feature name\>?**  
- -   For a list of [!INCLUDE[ssNoVersion](../../TokenContainer/ssNoVersion_md.md )] features that make a table ineligible for Stretch, see [Surface area limitations and blocking issues for Stretch Database](assetId:///2b1fbec1-7859-44fc-8417-724fc57a59c0 ).  
+ -   For a list of [!INCLUDE[ssNoVersion](../../TokenContainer/ssNoVersion_md.md)] features that make a table ineligible for Stretch, see [Surface area limitations and blocking issues for Stretch Database](assetId:///2b1fbec1-7859-44fc-8417-724fc57a59c0).  
   
--   Optionally, download SQL Server 2016 Upgrade Advisor and run the Stretch Database Advisor to identify databases and tables that are candidates for Stretch Database. For more info, see [Identify databases and tables for Stretch Database](assetId:///81bd93d8-eef8-4572-88d7-5c37ab5ac2bf ).  
+-   Optionally, download SQL Server 2016 Upgrade Advisor and run the Stretch Database Advisor to identify databases and tables that are candidates for Stretch Database. For more info, see [Identify databases and tables for Stretch Database](assetId:///81bd93d8-eef8-4572-88d7-5c37ab5ac2bf).  
   
  **Can I target another local SQL Server instance for Stretch Database?**  
- No. Stretch Database does not support another local [!INCLUDE[ssNoVersion](../../TokenContainer/ssNoVersion_md.md )] instance as the remote endpoint.  
+ No. Stretch Database does not support another local [!INCLUDE[ssNoVersion](../../TokenContainer/ssNoVersion_md.md)] instance as the remote endpoint.  
   
  **Can I disable Stretch and move migrated data back to the local table?**  
- Yes. For more info, see [Disable Stretch Database and bring back remote data](assetId:///c1bbb24e-47e3-46aa-b786-fcadf9fb65ce ).  
+ Yes. For more info, see [Disable Stretch Database and bring back remote data](assetId:///c1bbb24e-47e3-46aa-b786-fcadf9fb65ce).  
   
 ## Terms  
- **Local database**. The on\-premises SQL 2015 database.  
+ **Local database**. The on\-premises [!INCLUDE[ssSQL15]()] database.  
   
  **Remote endpoint**. The location in Microsoft Azure that contains the database’s remote data.  
   
@@ -118,7 +118,7 @@ Stretch Database migrates your historical data transparently and securely to the
  26ce4c3e-04fa-4ccc-805c-1dd966c50835  
   
 ## Test drive Stretch Database  
- **Test drive Stretch Database with the AdventureWorks sample database.** To get the AdventureWorks sample database, download at least the database file and the samples and scripts file from [here](https://www.microsoft.com/en-us/download/details.aspx?id=49502 ). After you restore the sample database to an instance of SQL Server 2016, unzip the samples file and open the Stretch DB Samples file from the Stretch DB folder. Run the scripts in this file to check the space used by your data before and after you enable Stretch Database,  to track the progress of data migration, and to confirm that you can continue to query existing data and insert new data both during and after data migration.  
+ **Test drive Stretch Database with the AdventureWorks sample database.** To get the AdventureWorks sample database, download at least the database file and the samples and scripts file from [here](https://www.microsoft.com/en-us/download/details.aspx?id=49502). After you restore the sample database to an instance of SQL Server 2016, unzip the samples file and open the Stretch DB Samples file from the Stretch DB folder. Run the scripts in this file to check the space used by your data before and after you enable Stretch Database,  to track the progress of data migration, and to confirm that you can continue to query existing data and insert new data both during and after data migration.  
   
 ## Next step  
- **Identify databases and tables that are candidates for Stretch Database.** Download SQL Server 2016 Upgrade Advisor and run the Stretch Database Advisor to identify databases and tables that are candidates for Stretch Database. Stretch Database Advisor also identifies blocking issues. For more info, see [Identify databases and tables for Stretch Database](assetId:///81bd93d8-eef8-4572-88d7-5c37ab5ac2bf ).
+ **Identify databases and tables that are candidates for Stretch Database.** Download SQL Server 2016 Upgrade Advisor and run the Stretch Database Advisor to identify databases and tables that are candidates for Stretch Database. Stretch Database Advisor also identifies blocking issues. For more info, see [Identify databases and tables for Stretch Database](assetId:///81bd93d8-eef8-4572-88d7-5c37ab5ac2bf).
