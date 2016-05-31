@@ -22,7 +22,7 @@ translation.priority.ht:
 This Release Notes document describes known issues that you should read about before you install or troubleshoot [!INCLUDE[msCoName](../../TokenContainer/msCoName_md.md )][!INCLUDE[ssSQL11](../../TokenContainer/ssSQL11_md.md )] Service Pack 1. This Release Notes document is available online only, not on the installation media, and it is updated periodically.  
   
 ##  <a name="bkmk_top"></a> Contents  
- [1.0 Before You Install](#bmk_Install )  
+ [1.0 Before You Install](#bmk_Install)  
   
  [2.0 Analysis Services and PowerPivot](#bkmk_AS )  
   
