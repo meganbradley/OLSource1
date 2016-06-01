@@ -38,17 +38,17 @@ This article walks you through how to install local Help, and how to display onl
 
 Select Install content from disk  |Browse to Help content file 
 ---------|---------
-![](../../ImageContainer/Images/Image/HelpLibraryManager_MainPage_InstallFromDisk.png HelpLibraryManager_MainPage_InstallFromDisk)    | ![](../../ImageContainer/Images/Image/HelpLibraryManager_InstallContentFromDisk_dialog1.png HelpLibraryManager_InstallContentFromDisk_dialog1)        
+![Help Library Manager main page. Installing content from disk option](../../ImageContainer/Images/Image/HelpLibraryManager_MainPage_InstallFromDisk.png HelpLibraryManager_MainPage_InstallFromDisk)    | ![Installing Help content from disk](../../ImageContainer/Images/Image/HelpLibraryManager_InstallContentFromDisk_dialog1.png HelpLibraryManager_InstallContentFromDisk_dialog1)        
 
 >[!IMPORTANT] To avoid installing local Help content that has only a partial table of contents, use the **Install content from disk** option in the **Help Library Manager**.
 >>If you've used the **Install content from online** option and the Help Viewer is displaying a partial table of contents, see this [blog post](https://blogs.msdn.microsoft.com/womeninanalytics/2016/03/30/troubleshoot-local-help-for-sql-server-2014/) for troubleshooting steps.
 8. Click the HelpContentSetup.msha file, click **Open**, and then click **Next**.
 9. Click **Add** next to the documentation you want to install, and then click **Update**.
 
-   ![](../../ImageContainer/Images/Image/HelpLibraryManager_InstallContentFromDisk_dialog2.png HelpLibraryManager_InstallContentFromDisk_dialog2)
+   ![Installing Help from disk, and selecting the Help packages.](../../ImageContainer/Images/Image/HelpLibraryManager_InstallContentFromDisk_dialog2.png HelpLibraryManager_InstallContentFromDisk_dialog2)
 10. Click **Finish**, click **Exit**, and then open the Help Viewer to see the content by clicking **View Help** on the **Help** menu. You should see the content you've installed listed in the table of contents, in the left pane.
 
-    ![](../../ImageContainer/Images/Image/HelpViewer1_withContentInstalled_ZoomedIn.png HelpViewer1_withContentInstalled_ZoomedIn)
+    ![Help Viewer 1.1 with SQL Server 2014 Help content installed](../../ImageContainer/Images/Image/HelpViewer1_withContentInstalled_ZoomedIn.png HelpViewer1_withContentInstalled_ZoomedIn)
 
 **To display local Help or online Help**
 1. Open the **Help Library Manager** by clicking **Manage Help Settings** on the **Help** menu.
