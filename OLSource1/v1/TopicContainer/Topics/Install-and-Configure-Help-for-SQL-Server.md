@@ -38,7 +38,7 @@ This article walks you through how to install local Help, and how to display onl
 
 Select Install content from disk  |Browse to Help content file 
 ---------|---------
-![](../../ImageContainer/Images/Image/HelpLibraryManager_MainPage_InstallFromDisikjhl.png )    | ![HelpLibraryManager_InstallContentFromDisk_dialog1](../../ImageContainer/Images/Image/HelpLibraryManager_InstallContentFromDisk_dialog1.png "title")        
+![](../../ImageContainer/Images/Image/HelpLibraryManager_MainPage_InstallFromDisikjhl.png )    | ![HelpLibraryManager_InstallContentFromDisk_dialog1](../../ImageContainer/Images/Image/HelpLibraryManager_InstallContkjhkjhentFromDisk_dialog1.png "title")        
 
 >[!IMPORTANT] To avoid installing local Help content that has only a partial table of contents, use the **Install content from disk** option in the **Help Library Manager**.
 >>If you've used the **Install content from online** option and the Help Viewer is displaying a partial table of contents, see this [blog post](https://blogs.msdn.microsoft.com/womeninanalytics/2016/03/30/troubleshoot-local-help-for-sql-server-2014/ ) for troubleshooting steps.
