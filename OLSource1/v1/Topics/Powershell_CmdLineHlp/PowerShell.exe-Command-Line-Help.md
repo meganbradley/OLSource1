@@ -1,12 +1,12 @@
 ---
-title: hello word
+title: hello
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1ab7b93b-6785-42c6-a1c9-35ff686a958f
-h1: hello word
+h1: word
 ---
 # PowerShell.exe Command-Line Help
 Starts a Windows PowerShell session. You can use PowerShell.exe to start a Windows PowerShell session from the command line of another tool, such as Cmd.exe, or use it at the Windows PowerShell command line to start a new session. Use the parameters to customize the session.
