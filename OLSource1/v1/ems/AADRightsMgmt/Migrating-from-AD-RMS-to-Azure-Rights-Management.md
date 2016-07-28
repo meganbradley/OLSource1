@@ -292,7 +292,7 @@ Now that you’ve transferred your HSM key to Azure RMS, you’re ready to impor
 You’re now ready to go to [Step 3. Activate your RMS tenant](../../ems/AADRightsMgmt/Migrating-from-AD-RMS-to-Azure-Rights-Management.md#BKMK_Step3Migration).
 
 ### <a name="BKMK_Step3Migration"></a>Step 3. Activate your RMS tenant
-Instructions  for this step are fully covered in the [Activating Azure Rights Management](../../ems/AADRightsMgmt/alice.md) topic.
+Instructions  for this step are fully covered in the [Activating Azure Rights Management](../../ems/AADRightsMgmt/Activating-Azure-Rights-Management.md) topic.
 
 > [!TIP]
 > If you have an Office 365 subscription, you can activate Azure RMS from the Office 365 admin center or the Azure Management Portal. We recommend that you use the Azure Management Portal because you will use this management portal to complete the next step.

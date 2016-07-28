@@ -62,7 +62,7 @@ This section contains information to help you deploy and configure Microsoft Azu
 
 -   [Planning and Implementing Your Azure Rights Management Tenant Key](../../ems/AADRightsMgmt/Planning-and-Implementing-Your-Azure-Rights-Management-Tenant-Key.md)
 
--   [Activating Azure Rights Management](../../ems/AADRightsMgmt/alice.md)
+-   [Activating Azure Rights Management](../../ems/AADRightsMgmt/Activating-Azure-Rights-Management.md)
 
 -   [Configuring Custom Templates for Azure Rights Management](../../ems/AADRightsMgmt/Configuring-Custom-Templates-for-Azure-Rights-Management.md)
 

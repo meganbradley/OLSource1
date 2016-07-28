@@ -46,7 +46,7 @@ No, you always remain in control of your data and can continue to access it, eve
 However, before you decommission your Azure RMS deployment, we would like to hear from you and understand why you made this decision. If Azure RMS does not fulfil your business requirements, check with us in case new functionality is planned for the near-future or if there are alternatives. Send an email message to [AskIPTeam@Microsoft.com](mailto:askipteam@microsoft.com?subject=Planning%20to%20decommission%20Azure%20RMS) and we’ll be happy to discuss your technical and business requirements.
 
 ## Can I control which of my users can use Azure RMS to protect content?
-Yes, Azure RMS has user onboarding controls for this scenario. For more information, see the [Configuring onboarding controls for a phased deployment](../../ems/AADRightsMgmt/alice.md#BKMK_OnboardingControls) section in the [Activating Azure Rights Management](../../ems/AADRightsMgmt/alice.md) topic.
+Yes, Azure RMS has user onboarding controls for this scenario. For more information, see the [Configuring onboarding controls for a phased deployment](../../ems/AADRightsMgmt/Activating-Azure-Rights-Management.md#BKMK_OnboardingControls) section in the [Activating Azure Rights Management](../../ems/AADRightsMgmt/Activating-Azure-Rights-Management.md) topic.
 
 ## Can I prevent users from sharing protected documents with specific organizations?
 One of the biggest benefits of Azure RMS is that it supports business-to-business collaboration without you having to configure explicit trusts for each partner organization, because Azure AD takes care of the authentication for you.

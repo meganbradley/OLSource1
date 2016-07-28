@@ -641,7 +641,7 @@ You have now completed all the steps required for bring your own key in person a
 
    - If you haven’t already done so, you must now activate Rights Management so that your organization can start to use RMS. Users immediately start to use your tenant key (managed by Microsoft or managed by you).
 
-      For more information about activation, see [Activating Azure Rights Management](../../ems/AADRightsMgmt/alice.md).
+      For more information about activation, see [Activating Azure Rights Management](../../ems/AADRightsMgmt/Activating-Azure-Rights-Management.md).
 
    - If you had already activated Rights Management and then decided to manage your own tenant key, users gradually transition from the old tenant key to the new tenant key, and this staggered transition can take a few weeks to complete. Documents and files that were protected with the old tenant key remains accessible to authorized users.
 

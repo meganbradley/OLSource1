@@ -84,7 +84,7 @@ Use the following procedures to create, configure, and publish custom templates 
         4.  In the **rights management** section, click **advanced features**.
 
             > [!NOTE]
-            > If you haven’t activated Rights Management, first click **activate** and confirm your action. For more information, see [Activating Azure Rights Management](../../ems/AADRightsMgmt/alice.md).
+            > If you haven’t activated Rights Management, first click **activate** and confirm your action. For more information, see [Activating Azure Rights Management](../../ems/AADRightsMgmt/Activating-Azure-Rights-Management.md).
             > 
             > If you haven’t clicked **advanced features** before, after Rights Management is activated, follow the on-screen instructions to get a free Azure subscription that’s required to access the Azure Management Portal.
 
@@ -99,7 +99,7 @@ Use the following procedures to create, configure, and publish custom templates 
         4.  If you have not already activated Rights Management, click **ACTIVATE** and confirm your action.
 
             > [!NOTE]
-            > For more information, see [Activating Azure Rights Management](../../ems/AADRightsMgmt/alice.md).
+            > For more information, see [Activating Azure Rights Management](../../ems/AADRightsMgmt/Activating-Azure-Rights-Management.md).
 
 2.  Create a new template:
 

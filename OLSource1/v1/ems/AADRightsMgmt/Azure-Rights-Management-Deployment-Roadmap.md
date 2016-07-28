@@ -68,7 +68,7 @@ Before you begin using [!INCLUDE[aad_rightsmanagement_2](../../ems/AADRightsMgmt
 
 4. If you are currently using on-premises Rights Management services: Perform a migration to move the keys, templates, and URLs to the cloud. For more information, see [Migrating from AD RMS to Azure Rights Management](../../ems/AADRightsMgmt/Migrating-from-AD-RMS-to-Azure-Rights-Management.md).
 
-5. Activate Rights Management so that you can begin to use the service. If a phased deployment is required, configure user onboarding controls to restrict usage to specific users. For more information, see [Activating Azure Rights Management](../../ems/AADRightsMgmt/alice.md).
+5. Activate Rights Management so that you can begin to use the service. If a phased deployment is required, configure user onboarding controls to restrict usage to specific users. For more information, see [Activating Azure Rights Management](../../ems/AADRightsMgmt/Activating-Azure-Rights-Management.md).
 
 Optionally, consider configuring the following:
 

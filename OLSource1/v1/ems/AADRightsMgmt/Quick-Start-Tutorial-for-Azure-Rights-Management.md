@@ -96,7 +96,7 @@ Although not included here, for a production deployment, you probably will also 
 
 |If you want more information <br /> <br />|Additional information <br /> <br />|
 |--------------------------------|--------------------------|
-|About activating Rights Management and controlling who can protect files and email when the service is activated   → <br /> <br />|[Activating Azure Rights Management](../../ems/AADRightsMgmt/alice.md) <br /> <br />|
+|About activating Rights Management and controlling who can protect files and email when the service is activated   → <br /> <br />|[Activating Azure Rights Management](../../ems/AADRightsMgmt/Activating-Azure-Rights-Management.md) <br /> <br />|
 |About the default templates and how to create new, custom templates   → <br /> <br />|[Configuring Custom Templates for Azure Rights Management](../../ems/AADRightsMgmt/Configuring-Custom-Templates-for-Azure-Rights-Management.md) <br /> <br />|
 
 ## Step 2: Install the Rights Management sharing application
