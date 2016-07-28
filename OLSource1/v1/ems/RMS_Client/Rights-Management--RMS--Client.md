@@ -40,7 +40,7 @@ Use the following documentation for information about the Rights Management (RMS
 
 -   [RMS Protection with Windows Server File Classification Infrastructure &#40;FCI&#41;](../../ems/RMS_Client/RMS-Protection-with-Windows-Server-File-Classification-Infrastructure--FCI-.md)
 
--   [Rights Management Sharing Application for Windows](../../ems/RMS_Client/jason.md)
+-   [Rights Management Sharing Application for Windows](../../ems/RMS_Client/Rights-Management-Sharing-Application-for-Windows.md)
 
 -   [Privacy Statement for Microsoft Rights Management in RMS-Enlightened Applications](../../ems/RMS_Client/Privacy-Statement-for-Microsoft-Rights-Management-in-RMS-Enlightened-Applications.md)
 

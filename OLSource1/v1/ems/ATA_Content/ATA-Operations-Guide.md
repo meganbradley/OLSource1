@@ -27,7 +27,7 @@ This guide provides the following information:
 
 -   [Working with ATA Alerts](../../ems/ATA_Content/Working-with-ATA-Alerts.md)
 
--   [ATA Health Center](../../ems/ATA_Content/alice.md)
+-   [ATA Health Center](../../ems/ATA_Content/ATA-Health-Center.md)
 
 -   [Working with Suspicious Activities](../../ems/ATA_Content/Working-with-Suspicious-Activities.md)
 
