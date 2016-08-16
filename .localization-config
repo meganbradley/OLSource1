@@ -7,9 +7,8 @@
       "Priorities": [
         {
           "Priority": "ht",
-          "Locales": [
-            "ar-ae"
-          ]
+          "Locales": [],
+          "Type": "ht"
         }
       ]
     }
