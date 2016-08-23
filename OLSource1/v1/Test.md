@@ -6,4 +6,4 @@
 > <js code text>
 > ```
 
-[!code-csharp[Main](Program.cs#snippetrmo_BusinessLogicCode "This is source file")]
+[!code-csharp[Main](program.cs#snippetrmo_BusinessLogicCode "This is source file")]
