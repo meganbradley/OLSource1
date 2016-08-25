@@ -7,8 +7,9 @@
       "Priorities": [
         {
           "Priority": "ht",
-          "Locales": [],
-          "Type": "ht"
+          "Locales": [
+            "de-at"
+          ]
         }
       ]
     }
