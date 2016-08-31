@@ -12,9 +12,11 @@ caps.latest.revision: 6
 # test code snippet
 ## Welcome to CAPS Markdown Editor!
 
-[!CODE [howto](/CodeSnippet/SQL15/replication/howto#emb_vb_usecheckbox)]
+[!code[howto](../testCodeSnippet/codesnippet/embform.vb#emb_vb_usecheckbox)]
 
-[!CODE [adomd.netserver](/CodeSnippet/SQL15/adomd.net/adomd.netserver#filterset)]
+
+[!code[adomd.netserver](../testCodeSnippet/codesnippet/class1.cs#filterset)]
+
 
 [!INCLUDE[applies_md](../testCodeSnippet/includes/applies_md.md)]
 
