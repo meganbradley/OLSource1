@@ -12,10 +12,10 @@ caps.latest.revision: 6
 # test code snippet
 ## Welcome to CAPS Markdown Editor!
 
-[!code[howto](../testCodeSnippet/codesnippet\VisualBasic\test-code-snippet_1.vb)]
+[!code[howto](../testCodeSnippet/codesnippet/VisualBasic/test-code-snippet_1.vb)]
 
 
-[!code[adomd.netserver](../testCodeSnippet/codesnippet\CSharp\test-code-snippet_2.cs)]
+[!code[adomd.netserver](../testCodeSnippet/codesnippet/CSharp/test-code-snippet_2.cs)]
 
 
 [!INCLUDE[applies_md](../testCodeSnippet/includes/applies_md.md)]
