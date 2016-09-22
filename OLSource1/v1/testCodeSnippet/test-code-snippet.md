@@ -12,7 +12,7 @@ caps.latest.revision: 6
 # test code snippet
 ## Welcome to CAPS Markdown Editor!
 
-[!code[howto](../testCodeSnippet/codesnippet/VisualBasic/test-code-snippet_1..vb#emb_vb_usecheckbox)]
+[!code[howto](../testCodeSnippet/codesnippet/VisualBasic/test-code-snippet_1..vb)]
 
 
 [!code[adomd.netserver](../testCodeSnippet/codesnippet/CSharp/test-code-snippet_2..cs#filterset)]
