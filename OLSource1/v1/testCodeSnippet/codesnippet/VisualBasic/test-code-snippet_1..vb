@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><sampleCodes><sampleCode language="VisualBasic" source="/vb/embform.vb" state="Correct">        Try
+        Try
             ' Do something that may cause an exception.
             Throw New ApplicationException("An error has occured.")
         Catch ex As ApplicationException
@@ -17,4 +17,4 @@
                 ' Set the global variable.
                 alwaysShow = box.IsCheckBoxChecked
             End If
-        End Try</sampleCode></sampleCodes>
+        End Try
