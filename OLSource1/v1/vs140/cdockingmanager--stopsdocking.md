@@ -1,0 +1,41 @@
+---
+title: "CDockingManager::StopSDocking"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-cpp
+ms.tgt_pltfrm: na
+ms.topic: reference
+f1_keywords: 
+  - CDockingManager::StopSDocking
+  - StopSDocking
+  - CDockingManager.StopSDocking
+dev_langs: 
+  - C++
+helpviewer_keywords: 
+  - StopSDocking method
+ms.assetid: 201a9216-79d0-42c5-afc1-a007a3049d52
+caps.latest.revision: 14
+robots: noindex,nofollow
+translation.priority.ht: 
+  - de-de
+  - ja-jp
+---
+# CDockingManager::StopSDocking
+Stops smart docking.  
+  
+## Syntax  
+  
+```  
+void StopSDocking();  
+```  
+  
+## Requirements  
+ **Header:** afxdockingmanager.h  
+  
+## See Also  
+ [CDockingManager Class](../vs140/cdockingmanager-class.md)   
+ [Hierarchy Chart (MFC Feature Pack)](../vs140/hierarchy-chart.md)

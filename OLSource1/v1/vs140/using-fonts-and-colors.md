@@ -1,0 +1,75 @@
+---
+title: "Using Fonts and Colors"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - vs-ide-sdk
+ms.tgt_pltfrm: na
+ms.topic: article
+helpviewer_keywords: 
+  - fonts, controlling in IDE
+  - IDE, controlling text color and fonts
+  - Fonts and Colors property page
+  - font and color control [Visual Studio SDK]
+  - text, IDE
+ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
+caps.latest.revision: 31
+translation.priority.mt: 
+  - de-de
+  - ja-jp
+---
+# Using Fonts and Colors
+The [!INCLUDE[vsipsdk](../vs140/includes/vsipsdk_md.md)] provides support for using fonts and colors to display text.  
+  
+## In This Section  
+ [Font and Color Overview](../vs140/font-and-color-overview.md)  
+ Discusses text font and color settings in the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] integrated development environment (IDE). Also introduces the concepts of Categories and Display Items, and describes how VSPackages and the core editor use text attributes.  
+  
+ [Getting Font and Color Information for Text Colorization](../vs140/getting-font-and-color-information-for-text-colorization.md)  
+ Provides guidelines for implementing text colorization in VSPackages that manage **Categories** other than **Text Editor**.  
+  
+ [Accessing Stored Font and Color Settings](../vs140/accessing-stored-font-and-color-settings.md)  
+ Explains how current font and color settings can be stored, retrieved, and applied.  
+  
+ [Implementing Custom Categories and Display Items](../vs140/implementing-custom-categories-and-display-items.md)  
+ Describes the basic steps by which a window can create and use its own of **Display Items** and **Categories** to support text display.  
+  
+ This approach requires a VSPackage to implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider?qualifyHint=False> interface and related interfaces.  
+  
+ [How to: Access the Built-in Fonts and Color Scheme](../vs140/how-to--access-the-built-in-fonts-and-color-scheme.md)  
+ Discusses how to define and register a category by using built-in fonts and colors, and initiate the use of system-provided fonts and colors.  
+  
+## Reference  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider?qualifyHint=False>  
+ Provides an instance of the `IVsFontAndColorDefaults` or the <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup?qualifyHint=False> interface that corresponds to a particular item listed in the **Show Settings For** list in the **Fonts and Colors** page of the **Options** dialog box.  
+  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults?qualifyHint=False>  
+ Enables a VSPackage to support the IDE **Fonts and Colors** page by defining default fonts and colors for a window or UI component.  
+  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup?qualifyHint=False>  
+ Provides a mechanism by which a VSPackage that provides font and color support can specify a Display Item group - a super-category that represents the union of two or more categories.  
+  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage?qualifyHint=False>  
+ Enables a VSPackage to retrieve font and color data, or save it to the registry.  
+  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents?qualifyHint=False>  
+ Notifies VSPackages that are using font and color information about changes in font and color settings.  
+  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorUtilities?qualifyHint=False>  
+ Provides tools for working with the input and output data that is used by the methods of the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] **Font and Color** mechanism.  
+  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager?qualifyHint=False>  
+ Controls the caching of font and color settings.  
+  
+## Related Sections  
+ [Developing a Language Service](../vs140/developing-a-legacy-language-service.md)  
+ Discusses how VSPackages can use language services to customize the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] editor.  
+  
+ [Syntax Coloring in Editors](../vs140/syntax-coloring-in-custom-editors.md)  
+ Descries how the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] editor uses language services to implement syntax coloring.  
+  
+ [User Interfaces](../vs140/extending-other-parts-of-visual-studio.md)  
+ Explains how to use [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] services to create UI elements that match the rest of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)].

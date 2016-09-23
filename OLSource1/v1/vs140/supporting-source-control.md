@@ -1,0 +1,57 @@
+---
+title: "Supporting Source Control"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - vs-ide-sdk
+ms.tgt_pltfrm: na
+ms.topic: article
+helpviewer_keywords: 
+  - source control [Visual Studio SDK], supporting
+ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
+caps.latest.revision: 22
+translation.priority.mt: 
+  - de-de
+  - ja-jp
+---
+# Supporting Source Control
+[!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] supports file checkouts, check-ins, and other source control operations for your project or editor. As a source control client, [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] is designed to interact with a source control package, such as [!INCLUDE[vsvss](../vs140/includes/vsvss_md.md)], which provides archiving, versioning, and control facilities for a dynamically defined set of files.  
+  
+## In This Section  
+ [Model for Source Control Packages](../vs140/model-for-source-control-packages.md)  
+ Describes the interfaces a project type must implement to support source control.  
+  
+ [Design Decisions](../vs140/source-control-design-decisions.md)  
+ Provides questions whose answers change how you implement a project type.  
+  
+ [Configuration Details](../vs140/source-control-configuration-details.md)  
+ Describes how supporting source control changes the implementation of a project type.  
+  
+ [Additional Source Control Guidelines for Projects and Editors](../vs140/additional-source-control-guidelines-for-projects-and-editors.md)  
+ Discusses best practices for project types and editors.  
+  
+ [Runtime Details](../vs140/source-control-runtime-details.md)  
+ Describes how to register a project when a user adds it to a source-control system.  
+  
+## Reference  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2?qualifyHint=False>  
+ Indicates to the environment or source control package that a file is about to be changed in memory or saved.  
+  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2?qualifyHint=False>  
+ Allows projects and hierarchies to register themselves with source control and obtain information about source control status.  
+  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2?qualifyHint=False>  
+ Implemented in a project system to provide source control for project files and project items.  
+  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2?qualifyHint=False>  
+ Used by projects to query the environment for permission to add, remove, or rename a file or directory in a solution.  
+  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2?qualifyHint=False>  
+ Notifies clients of changes that were made to project files or directories.  
+  
+## Related Sections  
+ [Project Types](../vs140/project-types.md)  
+ Provides an overview of projects as the basic building blocks of the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] integrated development environment (IDE). Links are provided to additional topics that explain how projects control building and compiling code.

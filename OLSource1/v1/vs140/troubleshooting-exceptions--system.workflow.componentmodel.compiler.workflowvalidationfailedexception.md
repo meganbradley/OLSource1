@@ -1,0 +1,28 @@
+---
+title: "Troubleshooting Exceptions: System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-csharp
+ms.tgt_pltfrm: na
+ms.topic: article
+f1_keywords: 
+  - EHWCCWorkflowValidationFailed
+helpviewer_keywords: 
+  - System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException exception
+  - WorkflowValidationFailedException exception
+ms.assetid: bf308c82-ae6d-41de-b747-ad609062b86f
+caps.latest.revision: 9
+translation.priority.ht: 
+  - de-de
+  - ja-jp
+---
+# Troubleshooting Exceptions: System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException
+A <xref:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException?qualifyHint=False> is thrown when a workflow does not pass validation. This class cannot be inherited.  
+  
+## See Also  
+ <xref:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException?qualifyHint=False>   
+ [How to: Find Out More About an Exception with the Exception Assistant](../vs140/how-to--use-the-exception-assistant.md)

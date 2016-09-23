@@ -1,0 +1,34 @@
+---
+title: "LINQ to XML (Visual Basic)"
+ms.custom: na
+ms.date: 09/22/2016
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-visual-basic
+ms.tgt_pltfrm: na
+ms.topic: article
+dev_langs: 
+  - VB
+ms.assetid: f7386556-a6b9-40d5-92b6-e8701dc2c63e
+caps.latest.revision: 7
+---
+# LINQ to XML (Visual Basic)
+LINQ to XML provides an in-memory XML programming interface that leverages the .NET Language-Integrated Query (LINQ) Framework. LINQ to XML uses the latest .NET Framework language capabilities and is comparable to an updated, redesigned Document Object Model (DOM) XML programming interface.  
+  
+ The LINQ family of technologies provides a consistent query experience for objects (LINQ to Objects), relational databases (LINQ to SQL), and XML (LINQ to XML).  
+  
+## In this Section  
+ [Getting Started (LINQ to XML)](../vs140/getting-started--linq-to-xml-1.md)  
+ Provides introductory information about LINQ to XML, including a conceptual overview and an overview of the <xref:System.Xml.Linq?qualifyHint=True> classes.  
+  
+ [Programming Guide (LINQ to XML) (Visual Basic)](../vs140/programming-guide--linq-to-xml---visual-basic-.md)  
+ Provides conceptual and how-to information about programming with LINQ to XML.  
+  
+ [Reference (LINQ to XML)](../vs140/reference--linq-to-xml-3.md)  
+ Provides pointers to the LINQ to XML managed reference documentation.  
+  
+## See Also  
+ [Overview of LINQ to XML in Visual Basic](../vs140/overview-of-linq-to-xml-in-visual-basic.md)   
+ [XML in Visual Basic](../vs140/xml-in-visual-basic.md)   
+ [Language-Integrated Query (LINQ) (Visual Basic)](../vs140/language-integrated-query--linq---visual-basic-.md)

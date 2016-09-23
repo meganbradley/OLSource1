@@ -1,0 +1,88 @@
+---
+title: "Reflection.FSharpType Class (F#)"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-fsharp
+ms.tgt_pltfrm: na
+ms.topic: reference
+apiname: 
+  - Reflection.FSharpType
+apilocation: 
+  - FSharp.Core.dll
+apitype: Assembly
+f1_keywords: 
+  - Microsoft.FSharp.Reflection.FSharpType
+dev_langs: 
+  - FSharp
+helpviewer_keywords: 
+  - FSharpType class [F#]
+ms.assetid: e3304409-1849-4058-957a-872a376e3663
+caps.latest.revision: 21
+translation.priority.ht: 
+  - de-de
+  - ja-jp
+---
+# Reflection.FSharpType Class (F#)
+Contains operations associated with constructing and analyzing F# types such as records, unions and tuples.  
+  
+ **Namespace/Module Path:** Microsoft.FSharp.Reflection  
+  
+ **Assembly:** FSharp.Core (in FSharp.Core.dll)  
+  
+## Syntax  
+  
+```  
+[<AbstractClass>]  
+[<Sealed>]  
+type FSharpType =  
+ class  
+  static member GetExceptionFields : Type * ?BindingFlags -> PropertyInfo []  
+  static member GetFunctionElements : Type -> Type * Type  
+  static member GetRecordFields : Type * ?BindingFlags -> PropertyInfo []  
+  static member GetTupleElements : Type -> Type []  
+  static member GetUnionCases : Type * ?BindingFlags -> UnionCaseInfo []  
+  static member IsExceptionRepresentation : Type * ?BindingFlags -> bool  
+  static member IsFunction : Type -> bool  
+  static member IsModule : Type -> bool  
+  static member IsRecord : Type * ?BindingFlags -> bool  
+  static member IsTuple : Type -> bool  
+  static member IsUnion : Type * ?BindingFlags -> bool  
+  static member MakeFunctionType : Type * Type -> Type  
+  static member MakeTupleType : Type [] -> Type  
+ end  
+```  
+  
+## Remarks  
+  
+## Static Members  
+  
+|Member|Description|  
+|------------|-----------------|  
+|[GetExceptionFields](../vs140/fsharptype.getexceptionfields-method--fsharp-.md)|Reads all the fields from an F# exception declaration, in declaration order.|  
+|[GetFunctionElements](../vs140/fsharptype.getfunctionelements-method--fsharp-.md)|Gets the domain and range types from an F# function type or from the runtime type of a closure implementing an F# type.|  
+|[GetRecordFields](../vs140/fsharptype.getrecordfields-method--fsharp-.md)|Reads all the fields from a record value, in declaration order.|  
+|[GetTupleElements](../vs140/fsharptype.gettupleelements-method--fsharp-.md)|Gets the tuple elements from the representation of an F# tuple type.|  
+|[GetUnionCases](../vs140/fsharptype.getunioncases-method--fsharp-.md)|Gets the cases of a union type.|  
+|[IsExceptionRepresentation](../vs140/fsharptype.isexceptionrepresentation-method--fsharp-.md)|Returns `true` if the specified type is a representation of an F# exception declaration.|  
+|[IsFunction](../vs140/fsharptype.isfunction-method--fsharp-.md)|Returns `true` if the specified type is a representation of an F# function type or the runtime type of a closure implementing an F# function type.|  
+|[IsModule](../vs140/fsharptype.ismodule-method--fsharp-.md)|Returns `true` if the specified type is a <xref:System.Type?qualifyHint=False> value corresponding to the compiled form of an F# module.|  
+|[IsRecord](../vs140/fsharptype.isrecord-method--fsharp-.md)|Returns `true` if the specified type is a representation of an F# record type.|  
+|[IsTuple](../vs140/fsharptype.istuple-method--fsharp-.md)|Returns `true` if the specified type is a representation of an F# tuple type.|  
+|[IsUnion](../vs140/fsharptype.isunion-method--fsharp-.md)|Returns `true` if the specified type is a representation of an F# union type or the runtime type of a value of that type.|  
+|[MakeFunctionType](../vs140/fsharptype.makefunctiontype-method--fsharp-.md)|Returns a <xref:System.Type?qualifyHint=False> `object` representing the F# function type with the given domain and range.|  
+|[MakeTupleType](../vs140/fsharptype.maketupletype-method--fsharp-.md)|Returns a <xref:System.Type?qualifyHint=False> representing an F# tuple type with the given element types.|  
+  
+## Platforms  
+ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2  
+  
+## Version Information  
+ **F# Core Library Versions**  
+  
+ Supported in: 2.0, 4.0, Portable  
+  
+## See Also  
+ [Microsoft.FSharp.Reflection Namespace (F#)](../vs140/microsoft.fsharp.reflection-namespace--fsharp-.md)

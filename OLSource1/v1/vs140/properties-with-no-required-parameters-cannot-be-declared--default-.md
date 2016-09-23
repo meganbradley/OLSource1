@@ -1,0 +1,35 @@
+---
+title: "Properties with no required parameters cannot be declared &#39;Default&#39;"
+ms.custom: na
+ms.date: 09/21/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-csharp
+ms.tgt_pltfrm: na
+ms.topic: article
+f1_keywords: 
+  - vbc31048
+  - bc31048
+helpviewer_keywords: 
+  - BC31048
+ms.assetid: 27ef4bc9-532f-4097-a7fc-a645fd5387a3
+caps.latest.revision: 12
+translation.priority.ht: 
+  - de-de
+  - ja-jp
+---
+# Properties with no required parameters cannot be declared &#39;Default&#39;
+A property was specified without required parameters but with the `Default` modifier.  
+  
+ **Error ID:** BC31048  
+  
+### To correct this error  
+  
+-   Declare required parameters for default properties.  
+  
+-   Remove the `Default` modifier from the property definition.  
+  
+## See Also  
+ [NOT IN BUILD: Default Properties](assetId:///a70f2a27-8176-4858-935e-f25afdd43ab5)

@@ -1,0 +1,1 @@
+static UINT NEAR WM_FIND = RegisterWindowMessage(_T("COMMDLG_FIND"));

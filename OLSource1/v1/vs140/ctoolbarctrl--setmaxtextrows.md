@@ -1,0 +1,52 @@
+---
+title: "CToolBarCtrl::SetMaxTextRows"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-cpp
+ms.tgt_pltfrm: na
+ms.topic: reference
+f1_keywords: 
+  - CToolBarCtrl::SetMaxTextRows
+  - SetMaxTextRows
+  - CToolBarCtrl.SetMaxTextRows
+dev_langs: 
+  - C++
+helpviewer_keywords: 
+  - SetMaxTextRows method
+ms.assetid: 5c70b51f-95f5-4fe6-b7d0-cfb648283ac4
+caps.latest.revision: 14
+robots: noindex,nofollow
+translation.priority.ht: 
+  - de-de
+  - ja-jp
+---
+# CToolBarCtrl::SetMaxTextRows
+Sets the maximum number of text rows displayed on a toolbar button.  
+  
+## Syntax  
+  
+```  
+  
+      BOOL SetMaxTextRows(  
+   int iMaxRows   
+);  
+```  
+  
+#### Parameters  
+ *iMaxRows*  
+ Maximum number of rows to be set.  
+  
+## Return Value  
+ Nonzero if successful; otherwise zero.  
+  
+## Requirements  
+ **Header:** afxcmn.h  
+  
+## See Also  
+ [CToolBarCtrl Class](../vs140/ctoolbarctrl-class.md)   
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [CToolBarCtrl::GetMaxTextRows](../vs140/ctoolbarctrl--getmaxtextrows.md)

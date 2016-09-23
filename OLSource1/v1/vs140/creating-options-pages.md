@@ -1,0 +1,90 @@
+---
+title: "Creating Options Pages"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - vs-ide-sdk
+ms.tgt_pltfrm: na
+ms.topic: article
+helpviewer_keywords: 
+  - managed package framework, creating Tools Options pages
+  - Tools Options pages [Visual Studio SDK], creating using managed package framework
+ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
+caps.latest.revision: 33
+translation.priority.mt: 
+  - de-de
+  - ja-jp
+---
+# Creating Options Pages
+In the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] managed package framework, classes derived from <xref:Microsoft.VisualStudio.Shell.DialogPage?qualifyHint=False> extend the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] IDE by adding **Options** pages under the **Tools** menu.  
+  
+ An object implementing a given **Tools Option** page is associated with specific VSPackages by the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute?qualifyHint=False> object.  
+  
+ Because the environment instantiates the object implementing a particular **Tools Options** page when that particular page is displayed by the IDE:  
+  
+-   A **Tools Option** page should be implemented on its own object, and not on the object implementing a VSPackage.  
+  
+-   An object cannot implement multiple **Tools Options** pages.  
+  
+## Registering as a Tools Options Page Provider  
+ A VSPackage supporting user configuration through **Tools Options** pages indicates the objects providing these **Tools Options** pages by applying instances of <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute?qualifyHint=False> applied to the <xref:Microsoft.VisualStudio.Shell.Package?qualifyHint=False> implementation.  
+  
+ There must be one instance of <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute?qualifyHint=False> for every <xref:Microsoft.VisualStudio.Shell.DialogPage?qualifyHint=False>-derived type that implements a **Tools Options** page.  
+  
+ Each instance of <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute?qualifyHint=False> uses the type that implements the **Tools Options** page, strings that contain the category and sub-category used to identify a **Tools Options** page, and resource information to register the type as providing a **Tools Options** page.  
+  
+## Persisting Tools Options Page State  
+ If a **Tools Options** page implementation is registered with automation support enabled, the IDE persists the page's state along with all other **Tools Options** pages.  
+  
+ A VSPackage can manage its own persistence by using <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute?qualifyHint=False>. Only one or the other method of persistence should be used.  
+  
+## Implementing DialogPage Class  
+ An object providing a VSPackage's implementation of a <xref:Microsoft.VisualStudio.Shell.DialogPage?qualifyHint=False>-derived type can take advantage of the following inherited features:  
+  
+-   A default user interface window.  
+  
+-   A default persistence mechanism available either if <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute?qualifyHint=False> is applied to the class, or if the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles?qualifyHint=False> property is set to `true` for the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute?qualifyHint=False> that is applied to the class.  
+  
+-   Automation support.  
+  
+ The minimum requirement for an object implementing a **Tools Options** page using <xref:Microsoft.VisualStudio.Shell.DialogPage?qualifyHint=False> is the addition of public properties.  
+  
+ If the class properly registered as a **Tools Options** page provider, then its public properties are available on the **Options** section of the **Tools** menu in the form of a property grid.  
+  
+ All these default features can be overridden. For example, to create a more sophisticated user interface requires only overriding the default implementation of <xref:Microsoft.VisualStudio.Shell.DialogPage.Window?qualifyHint=False>.  
+  
+## Example  
+ What follows is a simple "hello world" implementation of an options page. Adding the following code to a default project created by the Visual Studio Package Template with the **Menu Command** option selected will adequately demonstrate option page functionality.  
+  
+### Description  
+ The following class defines a minimal "hello world" options page. When opened, the user can set the public `HelloWorld` property in a property grid.  
+  
+### Code  
+ [!code[UI_UserSettings_ToolsOptionPages#11](../vs140/codesnippet/CSharp/creating-options-pages_1.cs)]
+[!code[UI_UserSettings_ToolsOptionPages#11](../vs140/codesnippet/VisualBasic/creating-options-pages_1.vb)]
+  
+  
+### Description  
+ Applying the following attribute to the package class makes the options page available when the package loads. The numbers are arbitrary resource IDs for the category and the page, and the Boolean value at the end specifies whether the page supports automation.  
+  
+### Code  
+ [!code[UI_UserSettings_ToolsOptionPages#07](../vs140/codesnippet/CSharp/creating-options-pages_2.cs)]
+[!code[UI_UserSettings_ToolsOptionPages#07](../vs140/codesnippet/VisualBasic/creating-options-pages_2.vb)]
+  
+  
+### Description  
+ The following event handler displays a result depending on the value of the property set in the options page. It uses the <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage?qualifyHint=False> method with the result explicitly cast into the custom option page type to access the properties exposed by the page.  
+  
+ In the case of a project generated by the package template, call this function from the `MenuItemCallback` function to attach it to the default command added to the **Tools** menu.  
+  
+### Code  
+ [!code[UI_UserSettings_ToolsOptionPages#08](../vs140/codesnippet/CSharp/creating-options-pages_3.cs)]
+[!code[UI_UserSettings_ToolsOptionPages#08](../vs140/codesnippet/VisualBasic/creating-options-pages_3.vb)]
+  
+  
+## See Also  
+ [User Configuration and Settings](../vs140/extending-user-settings-and-options.md)   
+ [Automation Support for Tools Options Pages](../vs140/automation-support-for-options-pages.md)

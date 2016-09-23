@@ -1,0 +1,84 @@
+---
+title: "Task Class - Internal Members"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - vs-ide-sdk
+ms.tgt_pltfrm: na
+ms.topic: article
+helpviewer_keywords: 
+  - debug engines, Task class [.NET Framework]
+  - Task class [.NET Framework debug engines]
+ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
+caps.latest.revision: 18
+translation.priority.mt: 
+  - de-de
+  - ja-jp
+---
+# Task Class - Internal Members
+This topic describes the internal members of the <xref:System.Threading.Tasks.Task?qualifyHint=True> class that help you implement a custom debugger. For general information about this class, see the <xref:System.Threading.Tasks.Task?qualifyHint=False> reference topic.  
+  
+ **Namespace:** <xref:System.Threading.Tasks?qualifyHint=True>  
+  
+ **Assembly:** mscorlib (in mscorlib.dll)  
+  
+ Because you cannot access these internal members from the .NET Framework, the following syntax is provided in Common Intermediate Language (CIL).  
+  
+## Syntax  
+  
+```  
+.class public auto ansi System.Threading.Tasks.Task  
+       extends System.Object  
+       implements System.Threading.IThreadPoolWorkItem,  
+                  System.IAsyncResult,  
+                  System.IDisposable,  
+                  System.Threading.ICancelableOperation  
+```  
+  
+## Members  
+  
+### Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[SetNotificationForWaitCompletion Method](../vs140/setnotificationforwaitcompletion-method.md)|Sets or clears the TASK_STATE_WAIT_COMPLETION_NOTIFICATION state bit.|  
+|[NotifyDebuggerOfWaitCompletion Method](../vs140/notifydebuggerofwaitcompletion-method.md)|Placeholder method used as a breakpoint target by the debugger.|  
+  
+### Fields  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[m_action](../vs140/m_action-field.md)|The delegate that represents the code to execute in the <xref:System.Threading.Tasks.Task?qualifyHint=False> object.|  
+|[m_contingentProperties](../vs140/m_contingentproperties-field.md)|Stores additional properties of the <xref:System.Threading.Tasks.Task?qualifyHint=False> object.|  
+|[m_parent](../vs140/m_parent-field.md)|The backing field for the <xref:System.Threading.Tasks.Task?qualifyHint=True> parent property.|  
+|[m_stateFlags](../vs140/m_stateflags-field.md)|Stores information about the current state of the <xref:System.Threading.Tasks.Task?qualifyHint=False> object.|  
+|[m_stateObject](../vs140/m_stateobject-field.md)|An object that represents data that will be used by the action.|  
+|[m_taskId](../vs140/m_taskid-field.md)|The backing field for the <xref:System.Threading.Tasks.Task.Id?qualifyHint=True> property.|  
+|[s_taskIdCounter](../vs140/s_taskidcounter-field.md)|The next available identifier for a <xref:System.Threading.Tasks.Task?qualifyHint=False> object.|  
+|[TASK_STATE_CANCELED](../vs140/task_state_canceled-field.md)|Indicates that the task was canceled before it reached the running state, or that the task acknowledged its cancellation and completed without exception.|  
+|[TASK_STATE_EXECUTED](../vs140/task_state_executed-field.md)|Indicates that the task is running.|  
+|[TASK_STATE_FAULTED](../vs140/task_state_faulted-field.md)|Indicates that the task completed because of an unhandled exception.|  
+|[TASK_STATE_RAN_TO_COMPLETION](../vs140/task_state_ran_to_completion-field.md)|Indicates that the task completed execution successfully.|  
+|[TASK_STATE_WAITING_ON_CHILDREN](../vs140/task_state_waiting_on_children-field.md)|Indicates that the task has finished executing its delegate and is implicitly waiting for attached child tasks to finish.|  
+  
+## Remarks  
+ The following internal methods are useful to a debugger engine because they mark the entrance to <xref:System.Threading.Tasks.Task?qualifyHint=False> code execution:  
+  
+-   `Execute`  
+  
+-   `ExecuteEntry`  
+  
+-   `ExecuteWithThreadLocal`  
+  
+-   `Finish`  
+  
+-   `InnerInvoke`  
+  
+-   `InternalWait`  
+  
+## See Also  
+ <xref:System.Threading.Tasks.Task?qualifyHint=True>   
+ [Debugger Dependencies in Parallel Extensions for the .NET Framework](../vs140/parallel-extension-internals-for-the-.net-framework.md)

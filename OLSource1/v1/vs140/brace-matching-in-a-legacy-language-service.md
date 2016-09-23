@@ -1,0 +1,140 @@
+---
+title: "Brace Matching in a Legacy Language Service"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - vs-ide-sdk
+ms.tgt_pltfrm: na
+ms.topic: article
+helpviewer_keywords: 
+  - brace matching
+  - language services [managed package framework], brace matching
+ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
+caps.latest.revision: 31
+translation.priority.mt: 
+  - de-de
+  - ja-jp
+---
+# Brace Matching in a Legacy Language Service
+Brace matching helps the developer track language elements that need to occur together, such as parentheses and curly braces. When a developer enters a closing brace, the opening brace is highlighted.  
+  
+ You can match two or three co-occurring elements, called pairs and triples. Triples are sets of three co-occurring elements. For example, in C#, the `foreach` statement forms a triple: "`foreach()`", "`{`", and "`}`". All three elements are highlighted when the closing brace is typed.  
+  
+ Legacy language services are implemented as part of a VSPackage, but the newer way to implement language service features is to use MEF extensions. To find out more about the new way to implement brace matching, see [Walkthrough: Displaying Matching Braces](../vs140/walkthrough--displaying-matching-braces.md).  
+  
+> [!NOTE]
+>  We recommend that you begin to use the new editor API as soon as possible. This will improve the performance of your language service and let you take advantage of new editor features.  
+  
+ The <xref:Microsoft.VisualStudio.Package.AuthoringSink?qualifyHint=False> class supports both pairs and triples with the <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair?qualifyHint=False> and <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple?qualifyHint=False> methods.  
+  
+## Implementation  
+ The language service needs to identify all matched elements in the language and then locate all matching pairs. This is typically accomplished by implementing <xref:Microsoft.VisualStudio.Package.IScanner?qualifyHint=False> to detect a matched language and then using the <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource?qualifyHint=False> method to match the elements.  
+  
+ The <xref:Microsoft.VisualStudio.Package.Source.OnCommand?qualifyHint=False> method calls the scanner to tokenize the line and return the token just before the caret. The scanner indicates that a language element pair has been found by setting a token trigger value of <xref:Microsoft.VisualStudio.Package.TokenTriggers.MatchBraces?qualifyHint=False> on the current token. The <xref:Microsoft.VisualStudio.Package.Source.OnCommand?qualifyHint=False> method calls the <xref:Microsoft.VisualStudio.Package.Source.MatchBraces?qualifyHint=False> method that in turn calls the <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse?qualifyHint=False> method with the parse reason value of <xref:Microsoft.VisualStudio.Package.ParseReason.MatchBraces?qualifyHint=False> to locate the matching language element. When the matching language element is found, both elements are highlighted.  
+  
+ For a complete description of how typing a brace triggers the brace highlighting, see the "Example Parse Operation" section in the topic [The Language Service Parser and Scanner (Managed Package Framework)](../vs140/legacy-language-service-parser-and-scanner.md).  
+  
+## Enabling Support for Brace Matching  
+ The <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute?qualifyHint=False> attribute can set the `MatchBraces`, `MatchBracesAtCaret`, and `ShowMatchingBrace` named parameters that set the corresponding properties of the <xref:Microsoft.VisualStudio.Package.LanguagePreferences?qualifyHint=False> class. Language preference properties can also be set by the user.  
+  
+|Registry Entry|Property|Description|  
+|--------------------|--------------|-----------------|  
+|`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces?qualifyHint=False>|Enables brace matching|  
+|`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret?qualifyHint=False>|Enables brace matching as the caret moves.|  
+|`ShowMatchingBrace`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace?qualifyHint=False>|Highlights the matching brace.|  
+  
+## Matching Conditional Statements  
+ You can match conditional statements, such as `if`, `else if`, and `else`, or `#if`, `#elif`, `#else`, `#endif`, in the same way as matching delimiters. You can subclass the <xref:Microsoft.VisualStudio.Package.AuthoringSink?qualifyHint=False> class and provide a method that can add text spans as well as delimiters to the internal array of matching elements.  
+  
+## Setting the Trigger  
+ The following example shows how to detect matching parentheses, curly braces and square braces, and setting the trigger for it in the scanner. The <xref:Microsoft.VisualStudio.Package.Source.OnCommand?qualifyHint=False> method on the <xref:Microsoft.VisualStudio.Package.Source?qualifyHint=False> class detects the trigger and calls the parser to find the matching pair (see the "Finding the Match" section in this topic). This example is for illustrative purposes only. It assumes that your scanner contains a method `GetNextToken` that identifies and returns tokens from a line of text.  
+  
+```c#  
+using Microsoft.VisualStudio.Package;  
+using Microsoft.VisualStudio.TextManager.Interop;  
+  
+namespace TestLanguagePackage  
+{  
+    public class TestScanner : IScanner  
+    {  
+        private const string braces = "()[]{}";  
+        private Lexer lex;  
+  
+        public bool ScanTokenAndProvideInfoAboutIt(TokenInfo tokenInfo,  
+                                                   ref int state)  
+        {  
+            bool foundToken = false;  
+            string token = lex.GetNextToken();  
+            if (token != null)  
+            {  
+                foundToken = true;  
+                char firstChar = token[0];  
+                if (Char.IsPunctuation(firstChar) && token.Length > 0)  
+                {  
+                    if (braces.IndexOf(firstChar) != -1)  
+                    {  
+                        tokenInfo.Trigger = TokenTriggers.MatchBraces;  
+                    }  
+                }  
+            }  
+            return foundToken;  
+        }  
+```  
+  
+## Matching the Braces  
+ Here is a simplified example for matching the language elements { }, ( ), and [ ], and adding their spans to the <xref:Microsoft.VisualStudio.Package.AuthoringSink?qualifyHint=False> object. This approach is not a recommended approach to parsing source code; it is for illustrative purposes only.  
+  
+```c#  
+using Microsoft.VisualStudio.Package;  
+using Microsoft.VisualStudio.TextManager.Interop;  
+  
+namespace TestLanguagePackage  
+{  
+    public class Parser  
+    {  
+         private IList<TextSpan[]> m_braces;  
+         public IList<TextSpan[]> Braces  
+         {  
+             get { return m_braces; }  
+         }  
+         private void AddMatchingBraces(TextSpan braceSpan1, TextSpan braceSpan2)  
+         {  
+             if IsMatch(braceSpan1, braceSpan2)  
+                 m_braces.Add(new TextSpan[] { braceSpan1, braceSpan2 });  
+         }  
+  
+         private bool IsMatch(TextSpan braceSpan1, TextSpan braceSpan2)  
+         {  
+             //definition for matching here  
+          }  
+    }  
+  
+    public class TestLanguageService : LanguageService  
+    {  
+         Parser parser = new Parser();  
+         Source source = (Source) this.GetSource(req.FileName);  
+  
+         private AuthoringScope ParseSource(ParseRequest req)  
+         {  
+             if (req.Sink.BraceMatching)  
+             {  
+                 if (req.Reason==ParseReason.MatchBraces)  
+                 {  
+                     foreach (TextSpan[] brace in parser.Braces)  
+                     {  
+                         req.Sink.MatchPair(brace[0], brace[1], 1);  
+                     }  
+                 }  
+             }  
+             return new TestAuthoringScope();  
+         }  
+    }  
+}  
+```  
+  
+## See Also  
+ [Language Service Features (Managed Package Framework)](../vs140/legacy-language-service-features1.md)   
+ [The Language Service Parsers (Managed Package Framework)](../vs140/legacy-language-service-parser-and-scanner.md)

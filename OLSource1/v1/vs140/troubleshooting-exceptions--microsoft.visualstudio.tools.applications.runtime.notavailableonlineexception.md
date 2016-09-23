@@ -1,0 +1,26 @@
+---
+title: "Troubleshooting Exceptions: Microsoft.VisualStudio.Tools.Applications.Runtime.NotAvailableOnlineException"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-csharp
+ms.tgt_pltfrm: na
+ms.topic: article
+helpviewer_keywords: 
+  - Microsoft.VisualStudio.Tools.Applications.Runtime.NotAvailableOnlineException exception
+  - NotAvailableOnlineException exception
+ms.assetid: b936c265-6d17-4058-8c81-15b6b5f4b1f0
+caps.latest.revision: 8
+translation.priority.ht: 
+  - de-de
+  - ja-jp
+---
+# Troubleshooting Exceptions: Microsoft.VisualStudio.Tools.Applications.Runtime.NotAvailableOnlineException
+The exception that is thrown when an attempt is made to call an assembly, but the assembly is not available in the cache.  
+  
+## See Also  
+ <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.NotAvailableOnlineException?qualifyHint=False>   
+ [How to: Find Out More About an Exception with the Exception Assistant](../vs140/how-to--use-the-exception-assistant.md)

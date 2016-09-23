@@ -1,0 +1,51 @@
+---
+title: "Accessing Text Layers by Using the Legacy API"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - vs-ide-sdk
+ms.tgt_pltfrm: na
+ms.topic: article
+helpviewer_keywords: 
+  - editors [Visual Studio SDK], legacy - text layers
+ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
+caps.latest.revision: 15
+translation.priority.mt: 
+  - de-de
+  - ja-jp
+---
+# Accessing Text Layers by Using the Legacy API
+A text layer typically encapsulates some aspect of text layout. For example, a "function-at-a-time" layer hides text before and after a function containing the caret (text insertion point).  
+  
+ A text layer resides between a buffer and a view, and it modifies the way the view sees the buffer's contents.  
+  
+## Text Layer Information  
+ The following list describes how text layers work in [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)]:  
+  
+-   The text in a text layer can be adorned with syntax coloring and markers.  
+  
+-   You currently cannot implement your own layers.  
+  
+-   A layer exposes <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer?qualifyHint=False>, which is derived from <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines?qualifyHint=False>. The text buffer itself is also implemented as a layer, which enables a view to deal polymorphically with underlying layers.  
+  
+-   Any number of layers may lie between the view and the buffer. Each layer deals only with the layer below it, and the view deals largely with the top-most layer. (The view does have some information about the buffer.)  
+  
+-   A layer can affect only layers that are below it. It cannot affect the layers above it beyond originating standard events.  
+  
+-   In the editor, hidden text, synthetic text, and word wrap are implemented as layers. You can implement hidden and synthetic text without interacting directly with the layers. For more information, see [Outlining (Managed Package Framework)](../vs140/outlining-in-a-legacy-language-service.md) and <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession?qualifyHint=False>.  
+  
+-   Each text layer has its own local coordinate system that is exposed through the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer?qualifyHint=False> interface. The line-wrap layer, for example, might contain two lines while the underlying text buffer might contain only one line.  
+  
+-   The view communicates to layers through the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView?qualifyHint=False> interface. Use this interface to reconcile view coordinates with buffer coordinates.  
+  
+-   Any layer such as the synthetic text layer that originates text must provide a local implementation of <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint?qualifyHint=False>.  
+  
+-   Besides <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer?qualifyHint=False>, a text layer must implement <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer?qualifyHint=False> and fire the events in the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents?qualifyHint=False> interface.  
+  
+## See Also  
+ [Syntax Coloring in Editors](../vs140/syntax-coloring-in-custom-editors.md)   
+ [Text Markers in the Editor](../vs140/using-text-markers-with-the-legacy-api.md)   
+ [Editor Controls and Menus](../vs140/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)

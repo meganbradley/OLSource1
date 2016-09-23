@@ -1,0 +1,55 @@
+---
+title: "CList::CList"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-cpp
+ms.tgt_pltfrm: na
+ms.topic: reference
+f1_keywords: 
+  - CList::CList
+  - CList.CList
+dev_langs: 
+  - C++
+helpviewer_keywords: 
+  - CList class, constructor
+  - CList class, construction/destruction
+ms.assetid: ffc0df4c-5bb6-4499-a2d3-bab139d7aeff
+caps.latest.revision: 15
+robots: noindex,nofollow
+translation.priority.ht: 
+  - de-de
+  - ja-jp
+---
+# CList::CList
+Constructs an empty ordered list.  
+  
+## Syntax  
+  
+```  
+  
+      CList(  
+   INT_PTR nBlockSize = 10   
+);  
+```  
+  
+#### Parameters  
+ `nBlockSize`  
+ The memory-allocation granularity for extending the list.  
+  
+## Remarks  
+ As the list grows, memory is allocated in units of `nBlockSize` entries.  
+  
+## Example  
+ [!code[NVC_MFCCollections#38](../vs140/codesnippet/CPP/clist--clist_1.cpp)]
+  
+  
+## Requirements  
+ **Header:** afxtempl.h  
+  
+## See Also  
+ [CList Class](../vs140/clist-class.md)   
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)

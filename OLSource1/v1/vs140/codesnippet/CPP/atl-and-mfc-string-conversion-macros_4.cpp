@@ -1,0 +1,1 @@
+   LPCTSTR szr = CA2T(szReplaceFile);   

@@ -1,0 +1,105 @@
+---
+title: "CA1010: Collections should implement generic interface"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - vs-devops-test
+ms.tgt_pltfrm: na
+ms.topic: article
+f1_keywords: 
+  - CA1010
+  - CollectionsShouldImplementGenericInterface
+helpviewer_keywords: 
+  - CA1010
+  - CollectionsShouldImplementGenericInterface
+ms.assetid: c7d7126f-fa70-40be-8f93-3243e1760dc5
+caps.latest.revision: 28
+translation.priority.ht: 
+  - de-de
+  - ja-jp
+---
+# CA1010: Collections should implement generic interface
+|||  
+|-|-|  
+|TypeName|CollectionsShouldImplementGenericInterface|  
+|CheckId|CA1010|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non-breaking|  
+  
+## Cause  
+ An externally visible type implements the <xref:System.Collections.IEnumerable?qualifyHint=True> interface but does not implement the <xref:System.Collections.Generic.IEnumerable`1?qualifyHint=True> interface, and the containing assembly targets [!INCLUDE[dnprdnlong](../vs140/includes/dnprdnlong_md.md)]. This rule ignores types that implement <xref:System.Collections.IDictionary?qualifyHint=True>.  
+  
+## Rule Description  
+ To broaden the usability of a collection, implement one of the generic collection interfaces. Then the collection can be used to populate generic collection types such as the following:  
+  
+-   <xref:System.Collections.Generic.List`1?qualifyHint=True>  
+  
+-   <xref:System.Collections.Generic.Queue`1?qualifyHint=True>  
+  
+-   <xref:System.Collections.Generic.Stack`1?qualifyHint=True>  
+  
+## How to Fix Violations  
+ To fix a violation of this rule, implement one of the following generic collection interfaces:  
+  
+-   <xref:System.Collections.Generic.IEnumerable`1?qualifyHint=True>  
+  
+-   <xref:System.Collections.Generic.ICollection`1?qualifyHint=True>  
+  
+-   <xref:System.Collections.Generic.IList`1?qualifyHint=True>  
+  
+## When to Suppress Warnings  
+ It is safe to suppress a warning from this rule; however, the collection will have a more limited use.  
+  
+## Example Violation  
+  
+### Description  
+ The following example shows a class (reference type) that derives from the non-generic `CollectionBase` class, which violates this rule.  
+  
+### Code  
+ [!code[FxCop.Design.CollectionsGenericViolation#1](../vs140/codesnippet/CSharp/ca1010--collections-should-implement-generic-interface_1.cs)]
+  
+  
+### Comments  
+ To fix a violation of this violation, you should either implement the generic interfaces or change the base class to a type that already implements both the generic and non-generic interfaces, such as the `Collection<T>` class.  
+  
+## Fix by Base Class Change  
+  
+### Description  
+ The following example fixes the violation by changing the base class of the collection from the non-generic `CollectionBase` class to the generic `Collection<T>` (`Collection(Of T)` in [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)]) class.  
+  
+### Code  
+ [!code[FxCop.Design.CollectionsGenericBase#1](../vs140/codesnippet/CSharp/ca1010--collections-should-implement-generic-interface_2.cs)]
+  
+  
+### Comments  
+ Changing the base class of an already released class is considered a breaking change to existing consumers.  
+  
+## Fix by Interface Implementation  
+  
+### Description  
+ The following example fixes the violation by implementing these generic interfaces: `IEnumerable<T>`, `ICollection<T>`, and `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, and `IList(Of T)` in [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)]).  
+  
+### Code  
+ [!code[FxCop.Design.CollectionsGenericInterface#1](../vs140/codesnippet/CSharp/ca1010--collections-should-implement-generic-interface_3.cs)]
+  
+  
+## Related Rules  
+ [Avoid excessive parameters on generic types](../vs140/ca1005--avoid-excessive-parameters-on-generic-types.md)  
+  
+ [Do not declare static members on generic types](../vs140/ca1000--do-not-declare-static-members-on-generic-types.md)  
+  
+ [Do not expose generic lists](../vs140/ca1002--do-not-expose-generic-lists.md)  
+  
+ [Do not nest generic types in member signatures](../vs140/ca1006--do-not-nest-generic-types-in-member-signatures.md)  
+  
+ [Generic methods should provide type parameter](../vs140/ca1004--generic-methods-should-provide-type-parameter.md)  
+  
+ [Use generic event handler instances](../vs140/ca1003--use-generic-event-handler-instances.md)  
+  
+ [Use generics where appropriate](../vs140/ca1007--use-generics-where-appropriate.md)  
+  
+## See Also  
+ [Generics (C# Programmers Reference)](../vs140/generics--csharp-programming-guide-.md)

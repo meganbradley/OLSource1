@@ -1,0 +1,44 @@
+---
+title: "CMFCRibbonSeparator::IsSeparator"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-cpp
+ms.tgt_pltfrm: na
+ms.topic: reference
+f1_keywords: 
+  - IsSeparator
+  - CMFCRibbonSeparator::IsSeparator
+  - CMFCRibbonSeparator.IsSeparator
+dev_langs: 
+  - C++
+helpviewer_keywords: 
+  - IsSeparator method
+ms.assetid: 3d7665d5-885e-4973-b324-813f49e13b46
+caps.latest.revision: 12
+robots: noindex,nofollow
+translation.priority.ht: 
+  - de-de
+  - ja-jp
+---
+# CMFCRibbonSeparator::IsSeparator
+Indicates whether this is a separator.  
+  
+## Syntax  
+  
+```  
+virtual BOOL IsSeparator() const;  
+```  
+  
+## Return Value  
+ Always `TRUE` for this class.  
+  
+## Requirements  
+ **Header:** afxbaseribbonelement.h  
+  
+## See Also  
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [CMFCRibbonSeparator Class](../vs140/cmfcribbonseparator-class.md)

@@ -1,0 +1,42 @@
+---
+title: "Project &#39;&lt;projectname1&gt;&#39; makes an indirect reference to project &#39;&lt;projectname2&gt;&#39;, which contains &#39;&lt;typename&gt;&#39;"
+ms.custom: na
+ms.date: 09/22/2016
+ms.prod: visual-studio-dev14
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - devlang-csharp
+ms.tgt_pltfrm: na
+ms.topic: article
+f1_keywords: 
+  - vbc31532
+  - bc31532
+helpviewer_keywords: 
+  - BC31532
+ms.assetid: 9ef6574e-b049-4a2e-9b12-fea2dfe06cd1
+caps.latest.revision: 10
+translation.priority.ht: 
+  - de-de
+  - ja-jp
+---
+# Project &#39;&lt;projectname1&gt;&#39; makes an indirect reference to project &#39;&lt;projectname2&gt;&#39;, which contains &#39;&lt;typename&gt;&#39;
+Project '<projectname1\>' makes an indirect reference to project '<projectname2\>', which contains '<typename\>'. Add a project reference to '<projectname2\>' to your project.  
+  
+ Code in your project accesses a type defined in another project, but your project does not have a direct reference to the defining project.  
+  
+ The type could be a class, structure, interface, module, or enumeration.  
+  
+ The project that defines the cited type produces an assembly containing the type. If your project does not directly reference the defining project, then the compiler cannot guarantee that the assembly containing the type is in the solution and available for access.  
+  
+ **Error ID:** BC31532  
+  
+### To correct this error  
+  
+-   Determine which project defines the cited type, and add a project reference to it.  
+  
+## See Also  
+ [NIB: Referencing Namespaces and Components](assetId:///568fa759-796b-44cd-bf5e-1cf8de6e38fd)   
+ [Project References](../vs140/managing-references-in-a-project.md)   
+ [NIB: Managing References](assetId:///910912ce-0dc9-4569-9274-32c44a20cb2c)   
+ [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](assetId:///3bd75d61-f00c-47c0-86a2-dd1f20e231c9)
