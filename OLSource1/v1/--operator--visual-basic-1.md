@@ -65,4 +65,4 @@ Returns the difference between two numeric expressions or the negative value of 
   
  In the second usage shown in the syntax shown previously, the `–` operator is the *unary* negation operator for the negative value of an expression. In this sense, the negation consists of reversing the sign of `expression1` so that the result is positive if `expression1` is negative.  
 
- [!code[VbVbalrOperators#10](../--operator--visual-basic-1_1.vb)]
+ [!code[VbVbalrOperators#10](--operator--visual-basic-1_1.vb)]
