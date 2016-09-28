@@ -1,0 +1,30 @@
+---
+title: "Resource Compiler Error RC2019"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "RC2019"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "RC2019"
+ms.assetid: b1b02d2c-c3ca-4322-a775-f4d26e32088e
+caps.latest.revision: 10
+author: ""
+ms.author: ""
+manager: ""
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Resource Compiler Error RC2019
+expected preprocessor directive, found 'character'  
+  
+ The given character followed a number sign (**#**), but it was not the first letter of a preprocessor directive.

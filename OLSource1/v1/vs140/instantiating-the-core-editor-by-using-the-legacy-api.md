@@ -1,0 +1,73 @@
+---
+title: "Instantiating the Core Editor By Using the Legacy API"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "editors [Visual Studio SDK], legacy - instantiating editor"
+ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
+caps.latest.revision: 33
+author: ""
+ms.author: "gregvanl"
+manager: ""
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# Instantiating the Core Editor By Using the Legacy API
+The editor is responsible for text editing functions such as insertion, deletion, copy, and paste. It combines these functions with those provided by language services, such as text coloring, indentation, and IntelliSense statement completion.  
+  
+ You can instantiate an instance of the core editor in one of three ways:  
+  
+-   Explicitly create an instance of the core editor in a window.  
+  
+-   Provide an editor factory which returns an instance of the core editor  
+  
+-   Open a file from the project hierarchy.  
+  
+ The following sections discuss how to use the legacy API to instantiate the editor.  
+  
+## Explicitly Opening a Core Editor Instance  
+ When explicitly obtaining an instance of the core editor:  
+  
+-   Obtain a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer*> to hold the document data object being edited.  
+  
+-   Create a line oriented representation of the document data object by creating an <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines*> interface from the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer*> interface.  
+  
+-   Set <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines*> as the document data object for an instance of the default implementation of the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow*> interface, using the [SetBuffer](assetId:///M:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer(Microsoft.VisualStudio.TextManager.Interop.IVsTextLines)?qualifyHint=False&autoUpgrade=True) method.  
+  
+     Host the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow*> instance in a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame*> interface by using the [CreateToolWindow](assetId:///M:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow(System.UInt32,System.UInt32,System.Object,System.Guid@,System.Guid@,System.Guid@,Microsoft.VisualStudio.OLE.Interop.IServiceProvider,System.String,System.Int32[],Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame@)?qualifyHint=False&autoUpgrade=True) method.  
+  
+ At this point, displaying the <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame*> interface provides a window that contains an instance of the core editor.  
+  
+ However, this is not a very useful instance, because it does not have shortcut keys, or access to advanced features. To obtain access to shortcut keys and advanced features:  
+  
+-   Use the [SetLanguageServiceID](assetId:///M:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID(System.Guid@)?qualifyHint=False&autoUpgrade=True) method to associate a language service and the document data object that the editor uses.  
+  
+-   Either create your own shortcut keys, or use the system default by setting the <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame*> objects display properties. To do this, call the [SetGuidProperty](assetId:///M:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty(System.Int32,System.Guid@)?qualifyHint=False&autoUpgrade=True) method with the <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_InheritKeyBindings*> property.  
+  
+     To obtain and use non-standard shortcut keys, generate them using the .vsct file. For more information, see [XML-Based Command Table Configuration (.vsct) Files](../vs140/visual-studio-command-table--.vsct--files.md).  
+  
+## How to Use an Editor factory to Obtain the Core Editor  
+ When implementing a core editor with an editor factory using the [CreateEditorInstance](assetId:///M:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance(System.UInt32,System.String,System.String,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32,System.IntPtr,System.IntPtr@,System.IntPtr@,System.String@,System.Guid@,System.Int32@)?qualifyHint=False&autoUpgrade=True) method, follow all the steps outlined in the previous section to explicitly host an <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow*> using an <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer*> document data object, in an <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame*> object.  
+  
+ To display the text, obtain a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView*> interface from the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow*> object and call the assetId:///M:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance(System.UInt32,System.String,System.String,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32,System.IntPtr,System.IntPtr@,System.IntPtr@,System.String@,System.Guid@,System.Int32@)?qualifyHint=False&autoUpgrade=True method.  
+  
+ To provide a language service to the editor, call the assetId:///M:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID(System.Guid@)?qualifyHint=False&autoUpgrade=True method within the assetId:///M:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance(System.UInt32,System.String,System.String,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32,System.IntPtr,System.IntPtr@,System.IntPtr@,System.String@,System.Guid@,System.Int32@)?qualifyHint=False&autoUpgrade=True method.  
+  
+ To obtain default shortcut keys, unlike the previous section, you use the command context returned by the assetId:///M:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance(System.UInt32,System.String,System.String,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32,System.IntPtr,System.IntPtr@,System.IntPtr@,System.String@,System.Guid@,System.Int32@)?qualifyHint=False&autoUpgrade=True method when obtaining the core editor from the assetId:///M:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance(System.UInt32,System.String,System.String,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32,System.IntPtr,System.IntPtr@,System.IntPtr@,System.String@,System.Guid@,System.Int32@)?qualifyHint=False&autoUpgrade=True method.  
+  
+ If the assetId:///M:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance(System.UInt32,System.String,System.String,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32,System.IntPtr,System.IntPtr@,System.IntPtr@,System.String@,System.Guid@,System.Int32@)?qualifyHint=False&autoUpgrade=True method returns the same command GUID as the text editor, the instance of the core editor automatically obtains the default shortcut keys.  
+  
+ For general information, see [Invoking the Core Editor](../vs140/walkthrough--creating-a-core-editor-and-registering-an-editor-file-type.md).  
+  
+## See Also  
+ [Inside the Core Editor](../vs140/inside-the-core-editor.md)   
+ [Opening and Saving Project Items](../vs140/opening-and-saving-project-items.md)   
+ [Invoking the Core Editor](../vs140/walkthrough--creating-a-core-editor-and-registering-an-editor-file-type.md)

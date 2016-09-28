@@ -1,0 +1,48 @@
+---
+title: "CMFCToolBarMenuButton::IsQuickMode"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CMFCToolBarMenuButton.IsQuickMode"
+  - "CMFCToolBarMenuButton::IsQuickMode"
+  - "IsQuickMode"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IsQuickMode method"
+ms.assetid: deb27287-d82d-425c-af62-edb13f5d3695
+caps.latest.revision: 13
+author: ""
+ms.author: ""
+manager: ""
+robots: noindex,nofollow
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CMFCToolBarMenuButton::IsQuickMode
+[!INCLUDE[cpp_fp_under_construction](../vs140/includes/cpp_fp_under_construction_md.md)]  
+  
+## Syntax  
+  
+```  
+BOOL IsQuickMode();  
+```  
+  
+## Return Value  
+  
+## Remarks  
+  
+## Requirements  
+ **Header:** afxtoolbarmenubutton.h  
+  
+## See Also  
+ [CMFCToolBarMenuButton Class](../vs140/cmfctoolbarmenubutton-class.md)   
+ [Hierarchy Chart (MFC Feature Pack)](../vs140/hierarchy-chart.md)

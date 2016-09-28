@@ -1,0 +1,45 @@
+---
+title: "Late bound resolution; runtime errors could occur"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vbc42017"
+  - "BC42017"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "BC42017"
+ms.assetid: 45f552c8-57c6-44c0-97d3-e510119b257a
+caps.latest.revision: 16
+author: ""
+ms.author: ""
+manager: ""
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Late bound resolution; runtime errors could occur
+An object is assigned to a variable declared to be of the [Object Data Type](../vs140/object-data-type.md).  
+  
+ When you declare a variable as `Object`, the compiler must perform *late binding*, which causes extra operations at run time. It also exposes your application to potential run-time errors. For example, if you assign a <xref:System.Windows.Forms.Form*> to the `Object` variable and then try to access the <xref:System.Xml.XmlDocument.NameTable*?displayProperty=fullName> property, the runtime throws a <xref:System.MemberAccessException*> because the <xref:System.Windows.Forms.Form*> class does not expose a `NameTable` property.  
+  
+ If you declare the variable to be of a specific type, the compiler can perform *early binding* at compile time. This results in improved performance, controlled access to the members of the specific type, and better readability of your code.  
+  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../vs140/configuring-warnings-in-visual-basic.md).  
+  
+ **Error ID:** BC42017  
+  
+### To correct this error  
+  
+-   If possible, declare the variable to be of a specific type.  
+  
+## See Also  
+ [Early and Late Binding](../vs140/early-and-late-binding--visual-basic-.md)   
+ [Object Variable Declaration](../vs140/object-variable-declaration--visual-basic-.md)

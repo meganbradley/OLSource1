@@ -1,0 +1,42 @@
+---
+title: "Intercepting Legacy Language Service Commands"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "commands, intercepting language service"
+  - "language services, intercepting commands"
+ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
+caps.latest.revision: 17
+author: ""
+ms.author: "gregvanl"
+manager: ""
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# Intercepting Legacy Language Service Commands
+With [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], you can have the language service intercept commands that the text view would otherwise handle. This is useful for language-specific behavior that the text view does not manage. You can intercept these commands by adding one or more command filters to the text view from your language service.  
+  
+## Getting and Routing the Command  
+ A command filter is an <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget*> object that monitors certain character sequences or key commands. You can associate more than one command filter with a single text view. Each text view maintains a chain of command filters. After you create a new command filter, you add the filter to the chain for the appropriate text view.  
+  
+ Call the [AddCommandFilter](assetId:///M:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter(Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget,Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget@)?qualifyHint=False&autoUpgrade=True) method on the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView*> to add your command filter to the chain. When you call assetId:///M:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter(Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget,Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget@)?qualifyHint=False&autoUpgrade=True, [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] returns another command filter to which you can pass the commands that your command filter does not handle.  
+  
+ You have the following options for command handling:  
+  
+-   Handle the command and then pass the command on to the next command filter in the chain.  
+  
+-   Handle the command and do not pass the command on to the next command filter.  
+  
+-   Do not handle the command, but pass the command on to the next command filter.  
+  
+-   Ignore the command. Do not handle it in the current filter, and do not pass it on to the next filter.  
+  
+ For information about which commands your language service should handle, see [Important Commands for Language Service Filters](../vs140/important-commands-for-language-service-filters.md).

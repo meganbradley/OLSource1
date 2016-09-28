@@ -1,0 +1,36 @@
+---
+title: "TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vbrTextFieldParser_BufferExceededMaxSize"
+dev_langs: 
+  - "VB"
+ms.assetid: 36565e82-8458-4a08-86af-d9a7a2c32937
+caps.latest.revision: 12
+author: ""
+ms.author: ""
+manager: ""
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded
+The operation cannot be completed because the maximum buffer size (10,000,000 bytes) has been exceeded.  
+  
+### To correct this error  
+  
+-   Make sure there are no malformed fields in the file.  
+  
+## See Also  
+ [OpenTextFieldParser](assetId:///M:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser(System.String)?qualifyHint=False&autoUpgrade=True)   
+ <xref:Microsoft.VisualBasic.FileIO.TextFieldParser*>   
+ [How to: Read From Text Files with Multiple Formats in Visual Basic](../vs140/how-to--read-from-text-files-with-multiple-formats-in-visual-basic.md)   
+ [Parsing Text Files with the TextFieldParser Object](../vs140/parsing-text-files-with-the-textfieldparser-object--visual-basic-.md)
