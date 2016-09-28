@@ -1,0 +1,50 @@
+---
+title: "How to: Attach Views to Document Data"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "editors [Visual Studio SDK], custom - attach views to document data"
+ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
+caps.latest.revision: 26
+author: ""
+ms.author: "gregvanl"
+manager: ""
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# How to: Attach Views to Document Data
+If you have a new document view, you may be able to attach it to an existing document data object.  
+  
+### To determine if you can attach a view to an existing document data object  
+  
+1.  Implement [CreateEditorInstance](assetId:///M:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance(System.UInt32,System.String,System.String,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32,System.IntPtr,System.IntPtr@,System.IntPtr@,System.String@,System.Guid@,System.Int32@)?qualifyHint=False&autoUpgrade=True).  
+  
+2.  In your implementation of `IVsEditorFactory::CreateEditorInstance`, call `QueryInterface` on the existing document data object when the IDE calls your `CreateEditorInstance` implementation.  
+  
+     Calling `QueryInterface` enables you to examine the existing document data object, which is specified in the `punkDocDataExisting` parameter.  
+  
+     The exact interfaces you must query, however, depends upon the editor that is opening the document, as outlined in step 4.  
+  
+3.  If you do not find the appropriate interfaces on the existing document data object, then return an error code to your editor indicating that the document data object is incompatible with your editor.  
+  
+     In the IDE's implementation of [OpenStandardEditor](assetId:///M:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor(System.UInt32,System.String,System.Guid@,System.String,Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy,System.UInt32,System.IntPtr,Microsoft.VisualStudio.OLE.Interop.IServiceProvider,Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame@)?qualifyHint=False&autoUpgrade=True), a message box notifies you that the document is open in another editor and asks if you want to close it.  
+  
+4.  If you close this document, then Visual Studio calls your editor factory for a second time. On this call, the `DocDataExisting` parameter is equal to NULL. Your editor factory implementation can then open the document data object in your own editor.  
+  
+    > [!NOTE]
+    >  To determine whether you can work with an existing document data object, you can also use private knowledge of the interface implementation by casting a pointer to the actual [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] class of your private implementation. For example, all standard editors implement `IVsPersistFileFormat`, which inherits from <xref:Microsoft.VisualStudio.OLE.Interop.IPersist*>. Thus, you can call `QueryInterface` for [GetClassID](assetId:///M:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID(System.Guid@)?qualifyHint=False&autoUpgrade=True), and if the class ID on the existing document data object matches your implementation's class ID, then you can work with the document data object.  
+  
+## Robust Programming  
+ When Visual Studio calls your implementation of the assetId:///M:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance(System.UInt32,System.String,System.String,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,System.UInt32,System.IntPtr,System.IntPtr@,System.IntPtr@,System.String@,System.Guid@,System.Int32@)?qualifyHint=False&autoUpgrade=True method, it passes back a pointer to the existing document data object in the `punkDocDataExisting` parameter, if one exists. Examine the document data object returned in `punkDocDataExisting` to determine if the document data object is appropriate for your editor as outlined in the note in step 4 of the procedure in this topic. If it is appropriate, then your editor factory should provide a second view for the data as outlined in [Supporting Multiple Document Views](../vs140/supporting-multiple-document-views.md). If not, then it should display an appropriate error message.  
+  
+## See Also  
+ [Supporting Multiple Document Views](../vs140/supporting-multiple-document-views.md)   
+ [Document Data and Document View Objects](../vs140/document-data-and-document-view-in-custom-editors.md)

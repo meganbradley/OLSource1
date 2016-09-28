@@ -1,0 +1,62 @@
+---
+title: "IEnumOnSTLImpl::Next"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "IEnumOnSTLImpl.Next"
+  - "ATL.IEnumOnSTLImpl.Next"
+  - "ATL::IEnumOnSTLImpl::Next"
+  - "IEnumOnSTLImpl::Next"
+  - "Next"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Next method"
+ms.assetid: 3b3c92aa-ecb5-42c7-bf87-2552e3a9c8e4
+caps.latest.revision: 15
+author: ""
+ms.author: ""
+manager: ""
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IEnumOnSTLImpl::Next
+This method provides the implementation of the [IEnumXXXX::Next](https://msdn.microsoft.com/en-us/library/ms695273.aspx) method.  
+  
+## Syntax  
+  
+```  
+  
+      STDMETHOD(Next)(  
+   ULONG celt,  
+   T* rgelt,  
+   ULONG* pceltFetched   
+);  
+```  
+  
+#### Parameters  
+ `celt`  
+ [in] The number of elements requested.  
+  
+ `rgelt`  
+ [out] The array to be filled in with the elements.  
+  
+ `pceltFetched`  
+ [out] The number of elements actually returned in `rgelt`. This can be less than `celt` if fewer than `celt` elements remain in the list.  
+  
+## Return Value  
+ A standard `HRESULT` value.  
+  
+## Requirements  
+ **Header:** atlcom.h  
+  
+## See Also  
+ [IEnumOnSTLImpl Class](../vs140/ienumonstlimpl-class.md)

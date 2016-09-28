@@ -1,0 +1,284 @@
+---
+title: "How to: Modify XML Literals (Visual Basic)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "XML axis [Visual Basic], Value"
+  - "XML literals [Visual Basic]"
+  - "XML literals [Visual Basic], modifying"
+ms.assetid: 4e864522-a37a-43a2-8236-af80277c5482
+caps.latest.revision: 15
+author: ""
+ms.author: ""
+manager: ""
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# How to: Modify XML Literals (Visual Basic)
+[!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] provides convenient ways to modify XML literals. You can add or delete elements and attributes, and you can also replace an existing element with a new XML element. This topic provides several examples of how to modify an existing XML literal.  
+  
+### To modify the value of an XML literal  
+  
+1.  To modify the value of an XML literal, obtain a reference to the XML literal and set the `Value` property to the desired value.  
+  
+     The following code example updates the value of all the <Price\> elements in an XML document.  
+  
+     [!code[VbXmlSamples2#4](../vs140/codesnippet/VisualBasic/how-to--modify-xml-literals--visual-basic-_1.vb)]  
+  
+     The following shows sample source XML and modified XML from this code example.  
+  
+    ```  
+    Source XML:  
+    <?xml version="1.0"?>  
+    <Catalog>  
+      <Book id="bk101">  
+        <Author>Garghentini, Davide</Author>  
+        <Title>XML Developer's Guide</Title>  
+        <Price>44.95</Price>  
+      </Book>  
+      <Book id="bk331">  
+        <Author>Spencer, Phil</Author>  
+        <Title>Developing Applications with Visual Basic .NET</Title>  
+        <Price>45.95</Price>  
+      </Book>  
+    </Catalog>  
+  
+    Modified XML:  
+    <?xml version="1.0"?>  
+    <Catalog>  
+      <Book id="bk101">  
+        <Author>Garghentini, Davide</Author>  
+        <Title>XML Developer's Guide</Title>  
+        <Price>47.20</Price>  
+      </Book>  
+      <Book id="bk331">  
+        <Author>Spencer, Phil</Author>  
+        <Title>Developing Applications with Visual Basic .NET</Title>  
+        <Price>48.25</Price>  
+      </Book>  
+    </Catalog>  
+    ```  
+  
+    > [!NOTE]
+    >  The `Value` property refers to the first XML element in a collection. If there is more than one element that has the same name in a collection, setting the `Value` property affects only the first element in the collection.  
+  
+### To add an attribute to an XML literal  
+  
+1.  To add an attribute to an XML literal, first obtain a reference to the XML literal. You can then add an attribute by adding a new XML attribute axis property. You can also add a new <xref:System.Xml.Linq.XAttribute*> object to the XML literal by using the [Add](assetId:///M:System.Xml.Linq.XContainer.Add(System.Object)?qualifyHint=False&autoUpgrade=True) method. The following example shows both options.  
+  
+     [!code[VbXmlSamples2#5](../vs140/codesnippet/VisualBasic/how-to--modify-xml-literals--visual-basic-_2.vb)]  
+  
+     The following shows sample source XML and modified XML from this code example.  
+  
+    ```  
+    Source XML:  
+    <?xml version="1.0"?>  
+    <Catalog>  
+      <Book id="bk101" >  
+        <Author>Garghentini, Davide</Author>  
+        <Title>XML Developer's Guide</Title>  
+        <Price>44.95</Price>  
+      </Book>  
+      <Book id="bk331">  
+        <Author>Spencer, Phil</Author>  
+        <Title>Developing Applications with Visual Basic .NET</Title>  
+        <Price>45.95</Price>  
+      </Book>  
+    </Catalog>  
+  
+    Modified XML:  
+    <?xml version="1.0"?>  
+    <Catalog>  
+      <Book id="bk101" genre="Computer" editorEmail="someone@example.com">  
+        <Author>Garghentini, Davide</Author>  
+        <Title>XML Developer's Guide</Title>  
+        <Price>44.95</Price>  
+      </Book>  
+      <Book id="bk331" genre="Computer" editorEmail="someone@example.com">  
+        <Author>Spencer, Phil</Author>  
+        <Title>Developing Applications with Visual Basic .NET</Title>  
+        <Price>45.95</Price>  
+      </Book>  
+    </Catalog>  
+    ```  
+  
+     For more information about XML attribute axis properties, see [XML Attribute Axis Property](../vs140/xml-attribute-axis-property--visual-basic-.md).  
+  
+### To add an element to an XML literal  
+  
+1.  To add an element to an XML literal, first obtain a reference to the XML literal. You can then add a new <xref:System.Xml.Linq.XElement*> object as the last sub-element of the element by using the assetId:///M:System.Xml.Linq.XContainer.Add(System.Object)?qualifyHint=False&autoUpgrade=True method. You can add a new <xref:System.Xml.Linq.XElement*> object as the first sub-element by using the [AddFirst](assetId:///M:System.Xml.Linq.XContainer.AddFirst(System.Object)?qualifyHint=False&autoUpgrade=True) method.  
+  
+     To add a new element in a specific location relative to other sub-elements, first obtain a reference to an adjacent sub-element. You can then add the new <xref:System.Xml.Linq.XElement*> object before the adjacent sub-element by using the [AddBeforeSelf](assetId:///M:System.Xml.Linq.XNode.AddBeforeSelf(System.Object)?qualifyHint=False&autoUpgrade=True) method. You can also add the new <xref:System.Xml.Linq.XElement*> object after the adjacent sub-element by using the [AddAfterSelf](assetId:///M:System.Xml.Linq.XNode.AddAfterSelf(System.Object)?qualifyHint=False&autoUpgrade=True) method.  
+  
+     The following example shows examples of each of these techniques.  
+  
+     [!code[VbXmlSamples2#6](../vs140/codesnippet/VisualBasic/how-to--modify-xml-literals--visual-basic-_3.vb)]  
+  
+     The following shows sample source XML and modified XML from this code example.  
+  
+    ```  
+    Source XML:  
+    <?xml version="1.0"?>  
+    <Catalog>  
+      <Book id="bk101" >  
+        <Author>Garghentini, Davide</Author>  
+        <Title>XML Developer's Guide</Title>  
+        <Price>44.95</Price>  
+      </Book>  
+      <Book id="bk331">  
+        <Author>Spencer, Phil</Author>  
+        <Title>Developing Applications with Visual Basic .NET</Title>  
+        <Price>45.95</Price>  
+      </Book>  
+    </Catalog>  
+  
+    Modified XML:  
+    <?xml version="1.0"?>  
+    <Catalog>  
+      <Book id="bk101" >  
+        <Author>Garghentini, Davide</Author>  
+        <Title>XML Developer's Guide</Title>  
+        <Price>44.95</Price>  
+      </Book>  
+      <Book id="bk000"></Book>  
+      <Book id="bk331">  
+        <Publisher>Microsoft Press</Publisher>  
+        <Author>Spencer, Phil</Author>  
+        <Title>Developing Applications with Visual Basic .NET</Title>  
+        <Price>45.95</Price>  
+        <PublishDate>2005-2-14</PublishDate>  
+      </Book>  
+      <Book id="bk999"></Book>  
+    </Catalog>  
+    ```  
+  
+### To remove an element or attribute from an XML literal  
+  
+1.  To remove an element or an attribute from an XML literal, obtain a reference to the element or attribute and call the `Remove` method, as shown in the following example.  
+  
+     [!code[VbXmlSamples2#7](../vs140/codesnippet/VisualBasic/how-to--modify-xml-literals--visual-basic-_4.vb)]  
+  
+     The following shows sample source XML and modified XML from this code example.  
+  
+    ```  
+    Source XML:  
+    <?xml version="1.0"?>  
+    <Catalog>  
+      <Book id="bk101" genre="Computer" editorEmail="someone@example.com">  
+        <Author>Garghentini, Davide</Author>  
+        <Title>XML Developer's Guide</Title>  
+        <Price>44.95</Price>  
+      </Book>  
+      <Book id="bk000"></Book>  
+      <Book id="bk331" genre="Computer" editorEmail="someone@example.com">  
+        <Author>Spencer, Phil</Author>  
+        <Title>Developing Applications with Visual Basic .NET</Title>  
+        <Price>45.95</Price>  
+      </Book>  
+      <Book id="bk999"></Book>  
+    </Catalog>  
+  
+    Modified XML:  
+    <?xml version="1.0"?>  
+    <Catalog>  
+      <Book id="bk101" editorEmail="someone@example.com">  
+        <Author>Garghentini, Davide</Author>  
+        <Title>XML Developer's Guide</Title>  
+        <Price>44.95</Price>  
+      </Book>  
+      <Book id="bk000"></Book>  
+      <Book id="bk331" editorEmail="someone@example.com">  
+        <Author>Spencer, Phil</Author>  
+        <Title>Developing Applications with Visual Basic .NET</Title>  
+        <Price>45.95</Price>  
+      </Book></Catalog>  
+    ```  
+  
+     To remove all elements or attributes from an XML literal, obtain a reference to the XML literal and call the <xref:System.Xml.Linq.XElement.RemoveAll*> method.  
+  
+### To modify an XML literal  
+  
+1.  To change the name of an XML element, first obtain a reference to the element. You can then create a new <xref:System.Xml.Linq.XElement*> object that has a new name and pass the new <xref:System.Xml.Linq.XElement*> object to the [ReplaceWith](assetId:///M:System.Xml.Linq.XNode.ReplaceWith(System.Object)?qualifyHint=False&autoUpgrade=True) method of the existing <xref:System.Xml.Linq.XElement*> object.  
+  
+     If the element that you are replacing has sub-elements that must be preserved, set the value of the new <xref:System.Xml.Linq.XElement*> object to the <xref:System.Xml.Linq.XContainer.Nodes*> property of the existing element. This will set the value of the new element to the inner XML of the existing element. Otherwise, you can set the value of the new element to the `Value` property of the existing element.  
+  
+     The following code example replaces all <Description\> elements with an <Abstract\> element. The content of the <Description\> element is preserved in the new <Abstract\> element by using the <xref:System.Xml.Linq.XContainer.Nodes*> property of the <Description\> <xref:System.Xml.Linq.XElement*> object.  
+  
+     [!code[VbXmlSamples2#8](../vs140/codesnippet/VisualBasic/how-to--modify-xml-literals--visual-basic-_5.vb)]  
+  
+     The following shows sample source XML and modified XML from this code example.  
+  
+    ```  
+    Source XML:  
+    <?xml version="1.0"?>  
+    <Catalog>  
+      <Book id="bk101">  
+        <Author>Garghentini, Davide</Author>  
+        <Title>XML Developer's Guide</Title>  
+        <Price>44.95</Price>  
+        <Description>  
+          An in-depth look at creating applications  
+          with <technology>XML</technology>. For   
+          <audience>beginners</audience> or   
+          <audience>advanced</audience> developers.  
+        </Description>  
+      </Book>  
+      <Book id="bk331">  
+        <Author>Spencer, Phil</Author>  
+        <Title>Developing Applications with Visual Basic .NET</Title>  
+        <Price>45.95</Price>  
+        <Description>  
+          Get the expert insights, practical code samples, and best  
+          practices you need to advance your expertise with   
+          <technology>Visual Basic .NET</technology>.   
+          Learn how to create faster, more reliable applications  
+          based on professional, pragmatic guidance by today's top  
+          <audience>developers</audience>.  
+        </Description>  
+      </Book>  
+    </Catalog>  
+  
+    Modified XML:  
+    <?xml version="1.0"?>  
+    <Catalog>  
+      <Book id="bk101">  
+        <Author>Garghentini, Davide</Author>  
+        <Title>XML Developer's Guide</Title>  
+        <MSRP>44.95</MSRP>    <Abstract>  
+          An in-depth look at creating applications  
+          with <technology>XML</technology>. For   
+          <audience>beginners</audience> or   
+          <audience>advanced</audience> developers.  
+        </Abstract>  
+      </Book>  
+      <Book id="bk331">  
+        <Author>Spencer, Phil</Author>  
+        <Title>Developing Applications with Visual Basic .NET</Title>  
+        <MSRP>45.95</MSRP>    <Abstract>  
+          Get the expert insights, practical code samples, and best  
+          practices you need to advance your expertise with   
+          <technology>Visual Basic .NET</technology>.   
+          Learn how to create faster, more reliable applications  
+          based on professional, pragmatic guidance by today's top  
+          <audience>developers</audience>.  
+        </Abstract>  
+      </Book>  
+    </Catalog>  
+    ```  
+  
+## See Also  
+ [Manipulating XML in Visual Basic](../vs140/manipulating-xml-in-visual-basic.md)   
+ [XML in Visual Basic](../vs140/xml-in-visual-basic.md)   
+ [How to: Load XML from Files (Visual Basic)](../vs140/how-to--load-xml-from-a-file--string--or-stream--visual-basic-.md)   
+ [LINQ in Visual Basic](../vs140/linq-in-visual-basic.md)   
+ [Introduction to LINQ in Visual Basic](../vs140/introduction-to-linq-in-visual-basic.md)

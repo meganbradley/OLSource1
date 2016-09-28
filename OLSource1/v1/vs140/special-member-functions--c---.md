@@ -1,0 +1,27 @@
+---
+title: "Special Member Functions (C++)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "special member functions"
+  - "member functions, special"
+ms.assetid: 017d6817-b012-44f0-b153-f3076c251ea7
+caps.latest.revision: 11
+author: ""
+ms.author: ""
+manager: ""
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# Special Member Functions (C++)
+This content moved to [Overview of Member Functions](../vs140/overview-of-member-functions.md)
