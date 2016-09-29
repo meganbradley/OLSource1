@@ -1,0 +1,73 @@
+---
+title: "System.Tuple&lt;&#39;T1,&#39;T2&gt; Class (F#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-fsharp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+apiname: 
+  - "System.Tuple<'T1,'T2>"
+apilocation: 
+  - "FSharp.Core.dll"
+apitype: "Assembly"
+f1_keywords: 
+  - "System.Tuple`2"
+dev_langs: 
+  - "FSharp"
+helpviewer_keywords: 
+  - "Tuple class [F#]"
+ms.assetid: bab6f387-fb9c-4ed5-beda-a51f80c149bb
+caps.latest.revision: 23
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# System.Tuple&lt;&#39;T1,&#39;T2&gt; Class (F#)
+**Namespace/Module Path**: System  
+  
+ **Assembly**: FSharp.Core (in FSharp.Core.dll)  
+  
+## Syntax  
+  
+```  
+type Tuple<'T1,'T2> =  
+ class  
+  interface IComparable  
+  interface IStructuralComparable  
+  interface IStructuralEquatable  
+  new Tuple : 'T1 * 'T2 -> Tuple<'T1,'T2>  
+  member this.Item1 :  'T1  
+  member this.Item2 :  'T2  
+ end  
+```  
+  
+## Remarks  
+ This type is provided for use only with the F# Core Library Versions that targets .NET Framework 2.0. If you are using .NET Framework 4, use the .NET Framework 4 type with the same name, <xref:System.Tuple`2*>.  
+  
+## Constructors  
+  
+|Member|Description|  
+|------------|-----------------|  
+|[new](../VS_csharp/system.tuple--t1--t2--constructor--fsharp-.md)||  
+  
+## Instance Members  
+  
+|Member|Description|  
+|------------|-----------------|  
+|[Item1](../VS_csharp/tuple.item1--t1--t2--property--fsharp-.md)||  
+|[Item2](../VS_csharp/tuple.item2--t1--t2--property--fsharp-.md)||  
+  
+## Platforms  
+ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2  
+  
+## Version Information  
+ **F# Core Library Versions**  
+  
+ Supported in: 2.0  
+  
+## See Also  
+ [System Namespace (F#)](../VS_csharp/system-namespace--fsharp-.md)

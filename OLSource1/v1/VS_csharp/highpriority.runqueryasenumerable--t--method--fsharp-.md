@@ -1,0 +1,66 @@
+---
+title: "HighPriority.RunQueryAsEnumerable&lt;&#39;T&gt; Method (F#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-fsharp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+apilocation: 
+  - "FSharp.Core.dll"
+apitype: "Assembly"
+f1_keywords: 
+  - "Microsoft.FSharp.Linq.QueryBuilder.RunQueryAsEnumerable"
+dev_langs: 
+  - "FSharp"
+helpviewer_keywords: 
+  - "RunQueryAsEnumerable method [F#]"
+ms.assetid: 35b75b8f-0b17-452b-a3f6-b3e52b9ad6e9
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# HighPriority.RunQueryAsEnumerable&lt;&#39;T&gt; Method (F#)
+A method used to support the F# query syntax. Runs the given quotation as a query using LINQ IEnumerable rules.  
+  
+ **Namespace/Module Path**: Microsoft.FSharp.Linq  
+  
+ **Assembly**: FSharp.Core (in FSharp.Core.dll)  
+  
+## Syntax  
+  
+```  
+// Signature:  
+RunQueryAsEnumerable : Expr<QuerySource<'T,IEnumerable>> -> seq<'T>  
+  
+// Usage:  
+RunQueryAsEnumerable (expr)  
+```  
+  
+#### Parameters  
+ `expr`  
+ Type: [Expr](../VS_csharp/quotations.expr--t--class--fsharp-.md)<[QuerySource](../VS_csharp/linq.querysource--t--q--class--fsharp-.md)<'T,                        <xref:System.Collections.IEnumerable*>>>  
+  
+## Return Value  
+ The query as an enumerable sequence.  
+  
+## Remarks  
+ For more information and examples, see [Query Expressions (F#)](../VS_csharp/query-expressions--fsharp-.md).  
+  
+## Platforms  
+ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2  
+  
+## Version Information  
+ **F# Core Library Versions**  
+  
+ Supported in: 4.0, Portable  
+  
+## See Also  
+ [Linq.QueryBuilder Class (F#)](../VS_csharp/linq.querybuilder-class--fsharp-.md)   
+ [Microsoft.FSharp.Linq Namespace (F#)](../VS_csharp/microsoft.fsharp.linq-namespace--fsharp-.md)   
+ [Query Expressions (F#)](../VS_csharp/query-expressions--fsharp-.md)   
+ [QueryRunExtensions.HighPriority Module (F#)](../VS_csharp/queryrunextensions.highpriority-module--fsharp-.md)

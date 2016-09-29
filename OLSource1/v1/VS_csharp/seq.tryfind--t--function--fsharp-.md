@@ -1,0 +1,80 @@
+---
+title: "Seq.tryFind&lt;&#39;T&gt; Function (F#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-fsharp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+apiname: 
+  - "Seq.tryFind<'T>"
+apilocation: 
+  - "FSharp.Core.dll"
+apitype: "Assembly"
+f1_keywords: 
+  - "Microsoft.FSharp.Collections.SeqModule.TryFind``1"
+dev_langs: 
+  - "FSharp"
+helpviewer_keywords: 
+  - "Seq.tryFind function [F#]"
+  - "tryFind function [F#]"
+ms.assetid: ac43c6f5-4dc7-4e9a-a222-00b5736aee47
+caps.latest.revision: 20
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Seq.tryFind&lt;&#39;T&gt; Function (F#)
+Attempts to find an element that satisfies a given predicate.  
+  
+ **Namespace/Module Path:** Microsoft.FSharp.Collections.Seq  
+  
+ **Assembly:** FSharp.Core (in FSharp.Core.dll)  
+  
+## Syntax  
+  
+```  
+// Signature:  
+Seq.tryFind : ('T -> bool) -> seq<'T> -> 'T option  
+  
+// Usage:  
+Seq.tryFind predicate source  
+```  
+  
+#### Parameters  
+ `predicate`  
+ Type: `'T ->`[bool](../VS_csharp/core.bool-type-abbreviation--fsharp-.md)  
+  
+ A function that evaluates to a Boolean when given an item in the sequence.  
+  
+ `source`  
+ Type: [seq](../VS_csharp/collections.seq--t--type-abbreviation--fsharp-.md)`<'T>`  
+  
+ The input sequence.  
+  
+## Exceptions  
+  
+|Exception|Condition|  
+|---------------|---------------|  
+|<xref:System.ArgumentNullException*>|Thrown when the input sequence is null.|  
+  
+## Return Value  
+ Returns the first element for which the given function returns `true`. Return `None` if no such element exists.  
+  
+## Remarks  
+ This function is named `TryFind` in compiled assemblies. If you are accessing the function from a language other than F#, or through reflection, use this name.  
+  
+## Platforms  
+ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2  
+  
+## Version Information  
+ **F# Core Library Versions**  
+  
+ Supported in: 2.0, 4.0, Portable  
+  
+## See Also  
+ [Collections.Seq Module (F#)](../VS_csharp/collections.seq-module--fsharp-.md)   
+ [Microsoft.FSharp.Collections Namespace (F#)](../VS_csharp/microsoft.fsharp.collections-namespace--fsharp-.md)

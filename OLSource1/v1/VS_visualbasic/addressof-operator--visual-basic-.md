@@ -1,0 +1,59 @@
+---
+title: "AddressOf Operator (Visual Basic)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "AddressOf"
+  - "vb.AddressOf"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "AddressOf operator"
+  - "addresses, passing to API procedures"
+ms.assetid: 8105a59d-60d8-4ab5-b221-5899cdfacbf4
+caps.latest.revision: 15
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# AddressOf Operator (Visual Basic)
+Creates a procedure delegate instance that references the specific procedure.  
+  
+## Syntax  
+  
+```  
+  
+AddressOf procedurename  
+```  
+  
+## Parts  
+ `procedurename`  
+ Required. Specifies the procedure to be referenced by the newly created procedure delegate.  
+  
+## Remarks  
+ The `AddressOf` operator creates a function delegate that points to the function specified by `procedurename`. When the specified procedure is an instance method then the function delegate refers to both the instance and the method. Then, when the function delegate is invoked the specified method of the specified instance is called.  
+  
+ The `AddressOf` operator can be used as the operand of a delegate constructor or it can be used in a context in which the type of the delegate can be determined by the compiler.  
+  
+## Example  
+ This example uses the `AddressOf` operator to designate a delegate to handle the `Click` event of a button.  
+  
+ [!code[VbVbalrDelegates#8](../VS_csharp/codesnippet/VisualBasic/addressof-operator--visual-basic-_1.vb)]  
+  
+## Example  
+ The following example uses the `AddressOf` operator to designate the startup function for a thread.  
+  
+ [!code[VbVbalrDelegates#9](../VS_csharp/codesnippet/VisualBasic/addressof-operator--visual-basic-_2.vb)]  
+  
+## See Also  
+ [Declare Statement](../VS_csharp/declare-statement.md)   
+ [Function Statement](../VS_csharp/function-statement--visual-basic-.md)   
+ [Sub Statement](../VS_csharp/sub-statement--visual-basic-.md)   
+ [Delegates (Visual Basic)](../VS_csharp/delegates--visual-basic-.md)

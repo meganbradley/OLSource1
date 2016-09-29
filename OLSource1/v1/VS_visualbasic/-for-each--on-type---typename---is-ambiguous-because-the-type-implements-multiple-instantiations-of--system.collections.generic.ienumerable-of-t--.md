@@ -1,0 +1,38 @@
+---
+title: "&#39;For Each&#39; on type &#39;&lt;typename&gt;&#39; is ambiguous because the type implements multiple instantiations of &#39;System.Collections.Generic.IEnumerable(Of T)&#39;"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vbc32096"
+  - "bc32096"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "BC32096"
+ms.assetid: ed20d09c-913f-482e-89f8-c0a596c3ec24
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# &#39;For Each&#39; on type &#39;&lt;typename&gt;&#39; is ambiguous because the type implements multiple instantiations of &#39;System.Collections.Generic.IEnumerable(Of T)&#39;
+A `For Each` statement specifies an iterator variable that has more than one <xref:System.Collections.IEnumerable.GetEnumerator*> method.  
+  
+ The iterator variable must be of a type that implements the <xref:System.Collections.IEnumerable*?displayProperty=fullName> or <xref:System.Collections.Generic.IEnumerable`1*?displayProperty=fullName> interface in one of the `Collections` namespaces of the [!INCLUDE[dnprdnshort](../VS_csharp/includes/dnprdnshort_md.md)]. It is possible for a class to implement more than one constructed generic interface, using a different type argument for each construction. If a class that does this is used for the iterator variable, that variable has more than one <xref:System.Collections.IEnumerable.GetEnumerator*> method. In such a case, [!INCLUDE[vbprvb](../VS_csharp/includes/vbprvb_md.md)] cannot choose which method to call.  
+  
+ **Error ID:** BC32096  
+  
+### To correct this error  
+  
+-   Use [DirectCast](../VS_csharp/directcast-operator--visual-basic-.md) or [TryCast](../VS_csharp/trycast-operator--visual-basic-.md) to cast the iterator variable type to the interface defining the <xref:System.Collections.IEnumerable.GetEnumerator*> method you want to use.  
+  
+## See Also  
+ [For Each...Next Statement (Visual Basic)](../VS_csharp/for-each...next-statement--visual-basic-.md)   
+ [Interfaces (Visual Basic)](../VS_csharp/interfaces--visual-basic-.md)

@@ -1,0 +1,63 @@
+---
+title: "AfxDoForAllObjects"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "AFX/AfxDoForAllObjects"
+  - "AfxDoForAllObjects"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "AfxDoForAllObjects function"
+ms.assetid: ef4ebe96-d254-4a9b-9dbb-6b8c760a6d80
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# AfxDoForAllObjects
+Executes the specified iteration function for all objects derived from `CObject` that have been allocated with **new**.  
+  
+## Syntax  
+  
+```  
+  
+      void AfxDoForAllObjects(  
+   void (*pfn  
+)(CObject* pObject,  
+   void* pContext  
+),  
+   void* pContext   
+);   
+```  
+  
+#### Parameters  
+ `pfn`  
+ Points to an iteration function to execute for each object. The function arguments are a pointer to a `CObject` and a void pointer to extra data that the caller supplies to the function.  
+  
+ `pContext`  
+ Points to optional data that the caller can supply to the iteration function. This pointer can be **NULL**.  
+  
+## Remarks  
+ Stack, global, or embedded objects are not enumerated. The pointer passed to `AfxDoForAllObjects` in `pContext` is passed to the specified iteration function each time it is called.  
+  
+> [!NOTE]
+>  This function works only in the Debug version of MFC.  
+  
+## Example  
+ [!code[NVC_MFCCollections#115](../VS_csharp/codesnippet/CPP/afxdoforallobjects_1.cpp)]  
+  
+ [!code[NVC_MFCCollections#116](../VS_csharp/codesnippet/CPP/afxdoforallobjects_2.cpp)]  
+  
+## Requirements  
+ **Header:** afx.h  
+  
+## See Also  
+ [Macros and Globals](../VS_csharp/mfc-macros-and-globals.md)

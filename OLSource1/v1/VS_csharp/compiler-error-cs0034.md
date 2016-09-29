@@ -1,0 +1,119 @@
+---
+title: "Compiler Error CS0034"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0034"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0034"
+ms.assetid: cb72ec9b-3a6b-40f3-b2ad-2ea122920edd
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS0034
+Operator 'operator' is ambiguous on operands of type 'type1' and 'type2'  
+  
+ An operator was used on two objects and the compiler found more than one conversion. Because conversions have to be unique, you either have to make a cast or to make one of the conversions explicit. For more information, see [Conversion Operators (C# Programmers Reference)](../VS_csharp/conversion-operators--csharp-programming-guide-.md).  
+  
+ The following sample generates CS0034:  
+  
+```  
+// CS0034.cs  
+public class A  
+{  
+   // allows for the conversion of A object to int  
+   public static implicit operator int (A s)  
+   {  
+      return 0;  
+   }  
+  
+   public static implicit operator string (A i)  
+   {  
+      return null;  
+   }  
+}  
+  
+public class B  
+{  
+   public static implicit operator int (B s)  
+   // one way to resolve this CS0034 is to make one conversion explicit  
+   // public static explicit operator int (B s)  
+   {  
+      return 0;  
+   }  
+  
+   public static implicit operator string (B i)  
+   {  
+      return null;  
+   }  
+  
+   public static implicit operator B (string i)  
+   {  
+      return null;  
+   }  
+  
+   public static implicit operator B (int i)  
+   {  
+      return null;  
+   }  
+}  
+  
+public class C  
+{  
+   public static void Main ()  
+   {  
+      A a = new A();  
+      B b = new B();  
+      b = b + a;   // CS0034  
+      // another way to resolve this CS0034 is to make a cast  
+      // b = b + (int)a;  
+   }  
+}  
+```  
+  
+ In C# 1.1 a compiler bug made it possible to define a class that has implicit user-defined conversions to both `int` and `bool`, and to use a bitwise `AND` operator (`&`) on objects of that type. In C# 2.0, this bug was fixed to bring the compiler into compliance with the C# specification, and therefore the following code will now cause CS0034:  
+  
+```  
+namespace CS0034  
+{  
+    class TestClass2  
+    {  
+        public void Test()  
+        {  
+            TestClass o1 = new TestClass();  
+            TestClass o2 = new TestClass();  
+            TestClass o3 = o1 & o2; //CS0034  
+        }  
+    }  
+  
+    class TestClass  
+    {  
+        public static implicit operator int(TestClass o)  
+        {  
+            return 1;  
+        }  
+  
+        public static implicit operator TestClass(int v)  
+        {  
+            return new TestClass();  
+        }  
+  
+        public static implicit operator bool(TestClass o)  
+        {  
+            return true;  
+        }  
+    }  
+  
+}  
+```

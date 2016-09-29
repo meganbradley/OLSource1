@@ -1,0 +1,62 @@
+---
+title: "IEnumDebugFrameInfo2"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "IEnumDebugFrameInfo2"
+helpviewer_keywords: 
+  - "IEnumDebugFrameInfo2"
+ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
+caps.latest.revision: 15
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# IEnumDebugFrameInfo2
+This interface enumerates [FRAMEINFO](../VS_csharp/frameinfo.md) structures.  
+  
+## Syntax  
+  
+```  
+IEnumDebugFrameInfo2 : IUnknown  
+```  
+  
+## Notes for Implementers  
+ The debug engine (DE) implements this interface to provide a list of structures that describes the current call stack.  
+  
+## Notes for Callers  
+ Visual Studio calls [IDebugThread2::EnumFrameInfo](../VS_csharp/idebugthread2--enumframeinfo.md) to obtain this interface whenever a breakpoint, exception, or halt occurs in a program being debugged.  
+  
+## Methods in Vtable Order  
+ The following table shows the methods of `IEnumDebugFrameInfo2`.  
+  
+|Method|Description|  
+|------------|-----------------|  
+|[Next](../VS_csharp/ienumdebugframeinfo2--next.md)|Retrieves a specified number of [FRAMEINFO](../VS_csharp/frameinfo.md) structures in an enumeration sequence.|  
+|[Skip](../VS_csharp/ienumdebugframeinfo2--skip.md)|Skips a specified number of [FRAMEINFO](../VS_csharp/frameinfo.md) structures in an enumeration sequence.|  
+|[Reset](../VS_csharp/ienumdebugframeinfo2--reset.md)|Resets an enumeration sequence to the beginning.|  
+|[Clone](../VS_csharp/ienumdebugframeinfo2--clone.md)|Creates an enumerator that contains the same enumeration state as the current enumerator.|  
+|[GetCount](../VS_csharp/ienumdebugframeinfo2--getcount.md)|Gets the number of [FRAMEINFO](../VS_csharp/frameinfo.md) structures in an enumerator.|  
+  
+## Remarks  
+ Visual Studio obtains this interface as the first step to handling a breakpoint, exception, or user-generated pause on the program being debugged. The list of [FRAMEINFO](../VS_csharp/frameinfo.md) structures represents the current call stack, with the current function call at the beginning of the list and the oldest function call at the end of the list. Each `FRAMEINFO` represents a stack frame, a context in which expressions can be evaluated and local variables looked at.  
+  
+## Requirements  
+ Header: msdbg.h  
+  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+  
+## See Also  
+ [Core Interfaces](../VS_csharp/core-interfaces.md)   
+ [EnumFrameInfo](../VS_csharp/idebugthread2--enumframeinfo.md)   
+ [FRAMEINFO](../VS_csharp/frameinfo.md)

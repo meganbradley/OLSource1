@@ -1,0 +1,31 @@
+---
+title: "Using a Record View  (MFC Data Access)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "record views, customizing default code"
+ms.assetid: 91f2828f-0666-4273-ae28-e4703fd98521
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Using a Record View  (MFC Data Access)
+This topic explains how you might commonly customize the default code for record views that the wizard writes for you. Typically, you want to constrain the record selection with a [filter](../VS_csharp/recordset--filtering-records--odbc-.md) or [parameters](../VS_csharp/recordset--parameterizing-a-recordset--odbc-.md), perhaps [sort](../VS_csharp/recordset--sorting-records--odbc-.md) the records, customize the SQL statement.  
+  
+ This information applies to both [CRecordView](../VS_csharp/crecordview-class.md) (ODBC) and [CDaoRecordView](../VS_csharp/cdaorecordview-class.md) (DAO).  
+  
+ Using `CRecordView` or `CDaoRecordView` is much the same as using [CFormView](../VS_csharp/cformview-class.md). The basic approach is to use the record view to display and perhaps update the records of a single recordset. Beyond that, you might want to use other recordsets as well, as discussed in [Record Views: Filling a List Box from a Second Recordset](../VS_csharp/filling-a-list-box-from-a-second-recordset---mfc-data-access-.md).  
+  
+## See Also  
+ [Record Views  (MFC Data Access)](../VS_csharp/record-views---mfc-data-access-.md)   
+ [ODBC Driver List](../VS_csharp/odbc-driver-list.md)

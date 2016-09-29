@@ -1,0 +1,53 @@
+---
+title: "NOTIFY_ID_HANDLER"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "NOTIFY_ID_HANDLER"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "NOTIFY_ID_HANDLER macro"
+ms.assetid: 1fd8bd36-c368-4d69-8743-15e9f12b0928
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# NOTIFY_ID_HANDLER
+Similar to [NOTIFY_HANDLER](../VS_csharp/notify_handler.md), but maps a [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) message based only on the control identifier.  
+  
+## Syntax  
+  
+```  
+  
+      NOTIFY_ID_HANDLER(   
+   id,   
+   func    
+)  
+```  
+  
+#### Parameters  
+ `id`  
+ [in] The identifier of the control sending the message.  
+  
+ `func`  
+ [in] The name of the message-handler function.  
+  
+## Requirements  
+ **Header:** atlwin.h  
+  
+## See Also  
+ [Message Map Macros](../VS_csharp/message-map-macros--atl-.md)   
+ [Macros](../VS_csharp/atl-macros.md)   
+ [NOTIFY_CODE_HANDLER](../VS_csharp/notify_code_handler.md)   
+ [NOTIFY_RANGE_HANDLER](../VS_csharp/notify_range_handler.md)   
+ [COMMAND_ID_HANDLER](../VS_csharp/command_id_handler.md)   
+ [MESSAGE_HANDLER](../VS_csharp/message_handler.md)

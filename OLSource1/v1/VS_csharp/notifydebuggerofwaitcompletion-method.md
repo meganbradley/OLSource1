@@ -1,0 +1,40 @@
+---
+title: "NotifyDebuggerOfWaitCompletion Method"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "NotifyDebuggerOfWaitCompletion method, Task class [.NET Framework debug engines]"
+ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
+caps.latest.revision: 7
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# NotifyDebuggerOfWaitCompletion Method
+Placeholder method used as a breakpoint target by the debugger. This method must not be inlined or optimized.  
+  
+ **Namespace:** <xref:System.Threading.Tasks*?displayProperty=fullName>  
+  
+ **Assembly:** mscorlib (in mscorlib.dll)  
+  
+## Syntax  
+  
+```vb  
+private void NotifyDebuggerOfWaitCompletion()  
+```  
+  
+## Remarks  
+ All join operations with a task should call this method if their debugger notification bit is set.  
+  
+## Requirements  
+  
+## See Also  
+ [Task Class - Internal Members](../VS_csharp/task-class---internal-members.md)

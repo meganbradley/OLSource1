@@ -1,0 +1,118 @@
+---
+title: "CComEnumOnSTL Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CComEnumOnSTL"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CComEnumOnSTL class"
+ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
+caps.latest.revision: 19
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CComEnumOnSTL Class
+This class defines a COM enumerator object based on an STL collection.  
+  
+## Syntax  
+  
+```  
+  
+template <class Base,  
+      const IID*  piid,  
+      class  T,  
+      class  Copy,  
+      class  CollType,  
+      class ThreadModel = CComObjectThreadModel>  
+   class ATL_NO_VTABLE CComEnumOnSTL :  
+      public IEnumOnSTLImpl< Base  
+   ,  piid  
+   ,  T  
+   ,  Copy  
+   ,  CollType  
+   >,  
+      public CComObjectRootEx< ThreadModel >  
+  
+```  
+  
+#### Parameters  
+ `Base`  
+ A COM enumerator ( [IEnumXXXX](https://msdn.microsoft.com/en-us/library/ms680089.aspx)) interface.  
+  
+ `piid`  
+ A pointer to the interface ID of the enumerator interface.  
+  
+ `T`  
+ The type of item exposed by the enumerator interface.  
+  
+ `Copy`  
+ A [copy policy](../VS_csharp/atl-copy-policy-classes.md) class.  
+  
+ `CollType`  
+ An STL container class.  
+  
+## Remarks  
+ `CComEnumOnSTL` defines a COM enumerator object based on an STL collection. This class can be used on its own or in conjunction with [ICollectionOnSTLImpl](../VS_csharp/icollectiononstlimpl-class.md). Typical steps for using this class are outlined below. For more information, see [ATL Collections and Enumerators](../VS_csharp/atl-collections-and-enumerators.md).  
+  
+## To use this class with ICollectionOnSTLImpl:  
+  
+-   `typedef` a specialization of this class.  
+  
+-   Use the `typedef` as the final template argument in a specialization of `ICollectionOnSTLImpl`.  
+  
+ See [ATL Collections and Enumerators](../VS_csharp/atl-collections-and-enumerators.md) for an example.  
+  
+## To use this class independently of ICollectionOnSTLImpl:  
+  
+-   `typedef` a specialization of this class.  
+  
+-   Use the `typedef` as the template argument in a specialization of `CComObject`.  
+  
+-   Create an instance of the `CComObject` specialization.  
+  
+-   Initialize the enumerator object by calling [IEnumOnSTLImpl::Init](../VS_csharp/ienumonstlimpl--init.md).  
+  
+-   Return the enumerator interface to the client.  
+  
+## Inheritance Hierarchy  
+ `CComObjectRootBase`  
+  
+ `Base`  
+  
+ [CComObjectRootEx](../VS_csharp/ccomobjectrootex-class.md)  
+  
+ [IEnumOnSTLImpl](../VS_csharp/ienumonstlimpl-class.md)  
+  
+ `CComEnumOnSTL`  
+  
+## Requirements  
+ **Header:** atlcom.h  
+  
+## Example  
+ The code shown below provides a generic function to handle the creation and initialization of an enumerator object:  
+  
+ [!code[NVC_ATL_COM#34](../VS_csharp/codesnippet/CPP/ccomenumonstl-class_1.h)]  
+  
+ This template function can be used to implement the `_NewEnum` property of a collection interface as shown below:  
+  
+ [!code[NVC_ATL_COM#35](../VS_csharp/codesnippet/CPP/ccomenumonstl-class_2.h)]  
+  
+ This code creates a `typedef` for `CComEnumOnSTL` that exposes a vector of `CComVariant`s by means of the **IEnumVariant** interface. The **CVariantCollection** class simply specializes **CreateSTLEnumerator** to work with enumerator objects of this type.  
+  
+## See Also  
+ [IEnumOnSTLImpl](../VS_csharp/ienumonstlimpl-class.md)   
+ [ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../VS_csharp/visual-c---samples.md)   
+ [Class Overview](../VS_csharp/atl-class-overview.md)   
+ [CComObjectRootEx Class](../VS_csharp/ccomobjectrootex-class.md)   
+ [CComObjectThreadModel](../VS_csharp/ccomobjectthreadmodel.md)   
+ [IEnumOnSTLImpl Class](../VS_csharp/ienumonstlimpl-class.md)

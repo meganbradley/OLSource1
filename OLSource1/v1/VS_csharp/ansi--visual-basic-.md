@@ -1,0 +1,46 @@
+---
+title: "Ansi (Visual Basic)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vb.Ansi"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "Declare statement, marshaling strings"
+  - "ANSI, Visual Basic"
+  - "ANSI"
+ms.assetid: 4f1fa6ff-5557-41ab-b6da-90baf4c15917
+caps.latest.revision: 17
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Ansi (Visual Basic)
+Specifies that Visual Basic should marshal all strings to American National Standards Institute (ANSI) values regardless of the name of the external procedure being declared.  
+  
+ When you call a procedure defined outside your project, the Visual Basic compiler does not have access to the information it needs to call the procedure correctly. This information includes where the procedure is located, how it is identified, its calling sequence and return type, and the string character set it uses. The [Declare Statement](../VS_csharp/declare-statement.md) creates a reference to an external procedure and supplies this necessary information.  
+  
+ The `charsetmodifier` part in the `Declare` statement supplies the character set information for marshaling strings during a call to the external procedure. It also affects how Visual Basic searches the external file for the external procedure name. The `Ansi` modifier specifies that Visual Basic should marshal all strings to ANSI values and should look up the procedure without modifying its name during the search.  
+  
+ If no character set modifier is specified, `Ansi` is the default.  
+  
+## Remarks  
+ The `Ansi` modifier can be used in this context:  
+  
+ [Declare Statement](../VS_csharp/declare-statement.md)  
+  
+## Smart Device Developer Notes  
+ This keyword is not supported.  
+  
+## See Also  
+ [Auto](../VS_csharp/auto--visual-basic-.md)   
+ [Unicode](../VS_csharp/unicode--visual-basic-.md)   
+ [Keywords (Visual Basic)](../VS_csharp/keywords--visual-basic-.md)

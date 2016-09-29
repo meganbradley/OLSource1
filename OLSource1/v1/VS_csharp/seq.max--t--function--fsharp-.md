@@ -1,0 +1,76 @@
+---
+title: "Seq.max&lt;&#39;T&gt; Function (F#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-fsharp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+apiname: 
+  - "Seq.max<'T>"
+apilocation: 
+  - "FSharp.Core.dll"
+apitype: "Assembly"
+f1_keywords: 
+  - "Microsoft.FSharp.Collections.SeqModule.Max``1"
+dev_langs: 
+  - "FSharp"
+helpviewer_keywords: 
+  - "Seq.max function [F#]"
+  - "max function [F#]"
+ms.assetid: f5568d20-00c5-4735-9211-d91a8c469829
+caps.latest.revision: 19
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Seq.max&lt;&#39;T&gt; Function (F#)
+Returns the greatest of all elements of the sequence, compared by using [Operators.max](../VS_csharp/operators.max--t--function--fsharp-.md).  
+  
+ **Namespace/Module Path:** Microsoft.FSharp.Collections.Seq  
+  
+ **Assembly:** FSharp.Core (in FSharp.Core.dll)  
+  
+## Syntax  
+  
+```  
+// Signature:  
+Seq.max : seq<'T> -> 'T (requires comparison)  
+  
+// Usage:  
+Seq.max source  
+```  
+  
+#### Parameters  
+ `source`  
+ Type: [seq](../VS_csharp/collections.seq--t--type-abbreviation--fsharp-.md)`<'T>`  
+  
+ The input sequence.  
+  
+## Exceptions  
+  
+|Exception|Condition|  
+|---------------|---------------|  
+|<xref:System.ArgumentException*>|Thrown when the input sequence is empty.|  
+|<xref:System.ArgumentNullException*>|Thrown when the input sequence is null.|  
+  
+## Return Value  
+ The result sequence.  
+  
+## Remarks  
+ This function is named `Max` in compiled assemblies. If you are accessing the function from a language other than F#, or through reflection, use this name.  
+  
+## Platforms  
+ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2  
+  
+## Version Information  
+ **F# Core Library Versions**  
+  
+ Supported in: 2.0, 4.0, Portable  
+  
+## See Also  
+ [Collections.Seq Module (F#)](../VS_csharp/collections.seq-module--fsharp-.md)   
+ [Microsoft.FSharp.Collections Namespace (F#)](../VS_csharp/microsoft.fsharp.collections-namespace--fsharp-.md)

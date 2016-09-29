@@ -1,0 +1,39 @@
+---
+title: "tile_barrier::wait_with_global_memory_fence Method"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "amp/Concurrency::tile_barrier::wait_with_global_memory_fence"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "wait_with_global_memory_fence function"
+ms.assetid: fc3b89f4-0865-40d3-90f7-c3fc8686e4e9
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# tile_barrier::wait_with_global_memory_fence Method
+Blocks execution of all threads in a tile until all threads in a tile have reached this call. This ensures that all global memory accesses are visible to other threads in the thread tile, and have been executed in program order.  
+  
+## Syntax  
+  
+```  
+void wait_with_global_memory_fence() const  restrict(amp);  
+```  
+  
+## Requirements  
+ **Header:** amp.h  
+  
+ **Namespace:** Concurrency  
+  
+## See Also  
+ [tile_barrier Class](../VS_csharp/tile_barrier-class.md)

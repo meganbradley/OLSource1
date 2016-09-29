@@ -1,0 +1,39 @@
+---
+title: "Allocating and Deallocating Window Memory"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "memory allocation, window objects"
+  - "memory deallocation"
+  - "storage for window objects"
+  - "memory deallocation, window memory"
+  - "window objects, deallocating memory for"
+  - "storage for window objects, allocating"
+ms.assetid: 7c962539-8461-4846-b5ca-fe3b15c313dc
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Allocating and Deallocating Window Memory
+Do not use the C++ **delete** operator to destroy a frame window or view. Instead, call the `CWnd` member function `DestroyWindow`. Frame windows, therefore, should be allocated on the heap with operator **new**. Be careful when allocating frame windows on the stack frame or globally. Other windows should be allocated on the stack frame whenever possible.  
+  
+## What do you want to know more about?  
+  
+-   [Creating windows](../VS_csharp/creating-windows.md)  
+  
+-   [Window destruction sequence](../VS_csharp/window-destruction-sequence.md)  
+  
+-   [Detaching a CWnd from its HWND](../VS_csharp/detaching-a-cwnd-from-its-hwnd.md)  
+  
+## See Also  
+ [Destroying Window Objects](../VS_csharp/destroying-window-objects.md)

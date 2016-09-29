@@ -1,0 +1,46 @@
+---
+title: "Analyzing C-C++ Code Quality by Using Code Analysis"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-devops-test"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+H1: "Analyzing C/C++ Code Quality by Using Code Analysis"
+helpviewer_keywords: 
+  - "C/C++, code analysis"
+  - "code analysis, running"
+  - "code analysis, C/C++"
+  - "code analysis,native"
+  - "native code analysis"
+  - "C++, code analysis"
+  - "C, code analysis"
+ms.assetid: 03b8b47a-e9d8-4692-835f-2d22ec6c76a4
+caps.latest.revision: 39
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Analyzing C-C++ Code Quality by Using Code Analysis
+You can improve your C/C++ code by using the code analysis in Visual Studio to find and fix code defects.  
+  
+## In This Section  
+  
+|||  
+|-|-|  
+|[Code Analysis for C/C++ Overview](../VS_csharp/code-analysis-for-c-c---overview.md)|Learn about the features of the code analysis tool.|  
+|[Quick Start: Code Analysis for C/C++](../VS_csharp/quick-start--code-analysis-for-c-c--.md)|Learn the basics of code analysis for C/C++.|  
+|[Using Rule Sets to Specify the C++ Rules to Run](../VS_csharp/using-rule-sets-to-specify-the-c---rules-to-run.md)|Specify the rules to run on your project or solution.|  
+|[Using the C++ Core Guidelines checkers](../VS_csharp/using-the-c---core-guidelines-checkers.md)|Add the C++ Core Guidelines checkers to your project.|  
+|[How to: Set Code Analysis Properties for C/C++ Projects](../VS_csharp/how-to--set-code-analysis-properties-for-c-c---projects.md)|Describes the configuration settings for code analysis.|  
+|[How to: Specify Additional Code Information](../VS_csharp/how-to--specify-additional-code-information-by-using-__analysis_assume.md)|Learn how to use `__analysis_assume` to improve code analysis.|  
+|[Walkthrough: Analyzing C/C++ Code for Defects](../VS_csharp/walkthrough--analyzing-c-c---code-for-defects.md)|Gain hands-on experience by performing code analysis on a C/C++ project.|  
+|[Using Annotations to Reduce C/C++ Code Defects](../VS_csharp/using-sal-annotations-to-reduce-c-c---code-defects.md)|Learn about annotation features of the code analysis tool to detect violations of the contract between the caller and the callee.|  
+|[Code Analysis for C/C++ Warnings](../VS_csharp/code-analysis-for-c-c---warnings.md)|Lists and describes code analysis warnings.|  
+  
+## See Also  
+ [Analyzing Application Quality](../VS_csharp/analyzing-application-quality-by-using-code-analysis-tools.md)   
+ [Analyzing Managed Code Quality By Using Code Analysis](../VS_csharp/analyzing-managed-code-quality-by-using-code-analysis.md)

@@ -1,0 +1,68 @@
+---
+title: "DDV_MinMaxMonth"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "DDV_MinMaxMonth"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "DDV_MinMaxMonth function"
+ms.assetid: ae7d50a3-ded3-440d-b4b1-a9869488feed
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# DDV_MinMaxMonth
+Call `DDV_MinMaxMonth` to verify that the time/date value in the month calendar control ([CMonthCalCtrl](../VS_csharp/cmonthcalctrl-class.md)) associated with *refValue* falls between `refMinRange` and `refMaxRange`.  
+  
+## Syntax  
+  
+```  
+  
+      void AFXAPI DDV_MinMaxMonth(  
+   CDataExchange* pDX,  
+   CTime& refValue,  
+   const CTime* refMinRange,  
+   const CTime* refMaxRange   
+);  
+void AFXAPI DDV_MinMaxMonth(  
+   CDataExchange* pDX,  
+   COleDateTime& refValue,  
+   const COleDateTime* refMinRange,  
+   const COleDateTime* refMaxRange   
+);  
+```  
+  
+#### Parameters  
+ `pDX`  
+ A pointer to a [CDataExchange](../VS_csharp/cdataexchange-class.md) object. The framework supplies this object to establish the context of the data exchange, including its direction.  
+  
+ *refValue*  
+ A reference to an object of type `CTime` or `COleDateTime` associated with a member variable of the dialog box, form view, or control view object. This object contains the data to be validated. MFC passes this reference when `DDV_MinMaxMonth` is called.  
+  
+ `refMinRange`  
+ Minimum date/time value allowed.  
+  
+ `refMaxRange`  
+ Maximum date/time value allowed.  
+  
+## Remarks  
+ For more information about DDV, see [Dialog Data Exchange and Validation](../VS_csharp/dialog-data-exchange-and-validation.md).  
+  
+## Requirements  
+ **Header:** afxdd_.h  
+  
+## See Also  
+ [Standard Dialog Data Validation Routines](../VS_csharp/standard-dialog-data-validation-routines.md)   
+ [Macros and Globals](../VS_csharp/mfc-macros-and-globals.md)   
+ [DDX_DateTimeCtrl](../VS_csharp/ddx_datetimectrl.md)   
+ [DDV_MinMaxMonth](../VS_csharp/ddv_minmaxmonth.md)

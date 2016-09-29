@@ -1,0 +1,73 @@
+---
+title: "pair (STL-CLR)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+H1: "pair (STL/CLR)"
+f1_keywords: 
+  - "cliext::pair"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "pair class [STL/CLR]"
+ms.assetid: 3326b4d9-a52a-49e5-8103-9aa5e8b352de
+caps.latest.revision: 9
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# pair (STL-CLR)
+The template class describes an object that wraps a pair of values.  
+  
+## Syntax  
+  
+```  
+template<typename Value1,  
+    typename Value2>  
+    ref class pair;  
+```  
+  
+#### Parameters  
+ Value1  
+ The type of first wrapped value.  
+  
+ Value2  
+ The type of second wrapped value.  
+  
+## Members  
+  
+|Type Definition|Description|  
+|---------------------|-----------------|  
+|[first_type](../VS_csharp/pair--first_type--stl-clr-.md)|The type of the first wrapped value.|  
+|[second_type](../VS_csharp/pair--second_type--stl-clr-.md)|The type of the second wrapped value.|  
+  
+|Member Object|Description|  
+|-------------------|-----------------|  
+|[first](../VS_csharp/pair--first--stl-clr-.md)|The first stored value.|  
+|[second](../VS_csharp/pair--second--stl-clr-.md)|The second stored value.|  
+  
+|Member Function|Description|  
+|---------------------|-----------------|  
+|[pair](../VS_csharp/pair--pair--stl-clr-.md)|Constructs a pair object.|  
+|[swap](../VS_csharp/pair--swap--stl-clr-.md)|Swaps the contents of two pairs.|  
+  
+|Operator|Description|  
+|--------------|-----------------|  
+|[operator=](../VS_csharp/pair--operator=--stl-clr-.md)|Replaces the stored pair of values.|  
+  
+## Remarks  
+ The object stores a pair of values. You use this template class to combine two values into a single object. Note that `cliext::pair` (described here) stores only managed types; to store a pair of unmanaged types use `std::pair`, declared in `<utility>`.  
+  
+## Requirements  
+ **Header:** <cliext/utility>  
+  
+ **Namespace:** cliext  
+  
+## See Also  
+ [make_pair](../VS_csharp/make_pair--stl-clr-.md)

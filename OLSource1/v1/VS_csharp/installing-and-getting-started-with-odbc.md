@@ -1,0 +1,35 @@
+---
+title: "Installing and Getting Started with ODBC"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "installing ODBC"
+  - "ODBC, installing"
+ms.assetid: 6b473481-1d68-468f-89f6-82b0fd7716fd
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Installing and Getting Started with ODBC
+The following topics help you install the components that you need to start working with Open Database Connectivity (ODBC).  
+  
+## In This Section  
+  
+-   [Install MFC ODBC database support](../VS_csharp/installing-mfc-database-support.md)  
+  
+-   [Install the ODBC drivers that ship with Visual C++](../VS_csharp/odbc-administrator.md)  
+  
+-   [Redistribute ODBC components to your customers](../VS_csharp/odbc-basics.md)  
+  
+## See Also  
+ [Open Database Connectivity (ODBC)](../VS_csharp/open-database-connectivity--odbc-.md)

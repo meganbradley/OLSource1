@@ -1,0 +1,37 @@
+---
+title: "operator GT"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "operator GT"
+  - "GT"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operator GT"
+  - "GT operator"
+ms.assetid: 48194297-7bf9-42f9-957a-e1a5b6d7be7c
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# operator GT
+Returns true (–1) if *expression1* is greater than *expression2*, or returns false (0) if it is not.  
+  
+## Syntax  
+  
+```  
+  
+expression1 GT expression2  
+```  
+  
+## See Also  
+ [Operators Reference](../VS_csharp/operators-reference.md)

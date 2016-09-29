@@ -1,0 +1,63 @@
+---
+title: "AtlUnadvise"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "ATL::AtlUnadvise"
+  - "ATL.AtlUnadvise"
+  - "AtlUnadvise"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "AtlUnadvise function"
+ms.assetid: 939d2e50-e2df-4e8f-a16a-e9650b8f0340
+caps.latest.revision: 16
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# AtlUnadvise
+Terminates the connection established through [AtlAdvise](../VS_csharp/atladvise.md).  
+  
+> [!IMPORTANT]
+>  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../VS_csharp/includes/wrt_md.md)].  
+  
+## Syntax  
+  
+```  
+  
+      HRESULT AtlUnadvise(  
+IUnknown* pUnkCP,  
+const IID& iid,  
+DWORD dw   
+);  
+```  
+  
+#### Parameters  
+ `pUnkCP`  
+ [in] A pointer to the **IUnknown** of the object that the client is connected with.  
+  
+ `iid`  
+ [in] The GUID of the connection point. Typically, this is the same as the outgoing interface managed by the connection point.  
+  
+ `dw`  
+ [in] The cookie that uniquely identifies the connection.  
+  
+## Return Value  
+ A standard HRESULT value.  
+  
+## Example  
+ [!code[NVC_ATL_Windowing#96](../VS_csharp/codesnippet/CPP/atlunadvise_1.cpp)]  
+  
+## Requirements  
+ **Header:** atlbase.h  
+  
+## See Also  
+ [Connection Point Global Functions](../VS_csharp/connection-point-global-functions.md)

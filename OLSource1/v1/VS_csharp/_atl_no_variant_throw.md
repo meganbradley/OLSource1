@@ -1,0 +1,42 @@
+---
+title: "_ATL_NO_VARIANT_THROW"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "ATL._ATL_NO_VARIANT_THROW"
+  - "ATL::_ATL_NO_VARIANT_THROW"
+  - "_ATL_NO_VARIANT_THROW"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ATL_NO_VARIANT_THROW"
+  - "_ATL_NO_VARIANT_THROW"
+ms.assetid: 04b0fcaa-aceb-475d-a46d-00720adb7d6d
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# _ATL_NO_VARIANT_THROW
+Suppresses the [CComVariant Class](../VS_csharp/ccomvariant-class.md) from throwing exceptions.  
+  
+## Syntax  
+  
+```  
+#define _ATL_NO_VARIANT_THROW  
+```  
+  
+## Remarks  
+ Define this macro if your module must not throw exceptions. When this macro is defined, `CComVariant` will not throw exceptions. By default, this macro is not defined.  
+  
+## See Also  
+ [ATL Macros](../VS_csharp/atl-macros.md)   
+ [ATL Macros Alphabetical Reference](../VS_csharp/atl-macros-alphabetical-reference.md)   
+ [ATL Concepts](../VS_csharp/active-template-library--atl--concepts.md)

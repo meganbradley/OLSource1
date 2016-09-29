@@ -1,0 +1,55 @@
+---
+title: "ICommandSource::AddCommandHandler"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "ICommandSource.AddCommandHandler"
+  - "ICommandSource::AddCommandHandler"
+  - "AddCommandHandler"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "AddCommandHandler method"
+ms.assetid: 0829f789-bf15-4c62-ab41-9ae32925d78d
+caps.latest.revision: 16
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# ICommandSource::AddCommandHandler
+Adds a command handler to a command source object.  
+  
+## Syntax  
+  
+```  
+void AddCommandHandler(  
+   unsigned int cmdID,  
+   CommandHandler^ cmdHandler  
+);  
+```  
+  
+#### Parameters  
+ `cmdID`  
+ The command ID.  
+  
+ `cmdHandler`  
+ A handle to the command handler method.  
+  
+## Remarks  
+ This method adds the command handler `cmdHandler` to the command source object and maps the handler to `cmdID`.  
+  
+ See [How To: Add Command Routing to the Windows Forms Control](../VS_csharp/how-to--add-command-routing-to-the-windows-forms-control.md) for an example of how to use `AddCommandHandler`.  
+  
+## Requirements  
+ **Header:** afxwinforms.h  
+  
+## See Also  
+ [ICommandSource Interface](../VS_csharp/icommandsource-interface.md)   
+ [ICommandSource::RemoveCommandHandler](../VS_csharp/icommandsource--removecommandhandler.md)

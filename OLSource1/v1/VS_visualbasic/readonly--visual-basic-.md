@@ -1,0 +1,74 @@
+---
+title: "ReadOnly (Visual Basic)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vb.ReadOnly"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "ReadOnly keyword"
+  - "variables [Visual Basic], read-only"
+  - "ReadOnly property"
+  - "properties [Visual Basic], read-only"
+  - "read-only variables"
+ms.assetid: e868185d-6142-4359-a2fd-a7965cadfce8
+caps.latest.revision: 19
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# ReadOnly (Visual Basic)
+Specifies that a variable or property can be read but not written.  
+  
+## Remarks  
+  
+## Rules  
+  
+-   **Declaration Context.** You can use `ReadOnly` only at module level. This means the declaration context for a `ReadOnly` element must be a class, structure, or module, and cannot be a source file, namespace, or procedure.  
+  
+-   **Combined Modifiers.** You cannot specify `ReadOnly` together with `Static` in the same declaration.  
+  
+-   **Assigning a Value.** Code consuming a `ReadOnly` property cannot set its value. But code that has access to the underlying storage can assign or change the value at any time.  
+  
+     You can assign a value to a `ReadOnly` variable only in its declaration or in the constructor of a class or structure in which it is defined.  
+  
+## When to Use a ReadOnly Variable  
+ There are situations in which you cannot use a [Const Statement](../VS_csharp/const-statement--visual-basic-.md) to declare and assign a constant value. For example, the `Const` statement might not accept the data type you want to assign, or you might not be able to compute the value at compile time with a constant expression. You might not even know the value at compile time. In these cases, you can use a `ReadOnly` variable to hold a constant value.  
+  
+> [!IMPORTANT]
+>  If the data type of the variable is a reference type, such as an array or a class instance, its members can be changed even if the variable itself is `ReadOnly`. The following example illustrates this.  
+  
+ `ReadOnly characterArray() As Char = {"x"c, "y"c, "z"c}`  
+  
+ `Sub changeArrayElement()`  
+  
+ `characterArray(1) = "M"c`  
+  
+ `End Sub`  
+  
+ When initialized, the array pointed to by `characterArray()` holds "x", "y", and "z". Because the variable `characterArray` is `ReadOnly`, you cannot change its value once it is initialized; that is, you cannot assign a new array to it. However, you can change the values of one or more of the array members. Following a call to the procedure `changeArrayElement`, the array pointed to by `characterArray()` holds "x", "M", and "z".  
+  
+ Note that this is similar to declaring a procedure parameter to be [ByVal](../VS_csharp/byval--visual-basic-.md), which prevents the procedure from changing the calling argument itself but allows it to change its members.  
+  
+## Example  
+ The following example defines a `ReadOnly` property for the date on which an employee was hired. The class stores the property value internally as a `Private` variable, and only code inside the class can change that value. However, the property is `Public`, and any code that can access the class can read the property.  
+  
+ [!code[VbVbalrKeywords#4](../VS_csharp/codesnippet/VisualBasic/readonly--visual-basic-_1.vb)]  
+  
+ The `ReadOnly` modifier can be used in these contexts:  
+  
+ [Dim Statement](../VS_csharp/dim-statement--visual-basic-.md)  
+  
+ [Property Statement](../VS_csharp/property-statement.md)  
+  
+## See Also  
+ [WriteOnly](../VS_csharp/writeonly--visual-basic-.md)   
+ [Keywords (Visual Basic)](../VS_csharp/keywords--visual-basic-.md)

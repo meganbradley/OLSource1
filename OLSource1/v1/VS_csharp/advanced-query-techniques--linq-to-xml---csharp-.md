@@ -1,0 +1,34 @@
+---
+title: "Advanced Query Techniques (LINQ to XML) (C#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+ms.assetid: 028d978e-215b-4d50-ba70-adce0659386d
+caps.latest.revision: 7
+---
+# Advanced Query Techniques (LINQ to XML) (C#)
+This section provides examples of more advanced [!INCLUDE[sqltecxlinq](../VS_csharp/includes/sqltecxlinq_md.md)] query techniques.  
+  
+## In This Section  
+  
+|Topic|Description|  
+|-----------|-----------------|  
+|[How to: Join Two Collections (LINQ to XML) (C#)](../VS_csharp/how-to--join-two-collections--linq-to-xml---csharp-.md)|Shows how to use the `Join` clause to take advantage of relationships in XML data.|  
+|[How to: Create Hierarchy Using Grouping (C#)](../VS_csharp/how-to--create-hierarchy-using-grouping--csharp-.md)|Shows how to group data, and then generate XML based on the grouping.|  
+|[How to: Query LINQ to XML Using XPath (C#)](../VS_csharp/how-to--query-linq-to-xml-using-xpath--csharp-.md)|Shows how to retrieve collections based on XPath queries.|  
+|[How to: Write a LINQ to XML Axis Method (C#)](../VS_csharp/how-to--write-a-linq-to-xml-axis-method--csharp-.md)|Shows how to write a [!INCLUDE[sqltecxlinq](../VS_csharp/includes/sqltecxlinq_md.md)] axis method.|  
+|[How to: Perform Streaming Transformations of Text to XML (C#)](../VS_csharp/how-to--perform-streaming-transformations-of-text-to-xml--csharp-.md)|Shows how to transform very large text files into XML while maintaining a small memory footprint.|  
+|[How to: List All Nodes in a Tree (C#)](../VS_csharp/how-to--list-all-nodes-in-a-tree--csharp-.md)|Presents a utility method that lists all nodes in an XML tree. This is useful for debugging code that modifies an XML tree.|  
+|[How to: Retrieve Paragraphs from an Office Open XML Document (C#)](../VS_csharp/how-to--retrieve-paragraphs-from-an-office-open-xml-document--csharp-.md)|Presents code that opens an Office Open XML Document, retrieves the paragraphs in a collection of XElement objects, the text of the paragraphs, and the style of the paragraphs.|  
+|[How to: Modify an Office Open XML Document (C#)](../VS_csharp/how-to--modify-an-office-open-xml-document--csharp-.md)|Presents code that opens, modifies, and saves an Office Open XML Document.|  
+|[How to: Populate an XML Tree from the File System (C#)](../VS_csharp/how-to--populate-an-xml-tree-from-the-file-system--csharp-.md)|Presents code that creates an XML tree from the file system.|  
+  
+## See Also  
+ [Querying XML Trees (C#)](../VS_csharp/querying-xml-trees--csharp-.md)

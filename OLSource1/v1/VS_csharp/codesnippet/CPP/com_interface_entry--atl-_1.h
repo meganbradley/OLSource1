@@ -1,0 +1,5 @@
+BEGIN_COM_MAP(CThisExample)
+   COM_INTERFACE_ENTRY(IThisExample)
+   COM_INTERFACE_ENTRY(IDispatch)
+   COM_INTERFACE_ENTRY(ISupportErrorInfo)
+END_COM_MAP()

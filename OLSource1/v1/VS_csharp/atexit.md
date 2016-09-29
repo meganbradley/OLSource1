@@ -1,0 +1,117 @@
+---
+title: "atexit"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+apiname: 
+  - "atexit"
+apilocation: 
+  - "msvcr110.dll"
+  - "msvcr100.dll"
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr120.dll"
+  - "msvcr110_clr0400.dll"
+apitype: "DLLExport"
+f1_keywords: 
+  - "atexit"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "processing, at exit"
+  - "atexit function"
+ms.assetid: 92c156d2-8052-4e58-96dc-00128baac6f9
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# atexit
+Processes the specified function at exit.  
+  
+## Syntax  
+  
+```  
+int atexit(  
+   void (__cdecl *func )( void )  
+);  
+```  
+  
+#### Parameters  
+ `func`  
+ Function to be called.  
+  
+## Return Value  
+ `atexit` returns 0 if successful, or a nonzero value if an error occurs.  
+  
+## Remarks  
+ The `atexit` function is passed the address of a function (`func`) to be called when the program terminates normally. Successive calls to `atexit` create a register of functions that are executed in last-in, first-out (LIFO) order. The functions passed to `atexit` cannot take parameters. `atexit` and `_onexit` use the heap to hold the register of functions. Thus, the number of functions that can be registered is limited only by heap memory.  
+  
+ The code in the `atexit` function should not contain any dependency on any DLL which could have already been unloaded when the `atexit` function is called.  
+  
+ To generate an ANSI-compliant application, use the ANSI-standard `atexit` function (rather than the similar `_onexit` function).  
+  
+## Requirements  
+  
+|Routine|Required header|  
+|-------------|---------------------|  
+|`atexit`|<stdlib.h>|  
+  
+## Example  
+ This program pushes four functions onto the stack of functions to be executed when `atexit` is called. When the program exits, these programs are executed on a last in, first out basis.  
+  
+```  
+// crt_atexit.c  
+#include <stdlib.h>  
+#include <stdio.h>  
+  
+void fn1( void ), fn2( void ), fn3( void ), fn4( void );  
+  
+int main( void )  
+{  
+   atexit( fn1 );  
+   atexit( fn2 );  
+   atexit( fn3 );  
+   atexit( fn4 );  
+   printf( "This is executed first.\n" );  
+}  
+  
+void fn1()  
+{  
+   printf( "next.\n" );  
+}  
+  
+void fn2()  
+{  
+   printf( "executed " );  
+}  
+  
+void fn3()  
+{  
+   printf( "is " );  
+}  
+  
+void fn4()  
+{  
+   printf( "This " );  
+}  
+```  
+  
+ **This is executed first.**  
+**This is executed next.**   
+## .NET Framework Equivalent  
+ [System::Diagnostics::Process::Exited](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.exited.aspx)  
+  
+## See Also  
+ [Process and Environment Control](../VS_csharp/process-and-environment-control.md)   
+ [abort](../VS_csharp/abort.md)   
+ [exit, _Exit, _exit](../VS_csharp/exit--_exit--_exit.md)   
+ [_onexit, _onexit_m](../VS_csharp/_onexit--_onexit_m.md)

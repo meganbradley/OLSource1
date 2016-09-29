@@ -1,0 +1,77 @@
+---
+title: "NAME_MATCH"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "NAME_MATCH"
+helpviewer_keywords: 
+  - "NAME_MATCH enumeration"
+ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
+caps.latest.revision: 12
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# NAME_MATCH
+Selects the case option for matching names.  
+  
+## Syntax  
+  
+```cpp#  
+typedef enum {   
+   nmNone            = 0,  
+   nmCaseSensitive   = 1,  
+   nmCaseInsensitive = 2  
+} NAME_MATCH;  
+```  
+  
+```c#  
+public enum NameMatchOptions {   
+   nmNone            = 0,  
+   nmCaseSensitive   = 1,  
+   nmCaseInsensitive = 2  
+}  
+```  
+  
+## Members  
+ nmNone  
+ No options are specified.  
+  
+ nmCaseSensitive  
+ Indicates that names to be matched are case-sensitive.  
+  
+ nmCaseInsensitive  
+ Indicates that names to be matched are not case-sensitive.  
+  
+## Remarks  
+ Passed as an argument to the following methods:  
+  
+-   [IDebugSymbolProvider::GetTypeByName](../VS_csharp/idebugsymbolprovider--gettypebyname.md)  
+  
+-   [IDebugSymbolProvider::GetClassTypeByName](../VS_csharp/idebugsymbolprovider--getclasstypebyname.md)  
+  
+-   [IDebugContainerField::EnumFields](../VS_csharp/idebugcontainerfield--enumfields.md)  
+  
+-   [IDebugSymbolProvider::GetMethodFieldsByName](../VS_csharp/idebugsymbolprovider--getmethodfieldsbyname.md)  
+  
+## Requirements  
+ Header: sh.h  
+  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+  
+## See Also  
+ [Enumerations (Visual Studio Debugging SDK)](../VS_csharp/enumerations--visual-studio-debugging-.md)   
+ [IDebugSymbolProvider::GetTypeByName](../VS_csharp/idebugsymbolprovider--gettypebyname.md)   
+ [IDebugSymbolProvider::GetClassTypeByName](../VS_csharp/idebugsymbolprovider--getclasstypebyname.md)   
+ [IDebugContainerField::EnumFields](../VS_csharp/idebugcontainerfield--enumfields.md)   
+ [IDebugSymbolProvider::GetMethodFieldsByName](../VS_csharp/idebugsymbolprovider--getmethodfieldsbyname.md)

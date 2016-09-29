@@ -1,0 +1,57 @@
+---
+title: "IView Interface"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "IView"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "views [MFC]"
+  - "IView class"
+  - "views, classes"
+ms.assetid: 9321f299-486e-4551-bee9-d2c4a7b91548
+caps.latest.revision: 21
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IView Interface
+Implements several methods that [CWinFormsView](../VS_csharp/cwinformsview-class.md) uses to send view notifications to a managed control.  
+  
+## Syntax  
+  
+```  
+interface class IView  
+```  
+  
+## Members  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[IView::OnActivateView](../VS_csharp/iview--onactivateview.md)|Called by MFC when a view is activated or deactivated.|  
+|[IView::OnInitialUpdate](../VS_csharp/iview--oninitialupdate.md)|Called by the framework after the view is first attached to the document, but before the view is initially displayed.|  
+|[IView::OnUpdate](../VS_csharp/iview--onupdate.md)|Called by MFC after the view's document has been modified; this function allows the view to update its display to reflect modifications.|  
+  
+## Remarks  
+ `IView` implements several methods that `CWinFormsView` uses to forward common view notifications to a hosted managed control. These are [OnInitialUpdate](../VS_csharp/iview--oninitialupdate.md), [OnUpdate](../VS_csharp/iview--onupdate.md) and [OnActivateView](../VS_csharp/iview--onactivateview.md).  
+  
+ `IView` is similar to [CView](../VS_csharp/cview-class.md), but is used only with managed views and controls.  
+  
+ For more information on using Windows Forms, see [Using Windows Forms in MFC](../VS_csharp/using-a-windows-form-user-control-in-mfc.md).  
+  
+## Requirements  
+ Header: afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)  
+  
+## See Also  
+ [CWinFormsView Class](../VS_csharp/cwinformsview-class.md)   
+ [CView Class](../VS_csharp/cview-class.md)

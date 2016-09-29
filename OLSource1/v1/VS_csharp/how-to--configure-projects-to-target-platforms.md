@@ -1,0 +1,67 @@
+---
+title: "How to: Configure Projects to Target Platforms"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "project settings [Visual Studio], targeting platforms"
+  - "platforms, targeting specific CPUs"
+  - "project properties [Visual Studio], targeting platforms"
+  - "projects [Visual Studio], targeting platforms"
+  - "64-bit [Visual Studio]"
+  - "64-bit programming [Visual Studio]"
+  - "CPUs, targeting specific"
+  - "64-bit applications [Visual Studio]"
+ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
+caps.latest.revision: 17
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# How to: Configure Projects to Target Platforms
+[!INCLUDE[vsprvs](../VS_csharp/includes/vsprvs_md.md)] enables you to set up your applications to target different platforms, including 64-bit platforms. For more information on 64-bit platform support in [!INCLUDE[vsprvs](../VS_csharp/includes/vsprvs_md.md)], see [64-bit Applications](assetId:///fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
+  
+## Targeting Platforms with the Configuration Manager  
+ The **Configuration Manager** provides a way for you to quickly add a new platform to target with your project. If you select one of the platforms included with [!INCLUDE[vsprvs](../VS_csharp/includes/vsprvs_md.md)], the properties for your project are modified to build your project for the selected platform.  
+  
+#### To configure a project to target a 64-bit platform  
+  
+1.  On the menu bar, choose **Build**, **Configuration Manager**.  
+  
+2.  In the **Active solution platform** list, choose a 64-bit platform for the solution to target, and then choose the **Close** button.  
+  
+    1.  If the platform that you want doesn’t appear in the **Active solution platform** list, choose **New**.  
+  
+         The **New Solution Platform** dialog box appears.  
+  
+    2.  In the **Type or select the new platform** list, choose **x64**.  
+  
+        > [!NOTE]
+        >  If you give your configuration a new name, you may have to modify the settings in the **Project Designer** to target the correct platform.  
+  
+    3.  If you want to copy the settings from a current platform configuration, choose it, and then choose the **OK** button.  
+  
+ The properties for all projects that target the 64-bit platform are updated, and the next build of the project will be optimized for 64-bit platforms.  
+  
+## Targeting Platforms in the Project Designer  
+ The Project Designer also provides a way to target different platforms with your project. If selecting one of the platforms included in the list in the **New Solution Platform** dialog box does not work for your solution, you can create a custom configuration name and modify the settings in the **Project Designer** to target the correct platform.  
+  
+ Performing this task varies based on the programming language you are using. See the following links for more information:  
+  
+-   For [!INCLUDE[vbprvb](../VS_csharp/includes/vbprvb_md.md)] projects, see [/platform (Visual Basic)](../VS_csharp/-platform--visual-basic-.md).  
+  
+-   For [!INCLUDE[csprcs](../VS_csharp/includes/csprcs_md.md)] projects, see [Build Pane, Project Designer (C#)](../VS_csharp/build-page--project-designer--csharp-.md).  
+  
+-   For [!INCLUDE[vcprvc](../VS_csharp/includes/vcprvc_md.md)] projects, see [/clr (Common Language Runtime Compilation)](../VS_csharp/-clr--common-language-runtime-compilation-.md).  
+  
+## See Also  
+ [Build Platforms](../VS_csharp/understanding-build-platforms.md)   
+ [/platform (Specify Output Platform)  (C# Compiler Options)](../VS_csharp/-platform--csharp-compiler-options-.md)   
+ [64-bit Applications](assetId:///fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [Visual Studio Development Environment 64-Bit Support](../VS_csharp/visual-studio-ide-64-bit-support.md)

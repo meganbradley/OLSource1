@@ -1,0 +1,63 @@
+---
+title: "How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (C#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+ms.assetid: c3133d64-523f-422d-8838-73d36b945ca0
+caps.latest.revision: 7
+---
+# How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (C#)
+This topic shows how to find all attributes of the siblings of the context node. Only attributes with a specific name are returned in the collection.  
+  
+ The XPath expression is:  
+  
+ `../Book/@id`  
+  
+## Example  
+ This example first finds a `Book` element, and then finds all sibling elements named `Book`, and then finds all attributes named `id`. The result is a collection of attributes.  
+  
+ This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](../VS_csharp/sample-xml-file--books--linq-to-xml-1.md).  
+  
+```c#  
+XDocument books = XDocument.Load("Books.xml");  
+  
+XElement book =   
+    books  
+    .Root  
+    .Element("Book");  
+  
+// LINQ to XML query  
+IEnumerable<XAttribute> list1 =  
+    from el in book.Parent.Elements("Book")  
+    select el.Attribute("id");  
+  
+// XPath expression  
+IEnumerable<XAttribute> list2 =  
+  ((IEnumerable)book.XPathEvaluate("../Book/@id")).Cast<XAttribute>();  
+  
+if (list1.Count() == list2.Count() &&  
+        list1.Intersect(list2).Count() == list1.Count())  
+    Console.WriteLine("Results are identical");  
+else  
+    Console.WriteLine("Results differ");  
+foreach (XAttribute el in list1)  
+    Console.WriteLine(el);  
+```  
+  
+ This example produces the following output:  
+  
+```  
+Results are identical  
+id="bk101"  
+id="bk102"  
+```  
+  
+## See Also  
+ [LINQ to XML for XPath Users (C#)](../VS_csharp/linq-to-xml-for-xpath-users--csharp-.md)

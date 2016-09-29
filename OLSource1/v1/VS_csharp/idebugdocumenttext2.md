@@ -1,0 +1,58 @@
+---
+title: "IDebugDocumentText2"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugDocumentText2"
+helpviewer_keywords: 
+  - "IDebugDocumentText2 interface"
+ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
+caps.latest.revision: 16
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDebugDocumentText2
+This interface represents a text document.  
+  
+## Syntax  
+  
+```  
+IDebugDocumentText2 : IDebugDocument2  
+```  
+  
+## Notes for Implementers  
+ A debug engine (DE) implements this interface when the source code it needs to supply is in text form. Since this is the most typical case, if a DE implements the [IDebugDocument2](../VS_csharp/idebugdocument2.md) interface, it should also implement the `IDebugDocumentText2` interface.  
+  
+## Notes for Callers  
+ Use the `QueryInterface` method to obtain this interface from an `IDebugDocument2` interface.  
+  
+## Methods in Vtable Order  
+ In addition to the methods on the `IDebugDocument2` interface, this interface implements the following methods:  
+  
+|Method|Description|  
+|------------|-----------------|  
+|[GetSize](../VS_csharp/idebugdocumenttext2--getsize.md)|Retrieves the size of the text at this position in the document.|  
+|[GetText](../VS_csharp/idebugdocumenttext2--gettext.md)|Retrieves the text from the specified position in the document.|  
+  
+## Remarks  
+ An object that implements this interface must also implement the <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer*> interface, which supplies the <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint*> interface for an [IDebugDocumentTextEvents2](../VS_csharp/idebugdocumenttextevents2.md) object.  
+  
+## Requirements  
+ Header: msdbg.h  
+  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+  
+## See Also  
+ [IDebugDocument2](../VS_csharp/idebugdocument2.md)   
+ [IDebugDocumentTextEvents2](../VS_csharp/idebugdocumenttextevents2.md)

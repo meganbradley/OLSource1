@@ -1,0 +1,57 @@
+---
+title: "oleautomation"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "language-reference"
+f1_keywords: 
+  - "vc-attr.oleautomation"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "oleautomation attribute"
+ms.assetid: c1086c91-260b-4dc3-b244-662852d09906
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# oleautomation
+Indicates that an interface is compatible with Automation.  
+  
+## Syntax  
+  
+```  
+  
+[oleautomation]  
+  
+```  
+  
+## Remarks  
+ The **oleautomation** C++ attribute has the same functionality as the [oleautomation](http://msdn.microsoft.com/library/windows/desktop/aa367129) MIDL attribute.  
+  
+## Example  
+ See the examples for [defaultvalue](../VS_csharp/defaultvalue.md) and [nonextensible](../VS_csharp/nonextensible.md) for a sample use of **oleautomation**.  
+  
+## Requirements  
+  
+### Attribute Context  
+  
+|||  
+|-|-|  
+|**Applies to**|`interface`|  
+|**Repeatable**|No|  
+|**Required attributes**|None|  
+|**Invalid attributes**|**dispinterface**|  
+  
+ For more information about the attribute contexts, see [Attribute Contexts](../VS_csharp/attribute-contexts.md).  
+  
+## See Also  
+ [IDL Attributes](../VS_csharp/idl-attributes.md)   
+ [Interface Attributes](../VS_csharp/interface-attributes.md)   
+ [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

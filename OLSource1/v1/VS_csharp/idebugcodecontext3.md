@@ -1,0 +1,49 @@
+---
+title: "IDebugCodeContext3"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugCodeContext3 interface"
+ms.assetid: 524eb882-0ad5-4bfb-95eb-eb3abb3d0237
+caps.latest.revision: 12
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDebugCodeContext3
+Extends the [IDebugCodeContext2](../VS_csharp/idebugcodecontext2.md) interface to enable the retrieval of module and process interfaces.  
+  
+## Syntax  
+  
+```  
+IDebugCodeContext3 : IDebugCodeContext2  
+```  
+  
+## Notes for Implementers  
+ Implemented by debug engines and consumed by the [!INCLUDE[vsprvs](../VS_csharp/includes/vsprvs_md.md)] Debug package.  
+  
+## Methods  
+ In addition to the methods on the `IDebugCodeContext2` interface, this interface implements the following methods:  
+  
+|Method|Description|  
+|------------|-----------------|  
+|[IDebugCodeContext3::GetModule](../VS_csharp/idebugcodecontext3--getmodule.md)|Retrieves a reference to the interface of the debug module.|  
+|[IDebugCodeContext3::GetProcess](../VS_csharp/idebugcodecontext3--getprocess.md)|Retrieves a reference to the interface of the debug process.|  
+  
+## Remarks  
+ This is an optional interface which generally does not have to be implemented.  
+  
+## Requirements  
+ Header: Msdbg.h  
+  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

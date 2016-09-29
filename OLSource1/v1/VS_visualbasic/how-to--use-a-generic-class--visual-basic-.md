@@ -1,0 +1,63 @@
+---
+title: "How to: Use a Generic Class (Visual Basic)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "type parameters, defining"
+  - "data type arguments, defining"
+  - "arguments [Visual Basic], data types"
+  - "Of keyword, using"
+  - "generic parameters"
+  - "data type parameters"
+  - "generics [Visual Basic], about generics"
+  - "data types [Visual Basic], as parameters"
+  - "data types [Visual Basic], as arguments"
+  - "parameters, type"
+  - "types [Visual Basic], generic"
+  - "parameters, generic"
+  - "generics [Visual Basic], creating generic types"
+  - "data type arguments"
+  - "parameters, data type"
+  - "data type parameters, defining"
+  - "type arguments, defining"
+  - "arguments [Visual Basic], type"
+ms.assetid: 242dd2a6-86c4-4ce7-83f2-f2661803f752
+caps.latest.revision: 28
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# How to: Use a Generic Class (Visual Basic)
+A class that takes *type parameters* is called a *generic class*. If you are using a generic class, you can generate a *constructed class* from it by supplying a *type argument* for each of these parameters. You can then declare a variable of the constructed class type, and you can create an instance of the constructed class and assign it to that variable.  
+  
+ In addition to classes, you can also define and use generic structures, interfaces, procedures, and delegates.  
+  
+ The following procedure takes a generic class defined in the [!INCLUDE[dnprdnshort](../VS_csharp/includes/dnprdnshort_md.md)] and creates an instance from it.  
+  
+### To use a class that takes a type parameter  
+  
+1.  At the beginning of your source file, include an [Imports Statement](../VS_csharp/imports-statement--.net-namespace-and-type-.md) to import the <xref:System.Collections.Generic*?displayProperty=fullName> namespace. This allows you to refer to the <xref:System.Collections.Generic.Queue`1*?displayProperty=fullName> class without having to fully qualify it to differentiate it from other queue classes such as <xref:System.Collections.Queue*?displayProperty=fullName>.  
+  
+2.  Create the object in the normal way, but add `(Of` `type``)` immediately after the class name.  
+  
+     The following example uses the same class (<xref:System.Collections.Generic.Queue`1*?displayProperty=fullName>) to create two queue objects that hold items of different data types. It adds items to the end of each queue and then removes and displays items from the front of each queue.  
+  
+     [!code[VbVbalrDataTypes#9](../VS_csharp/codesnippet/VisualBasic/how-to--use-a-generic-class--visual-basic-_1.vb)]  
+  
+## See Also  
+ [Data Types in Visual Basic](../VS_csharp/data-types-in-visual-basic.md)   
+ [Generic Types in Visual Basic](../VS_csharp/generic-types-in-visual-basic--visual-basic-.md)   
+ [Common Language Specification](assetId:///4f0b77d0-4844-464f-af73-6e06bedeafc6)   
+ [Of](../VS_csharp/of-clause--visual-basic-.md)   
+ [Imports Statement](../VS_csharp/imports-statement--.net-namespace-and-type-.md)   
+ [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](../VS_csharp/how-to--define-a-class-that-can-provide-identical-functionality-on-different-data-types--visual-basic-.md)   
+ [Iterators (C# and Visual Basic)](../VS_csharp/iterators--csharp-and-visual-basic-.md)
