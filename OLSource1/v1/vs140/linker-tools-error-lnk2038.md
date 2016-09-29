@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Linker Tools Error LNK2038
-mismatch detected for '<name\>': value '<value 1>' doesn't match value '<value 2>' in <filename.obj>  
+mismatch detected for '<name\>': value '<value 1>' doesn't match value '<value 2>' in \<filename.obj>  
   
  A symbol mismatch has been detected by the linker. This error indicates that different parts of an app—this includes libraries or other object code that the app links to—use conflicting definitions of the symbol. The [detect mismatch](../vs140/detect_mismatch.md) pragma is used to define such symbols and detect their conflicting values.  
   

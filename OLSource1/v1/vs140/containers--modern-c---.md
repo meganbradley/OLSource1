@@ -52,55 +52,55 @@ phone_book["Alex Lifeson"] = "+1 (416) 555-1212";
   
 |x86 Container Sizes (Bytes)|VC9 SP1|VC9 SP1<br /><br /> SCL=0|VC10|VC11|  
 |-----------------------------------|-------------|------------------------|----------|----------|  
-|vector<int\>|24|16|16|12|  
-|array<int, 5>|20|20|20|20|  
-|deque<int\>|32|32|24|20|  
-|forward_list<int\>|N/A|N/A|8|4|  
-|list<int\>|28|12|12|8|  
-|priority_queue<int\>|28|20|20|16|  
-|queue<int\>|32|32|24|20|  
-|stack<int\>|32|32|24|20|  
-|pair<int, int>|8|8|8|8|  
-|tuple<int, int, int>|16|16|16|12|  
-|map<int, int>|32|12|16|8|  
-|multimap<int, int>|32|12|16|8|  
-|set<int\>|32|12|16|8|  
-|multiset<int\>|32|12|16|8|  
-|hash_map<int, int>|72|44|44|32|  
-|hash_multimap<int, int>|72|44|44|32|  
-|hash_set<int\>|72|44|44|32|  
-|hash_multiset<int\>|72|44|44|32|  
-|unordered_map<int, int>|72|44|44|32|  
-|unordered_multimap<int, int>|72|44|44|32|  
-|unordered_set<int\>|72|44|44|32|  
-ordered_multiset<int\>|72|44|44|32|  
+|vector\<int\>|24|16|16|12|  
+|array\<int, 5>|20|20|20|20|  
+|deque\<int\>|32|32|24|20|  
+|forward_list\<int\>|N/A|N/A|8|4|  
+|list\<int\>|28|12|12|8|  
+|priority_queue\<int\>|28|20|20|16|  
+|queue\<int\>|32|32|24|20|  
+|stack\<int\>|32|32|24|20|  
+|pair\<int, int>|8|8|8|8|  
+|tuple\<int, int, int>|16|16|16|12|  
+|map\<int, int>|32|12|16|8|  
+|multimap\<int, int>|32|12|16|8|  
+|set\<int\>|32|12|16|8|  
+|multiset\<int\>|32|12|16|8|  
+|hash_map\<int, int>|72|44|44|32|  
+|hash_multimap\<int, int>|72|44|44|32|  
+|hash_set\<int\>|72|44|44|32|  
+|hash_multiset\<int\>|72|44|44|32|  
+|unordered_map\<int, int>|72|44|44|32|  
+|unordered_multimap\<int, int>|72|44|44|32|  
+|unordered_set\<int\>|72|44|44|32|  
+ordered_multiset\<int\>|72|44|44|32|  
 |string|28|28|28|24|  
 |wstring|28|28|28|24|  
   
 |x64 Container Sizes (Bytes)|VC9 SP1|VC9 SP1<br /><br /> SCL=0|VC10|VC11|  
 |-----------------------------------|-------------|------------------------|----------|----------|  
-|vector<int\>|48|32|32|24|  
-|array<int, 5>|20|20|20|20|  
-|deque<int\>|64|64|48|40|  
-|forward_list<int\>|N/A|N/A|16|8|  
-|list<int\>|56|24|24|16|  
-|priority_queue<int\>|56|40|40|32|  
-|queue<int\>|64|64|48|40|  
-|stack<int\>|64|64|48|40|  
-|pair<int, int>|8|8|8|8|  
-|tuple<int, int, int>|16|16|16|12|  
-|map<int, int>|64|24|32|16|  
-|multimap<int, int>|64|24|32|16|  
-|set<int\>|64|24|32|16|  
-|multiset<int\>|64|24|32|16|  
-|hash_map<int, int>|144|88|88|64|  
-|hash_multimap<int, int>|144|88|88|64|  
-|hash_set<int\>|144|88|88|64|  
-|hash_multiset<int\>|144|88|88|64|  
-|unordered_map<int, int>|144|88|88|64|  
-|unordered_multimap<int, int>|144|88|88|64|  
-|unordered_set<int\>|144|88|88|64|  
-ordered_multiset<int\>|144|88|88|64|  
+|vector\<int\>|48|32|32|24|  
+|array\<int, 5>|20|20|20|20|  
+|deque\<int\>|64|64|48|40|  
+|forward_list\<int\>|N/A|N/A|16|8|  
+|list\<int\>|56|24|24|16|  
+|priority_queue\<int\>|56|40|40|32|  
+|queue\<int\>|64|64|48|40|  
+|stack\<int\>|64|64|48|40|  
+|pair\<int, int>|8|8|8|8|  
+|tuple\<int, int, int>|16|16|16|12|  
+|map\<int, int>|64|24|32|16|  
+|multimap\<int, int>|64|24|32|16|  
+|set\<int\>|64|24|32|16|  
+|multiset\<int\>|64|24|32|16|  
+|hash_map\<int, int>|144|88|88|64|  
+|hash_multimap\<int, int>|144|88|88|64|  
+|hash_set\<int\>|144|88|88|64|  
+|hash_multiset\<int\>|144|88|88|64|  
+|unordered_map\<int, int>|144|88|88|64|  
+|unordered_multimap\<int, int>|144|88|88|64|  
+|unordered_set\<int\>|144|88|88|64|  
+ordered_multiset\<int\>|144|88|88|64|  
 |string|40|40|40|32|  
 |wstring|40|40|40|32|  
   

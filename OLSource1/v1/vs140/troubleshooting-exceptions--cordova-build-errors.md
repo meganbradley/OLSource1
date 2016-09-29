@@ -48,10 +48,10 @@ This topic describes some of the more common error messages you may see when usi
   
  For info on installing and configuring the remotebuild agent for iOS, see [iOS Setup Guide.](http://taco.visualstudio.com/en-us/docs/ios-guide/)  
   
-##  <a name="BLD401"></a> MSBUILD : cordova-build error BLD401: Could not find module <modulename\>  
+##  <a name="BLD401"></a> MSBUILD : cordova-build error BLD401: Could not find module \<modulename\>  
  The full error string is:  
   
--   MSBUILD : cordova-build error BLD401: Error : BLD00401 : Could not find module <modulename. Please Go to Tools --> Options --> Tools for Apache Cordova --> Cordova Tools --> Clear Cordova Cache and try building again.  
+-   MSBUILD : cordova-build error BLD401: Error : BLD00401 : Could not find module \<modulename. Please Go to Tools --> Options --> Tools for Apache Cordova --> Cordova Tools --> Clear Cordova Cache and try building again.  
   
  You may need to clear the cache and re-install vs-tac. For more info, see [Re-install vs-tac](http://taco.visualstudio.com/en-us/docs/configure-vs-tools-apache-cordova#vstac).  
   
