@@ -1,0 +1,43 @@
+---
+title: "gamma_distribution::operator()"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "std.tr1.gamma_distribution.operator()"
+  - "std::tr1::gamma_distribution::operator()"
+  - "gamma_distribution.operator()"
+  - "operator()"
+  - "tr1.gamma_distribution.operator()"
+  - "gamma_distribution::operator()"
+  - "random/std::tr1::gamma_distribution::operator()"
+  - "tr1::gamma_distribution::operator()"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operator() operator [TR1]"
+  - "operator()"
+ms.assetid: 429a0a22-b7f2-48a2-99dc-1265ee24bb6a
+caps.latest.revision: 20
+author: ""
+ms.author: ""
+manager: ""
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# gamma_distribution::operator()
+Topic deprecated, see [<random\>](../vs140/-random-.md).  
+  
+## Syntax  
+  
+## Requirements  
+ **Header:** <random\>  
+  
+ **Namespace:** std
