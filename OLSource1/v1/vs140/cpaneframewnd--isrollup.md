@@ -1,0 +1,49 @@
+---
+title: "CPaneFrameWnd::IsRollUp"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CPaneFrameWnd::IsRollUp"
+  - "IsRollUp"
+  - "CPaneFrameWnd.IsRollUp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IsRollUp method"
+ms.assetid: 30619837-4e56-4a26-a6bb-096c9291a545
+caps.latest.revision: 15
+robots: noindex,nofollow
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CPaneFrameWnd::IsRollUp
+Determines whether a mini-frame window should be rolled up.  
+  
+## Syntax  
+  
+```  
+virtual BOOL IsRollUp() const;  
+```  
+  
+## Return Value  
+ `TRUE` if the mini-frame window must be rolled up; otherwise, `FALSE`.  
+  
+## Remarks  
+ This method is called by the framework to determine whether a mini-frame window should be rolled up. The rollup/rolldown feature is enabled for a mini-frame window if it contains at least one pane that has the `AFX_CBRS_AUTO_ROLLUP` flag. This flag is set when a pane is created. For more information, see [CBasePane::CreateEx](../vs140/cbasepane--createex.md).  
+  
+ By default, the framework checks whether the mouse pointer is inside the mini-frame window bounding rectangle to determine whether the window has to be rolled up. You can override this behavior in a derived class.  
+  
+## Requirements  
+ **Header:** afxPaneFrameWnd.h  
+  
+## See Also  
+ [CPaneFrameWnd Class](../vs140/cpaneframewnd-class.md)   
+ [MFC Hierarchy Chart](../vs140/hierarchy-chart.md)

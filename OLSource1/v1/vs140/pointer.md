@@ -1,0 +1,166 @@
+---
+title: "pointer"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "xstring/std::_String_iterator::pointer"
+  - "std.iterator_traits.pointer"
+  - "unique_ptr::pointer"
+  - "_Tree_const_iterator::pointer"
+  - "_Tree.pointer"
+  - "_Iterator012::pointer"
+  - "_Tree::pointer"
+  - "iterator_traits.pointer"
+  - "xtree/std::_Tree_val::pointer"
+  - "xmemory/std::_ALLOCATOR::pointer"
+  - "xtree/std::_Tree_const_iterator::pointer"
+  - "std.unique_ptr.pointer"
+  - "iterator/checked_array_iterator::pointer"
+  - "reverse_iterator.pointer"
+  - "std.basic_string.pointer"
+  - "std::_Iterator012::pointer"
+  - "_String_val::pointer"
+  - "iterator/unchecked_array_iterator::pointer"
+  - "_String_iterator.pointer"
+  - "std::_ALLOCATOR::pointer"
+  - "std::iterator_traits::pointer"
+  - "std::iterator::pointer"
+  - "_Hash::pointer"
+  - "_Array_iterator::pointer"
+  - "_Tree_iterator.pointer"
+  - "std.move_iterator.pointer"
+  - "_ALLOCATOR::pointer"
+  - "stdext::allocators::allocator_base::pointer"
+  - "unchecked_array_iterator::pointer"
+  - "std._Array_iterator.pointer"
+  - "iterator::pointer"
+  - "_Array_const_iterator::pointer"
+  - "xstring/std::_String_val::pointer"
+  - "std.reverse_iterator.pointer"
+  - "std::_Tree_unchecked_iterator::pointer"
+  - "_Hold_pointer_type::pointer"
+  - "std::_Tree_const_iterator::pointer"
+  - "xtree/std::_Tree_unchecked_iterator::pointer"
+  - "basic_string::pointer"
+  - "xhash/std::_Hash::pointer"
+  - "_String_iterator::pointer"
+  - "move_iterator.pointer"
+  - "std::_Hold_pointer_type::pointer"
+  - "std._Tree_const_iterator.pointer"
+  - "_Revranit.pointer"
+  - "std::_Array_const_iterator::pointer"
+  - "std._ALLOCATOR.pointer"
+  - "xutility/std::_Revranit::pointer"
+  - "checked_array_iterator::pointer"
+  - "allocators/stdext::allocators::allocator_base::pointer"
+  - "std._Iterator012.pointer"
+  - "move_iterator::pointer"
+  - "std::_String_val::pointer"
+  - "unique_ptr.pointer"
+  - "reverse_iterator::pointer"
+  - "_Tree_iterator::pointer"
+  - "std::_String_const_iterator::pointer"
+  - "xutility/std::iterator_traits::pointer"
+  - "std._Hash.pointer"
+  - "std::_Tree_iterator::pointer"
+  - "allocators::allocator_base::pointer"
+  - "std::_Array_iterator::pointer"
+  - "std::_Tree_val::pointer"
+  - "_Tree_val.pointer"
+  - "std._Tree_unchecked_const_iterator.pointer"
+  - "_Tree_unchecked_iterator::pointer"
+  - "_Hold_pointer_type.pointer"
+  - "xtree/std::_Tree::pointer"
+  - "unchecked_array_iterator.pointer"
+  - "std._Tree_unchecked_iterator.pointer"
+  - "_Tree_unchecked_iterator.pointer"
+  - "iterator.pointer"
+  - "iterator_traits::pointer"
+  - "xutility/std::_Iterator012::pointer"
+  - "_Iterator012.pointer"
+  - "std.iterator.pointer"
+  - "iterator/std::move_iterator::pointer"
+  - "std._Revranit.pointer"
+  - "basic_string.pointer"
+  - "allocators.allocator_base.pointer"
+  - "_Tree_unchecked_const_iterator.pointer"
+  - "_String_val.pointer"
+  - "xstring/std::basic_string::pointer"
+  - "pointer"
+  - "_Array_iterator.pointer"
+  - "std::_Hash::pointer"
+  - "_ALLOCATOR.pointer"
+  - "_String_const_iterator::pointer"
+  - "allocator_base::pointer"
+  - "_String_const_iterator.pointer"
+  - "std::move_iterator::pointer"
+  - "std::basic_string::pointer"
+  - "std::_Tree::pointer"
+  - "xtree/std::_Tree_unchecked_const_iterator::pointer"
+  - "_Tree_const_iterator.pointer"
+  - "xutility/std::_Array_iterator::pointer"
+  - "xtree/std::_Tree_iterator::pointer"
+  - "_Tree_unchecked_const_iterator::pointer"
+  - "std::_String_iterator::pointer"
+  - "std._Tree.pointer"
+  - "std::unique_ptr::pointer"
+  - "xutility/std::iterator::pointer"
+  - "std::_Revranit::pointer"
+  - "std::_Tree_unchecked_const_iterator::pointer"
+  - "std._Array_const_iterator.pointer"
+  - "stdext.allocators.allocator_base.pointer"
+  - "_Array_const_iterator.pointer"
+  - "_Tree_val::pointer"
+  - "std._Tree_iterator.pointer"
+  - "std._String_val.pointer"
+  - "memory/std::_Hold_pointer_type::pointer"
+  - "allocator_base.pointer"
+  - "_Hash.pointer"
+  - "std._Hold_pointer_type.pointer"
+  - "std::reverse_iterator::pointer"
+  - "checked_array_iterator.pointer"
+  - "xstring/std::_String_const_iterator::pointer"
+  - "std._Tree_val.pointer"
+  - "xutility/std::_Array_const_iterator::pointer"
+  - "_Revranit::pointer"
+  - "xutility/std::reverse_iterator::pointer"
+  - "std._String_const_iterator.pointer"
+  - "std._String_iterator.pointer"
+  - "memory/std::unique_ptr::pointer"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "pointer typedef"
+ms.assetid: a2a4c14e-26d4-46fd-a3d7-11e9bfe8de21
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# pointer
+A synonym for `Del::pointer` if defined, otherwise `Type *`.  
+  
+## Syntax  
+  
+```  
+typedef T1 pointer;  
+```  
+  
+## Remarks  
+ The type is a synonym for `Del::pointer` if defined, otherwise `Type *`.  
+  
+## Requirements  
+ **Header:** <memory\>  
+  
+ **Namespace:** std  
+  
+## See Also  
+ [unique_ptr](../vs140/unique_ptr-class.md)   
+ [<memory\>](../vs140/-memory-.md)

@@ -1,0 +1,46 @@
+---
+title: "Interoperability Warnings"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-devops-test"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vs.codeanalysis.Interoperabilityrules"
+helpviewer_keywords: 
+  - "managed code analysis warnings, interoperability warnings"
+  - "interoperability warnings"
+  - "warnings, interoperability"
+ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
+caps.latest.revision: 22
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Interoperability Warnings
+Interoperability warnings support interaction with COM clients.  
+  
+## In This Section  
+  
+|Rule|Description|  
+|----------|-----------------|  
+|[P/Invoke entry points should exist](../vs140/ca1400--p-invoke-entry-points-should-exist.md)|A public or protected method is marked by using the System.Runtime.InteropServices.DllImportAttribute attribute. Either the unmanaged library could not be located or the method could not be matched to a function in the library.|  
+|[P/Invokes should not be visible](../vs140/ca1401--p-invokes-should-not-be-visible.md)|A public or protected method in a public type has the System.Runtime.InteropServices.DllImportAttribute attribute (also implemented by the Declare keyword in Visual Basic). Such methods should not be exposed.|  
+|[Avoid overloads in COM visible interfaces](../vs140/ca1402--avoid-overloads-in-com-visible-interfaces.md)|When overloaded methods are exposed to COM clients, only the first method overload retains its name. Subsequent overloads are uniquely renamed by appending to the name an underscore character (_) and an integer that corresponds to the order of declaration of the overload.|  
+|[Auto layout types should not be COM visible](../vs140/ca1403--auto-layout-types-should-not-be-com-visible.md)|A COM-visible value type is marked by using the System.Runtime.InteropServices.StructLayoutAttribute attribute set to LayoutKind.Auto. The layout of these types can change between versions of the [!INCLUDE[dnprdnshort](../vs140/includes/dnprdnshort_md.md)], which will break COM clients that expect a specific layout.|  
+|[Call GetLastError immediately after P/Invoke](../vs140/ca1404--call-getlasterror-immediately-after-p-invoke.md)|A call is made to the Marshal.GetLastWin32Error method or the equivalent [!INCLUDE[TLA2#tla_win32](../vs140/includes/tla2sharptla_win32_md.md)] GetLastError function, and the immediately previous call is not to a platform invoke method.|  
+|[COM visible type base types should be COM visible](../vs140/ca1405--com-visible-type-base-types-should-be-com-visible.md)|A COM-visible type derives from a type that is not COM-visible.|  
+|[Avoid Int64 arguments for Visual Basic 6 clients](../vs140/ca1406--avoid-int64-arguments-for-visual-basic-6-clients.md)|Visual Basic 6 COM clients cannot access 64-bit integers.|  
+|[Avoid static members in COM visible types](../vs140/ca1407--avoid-static-members-in-com-visible-types.md)|COM does not support static methods.|  
+|[Do not use AutoDual ClassInterfaceType](../vs140/ca1408--do-not-use-autodual-classinterfacetype.md)|Types that use a dual interface enable clients to bind to a specific interface layout. Any changes in a future version to the layout of the type or any base types will break COM clients that bind to the interface. By default, if the ClassInterfaceAttribute attribute is not specified, a dispatch-only interface is used.|  
+|[COM visible types should be creatable](../vs140/ca1409--com-visible-types-should-be-creatable.md)|A reference type that is specifically marked as visible to COM contains a public parameterized constructor but does not contain a public default (parameterless) constructor. A type without a public default constructor is not creatable by COM clients.|  
+|[COM registration methods should be matched](../vs140/ca1410--com-registration-methods-should-be-matched.md)|A type declares a method that is marked by using the <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute*?displayProperty=fullName> attribute but does not declare a method that is marked by using the <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute*?displayProperty=fullName> attribute, or vice versa.|  
+|[COM registration methods should not be visible](../vs140/ca1411--com-registration-methods-should-not-be-visible.md)|A method that is marked by using the System.Runtime.InteropServices.ComRegisterFunctionAttribute attribute or the System.Runtime.InteropServices.ComUnregisterFunctionAttribute attribute is externally visible.|  
+|[Mark ComSource interfaces as IDispatch](../vs140/ca1412--mark-comsource-interfaces-as-idispatch.md)|A type is marked by using the System.Runtime.InteropServices.ComSourceInterfacesAttribute attribute, and at least one of the specified interfaces is not marked by using the System.Runtime.InteropServices.InterfaceTypeAttribute attribute set to ComInterfaceType.InterfaceIsIDispatch.|  
+|[Avoid non-public fields in COM visible value types](../vs140/ca1413--avoid-non-public-fields-in-com-visible-value-types.md)|Nonpublic instance fields of COM-visible value types are visible to COM clients. Review the content of the fields for information that should not be exposed, or that will have unintended design or security effects.|  
+|[Mark Boolean P/Invoke arguments with MarshalAs](../vs140/ca1414--mark-boolean-p-invoke-arguments-with-marshalas.md)|The Boolean data type has multiple representations in unmanaged code.|  
+|[Declare P/Invokes correctly](../vs140/ca1415--declare-p-invokes-correctly.md)|This rule looks for platform invoke method declarations that target [!INCLUDE[TLA2#tla_win32](../vs140/includes/tla2sharptla_win32_md.md)] functions that have a pointer to an OVERLAPPED structure parameter and the corresponding managed parameter is not a pointer to a <xref:System.Threading.NativeOverlapped*?displayProperty=fullName> structure.|

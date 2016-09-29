@@ -3,10 +3,11 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/.*.md"
         ],
         "exclude": [
-          "**/obj/**"
+          "**/includes/**"
         ]
       }
     ],
@@ -14,7 +15,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**"
@@ -24,6 +26,6 @@
     "template": [
       "op.html"
     ],
-    "dest": "OLSource1/v2"
+    "dest": "OLSource1/v1"
   }
 }
