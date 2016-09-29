@@ -95,7 +95,7 @@ int main( )
  **The initial vector vec is: ( 0 1 2 ).**  
 **After the insertions, the vector vec is: ( 0 1 2 30 40 500 600 ).**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

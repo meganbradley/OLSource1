@@ -44,7 +44,7 @@ virtual bool do_always_noconv( ) const throw( );
  See the example for [always_noconv](../vs140/codecvt--always_noconv.md), which calls `do_always_noconv`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

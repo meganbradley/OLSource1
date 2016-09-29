@@ -47,11 +47,11 @@ move_iterator& operator-=(
  The operator evaluates `*this += -_Off`. Then returns `*this`.  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   
 ## See Also  
  [move_iterator Class](../vs140/move_iterator-class.md)   
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

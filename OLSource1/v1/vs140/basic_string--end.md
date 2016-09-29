@@ -95,7 +95,7 @@ int main( )
 **The modified string str1 is now: No way ouT.**  
 **The string str2 is empty.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

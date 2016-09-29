@@ -53,6 +53,6 @@ template<class Duration2>
   
 ## See Also  
  [time_point Class](../vs140/time_point-class.md)   
- [<chrono\>](../vs140/-chrono-.md)   
+ [\<chrono>](../vs140/-chrono-.md)   
  [time_point::time_since_epoch Method](../vs140/time_point--time_since_epoch-method.md)   
  [is_convertible Class](../vs140/is_convertible-class.md)

@@ -47,7 +47,7 @@ void *allocate(std::size_t _Count);
  The member function locks the mutex, calls `cache.allocate(_Count)`, unlocks the mutex, and returns the result of the earlier call to `cache.allocate(_Count)`. `cache` represents the current cache object.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

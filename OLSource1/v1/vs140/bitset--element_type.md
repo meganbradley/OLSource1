@@ -83,7 +83,7 @@ int main( )
 **Bitset b1 modified by b1[2] = 1 is: ( 110 )**  
 **The bit at position 2 of bitset b1has a value of 1.**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

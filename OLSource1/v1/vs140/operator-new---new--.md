@@ -142,11 +142,11 @@ The address of x[0] is : 0023FC60
 ```  
   
 ## Requirements  
- **Header:** <new\>  
+ **Header:** \<new>  
   
  **Namespace:** std  
   
 ## See Also  
  [new operator](../vs140/new-operator--stl-samples-.md)   
  [nothrow_t Class](../vs140/nothrow_t-structure.md)   
- [operator delete (<new\>)](../vs140/operator-delete---new--.md)
+ [operator delete (\<new>)](../vs140/operator-delete---new--.md)

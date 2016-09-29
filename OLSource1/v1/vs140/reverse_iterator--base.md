@@ -107,7 +107,7 @@ The iterator underlying rpos is bpos & it points to: 6.
 ```  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

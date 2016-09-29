@@ -61,7 +61,7 @@ You can find and fix errors that occur in the code that you write by debugging y
   
 1.  In **Solution Explorer**, expand the **Server** node, and the open the shortcut menu for the `Web.config` node and choose Open..  
   
-2.  In the **<appSettings\>** section, find the line `<add key=”Microsoft.LightSwitch.Trace.Enabled” value=”false” />` and change `false` to `true`.  
+2.  In the **\<appSettings>** section, find the line `<add key=”Microsoft.LightSwitch.Trace.Enabled” value=”false” />` and change `false` to `true`.  
   
 3.  Close the **Web.config** file, and when you are prompted to save changes choose **Yes**.  
   

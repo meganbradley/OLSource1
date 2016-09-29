@@ -205,7 +205,7 @@ int main( )
 **The string with a character inserted from a range is: ABCDefgHIJ**  
 **The string with a character inserted from a range is: ABCDeeeHIJ**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

@@ -138,4 +138,4 @@ return (is);
 ## See Also  
  [path Class (C++ Standard Template Library)](../vs140/path-class--c---standard-template-library-.md)   
  [File System Navigation](../vs140/file-system-navigation.md)   
- [<filesystem\> (v3)](../vs140/-filesystem-.md)
+ [\<filesystem> (v3)](../vs140/-filesystem-.md)

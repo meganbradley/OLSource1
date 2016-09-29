@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3023
-**No destination specified for Copy. Please supply either "'<attribute\>'" or "'<attribute\>'".**  
+**No destination specified for Copy. Please supply either "'\<attribute>'" or "'\<attribute>'".**  
   
  A destination must be specified for the `Copy` task using one of the task attributes `DestinationFiles`and`DestinationDirectory`.  
   

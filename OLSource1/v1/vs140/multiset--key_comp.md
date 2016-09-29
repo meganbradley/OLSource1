@@ -100,7 +100,7 @@ int main( )
  **kc1( 2,3 ) returns value of true, where kc1 is the function object of s1.**  
 **kc2( 2,3 ) returns value of false, where kc2 is the function object of ms2.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

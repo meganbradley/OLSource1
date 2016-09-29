@@ -148,7 +148,7 @@ translation.priority.mt:
   
     -   that the background is set to `Environment.ControlEditRequiredBackground` and the foreground is set to `Environment.ControlEditRequiredHintText`  
   
-    -   that there is hint text within the control that appears as **“<Required\>”**  
+    -   that there is hint text within the control that appears as **“\<Required>”**  
   
 #### Button controls  
   

@@ -96,6 +96,6 @@ int main( )
  **0.722734  radians, which is      41.4096  degrees**  
  **0  radians, which is            0  degrees**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std

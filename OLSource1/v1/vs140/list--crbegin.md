@@ -73,7 +73,7 @@ int main( )
   
  **The last element in the list is 30.**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

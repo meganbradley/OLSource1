@@ -29,9 +29,9 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # independent_bits_engine::discard
-Topic deprecated. See [<random\>](../vs140/-random-.md).  
+Topic deprecated. See [\<random>](../vs140/-random-.md).  
   
 ## Syntax  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

@@ -42,10 +42,10 @@ RealType lambda() const;
  The member function returns the stored value `lambda`.  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [exponential_distribution](../vs140/exponential_distribution-class.md)

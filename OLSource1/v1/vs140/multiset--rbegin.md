@@ -100,7 +100,7 @@ int main( )
 **The reversed multiset is: 30 20 10**  
 **After the erasure, the first element in the reversed multiset is 20.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

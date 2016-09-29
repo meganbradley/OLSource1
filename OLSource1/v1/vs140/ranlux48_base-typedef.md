@@ -25,6 +25,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # ranlux48_base TypeDef
-Topic deprecated, see [<random\>](../vs140/-random-.md).  
+Topic deprecated, see [\<random>](../vs140/-random-.md).  
   
 ## Syntax

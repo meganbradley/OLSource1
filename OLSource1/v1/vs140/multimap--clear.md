@@ -70,7 +70,7 @@ int main( )
  **The size of the multimap is initially 2.**  
 **The size of the multimap after clearing is 0.**   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

@@ -82,7 +82,7 @@ int main( )
   
  **The element at the top of stack vsi2 is 1.**   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

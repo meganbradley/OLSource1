@@ -86,7 +86,7 @@ long double ldexpl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`ldexp`, `ldexpf`, `ldexpl`|<math.h>|<cmath\>|  
+|`ldexp`, `ldexpf`, `ldexpl`|<math.h>|\<cmath>|  
   
  For compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

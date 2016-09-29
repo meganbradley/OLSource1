@@ -46,8 +46,8 @@ Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:fil
  `/time`  
  Displays the total execution time in the console output.  
   
- /outdir:<dir\>  
- Specifies an output directory. If the path contains spaces, use quotation marks. The default output directory is *<drive\>*:\Users\\*<username\>*\AppData\Local\VirtualStore\Program Files (x86)\Microsoft Visual Studio 12.0\\.  
+ /outdir:\<dir>  
+ Specifies an output directory. If the path contains spaces, use quotation marks. The default output directory is *\<drive>*:\Users\\*\<username>*\AppData\Local\VirtualStore\Program Files (x86)\Microsoft Visual Studio 12.0\\.  
   
  `/banner:<file>`  
  Specifies a file that contains custom text to prepend to the default copyright message and winmdidl version number at the top of the generated .idl file. If the path contains spaces, use quotation marks.  

@@ -75,7 +75,7 @@ int main( )
  **The stack length is 3.**  
 **The element at the top of the stack is 30.**   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

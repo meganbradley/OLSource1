@@ -46,14 +46,14 @@ void swap(
  The member function exchanges the contents of this object for the contents of `_Right`.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_ofstream Class](../vs140/basic_ofstream-class.md)   
  [basic_ostream Class](../vs140/basic_ostream-class.md)   
- [<fstream\>](../vs140/-fstream-.md)   
+ [\<fstream>](../vs140/-fstream-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)   
  [Thread Safety in the C++ Standard Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [iostream Programming](../vs140/iostream-programming.md)   

@@ -280,7 +280,7 @@ int main( )
 **The 3 characters from position 2 of the operand string are equal to**  
  **the first 3 characters of the parameter C-string.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

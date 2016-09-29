@@ -39,7 +39,7 @@ Because [CWinFormsView::GetControl](../vs140/cwinformsview--getcontrol.md) retur
   
 3.  Add an override for OnInitialupdate.  
   
-     Display the **Properties** window (F4). In **Class View** (CTRL+SHIFT+C), select CMFC02View class. In the **Properties** window, select the icon for Overrides. Scoll down the list to OnInitialUpdate. Click on the drop down list and select <Add\>. In MFC02View.cpp. make sure the body of the OnInitialUpdate function is as follows:  
+     Display the **Properties** window (F4). In **Class View** (CTRL+SHIFT+C), select CMFC02View class. In the **Properties** window, select the icon for Overrides. Scoll down the list to OnInitialUpdate. Click on the drop down list and select \<Add>. In MFC02View.cpp. make sure the body of the OnInitialUpdate function is as follows:  
   
     ```  
     CWinFormsView::OnInitialUpdate();  

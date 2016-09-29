@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Project &#39;&lt;projectname1&gt;&#39; makes an indirect reference to project &#39;&lt;projectname2&gt;&#39;, which contains &#39;&lt;typename&gt;&#39;
-Project '<projectname1\>' makes an indirect reference to project '<projectname2\>', which contains '<typename\>'. Add a project reference to '<projectname2\>' to your project.  
+Project '\<projectname1>' makes an indirect reference to project '\<projectname2>', which contains '\<typename>'. Add a project reference to '\<projectname2>' to your project.  
   
  Code in your project accesses a type defined in another project, but your project does not have a direct reference to the defining project.  
   

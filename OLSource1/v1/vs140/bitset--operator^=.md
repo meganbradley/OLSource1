@@ -92,7 +92,7 @@ int main( )
  **the target bitset b1 becomes:   ( 01100 ).**  
 **The parameter bitset b2 remains: ( 01011 ).**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

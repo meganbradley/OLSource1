@@ -44,7 +44,7 @@ basic_filebuf(basic_filebuf&& right);
  The second constructor initializes the object with the contents of `right`, treated as an rvalue reference.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

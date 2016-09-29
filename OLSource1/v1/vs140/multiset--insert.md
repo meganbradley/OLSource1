@@ -221,12 +221,12 @@ After initializer_list insertion, s4 contains:
 ```  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   
 ## See Also  
- [<set\>](../vs140/-set-.md)   
+ [\<set>](../vs140/-set-.md)   
  [multiset Class](../vs140/multiset-class.md)   
  [set::insert](../vs140/set--insert.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

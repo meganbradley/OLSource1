@@ -52,4 +52,4 @@ typedef enum memory_order {
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)
+ [\<atomic>](../vs140/-atomic-.md)

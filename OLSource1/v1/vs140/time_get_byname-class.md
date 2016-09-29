@@ -59,7 +59,7 @@ protected:
  Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [time_get](../vs140/time_get-class.md#time_get__time_get)<CharType, InputIterator>( `_Refs`).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

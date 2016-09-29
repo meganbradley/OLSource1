@@ -15,4 +15,4 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB8003
-Could not find *<variable\>* variable from the registry.  TargetFrameworkVersion or PlatformToolset may be set to an invalid version number.
+Could not find *\<variable>* variable from the registry.  TargetFrameworkVersion or PlatformToolset may be set to an invalid version number.

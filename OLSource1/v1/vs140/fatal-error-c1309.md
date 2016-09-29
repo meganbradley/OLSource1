@@ -22,6 +22,6 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Fatal Error C1309
-Mismatched versions of C2.DLL and PGODB<version\>.DLL  
+Mismatched versions of C2.DLL and PGODB\<version>.DLL  
   
  The toolset you are using to build and use [Profile-Guided Optimizations](../vs140/profile-guided-optimizations.md) contains mismatched components.  If you cannot manually resolve this error, reinstall Visual C++.

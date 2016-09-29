@@ -28,13 +28,13 @@ translation.priority.ht:
 # Otherwise Element (MSBuild)
 Specifies the block of code to execute if and only if the conditions of all `When` elements evaluate to `false`.  
   
- <Project\>  
- <Choose\>  
- <When\>  
- <Choose\>  
+ \<Project>  
+ \<Choose>  
+ \<When>  
+ \<Choose>  
  ...  
- <Otherwise\>  
- <Choose\>  
+ \<Otherwise>  
+ \<Choose>  
  ...  
   
 ## Syntax  

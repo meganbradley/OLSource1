@@ -214,7 +214,7 @@ CAutoVectorPtr< T >& operator =(
  A pointer.  
   
 ### Return Value  
- Returns a reference to a **CAutoVectorPtr< T >**.  
+ Returns a reference to a **CAutoVectorPtr\< T >**.  
   
 ### Remarks  
  The assignment operator detaches the `CAutoVectorPtr` object from any current pointer and attaches the new pointer, `p`, in its place.  

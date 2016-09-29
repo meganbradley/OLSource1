@@ -121,7 +121,7 @@ int main( void )
 **array 2 = 3**  
 **array 3 = 4**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

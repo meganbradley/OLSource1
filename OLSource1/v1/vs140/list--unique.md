@@ -96,7 +96,7 @@ int main( )
 **After removing successive duplicate elements, c2 = -10 10 20 -10**  
 **After removing successive unequal elements, c3 = -10 -10**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

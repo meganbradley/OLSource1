@@ -95,7 +95,7 @@ int main( )
  **The queue q1 is greater than the queue q2.**  
 **The queue q1 is less than or equal to the queue q3.**   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

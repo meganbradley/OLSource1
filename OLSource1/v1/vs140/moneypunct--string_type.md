@@ -39,7 +39,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
  The type describes a specialization of template class [basic_string](../vs140/basic_string-class.md) whose objects can store copies of the punctuation sequences.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

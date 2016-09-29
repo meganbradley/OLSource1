@@ -85,7 +85,7 @@ _purecall_handler __cdecl _set_purecall_handler(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`_get_purecall_handler`, `_set_purecall_handler`|<cstdlib\> or <stdlib.h>|  
+|`_get_purecall_handler`, `_set_purecall_handler`|\<cstdlib> or <stdlib.h>|  
   
  For compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

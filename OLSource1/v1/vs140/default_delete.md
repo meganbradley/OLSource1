@@ -56,9 +56,9 @@ template<class T>    struct default_delete<T[]>    {        constexpr default_de
  The template class describes a `deleter` that deletes scalar objects allocated with `operator new`, suitable for use with template class `unique_ptr`. It also has the explicit specialization `default_delete<Type[]>`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

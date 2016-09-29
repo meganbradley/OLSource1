@@ -45,4 +45,4 @@ template<class To, class Clock, class Duration>
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<chrono\>](../vs140/-chrono-.md)
+ [\<chrono>](../vs140/-chrono-.md)

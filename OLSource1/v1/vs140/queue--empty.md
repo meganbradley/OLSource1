@@ -72,7 +72,7 @@ using namespace std;
  **The queue q1 is not empty.**  
 **The queue q2 is empty.**   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

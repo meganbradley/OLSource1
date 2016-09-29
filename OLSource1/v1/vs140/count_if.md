@@ -97,7 +97,7 @@ int main()
  **v1 = ( 10 20 10 40 10 )**  
 **The number of elements in v1 greater than 10 is: 2.**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

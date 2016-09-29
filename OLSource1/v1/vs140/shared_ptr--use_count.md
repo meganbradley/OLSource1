@@ -64,7 +64,7 @@ int main()
  **sp1.use_count() == 1**  
 **sp1.use_count() == 2**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

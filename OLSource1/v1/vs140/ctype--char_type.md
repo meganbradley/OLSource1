@@ -42,7 +42,7 @@ typedef CharType char_type;
  See the member function [widen](../vs140/ctype--widen.md) for an example that uses `char_type` as a return value.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

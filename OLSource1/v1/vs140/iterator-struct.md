@@ -64,11 +64,11 @@ template<class Category, class Type, class Distance = ptrdiff_t
  See [iterator_traits](../vs140/iterator_traits-struct.md) for an example of how to declare and use the types in the iterator base class.  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   
 ## See Also  
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

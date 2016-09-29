@@ -39,7 +39,7 @@ typedef typename Allocator::size_type size_type;
  See the example for [size](../vs140/deque--size.md).  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

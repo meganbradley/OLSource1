@@ -128,7 +128,7 @@ int main( )
 **c2[move(str)] == 0**  
 **c2["abc"] == 1**   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

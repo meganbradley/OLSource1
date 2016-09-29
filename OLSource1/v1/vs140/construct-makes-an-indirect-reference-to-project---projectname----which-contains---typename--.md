@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Construct makes an indirect reference to project &#39;&lt;projectname&gt;&#39;, which contains &#39;&lt;typename&gt;&#39;
-Construct makes an indirect reference to project '<projectname\>', which contains '<typename\>'. Add a project reference to '<projectname\>' to your project.  
+Construct makes an indirect reference to project '\<projectname>', which contains '\<typename>'. Add a project reference to '\<projectname>' to your project.  
   
  An expression or statement accesses a type defined in another project, but your project does not have a direct reference to the defining project.  
   

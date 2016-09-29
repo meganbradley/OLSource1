@@ -52,7 +52,7 @@ Sets the basic_streambuf object's locale.
  See [basic_ios::imbue](../vs140/basic_ios--imbue.md) for an example that uses `pubimbue`.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

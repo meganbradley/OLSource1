@@ -65,7 +65,7 @@ translation.priority.mt:
   
 -   Read-only fields will have a gray (disabled) background but default (active) foreground.  
   
--   Required fields should have **<Required\>** as watermarks within them. You should not change the color of the background except in rare situations.  
+-   Required fields should have **\<Required>** as watermarks within them. You should not change the color of the background except in rare situations.  
   
 -   Error validation: See [Notifications and Progress for Visual Studio](../vs140/notifications-and-progress-for-visual-studio.md)  
   

@@ -88,7 +88,7 @@ template <class CharType>
 |[widen](#ctype__widen)|Converts a character of type `char` in the native character set to the corresponding character of type `CharType` used by a locale.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
@@ -788,5 +788,5 @@ int main( )
   **Hello everyone!**  
 **Hello everyone!**    
 ## See Also  
- [<locale\>](../vs140/-locale-.md)   
+ [\<locale>](../vs140/-locale-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

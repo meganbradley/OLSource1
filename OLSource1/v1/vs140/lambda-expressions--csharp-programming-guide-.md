@@ -69,98 +69,34 @@ namespace ConsoleApplication1
 ## Expression Lambdas  
  A lambda expression with an expression on the right side of the => operator is called an *expression lambda*. Expression lambdas are used extensively in the construction of [Expression Trees](../vs140/expression-trees--csharp-and-visual-basic-.md). An expression lambda returns the result of the expression and takes the following basic form:  
   
-```  
-(input parameters) => expression  
-```  
-  
+<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
  The parentheses are optional only if the lambda has one input parameter; otherwise they are required. Two or more input parameters are separated by commas enclosed in parentheses:  
   
-```c#  
-(x, y) => x == y  
-```  
-  
+<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
  Sometimes it is difficult or impossible for the compiler to infer the input types. When this occurs, you can specify the types explicitly as shown in the following example:  
   
-```c#  
-(int x, string s) => s.Length > x  
-```  
-  
+<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
  Specify zero input parameters with empty parentheses:  
   
-```c#  
-() => SomeMethod()  
-```  
-  
+<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
  Note in the previous example that the body of an expression lambda can consist of a method call. However, if you are creating expression trees that are evaluated outside of the .NET Framework, such as in SQL Server, you should not use method calls in lambda expressions. The methods will have no meaning outside the context of the .NET common language runtime.  
   
 ## Statement Lambdas  
  A statement lambda resembles an expression lambda except that the statement(s) is enclosed in braces:  
   
-```  
-(input parameters) => {statement;}  
-```  
-  
+<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
  The body of a statement lambda can consist of any number of statements; however, in practice there are typically no more than two or three.  
   
-```c#  
-delegate void TestDelegate(string s);  
-…  
-TestDelegate myDel = n => { string s = n + " " + "World"; Console.WriteLine(s); };  
-myDel("Hello");  
-```  
-  
+<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
  Statement lambdas, like anonymous methods, cannot be used to create expression trees.  
   
 ## Async Lambdas  
  You can easily create lambda expressions and statements that incorporate asynchronous processing by using the [async](../vs140/async--csharp-reference-.md) and [await](../vs140/await--csharp-reference-.md) keywords. For example, the following Windows Forms example contains an event handler that calls and awaits an async method, `ExampleMethodAsync`.  
   
-```c#  
-public partial class Form1 : Form  
-{  
-    public Form1()  
-    {  
-        InitializeComponent();  
-    }  
-  
-    private async void button1_Click(object sender, EventArgs e)  
-    {  
-        // ExampleMethodAsync returns a Task.  
-        await ExampleMethodAsync();  
-        textBox1.Text += "\r\nControl returned to Click event handler.\r\n";  
-    }  
-  
-    async Task ExampleMethodAsync()  
-    {  
-        // The following line simulates a task-returning asynchronous process.  
-        await Task.Delay(1000);  
-    }  
-}  
-```  
-  
+<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
  You can add the same event handler by using an async lambda. To add this handler, add an `async` modifier before the lambda parameter list, as the following example shows.  
   
-```c#  
-public partial class Form1 : Form  
-{  
-    public Form1()  
-    {  
-        InitializeComponent();  
-        button1.Click += async (sender, e) =>  
-        {  
-            // ExampleMethodAsync returns a Task.  
-            await ExampleMethodAsync();  
-            textBox1.Text += "\r\nControl returned to Click event handler.\r\n";  
-        };  
-    }  
-  
-    async Task ExampleMethodAsync()  
-    {  
-        // The following line simulates a task-returning asynchronous process.  
-        await Task.Delay(1000);  
-    }  
-}  
-```  
-  
+<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
  For more information about how to create and use async methods, see [Asynchronous Programming with Async and Await (C# and Visual Basic)](../vs140/asynchronous-programming-with-async-and-await--csharp-and-visual-basic-.md).  
   
 ## Lambdas with the Standard Query Operators  

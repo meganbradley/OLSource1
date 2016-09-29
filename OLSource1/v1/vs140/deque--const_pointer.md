@@ -42,7 +42,7 @@ typedef typename Allocator::const_pointer const_pointer;
  A type `const_pointer` cannot be used to modify the value of an element. An [iterator](../vs140/deque--iterator.md) is more commonly used to access a deque element.  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

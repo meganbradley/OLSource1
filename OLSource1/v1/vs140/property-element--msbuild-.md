@@ -26,8 +26,8 @@ translation.priority.ht:
 # Property Element (MSBuild)
 Contains a user defined property name and value. Every property used in an [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] project must be specified as a child of a `PropertyGroup` element.  
   
- <Project\>  
- <PropertyGroup\>  
+ \<Project>  
+ \<PropertyGroup>  
   
 ## Syntax  
   

@@ -45,7 +45,7 @@ virtual string_type do_falsename( ) const;
  See the example for [falsename](../vs140/numpunct--falsename.md), where the virtual member function is called by `falsename`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

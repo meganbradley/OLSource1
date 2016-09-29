@@ -103,7 +103,7 @@ The negated elements of the vector = ( 10 5 0 -5 -10 -15 -20 -25 )
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

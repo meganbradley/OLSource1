@@ -57,7 +57,7 @@ basic_ostream<_Elem, _Tr>& write(
  See [streamsize](../vs140/streamsize.md) for an example using `write`.  
   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   

@@ -85,7 +85,7 @@ int main( )
   
  **Deque c1 is less than or equal to deque c2.**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

@@ -43,7 +43,7 @@ The Code Analysis rule set editor enables you to specify the rules that are incl
 |---------------------|-----------------|  
 |**Expand All**|Shows the rules in all groups.|  
 |**Collapse All**|Hides the rules in all groups.|  
-|**Group By**|Specifies the field by which rules are grouped. Click **<None\>** to show the rules without groups.|  
+|**Group By**|Specifies the field by which rules are grouped. Click **\<None>** to show the rules without groups.|  
 |**Column Options**|Specifies the rule fields to display.|  
 |**Hide rules that do not apply to the current solution**|Shows or hides rules that are not of the same Target Type as the solution.|  
 |**Show rules that can generate Code Analysis errors**|Shows or hides rules that are assigned the Error action.|  

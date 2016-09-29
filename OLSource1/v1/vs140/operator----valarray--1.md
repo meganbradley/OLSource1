@@ -115,6 +115,6 @@ int main( )
 **The element-by-element result of the quotient is the**  
  **valarray: ( 1.#INF -50 25 -16.6667 12.5 -10 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std

@@ -273,19 +273,12 @@ You can write asynchronous programs more easily and intuitively by using feature
   
      To retrieve the `WebResponse` value from the task, apply an [Await](../vs140/await-operator--visual-basic-.md) operator to the call to `GetResponseAsync`, as the following code shows.  
   
-    ```vb  
-    Using response As WebResponse = Await webReq.GetResponseAsync()  
-    ```  
-  
+<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
      The `Await` operator suspends the execution of the current method, `GetURLContents`, until the awaited task is complete. In the meantime, control returns to the caller of the current method. In this example, the current method is `GetURLContents`, and the caller is `SumPageSizes`. When the task is finished, the promised `WebResponse` object is produced as the value of the awaited task and assigned to the variable `response`.  
   
      The previous statement can be separated into the following two statements to clarify what happens.  
   
-    ```vb  
-    'Dim responseTask As Task(Of WebResponse) = webReq.GetResponseAsync()  
-    'Using response As WebResponse = Await responseTask  
-    ```  
-  
+<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
      The call to `webReq.GetResponseAsync` returns a `Task(Of WebResponse)` or `Task<WebResponse>`. Then an `Await` operator is applied to the task to retrieve the `WebResponse` value.  
   
      If your async method has work to do that doesn’t depend on the completion of the task, the method can continue with that work between these two statements, after the call to the async method and before the await operator is applied. For examples, see [How to: Make Multiple Web Requests in Parallel by Using Async and Await (Visual Basic)](../vs140/how-to--make-multiple-web-requests-in-parallel-by-using-async-and-await--visual-basic-.md) and [How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)](../vs140/how-to--extend-the-async-walkthrough-by-using-task.whenall--visual-basic-.md).  
@@ -296,27 +289,13 @@ You can write asynchronous programs more easily and intuitively by using feature
   
     -   The `CopyTo` or `CopyToAsync` method copies bytes to its argument, `content`, and doesn’t return a meaningful value. In the synchronous version, the call to `CopyTo` is a simple statement that doesn't return a value. The asynchronous version, `CopyToAsync`, returns a <xref:System.Threading.Tasks.Task*>. The task functions like "Task(void)" and enables the method to be awaited. Apply `Await` or `await` to the call to `CopyToAsync`, as the following code shows.  
   
-        ```vb  
-        Await responseStream.CopyToAsync(content)  
-        ```  
-  
+<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
          The previous statement abbreviates the following two lines of code.  
   
-        ```vb  
-        ' CopyToAsync returns a Task, not a Task<T>.  
-        'Dim copyTask As Task = responseStream.CopyToAsync(content)  
-  
-        ' When copyTask is completed, content contains a copy of  
-        ' responseStream.  
-        'Await copyTask  
-        ```  
-  
+<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
 4.  All that remains to be done in `GetURLContents` is to adjust the method signature. You can use the `Await` operator only in methods that are marked with the [Async](../vs140/async--visual-basic-.md) modifier. Add the modifier to mark the method as an *async method*, as the following code shows.  
   
-    ```vb  
-    Private Async Function GetURLContents(url As String) As Byte()  
-    ```  
-  
+<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
 5.  The return type of an async method can only be <xref:System.Threading.Tasks.Task*>, <xref:System.Threading.Tasks.Task`1*>. In Visual Basic, the method must be a `Function` that returns a `Task` or a `Task(Of T)`, or the method must be a `Sub`. Typically, a `Sub` method  is used only in an async event handler, where `Sub` is required. In other cases, you use `Task(T)` if the completed method has a [Return](../vs140/return-statement--visual-basic-.md) statement that returns a value of type T, and you use `Task` if the completed method doesn’t return a meaningful value.  
   
      For more information, see [Async Return Types (Visual Basic)](../vs140/async-return-types--visual-basic-.md).  

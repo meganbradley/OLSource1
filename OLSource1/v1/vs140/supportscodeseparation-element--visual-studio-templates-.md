@@ -24,9 +24,9 @@ translation.priority.ht:
 # SupportsCodeSeparation Element (Visual Studio Templates)
 Specifies whether or not the **Place code in separate file** check box is enabled in the **Add New Item** dialog box.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <SupportsCodeSeparation\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<SupportsCodeSeparation>  
   
 ## Syntax  
   

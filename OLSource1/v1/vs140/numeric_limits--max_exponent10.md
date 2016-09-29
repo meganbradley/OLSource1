@@ -72,7 +72,7 @@ int main( )
 **The maximum base 10 exponent for type double is:  308**  
 **The maximum base 10 exponent for type long double is:  308**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

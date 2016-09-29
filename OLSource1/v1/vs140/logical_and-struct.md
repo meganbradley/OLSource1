@@ -141,7 +141,7 @@ The deque which is the conjuction of d1 & d2 is:
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

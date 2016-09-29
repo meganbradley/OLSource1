@@ -92,7 +92,7 @@ long double log2l(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`log2`,                `log2f`,  `log2l`|<math.h>|<cmath\>|  
+|`log2`,                `log2f`,  `log2l`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

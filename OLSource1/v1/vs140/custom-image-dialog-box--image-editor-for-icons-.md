@@ -37,5 +37,5 @@ Enables you to create a new image with a custom size and number of colors. For m
  None  
   
 ## See Also  
- [New <Device\> Image Type Dialog Box](../vs140/new--device--image-type-dialog-box--image-editor-for-icons-.md)   
+ [New \<Device> Image Type Dialog Box](../vs140/new--device--image-type-dialog-box--image-editor-for-icons-.md)   
  [Image Editor for Icons](../vs140/image-editor-for-icons.md)

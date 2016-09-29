@@ -153,7 +153,7 @@ After the rotation of a single deque element to the back,
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

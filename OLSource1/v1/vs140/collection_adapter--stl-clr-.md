@@ -70,10 +70,10 @@ template<typename Key,
 |ICollection|Maintains a group of elements.|  
 |IList|Maintains an ordered group of elements.|  
 |IDictionary|Maintain a set of {key, value} pairs.|  
-|IEnumerable<Value\>|Sequences through typed elements.|  
-|ICollection<Value\>|Maintains a group of typed elements.|  
-|IList<Value\>|Maintains an ordered group of typed elements.|  
-|IDictionary<Value\>|Maintains a set of typed {key, value} pairs.|  
+|IEnumerable\<Value>|Sequences through typed elements.|  
+|ICollection\<Value>|Maintains a group of typed elements.|  
+|IList\<Value>|Maintains an ordered group of typed elements.|  
+|IDictionary\<Value>|Maintains a set of typed {key, value} pairs.|  
   
 ## Members  
   

@@ -127,7 +127,7 @@ long long int llrintl(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`lrint`,                `lrintf`, `lrintl`, `llrint`, `llrintf`, `llrintl`|<math.h>|<cmath\>|  
+|`lrint`,                `lrintf`, `lrintl`, `llrint`, `llrintf`, `llrintl`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

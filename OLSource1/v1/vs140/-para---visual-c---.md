@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;para&gt; (Visual C++)
-The <para\> tag is for use inside a tag, such as [<summary\>](../vs140/-summary---visual-c---.md), [<remarks\>](../vs140/-remarks---visual-c---.md), or [<returns\>](../vs140/-returns---visual-c---.md), and lets you add structure to the text.  
+The \<para> tag is for use inside a tag, such as [\<summary>](../vs140/-summary---visual-c---.md), [\<remarks>](../vs140/-remarks---visual-c---.md), or [\<returns>](../vs140/-returns---visual-c---.md), and lets you add structure to the text.  
   
 ## Syntax  
   
@@ -40,7 +40,7 @@ The <para\> tag is for use inside a tag, such as [<summary\>](../vs140/-summary-
  Compile with [/doc](../vs140/-doc--process-documentation-comments---c-c---.md) to process documentation comments to a file.  
   
 ## Example  
- See [<summary\>](../vs140/-summary---visual-c---.md) for an example of using <para\>.  
+ See [\<summary>](../vs140/-summary---visual-c---.md) for an example of using \<para>.  
   
 ## See Also  
  [XML Documentation](../vs140/xml-documentation--visual-c---.md)

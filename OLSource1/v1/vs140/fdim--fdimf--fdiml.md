@@ -111,7 +111,7 @@ long double fdiml(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`fdim`,                `fdimf`,  `fdiml`|<math.h>|<cmath\>|  
+|`fdim`,                `fdimf`,  `fdiml`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

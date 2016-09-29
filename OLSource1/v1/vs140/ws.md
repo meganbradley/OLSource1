@@ -55,7 +55,7 @@ Skips white space in the stream.
  See [operator>>](../vs140/operator-----istream--.md) for an example of using `ws`.  
   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   

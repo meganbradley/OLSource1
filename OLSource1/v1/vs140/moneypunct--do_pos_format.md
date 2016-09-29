@@ -44,7 +44,7 @@ virtual pattern do_pos_format( ) const;
  See the example for [pos_format](../vs140/moneypunct--pos_format.md), where the virtual member function is called by `pos_format`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

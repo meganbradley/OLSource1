@@ -52,7 +52,7 @@ This walkthrough demonstrates how to add a user control to a tool window.
   
 6.  In **Solution Explorer**, right-click the ctlClockLib project node and then click **Properties**.  
   
-7.  On the **Signing** tab, select **Sign the assembly**. In the **Choose a strong name key file** box, click **<browse\>** and navigate to the key.snk file in the **MyToolWindowPackageUC** project folder.  
+7.  On the **Signing** tab, select **Sign the assembly**. In the **Choose a strong name key file** box, click **\<browse>** and navigate to the key.snk file in the **MyToolWindowPackageUC** project folder.  
   
 8.  Compile the program and make sure there are no errors. This step registers the VSPackage and its tool window with Visual Studio.  
   

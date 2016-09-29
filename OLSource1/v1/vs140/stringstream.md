@@ -43,7 +43,7 @@ stringstream<char> stringstream;
  The type is a synonym for template class [basic_stringstream](../vs140/basic_stringstream-class.md), specialized for elements of type `char`*.*  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

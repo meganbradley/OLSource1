@@ -16,7 +16,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Tips and Tricks for Visual Studio
-You can navigate in [!INCLUDE[vs_dev12](../vs140/includes/vs_dev12_md.md)] more easily by using the shortcuts in this topic. For more general information, see [<PAVEOVER\> Keyboard Shortcuts in Visual Studio](assetId:///2e15e27f-296b-4e9c-91e6-d91ea0110a67). For information about how to optimize Visual Studio for accessibility, see [Accessibility Tips and Tricks](../vs140/accessibility-tips-and-tricks.md).  
+You can navigate in [!INCLUDE[vs_dev12](../vs140/includes/vs_dev12_md.md)] more easily by using the shortcuts in this topic. For more general information, see [\<PAVEOVER> Keyboard Shortcuts in Visual Studio](assetId:///2e15e27f-296b-4e9c-91e6-d91ea0110a67). For information about how to optimize Visual Studio for accessibility, see [Accessibility Tips and Tricks](../vs140/accessibility-tips-and-tricks.md).  
   
 -   [Window Management](../vs140/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)  
   

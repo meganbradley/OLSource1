@@ -259,7 +259,7 @@ translation.priority.ht:
     remotebuild --serverDir <directory>  
     ```  
   
-     where *<directory\>* is a location on your Mac where log files, builds, and server certificates will be placed. For example, the location could be /Users/*username*/builds. (Builds will be organized by build number in this location.)  
+     where *\<directory>* is a location on your Mac where log files, builds, and server certificates will be placed. For example, the location could be /Users/*username*/builds. (Builds will be organized by build number in this location.)  
   
 -   To use a background process to capture `stdout` and `stderr` to a file (server.log), type:  
   

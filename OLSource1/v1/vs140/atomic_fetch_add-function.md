@@ -69,6 +69,6 @@ integral atomic_fetch_add(
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic Structure](../vs140/atomic-structure.md)   
  [atomic_fetch_add_explicit](../vs140/atomic_fetch_add_explicit-function.md)

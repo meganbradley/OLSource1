@@ -76,7 +76,7 @@ int main( )
  **The key of the first element in the multimap is 1.**  
 **The data value of the first element in the multimap is 10.**   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

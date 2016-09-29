@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;param&gt; (Visual C++)
-The <param\> tag should be used in the comment for a method declaration to describe one of the parameters for the method.  
+The \<param> tag should be used in the comment for a method declaration to describe one of the parameters for the method.  
   
 ## Syntax  
   
@@ -40,7 +40,7 @@ The <param\> tag should be used in the comment for a method declaration to descr
  A description for the parameter.  
   
 ## Remarks  
- The text for the <param\> tag will be displayed in IntelliSense, the [Object Browser](assetId:///f89acfc5-1152-413d-9f56-3dc16e3f0470), and in the Code Comment Web Report.  
+ The text for the \<param> tag will be displayed in IntelliSense, the [Object Browser](assetId:///f89acfc5-1152-413d-9f56-3dc16e3f0470), and in the Code Comment Web Report.  
   
  Compile with [/doc](../vs140/-doc--process-documentation-comments---c-c---.md) to process documentation comments to a file.  
   

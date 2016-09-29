@@ -25,7 +25,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;cvt-wbuffer&gt;
-The header `<cvt/wstring>` in previous versions of Visual Studio defined the template class [wbuffer_convert Class](../vs140/wbuffer_convert-class.md) in the stdext::cvt namespace. The header is maintained for backward compatibility. New code should use the version of the class that is defined in [<locale\>](../vs140/-locale-.md) in the `std` namespace  
+The header `<cvt/wstring>` in previous versions of Visual Studio defined the template class [wbuffer_convert Class](../vs140/wbuffer_convert-class.md) in the stdext::cvt namespace. The header is maintained for backward compatibility. New code should use the version of the class that is defined in [\<locale>](../vs140/-locale-.md) in the `std` namespace  
   
 ## Syntax  
   

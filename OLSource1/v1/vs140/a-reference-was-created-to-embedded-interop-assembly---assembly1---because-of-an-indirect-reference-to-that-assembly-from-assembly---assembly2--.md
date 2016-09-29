@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # A reference was created to embedded interop assembly &#39;&lt;assembly1&gt;&#39; because of an indirect reference to that assembly from assembly &#39;&lt;assembly2&gt;&#39;
-A reference was created to embedded interop assembly '<assembly1\>' because of an indirect reference to that assembly from assembly '<assembly2\>'. Consider changing the 'Embed Interop Types' property on either assembly.  
+A reference was created to embedded interop assembly '\<assembly1>' because of an indirect reference to that assembly from assembly '\<assembly2>'. Consider changing the 'Embed Interop Types' property on either assembly.  
   
  You have added a reference to an assembly (assembly1) that has the `Embed Interop Types` property set to `True`. This instructs the compiler to embed interop type information from that assembly. However, the compiler cannot embed interop type information from that assembly because another assembly that you have referenced (assembly2) also references that assembly (assembly1) and has the `Embed Interop Types` property set to `False`.  
   

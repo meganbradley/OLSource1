@@ -30,7 +30,7 @@ The `Option Compare`, `Option Explicit`, and `Option Strict` statements can only
 -   Remove the duplicated `Option` statement.  
   
 ## See Also  
- [Option <keyword\> Statement](../vs140/option--keyword--statement.md)   
+ [Option \<keyword> Statement](../vs140/option--keyword--statement.md)   
  [Option Compare Statement](../vs140/option-compare-statement.md)   
  [Option Explicit Statement](../vs140/option-explicit-statement--visual-basic-.md)   
  [Option Strict Statement](../vs140/option-strict-statement.md)

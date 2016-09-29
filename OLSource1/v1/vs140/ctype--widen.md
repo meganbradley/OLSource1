@@ -91,7 +91,7 @@ int main( )
  **Hello everyone!**  
 **Hello everyone!**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

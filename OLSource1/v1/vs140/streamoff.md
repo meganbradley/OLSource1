@@ -46,7 +46,7 @@ Supports internal operations.
  The type is a signed integer that describes an object that can store a byte offset involved in various stream positioning operations. Its representation has at least 32 value bits. It is not necessarily large enough to represent an arbitrary byte position within a stream. The value **streamoff(-1)** generally indicates an erroneous offset.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

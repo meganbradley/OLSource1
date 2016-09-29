@@ -82,4 +82,4 @@ bool atomic_flag::test_and_set(
  The initial value of the flag that is stored in `*this`.  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)
+ [\<atomic>](../vs140/-atomic-.md)

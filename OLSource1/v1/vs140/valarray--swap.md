@@ -47,10 +47,10 @@ void swap(valarray& _Right);
  The member function swaps the controlled sequences between `*this` and `_Right`. It does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences.  
   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   
 ## See Also  
  [valarray Class](../vs140/valarray-class.md)   
- [<valarray\>](../vs140/-valarray-.md)
+ [\<valarray>](../vs140/-valarray-.md)

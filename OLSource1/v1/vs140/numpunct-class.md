@@ -70,7 +70,7 @@ template <class CharType>
 |[truename](#numpunct__truename)|Returns a string to use as a text representation of the value `true`.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
@@ -397,6 +397,6 @@ int main( )
 **French_France.1252 truename true**  
 **French_France.1252 falsename false**    
 ## See Also  
- [<locale\>](../vs140/-locale-.md)   
+ [\<locale>](../vs140/-locale-.md)   
  [facet Class](../vs140/locale-class.md#facet_class)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

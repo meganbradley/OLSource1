@@ -35,11 +35,11 @@ The following map entries have the corresponding function prototype.
   
 |Map entry|Function prototype|  
 |---------------|------------------------|  
-|ON_LBN_DBLCLK( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_LBN_ERRSPACE( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_LBN_KILLFOCUS( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_LBN_SELCHANGE( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_LBN_SETFOCUS( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
+|ON_LBN_DBLCLK( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_LBN_ERRSPACE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_LBN_KILLFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_LBN_SELCHANGE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_LBN_SETFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
   
 ## See Also  
  [Message Maps](../vs140/message-maps--mfc-.md)

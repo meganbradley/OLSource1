@@ -170,7 +170,7 @@ int main()
 **The smallest element in v1 under the mod_lesser**  
  **binary predicate is: 0**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

@@ -24,7 +24,7 @@ translation.priority.ht:
 # Compiler Warning (level 4) CS1712
 Type parameter 'type parameter' has no matching typeparam tag in the XML comment on 'type' (but other type parameters do)  
   
- The documentation of a generic type is missing a **typeparam** tag. For more information, see [<typeparam\> (C# Programmer's Reference)](../vs140/-typeparam---csharp-programming-guide-.md).  
+ The documentation of a generic type is missing a **typeparam** tag. For more information, see [\<typeparam> (C# Programmer's Reference)](../vs140/-typeparam---csharp-programming-guide-.md).  
   
 ## Example  
  The following code generates warning CS1712. To resolve this error, add a **typeparam** tag for the type parameter S.  

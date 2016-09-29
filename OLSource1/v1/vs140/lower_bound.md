@@ -192,7 +192,7 @@ The lower_bound in v3 for the element with a value of 3 is: -3.
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

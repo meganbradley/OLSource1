@@ -87,7 +87,7 @@ translation.priority.ht:
   
      ![Create an Azure mobile service](../vs140/media/cordova_azure_.png "Cordova_Azure_")  
   
-     To get started, you will typically choose **<Create a free SQL Database\>**, and then supply the **Server user name**, **Server password**, and **Server password confirmation**. The steps required here are similar to steps shown in the section "Create a new mobile service from Visual Studio" in [this article](http://azure.microsoft.com/documentation/articles/mobile-services-windows-store-javascript-get-started-data/).  
+     To get started, you will typically choose **\<Create a free SQL Database>**, and then supply the **Server user name**, **Server password**, and **Server password confirmation**. The steps required here are similar to steps shown in the section "Create a new mobile service from Visual Studio" in [this article](http://azure.microsoft.com/documentation/articles/mobile-services-windows-store-javascript-get-started-data/).  
   
      The new service appears in the Services Manager list of connected services.  
   

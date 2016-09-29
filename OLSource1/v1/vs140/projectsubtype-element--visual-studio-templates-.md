@@ -24,9 +24,9 @@ translation.priority.ht:
 # ProjectSubType Element (Visual Studio Templates)
 Classifies the template into a subcategory of the value specified in the `ProjectType` element.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <ProjectSubType\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ProjectSubType>  
   
 ## Syntax  
   

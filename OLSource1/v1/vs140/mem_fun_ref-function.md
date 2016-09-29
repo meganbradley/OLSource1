@@ -137,7 +137,7 @@ int main( )
 **The original values stored in v2 are: 1 2 3 4 5 6 7 8 9 10 11 12 13**   
 **With the even numbers removed, the remaining values are: 1 3 5 7 9 11 13**    
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3141
-**MSB3141: No 'PublicKey' or 'Hash' attribute specified for file '<file\>' in item '<package\>'."**  
+**MSB3141: No 'PublicKey' or 'Hash' attribute specified for file '\<file>' in item '\<package>'."**  
   
  This error occurs when you attempt to use HomeSite for the bootstrapper packages. However, the bootstrapper manifest does not contain the correct information for file verification (either a public key or a hash) at run time.  
   
@@ -30,4 +30,4 @@ translation.priority.ht:
 -   Download the package file for which the information is missing and copy it into the bootstrapper cache.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

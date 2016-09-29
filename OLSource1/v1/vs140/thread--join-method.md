@@ -39,4 +39,4 @@ void join();
   
 ## See Also  
  [thread Class](../vs140/thread-class.md)   
- [<thread\>](../vs140/-thread-.md)
+ [\<thread>](../vs140/-thread-.md)

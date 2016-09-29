@@ -101,7 +101,7 @@ The string entered is c0 = Fibonacci
 ```  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

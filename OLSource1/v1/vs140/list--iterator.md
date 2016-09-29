@@ -43,7 +43,7 @@ typedef implementation-defined iterator;
  See the example for [begin](../vs140/list--begin.md).  
   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

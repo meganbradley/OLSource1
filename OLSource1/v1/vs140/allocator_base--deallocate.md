@@ -49,7 +49,7 @@ void deallocate(pointer _Ptr, size_type _Nx);
  This member function is implemented for the user-defined allocator by calling `deallocate(_Ptr)` on the synchronization filter `Sync` if `_Nx == 1`, otherwise by calling `operator delete(_Nx * _Ptr)`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

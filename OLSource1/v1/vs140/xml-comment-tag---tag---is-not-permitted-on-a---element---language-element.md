@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # XML comment tag &#39;&lt;tag&gt;&#39; is not permitted on a &#39;&lt;element&gt;&#39; language element
-XML comment tag <tag\> is not permitted on a '<element\>' element. XML comment will be ignored.  
+XML comment tag \<tag> is not permitted on a '\<element>' element. XML comment will be ignored.  
   
  An XML comment tag is not supported by the language element to which it is applied.  
   

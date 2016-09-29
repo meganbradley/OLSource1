@@ -44,7 +44,7 @@ void deallocated(std::size_t _Nx = 1);
  The member function subtracts `_Nx` from the stored value `_Nallocs`. This member function is called after each call by `cache_freelist::deallocate` to operator `delete`. The argument `_Nx` is the number of memory blocks in the chunk deallocated by operator `delete`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

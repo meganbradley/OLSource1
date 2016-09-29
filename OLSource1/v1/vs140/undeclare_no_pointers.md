@@ -41,9 +41,9 @@ void undeclare_no_pointers(
  The function informs any `garbage collector` that the range of addresses `[``_Ptr``,` `_Ptr` `+` `_Size``)` may now contain `traceable pointers`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

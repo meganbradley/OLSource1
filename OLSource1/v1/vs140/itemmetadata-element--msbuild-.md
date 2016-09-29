@@ -26,9 +26,9 @@ translation.priority.ht:
 # ItemMetadata Element (MSBuild)
 Contains a user-defined item metadata key, which contains the item metadata value. An item may have any number of metadata key-value pairs.  
   
- <Project\>  
- <ItemGroup\>  
- <Item\>  
+ \<Project>  
+ \<ItemGroup>  
+ \<Item>  
   
 ## Syntax  
   

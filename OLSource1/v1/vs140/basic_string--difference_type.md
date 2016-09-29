@@ -72,7 +72,7 @@ int main( )
 **The last character i is at position: 8.**  
 **The difference is: 6.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

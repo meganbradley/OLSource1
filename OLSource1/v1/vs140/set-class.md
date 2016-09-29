@@ -43,12 +43,12 @@ class set
  The element data type to be stored in the set.  
   
  `Traits`  
- The type that provides a function object that can compare two element values as sort keys to determine their relative order in the set. This argument is optional, and the binary predicate **less** *<Key\>* is the default value.  
+ The type that provides a function object that can compare two element values as sort keys to determine their relative order in the set. This argument is optional, and the binary predicate **less** *\<Key>* is the default value.  
   
  In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../vs140/stl-containers.md#sequence_containers)  
   
  `Allocator`  
- The type that represents the stored allocator object that encapsulates details about the set's allocation and deallocation of memory. This argument is optional, and the default value is **allocator***<Key\>.*  
+ The type that represents the stored allocator object that encapsulates details about the set's allocation and deallocation of memory. This argument is optional, and the default value is **allocator***\<Key>.*  
   
 ## Remarks  
  An STL set is:  
@@ -136,7 +136,7 @@ class set
 |[operator=](#set__operator_eq)|Replaces the elements of a set with a copy of another set.|  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   
@@ -2251,7 +2251,7 @@ int main( )
   
   **The set has elements: 10 20.**    
 ## See Also  
- [<set\>](../vs140/-set-.md)   
+ [\<set>](../vs140/-set-.md)   
  [Containers](../vs140/containers--modern-c---.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

@@ -56,7 +56,7 @@ This method constructs a URL string from a CUrl object's component fields.
 ## Remarks  
  This method appends its individual fields in order to construct the complete URL string using the following format:  
   
- **<scheme\>://<user\>:<pass\>@<domain\>:<port\><path\><extra\>**  
+ **\<scheme>://\<user>:\<pass>@\<domain>:\<port>\<path>\<extra>**  
   
  When calling this method, the `pdwMaxLength` parameter should initially contain the maximum length of the string buffer referenced by the *lpszUrl* parameter. The value of the `pdwMaxLength` parameter will be updated with the actual length of the URL string.  
   

@@ -52,6 +52,6 @@ inline void atomic_signal_fence(
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic Structure](../vs140/atomic-structure.md)   
  [atomic_thread_fence](../vs140/atomic_thread_fence-function.md)

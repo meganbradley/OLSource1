@@ -44,7 +44,7 @@ traits<char> > streambuf;
  The type is a synonym for the template class [basic_streambuf](../vs140/basic_streambuf-class.md), specialized for elements of type `char` with default character traits.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

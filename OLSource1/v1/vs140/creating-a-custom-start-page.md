@@ -28,11 +28,11 @@ If you cannot create a custom Start Page by using the Start Page project templat
   
 2.  Add a reference to `Microsoft.VisualStudio.Shell.14.0`.  
   
-3.  Open the XAML file in the XML editor and change the top-level <Window\> element to a <UserControl\> element without removing any of the namespace declarations.  
+3.  Open the XAML file in the XML editor and change the top-level \<Window> element to a \<UserControl> element without removing any of the namespace declarations.  
   
 4.  Remove the `x:Class` declaration from the top-level element. This makes the XAML content compatible with the Visual Studio tool window that hosts the start page.  
   
-5.  Add the following namespace declarations to the top-level <UserControl\> element.  
+5.  Add the following namespace declarations to the top-level \<UserControl> element.  
   
     ```  
     xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  
@@ -61,7 +61,7 @@ If you cannot create a custom Start Page by using the Start Page project templat
     </UserControl>  
     ```  
   
-6.  Add controls to the empty <UserControl\> element to fill in your custom Start Page. For information about how to add functionality that is specific to Visual Studio, see [Adding Visual Studio Commands to a Start Page](../vs140/adding-visual-studio-commands-to-a-start-page.md).  
+6.  Add controls to the empty \<UserControl> element to fill in your custom Start Page. For information about how to add functionality that is specific to Visual Studio, see [Adding Visual Studio Commands to a Start Page](../vs140/adding-visual-studio-commands-to-a-start-page.md).  
   
 ## Testing and Applying the Custom Start Page  
  Do not set the primary instance of Visual Studio to run the custom Start Page until you verify that it does not crash Visual Studio. Instead, test it in the experimental instance.  

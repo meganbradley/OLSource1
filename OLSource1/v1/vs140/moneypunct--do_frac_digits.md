@@ -42,7 +42,7 @@ virtual int do_frac_digits( ) const;
  See the example for [frac_digits](../vs140/moneypunct--frac_digits.md), where the virtual member function is called by `frac_digits`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

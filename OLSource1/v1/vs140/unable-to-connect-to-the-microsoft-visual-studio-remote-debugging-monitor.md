@@ -57,7 +57,7 @@ This error message appears when you enter an invalid Visual Studio Remote Debugg
   
 -   You can stop the remote debugger and restart it with the account you are using on the local computer.  
   
--   You can start the remote debugger from the command line with the **/allow <username\>** parameter: `msvsmon /allow <username@computer>`  
+-   You can start the remote debugger from the command line with the **/allow \<username>** parameter: `msvsmon /allow <username@computer>`  
   
 -   You can add the user to the remote debugger's permissions (in the remote debugger window, **Tools / Permissions**).  
   

@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3061
-**Unable to delete file "'<file\>'". '<error\>'**  
+**Unable to delete file "'\<file>'". '\<error>'**  
   
  The `Delete` task cannot delete the specified file.  
   

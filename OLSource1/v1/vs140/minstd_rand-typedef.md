@@ -24,6 +24,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # minstd_rand TypeDef
-Topic deprecated, see [<random\>](../vs140/-random-.md).  
+Topic deprecated, see [\<random>](../vs140/-random-.md).  
   
 ## Syntax

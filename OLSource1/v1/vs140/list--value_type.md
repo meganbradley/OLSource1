@@ -57,7 +57,7 @@ int main( )
   
  **44**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

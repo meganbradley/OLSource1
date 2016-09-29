@@ -33,7 +33,7 @@ This lesson shows how to validate the data that a user enters in a LightSwitch a
   
 2.  In the **Data Designer**, on the **Perspective** bar, choose **Server**.  
   
-3.  Choose the **<Add Property\>** link and enter `ContactState`.  
+3.  Choose the **\<Add Property>** link and enter `ContactState`.  
   
 4.  In the **Type** column, choose `String`.  
   

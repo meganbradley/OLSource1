@@ -15,4 +15,4 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB8004
-*<directory\>* Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the *{1}* Directory.
+*\<directory>* Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the *{1}* Directory.

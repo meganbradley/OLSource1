@@ -102,10 +102,10 @@ namespace std {
   
 -   `floatfield`, defined as `fixed` &#124; `scientific`  
   
- For examples of functions that modify these format flags, see [<iomanip\>](../vs140/-iomanip-.md).  
+ For examples of functions that modify these format flags, see [\<iomanip>](../vs140/-iomanip-.md).  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &#39;&lt;function&gt;&#39; is not declared
-'<function\>' is not declared. Function has moved to the Microsoft.VisualBasic namespace.  
+'\<function>' is not declared. Function has moved to the Microsoft.VisualBasic namespace.  
   
  **Error ID:** BC30818  
   

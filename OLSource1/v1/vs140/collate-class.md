@@ -67,7 +67,7 @@ template <class CharType >
 |[transform](#collate__transform)|Converts a character sequence from a locale to a string that may be used in lexicographical comparisons with other character sequences similarly converted from the same locale.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
@@ -385,5 +385,5 @@ int main( )
 **????**  
 **-1-11**    
 ## See Also  
- [<locale\>](../vs140/-locale-.md)   
+ [\<locale>](../vs140/-locale-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

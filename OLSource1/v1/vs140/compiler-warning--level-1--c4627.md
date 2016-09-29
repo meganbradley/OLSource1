@@ -22,9 +22,9 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Compiler Warning (level 1) C4627
-'<identifier\>': skipped when looking for precompiled header use  
+'\<identifier>': skipped when looking for precompiled header use  
   
- While searching for the location where a precompiled header is used, the compiler encountered an `#include` directive for the *<identifier\>* include file. The compiler ignores the `#include` directive, but issues warning **C4627** if the precompiled header does not already contain the *<identifier\>* include file.  
+ While searching for the location where a precompiled header is used, the compiler encountered an `#include` directive for the *\<identifier>* include file. The compiler ignores the `#include` directive, but issues warning **C4627** if the precompiled header does not already contain the *\<identifier>* include file.  
   
 ## See Also  
  [Creating Precompiled Header Files](../vs140/creating-precompiled-header-files.md)

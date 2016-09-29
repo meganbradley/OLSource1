@@ -69,7 +69,7 @@ static const int none = 0;
  You can represent an arbitrary group of categories by using `OR` with these constants, as in **monetary** &#124; **time**.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

@@ -83,17 +83,17 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
      ![Right click the project and choose Edit](../vs140/media/uap_editproject.png "UAP_EditProject")  
   
-6.  Find the <PropertyGroup\> element that contains the <TargetPlatformVersion\> element with a value of 8.1. Do the following steps for this <PropertyGroup\> element:  
+6.  Find the \<PropertyGroup> element that contains the \<TargetPlatformVersion> element with a value of 8.1. Do the following steps for this \<PropertyGroup> element:  
   
-    1.  Set the value of the <Platform\> element to: **x86**.  
+    1.  Set the value of the \<Platform> element to: **x86**.  
   
-    2.  Add a <TargetPlatformIdentifier\> element and set its value to: **UAP**.  
+    2.  Add a \<TargetPlatformIdentifier> element and set its value to: **UAP**.  
   
-    3.  Change the existing value of the <TargetPlatformVersion\> element to be the value of the Universal Windows Platform version that you installed. Also add a <TargetPlatformMinVersion\> element and give it the same value.  
+    3.  Change the existing value of the \<TargetPlatformVersion> element to be the value of the Universal Windows Platform version that you installed. Also add a \<TargetPlatformMinVersion> element and give it the same value.  
   
-    4.  Change the value of the <MinimumVisualStudioVersion\> element to: **14**.  
+    4.  Change the value of the \<MinimumVisualStudioVersion> element to: **14**.  
   
-    5.  Replace the <ProjectTypeGuids\> element as shown below:  
+    5.  Replace the \<ProjectTypeGuids> element as shown below:  
   
          For C#:  
   
@@ -107,7 +107,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
         <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>  
         ```  
   
-    6.  Add an <EnableDotNetNativeCompatibleProfile\> element and set its value to: **true**.  
+    6.  Add an \<EnableDotNetNativeCompatibleProfile> element and set its value to: **true**.  
   
     7.  The default asset scale for Universal Windows apps is 200. If your project includes assets not scaled at 200, you will need to add a <UapDefaultAssetScale> element with the value of the scale of your assets to this PropertyGroup. Learn more about [assets and scales](http://msdn.microsoft.com/library/jj679352.aspx).  
   
@@ -139,7 +139,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
         <VisualStudioVersion>14.0</VisualStudioVersion>  
     ```  
   
-8.  Find <PropertyGroup\> elements that are configured for the AnyCPU platform as part of the Condition attribute. Remove these elements and all of their children. AnyCPU is not supported for Windows 10 apps in Visual Studio 2015. For example, you should remove <PropertyGroup\> elements like these ones:  
+8.  Find \<PropertyGroup> elements that are configured for the AnyCPU platform as part of the Condition attribute. Remove these elements and all of their children. AnyCPU is not supported for Windows 10 apps in Visual Studio 2015. For example, you should remove \<PropertyGroup> elements like these ones:  
   
     ```xml  
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
@@ -163,7 +163,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
       </PropertyGroup>  
     ```  
   
-9. For each remaining <PropertyGroup\> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a <UseDotNetNativeToolchain\> element, then add one. Set the value for the <UseDotNetNativeToolchain\> element to true, like this:  
+9. For each remaining \<PropertyGroup> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a \<UseDotNetNativeToolchain> element, then add one. Set the value for the \<UseDotNetNativeToolchain> element to true, like this:  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">  
@@ -180,7 +180,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
       </PropertyGroup>  
     ```  
   
-10. For Windows Phone projects only, remove the <PropertyGroup\> element that contains a <TargetPlatformIdentifier\> element with a value of WindowsPhoneApp. Also remove any children of this element:  
+10. For Windows Phone projects only, remove the \<PropertyGroup> element that contains a \<TargetPlatformIdentifier> element with a value of WindowsPhoneApp. Also remove any children of this element:  
   
     ```xml  
     <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">  
@@ -188,13 +188,13 @@ Make the necessary manual changes to your existing project files for Windows Sto
     </PropertyGroup>  
     ```  
   
-11. Find the <ItemGroup\> element that contains the <AppxManifest\> element. Add the following <None\> element as a child of the <ItemGroup\> element:  
+11. Find the \<ItemGroup> element that contains the \<AppxManifest> element. Add the following \<None> element as a child of the \<ItemGroup> element:  
   
     ```xml  
     <None Include="project.json" />  
     ```  
   
-12. Find the <ItemGroup\> element that contains other assets that are added to your project such as logo .png files (<Content Include="Assets\Logo.scale-100.png" /\>). Add the following <Content\> child element to this <ItemGroup\> element:  
+12. Find the \<ItemGroup> element that contains other assets that are added to your project such as logo .png files (<Content Include="Assets\Logo.scale-100.png" /\>). Add the following \<Content> child element to this \<ItemGroup> element:  
   
      **For C#:**  
   
@@ -208,7 +208,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
     <Content Include="My Project\default.rd.xml" />  
     ```  
   
-13. Find the <ItemGroup\> element that includes <Reference\> children elements to NuGet packages. Take note of the NuGet packages that you use because you will need to download them with the NuGet package manager after your project is reloaded. Remove this <ItemGroup\> along with its children. For example, a UWP project could have the following NuGet packages that need to be removed:  
+13. Find the \<ItemGroup> element that includes \<Reference> children elements to NuGet packages. Take note of the NuGet packages that you use because you will need to download them with the NuGet package manager after your project is reloaded. Remove this \<ItemGroup> along with its children. For example, a UWP project could have the following NuGet packages that need to be removed:  
   
     ```xml  
     <ItemGroup>  
@@ -261,21 +261,21 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
      ![Right&#45;click project file and choose to edit](../vs140/media/uap_editcplusproject.png "UAP_EditCPlusProject")  
   
-3.  Find the <PropertyGroup\> element that contains the <ApplicationTypeRevision\> element with a value of 8.1. Do the following steps for this <PropertyGroup\> element:  
+3.  Find the \<PropertyGroup> element that contains the \<ApplicationTypeRevision> element with a value of 8.1. Do the following steps for this \<PropertyGroup> element:  
   
-    1.  Add a <WindowsTargetPlatformVersion\> element and a <WindowsTargetPlatformMinVersion\> element and give them the value of the Universal Windows Platform version that you installed.  
+    1.  Add a \<WindowsTargetPlatformVersion> element and a \<WindowsTargetPlatformMinVersion> element and give them the value of the Universal Windows Platform version that you installed.  
   
     2.  Update the value of ApplicationTypeRevision element from 8.1 to 10.0.  
   
-    3.  Change the value of the <MinimumVisualStudioVersion\> element to: 14.  
+    3.  Change the value of the \<MinimumVisualStudioVersion> element to: 14.  
   
-    4.  Add an <EnableDotNetNativeCompatibleProfile\> element and set its value to: true.  
+    4.  Add an \<EnableDotNetNativeCompatibleProfile> element and set its value to: true.  
   
-    5.  The default asset scale for Universal Windows apps is 200. If your project includes assets not scaled at 200, you will need to add a <UapDefaultAssetScale\> element with the value of the scale of your assets to this PropertyGroup. Learn more about [assets and scales](http://msdn.microsoft.com/library/jj679352.aspx).  
+    5.  The default asset scale for Universal Windows apps is 200. If your project includes assets not scaled at 200, you will need to add a \<UapDefaultAssetScale> element with the value of the scale of your assets to this PropertyGroup. Learn more about [assets and scales](http://msdn.microsoft.com/library/jj679352.aspx).  
   
-    6.  For Windows Phone projects only, change the value of <ApplicationType\> from Windows Phone to Windows Store.  
+    6.  For Windows Phone projects only, change the value of \<ApplicationType> from Windows Phone to Windows Store.  
   
-         Now your <PropertyGroup\> element should look similar to this example:  
+         Now your \<PropertyGroup> element should look similar to this example:  
   
         ```xml  
         <PropertyGroup>  
@@ -291,7 +291,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
         </PropertyGroup>  
         ```  
   
-4.  Change all instances of the <PlatformToolset\> element to have the value v140. For example:  
+4.  Change all instances of the \<PlatformToolset> element to have the value v140. For example:  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">  
@@ -303,7 +303,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
       </PropertyGroup>  
     ```  
   
-5.  For each remaining <PropertyGroup\> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a <UseDotNetNativeToolchain\> element, then add one. Set the value for the <UseDotNetNativeToolchain\> element to true, like this:  
+5.  For each remaining \<PropertyGroup> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a \<UseDotNetNativeToolchain> element, then add one. Set the value for the \<UseDotNetNativeToolchain> element to true, like this:  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">  
@@ -329,9 +329,9 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
 1.  Open the Package.appxmanifest file in your project. You need to edit the Package.AppxManifest file for each of your Windows Store and Windows Phone projects.  
   
-2.  You need to update the <Package\> element with the new schemas based on your existing project type. First remove the schemas below based on whether you have a Windows Store or Windows Phone project.  
+2.  You need to update the \<Package> element with the new schemas based on your existing project type. First remove the schemas below based on whether you have a Windows Store or Windows Phone project.  
   
-     **OLD for Windows Store project:** Your <Package\> element will look similar to this one.  
+     **OLD for Windows Store project:** Your \<Package> element will look similar to this one.  
   
     ```xml  
     <Package  
@@ -340,7 +340,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-     **OLD for Windows Phone project:** Your <Package\> element will look similar to this one.  
+     **OLD for Windows Phone project:** Your \<Package> element will look similar to this one.  
   
     ```xml  
     <Package  
@@ -350,7 +350,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
     xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
     ```  
   
-     **NEW for Universal Windows Platform:** Add the schemas below to your <Package\> element. Remove any associated namespace identifier prefixes from elements for the schemas that you just removed. Update the IgnorableNamespaces property to: uap mp. Your new <Package\> element should look similar to this one.  
+     **NEW for Universal Windows Platform:** Add the schemas below to your \<Package> element. Remove any associated namespace identifier prefixes from elements for the schemas that you just removed. Update the IgnorableNamespaces property to: uap mp. Your new \<Package> element should look similar to this one.  
   
     ```xml  
     <Package  
@@ -361,7 +361,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-3.  Add a <Dependencies\> child element to the <Package\> element. Then add a <TargetDeviceFamily\> child element to this <Dependencies\> element with Name, MinVersion, and MaxVersionTested attributes. Give the Name attribute the value: Windows.Universal. Give the MinVersion and MaxVersionTested the value of the Universal Windows Platform version you have installed. This element should look similar to this:  
+3.  Add a \<Dependencies> child element to the \<Package> element. Then add a \<TargetDeviceFamily> child element to this \<Dependencies> element with Name, MinVersion, and MaxVersionTested attributes. Give the Name attribute the value: Windows.Universal. Give the MinVersion and MaxVersionTested the value of the Universal Windows Platform version you have installed. This element should look similar to this:  
   
     ```xml  
     <Dependencies>  
@@ -369,16 +369,16 @@ Make the necessary manual changes to your existing project files for Windows Sto
     </Dependencies>  
     ```  
   
-4.  **For Windows Store only:** You need to add a <mp:PhoneIdentity> child element to the <Package\> element. Add a PhoneProductId attribute and a PhonePublisherId attribute. Set the PhoneProductId to have the same value as the Name attribute in the <Identity\> element. Set the PhonePublishedId value to: 00000000-0000-0000-0000-000000000000. Like this:  
+4.  **For Windows Store only:** You need to add a <mp:PhoneIdentity> child element to the \<Package> element. Add a PhoneProductId attribute and a PhonePublisherId attribute. Set the PhoneProductId to have the same value as the Name attribute in the \<Identity> element. Set the PhonePublishedId value to: 00000000-0000-0000-0000-000000000000. Like this:  
   
     ```xml  
     <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
     <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>  
     ```  
   
-5.  Find the <Prerequisites\> element and delete this element and any child elements that it has.  
+5.  Find the \<Prerequisites> element and delete this element and any child elements that it has.  
   
-6.  Add the **uap** namespace to the following <Resource\> elements: Scale, DXFeatureLevel. For example:  
+6.  Add the **uap** namespace to the following \<Resource> elements: Scale, DXFeatureLevel. For example:  
   
     ```xml  
     <Resources>  
@@ -389,7 +389,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-7.  Add the **uap** namespace to the following <Capability\> elements: documentsLibrary, picturesLibrary, videosLibrary, musicLibrary, enterpriseAuthentication, sharedUserCertificates, removableStorage, appointments, and contacts. For example:  
+7.  Add the **uap** namespace to the following \<Capability> elements: documentsLibrary, picturesLibrary, videosLibrary, musicLibrary, enterpriseAuthentication, sharedUserCertificates, removableStorage, appointments, and contacts. For example:  
   
     ```xml  
     <Capabilities>  
@@ -399,7 +399,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-8.  Add the **uap** namespace to the <VisualElements\> element and any of its child elements. For example:  
+8.  Add the **uap** namespace to the \<VisualElements> element and any of its child elements. For example:  
   
     ```xml  
     <uap:VisualElements  
@@ -413,7 +413,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-     **Only applies to Windows Store:** The tile size names have changed. Change the attributes in the <VisualElements\> element to reflect the new converged tile sizes. 70x70 becomes 71x71, and 30x30 becomes 44x44.  
+     **Only applies to Windows Store:** The tile size names have changed. Change the attributes in the \<VisualElements> element to reflect the new converged tile sizes. 70x70 becomes 71x71, and 30x30 becomes 44x44.  
   
      **OLD:** tile size names  
   
@@ -443,7 +443,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-9. Add the **uap** namespace to the <ApplicationContentUriRules\> and all its child elements. For example:  
+9. Add the **uap** namespace to the \<ApplicationContentUriRules> and all its child elements. For example:  
   
     ```xml  
     <uap:ApplicationContentUriRules>  
@@ -453,7 +453,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-10. Add the **uap** namespace to the following <Extension\> elements and all of its child elements: windows.accountPictureProvide,  windows.alarm, windows.appointmentsProvider windows.autoPlayContent,  windows.autoPlayDevice, windows.cachedFileUpdate, windows.cameraSettings, windows.fileOpenPicker, windows.fileTypeAssociation, windows.fileSavePicke, windows.lockScreenCall, windows.printTaskSettings, windows.protocol, windows.search, windows.shareTarget. For example:  
+10. Add the **uap** namespace to the following \<Extension> elements and all of its child elements: windows.accountPictureProvide,  windows.alarm, windows.appointmentsProvider windows.autoPlayContent,  windows.autoPlayDevice, windows.cachedFileUpdate, windows.cameraSettings, windows.fileOpenPicker, windows.fileTypeAssociation, windows.fileSavePicke, windows.lockScreenCall, windows.printTaskSettings, windows.protocol, windows.search, windows.shareTarget. For example:  
   
     ```xml  
     <Extensions>  
@@ -479,9 +479,9 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-12. Change the framework dependencies. Add a Publisher name to all <PackageDependency\> elements, and specify a MinVersion if it’s not already specified.  
+12. Change the framework dependencies. Add a Publisher name to all \<PackageDependency> elements, and specify a MinVersion if it’s not already specified.  
   
-     **OLD:** <PackageDependency\> element  
+     **OLD:** \<PackageDependency> element  
   
     ```xml  
     <Dependencies>  
@@ -490,7 +490,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-     **NEW:** <PackageDependency\> element  
+     **NEW:** \<PackageDependency> element  
   
     ```xml  
     <Dependencies>  
@@ -557,13 +557,13 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
 15. Remove any deprecated elements.  
   
-    1.  These attributes for <VisualElements\> are deprecated and should be removed:  
+    1.  These attributes for \<VisualElements> are deprecated and should be removed:  
   
-        -   The <VisualElements\> attributes: ForegroundText, ToastCapable  
+        -   The \<VisualElements> attributes: ForegroundText, ToastCapable  
   
-        -   The <DefaultTile\> attribute DefaultSize  
+        -   The \<DefaultTile> attribute DefaultSize  
   
-        -   The <ApplicationView\> element  
+        -   The \<ApplicationView> element  
   
          For example:  
   
@@ -584,7 +584,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
 17. You need to remove some hidden files before you can reopen your solution.  
   
-    1.  Open File Explorer, click **View** in the toolbar and select **Hidden items** and **File name extensions**. Open this folder on your machine: <path for the location of your solution\>\\.vs\\{Project Name}\v14. If there is a file with a .suo file extension, then delete it.  
+    1.  Open File Explorer, click **View** in the toolbar and select **Hidden items** and **File name extensions**. Open this folder on your machine: \<path for the location of your solution>\\.vs\\{Project Name}\v14. If there is a file with a .suo file extension, then delete it.  
   
     2.  Now go back to the folder where your solution is located. Open any folders for projects that exist in your solution. If a file inside any of these project folders has a .csproj.user or .vbproj.user extension, then delete it.  
   
@@ -648,11 +648,11 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
      ![Right click the project and choose Edit](../vs140/media/uap_editproject.png "UAP_EditProject")  
   
-4.  Find the <PropertyGroup\> element that contains the <TargetPlatformVersion\> and <TargetPlatformMinVersion\> elements. Change the existing value of the <TargetPlatformVersion\> and <TargetPlatformMinVersion\> elements to be the same version of the Universal Windows Platform that you have installed.  
+4.  Find the \<PropertyGroup> element that contains the \<TargetPlatformVersion> and \<TargetPlatformMinVersion> elements. Change the existing value of the \<TargetPlatformVersion> and \<TargetPlatformMinVersion> elements to be the same version of the Universal Windows Platform that you have installed.  
   
-     The default asset scale for Universal Windows apps is 200. Projects created with Visual Studio 2015 RC included assets scaled at 100, you will need to add a <UapDefaultAssetScale\> element with a value of 100 to this PropertyGroup. Learn more about [assets and scales](http://msdn.microsoft.com/library/jj679352.aspx).  
+     The default asset scale for Universal Windows apps is 200. Projects created with Visual Studio 2015 RC included assets scaled at 100, you will need to add a \<UapDefaultAssetScale> element with a value of 100 to this PropertyGroup. Learn more about [assets and scales](http://msdn.microsoft.com/library/jj679352.aspx).  
   
-5.  If you added any references to UWP Extension SDKs (for example: the Windows Mobile SDK), you will need to update the SDK version. For example this <SDKReference\> element:  
+5.  If you added any references to UWP Extension SDKs (for example: the Windows Mobile SDK), you will need to update the SDK version. For example this \<SDKReference> element:  
   
     ```xml  
     <SDKReference Include="WindowsMobile, Version=10.0.0.1">  
@@ -670,7 +670,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-6.  Find the <Target\> element with a name attribute that has the value: EnsureNuGetPackageBuildImports. Delete this element and all its children.  
+6.  Find the \<Target> element with a name attribute that has the value: EnsureNuGetPackageBuildImports. Delete this element and all its children.  
   
     ```xml  
     <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
@@ -682,7 +682,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
     </Target>  
     ```  
   
-7.  Find and delete the <Import\> elements with Project and Condition attributes that reference Microsoft.Diagnostics.Tracing.EventSource and Microsoft.ApplicationInsights, like this:  
+7.  Find and delete the \<Import> elements with Project and Condition attributes that reference Microsoft.Diagnostics.Tracing.EventSource and Microsoft.ApplicationInsights, like this:  
   
     ```xml  
     <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />  
@@ -690,9 +690,9 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-8.  Find the <ItemGroup\> that has <Reference\> children elements to NuGet packages. Take note of the NuGet packages that are referenced, because you will need this information for a future step. One significant difference between the Windows 10 project format between Visual Studio 2015 RC and Visual Studio 2015 RTM is that the RTM format uses [NuGet](http://docs.nuget.org/) version 3.  
+8.  Find the \<ItemGroup> that has \<Reference> children elements to NuGet packages. Take note of the NuGet packages that are referenced, because you will need this information for a future step. One significant difference between the Windows 10 project format between Visual Studio 2015 RC and Visual Studio 2015 RTM is that the RTM format uses [NuGet](http://docs.nuget.org/) version 3.  
   
-     Remove the <ItemGroup\> and all its children. For example, a UWP project created with Visual Studio RC will have the following NuGet packages that need to be removed:  
+     Remove the \<ItemGroup> and all its children. For example, a UWP project created with Visual Studio RC will have the following NuGet packages that need to be removed:  
   
     ```xml  
     <ItemGroup>  
@@ -720,7 +720,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-9. Find the <ItemGroup\> element that contains an <AppxManifest\> element. If there is a <None\> element with an Include attribute set to: packages.config, delete it. Also, add a <None\> element with an Include attribute and set its value to: project.json.  
+9. Find the \<ItemGroup> element that contains an \<AppxManifest> element. If there is a \<None> element with an Include attribute set to: packages.config, delete it. Also, add a \<None> element with an Include attribute and set its value to: project.json.  
   
 10. Save your changes. Then close the project file.  
   
@@ -730,7 +730,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
 13. Open the Package.appxmanifest file in your project.  
   
-    1.  Find the <TargetDeviceFamily\> element. Change its MinVersion and MaxVersionTested attributes to correspond to the Universal Windows Platform version that you have installed. Like this:  
+    1.  Find the \<TargetDeviceFamily> element. Change its MinVersion and MaxVersionTested attributes to correspond to the Universal Windows Platform version that you have installed. Like this:  
   
         ```xml  
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />  
@@ -756,13 +756,13 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
      ![Unload the project, then edit the project file](../vs140/media/uap_editearliercplus.png "UAP_EditEarlierCPlus")  
   
-3.  Find any <PropertyGroup\> elements that do not contain a Condition attribute but do contain an <ApplicationTypeRevision\> element. Update the ApplicationTypeRevision value from 8.2 to 10.0. Add a <WindowsTargetPlatformVersion\> and a <WindowsTargetPlatformMinVersion\> element and set their values to be the value of the Universal Windows Platform version that you installed.  
+3.  Find any \<PropertyGroup> elements that do not contain a Condition attribute but do contain an \<ApplicationTypeRevision> element. Update the ApplicationTypeRevision value from 8.2 to 10.0. Add a \<WindowsTargetPlatformVersion> and a \<WindowsTargetPlatformMinVersion> element and set their values to be the value of the Universal Windows Platform version that you installed.  
   
-     Add an <EnableDotNetNativeCompatibleProfile\> element and set its value to true if the element does not already exist.  
+     Add an \<EnableDotNetNativeCompatibleProfile> element and set its value to true if the element does not already exist.  
   
-     The default asset scale for Universal Windows apps is 200. Projects created with Visual Studio 2015 RC included assets scaled at 100, you will need to add a <UapDefaultAssetScale\> element with a value of 100 to this PropertyGroup. Learn more about [assets and scales](http://msdn.microsoft.com/library/jj679352.aspx).  
+     The default asset scale for Universal Windows apps is 200. Projects created with Visual Studio 2015 RC included assets scaled at 100, you will need to add a \<UapDefaultAssetScale> element with a value of 100 to this PropertyGroup. Learn more about [assets and scales](http://msdn.microsoft.com/library/jj679352.aspx).  
   
-     So this <PropertyGroup\> element will now be similar to this:  
+     So this \<PropertyGroup> element will now be similar to this:  
   
     ```xml  
     <PropertyGroup Label="Globals">  
@@ -778,7 +778,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-4.  For each remaining <PropertyGroup\> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a <UseDotNetNativeToolchain\> element, then add one. Set the value for the <UseDotNetNativeToolchain\> element to true, like this:  
+4.  For each remaining \<PropertyGroup> element, check if the element has a Condition attribute with a Release configuration. If it does, but it does not contain a \<UseDotNetNativeToolchain> element, then add one. Set the value for the \<UseDotNetNativeToolchain> element to true, like this:  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">  
@@ -791,7 +791,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-5.  You need to update the <EnableDotNetNativeCompatibleProfile\> element and the <UseDotNetNativeToolchain\> element to enable .NET Native, but .NET Native is not​ enabled in the C++ templates.  
+5.  You need to update the \<EnableDotNetNativeCompatibleProfile> element and the \<UseDotNetNativeToolchain> element to enable .NET Native, but .NET Native is not​ enabled in the C++ templates.  
   
      Save your changes. Then close the project file.  
   
@@ -799,7 +799,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
 7.  Open the Package.appxmanifest file in your project.  
   
-    1.  Find the <TargetDeviceFamily\> element. Change its MinVersion and MaxVersionTested attributes to correspond to the Universal Windows Platform version that you have installed. Like this:  
+    1.  Find the \<TargetDeviceFamily> element. Change its MinVersion and MaxVersionTested attributes to correspond to the Universal Windows Platform version that you have installed. Like this:  
   
         ```xml  
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />  
@@ -820,7 +820,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
 ###  <a name="UnitTestRCUpdate10CSharp"></a> Update your C#/VB unit test projects  
   
-1.  With Visual Studio, open your solution that contains your C#/VB unit test project. Change the value of the <OuttputType\> element to: AppContainerExe.  
+1.  With Visual Studio, open your solution that contains your C#/VB unit test project. Change the value of the \<OuttputType> element to: AppContainerExe.  
   
     ```xml  
   
@@ -828,7 +828,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-2.  Replace this element <EnableCoreRuntime\>false</EnableCoreRuntime\> with the following element:  
+2.  Replace this element \<EnableCoreRuntime>false</EnableCoreRuntime\> with the following element:  
   
     ```xml  
   
@@ -866,7 +866,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-4.  Add this element <UseDotNetNativeToolchain\>true</UseDotNetNativeToolchain\> as a child element to these property groups:  
+4.  Add this element \<UseDotNetNativeToolchain>true</UseDotNetNativeToolchain\> as a child element to these property groups:  
   
     ```xml  
   
@@ -876,7 +876,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-5.  Delete the following <ItemGroup\> elements:  
+5.  Delete the following \<ItemGroup> elements:  
   
     ```xml  
   
@@ -1004,7 +1004,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-2.  Add the following <ProjectConfiguration\> elements below this element <ItemGroup Label="ProjectConfigurations"\> if they are not already in this fille:  
+2.  Add the following \<ProjectConfiguration> elements below this element <ItemGroup Label="ProjectConfigurations"\> if they are not already in this fille:  
   
     ```xml  
   
@@ -1035,7 +1035,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-4.  Add these <PropertyGroup\> elements if they are not already in the file:  
+4.  Add these \<PropertyGroup> elements if they are not already in the file:  
   
     ```xml  
   
@@ -1085,7 +1085,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-7.  Add these <ItemDefinitionGroup\> elements in the section that already contains other <ItemDefinitionGroup\> elements:  
+7.  Add these \<ItemDefinitionGroup> elements in the section that already contains other \<ItemDefinitionGroup> elements:  
   
     ```xml  
   
@@ -1112,7 +1112,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-8.  Delete the following < ItemGroup> element:  
+8.  Delete the following \< ItemGroup> element:  
   
     ```xml  
   
@@ -1126,7 +1126,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-     Replace it with this <ItemGroup\> element:  
+     Replace it with this \<ItemGroup> element:  
   
     ```xml  
   
@@ -1142,7 +1142,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
   
     ```  
   
-9. Delete the following < ItemGroup> element:  
+9. Delete the following \< ItemGroup> element:  
   
     ```xml  
   
@@ -1151,7 +1151,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
     </ItemGroup>  
     ```  
   
-     Replace it with these <ItemGroup\> elements:  
+     Replace it with these \<ItemGroup> elements:  
   
     ```xml  
   
@@ -1175,7 +1175,7 @@ Make the necessary manual changes to your existing project files for Windows Sto
     <ClCompile Include="UnitTest.cpp"/>  
     ```  
   
-     Replace it with these <CICompile\> elements:  
+     Replace it with these \<CICompile> elements:  
   
     ```xml  
   

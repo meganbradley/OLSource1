@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3161
-**MSB3161: A circular dependency was detected between the following built packages: '<package\>'**  
+**MSB3161: A circular dependency was detected between the following built packages: '\<package>'**  
   
  This warning is generated when there is a circular dependency in the graph of the bootstrapper package dependencies (for example: A→B→C→A). In such cases the bootstrapper cannot determine which package to install first.  
   
@@ -30,4 +30,4 @@ translation.priority.ht:
   
 ## See Also  
  [Product and Package Schema Reference](../vs140/product-and-package-schema-reference.md)   
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

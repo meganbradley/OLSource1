@@ -20,10 +20,10 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;mutex&gt;
-Include the standard header <mutex\> to define the classes `mutex`, `recursive_mutex`, `timed_mutex`, and `recursive_timed_mutex`; the templates `lock_guard` and `unique_lock`; and supporting types and functions that define mutual-exclusion code regions.  
+Include the standard header \<mutex> to define the classes `mutex`, `recursive_mutex`, `timed_mutex`, and `recursive_timed_mutex`; the templates `lock_guard` and `unique_lock`; and supporting types and functions that define mutual-exclusion code regions.  
   
 > [!WARNING]
->  The STL synchronization types in Visual Studio 2015 are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in <mutex\> should not be used with any ConcRT types or functions.  
+>  The STL synchronization types in Visual Studio 2015 are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in \<mutex> should not be used with any ConcRT types or functions.  
   
 ## Syntax  
   

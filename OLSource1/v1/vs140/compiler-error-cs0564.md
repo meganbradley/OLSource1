@@ -24,7 +24,7 @@ translation.priority.ht:
 # Compiler Error CS0564
 The first operand of an overloaded shift operator must have the same type as the containing type, and the type of the second operand must be int  
   
- You attempted to overload a shift operator (<< or >>) with incorrectly typed operands. The first operand must be the type and the second operand must be of the type `int`.  
+ You attempted to overload a shift operator (<\< or >>) with incorrectly typed operands. The first operand must be the type and the second operand must be of the type `int`.  
   
  The following sample generates CS0564:  
   

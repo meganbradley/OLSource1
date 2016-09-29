@@ -77,7 +77,7 @@ int main( )
  **The characters written to the output stream**  
  **by charOutBuf are: OUT.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

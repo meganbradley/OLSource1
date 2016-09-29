@@ -38,16 +38,16 @@ template <    class  Type ,     class  Allocator  = allocator< Type >  > class v
  The element data type to be stored in the vector  
   
  `Allocator`  
- The type that represents the stored allocator object that encapsulates details about the vector's allocation and deallocation of memory. This argument is optional and the default value is **allocator***<Type\>.*  
+ The type that represents the stored allocator object that encapsulates details about the vector's allocation and deallocation of memory. This argument is optional and the default value is **allocator***\<Type>.*  
   
 ## Remarks  
  Vectors allow constant time insertions and deletions at the end of the sequence. Inserting or deleting elements in the middle of a vector requires linear time. The performance of the [deque Class](../vs140/deque-class.md) container is superior with respect to insertions and deletions at the beginning and end of a sequence. The [list Class](../vs140/list-class.md) container is superior with respect to insertions and deletions at any location within a sequence.  
   
  Vector reallocation occurs when a member function must increase the sequence contained in the vector object beyond its current storage capacity. Other insertions and erasures may alter various storage addresses within the sequence. In all such cases, iterators or references that point at altered portions of the sequence become invalid. If no reallocation happens, only iterators and references before the insertion/deletion point remain valid.  
   
- The [vector<bool\> Class](../vs140/vector-bool--class.md) is a full specialization of the template class vector for elements of type bool with an allocator for the underlying type used by the specialization.  
+ The [vector\<bool> Class](../vs140/vector-bool--class.md) is a full specialization of the template class vector for elements of type bool with an allocator for the underlying type used by the specialization.  
   
- The [vector<bool\> reference Class](../vs140/vector-bool--class.md#vector_lt_bool_gt___reference_class) is a nested class whose objects are able to provide references to elements (single bits) within a vector<bool\> object.  
+ The [vector\<bool> reference Class](../vs140/vector-bool--class.md#vector_lt_bool_gt___reference_class) is a nested class whose objects are able to provide references to elements (single bits) within a vector\<bool> object.  
   
 ## Members  
   
@@ -116,7 +116,7 @@ template <    class  Type ,     class  Allocator  = allocator< Type >  > class v
 |[operator=](#vector__operator_eq)|Replaces the elements of the vector with a copy of another vector.|  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

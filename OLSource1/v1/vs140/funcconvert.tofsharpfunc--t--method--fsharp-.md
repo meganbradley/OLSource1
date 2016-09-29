@@ -36,14 +36,7 @@ Convert the given <xref:System.Action`1*> delegate object to an F# function valu
   
 ## Syntax  
   
-```  
-// Signature:  
-static member ToFSharpFunc : Action<'T> -> 'T -> unit  
-  
-// Usage:  
-FuncConvert.ToFSharpFunc (action)  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
 #### Parameters  
  `action`  
  Type: <xref:System.Action`1*>`<'T>`  

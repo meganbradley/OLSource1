@@ -23,8 +23,8 @@ translation.priority.ht:
 # TemplateContent Element (Visual Studio Templates)
 Specifies the contents of the template.  
   
- <VSTemplate\>  
- <TemplateContent\>  
+ \<VSTemplate>  
+ \<TemplateContent>  
   
 ## Syntax  
   

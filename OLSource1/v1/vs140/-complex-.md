@@ -118,13 +118,13 @@ Defines the container template class complex and its supporting templates.
   
 |||  
 |-|-|  
-|[complex<double\>](../vs140/complex-double-.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects both of type **double***,* first representing the real part of a complex number and the second representing the imaginary part.|  
-|[complex<float\>](../vs140/complex-float-.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects both of type **float***,* first representing the real part of a complex number and the second representing the imaginary part.|  
-|[complex<long double\>](../vs140/complex-long-double-.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects both of type `long double`*,* first representing the real part of a complex number and the second representing the imaginary part.|  
+|[complex\<double>](../vs140/complex-double-.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects both of type **double***,* first representing the real part of a complex number and the second representing the imaginary part.|  
+|[complex\<float>](../vs140/complex-float-.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects both of type **float***,* first representing the real part of a complex number and the second representing the imaginary part.|  
+|[complex\<long double>](../vs140/complex-long-double-.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects both of type `long double`*,* first representing the real part of a complex number and the second representing the imaginary part.|  
 |[complex](../vs140/complex-class.md)|The template class describes an object used to represent the complex number system and perform complex arithmetic operations.|  
   
 ### Literals  
- The <complex\> header defines the following [user-defined literals](../vs140/user-defined-literals---c---.md) which create a complex number with the real part being zero and the imaginary part being the value of the input parameter.  
+ The \<complex> header defines the following [user-defined literals](../vs140/user-defined-literals---c---.md) which create a complex number with the real part being zero and the imaginary part being the value of the input parameter.  
   
 |||  
 |-|-|  

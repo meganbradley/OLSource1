@@ -45,7 +45,7 @@ virtual int do_max_length( ) const throw( );
  See the example for [max_length](../vs140/codecvt--max_length.md), which calls `do_max_length`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

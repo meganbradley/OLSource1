@@ -90,7 +90,7 @@ int main( )
 **After the insertions, the vector vec becomes:**  
  **( 30 40 50 1 2 3 4 ).**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

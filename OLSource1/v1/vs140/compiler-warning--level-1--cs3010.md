@@ -24,7 +24,7 @@ translation.priority.ht:
 # Compiler Warning (level 1) CS3010
 'member': CLS-compliant interfaces must have only CLS-compliant members  
   
- In an assembly marked with `[assembly:CLCSompliant(true)]`, an interface contains a member marked with `[CLCSompliant(false)]`. Remove one of the Common Language Specification (CLS) compliance attributes. For more information about CLS Compliance, see [<PAVE OVER\> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3) and [What Is the Common Language Specification](assetId:///4f0b77d0-4844-464f-af73-6e06bedeafc6).  
+ In an assembly marked with `[assembly:CLCSompliant(true)]`, an interface contains a member marked with `[CLCSompliant(false)]`. Remove one of the Common Language Specification (CLS) compliance attributes. For more information about CLS Compliance, see [\<PAVE OVER> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3) and [What Is the Common Language Specification](assetId:///4f0b77d0-4844-464f-af73-6e06bedeafc6).  
   
 ## Example  
  The following example generates CS3010:  

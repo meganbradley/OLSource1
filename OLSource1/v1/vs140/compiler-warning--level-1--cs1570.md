@@ -26,13 +26,13 @@ XML comment on 'construct' has badly formed XML — 'reason'
   
  When using [/doc](../vs140/-doc--csharp-compiler-options-.md), any comments in the source code must be in XML. Any error with your XML markup will generate CS1570. For example:  
   
--   If you are passing a string to a **cref**, such as in an [<exception\>](../vs140/-exception---csharp-programming-guide-.md) tag, the string must be enclosed in double quotation marks.  
+-   If you are passing a string to a **cref**, such as in an [\<exception>](../vs140/-exception---csharp-programming-guide-.md) tag, the string must be enclosed in double quotation marks.  
   
--   If you are using a tag, such as [<seealso\>](../vs140/-seealso---csharp-programming-guide-.md), which does not have a closing tag, you must specify a forward slash before the closing angle bracket.  
+-   If you are using a tag, such as [\<seealso>](../vs140/-seealso---csharp-programming-guide-.md), which does not have a closing tag, you must specify a forward slash before the closing angle bracket.  
   
 -   If you need to use a greater-than or less-than symbol in the text of description, you need to represent them with **&gt;** or **&lt;**.  
   
--   The file or path attribute on an [<include\>](../vs140/-include---csharp-programming-guide-.md) tag was missing or improperly formed.  
+-   The file or path attribute on an [\<include>](../vs140/-include---csharp-programming-guide-.md) tag was missing or improperly formed.  
   
  The following sample generates CS1570:  
   

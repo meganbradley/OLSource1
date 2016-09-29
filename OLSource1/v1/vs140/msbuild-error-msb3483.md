@@ -20,10 +20,10 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3483
-**MSB3483: A warning occurred while signing: '<warning\>'.**  
+**MSB3483: A warning occurred while signing: '\<warning>'.**  
   
  SignTool issued the specified warning.  
   
 ## See Also  
  [Sign Tool (signtool.exe)](assetId:///0c25ff6c-bff3-422e-b017-146a3ee86cb9)   
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

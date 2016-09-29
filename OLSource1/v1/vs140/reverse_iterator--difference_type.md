@@ -46,7 +46,7 @@ difference_type;
  See [reverse_iterator::operator&#91;&#93;](../vs140/reverse_iterator--operator.md) for an example of how to declare and use `difference_type`.  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

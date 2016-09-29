@@ -43,10 +43,10 @@ const Del& get_deleter() const;
  The member function returns a reference to `stored_deleter`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
  [unique_ptr](../vs140/unique_ptr-class.md)   
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

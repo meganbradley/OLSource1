@@ -85,7 +85,7 @@ int main( )
 **Pointer v1PtrB addresses 12.**  
 **The difference between the integer's addresses is: 8.**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

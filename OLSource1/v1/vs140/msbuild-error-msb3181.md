@@ -20,9 +20,9 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3181
-**MSB3181: Two or more files have the same target path '<path\>'.**  
+**MSB3181: Two or more files have the same target path '\<path>'.**  
   
  This warning is generated during application manifest generation when two or more of the referenced assemblies or files share the same target path. The path includes the file name and all these assemblies will overwrite each other at deployment time.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Data type(s) of the type parameter(s) in method &#39;&lt;methodname&gt;&#39; cannot be inferred from these arguments because more than one type is possible
-Data type(s) of the type parameter(s) in method '<methodname\>' cannot be inferred from these arguments because more than one type is possible. Specifying the data type(s) explicitly might correct this error.  
+Data type(s) of the type parameter(s) in method '\<methodname>' cannot be inferred from these arguments because more than one type is possible. Specifying the data type(s) explicitly might correct this error.  
   
  An attempt has been made to use type inference to determine the type or types of the type parameter or parameters in a call to a generic procedure. The compiler finds more than one possible data type for one or more of the type parameters, and it reports this error.  
   

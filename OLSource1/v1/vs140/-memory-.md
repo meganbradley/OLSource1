@@ -100,7 +100,7 @@ Defines a class, an operator, and several templates that help allocate and free 
   
 |||  
 |-|-|  
-|[allocator<void\>](../vs140/allocator-void--class.md)|A specialization of the template class allocator to type void, defining the only the member types that make sense in this specialized context.|  
+|[allocator\<void>](../vs140/allocator-void--class.md)|A specialization of the template class allocator to type void, defining the only the member types that make sense in this specialized context.|  
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   

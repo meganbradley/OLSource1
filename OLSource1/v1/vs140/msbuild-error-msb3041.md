@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3041
-**Unable to create a manifest resource name for "'<file\>'".**  
+**Unable to create a manifest resource name for "'\<file>'".**  
   
  The `CreateManifestResourceName` task cannot create a manifest resource name for the specified file.  
   

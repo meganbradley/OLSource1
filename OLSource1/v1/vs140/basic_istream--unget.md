@@ -67,7 +67,7 @@ int main( )
   **`abc` `abc`Type 'abc': abc**  
 **abc**   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   

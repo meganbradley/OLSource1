@@ -50,4 +50,4 @@ template<class Clock, class Duration1, class Duration2>
  The second function returns `true` if `Left` precedes `Right`. Otherwise, the function returns `false`.  
   
 ## See Also  
- [<chrono\>](../vs140/-chrono-.md)
+ [\<chrono>](../vs140/-chrono-.md)

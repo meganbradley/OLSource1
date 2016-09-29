@@ -67,10 +67,10 @@ template<class RandomAccessIterator, class BinaryPredicate>
  `is_heap_until` `(` `_First` `,`  `_Last` `,`  `_Comp` `) ==`  `_Last`.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
  [is_heap_until](../vs140/is_heap_until.md)   
- [<algorithm\>](../vs140/-algorithm-.md)
+ [\<algorithm>](../vs140/-algorithm-.md)

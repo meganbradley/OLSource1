@@ -35,12 +35,12 @@ translation.priority.ht:
  The text you want marked as code.  
   
 ## Remarks  
- The <code\> tag gives you a way to indicate multiple lines as code. Use [<c\>](../vs140/-c---csharp-programming-guide-.md) to indicate that text within a description should be marked as code.  
+ The \<code> tag gives you a way to indicate multiple lines as code. Use [\<c>](../vs140/-c---csharp-programming-guide-.md) to indicate that text within a description should be marked as code.  
   
  Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file.  
   
 ## Example  
- See the [<example\>](../vs140/-example---csharp-programming-guide-.md) topic for an example of how to use the <code\> tag.  
+ See the [\<example>](../vs140/-example---csharp-programming-guide-.md) topic for an example of how to use the \<code> tag.  
   
 ## See Also  
  [C# Programming Guide](../vs140/csharp-programming-guide.md)   

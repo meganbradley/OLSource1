@@ -42,7 +42,7 @@ typedef basic_ostream<CharType, Traits> ostream_type;
  See [ostream_iterator](../vs140/ostream_iterator--ostream_iterator.md) for an example of how to declare and use `ostream_type`.  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

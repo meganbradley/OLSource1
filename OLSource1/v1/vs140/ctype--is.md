@@ -137,7 +137,7 @@ n: alpha
 ```  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

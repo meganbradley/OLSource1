@@ -99,7 +99,7 @@ long double fminl(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`fmin`,                `fminf`,  `fminl`|C: <math.h><br /><br /> C++: <math.h> or <cmath\>|  
+|`fmin`,                `fminf`,  `fminl`|C: <math.h><br /><br /> C++: <math.h> or \<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

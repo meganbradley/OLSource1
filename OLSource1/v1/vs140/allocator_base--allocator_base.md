@@ -49,7 +49,7 @@ template <class Other>
  The first constructor constructs an [allocator_base](../vs140/allocator_base-class.md) instance. The second constructor constructs an `allocator_base` instance such that for any `allocator_base<Type, _Sync>` instance `a`, `allocator_base<Type, Sync>(allocator_base<Other, Sync>(a)) == a`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

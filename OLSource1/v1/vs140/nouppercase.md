@@ -53,7 +53,7 @@ Specifies that hexadecimal digits and the exponent in scientific notation appear
  See [uppercase](../vs140/uppercase.md) for an example of using `nouppercase`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

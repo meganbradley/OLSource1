@@ -24,16 +24,16 @@ translation.priority.ht:
 # ProjectTemplateLink Element (Visual Studio Templates)
 Specifies the path to the .vstemplate file of one project in a multi-project template.  
   
- <VSTemplate\>  
- <TemplateContent\>  
- <ProjectCollection\>  
- <ProjectTemplateLink\>  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectCollection>  
+ \<ProjectTemplateLink>  
 -or-  
-<VSTemplate\>  
- <TemplateContent\>  
- <ProjectCollection\>  
- <SolutionFolder\>  
- <ProjectTemplateLink\>  
+\<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectCollection>  
+ \<SolutionFolder>  
+ \<ProjectTemplateLink>  
   
 ## Syntax  
   

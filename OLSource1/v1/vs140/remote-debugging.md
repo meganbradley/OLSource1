@@ -44,7 +44,7 @@ You can debug a Visual Studio application that has been deployed on a different 
   
  If the remote computer already has Visual Studio 2015 Community, Professional, or Enterprise already installed, the remote debugger (**msvsmon.exe**) is already installed, and you can start it from its directory:  
   
- **<Visual Studio installation directory\>\Common7\IDE\Remote Debugger\\(x64, x86, Appx)\msvsmon.exe**  
+ **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger\\(x64, x86, Appx)\msvsmon.exe**  
   
  However, the **Remote Debugger Configuration Wizard** (**rdbgwiz.exe**) is installed only when you download and install the tools, and you may need to use it for configuration later, especially if you want the remote debugger to run as a service. For more information, see [Configure the remote debugger as a service](#bkmk_configureService) below.  
   
@@ -97,7 +97,7 @@ You can debug a Visual Studio application that has been deployed on a different 
   
  You can stop the remote debugger by clicking **File / Exit** on the window. You can restart it from the **Start** menu or from the command line:  
   
- **<Visual Studio installation directory\>\Common7\IDE\Remote Debugger\\<x86, x64, or Appx\msvsmon.exe**.  
+ **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger\\<x86, x64, or Appx\msvsmon.exe**.  
   
 ## Configure the remote debugger  
  You can change some aspects of the configuration of the remote debugger after you have started it for the first time.  
@@ -137,7 +137,7 @@ You can debug a Visual Studio application that has been deployed on a different 
 ## Running the remote debugger with different user accounts  
  It is possible to run the remote debugger under a user account that differs from the user account you are using on the Visual Studio computer, but you must add the different user account to the remote debugger’s permissions.  
   
--   You can start the remote debugger from the command line with the **/allow <username\>** parameter: **msvsmon /allow <username@computer\>**.  
+-   You can start the remote debugger from the command line with the **/allow \<username>** parameter: **msvsmon /allow <username@computer\>**.  
   
 -   You can add the user to the remote debugger's permissions (in the remote debugger window(**Tools / Permissions**).  
   
@@ -205,7 +205,7 @@ You can debug a Visual Studio application that has been deployed on a different 
   
 8.  Build the project.  
   
-9. Create a folder on the remote computer that is the same path as the **Debug** folder on your Visual Studio computer: **<source path\>\MyWPF\MyWPF\bin\Debug**.  
+9. Create a folder on the remote computer that is the same path as the **Debug** folder on your Visual Studio computer: **\<source path>\MyWPF\MyWPF\bin\Debug**.  
   
 10. Copy the executable that you just built from your Visual Studio computer to the newly-created folder on the remote computer.  
   

@@ -63,7 +63,7 @@ virtual string_type do_get(
  See the example for [get](../vs140/messages--get.md), which calls `do_get`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

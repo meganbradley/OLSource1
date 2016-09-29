@@ -30,4 +30,4 @@ Module blocks must end with an `End``Module` statement.
 -   Add an `End Module` statement to the end of the `Module` block.  
   
 ## See Also  
- [End <keyword\> Statement](../vs140/end--keyword--statement--visual-basic-.md)
+ [End \<keyword> Statement](../vs140/end--keyword--statement--visual-basic-.md)

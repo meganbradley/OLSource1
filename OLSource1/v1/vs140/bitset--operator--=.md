@@ -76,7 +76,7 @@ int main( )
 **After shifting the bits 2 positions to the right,**  
  **the target bitset b1 becomes: ( 00111 ).**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

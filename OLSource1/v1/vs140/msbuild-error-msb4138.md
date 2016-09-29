@@ -18,7 +18,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB4138
-**MSB4138: Non-string data was specified at the registry location "'<key\>'".**  
+**MSB4138: Non-string data was specified at the registry location "'\<key>'".**  
   
  The registry location specified in a custom Toolset configuration is invalid.  
   

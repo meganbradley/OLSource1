@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;include&gt; (Visual C++)
-The <include\> tag lets you refer to comments in another file that describe the types and members in your source code. This is an alternative to placing documentation comments directly in your source code file.  For example, you can use <include\> to insert standard "boilerplate" comments that are used throughout your team or company.  
+The \<include> tag lets you refer to comments in another file that describe the types and members in your source code. This is an alternative to placing documentation comments directly in your source code file.  For example, you can use \<include> to insert standard "boilerplate" comments that are used throughout your team or company.  
   
 ## Syntax  
   
@@ -46,12 +46,12 @@ The <include\> tag lets you refer to comments in another file that describe the 
  The ID for the tag that precedes the comments.  Enclose the name in single or double quotation marks.  
   
 ## Remarks  
- The <include\> tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize using <include\>.  
+ The \<include> tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize using \<include>.  
   
  Compile with [/doc](../vs140/-doc--process-documentation-comments---c-c---.md) to process documentation comments to a file.  
   
 ## Example  
- This is a multifile example. The first file, which uses <include\>, contains the following documentation comments:  
+ This is a multifile example. The first file, which uses \<include>, contains the following documentation comments:  
   
 ```  
 // xml_include_tag.cpp  

@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB2009
-**Attribute '<attribute name\>' of element '<element name\>' is not valid.**  
+**Attribute '\<attribute name>' of element '\<element name>' is not valid.**  
   
  The attribute name is not spelled correctly or is not recognized by [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)].  
   

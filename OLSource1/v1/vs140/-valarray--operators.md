@@ -55,7 +55,7 @@ template<class Type>
 -   **false** if the corresponding elements are not unequal.  
   
 ### Remarks  
- The first template operator returns an object of class [valarray<bool\>](../vs140/valarray-bool--class.md), each of whose elements `I` is `_Left`[ `I`] != `_Right`[ `I`].  
+ The first template operator returns an object of class [valarray\<bool>](../vs140/valarray-bool--class.md), each of whose elements `I` is `_Left`[ `I`] != `_Right`[ `I`].  
   
  The second template operator stores in element                         *I _Left*[ `I`] != _                        *Right*.  
   
@@ -1210,7 +1210,7 @@ template<class Type>
 -   **false** if the corresponding elements are not equal.  
   
 ### Remarks  
- The first template operator returns an object of class [valarray<bool\>](../vs140/valarray-bool--class.md), each of whose elements `I` is _                        *Left*[ `I`] == \_                        *Right*[ `I`]. The second template operator stores in element `I``_Left`[ `I`] == \_                        *Right*. The third template operator stores in element `I``_Left` == `_Right`[ `I`].  
+ The first template operator returns an object of class [valarray\<bool>](../vs140/valarray-bool--class.md), each of whose elements `I` is _                        *Left*[ `I`] == \_                        *Right*[ `I`]. The second template operator stores in element `I``_Left`[ `I`] == \_                        *Right*. The third template operator stores in element `I``_Left` == `_Right`[ `I`].  
   
 ### Example  
   

@@ -85,7 +85,7 @@ int main( )
 **Exception class: class std::ios_base::failure**  
 **Exception description: ios_base::eofbit set**   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

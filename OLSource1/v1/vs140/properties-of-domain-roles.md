@@ -31,7 +31,7 @@ The properties in the following table are associated with a domain role. For inf
 |Category|The category under which the generated property appears in the **Properties** window in the generated designer. If this property is empty, then the generated property appears under the **Misc** category|<none\>|  
 |Description|The description that is used to document code and is used in the UI of the generated designer.<br /><br /> The description appears in the Intellisense tooltip for the generated property on the role player class.|`Description for` *the full name of the role*|  
 |Display Name|The name that is displayed in the generated designer for the domain role.|The adjusted value of the Name property.|  
-|Help Keyword|The optional keyword that is used to index F1 help for the domain role.|<none\>|  
+|Help Keyword|The optional keyword that is used to index F1 help for the domain role.|\<none>|  
 |Property Display Name|The name that is displayed in the generated designer for the generated role property.|The adjusted value of the Property Name property.|  
   
 > [!NOTE]

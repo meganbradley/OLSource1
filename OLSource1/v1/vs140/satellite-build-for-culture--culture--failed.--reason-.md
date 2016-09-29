@@ -30,7 +30,7 @@ A satellite assembly for a particular culture could not be built. This error wil
   
 -   Reinstall [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] or just the [!INCLUDE[dnprdnshort](../vs140/includes/dnprdnshort_md.md)].  
   
--   When <reason\> is reported as "The assembly linker could not be launched. The file exists," empty the Temp folder in which the files are generated (for example, C:\Documents and Settings\\<user\>\Local Settings\Temp).  
+-   When \<reason> is reported as "The assembly linker could not be launched. The file exists," empty the Temp folder in which the files are generated (for example, C:\Documents and Settings\\\<user>\Local Settings\Temp).  
   
 ## See Also  
  [Assembly Linker (Al.exe)](assetId:///b5382965-0053-47cf-b92f-862860275a01)

@@ -56,11 +56,11 @@ auto i2 = Container.cend(); // i2 is Container<T>::const_iterator
  The value returned by `cend` should not be dereferenced.  
   
 ## Requirements  
- **Header:** <array\>  
+ **Header:** \<array>  
   
  **Namespace:** std  
   
 ## See Also  
- [<array\>](../vs140/-array-.md)   
+ [\<array>](../vs140/-array-.md)   
  [array Class](../vs140/array-class--stl-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

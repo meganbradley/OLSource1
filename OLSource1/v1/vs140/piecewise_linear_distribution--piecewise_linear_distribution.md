@@ -129,10 +129,10 @@ explicit piecewise_linear_distribution(const param_type& parm);
  constructs a distribution object using `parm` as the stored parameter structure.  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [piecewise_linear_distribution Class](../vs140/piecewise_linear_distribution-class.md)

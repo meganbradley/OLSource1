@@ -59,7 +59,7 @@ The `RelatedProducts` element defines other products that either depend upon or 
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`Code`|The code name of the included product, as specified by the `ProductCode` attribute of the `Product` element. For more information, see [<Product\> Element (ClickOnce Bootstrapper)](../vs140/-product--element--bootstrapper-.md).|  
+|`Code`|The code name of the included product, as specified by the `ProductCode` attribute of the `Product` element. For more information, see [\<Product> Element (ClickOnce Bootstrapper)](../vs140/-product--element--bootstrapper-.md).|  
   
 ## EitherProducts  
  The `EitherProducts` element defines zero or more `DependsOnProduct` elements, and has no attributes. At least one `DependsOnProduct` in this set must be installed before the current product. A `RelatedProducts` element can have zero or more `EitherProducts` elements.  
@@ -71,7 +71,7 @@ The `RelatedProducts` element defines other products that either depend upon or 
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`Code`|The code name of the included product, as specified by the `ProductCode` attribute of the `Product` element. For more information, see [<Product\> Element (ClickOnce Bootstrapper)](../vs140/-product--element--bootstrapper-.md).|  
+|`Code`|The code name of the included product, as specified by the `ProductCode` attribute of the `Product` element. For more information, see [\<Product> Element (ClickOnce Bootstrapper)](../vs140/-product--element--bootstrapper-.md).|  
   
 ## Example  
  The following code example specifies that the Microsoft Installer is installed with the [!INCLUDE[dnprdnshort](../vs140/includes/dnprdnshort_md.md)], and therefore will not need a separate installation.  
@@ -83,4 +83,4 @@ The `RelatedProducts` element defines other products that either depend upon or 
 ```  
   
 ## See Also  
- [<Product\> Element (ClickOnce Bootstrapper)](../vs140/-product--element--bootstrapper-.md)
+ [\<Product> Element (ClickOnce Bootstrapper)](../vs140/-product--element--bootstrapper-.md)

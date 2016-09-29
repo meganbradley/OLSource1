@@ -33,14 +33,7 @@ Convert the given <xref:System.Converter`2*> delegate object to an F# function v
   
 ## Syntax  
   
-```  
-// Signature:  
-static member ToFSharpFunc : Converter<'T,'U> -> 'T -> 'U  
-  
-// Usage:  
-FuncConvert.ToFSharpFunc (converter)  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
 #### Parameters  
  `converter`  
  Type: <xref:System.Converter`2*>`<'T,'U>`  

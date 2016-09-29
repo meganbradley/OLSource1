@@ -44,6 +44,6 @@ void terminate( );
  See [set_unexpected](../vs140/set_unexpected---exception--.md) for an example of the use of **terminate**.  
   
 ## Requirements  
- **Header:** <exception\>  
+ **Header:** \<exception>  
   
  **Namespace:** std

@@ -47,7 +47,7 @@ char *_Charalloc(size_type _Count);
  This member function is used by containers when compiled with a compiler that cannot compile rebind. It implements `_Charalloc` for the user-defined allocator by returning the result of a call to the `allocate` function of the synchronization filter.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

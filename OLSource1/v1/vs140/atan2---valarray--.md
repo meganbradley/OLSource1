@@ -122,6 +122,6 @@ int main( )
  **-2.35619  radians, which is         -135degrees**  
  **-0.785398  radians, which is          -45degrees**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std

@@ -45,7 +45,7 @@ typedef typename allocator_type::const_reference const_reference;
  See the example for [at](../vs140/basic_string--at.md) for an example of how to declare and use `const_reference`.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

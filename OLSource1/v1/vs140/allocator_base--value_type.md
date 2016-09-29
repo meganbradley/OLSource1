@@ -44,6 +44,6 @@ typedef Type value_type;
  The object type implements  as a typedef for `Type`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext

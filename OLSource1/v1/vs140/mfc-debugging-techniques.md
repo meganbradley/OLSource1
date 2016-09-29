@@ -433,7 +433,7 @@ pMyPerson->Dump( afxDump );
   
 3.  First, you will create a new project configuration.  
   
-    1.  In the **<Project\> Property Pages** dialog box, click the **Configuration Manager** button.  
+    1.  In the **\<Project> Property Pages** dialog box, click the **Configuration Manager** button.  
   
     2.  In the [Configuration Manager dialog box](assetId:///fa182dca-282e-4ae5-bf37-e155344ca18b), locate your project in the grid. In the **Configuration** column, select **<New...>**.  
   
@@ -475,7 +475,7 @@ pMyPerson->Dump( afxDump );
   
     6.  Click the **Debug Information Format** settings and select the desired option (usually **/ZI**) for debug information.  
   
-    7.  If you are using an application wizard-generated application or have precompiled headers, you have to turn off the precompiled headers or recompile them before compiling the other modules. Otherwise, you will receive warning C4650 and error message C2855. You can turn off precompiled headers by changing the **Create/Use Precompiled Headers** setting in the **<Project\> Properties** dialog box (**Configuration Properties** folder, **C/C++** subfolder, **Precompiled Headers** category).  
+    7.  If you are using an application wizard-generated application or have precompiled headers, you have to turn off the precompiled headers or recompile them before compiling the other modules. Otherwise, you will receive warning C4650 and error message C2855. You can turn off precompiled headers by changing the **Create/Use Precompiled Headers** setting in the **\<Project> Properties** dialog box (**Configuration Properties** folder, **C/C++** subfolder, **Precompiled Headers** category).  
   
 7.  From the **Build** menu, select **Build** to rebuild project files that are out of date.  
   

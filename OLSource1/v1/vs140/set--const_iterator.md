@@ -43,7 +43,7 @@ typedef implementation-defined const_iterator;
  See the example for [begin](../vs140/set--begin.md) for an example that uses `const_iterator`.  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

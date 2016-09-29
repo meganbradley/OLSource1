@@ -74,6 +74,6 @@ The `PackageFiles` element contains `PackageFile` elements, which define the ins
 ```  
   
 ## See Also  
- [<Product\> Element (ClickOnce Bootstrapper)](../vs140/-product--element--bootstrapper-.md)   
- [<Package\> Element (ClickOnce Bootstrapper)](../vs140/-package--element--bootstrapper-.md)   
+ [\<Product> Element (ClickOnce Bootstrapper)](../vs140/-product--element--bootstrapper-.md)   
+ [\<Package> Element (ClickOnce Bootstrapper)](../vs140/-package--element--bootstrapper-.md)   
  [Product and Package Schema Reference](../vs140/product-and-package-schema-reference.md)

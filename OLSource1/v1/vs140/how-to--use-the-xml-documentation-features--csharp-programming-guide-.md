@@ -28,27 +28,27 @@ The following sample provides a basic overview of a type that has been documente
   
  **// This .xml file was generated with the previous code sample.**  
 **<?xml version="1.0"?\>**  
-**<doc\>**  
- **<assembly\>**  
- **<name\>xmlsample</name\>**  
+**\<doc>**  
+ **\<assembly>**  
+ **\<name>xmlsample</name\>**  
  **</assembly\>**  
- **<members\>**  
+ **\<members>**  
  **<member name="T:SomeClass"\>**  
- **<summary\>**  
+ **\<summary>**  
  **Class level summary documentation goes here.</summary\>**  
- **<remarks\>**  
+ **\<remarks>**  
  **Longer comments can be associated with a type or member**   
  **through the remarks tag</remarks\>**  
  **</member\>**  
  **<member name="F:SomeClass.m_Name"\>**  
- **<summary\>**  
+ **\<summary>**  
  **Store for the name property</summary\>**  
  **</member\>**  
  **<member name="M:SomeClass.#ctor"\>**  
- **<summary\>The class constructor.</summary\>**   
+ **\<summary>The class constructor.</summary\>**   
  **</member\>**  
  **<member name="M:SomeClass.SomeMethod(System.String)"\>**  
- **<summary\>**  
+ **\<summary>**  
  **Description for SomeMethod.</summary\>**  
  **<param name="s"\> Parameter description for s goes here</param\>**  
  **<seealso cref="T:System.String"\>**  
@@ -56,23 +56,23 @@ The following sample provides a basic overview of a type that has been documente
  **and the compiler will check that the reference exists. </seealso\>**  
  **</member\>**  
  **<member name="M:SomeClass.SomeOtherMethod"\>**  
- **<summary\>**  
+ **\<summary>**  
  **Some other method. </summary\>**  
- **<returns\>**  
+ **\<returns>**  
  **Return results are described through the returns tag.</returns\>**  
  **<seealso cref="M:SomeClass.SomeMethod(System.String)"\>**  
  **Notice the use of the cref attribute to reference a specific method </seealso\>**  
  **</member\>**  
  **<member name="M:SomeClass.Main(System.String[])"\>**  
- **<summary\>**  
+ **\<summary>**  
  **The entry point for the application.**  
  **</summary\>**  
  **<param name="args"\> A list of command line arguments</param\>**  
  **</member\>**  
  **<member name="P:SomeClass.Name"\>**  
- **<summary\>**  
+ **\<summary>**  
  **Name property </summary\>**  
- **<value\>**  
+ **\<value>**  
  **A value tag is used to describe the property value</value\>**  
  **</member\>**  
  **</members\>**  
@@ -91,11 +91,11 @@ The following sample provides a basic overview of a type that has been documente
   
 -   Developers are free to create their own set of tags. There is a recommended set of tags (see the Further Reading section). Some of the recommended tags have special meanings:  
   
-    -   The <param\> tag is used to describe parameters. If used, the compiler will verify that the parameter exists and that all parameters are described in the documentation. If the verification failed, the compiler issues a warning.  
+    -   The \<param> tag is used to describe parameters. If used, the compiler will verify that the parameter exists and that all parameters are described in the documentation. If the verification failed, the compiler issues a warning.  
   
     -   The `cref` attribute can be attached to any tag to provide a reference to a code element. The compiler will verify that this code element exists. If the verification failed, the compiler issues a warning. The compiler respects any `using` statements when it looks for a type described in the `cref` attribute.  
   
-    -   The <summary\> tag is used by IntelliSense inside Visual Studio to display additional information about a type or member.  
+    -   The \<summary> tag is used by IntelliSense inside Visual Studio to display additional information about a type or member.  
   
         > [!NOTE]
         >  The XML file does not provide full information about the type and members (for example, it does not contain any type information). To get full information about a type or member, the documentation file must be used together with reflection on the actual type or member.  

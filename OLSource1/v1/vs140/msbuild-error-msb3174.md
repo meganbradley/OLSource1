@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3174
-**MSB3174: Invalid value for '<file\>'.**  
+**MSB3174: Invalid value for '\<file>'.**  
   
  This error is generated when the build process encounters a general problem while checking the format of a manifest file. The error message refers to the manifest file name.  
   

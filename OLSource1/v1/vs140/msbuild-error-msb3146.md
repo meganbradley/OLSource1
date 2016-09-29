@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3146
-**MSB3146: Item '<package\>' is required by '<package\>', but was not included.**  
+**MSB3146: Item '\<package>' is required by '\<package>', but was not included.**  
   
  This error occurs when one bootstrapper package depends on another, but you have selected to install only the dependent package. For example, package B depends on package A, but only B is installed.  
   

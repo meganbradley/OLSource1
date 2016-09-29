@@ -24,9 +24,9 @@ translation.priority.ht:
 # CreateInPlace (Visual Studio Templates)
 Specifies whether to create the project and perform parameter replacement in the specified location, or perform parameter replacement in a temporary location and then save the project to the specified location.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <CreateInPlace\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<CreateInPlace>  
   
 ## Syntax  
   

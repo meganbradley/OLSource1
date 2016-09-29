@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;example&gt; (Visual C++)
-The <example\> tag lets you specify an example of how to use a method or other library member. Commonly, this would also involve use of the [<code\>](../vs140/-code---visual-c---.md) tag.  
+The \<example> tag lets you specify an example of how to use a method or other library member. Commonly, this would also involve use of the [\<code>](../vs140/-code---visual-c---.md) tag.  
   
 ## Syntax  
   

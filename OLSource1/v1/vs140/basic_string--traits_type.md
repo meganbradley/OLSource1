@@ -38,13 +38,13 @@ typedef Traits traits_type;
 ## Remarks  
  The type is a synonym for the second template parameter **Traits**.  
   
- For type **string**, it is equivalent to **char_traits<char\>**.  
+ For type **string**, it is equivalent to **char_traits\<char>**.  
   
 ## Example  
  See the example for [copy](../vs140/char_traits--copy.md) for an example of how to declare and use `traits_type`.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

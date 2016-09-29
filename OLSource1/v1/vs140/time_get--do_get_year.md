@@ -76,7 +76,7 @@ A protected virtual member function that is called to parses a string as the nam
  See the example for [get_year](../vs140/time_get--get_year.md), which calls `do_get_year`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

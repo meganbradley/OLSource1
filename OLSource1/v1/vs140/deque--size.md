@@ -67,7 +67,7 @@ int main( )
  **The deque length is 1.**  
 **The deque length is now 2.**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

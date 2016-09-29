@@ -72,7 +72,7 @@ int main() {
  **The first integer of c1 is 10**  
 **The first integer of c1 is 11**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

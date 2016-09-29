@@ -77,7 +77,7 @@ The last element in the reversed set is 10.
 ```  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

@@ -151,7 +151,7 @@ Position 5 partitioned (UDgreater) vector:
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

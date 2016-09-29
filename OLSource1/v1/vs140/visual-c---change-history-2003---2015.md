@@ -109,7 +109,7 @@ This topic lists all the breaking changes starting with the changes in 2003 that
 ### Standard Library (2005)  
  Insert subsection body here.  
   
--   The exception class (located in the <exception\> header) has been moved to the std namespace. In previous versions, this class was in the global namespace. To resolve any errors indicating that the exception class cannot be found, add the following using statement to your code:                                 using namespace std;  
+-   The exception class (located in the \<exception> header) has been moved to the std namespace. In previous versions, this class was in the global namespace. To resolve any errors indicating that the exception class cannot be found, add the following using statement to your code:                                 using namespace std;  
   
 -   When calling valarray::resize(), the contents of the valarray will be lost and will be replaced by default values. The resize() method is intended to reinitialize the valarray rather than grow it dynamically like a vector.  
   
@@ -273,9 +273,9 @@ This topic lists all the breaking changes starting with the changes in 2003 that
   
 ### Standard Library  
   
--   The <iterator\>                                 header is no longer included automatically by many other header files. Instead, include that header explicitly if you require support                                 for the standalone iterators defined in the An existing project is affected if it depends on the previous build tool, VCBUILD.exe, or project file suffix,                                  .vcproj.interator> header.  
+-   The \<iterator>                                 header is no longer included automatically by many other header files. Instead, include that header explicitly if you require support                                 for the standalone iterators defined in the An existing project is affected if it depends on the previous build tool, VCBUILD.exe, or project file suffix,                                  .vcproj.interator> header.  
   
--   In the <algorithm\>                                 header, the checked_* and unchecked_\* functions are removed. And in the <iterator\>> header, the                                  checked_iteratorclass is removed, and the unchecked_array_iterator class has been added.  
+-   In the \<algorithm>                                 header, the checked_* and unchecked_\* functions are removed. And in the \<iterator>> header, the                                  checked_iteratorclass is removed, and the unchecked_array_iterator class has been added.  
   
 -   The CComPtr::CComPtr(int) constructor is removed. That constructor allowed a CComPtr object to be constructed from the NULL macro, but was unnecessary and allowed nonsensical constructions from non-zero integers.  
   
@@ -360,9 +360,9 @@ This topic lists all the breaking changes starting with the changes in 2003 that
   
 -   Following a breaking change between the C++98/03 and C++11 standards, using explicit template arguments to call make_pair()—as inmake_pair<int, int>(x, y)—typically does not compile in Visual C++ in Visual Studio 2012. The solution is to always call make_pair()without explicit template arguments—as in make_pair(x, y). Providing explicit template arguments defeats the purpose of the function. If you require precise control over the resulting type, use pair instead of make_pair—as in pair<short, short>(int1, int2).  
   
--   Another breaking change between the C++98/03 and C++11 standards: When A is implicitly convertible to B and B is implicitly convertible to C, but A is not implicitly convertible to C, C++98/03 and Visual C++ 2010 permitted pair<A, X> to be converted (implicitly or explicitly) to pair<C, X>. (The other type, X, is not of interest here, and this is not specific to the first type in the pair.) Because C++11 and Visual C++ in Visual Studio 2012 detect that A is not implicitly convertible to C, they remove the pair conversion from overload resolution. This is a positive change for many scenarios. For example, overloading func(const pair<int, int>&) and func(const pair<string, string>&), and calling func() with pair<const char *, const char \*> will compile with this change. However, this change breaks code that relied on aggressive pair conversions. Such code can typically be fixed by performing one part of the conversion explicitly—for example, by passing make_pair(static_cast<B\>(a), x) to a function that expects pair<C, X>.  
+-   Another breaking change between the C++98/03 and C++11 standards: When A is implicitly convertible to B and B is implicitly convertible to C, but A is not implicitly convertible to C, C++98/03 and Visual C++ 2010 permitted pair<A, X> to be converted (implicitly or explicitly) to pair<C, X>. (The other type, X, is not of interest here, and this is not specific to the first type in the pair.) Because C++11 and Visual C++ in Visual Studio 2012 detect that A is not implicitly convertible to C, they remove the pair conversion from overload resolution. This is a positive change for many scenarios. For example, overloading func(const pair<int, int>&) and func(const pair<string, string>&), and calling func() with pair<const char *, const char \*> will compile with this change. However, this change breaks code that relied on aggressive pair conversions. Such code can typically be fixed by performing one part of the conversion explicitly—for example, by passing make_pair(static_cast\<B>(a), x) to a function that expects pair<C, X>.  
   
--   Visual C++ 2010 simulated variadic templates—for example, make_shared<T\>(arg1, arg2, argN)—up to a limit of 10 arguments, by stamping out overloads and specializations with preprocessor machinery. In Visual C++ in Visual Studio 2012, this limit is reduced to 5 arguments to improve compile times and compiler memory consumption for the majority of users. However, you can set the previous limit by explicitly defining _VARIADIC_MAX as 10, project-wide.  
+-   Visual C++ 2010 simulated variadic templates—for example, make_shared\<T>(arg1, arg2, argN)—up to a limit of 10 arguments, by stamping out overloads and specializations with preprocessor machinery. In Visual C++ in Visual Studio 2012, this limit is reduced to 5 arguments to improve compile times and compiler memory consumption for the majority of users. However, you can set the previous limit by explicitly defining _VARIADIC_MAX as 10, project-wide.  
   
 -   C++11 17.6.4.3.1 [macro.names]/2 forbids macro-izing keywords when C++ Standard Library headers are included. The headers now emit compiler errors if they detect macro-ized keywords. (Defining _ALLOW_KEYWORD_MACROS allows such code to compile, but we strongly discourage that usage.) As an exception, macro-ized new is permitted by default, because the headers comprehensively defend themselves by using #pragma push_macro("new")/#undef new/#pragma pop_macro("new"). Defining _ENFORCE_BAN_OF_MACRO_NEW does exactly what its name implies.  
   
@@ -665,7 +665,7 @@ This topic lists all the breaking changes starting with the changes in 2003 that
   
     ```  
   
-     This code now resolves x to a type of std::initializer_list<int\> and causes an error on the next line that tries to assign x to type int. (There is no conversion by default.) To correct this code, use int to replace auto:  
+     This code now resolves x to a type of std::initializer_list\<int> and causes an error on the next line that tries to assign x to type int. (There is no conversion by default.) To correct this code, use int to replace auto:  
   
     ```cpp  
   
@@ -812,13 +812,13 @@ This topic lists all the breaking changes starting with the changes in 2003 that
 ### Standard Library  
  Visual C++ in Visual Studio 2013 detects mismatches in _ITERATOR_DEBUG_LEVEL, which was implemented in Visual C++ 2010, and RuntimeLibrary mismatches. These occur when compiler options /MT (static release), /MTd (static debug), /MD (dynamic release), and /MDd (dynamic debug) are mixed.  
   
--   If your code acknowledges the previous release's simulated alias templates, you have to change it. For example, instead of allocator_traits<A\>::rebind_alloc<U\>::other, now you have to say allocator_traits<A\>::rebind_alloc<U\>. Although ratio_add<R1, R2>::type is no longer necessary and we now recommend that you say ratio_add<R1, R2>, the former will still compile because ratio<N, D> is required to have a "type" typedef for a reduced ratio, which will be the same type if it's already reduced.  
+-   If your code acknowledges the previous release's simulated alias templates, you have to change it. For example, instead of allocator_traits\<A>::rebind_alloc\<U>::other, now you have to say allocator_traits\<A>::rebind_alloc\<U>. Although ratio_add<R1, R2>::type is no longer necessary and we now recommend that you say ratio_add<R1, R2>, the former will still compile because ratio<N, D> is required to have a "type" typedef for a reduced ratio, which will be the same type if it's already reduced.  
   
--   You must use #include <algorithm\> when you call std::min() or std::max().  
+-   You must use #include \<algorithm> when you call std::min() or std::max().  
   
 -   If your existing code uses the previous release’s simulated scoped enums—traditional unscoped enums wrapped in namespaces—you have to change it. For example, if you referred to the type std::future_status::future_status, now you have to say std::future_status. However, most code is unaffected—for example, std::future_status::ready still compiles.  
   
--   explicit operator bool() is stricter than operator unspecified-bool-type(). explicit operator bool() permits explicit conversions to bool—for example, given shared_ptr<X\> sp, both static_cast<bool\>(sp) and bool b(sp) are valid—and Boolean-testable "contextual conversions" to bool—for example, if (sp), !sp, sp && whatever. However, explicit operator bool() forbids implicit conversions to bool, so you can't say bool b = sp; and given a bool return type, you can't say return sp.  
+-   explicit operator bool() is stricter than operator unspecified-bool-type(). explicit operator bool() permits explicit conversions to bool—for example, given shared_ptr\<X> sp, both static_cast\<bool>(sp) and bool b(sp) are valid—and Boolean-testable "contextual conversions" to bool—for example, if (sp), !sp, sp && whatever. However, explicit operator bool() forbids implicit conversions to bool, so you can't say bool b = sp; and given a bool return type, you can't say return sp.  
   
 -   Now that real variadic templates are implemented, _VARIADIC_MAX and related macros have no effect. If you're still defining _VARIADIC_MAX, it is just ignored. If you acknowledged our macro machinery intended to support simulated variadic templates in any other way, you have to change your code.  
   
@@ -826,7 +826,7 @@ This topic lists all the breaking changes starting with the changes in 2003 that
   
 -   reference_wrapper/ref()/cref() now forbid binding to temporary objects.  
   
--   <random\> now strictly enforces its compile-time preconditions.  
+-   \<random> now strictly enforces its compile-time preconditions.  
   
 -   Various STL type traits have the precondition "T shall be a complete type". Although the compiler now enforces this more strictly, it may not enforce it in all situations. (Because STL precondition violations trigger undefined behavior, the Standard doesn't guarantee enforcement.)  
   
@@ -896,9 +896,9 @@ This topic lists all the breaking changes starting with the changes in 2003 that
   
 #### <math.h>  
   
--   **C++ overloads of math library functions** In previous versions, <math.h> defined some, but not all, of the C++ overloads for the math library functions. <cmath\> defined the remaining overloads, so to get all of the overloads, one needed to include the <cmath\> header. This led to problems with function overload resolution in code that only included <math.h>. Now, all C++ overloads have been removed from <math.h> and are now present only in <cmath\>.  
+-   **C++ overloads of math library functions** In previous versions, <math.h> defined some, but not all, of the C++ overloads for the math library functions. \<cmath> defined the remaining overloads, so to get all of the overloads, one needed to include the \<cmath> header. This led to problems with function overload resolution in code that only included <math.h>. Now, all C++ overloads have been removed from <math.h> and are now present only in \<cmath>.  
   
-     To resolve errors, include <cmath\> to get the declarations of the functions that were removed from <math.h>. The following table lists the functions that were moved.  
+     To resolve errors, include \<cmath> to get the declarations of the functions that were removed from <math.h>. The following table lists the functions that were moved.  
   
      Functions that were moved:  
   
@@ -918,7 +918,7 @@ This topic lists all the breaking changes starting with the changes in 2003 that
   
 -   **FLT_ROUNDS** In Visual Studio 2013, the FLT_ROUNDS macro expanded to a constant expression, which was incorrect because the rounding mode is configurable at runtime, for example, by calling fesetround. The FLT_ROUNDS macro is now dynamic and correctly reflects the current rounding mode.  
   
-#### <new\> and <new.h>  
+#### \<new> and <new.h>  
   
 -   **new and delete** In previous versions of the library, the implementation-defined operator new and delete functions were exported from the runtime library DLL (for example, msvcr120.dll). These operator functions are now always statically linked into your binaries, even when using the runtime library DLLs.  
   
@@ -1070,9 +1070,9 @@ This topic lists all the breaking changes starting with the changes in 2003 that
 ####  <a name="BK_STL"></a> Standard Template Library  
  To enable new optimizations and debugging checks, the Visual Studio implementation of the C++ Standard Library intentionally breaks binary compatibility from one version to the next. Therefore, when the C++ Standard Library is used, object files and static libraries that are compiled by using different versions can't be mixed in one binary (EXE or DLL), and C++ Standard Library objects can't be passed between binaries that are compiled by using different versions. Such mixing emits linker errors about _MSC_VER mismatches. (_MSC_VER is the macro that contains the compiler's major version—for example, 1800 for Visual Studio 2013.) This check cannot detect DLL mixing, and cannot detect mixing that involves Visual C++ 2008 or earlier.  
   
--   **STL include files** Some changes have been made to the include structure in the STL headers. STL headers are allowed to include each other in unspecified ways. In general, you should write your code so that it carefully includes all of the headers that it needs according to the C++ standard and doesn't rely on which STL headers include which other STL headers. This makes code portable across versions and platforms. At least two header changes in [!INCLUDE[vs_dev14](../vs140/includes/vs_dev14_md.md)] affect user code. First, <string\> no longer includes <iterator\>. Second, <tuple\> now declares std::array without including all of <array\>, which can break code through the following combination of code constructs: your code has a variable named "array", and you have a using-directive "using namespace std;", and you include an STL header (such as <functional\>) that includes <tuple\>, which now declares std::array.  
+-   **STL include files** Some changes have been made to the include structure in the STL headers. STL headers are allowed to include each other in unspecified ways. In general, you should write your code so that it carefully includes all of the headers that it needs according to the C++ standard and doesn't rely on which STL headers include which other STL headers. This makes code portable across versions and platforms. At least two header changes in [!INCLUDE[vs_dev14](../vs140/includes/vs_dev14_md.md)] affect user code. First, \<string> no longer includes \<iterator>. Second, \<tuple> now declares std::array without including all of \<array>, which can break code through the following combination of code constructs: your code has a variable named "array", and you have a using-directive "using namespace std;", and you include an STL header (such as \<functional>) that includes \<tuple>, which now declares std::array.  
   
--   **steady_clock** The <chrono\> implementation of [steady_clock](../vs140/steady_clock-struct.md) has changed to meet the C++ Standard requirements for steadiness and monotonicity. steady_clock is now based on [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) and high_resolution_clock is now a typedef for steady_clock. As a result, in Visual C++ steady_clock::time_point is now a typedef for chrono::time_point<steady_clock>; however, this is not necessarily the case for other implementations.  
+-   **steady_clock** The \<chrono> implementation of [steady_clock](../vs140/steady_clock-struct.md) has changed to meet the C++ Standard requirements for steadiness and monotonicity. steady_clock is now based on [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) and high_resolution_clock is now a typedef for steady_clock. As a result, in Visual C++ steady_clock::time_point is now a typedef for chrono::time_point<steady_clock>; however, this is not necessarily the case for other implementations.  
   
 -   **allocators and const** We now require allocator equality/inequality comparisons to accept const arguments on both sides.  If your allocators define these operators as follows:  
   
@@ -1086,13 +1086,13 @@ This topic lists all the breaking changes starting with the changes in 2003 that
     bool operator==(const MyAlloc& other) const  
     ```  
   
--   **const elements** The C++ standard has always forbidden containers of const elements (such as vector<const T\> or set<const T\>). Visual C++ 2013 and earlier accepted such containers. In the current version, such containers fail to compile.  
+-   **const elements** The C++ standard has always forbidden containers of const elements (such as vector\<const T> or set\<const T>). Visual C++ 2013 and earlier accepted such containers. In the current version, such containers fail to compile.  
   
 -   **std::allocator::deallocate** In Visual C++ 2013 and earlier, std::allocator::deallocate(p, n) ignored the argument passed in for n.  The C++ standard has always required that n be equal to the value passed as the first argument to the invocation of allocate which returned p. However, in the current version, the value of n is inspected. Code that passes arguments for n that differ from what the standard requires might crash at runtime.  
   
 -   **hash_map and hash_set** The non-standard header files hash_map and hash_set are deprecated in [!INCLUDE[vs_dev14](../vs140/includes/vs_dev14_md.md)] and will be removed in a future release. Use unordered_map and unordered_set instead.  
   
--   **comparators and operator()** Associative containers (the <map\> family) now require their comparators to have const-callable function call operators. The following code in a comparator class declaration now fails to compile:  
+-   **comparators and operator()** Associative containers (the \<map> family) now require their comparators to have const-callable function call operators. The following code in a comparator class declaration now fails to compile:  
   
     ```  
     bool operator()(const X& a, const X& b)  

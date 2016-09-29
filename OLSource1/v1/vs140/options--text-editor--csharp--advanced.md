@@ -65,7 +65,7 @@ Use this dialog box to modify the settings for editor formatting, code refactori
   
 ## XML Documentation Comments  
  Generate XML documentation comments for ///  
- When selected, inserts the <summary\> start and end tags automatically for XML documentation comments after you type the /// comment introduction. For more information about XML documentation, see [Documenting Your Code with XML](../vs140/xml-documentation-comments--csharp-programming-guide-.md).  
+ When selected, inserts the \<summary> start and end tags automatically for XML documentation comments after you type the /// comment introduction. For more information about XML documentation, see [Documenting Your Code with XML](../vs140/xml-documentation-comments--csharp-programming-guide-.md).  
   
 ## Implement Interface  
  Surround generated code with #region  

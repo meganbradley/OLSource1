@@ -32,19 +32,19 @@ In this lesson, you'll define the data for your contact management application b
   
      The name in the title bar changes to "Contact" and the name in **Solution Explorer** changes to "Contacts.lsml".  
   
-3.  In the **Name** column, choose the **<Add property\>** link, enter **ContactName**, and then choose the Enter key.  
+3.  In the **Name** column, choose the **\<Add property>** link, enter **ContactName**, and then choose the Enter key.  
   
      The data type, `String`, appears in the **Type** column and the **Required** check box is selected. A contact must have a name that consists of a string of characters.  
   
-4.  In the **Name** column, choose the **<Add property\>** link, and then enter **ContactCompany**.  
+4.  In the **Name** column, choose the **\<Add property>** link, and then enter **ContactCompany**.  
   
-5.  In the **Name** column, choose the **<Add property\>** link, and then enter **ContactPhone**.  
+5.  In the **Name** column, choose the **\<Add property>** link, and then enter **ContactPhone**.  
   
 6.  In the **Type** column, open the list, and then choose **Phone Number**.  
   
      `Phone Number` is a *custom business type* that represents a standard format for telephone numbers.  
   
-7.  In the  **Name** column, choose the **<Add property\>** link, and then enter **ContactEmail**.  
+7.  In the  **Name** column, choose the **\<Add property>** link, and then enter **ContactEmail**.  
   
 8.  In the **Type** column, open the list, and then choose **Email Address**.  
   

@@ -80,7 +80,7 @@ _Lcomplex ctanl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`ctan`,               `ctanf`, `ctanl`|<complex.h>|<ccomplex\>|  
+|`ctan`,               `ctanf`, `ctanl`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

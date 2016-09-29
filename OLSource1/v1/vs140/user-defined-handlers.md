@@ -28,10 +28,10 @@ The following map entries correspond to the function prototypes.
   
 |Map entry|Function prototype|  
 |---------------|------------------------|  
-|ON_MESSAGE( <message\>, <memberFxn\> )|afx_msg LRESULT memberFxn( WPARAM, LPARAM );|  
-|ON_REGISTERED_MESSAGE( <nMessageVariable\>, <memberFxn\> )|afx_msg LRESULT memberFxn( WPARAM, LPARAM );|  
-|ON_THREAD_MESSAGE( <message\>, <memberFxn\> )|afx_msg void memberFxn( WPARAM, LPARAM );|  
-|ON_REGISTERED_THREAD_MESSAGE( <nMessageVariable\>, <memberFxn\> )|afx_msg void memberFxn( WPARAM, LPARAM );|  
+|ON_MESSAGE( \<message>, \<memberFxn> )|afx_msg LRESULT memberFxn( WPARAM, LPARAM );|  
+|ON_REGISTERED_MESSAGE( \<nMessageVariable>, \<memberFxn> )|afx_msg LRESULT memberFxn( WPARAM, LPARAM );|  
+|ON_THREAD_MESSAGE( \<message>, \<memberFxn> )|afx_msg void memberFxn( WPARAM, LPARAM );|  
+|ON_REGISTERED_THREAD_MESSAGE( \<nMessageVariable>, \<memberFxn> )|afx_msg void memberFxn( WPARAM, LPARAM );|  
   
 ## See Also  
  [Message Maps](../vs140/message-maps--mfc-.md)   

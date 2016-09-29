@@ -116,7 +116,7 @@ int main( )
 **The appended string str1d is: Hello Wide .**  
 **The doubly appended strig str1 is: Hello Wide World.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

@@ -69,7 +69,7 @@ basic_fstream(basic_fstream&& right);
  See [streampos](../vs140/streampos.md) for an example that uses `basic_fstream`.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

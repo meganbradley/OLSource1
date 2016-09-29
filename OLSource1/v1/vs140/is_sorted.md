@@ -64,11 +64,11 @@ template<class ForwardIterator, class BinaryPredicate>
  The second template function returns `is_sorted_until``(``_First``,` `_Last``,` `_Comp``) ==` `_Last`. The `_Comp` predicate function performs the order comparison.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
  [is_sorted_until](../vs140/is_sorted_until.md)   
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

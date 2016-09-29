@@ -72,7 +72,7 @@ template <class license>
   
  [!code[NVC_ATL_COM#3](../vs140/codesnippet/CPP/ccomclassfactory2-class_2.h)]  
   
- `CComClassFactory2` derives from both **CComClassFactory2Base** and *license*.                 **CComClassFactory2Base**, in turn, derives from **IClassFactory2** and **CComObjectRootEx< CComGlobalsThreadModel >**.  
+ `CComClassFactory2` derives from both **CComClassFactory2Base** and *license*.                 **CComClassFactory2Base**, in turn, derives from **IClassFactory2** and **CComObjectRootEx\< CComGlobalsThreadModel >**.  
   
 ## Inheritance Hierarchy  
  `CComObjectRootBase`  

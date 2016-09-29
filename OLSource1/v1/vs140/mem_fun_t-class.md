@@ -54,11 +54,11 @@ template<class Result, class Type>
  The constructor of `mem_fun_t` is not usually used directly; the helper function `mem_fun` is used to adapt member functions. See [mem_fun](../vs140/-functional--functions.md#mem_fun_function) for an example of how to use member function adaptors.  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   
 ## See Also  
- [<functional\>](../vs140/-functional-.md)   
+ [\<functional>](../vs140/-functional-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

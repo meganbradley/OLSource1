@@ -194,11 +194,11 @@ The string initialized by another range is:  World.
 ```  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_string Class](../vs140/basic_string-class.md)   
- [<string\>](../vs140/-string-.md)   
+ [\<string>](../vs140/-string-.md)   
  [Lvalues and Rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)

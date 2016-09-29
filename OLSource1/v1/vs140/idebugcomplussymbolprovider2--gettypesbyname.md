@@ -54,7 +54,7 @@ int GetTypesByName(
  If successful, returns `S_OK`; otherwise, returns an error code.  
   
 ## Remarks  
- For generic types, the name to look up for 'List<int\>' or 'List<int,int>' would be 'List'. If types of the same name appear in multiple modules, the `ppEnum` paramter will contain all copies. You have to use [IDebugField::GetTypeInfo](../vs140/idebugfield--gettypeinfo.md) and distinguish based on the `guidModule` parameter.  
+ For generic types, the name to look up for 'List\<int>' or 'List<int,int>' would be 'List'. If types of the same name appear in multiple modules, the `ppEnum` paramter will contain all copies. You have to use [IDebugField::GetTypeInfo](../vs140/idebugfield--gettypeinfo.md) and distinguish based on the `guidModule` parameter.  
   
 ## Example  
  The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../vs140/idebugcomplussymbolprovider2.md) interface.  

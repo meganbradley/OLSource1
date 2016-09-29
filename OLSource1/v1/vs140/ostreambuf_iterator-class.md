@@ -74,7 +74,7 @@ template < class  CharType =  char    class  Traits =  char_traits <CharType> >
 |[operator=](#ostreambuf_iterator__operator_eq)|The operator inserts a character into the associated stream buffer.|  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   
@@ -446,6 +446,6 @@ The characters written to the output stream
 ```  
   
 ## See Also  
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

@@ -775,29 +775,29 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
   
  [_findclose](../vs140/_findclose.md)  
   
- [_findfirst](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+ [_findfirst](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
- [_findfirst32](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+ [_findfirst32](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
- [_findfirst32i64](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+ [_findfirst32i64](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
- [_findfirst64](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+ [_findfirst64](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
- [_findfirst64i32](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+ [_findfirst64i32](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
- [_findfirsti64](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+ [_findfirsti64](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
- [_findnext](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+ [_findnext](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
- [_findnext32](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+ [_findnext32](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
- [_findnext32i64](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+ [_findnext32i64](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
- [_findnext64](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+ [_findnext64](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
- [_findnext64i32](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+ [_findnext64i32](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
- [_findnexti64](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+ [_findnexti64](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
  [_finite](../vs140/_finite--_finitef.md)  
   
@@ -3257,29 +3257,29 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
   
  [_wfdopen](../vs140/_fdopen--_wfdopen.md)  
   
- [_wfindfirst](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+ [_wfindfirst](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
- [_wfindfirst32](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+ [_wfindfirst32](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
- [_wfindfirst32i64](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+ [_wfindfirst32i64](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
- [_wfindfirst64](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+ [_wfindfirst64](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
- [_wfindfirst64i32](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+ [_wfindfirst64i32](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
- [_wfindfirsti64](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+ [_wfindfirsti64](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
- [_wfindnext](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+ [_wfindnext](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
- [_wfindnext32](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+ [_wfindnext32](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
- [_wfindnext32i64](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+ [_wfindnext32i64](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
- [_wfindnext64](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+ [_wfindnext64](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
- [_wfindnext64i32](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+ [_wfindnext64i32](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
- [_wfindnexti64](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+ [_wfindnexti64](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
  [_wfopen](../vs140/fopen--_wfopen.md)  
   

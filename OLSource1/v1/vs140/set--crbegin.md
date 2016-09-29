@@ -70,7 +70,7 @@ int main( )
   
  **The first element in the reversed set is 30.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

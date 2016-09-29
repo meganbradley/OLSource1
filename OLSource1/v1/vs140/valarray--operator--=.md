@@ -100,7 +100,7 @@ int main( )
  **on the operand array is the valarray:**  
  **( 1 -2 4 -8 16 -32 64 -128 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

@@ -86,7 +86,7 @@ int _timespec64_get(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`timespec_get`, `_timespec32_get`, `_timespec64_get`|C: <time.h>, C++: <ctime\> or <time.h>|  
+|`timespec_get`, `_timespec32_get`, `_timespec64_get`|C: <time.h>, C++: \<ctime> or <time.h>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

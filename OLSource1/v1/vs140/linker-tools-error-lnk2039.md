@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Linker Tools Error LNK2039
-importing ref class '<type\>' that is defined in another.obj; it should be either imported or defined, but not both  
+importing ref class '\<type>' that is defined in another.obj; it should be either imported or defined, but not both  
   
  The ref class '<`type`>' is imported in the specified .obj file but is also defined in another .obj file. This condition can cause runtime failure or other unexpected behavior.  
   

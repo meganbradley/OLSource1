@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3155
-**MSBuild Error MSB3155: Item '<package\>' could not be located in '<path\>'**  
+**MSBuild Error MSB3155: Item '\<package>' could not be located in '\<path>'**  
   
  This warning occurs when a package with the specified <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product.ProductCode*> cannot be found in the bootstrapper cache.  
   
@@ -33,6 +33,6 @@ translation.priority.ht:
   
 ## See Also  
  [Product and Package Schema Reference](../vs140/product-and-package-schema-reference.md)   
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)   
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)   
  [Prerequisites Dialog Box](../vs140/prerequisites-dialog-box.md)   
  [Adding Custom Prerequisites](../vs140/creating-bootstrapper-packages.md)

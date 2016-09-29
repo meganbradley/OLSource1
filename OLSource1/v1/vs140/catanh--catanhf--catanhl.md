@@ -75,7 +75,7 @@ _Lcomplex catanhl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`catanh`,               `catanhf`, `catanhl`|<complex.h>|<ccomplex\>|  
+|`catanh`,               `catanhf`, `catanhl`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

@@ -49,7 +49,7 @@ This page walks you through uninstalling Visual Studio, our integrated suite of 
   
 2.  Enter the following parameters:  
   
-     *DVDRoot* \\<Installation File\> </quiet&#124;/passive> [/norestart]/uninstall  
+     *DVDRoot* \\\<Installation File> </quiet&#124;/passive> [/norestart]/uninstall  
   
 #### To roll back to a previous version or release of  Visual Studio  
   

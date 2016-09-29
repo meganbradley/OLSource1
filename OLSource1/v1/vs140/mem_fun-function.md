@@ -130,7 +130,7 @@ The squared values less 5 are: 20 95 220 395 620
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

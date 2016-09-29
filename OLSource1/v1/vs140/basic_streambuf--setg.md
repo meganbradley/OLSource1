@@ -52,7 +52,7 @@ A protected function that stores _*Gbeg* in the beginning pointer, `_Gnext` in t
  A pointer to the end of the buffer.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

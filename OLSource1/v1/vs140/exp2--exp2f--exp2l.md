@@ -98,7 +98,7 @@ long double exp2l(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`exp`,                `expf`, `expl`|<math.h>|<cmath\>|  
+|`exp`,                `expf`, `expl`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

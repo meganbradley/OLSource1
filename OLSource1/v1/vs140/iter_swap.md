@@ -182,7 +182,7 @@ int main( )
  **vector v1 is: v1 = ( 4 1 2 3 ).**  
  **& deque deq2 is: deq2 = ( 0 5 ).**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

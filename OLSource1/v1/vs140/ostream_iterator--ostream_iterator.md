@@ -100,7 +100,7 @@ int main( )
 **Elements output without delimiter: 123456**  
 **Elements output with delimiter: 1 : 2 : 3 : 4 : 5 : 6 :**    
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

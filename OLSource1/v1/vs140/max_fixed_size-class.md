@@ -56,7 +56,7 @@ template <std::size_t Max> class max_fixed_size
 |[saved](#max_fixed_size__saved)|Increments the count of memory blocks on the free list.|  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
@@ -136,4 +136,4 @@ void saved();
  This member function increments the stored value `_Nblocks`. This member function is called by `cache_freelist::deallocate` whenever it puts a memory block on the free list.  
   
 ## See Also  
- [<allocators\>](../vs140/-allocators-.md)
+ [\<allocators>](../vs140/-allocators-.md)

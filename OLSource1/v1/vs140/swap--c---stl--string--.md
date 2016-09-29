@@ -80,6 +80,6 @@ int main( )
 **The basic_string s1 = Tweedledum.**  
 **The basic_string s2 = Tweedledee.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std

@@ -245,7 +245,7 @@ money_get( ) = -1000.56
 ```  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

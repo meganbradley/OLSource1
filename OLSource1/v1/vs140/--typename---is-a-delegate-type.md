@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &#39;&lt;typename&gt;&#39; is a delegate type
-'<typename\>' is a delegate type. Delegate construction permits only a single AddressOf expression as an argument list. Often an AddressOf expression can be used instead of a delegate construction.  
+'\<typename>' is a delegate type. Delegate construction permits only a single AddressOf expression as an argument list. Often an AddressOf expression can be used instead of a delegate construction.  
   
  A `New` clause creating an instance of a delegate class supplies an invalid argument list to the delegate constructor.  
   

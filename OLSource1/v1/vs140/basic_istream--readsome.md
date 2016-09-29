@@ -100,7 +100,7 @@ cdefg
 ```  
   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   

@@ -69,7 +69,7 @@ Type class std::runtime_error
 ```  
   
 ## Requirements  
- **Header:** <stdexcept\>  
+ **Header:** \<stdexcept>  
   
  **Namespace:** std  
   

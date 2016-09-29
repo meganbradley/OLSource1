@@ -75,7 +75,7 @@ valarray<Type> operator[](const valarray<size_t>& _Indarray) const;
  See the examples for [slice::slice](../vs140/slice--slice.md) and [gslice::gslice](../vs140/gslice--gslice.md) for an example of how to declare and use the operator.  
   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

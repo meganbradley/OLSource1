@@ -100,7 +100,7 @@ int main( )
   
  **money_put( ) = "CAD1,000.12"**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

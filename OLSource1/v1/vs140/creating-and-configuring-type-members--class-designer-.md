@@ -101,7 +101,7 @@ You can add these members to types on a class diagram and configure those member
   
      The type obtains focus and its contents are displayed in the Class Details window.  
   
-2.  In the Class Details window toolbar, click the top icon and select **New <member\>** from the drop-list.  
+2.  In the Class Details window toolbar, click the top icon and select **New \<member>** from the drop-list.  
   
      The cursor moves to the **Name** field in a row for the kind of member you want to add. For example, if you clicked **New Property**, the cursor moves to a new row in the **Properties** section of the Class Details window.  
   
@@ -117,7 +117,7 @@ You can add these members to types on a class diagram and configure those member
   
      The type obtains focus and its contents are displayed in the Class Details window.  
   
-2.  In the Class Details window, in the section that contains the kind of member you want to add, click **<add member\>**. For example, if you want to add a field, click **<add field\>**.  
+2.  In the Class Details window, in the section that contains the kind of member you want to add, click **\<add member>**. For example, if you want to add a field, click **\<add field>**.  
   
 3.  Type the name of the member you want to create and press Enter.  
   
@@ -154,9 +154,9 @@ You can add these members to types on a class diagram and configure those member
   
      Change the visibility modifier of a member to either `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`), or `Default`.  
   
--   **<add member\>**  
+-   **\<add member>**  
   
-     The last row in the Class Details window contains the text **<add member\>** in the **Name** cell. If you click this cell, you can create a new member. For more information, see [Creating Members](../vs140/creating-and-configuring-type-members--class-designer-.md#CreateMembers).  
+     The last row in the Class Details window contains the text **\<add member>** in the **Name** cell. If you click this cell, you can create a new member. For more information, see [Creating Members](../vs140/creating-and-configuring-type-members--class-designer-.md#CreateMembers).  
   
 -   **Member properties in the Properties window**  
   
@@ -204,9 +204,9 @@ You can add these members to types on a class diagram and configure those member
   
      The **Summary** cell in a parameter row allows entering of code comments that appear in IntelliSense when entering the parameter into the code editor.  
   
--   **<add parameter\>**  
+-   **\<add parameter>**  
   
-     The last parameter row of a member contains the text **<add parameter\>** in the **Name** cell. Clicking this cell lets you create a new parameter. For more information, see [To add a parameter to a method](../vs140/creating-and-configuring-type-members--class-designer-.md#HowToAddParameterToMethod).  
+     The last parameter row of a member contains the text **\<add parameter>** in the **Name** cell. Clicking this cell lets you create a new parameter. For more information, see [To add a parameter to a method](../vs140/creating-and-configuring-type-members--class-designer-.md#HowToAddParameterToMethod).  
   
  **Parameter properties in the Properties window**  
   
@@ -226,9 +226,9 @@ You can add these members to types on a class diagram and configure those member
   
 2.  In the Class Details window, expand the row of the method to which you want to add a parameter.  
   
-     An indented parameter row appears, containing only a pair of parentheses and the words **<add parameter\>.**  
+     An indented parameter row appears, containing only a pair of parentheses and the words **\<add parameter>.**  
   
-3.  Click **<add parameter\>**, type the name of the new parameter, and press **Enter**.  
+3.  Click **\<add parameter>**, type the name of the new parameter, and press **Enter**.  
   
      The new parameter is added to the method and the method’s code. It displays in the Class Details window and the Properties window.  
   
@@ -242,9 +242,9 @@ You can add these members to types on a class diagram and configure those member
   
 2.  In the Class Details window, expand the row of the method to which you want to add an optional parameter.  
   
-     An indented parameter row appears, containing only a pair of parentheses and the words **<add parameter\>.**  
+     An indented parameter row appears, containing only a pair of parentheses and the words **\<add parameter>.**  
   
-3.  Click **<add parameter\>**, type the name of the new parameter, and press **Enter**.  
+3.  Click **\<add parameter>**, type the name of the new parameter, and press **Enter**.  
   
      The new parameter is added to the method and the method’s code. It displays in the Class Details window and the Properties window.  
   

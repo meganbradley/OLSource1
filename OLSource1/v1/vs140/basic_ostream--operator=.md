@@ -50,12 +50,12 @@ basic_ostream& operator=(
  The member operator calls `(``_Right``)`.  
   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   
 ## See Also  
- [<ostream\>](../vs140/-ostream-.md)   
+ [\<ostream>](../vs140/-ostream-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3153
-**MSB3153: Xml validation did not pass for item '<package\>' located at '<folder\>'.**  
+**MSB3153: Xml validation did not pass for item '\<package>' located at '\<folder>'.**  
   
  This warning is generated when the manifest (specifically package.xml) does not pass XML validation. The specific problems are listed in a subsequent error message ([MSBuild Error MSB3159](../vs140/msbuild-error-msb3159.md) or [MSBuild Error MSB3160](../vs140/msbuild-error-msb3160.md)).  
   
@@ -30,4 +30,4 @@ translation.priority.ht:
   
 ## See Also  
  [Product and Package Schema Reference](../vs140/product-and-package-schema-reference.md)   
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

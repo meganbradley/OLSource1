@@ -57,7 +57,7 @@ virtual catalog do_open(
  See the example for [open](../vs140/messages--open.md), which calls `do_open`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

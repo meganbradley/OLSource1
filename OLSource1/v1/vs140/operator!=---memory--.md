@@ -128,7 +128,7 @@ int main()
  **sp0 != sp0 == false**  
 **sp0 != sp1 == true**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

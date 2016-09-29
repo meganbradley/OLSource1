@@ -67,7 +67,7 @@ int main( )
  **Current capacity of v1 = 1**  
 **Current capacity of v1 = 20**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

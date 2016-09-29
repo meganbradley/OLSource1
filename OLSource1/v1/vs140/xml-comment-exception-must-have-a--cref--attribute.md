@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # XML comment exception must have a &#39;cref&#39; attribute
-The <exception\> tag provides a way to document the exceptions that may be thrown by a method. The required `cref` attribute designates the name of a member, which is checked by the documentation generator. If the member exists, it is translated to the canonical element name in the documentation file.  
+The \<exception> tag provides a way to document the exceptions that may be thrown by a method. The required `cref` attribute designates the name of a member, which is checked by the documentation generator. If the member exists, it is translated to the canonical element name in the documentation file.  
   
  **Error ID:** BC42319  
   
@@ -36,6 +36,6 @@ The <exception\> tag provides a way to document the exceptions that may be throw
     ```  
   
 ## See Also  
- [<exception\> (Visual Basic)](../vs140/-exception---visual-basic-.md)   
+ [\<exception> (Visual Basic)](../vs140/-exception---visual-basic-.md)   
  [How to: Create XML Documentation in Visual Basic](../vs140/how-to--create-xml-documentation-in-visual-basic.md)   
  [Recommended XML Tags for Documentation Comments (Visual Basic)](../vs140/recommended-xml-tags-for-documentation-comments--visual-basic-.md)

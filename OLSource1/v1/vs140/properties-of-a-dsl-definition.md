@@ -22,17 +22,17 @@ DslDefinition properties define *domain-specific language* definition properties
 |Property|Description|Default|  
 |--------------|-----------------|-------------|  
 |Access Modifier|Determines if the access modifier for the domain class is public or internal.|public|  
-|Custom Attributes|Custom defined attributes for the domain class.<br /><br /> **Note** Use the browse button to add an attribute.|<none\>|  
+|Custom Attributes|Custom defined attributes for the domain class.<br /><br /> **Note** Use the browse button to add an attribute.|\<none>|  
 |Company Name|The name of the current company name in the system registry.|Current company name|  
 |Name|The name of this domain class.|Current name|  
 |Namespace|The namespace affiliated with this domain class.|Current namespace|  
-|Package Guid|The guid for the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] package generated for this DSL.|<none\>|  
-|Package Namespace|The namespace for the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] package generated for this DSL.|<none\>|  
-|Product Name|The name of the product that will be registered for the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] package generated for this DSL.|<none\>|  
-|Notes|Notes associated with this domain class.|<none\>|  
-|Description|Description for this domain class.|<none\>|  
-|Display Name|The name that will be displayed in the generated designer for this domain class.|<none\>|  
-|Help Keyword|The help keyword associated with this domain class.|<none\>|  
+|Package Guid|The guid for the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] package generated for this DSL.|\<none>|  
+|Package Namespace|The namespace for the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] package generated for this DSL.|\<none>|  
+|Product Name|The name of the product that will be registered for the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] package generated for this DSL.|\<none>|  
+|Notes|Notes associated with this domain class.|\<none>|  
+|Description|Description for this domain class.|\<none>|  
+|Display Name|The name that will be displayed in the generated designer for this domain class.|\<none>|  
+|Help Keyword|The help keyword associated with this domain class.|\<none>|  
 |Build|The incremental build number for this domain-specific language definition.|0|  
 |Major Version|The incremental major build number for this domain-specific language definition.|1|  
 |Minor Version|The incremental minor build number for this domain-specific language definition.|0|  

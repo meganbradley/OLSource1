@@ -118,7 +118,7 @@ int main( )
  **in the reversed sequence: 2.**  
 **The difference: rVPOS2 - rVPOS1= 4.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

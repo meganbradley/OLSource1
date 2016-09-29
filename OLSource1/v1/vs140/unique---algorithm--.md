@@ -151,7 +151,7 @@ int main( )
 **Removing adjacent elements satisfying the binary**  
  **predicate mod_equal from vector v1 gives ( 5 7 ).**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

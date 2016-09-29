@@ -116,7 +116,7 @@ You can locally monitor IIS-hosted ASP.NET web apps and SharePoint 2010 or 2013 
   
      Here's the short syntax:  
   
-     **Start-WebApplicationMonitoring** *"<appName\>"* *<monitoringMode\>* *"<outputPath\>"* *<UInt32\>* *"<collectionPlanPathAndFileName\>"*  
+     **Start-WebApplicationMonitoring** *"\<appName>"* *\<monitoringMode>* *"\<outputPath>"* *\<UInt32>* *"\<collectionPlanPathAndFileName>"*  
   
      Here's an example that uses just the web app name and lightweight **Monitor** mode:  
   
@@ -132,11 +132,11 @@ You can locally monitor IIS-hosted ASP.NET web apps and SharePoint 2010 or 2013 
   
     |||  
     |-|-|  
-    |*"<appName\>"*|Specify the path to the web site and web app name in IIS. You can also include the IIS path, if you prefer.<br /><br /> *"<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> -or-<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> You can find this path in IIS Manager. For example:<br /><br /> ![Path to IIS web site and web app](../vs140/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> You can also use the [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) and [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) commands.|  
-    |*<monitoringMode\>*|Specify the monitoring mode:<br /><br /> <ul><li>**Monitor**: Record minimal details about exception events and performance events. This mode uses the default collection plan.</li><li>**Trace**: Record function-level details or monitor SharePoint 2010 and SharePoint 2013 applications by using the specified collection plan. This mode might make your app run more slowly.<br /><br /> <ul><li>[Make sure that the application pool has read and write permissions to the IntelliTrace log directory.](#FullPermissionsITLog)</li><li>[How can I get the most data without slowing down my app?](#Minimizing)</li></ul><br />     This example records events for a SharePoint app hosted on a SharePoint site:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Custom**: Record custom details by using specified custom collection plan. You'll have to restart monitoring if you edit the collection plan after monitoring has already started.</li></ul>|  
-    |*"<outputPath\>"*|Specify the full directory path to store the IntelliTrace logs. Make sure that you create this directory before you start monitoring.|  
-    |*<UInt32\>*|Specify the maximum size for the IntelliTrace log. The default maximum size of the IntelliTrace log is 250 MB.<br /><br /> When the log reaches this limit, the agent overwrites the earliest entries to make space for more entries. To change this limit, use the **-MaximumFileSizeInMegabytes** option or edit the `MaximumLogFileSize` attribute in the collection plan.|  
-    |*"<collectionPlanPathAndFileName\>"*|Specify the full path or relative path and the file name of the collection plan. This plan is an .xml file that configures settings for the agent.<br /><br /> These plans are included with the agent and work with web apps and SharePoint applications:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Collects only events, such as exceptions, performance events, database calls, and Web server requests.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Collects function-level calls plus all the data in default collection plan. This plan is good for detailed analysis but might slow down your app.<br /><br /> You can find localized versions of these plans in the agent's subfolders. You can also [customize these plans or create your own plans](http://go.microsoft.com/fwlink/?LinkId=227871) to avoid slowing down your app. Put any custom plans in the same secure location as the agent.<br /><br /> [How else can I get the most data without slowing down my app?](#Minimizing)|  
+    |*"\<appName>"*|Specify the path to the web site and web app name in IIS. You can also include the IIS path, if you prefer.<br /><br /> *"\<IISWebsiteName>\\\<IISWebAppName>"*<br /><br /> -or-<br /><br /> **"IIS:\sites** *\\\<IISWebsiteName>\\\<IISWebAppName>"*<br /><br /> You can find this path in IIS Manager. For example:<br /><br /> ![Path to IIS web site and web app](../vs140/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> You can also use the [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) and [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) commands.|  
+    |*\<monitoringMode>*|Specify the monitoring mode:<br /><br /> <ul><li>**Monitor**: Record minimal details about exception events and performance events. This mode uses the default collection plan.</li><li>**Trace**: Record function-level details or monitor SharePoint 2010 and SharePoint 2013 applications by using the specified collection plan. This mode might make your app run more slowly.<br /><br /> <ul><li>[Make sure that the application pool has read and write permissions to the IntelliTrace log directory.](#FullPermissionsITLog)</li><li>[How can I get the most data without slowing down my app?](#Minimizing)</li></ul><br />     This example records events for a SharePoint app hosted on a SharePoint site:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Custom**: Record custom details by using specified custom collection plan. You'll have to restart monitoring if you edit the collection plan after monitoring has already started.</li></ul>|  
+    |*"\<outputPath>"*|Specify the full directory path to store the IntelliTrace logs. Make sure that you create this directory before you start monitoring.|  
+    |*\<UInt32>*|Specify the maximum size for the IntelliTrace log. The default maximum size of the IntelliTrace log is 250 MB.<br /><br /> When the log reaches this limit, the agent overwrites the earliest entries to make space for more entries. To change this limit, use the **-MaximumFileSizeInMegabytes** option or edit the `MaximumLogFileSize` attribute in the collection plan.|  
+    |*"\<collectionPlanPathAndFileName>"*|Specify the full path or relative path and the file name of the collection plan. This plan is an .xml file that configures settings for the agent.<br /><br /> These plans are included with the agent and work with web apps and SharePoint applications:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Collects only events, such as exceptions, performance events, database calls, and Web server requests.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Collects function-level calls plus all the data in default collection plan. This plan is good for detailed analysis but might slow down your app.<br /><br /> You can find localized versions of these plans in the agent's subfolders. You can also [customize these plans or create your own plans](http://go.microsoft.com/fwlink/?LinkId=227871) to avoid slowing down your app. Put any custom plans in the same secure location as the agent.<br /><br /> [How else can I get the most data without slowing down my app?](#Minimizing)|  
   
      For the more information about the full syntax and other examples, run the **get-help Start-WebApplicationMonitoring –detailed** command or the **get-help Start-WebApplicationMonitoring –examples** command.  
   
@@ -235,11 +235,11 @@ You can locally monitor IIS-hosted ASP.NET web apps and SharePoint 2010 or 2013 
   
 2.  Run the [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) command to save a snapshot of the IntelliTrace log:  
   
-     **Checkpoint-WebApplicationMonitoring** *"<IISWebsiteName\>\\<IISWebAppName\>"*  
+     **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName>\\\<IISWebAppName>"*  
   
      \- or -  
   
-     **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
+     **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\\<IISWebsiteName>\\\<IISWebAppName>"*  
   
      For example:  
   
@@ -265,11 +265,11 @@ You can locally monitor IIS-hosted ASP.NET web apps and SharePoint 2010 or 2013 
   
 2.  Run the [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) command to create the IntelliTrace log and stop monitoring a specific web app:  
   
-     **Stop-WebApplicationMonitoring** *"<IISWebsiteName\>\\<IISWebAppName\>"*  
+     **Stop-WebApplicationMonitoring** *"\<IISWebsiteName>\\\<IISWebAppName>"*  
   
      \- or -  
   
-     **Stop-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
+     **Stop-WebApplicationMonitoring "IIS:\sites** *\\\<IISWebsiteName>\\\<IISWebAppName>"*  
   
      Or to stop monitoring all web apps:  
   

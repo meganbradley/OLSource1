@@ -45,7 +45,7 @@ t> wostringstream;
  The type is a synonym for template class [basic_ostringstream](../vs140/basic_ostringstream-class.md), specialized for elements of type `wchar_t`.  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

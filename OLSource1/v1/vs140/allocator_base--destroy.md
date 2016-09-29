@@ -44,7 +44,7 @@ void destroy(pointer _Ptr);
  This member function is implemented for the user-defined allocator by calling `_Ptr->~Type()`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

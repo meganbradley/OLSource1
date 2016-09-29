@@ -65,7 +65,7 @@ Seq.ofList source
   
  **F# Interactive Output**  
   
- **val seq1 : seq<string\> = ["0"; "1"; "2"; "3"; "4"; "5"; "6"; "7"; "8"; "9"]**   
+ **val seq1 : seq\<string> = ["0"; "1"; "2"; "3"; "4"; "5"; "6"; "7"; "8"; "9"]**   
 ## Platforms  
  Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2  
   

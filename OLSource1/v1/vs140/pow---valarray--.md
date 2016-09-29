@@ -115,7 +115,7 @@ int main( )
 **n = 4   gives 256**  
 **n = 5   gives 1024**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

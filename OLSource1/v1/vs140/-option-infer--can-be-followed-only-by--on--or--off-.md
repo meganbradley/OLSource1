@@ -30,7 +30,7 @@ translation.priority.ht:
 -   Specify either `Option Infer On` or `Option Infer Off`.  
   
 ## See Also  
- [Option <keyword\> Statement](../vs140/option--keyword--statement.md)   
+ [Option \<keyword> Statement](../vs140/option--keyword--statement.md)   
  [Option Compare Statement](../vs140/option-compare-statement.md)   
  [Option Explicit Statement](../vs140/option-explicit-statement--visual-basic-.md)   
  [Option Infer Statement](../vs140/option-infer-statement.md)   

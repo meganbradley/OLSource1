@@ -347,7 +347,7 @@ protected override void Dispose(bool disposing)
 -   **Handle font and color changes.**  
   
 #### To create or identify categories  
- Construct a special type of category registry entry under [HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<Category\>]. <Category\> is the non-localized name of the Category.  
+ Construct a special type of category registry entry under [HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>]. \<Category> is the non-localized name of the Category.  
   
  Populate the registry with two values:  
   
@@ -359,7 +359,7 @@ protected override void Dispose(bool disposing)
  The service specified in the registry must provide an implementation of [IVsFontAndColorDefaults](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) for the corresponding category.  
   
 #### To create or identify groups  
- Construct a special type of category registry entry under [HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<group\>]. <group\> is the non-localized name of the group.  
+ Construct a special type of category registry entry under [HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<group>]. \<group> is the non-localized name of the group.  
   
  Populate the registry with two values:  
   
@@ -491,7 +491,7 @@ catGUID);
   
 -   Hyperlinks  
   
--   Form controls (for example: <select\>, <input\>, <button\>  
+-   Form controls (for example: \<select>, \<input>, \<button>  
   
 -   Tables  
   

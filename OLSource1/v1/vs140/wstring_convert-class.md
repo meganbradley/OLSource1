@@ -87,7 +87,7 @@ class wstring_convert
 |[state](#wstring_convert__state)|Returns an object representing the state of the conversion.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

@@ -103,7 +103,7 @@ This is the contents of basic_ifstream_class.txt.
 |[operator=](#basic_ifstream__operator_eq)|Assigns the content of this stream object. This is a move assignment involving an `rvalue` that does not leave a copy behind.|  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

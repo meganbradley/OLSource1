@@ -42,6 +42,6 @@ typedef void ( *terminate_handler )( );
  See [set_terminate](../vs140/set_terminate---exception--.md) for an example of the use of `terminate_handler`.  
   
 ## Requirements  
- **Header:** <exception\>  
+ **Header:** \<exception>  
   
  **Namespace:** std

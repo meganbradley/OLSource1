@@ -71,11 +71,11 @@ template<class Ty2, Class Del2>
  The fifth constructor stores `ptr` in `stored_ptr` and moves `deleter` into `stored_deleter`. The sixth and seventh constructors store `right.reset()` in `stored_ptr` and moves `right.get_deleter()` into `stored_deleter`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
  [unique_ptr](../vs140/unique_ptr-class.md)   
- [<memory\>](../vs140/-memory-.md)   
+ [\<memory>](../vs140/-memory-.md)   
  [Thread Safety in the C++ Standard Library](../vs140/thread-safety-in-the-c---standard-library.md)

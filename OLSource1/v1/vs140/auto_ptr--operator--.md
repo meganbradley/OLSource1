@@ -48,7 +48,7 @@ Type *operator->( ) const throw( );
  For an example of how to use the member function, see [auto_ptr::auto_ptr](../vs140/auto_ptr--auto_ptr.md).  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

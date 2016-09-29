@@ -56,7 +56,7 @@ istrstream(
  All the constructors initialize the base class by calling [istream](../vs140/istream.md)(**sb**), where **sb** is the stored object of class [strstreambuf](../vs140/strstreambuf-class.md). The first two constructors also initialize **sb** by calling `strstreambuf`( (**const** `char` \*)`_Ptr`, 0 ). The remaining two constructors instead call `strstreambuf`( (**const** `char` *)`_Ptr`, `_Count` ).  
   
 ## Requirements  
- **Header:** <strstream\>  
+ **Header:** \<strstream>  
   
  **Namespace:** std  
   

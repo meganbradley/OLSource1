@@ -72,8 +72,8 @@ int main()
   
 ```  
   
- **is_default_constructible<Simple\> == true**  
-**is_default_constructible<Simple2\> == false**   
+ **is_default_constructible\<Simple> == true**  
+**is_default_constructible\<Simple2> == false**   
 ## Requirements  
  **Header:** <type_traits>  
   

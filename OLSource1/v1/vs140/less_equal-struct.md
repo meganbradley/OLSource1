@@ -130,7 +130,7 @@ Sorted vector v1 = ( 2836 2836 2836 6205 15251 31247 37154 48755 )
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

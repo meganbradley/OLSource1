@@ -35,12 +35,12 @@ The [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] compiler can process docu
   
 ||||  
 |-|-|-|  
-|[<c\>](../vs140/-c---visual-basic-.md)|[<code\>](../vs140/-code---visual-basic-.md)|[<example\>](../vs140/-example---visual-basic-.md)|  
-|[<exception\>](../vs140/-exception---visual-basic-.md) <sup>1</sup>|[<include\>](../vs140/-include---visual-basic-.md) <sup>1</sup>|[<list\>](../vs140/-list---visual-basic-.md)|  
-|[<para\>](../vs140/-para---visual-basic-.md)|[<param\>](../vs140/-param---visual-basic-.md) <sup>1</sup>|[<paramref\>](../vs140/-paramref---visual-basic-.md)|  
-|[<permission\>](../vs140/-permission---visual-basic-.md) <sup>1</sup>|[<remarks\>](../vs140/-remarks---visual-basic-.md)|[<returns\>](../vs140/-returns---visual-basic-.md)|  
-|[<see\>](../vs140/-see---visual-basic-.md) <sup>1</sup>|[<seealso\>](../vs140/-seealso---visual-basic-.md) <sup>1</sup>|[<summary\>](../vs140/-summary---visual-basic-.md)|  
-|[<typeparam\>](../vs140/-typeparam---visual-basic-.md) <sup>1</sup>|[<value\>](../vs140/-value---visual-basic-.md)||  
+|[\<c>](../vs140/-c---visual-basic-.md)|[\<code>](../vs140/-code---visual-basic-.md)|[\<example>](../vs140/-example---visual-basic-.md)|  
+|[\<exception>](../vs140/-exception---visual-basic-.md) <sup>1</sup>|[\<include>](../vs140/-include---visual-basic-.md) <sup>1</sup>|[\<list>](../vs140/-list---visual-basic-.md)|  
+|[\<para>](../vs140/-para---visual-basic-.md)|[\<param>](../vs140/-param---visual-basic-.md) <sup>1</sup>|[\<paramref>](../vs140/-paramref---visual-basic-.md)|  
+|[\<permission>](../vs140/-permission---visual-basic-.md) <sup>1</sup>|[\<remarks>](../vs140/-remarks---visual-basic-.md)|[\<returns>](../vs140/-returns---visual-basic-.md)|  
+|[\<see>](../vs140/-see---visual-basic-.md) <sup>1</sup>|[\<seealso>](../vs140/-seealso---visual-basic-.md) <sup>1</sup>|[\<summary>](../vs140/-summary---visual-basic-.md)|  
+|[\<typeparam>](../vs140/-typeparam---visual-basic-.md) <sup>1</sup>|[\<value>](../vs140/-value---visual-basic-.md)||  
   
  (<sup>1</sup> The compiler verifies syntax.)  
   

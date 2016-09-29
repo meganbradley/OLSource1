@@ -42,7 +42,7 @@ typedef typename allocator_type::pointer pointer;
  In most cases, an [iterator](../vs140/set--iterator.md) should be used to access the elements in a set object.  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

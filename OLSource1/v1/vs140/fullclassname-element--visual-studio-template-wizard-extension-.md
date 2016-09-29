@@ -23,10 +23,10 @@ translation.priority.ht:
 # FullClassName Element (Visual Studio Template Wizard Extension)
 The fully qualified name of the class that implements the `IWizard` interface.  
   
- <VSTemplate\>  
- <WizardExtension\>  
+ \<VSTemplate>  
+ \<WizardExtension>  
  ...  
- <FullClassName\>  
+ \<FullClassName>  
   
 ## Syntax  
   

@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Type argument inference failed for type parameter &#39;&lt;typeparametername1&gt;&#39; of &#39;&lt;genericproceduresignature&gt;&#39;
-Type argument inference failed for type parameter '<typeparametername1\>' of '<genericproceduresignature\>'. Type argument inferred from the argument passed to parameter '<parametername1\>' conflicts with the type argument inferred from the argument passed to parameter '<parametername2\>'.  
+Type argument inference failed for type parameter '\<typeparametername1>' of '\<genericproceduresignature>'. Type argument inferred from the argument passed to parameter '\<parametername1>' conflicts with the type argument inferred from the argument passed to parameter '\<parametername2>'.  
   
  A generic procedure is called without any type arguments, and the attempted type inference has produced a data type conflict among the type parameters.  
   

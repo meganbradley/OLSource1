@@ -73,11 +73,11 @@ int main( )
  **The first element of array is 1.**  
 **The first element of the reversed array is 2.**   
 ## Requirements  
- **Header:** <array\>  
+ **Header:** \<array>  
   
  **Namespace:** std  
   
 ## See Also  
- [<array\>](../vs140/-array-.md)   
+ [\<array>](../vs140/-array-.md)   
  [array Class](../vs140/array-class--stl-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

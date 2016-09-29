@@ -69,7 +69,7 @@ long double nanl(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`nan`, `nanf`, `nanl`|<math.h>|<cmath\>|  
+|`nan`, `nanf`, `nanl`|<math.h>|\<cmath>|  
   
 ## .NET Framework Equivalent  
  [System::Double::NaN](https://msdn.microsoft.com/en-us/library/system.double.nan.aspx)  

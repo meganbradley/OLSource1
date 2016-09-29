@@ -40,5 +40,5 @@ exception_ptr current_exception();
  Successive calls to the `current_exception` function return `exception_ptr` objects that refer to different copies of the current exception. Consequently, the objects compare as unequal because they refer to different copies, even though the copies have the same binary value.  
   
 ## See Also  
- [<exception\>](../vs140/-exception-.md)   
+ [\<exception>](../vs140/-exception-.md)   
  [Transporting Exceptions Between Threads](../vs140/transporting-exceptions-between-threads.md)

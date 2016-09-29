@@ -34,7 +34,7 @@ Defines several classes that support iostreams operations on sequences stored in
 ```  
   
 ## Remarks  
- Objects of type `strstream` work with `char` *, which are C strings. Use [<sstream\>](../vs140/-sstream-.md) to work with objects of type [basic_string](../vs140/basic_string-class.md).  
+ Objects of type `strstream` work with `char` *, which are C strings. Use [\<sstream>](../vs140/-sstream-.md) to work with objects of type [basic_string](../vs140/basic_string-class.md).  
   
 > [!NOTE]
 >  The classes in `<strstream>` are deprecated. Consider using the classes in `<sstream>` instead.  
@@ -49,7 +49,7 @@ Defines several classes that support iostreams operations on sequences stored in
 |[strstream Class](../vs140/strstream-class.md)|The class describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [strstreambuf](../vs140/strstreambuf-class.md).|  
   
 ## See Also  
- [<strstream\>](../vs140/-strstream-.md)   
+ [\<strstream>](../vs140/-strstream-.md)   
  [Header Files](../vs140/c---standard-library-header-files.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [iostream Programming](../vs140/iostream-programming.md)   

@@ -36,12 +36,12 @@ typedef match_results<const char*> cmatch;
  The type describes a specialization of template class [match_results](../vs140/match_results-class.md) for iterators of type `const char*`.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [match_results](../vs140/match_results-class.md)   
  [smatch](../vs140/smatch-typedef.md)   
  [wcmatch](../vs140/wcmatch-typedef.md)   

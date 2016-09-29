@@ -41,10 +41,10 @@ std::vector<double> probabilities() const;
  This member function returns the stored probability values.  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [discrete_distribution Class](../vs140/discrete_distribution-class.md)

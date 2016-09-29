@@ -106,7 +106,7 @@ int main( )
  **Vector v1 is ( 41 18467 6334 26500 19169 ).**  
 **Deque deq1 is ( 15724 11478 29358 26962 24464 ).**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

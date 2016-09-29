@@ -24,9 +24,9 @@ translation.priority.ht:
 # SupportsMasterPage Element (Visual Studio Templates)
 Specifies whether the or not the **Select Master Page** checkbox is enabled on the **Add New Item** dialog box.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <SupportsMasterPage\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<SupportsMasterPage>  
   
 ## Syntax  
   

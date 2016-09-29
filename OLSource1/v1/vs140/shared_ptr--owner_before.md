@@ -49,7 +49,7 @@ template<class Other>
  The template member function returns true if `*this` is `ordered before``ptr`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

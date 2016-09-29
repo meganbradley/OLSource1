@@ -51,7 +51,7 @@ Defines a template class to parse [regular expressions](../vs140/regular-express
 |[regex_error](../vs140/regex_error-class.md)|Reports a bad regular expression.|  
 |[regex_iterator](../vs140/regex_iterator-class.md)|Iterates through match results.|  
 |[regex_traits](../vs140/regex_traits-class.md)|Describes characteristics of elements for matching.|  
-|[regex_traits<char\>](../vs140/regex_traits-char--class.md)|Describes characteristics of `char` for matching.|  
+|[regex_traits\<char>](../vs140/regex_traits-char--class.md)|Describes characteristics of `char` for matching.|  
 |[regex_traits<wchar_t>](../vs140/regex_traits-wchar_t--class.md)|Describes characteristics of `wchar_t` for matching.|  
 |[regex_token_iterator](../vs140/regex_token_iterator-class.md)|Iterates through submatches.|  
 |[sub_match](../vs140/sub_match-class.md)|Describes a submatch.|  

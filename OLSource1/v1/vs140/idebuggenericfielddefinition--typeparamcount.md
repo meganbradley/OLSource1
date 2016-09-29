@@ -44,7 +44,7 @@ int TypeParamCount(
  If successful, returns `S_OK`; otherwise, returns an error code.  
   
 ## Remarks  
- If List<T\>, this method returns 1, and, if List<T1,T2>, this method returns 2. This method returns 0 if there are no type parameters.  
+ If List\<T>, this method returns 1, and, if List<T1,T2>, this method returns 2. This method returns 0 if there are no type parameters.  
   
 ## See Also  
  [IDebugGenericFieldDefinition](../vs140/idebuggenericfielddefinition.md)

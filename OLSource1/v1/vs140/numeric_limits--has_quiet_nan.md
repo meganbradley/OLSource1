@@ -72,7 +72,7 @@ int main( )
 **Whether double objects have quiet_NaN: 1**  
 **Whether long int objects have quiet_NaN: 0**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

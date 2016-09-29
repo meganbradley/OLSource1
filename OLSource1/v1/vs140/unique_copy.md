@@ -166,7 +166,7 @@ Copying the first half of the vector to the second half
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

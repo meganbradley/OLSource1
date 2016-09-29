@@ -23,9 +23,9 @@ translation.priority.mt:
 # LocationField Element (Visual Studio Project Templates)
 Specifies whether or not the **Location** text box in the **New Project** dialog box is enabled, disabled, or hidden for the project template.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <LocationField\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<LocationField>  
   
 ## Syntax  
   

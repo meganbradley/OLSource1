@@ -47,7 +47,7 @@ t> > wfstream;
  The type is a synonym for template class [basic_fstream](../vs140/basic_fstream-class.md), specialized for elements of type `wchar_t` with default character traits.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

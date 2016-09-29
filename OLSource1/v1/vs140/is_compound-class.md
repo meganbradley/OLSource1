@@ -77,12 +77,12 @@ int main()
   
 ```  
   
-  **is_compound<trivial\> == true**  
+  **is_compound\<trivial> == true**  
 **is_compound<int[]> == true**  
 **is_compound<int()> == true**  
 **is_compound<int&> == true**  
 **is_compound<void \*> == true**  
-**is_compound<int\> == false**    
+**is_compound\<int> == false**    
 ## Requirements  
  **Header:** <type_traits>  
   

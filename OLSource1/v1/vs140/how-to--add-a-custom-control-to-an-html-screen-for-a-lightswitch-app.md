@@ -30,7 +30,7 @@ You can add custom HTML controls to a screen in a client for a LightSwitch app. 
     > [!NOTE]
     >  Some custom controls require that you also reference additional support files. Consult the documentation for the custom control for any requirements.  
   
-3.  In the **<script\>** section of the **default.htm** file for your project, add a script tag that resembles the following example, where *MyControl* is the name of your custom control:  
+3.  In the **\<script>** section of the **default.htm** file for your project, add a script tag that resembles the following example, where *MyControl* is the name of your custom control:  
   
     ```html  
     <script type=”text/javascript” src=”Scripts/MyControl.js” charset=”utf-8”></script>  

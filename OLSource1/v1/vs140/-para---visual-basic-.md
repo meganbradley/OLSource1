@@ -34,7 +34,7 @@ Specifies that the content is formatted as a paragraph.
  The text of the paragraph.  
   
 ## Remarks  
- The `<para>` tag is for use inside a tag, such as [<summary\> (Visual Basic)](../vs140/-summary---visual-basic-.md), [<remarks\> (Visual Basic)](../vs140/-remarks---visual-basic-.md), or [<returns\> (Visual Basic)](../vs140/-returns---visual-basic-.md), and lets you add structure to the text.  
+ The `<para>` tag is for use inside a tag, such as [\<summary> (Visual Basic)](../vs140/-summary---visual-basic-.md), [\<remarks> (Visual Basic)](../vs140/-remarks---visual-basic-.md), or [\<returns> (Visual Basic)](../vs140/-returns---visual-basic-.md), and lets you add structure to the text.  
   
  Compile with [/doc](../vs140/-doc.md) to process documentation comments to a file.  
   

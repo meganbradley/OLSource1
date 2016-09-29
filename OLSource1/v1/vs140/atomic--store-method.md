@@ -52,5 +52,5 @@ void atomic<Ty>::store(
   
 ## See Also  
  [atomic Structure](../vs140/atomic-structure.md)   
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic::operator=](../vs140/atomic--operator=-operator.md)

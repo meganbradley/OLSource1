@@ -95,8 +95,8 @@ Visual C++ includes a command-line C++ compiler that you can use to create every
  **Volume in drive C has no label.**  
  **Volume Serial Number is CC62-6545**  
  **Directory of c:\hello**  
-**05/24/2016  05:36 PM    <DIR\>          .**  
-**05/24/2016  05:36 PM    <DIR\>          ..**  
+**05/24/2016  05:36 PM    \<DIR>          .**  
+**05/24/2016  05:36 PM    \<DIR>          ..**  
 **05/24/2016  05:37 PM               115 hello.cpp**  
  **1 File(s)            115 bytes**  
  **2 Dir(s)  571,343,446,016 bytes free**     The dates and other details will differ on your computer. If you don't see your source code file, hello.cpp, make sure you've changed to the c:\hello directory you created, and in Notepad, make sure that you saved your source file in this directory. Also make sure that you saved the source code with a .cpp file name extension, not a .txt extension.  

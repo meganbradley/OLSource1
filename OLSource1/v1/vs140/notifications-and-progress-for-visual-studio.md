@@ -481,7 +481,7 @@ public interface IVsInfoBarUIEvents
   
  ![Field validation &#40;blank&#41;](../vs140/media/0905-01_fieldvalidation.png "0905-01_FieldValidation")  
   
- If the field is required, there should be watermark text stating **<Required\>** and the field background should be light yellow (VSColor: `Environment.ControlEditRequiredBackground`) and the foreground should be gray (VSColor: `Environment.ControlEditRequiredHintText`):  
+ If the field is required, there should be watermark text stating **\<Required>** and the field background should be light yellow (VSColor: `Environment.ControlEditRequiredBackground`) and the foreground should be gray (VSColor: `Environment.ControlEditRequiredHintText`):  
   
  ![Field validation with "Required" label](../vs140/media/0905-02_fieldvalidationrequired.png "0905-02_FieldValidationRequired")  
   

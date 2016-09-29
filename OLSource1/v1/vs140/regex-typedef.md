@@ -39,10 +39,10 @@ typedef basic_regex<char> regex;
 >  High-bit characters will have unpredictable results with `regex`. Values outside the range of 0 to 127 may result in undefined behavior.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [wregex](../vs140/wregex-typedef.md)

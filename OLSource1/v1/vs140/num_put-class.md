@@ -67,7 +67,7 @@ template<
 |[put](#num_put__put)|Converts a number into a sequence of `CharType`s which represents the number formatted for a given locale.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
@@ -409,6 +409,6 @@ int main( )
   **The thousands separator is: .**  
 **num_put( ) = 1.000,67**    
 ## See Also  
- [<locale\>](../vs140/-locale-.md)   
+ [\<locale>](../vs140/-locale-.md)   
  [facet Class](../vs140/locale-class.md#facet_class)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

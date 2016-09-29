@@ -69,7 +69,7 @@ template <    class  Type  class  CharType =  char    class  Traits =  char_trai
 |[operator=](#ostream_iterator__operator_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for writing to an output stream.|  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   
@@ -402,6 +402,6 @@ by intOut are:
 ```  
   
 ## See Also  
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

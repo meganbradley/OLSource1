@@ -28,5 +28,5 @@ This error occurs when you are creating a WPF Browser Application and Visual Stu
   
 ## See Also  
  [Resources for Troubleshooting MSBuild Errors](../vs140/additional-msbuild-resources.md)   
- [There was an error trying to open or create the application definition file for this project. '<error\>'](../vs140/there-was-an-error-trying-to-open-or-create-the-application-definition-file-for-this-project.---error--.md)   
+ [There was an error trying to open or create the application definition file for this project. '\<error>'](../vs140/there-was-an-error-trying-to-open-or-create-the-application-definition-file-for-this-project.---error--.md)   
  [The application definition file is already opened in an incompatible editor.](../vs140/the-application-definition-file-is-already-opened-in-an-incompatible-editor.md)

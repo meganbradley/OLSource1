@@ -80,7 +80,7 @@ German_Germany.1252 domestic currency symbol
  This assumes that you have not changed the default currency settings.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

@@ -51,7 +51,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |**/incremental**|Enables incremental compilation [obsolete].|  
 |[/keycontainer](../vs140/-keycontainer--csharp-compiler-options-.md)|Specifies a strong name key container.|  
 |[/keyfile](../vs140/-keyfile--csharp-compiler-options-.md)|Specifies a strong name key file.|  
-|[/langversion:<string\>](../vs140/-langversion--csharp-compiler-options-.md)|Specify language version mode: ISO-1, ISO-2, 3, 4, 5, 6, or Default|  
+|[/langversion:\<string>](../vs140/-langversion--csharp-compiler-options-.md)|Specify language version mode: ISO-1, ISO-2, 3, 4, 5, 6, or Default|  
 |[/lib](../vs140/-lib--csharp-compiler-options-.md)|Specifies additional directories in which to search for references.|  
 |[/link](../vs140/-link--csharp-compiler-options-.md)|Makes COM type information in specified assemblies available to the project.|  
 |[/linkresource](../vs140/-linkresource--csharp-compiler-options-.md)|Links the specified resource to this assembly.|  
@@ -87,4 +87,4 @@ The following compiler options are sorted alphabetically. For a categorical list
  [C# Compiler Options](../vs140/csharp-compiler-options.md)   
  [C# Compiler Options Listed by Category](../vs140/csharp-compiler-options-listed-by-category.md)   
  [How to: Set Environment Variables for the Visual Studio Command Line](../vs140/how-to--set-environment-variables-for-the-visual-studio-command-line.md)   
- [<compiler\> Element](assetId:///7a151659-b803-4c27-b5ce-1c4aa0d5a823)
+ [\<compiler> Element](assetId:///7a151659-b803-4c27-b5ce-1c4aa0d5a823)

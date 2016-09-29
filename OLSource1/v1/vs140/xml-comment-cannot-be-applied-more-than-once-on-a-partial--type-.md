@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # XML comment cannot be applied more than once on a partial &lt;type&gt;
-XML comment cannot be applied more than once on a partial <type\>. XML comments for this <type\> will be ignored.  
+XML comment cannot be applied more than once on a partial \<type>. XML comments for this \<type> will be ignored.  
   
  An XML comment block can appear above only one portion of a partial type.  
   

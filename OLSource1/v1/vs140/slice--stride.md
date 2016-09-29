@@ -86,7 +86,7 @@ int main( )
  **( 15 24 33 42 51 ).**  
 **The stride of slice vaSlice is: 3.**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

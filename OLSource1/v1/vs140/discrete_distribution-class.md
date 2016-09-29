@@ -64,7 +64,7 @@ public:
   
 #### Parameters  
  `IntType`  
- The integer result type, defaults to `int`. For possible types, see [<random\>](../vs140/-random-.md).  
+ The integer result type, defaults to `int`. For possible types, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  This sampling distribution has uniform-width intervals with uniform probability in each interval. For information about other sampling distributions, see [piecewise_linear_distribution](../vs140/piecewise_linear_distribution-class.md) and [piecewise_constant_distribution](../vs140/piecewise_constant_distribution-class.md).  
@@ -78,7 +78,7 @@ public:
   
  The property function `vector<double> probabilities()` returns the individual probabilities for each integer generated.  
   
- For more information about distribution classes and their members, see [<random\>](../vs140/-random-.md).  
+ For more information about distribution classes and their members, see [\<random>](../vs140/-random-.md).  
   
 ## Example  
   
@@ -143,7 +143,7 @@ int main()
 ## Output  
  **Use CTRL-Z to bypass data entry and run using default values.Enter an integer value for the sample count: 100min() == 0max() == 4probabilities (value: probability):          0:   0.0666666667          1:   0.1333333333          2:   0.2000000000          3:   0.2666666667          4:   0.3333333333Distribution for 100 samples:    0 :::::    1 ::::::::::::::    2 :::::::::::::::::    3 ::::::::::::::::::::::::::::::    4 ::::::::::::::::::::::::::::::::::**   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
@@ -257,4 +257,4 @@ struct param_type {
  This parameter package can be passed to [operator()](../vs140/discrete_distribution--operator--.md) to generate the return value.  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

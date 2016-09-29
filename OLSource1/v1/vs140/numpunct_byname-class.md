@@ -47,10 +47,10 @@ protected:
 ```  
   
 ## Remarks  
- Its behavior is determined by the [named](../vs140/locale-class.md#locale__name) locale `_Locname`. The constructor initializes its base object with [numpunct](../vs140/numpunct-class.md#numpunct__numpunct)<CharType\>( `_Refs`).  
+ Its behavior is determined by the [named](../vs140/locale-class.md#locale__name) locale `_Locname`. The constructor initializes its base object with [numpunct](../vs140/numpunct-class.md#numpunct__numpunct)\<CharType>( `_Refs`).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

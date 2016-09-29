@@ -41,4 +41,4 @@ bool try_lock() _NOEXCEPT;
   
 ## See Also  
  [recursive_timed_mutex Class](../vs140/recursive_timed_mutex-class.md)   
- [<mutex\>](../vs140/-mutex-.md)
+ [\<mutex>](../vs140/-mutex-.md)

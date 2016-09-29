@@ -43,7 +43,7 @@ traits<char> > filebuf;
  The type is a synonym for template class [basic_filebuf](../vs140/basic_filebuf-class.md), specialized for elements of type `char` with default character traits.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

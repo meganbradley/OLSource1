@@ -82,7 +82,7 @@ int main( )
   
  **The uppercase string is: HELLO, MY NAME IS JOHN**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

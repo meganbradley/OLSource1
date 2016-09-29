@@ -125,12 +125,12 @@ int main()
 **'a' < sub == true**  
 **sub < 'a' == false**   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [operator==](../vs140/operator==--regex-.md)   
  [operator!==](../vs140/operator!=--regex-.md)   
  [operator<=](../vs140/operator-=--regex-.md)   

@@ -152,7 +152,7 @@ Depending on your installation options, Visual Studio can make hundreds of macro
 |**$(FrameworkVersion)**|The version of the .NET Framework used by Visual Studio. Combined with **$(FrameworkDir)**, the full path to the version of the .NET Framework use by Visual Studio.|  
 |**$(FrameworkSDKDir)**|The directory into which you installed the .NET Framework. The .NET Framework could have been installed as part of Visual Studio or separately.|  
 |**$(WebDeployPath)**|The relative path from the web deployment root to where the project outputs belong. Returns the same value as <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath*>.|  
-|**$(WebDeployRoot)**|The absolute path to the location of **<localhost\>**. For example, c:\inetpub\wwwroot.|  
+|**$(WebDeployRoot)**|The absolute path to the location of **\<localhost>**. For example, c:\inetpub\wwwroot.|  
 |**$(SafeParentName)**|(Deprecated.) The name of the immediate parent in valid name format. For example, a form is the parent of a .resx file.|  
 |**$(SafeInputName)**|(Deprecated.) The name of the file as a valid class name, minus file extension.|  
 |**$(SafeRootNamespace)**|(Deprecated.) The namespace name in which the project wizards will add code. This namespace name will only contain characters that would be permitted in a valid C++ identifier.|  

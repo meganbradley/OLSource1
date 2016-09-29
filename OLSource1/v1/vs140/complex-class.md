@@ -81,7 +81,7 @@ Type
 |[operator=](#complex__operator_eq)|Assigns a number to a target complex number, where the number assigned may be complex or of the same type as are the real and imaginary parts of the complex number to which it is being assigned.|  
   
 ## Requirements  
- **Header**: <complex\>  
+ **Header**: \<complex>  
   
  **Namespace:** std  
   

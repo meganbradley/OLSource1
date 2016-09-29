@@ -65,10 +65,10 @@ int main()
 }  
 ```  
   
- **The set of bits in bitset<5> b1( 6 ) is: ( 00110 )**  
+ **The set of bits in bitset\<5> b1( 6 ) is: ( 00110 )**  
 **The number of bits in bitset b1 is: 5.**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

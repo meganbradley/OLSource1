@@ -32,7 +32,7 @@ namespace Microsoft::WRL::Details;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ComPtrRef Class](../vs140/comptrref-class.md)|Represents a reference to an object of type ComPtr<T\>.|  
+|[ComPtrRef Class](../vs140/comptrref-class.md)|Represents a reference to an object of type ComPtr\<T>.|  
 |[ComPtrRefBase Class](../vs140/comptrrefbase-class.md)|Represents the base class for the [ComPtrRef](../vs140/comptrref-class.md) class.|  
 |[DontUseNewUseMake Class](../vs140/dontusenewusemake-class.md)|Prevents using operator `new` in `RuntimeClass`. Consequently, you must use the [Make function](../vs140/make-function.md) instead.|  
 |[EventTargetArray Class](../vs140/eventtargetarray-class.md)|Represents an array of event handlers.|  

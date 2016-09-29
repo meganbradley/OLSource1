@@ -29,11 +29,11 @@ In earlier versions of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], clien
   
  Client-side script files are visible only when you are in debug mode or break mode. They appear in the **Script Documents** node.  
   
- Server-side script files are always visible. They appear in the **<Website Pathname\>** node. The name of the node resembles this example: `c:\...\Website2\`  
+ Server-side script files are always visible. They appear in the **\<Website Pathname>** node. The name of the node resembles this example: `c:\...\Website2\`  
   
 ### To view a server-side script document  
   
-1.  In **Solution Explorer**, open the **<Website Pathname\>** node.  
+1.  In **Solution Explorer**, open the **\<Website Pathname>** node.  
   
 2.  Double-click the script file that you want to view.  
   

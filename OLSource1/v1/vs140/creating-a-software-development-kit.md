@@ -101,11 +101,11 @@ A software development kit (SDK) is a collection of APIs that you can reference 
   
 ```  
   
-1.  \\<SDKName\>\\<SDKVersion\>: the name and version of the extension SDK is derived from the corresponding folder names in the path to the SDK root. MSBuild uses this identity to find the SDK on disk, and Visual Studio displays this identity in the **Properties** window and **Reference Manager** dialog.  
+1.  \\\<SDKName>\\\<SDKVersion>: the name and version of the extension SDK is derived from the corresponding folder names in the path to the SDK root. MSBuild uses this identity to find the SDK on disk, and Visual Studio displays this identity in the **Properties** window and **Reference Manager** dialog.  
   
 2.  References folder: the binaries that contain the APIs. These could be Windows Metadata (WinMD) files or assemblies.  
   
-3.  Redist folder: the files that are needed for runtime/debugging and should get packaged as part of the user’s application. All binaries should be placed underneath \redist\\<config\>\\<arch\>, and the binary names should have the following format to ensure uniqueness: **<company\>.<product\>.<purpose\>.<extension\>**. For example, Microsoft.Cpp.Build.dll. All files with names that may collide with file names from other SDKs (for example, javascript, css, pri, xaml, png, and jpg files) should be placed underneath \redist\\<config\>\\<arch\>\\<sdkname\>\ except for the files that are associated with XAML controls. These files should be placed underneath \redist\\<config\>\\<arch\>\\<componentname\>\\.  
+3.  Redist folder: the files that are needed for runtime/debugging and should get packaged as part of the user’s application. All binaries should be placed underneath \redist\\\<config>\\\<arch>, and the binary names should have the following format to ensure uniqueness: **\<company>.\<product>.\<purpose>.\<extension>**. For example, Microsoft.Cpp.Build.dll. All files with names that may collide with file names from other SDKs (for example, javascript, css, pri, xaml, png, and jpg files) should be placed underneath \redist\\\<config>\\\<arch>\\\<sdkname>\ except for the files that are associated with XAML controls. These files should be placed underneath \redist\\\<config>\\\<arch>\\\<componentname>\\.  
   
 4.  DesignTime folder: the files that are needed at only pre-run/debugging time and shouldn’t be packaged as part of the user’s application. These could be XML docs, libraries, headers, toolbox design-time binaries, MSBuild artifacts, and so forth. Any SDK that is intended for consumption by a native project must have an *SDKName*.props file. The following shows a sample of this type of file.  
   
@@ -125,7 +125,7 @@ A software development kit (SDK) is a collection of APIs that you can reference 
   
     ```  
   
-     XML reference documents are placed alongside the reference file. For example, the XML reference document for the **\References\\<config\>\\<arch\>\sample.dll** assembly is **\References\\<config\>\\<arch\>\sample.xml**, and the localized version of that doc is **\References\\<config\>\\<arch\>\\<locale\>\sample.xml**.  
+     XML reference documents are placed alongside the reference file. For example, the XML reference document for the **\References\\\<config>\\\<arch>\sample.dll** assembly is **\References\\\<config>\\\<arch>\sample.xml**, and the localized version of that doc is **\References\\\<config>\\\<arch>\\\<locale>\sample.xml**.  
   
 5.  Configuration folder: three subfolders: Debug, Retail, and CommonConfiguration. SDK authors can place their files under CommonConfiguration when the same set of SDK files should be consumed, regardless of the configuration targeted by the SDK consumer.  
   
@@ -180,7 +180,7 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
   
 10. SupportsMultipleVersions: if this attribute is set to **Error** or **Warning**, MSBuild indicates that the same project can't reference multiple versions of the same SDK family. If this attribute doesn’t exist or is set to **Allow**, MSBuild doesn't display this type of error or warning.  
   
-11. AppX: specifies the path to the app packages for the Windows component library on the disk. This value is passed to the registration component of the Windows component library during local debugging. The naming convention for the file name is **<Company\>.<Product\>.<Architecture\>.<Configuration\>.<Version\>.appx**. Configuration and Architecture are optional in the attribute name and the attribute value if they don’t apply to the Windows component library. This value is applicable only to Windows component libraries.  
+11. AppX: specifies the path to the app packages for the Windows component library on the disk. This value is passed to the registration component of the Windows component library during local debugging. The naming convention for the file name is **\<Company>.\<Product>.\<Architecture>.\<Configuration>.\<Version>.appx**. Configuration and Architecture are optional in the attribute name and the attribute value if they don’t apply to the Windows component library. This value is applicable only to Windows component libraries.  
   
 12. CopyRedistToSubDirectory: specifies where the files under the \redist folder should be copied relative to the app package root (that is, the **Package location** chosen in the Create App Package wizard) and runtime layout root. The default location is the root of the app package and F5 layout.  
   

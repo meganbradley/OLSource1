@@ -44,12 +44,12 @@ void swap(basic_istream& _Right);
  The member function calls [swap](../vs140/basic_ios--swap.md)`(``_Right``)`. It also exchanges the extraction count with the extraction count for `_Right`.  
   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_istream Class](../vs140/basic_istream-class.md)   
  [basic_iostream Class](../vs140/basic_iostream-class.md)   
- [<istream\>](../vs140/-istream-.md)   
+ [\<istream>](../vs140/-istream-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)

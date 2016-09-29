@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Variable &#39;&lt;variablename&gt;&#39; is passed by reference before it has been assigned a value (Structure Variable)
-Variable '<variablename\>' is passed by reference before it has been assigned a value. A null reference exception could result at runtime. Make sure the structure or all the reference members are initialized before use  
+Variable '\<variablename>' is passed by reference before it has been assigned a value. A null reference exception could result at runtime. Make sure the structure or all the reference members are initialized before use  
   
  A procedure call passes a structure variable as an argument to a `ByRef` parameter before any value is assigned to the variable.  
   

@@ -84,7 +84,7 @@ int main( )
 **At least one of the bits in bitset b1 is set to 1.**  
 **None of the bits in bitset b1 are set to 1.**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

@@ -66,12 +66,12 @@ size_type erase(
  For a code example, see [map::erase](../vs140/map--erase.md).  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   
 ## See Also  
- [<map\>](../vs140/-map-.md)   
+ [\<map>](../vs140/-map-.md)   
  [multimap Class](../vs140/multimap-class.md)   
  [multimap::clear](../vs140/multimap--clear.md)   
  [map::max_size, map::clear, map::erase, and map::size](../vs140/map--max_size--map--clear--map--erase--and-map--size.md)   

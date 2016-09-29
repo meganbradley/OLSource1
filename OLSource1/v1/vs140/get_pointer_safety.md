@@ -41,10 +41,10 @@ pointer_safety get_pointer_safety();
  The function returns the type of pointer safety assumed by any automatic `garbage collector`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)   
- [<memory\> Members](assetId:///0d39e979-01a0-4d3e-a1ed-af6bb6957c29)
+ [\<memory>](../vs140/-memory-.md)   
+ [\<memory> Members](assetId:///0d39e979-01a0-4d3e-a1ed-af6bb6957c29)

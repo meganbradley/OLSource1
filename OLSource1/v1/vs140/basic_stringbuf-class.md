@@ -85,7 +85,7 @@ template <class Elem, class Tr = char_traits< Elem>,
 |[underflow](#basic_stringbuf__underflow)|The protected virtual member function to extract the current element from the input stream.|  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

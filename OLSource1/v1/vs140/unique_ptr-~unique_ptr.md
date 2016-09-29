@@ -39,11 +39,11 @@ The destructor for `unique_ptr`, destroys a `unique_ptr` object.
  The destructor calls `get_deleter()(stored_ptr)`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
  [unique_ptr Class](../vs140/unique_ptr-class.md)   
- [<memory\>](../vs140/-memory-.md)   
+ [\<memory>](../vs140/-memory-.md)   
  [Thread Safety in the C++ Standard Library](../vs140/thread-safety-in-the-c---standard-library.md)

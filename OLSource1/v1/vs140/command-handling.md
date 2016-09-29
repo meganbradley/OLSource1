@@ -32,11 +32,11 @@ Your editor can define new commands. Commands are typically displayed in a menu,
   
  <Parent guid="guidCustomEditorCmdSet" id="0"/\>  
   
- <Strings\>  
+ \<Strings>  
   
- <ButtonText\>CustomEditor Context Menu</ButtonText\>  
+ \<ButtonText>CustomEditor Context Menu</ButtonText\>  
   
- <CommandName\>CustomEditorContextMenu</CommandName\>  
+ \<CommandName>CustomEditorContextMenu</CommandName\>  
   
  </Strings\>  
   

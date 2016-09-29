@@ -83,7 +83,7 @@ int main( )
 **The number of elements in v1 = 2**  
 **The number of elements in v2 = 3**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

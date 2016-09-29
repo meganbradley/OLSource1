@@ -132,5 +132,5 @@ static time_t to_time_t(
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<chrono\>](../vs140/-chrono-.md)   
+ [\<chrono>](../vs140/-chrono-.md)   
  [steady_clock Class](../vs140/steady_clock-struct.md)

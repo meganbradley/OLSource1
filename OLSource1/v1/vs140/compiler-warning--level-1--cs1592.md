@@ -24,4 +24,4 @@ translation.priority.ht:
 # Compiler Warning (level 1) CS1592
 Badly formed XML in included comments file -- 'reason'  
   
- A problem, reported as ***reason***, was found in the file specified by the [<include\>](../vs140/-include---csharp-programming-guide-.md) tag.
+ A problem, reported as ***reason***, was found in the file specified by the [\<include>](../vs140/-include---csharp-programming-guide-.md) tag.

@@ -175,7 +175,7 @@ int main( )
 **Merged inplace with binary predicate mod_lesser specified,**  
  **vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 )**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

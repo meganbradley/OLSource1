@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;summary&gt; (Visual C++)
-The <summary\> tag should be used to describe a type or a type member. Use [<remarks\>](../vs140/-remarks---visual-c---.md) to add supplemental information to a type description.  
+The \<summary> tag should be used to describe a type or a type member. Use [\<remarks>](../vs140/-remarks---visual-c---.md) to add supplemental information to a type description.  
   
 ## Syntax  
   
@@ -37,7 +37,7 @@ The <summary\> tag should be used to describe a type or a type member. Use [<rem
  A summary of the object.  
   
 ## Remarks  
- The text for the <summary\> tag is the only source of information about the type in IntelliSense, and is also displayed in the [Object Browser](assetId:///f89acfc5-1152-413d-9f56-3dc16e3f0470) and in the Code Comment Web Report.  
+ The text for the \<summary> tag is the only source of information about the type in IntelliSense, and is also displayed in the [Object Browser](assetId:///f89acfc5-1152-413d-9f56-3dc16e3f0470) and in the Code Comment Web Report.  
   
  Compile with [/doc](../vs140/-doc--process-documentation-comments---c-c---.md) to process documentation comments to a file.  
   

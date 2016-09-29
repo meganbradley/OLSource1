@@ -76,7 +76,7 @@ int main() {
  **6**  
 **199**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** stdext  
   

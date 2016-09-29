@@ -29,6 +29,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # seed_seq::seed_seq
-Topic deprecated, see [<random\>](../vs140/-random-.md) and [seed_seq Class](../vs140/seed_seq-class.md).  
+Topic deprecated, see [\<random>](../vs140/-random-.md) and [seed_seq Class](../vs140/seed_seq-class.md).  
   
 ## Syntax

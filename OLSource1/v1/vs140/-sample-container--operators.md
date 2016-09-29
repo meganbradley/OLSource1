@@ -18,4 +18,4 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;sample container&gt; Operators
-For more information about the operators in <sample container\>, see [<sample container\>](../vs140/-sample-container-.md).
+For more information about the operators in \<sample container>, see [\<sample container>](../vs140/-sample-container-.md).

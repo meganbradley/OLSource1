@@ -67,7 +67,7 @@ template <
 |[put](#time_put__put)|Outputs time and date information as a sequence of `CharType`s.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
@@ -238,6 +238,6 @@ explicit time_put(
  The constructor initializes its base object with [locale::facet](../vs140/locale-class.md#facet_class)( **_***Refs*).  
   
 ## See Also  
- [<locale\>](../vs140/-locale-.md)   
+ [\<locale>](../vs140/-locale-.md)   
  [time_base Class](../vs140/time_base-class.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

@@ -20,6 +20,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # random_shuffle (STL Samples)
-The std::random_shuffle() function is deprecated, replaced by [std::shuffle()](../vs140/std--shuffle.md). For a code example and more information, see [<random\>](../vs140/-random-.md) and the Stackoverflow posting [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/?LinkId=397954).  
+The std::random_shuffle() function is deprecated, replaced by [std::shuffle()](../vs140/std--shuffle.md). For a code example and more information, see [\<random>](../vs140/-random-.md) and the Stackoverflow posting [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/?LinkId=397954).  
   
 ## Syntax

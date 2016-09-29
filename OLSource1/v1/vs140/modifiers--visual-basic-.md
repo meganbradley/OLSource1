@@ -43,7 +43,7 @@ The topics in this section document Visual Basic run-time modifiers.
   
  [Key (Visual Basic)](../vs140/key--visual-basic-.md)  
   
- [Module <keyword\> (Visual Basic)](../vs140/module--keyword---visual-basic-.md)  
+ [Module \<keyword> (Visual Basic)](../vs140/module--keyword---visual-basic-.md)  
   
  [MustInherit (Visual Basic)](../vs140/mustinherit--visual-basic-.md)  
   

@@ -62,7 +62,7 @@ public:
  "b(a*)b" matches the target sequence "bb"; the `sub_match` object corresponding to capture group 1 holds iterators that both point to the second character in the sequence.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
@@ -567,7 +567,7 @@ int main()
 **compare(string) == 1**  
 **compare(sub) == 0**    
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [sub_match](../vs140/sub_match-class.md)   
  [regex_match](../vs140/-regex--functions.md#regex_match_function)   
  [regex_search](../vs140/-regex--functions.md#regex_search_function)

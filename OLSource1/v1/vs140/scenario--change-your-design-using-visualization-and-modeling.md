@@ -694,9 +694,9 @@ Make sure that your software system meets users' needs by using the visualizatio
   
 -   Horizontal *messages* represent method calls, Web service messages, or some other communication. *Execution occurrences* are vertical shaded rectangles that appear on lifelines and represent the periods during which receiving objects process calls.  
   
--   During a *synchronous* message, the sender object waits for control to <<return\>> as in a regular function call. During an *asynchronous* message, the sender can continue immediately.  
+-   During a *synchronous* message, the sender object waits for control to <\<return>> as in a regular function call. During an *asynchronous* message, the sender can continue immediately.  
   
--   Use <<create\>> messages to indicate the construction of objects by other objects. It should be the first message sent to the object.  
+-   Use <\<create>> messages to indicate the construction of objects by other objects. It should be the first message sent to the object.  
   
  See:  
   

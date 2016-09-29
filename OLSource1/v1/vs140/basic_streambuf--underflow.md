@@ -56,7 +56,7 @@ virtual int_type underflow( );
  In the `strstreambuf` class, `underflow` adjusts the [egptr](../vs140/basic_streambuf--egptr.md) pointer to access storage that was dynamically allocated by a call to `overflow`.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

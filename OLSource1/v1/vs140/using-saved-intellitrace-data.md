@@ -222,7 +222,7 @@ Go to specific points in your application's execution when you start debugging f
 |**Column**|**Shows the**|  
 |----------------|-------------------|  
 |**ID**|Thread ID number|  
-|**Name**|Thread name. Unnamed threads appear as "<No Name\>".|  
+|**Name**|Thread name. Unnamed threads appear as "\<No Name>".|  
 |**Start Time**|Time the thread was created|  
 |**End Time**|Time the thread was completed|  
   

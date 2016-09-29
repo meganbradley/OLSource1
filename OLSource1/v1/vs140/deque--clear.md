@@ -64,7 +64,7 @@ int main( )
  **The size of the deque is initially 3**  
 **The size of the deque after clearing is 0**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

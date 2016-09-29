@@ -82,7 +82,7 @@ int main( )
 **The decalared value_type Right is: 10**  
 **The resulting valarray is:  ( 0 -10 20 -10 40 -10 60 -10 80 -10 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

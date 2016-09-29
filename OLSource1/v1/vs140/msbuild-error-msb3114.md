@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3114
-**MSB3114: Could not find file '<file\>' referenced by assembly '<assembly\>'.**  
+**MSB3114: Could not find file '\<file>' referenced by assembly '\<assembly>'.**  
   
  This error is generated when an irresolvable reference is found in an existing manifest.  
   
@@ -29,4 +29,4 @@ translation.priority.ht:
 -   Check your manifests for conflicts in file references.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

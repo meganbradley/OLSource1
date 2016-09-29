@@ -167,7 +167,7 @@ int main( )
 **Multiplying elements of the vectors v1mod and v2 pairwise gives:**  
  **v3 = ( 320 180 80 20 0 20 80 ).**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

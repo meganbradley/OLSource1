@@ -32,13 +32,13 @@ Specifies a deprecated function or method.
  Optional. Specifies whether the function or method will be removed in a future release, or whether the function or method has already been removed and that its use may result in an error. Set to `deprecate` to specify that the function or method will be removed in a future release. Set to `remove` to specify that the function or method has already been removed.  
   
  `locid`  
- Optional. The identifier for localization information about the function or method. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [<loc\>](../vs140/-loc---javascript-.md) element.  
+ Optional. The identifier for localization information about the function or method. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [\<loc>](../vs140/-loc---javascript-.md) element.  
   
  `description`  
  Optional. A description of the function or method that is being deprecated.  
   
 ## Remarks  
- The elements used to annotate functions, which include `<deprecated>`, must be placed in the function body before any statements. When you mark a function as deprecated, we recommend that you replace its [<summary\>](../vs140/-summary---javascript-.md) element with the `<deprecated>` element.  
+ The elements used to annotate functions, which include `<deprecated>`, must be placed in the function body before any statements. When you mark a function as deprecated, we recommend that you replace its [\<summary>](../vs140/-summary---javascript-.md) element with the `<deprecated>` element.  
   
 ## Example  
  The following code shows how to use the `<deprecated>` element.  

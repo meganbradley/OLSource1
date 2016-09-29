@@ -66,7 +66,7 @@ virtual pos_type seekoff(
  If the function succeeds in altering the stream position or positions, it returns the resulting stream position or one of the resulting stream positions. Otherwise, it returns an invalid stream position. The default behavior is to return an invalid stream position.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

@@ -37,9 +37,9 @@ Yields a synchronization filter.
  If a compiler supports compiling both single-threaded and multi-threaded applications, for single-threaded applications the macro yields `stdext::allocators::sync_none`; in all other cases it yields `stdext::allocators::sync_shared`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
 ## See Also  
- [<allocators\>](../vs140/-allocators-.md)
+ [\<allocators>](../vs140/-allocators-.md)

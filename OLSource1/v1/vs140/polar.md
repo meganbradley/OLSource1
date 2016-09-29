@@ -101,6 +101,6 @@ int main( )
 **Argument of c2 is recovered from c2 using:**  
  **arg ( c2 ) = 0.523599 radians, which is 30 degrees.**   
 ## Requirements  
- **Header:** <complex\>  
+ **Header:** \<complex>  
   
  **Namespace:** std

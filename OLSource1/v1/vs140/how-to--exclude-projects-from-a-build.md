@@ -40,7 +40,7 @@ You can build a solution without building all projects that it contains. For exa
   
 1.  On the menu bar, choose **Build**, **Configuration Manager**.  
   
-2.  In the **Active solution configuration** list, choose **<New\>**.  
+2.  In the **Active solution configuration** list, choose **\<New>**.  
   
 3.  In the **Name** box, enter a name for the solution configuration.  
   

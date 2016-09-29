@@ -46,7 +46,7 @@ void close( );
  See [basic_filebuf::close](../vs140/basic_filebuf--close.md) for an example that uses **close**.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

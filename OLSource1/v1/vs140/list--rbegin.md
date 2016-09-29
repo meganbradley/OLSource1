@@ -99,7 +99,7 @@ int main( )
 **The reversed list is: 30 20 10**  
 **The last element in the list is now 40.**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

@@ -102,7 +102,7 @@ v2 = 10 20 30 40 50
 ```  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

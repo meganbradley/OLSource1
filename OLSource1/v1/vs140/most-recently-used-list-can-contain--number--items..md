@@ -19,7 +19,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Most recently used list can contain &lt;number&gt; items.
-MRU lists can contain up to twenty-four items. This error generally occurs when a number less than one or greater than twenty-four has been entered in the **Most recently used lists contain <number\> items** box on the General pane of Environment options in the Options dialog box.  
+MRU lists can contain up to twenty-four items. This error generally occurs when a number less than one or greater than twenty-four has been entered in the **Most recently used lists contain \<number> items** box on the General pane of Environment options in the Options dialog box.  
   
 ### To correct this error  
   

@@ -108,7 +108,7 @@ virtual iter_type do_put(
  See the example for [put](../vs140/money_put--put.md), where the virtual member function is called by **put**.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

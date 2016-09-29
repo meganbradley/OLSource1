@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # How to: Convert Standard String to System::String
-This topic shows how convert a Standard C++ Library string ([<string\>](../vs140/-string-.md)) to a <xref:System.String*>.  
+This topic shows how convert a Standard C++ Library string ([\<string>](../vs140/-string-.md)) to a <xref:System.String*>.  
   
 ## Example  
   

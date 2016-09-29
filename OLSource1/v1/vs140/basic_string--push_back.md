@@ -80,7 +80,7 @@ int main( )
 **The last character-letter of the modified str1 is now: c**  
 **The modified string str1 is: abc**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

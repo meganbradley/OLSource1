@@ -35,9 +35,9 @@ translation.priority.ht:
  A summary of the object.  
   
 ## Remarks  
- The <summary\> tag should be used to describe a type or a type member. Use [<remarks\>](../vs140/-remarks---csharp-programming-guide-.md) to add supplemental information to a type description. Use the [cref Attribute](../vs140/cref-attribute--csharp-programming-guide-.md) to enable documentation tools such as [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061) to create internal hyperlinks to documentation pages for code elements.  
+ The \<summary> tag should be used to describe a type or a type member. Use [\<remarks>](../vs140/-remarks---csharp-programming-guide-.md) to add supplemental information to a type description. Use the [cref Attribute](../vs140/cref-attribute--csharp-programming-guide-.md) to enable documentation tools such as [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061) to create internal hyperlinks to documentation pages for code elements.  
   
- The text for the <summary\> tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser Window.  
+ The text for the \<summary> tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser Window.  
   
  Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061).  
   

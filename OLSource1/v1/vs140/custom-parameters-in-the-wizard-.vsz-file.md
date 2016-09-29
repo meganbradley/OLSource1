@@ -61,12 +61,12 @@ Param="WIZARD_UI = TRUE"
 |------------|----------------|  
 |ABSOLUTE_PATH|The location of the wizard files.|  
 |HTML_FILTER|Specified in the .vsz file. File types that are placed in the HTML Files folder in **Solution Explorer**. Usually specified as "htm".|  
-|HTML_PATH|Specified in the .vsz file. The location of the wizard's [HTML files](../vs140/html-files.md). By default, it is START_PATH\HTML\\*LANGUAGE* (where *LANGUAGE* is the locale specified by your system registry). **Note:**  You can specify a different language by setting the <LangID\> to the decimal value of HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\7.0\General\UILanguage. See [Localizing a Wizard to Multiple Languages](../vs140/localizing-a-wizard-to-multiple-languages.md) for more information. For a list of decimal language values, see [Wizard Support for Other Languages](../vs140/wizard-support-for-other-languages.md).|  
+|HTML_PATH|Specified in the .vsz file. The location of the wizard's [HTML files](../vs140/html-files.md). By default, it is START_PATH\HTML\\*LANGUAGE* (where *LANGUAGE* is the locale specified by your system registry). **Note:**  You can specify a different language by setting the \<LangID> to the decimal value of HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\7.0\General\UILanguage. See [Localizing a Wizard to Multiple Languages](../vs140/localizing-a-wizard-to-multiple-languages.md) for more information. For a list of decimal language values, see [Wizard Support for Other Languages](../vs140/wizard-support-for-other-languages.md).|  
 |IMAGE_FILTER|Specified in the .vsz file. File types that are placed in the Image Files folder in Solution Explorer. Usually specified as "bmp;gif".|  
 |IMAGES_PATH|Specified in the .vsz file. The location of the image files used in the html files. By default, it is START_PATH\Images.|  
 |MISC_FILTER|Specified in the .vsz file. File types that are placed in the Misc folder in Solution Explorer. Usually specified as "vsz;vsdir;ico;vcproj;csproj;css;inf".|  
 |PRODUCT|By default, set to Visual C++; however, you can set this value to Visual Basic to create Visual Basic wizards, and so on.|  
-|PRODUCT_INSTALLATION_DIR|The directory listed in the registry at HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0\Setup\\<Product\>\ ProductDir.|  
+|PRODUCT_INSTALLATION_DIR|The directory listed in the registry at HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0\Setup\\\<Product>\ ProductDir.|  
 |PROJECT_TEMPLATE_NAME|Specified in the .vsz file. The project template file that your wizard uses to create projects. Usually specified as "txt".|  
 |PROJECT_TEMPLATE_PATH|The directory containing the project's [template files](../vs140/template-files.md). For Visual C++, it is PRODUCT_INSTALLATION_DIR\VCWizards, by default.|  
 |RELATIVE_PATH|If ABSOLUTE_PATH is not found, then RELATIVE_PATH is considered. This is the path relative to PRODUCT_INSTALLATION_DIR. For Visual C++, the RELATIVE_PATH is PRODUCT_INSTALLATION_DIR\VCWizards.|  
@@ -75,7 +75,7 @@ Param="WIZARD_UI = TRUE"
 |SCRIPT_PATH|The location of the wizard's [JScript file](../vs140/jscript-file.md). By default, it is START_PATH\Scripts|  
 |START_PATH|Specified in the .vsz file. This is not set by the user, but used internally to identify either RELATIVE_PATH or ABSOLUTE_PATH. The wizard name (WIZARD_NAME) is appended to this value.|  
 |TEMPLATE_FILTER|Specified in the .vsz file. File types that are placed in the Template Files folder in Solution Explorer. Usually specified as "txt".|  
-|TEMPLATES_PATH|Specified in the .vsz file. The location of the wizard's template files. By default, it is START_PATH\Templates\\<LangID\>. **Note:**  See HTML_PATH for more information on LangID.|  
+|TEMPLATES_PATH|Specified in the .vsz file. The location of the wizard's template files. By default, it is START_PATH\Templates\\\<LangID>. **Note:**  See HTML_PATH for more information on LangID.|  
 |WIZARD_NAME|Specifies the wizard name. Located in the .vsz and used by the rest of the symbols.|  
 |WIZARD_UI|Specified in the .vsz file. A Boolean value indicating whether the wizard contains a user interface. Specify **TRUE** for a user interface or **FALSE** for no user interface.|  
   

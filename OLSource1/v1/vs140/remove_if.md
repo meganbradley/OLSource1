@@ -125,7 +125,7 @@ Vector v1 resized elements satisfying greater6 removed is
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

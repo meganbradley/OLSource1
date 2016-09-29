@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;future&gt;
-Include the standard header <future\> to define template classes and supporting templates that simplify running a function—possibly in a separate thread—and retrieving its result. The result is either the value that is returned by the function or an exception that is emitted by the function but is not caught in the function.  
+Include the standard header \<future> to define template classes and supporting templates that simplify running a function—possibly in a separate thread—and retrieving its result. The result is either the value that is returned by the function or an exception that is emitted by the function but is not caught in the function.  
   
  This header uses Concurrency Runtime (ConcRT) so that you can use it together with other ConcRT mechanisms. For more information about ConcRT, see [Concurrency Runtime](../vs140/concurrency-runtime.md).  
   

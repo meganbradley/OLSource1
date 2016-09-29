@@ -37,7 +37,7 @@ cache_chunklist();
 ## Remarks  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

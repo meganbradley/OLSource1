@@ -50,5 +50,5 @@ enum file_type;
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<filesystem\>](../vs140/-filesystem-.md)   
+ [\<filesystem>](../vs140/-filesystem-.md)   
  [file_status Class](../vs140/file_status-class.md)

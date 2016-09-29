@@ -45,7 +45,7 @@ In the **Threads** window, you can examine and work with threads in the applicat
   
 -   The **Category** column, which categorizes threads as user interface threads, remote procedure call handlers, or worker threads. A special category identifies the main thread of the application.  
   
--   The **Name** column, which identify each thread by name, if it has one, or as <No Name\>.  
+-   The **Name** column, which identify each thread by name, if it has one, or as \<No Name>.  
   
 -   The **Location** column, which shows where the thread is running. You can expand this location to show the full call stack for the thread.  
   

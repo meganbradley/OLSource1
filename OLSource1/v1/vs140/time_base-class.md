@@ -54,7 +54,7 @@ public:
 -   **ydm** specifies the order year, day, then month, as in 1979: 2 Dec.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

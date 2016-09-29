@@ -23,36 +23,7 @@ You can extend the set of methods that you can use for LINQ queries by adding ex
   
  The following code example shows how to create an extension method called `Median` to compute a median for a sequence of numbers of type `double`.  
   
-```c#  
-public static class LINQExtension  
-{  
-    public static double Median(this IEnumerable<double> source)  
-    {  
-        if (source.Count() == 0)  
-        {  
-            throw new InvalidOperationException("Cannot compute median for an empty set.");  
-        }  
-  
-        var sortedList = from number in source  
-                         orderby number  
-                         select number;  
-  
-        int itemIndex = (int)sortedList.Count() / 2;  
-  
-        if (sortedList.Count() % 2 == 0)  
-        {  
-            // Even number of items.  
-            return (sortedList.ElementAt(itemIndex) + sortedList.ElementAt(itemIndex - 1)) / 2;  
-        }  
-        else  
-        {  
-            // Odd number of items.  
-            return sortedList.ElementAt(itemIndex);  
-        }  
-    }  
-}  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
  You call this extension method for any enumerable collection in the same way you call other aggregate methods from the <xref:System.Collections.Generic.IEnumerable`1*> interface.  
   
  The following code example shows how to use the `Median` method for an array of type `double`.  
@@ -120,16 +91,7 @@ Console.WriteLine("int: Median = " + query2);
   
  The following code shows an overload of the `Median` method that takes the <xref:System.Func`2*> delegate as a parameter. This delegate takes an object of generic type T and returns an object of type `double`.  
   
-```c#  
-// Generic overload.  
-  
-public static double Median<T>(this IEnumerable<T> numbers,  
-                       Func<T, double> selector)  
-{  
-    return (from num in numbers select selector(num)).Median();  
-}  
-```  
-  
+<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
  You can now call the `Median` method for a sequence of objects of any type. If the type does not have its own method overload, you have to pass a delegate parameter. In C#, you can use a lambda expression for this purpose. Also, in Visual Basic only, if you use the `Aggregate` or `Group By` clause instead of the method call, you can pass any value or expression that is in the scope this clause.  
   
  The following example code shows how to call the `Median` method for an array of integers and an array of strings. For strings, the median for the lengths of strings in the array is calculated. The example shows how to pass the <xref:System.Func`2*> delegate parameter to the `Median` method for each case.  
@@ -194,24 +156,7 @@ public static IEnumerable<T> AlternateElements<T>(this IEnumerable<T> source)
   
  You can call this extension method for any enumerable collection just as you would call other methods from the <xref:System.Collections.Generic.IEnumerable`1*> interface, as shown in the following code:  
   
-```c#  
-string[] strings = { "a", "b", "c", "d", "e" };  
-  
-var query = strings.AlternateElements();  
-  
-foreach (var element in query)  
-{  
-    Console.WriteLine(element);  
-}  
-/*  
- This code produces the following output:  
-  
- a  
- c  
- e  
-*/  
-```  
-  
+<CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
 ## See Also  
  <xref:System.Collections.Generic.IEnumerable`1*>   
  [Extension Methods (C# Programming Guide)](../vs140/extension-methods--csharp-programming-guide-.md)

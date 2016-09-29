@@ -44,5 +44,5 @@ void atomic_flag::clear(
   
 ## See Also  
  [atomic_flag Structure](../vs140/atomic_flag-structure.md)   
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic_flag_clear_explicit](../vs140/atomic_flag_clear_explicit-function.md)

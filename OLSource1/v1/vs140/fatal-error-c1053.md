@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Fatal Error C1053
-'<identifier\>' : function too large  
+'\<identifier>' : function too large  
   
  The function is too large to compile.  
   

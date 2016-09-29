@@ -86,7 +86,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
   
  `ATL::CWindowImplBaseT<TBase,TWinTraits>`  
   
- [ATL::CWindowImpl<CAtlPreviewCtrlImpl\>](../vs140/cwindowimpl-class.md)  
+ [ATL::CWindowImpl\<CAtlPreviewCtrlImpl>](../vs140/cwindowimpl-class.md)  
   
  `IPreviewCtrl`  
   

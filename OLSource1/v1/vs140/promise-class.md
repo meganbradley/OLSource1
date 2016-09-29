@@ -110,7 +110,7 @@ promise(
   
 ### Parameters  
  `Al`  
- A memory allocator. See [<allocators\>](../vs140/-allocators-.md) for more information.  
+ A memory allocator. See [\<allocators>](../vs140/-allocators-.md) for more information.  
   
  `Other`  
  A `promise` object.  

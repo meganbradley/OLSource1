@@ -80,7 +80,7 @@ Converts between .txt and .resx (XML-based resource format) files and common lan
 </GenerateResource>  
 ```  
   
- The `GenerateResource` task uses the <LogicalName\> metadata of an <EmbeddedResource\> item to name the resource that is embedded in an assembly.  
+ The `GenerateResource` task uses the \<LogicalName> metadata of an \<EmbeddedResource> item to name the resource that is embedded in an assembly.  
   
  Assuming that the assembly is named myAssembly, the following code generates an embedded resource named someQualifier.someResource.resources:  
   
@@ -88,7 +88,7 @@ Converts between .txt and .resx (XML-based resource format) files and common lan
 <ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
- Without the <LogicalName\> metadata, the resource would be named myAssembly.myResource.resources.  This example applies only to the Visual Basic and Visual C# build process.  
+ Without the \<LogicalName> metadata, the resource would be named myAssembly.myResource.resources.  This example applies only to the Visual Basic and Visual C# build process.  
   
 ## See Also  
  [MSBuild Tasks](../vs140/msbuild-tasks.md)   

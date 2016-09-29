@@ -94,7 +94,7 @@ In [!INCLUDE[vsUltShort](../vs140/includes/vsultshort_md.md)], [!INCLUDE[vsPreSh
   
 -   To collapse the rules in all groups, click **Collapse All**.  
   
--   To change the field that rules are grouped by, select the field from the **Group By** list. To display the rules ungrouped, select **<None\>**.  
+-   To change the field that rules are grouped by, select the field from the **Group By** list. To display the rules ungrouped, select **\<None>**.  
   
 -   To add or remove fields in rule columns, click **Column Options**.  
   

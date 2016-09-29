@@ -78,7 +78,7 @@ int main( )
  **The first element of c1 is 1**  
 **The first element of c1 is now 20**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

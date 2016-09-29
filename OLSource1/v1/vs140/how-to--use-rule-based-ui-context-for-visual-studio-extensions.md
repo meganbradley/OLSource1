@@ -128,13 +128,13 @@ Visual Studio allows loading of VSPackages when certain well-known <xref:Microso
 |||  
 |-|-|  
 |{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|The GUID refers to a UI Context. The term will be true whenever the UI Context is active and false otherwise.|  
-|HierSingleSelectionName:<pattern\>|The term will be true whenever the selection in the active hierarchy is a single item and the name of the selected item matches the .Net regular expression given by "pattern".|  
-|UserSettingsStoreQuery:<query\>|"query" represents a full path into the user settings store which must evaluate to a non-zero value. The query is split into a "collection" and "propertyName" at the last slash.|  
-|ConfigSettingsStoreQuery:<query\>|"query" represents a full path into the config settings store which must evaluate to a non-zero value. The query is split into a "collection" and "propertyName" at the last slash.|  
-|ActiveProjectFlavor:<projectTypeGuid\>|The term will be true whenever the currently selected project is flavored (aggregated) and has a flavor matching the given project type GUID.|  
-|ActiveEditorContentType:<contentType\>|The term will be true when the selected document is a text editor with the given content type.|  
-|ActiveProjectCapability:<Expression\>|The term is true when active project capabilities matches the provided expression. An expression can be something like VB &#124; CSharp|  
-|SolutionHasProjectCapability:<Expression\>|Similar to above but term is true when solution has any loaded project that matches to the expression.|  
+|HierSingleSelectionName:\<pattern>|The term will be true whenever the selection in the active hierarchy is a single item and the name of the selected item matches the .Net regular expression given by "pattern".|  
+|UserSettingsStoreQuery:\<query>|"query" represents a full path into the user settings store which must evaluate to a non-zero value. The query is split into a "collection" and "propertyName" at the last slash.|  
+|ConfigSettingsStoreQuery:\<query>|"query" represents a full path into the config settings store which must evaluate to a non-zero value. The query is split into a "collection" and "propertyName" at the last slash.|  
+|ActiveProjectFlavor:\<projectTypeGuid>|The term will be true whenever the currently selected project is flavored (aggregated) and has a flavor matching the given project type GUID.|  
+|ActiveEditorContentType:\<contentType>|The term will be true when the selected document is a text editor with the given content type.|  
+|ActiveProjectCapability:\<Expression>|The term is true when active project capabilities matches the provided expression. An expression can be something like VB &#124; CSharp|  
+|SolutionHasProjectCapability:\<Expression>|Similar to above but term is true when solution has any loaded project that matches to the expression.|  
   
 ## Compatibility with cross-version extension  
  Rule based UI Contexts is a new feature in Visual Studio 2015 and would not be ported to earlier versions. This creates a problem with extensions/packages that target multiple versions of Visual Studio which would have to be auto-loaded in Visual Studio 2013 and earlier, but can benefit from rule based UI Contexts to prevent being auto-loaded in Visual Studio 2015.  

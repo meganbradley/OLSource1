@@ -81,7 +81,7 @@ auto i = find_if( begin(v), end(v),  [=](int i) { return i > x && i < y; }  );
  These methods can be either members or stand-alone functions.  
   
 ## Random Numbers  
- It's no secret that the old CRT `rand()` function has many flaws, which have been discussed at length in the C++ community. In modern C++, you don't have to deal with those shortcomings—nor do you have to invent your own uniformly distributed random number generator—because the tools for quickly and easily creating them are available in the STL, as shown in [<random\>](../vs140/-random-.md).  
+ It's no secret that the old CRT `rand()` function has many flaws, which have been discussed at length in the C++ community. In modern C++, you don't have to deal with those shortcomings—nor do you have to invent your own uniformly distributed random number generator—because the tools for quickly and easily creating them are available in the STL, as shown in [\<random>](../vs140/-random-.md).  
   
 ## See Also  
  [Welcome Back to C++](../vs140/welcome-back-to-c----modern-c---.md)   

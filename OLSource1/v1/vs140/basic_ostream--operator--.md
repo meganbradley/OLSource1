@@ -106,7 +106,7 @@ basic_ostream<_Elem, _Tr>& operator<<(
  A reference to the basic_ostream object.  
   
 ## Remarks  
- The `<ostream>` header also defines several global insertion operators. For more information, see [operator<< (<ostream\>)](../vs140/operator-----ostream--.md).  
+ The `<ostream>` header also defines several global insertion operators. For more information, see [operator<< (\<ostream>)](../vs140/operator-----ostream--.md).  
   
  The first member function ensures that an expression of the form **ostr << endl** calls [endl](../vs140/endl.md)**(ostr)**, and then returns **\*this**. The second and third functions ensure that other manipulators, such as [hex](../vs140/hex.md), behave similarly. The remaining functions are all formatted output functions.  
   
@@ -212,12 +212,12 @@ text in streambuf
 ```  
   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_ostream Class](../vs140/basic_ostream-class.md)   
- [operator<< (<ostream\>)](../vs140/operator-----ostream--.md)   
+ [operator<< (\<ostream>)](../vs140/operator-----ostream--.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

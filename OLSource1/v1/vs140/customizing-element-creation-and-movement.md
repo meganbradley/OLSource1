@@ -103,7 +103,7 @@ The role of an Element Merge Directive
   
      You can use the path navigation tool to create each path:  
   
-    1.  Under **Process merge by creating links at paths**, click **<add path\>**.  
+    1.  Under **Process merge by creating links at paths**, click **\<add path>**.  
   
     2.  Click the drop-down arrow to the right of the list item. A tree view appears.  
   

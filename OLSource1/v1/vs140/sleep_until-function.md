@@ -45,5 +45,5 @@ void sleep_until(const xtime *Abs_time);
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<thread\>](../vs140/-thread-.md)   
+ [\<thread>](../vs140/-thread-.md)   
  [time_point](../vs140/time_point-class.md)

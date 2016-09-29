@@ -102,7 +102,7 @@ long double log1pl(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`log1p`,                `log1pf`,  `log1pl`|<math.h>|<cmath\>|  
+|`log1p`,                `log1pf`,  `log1pl`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

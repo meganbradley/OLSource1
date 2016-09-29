@@ -99,7 +99,7 @@ public:
 |[weak_ptr::operator=](#weak_ptr__operator_eq)|Replaces owned resource.|  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

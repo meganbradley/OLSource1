@@ -29,4 +29,4 @@ translation.priority.ht:
 -   Verify that the manifests in your project are valid and appropriate.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

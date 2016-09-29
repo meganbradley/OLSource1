@@ -20,9 +20,9 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3145
-**MSB3145: Build input parameter '<property\>=<value\>' is not a web url or UNC share.**  
+**MSB3145: Build input parameter '\<property>=\<value>' is not a web url or UNC share.**  
   
  This error occurs when the value of the `SupportUrl`, `ComponentsUrl`, or `ApplicationUrl` project property is not valid. The value must be a valid URI or UNC path.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

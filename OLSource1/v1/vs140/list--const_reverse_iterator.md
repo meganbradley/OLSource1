@@ -43,7 +43,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
  See the example for [rbegin](../vs140/list--rbegin.md).  
   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

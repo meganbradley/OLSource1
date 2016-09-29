@@ -47,7 +47,7 @@ t> > wios;
  The type is a synonym for template class [basic_ios](../vs140/basic_ios-class.md), specialized for elements of type `wchar_t` with default character traits.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

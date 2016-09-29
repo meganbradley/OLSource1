@@ -54,7 +54,7 @@ virtual streamsize xsgetn(
  The protected virtual member function extracts up to `_Count` elements from the input stream, as if by repeated calls to [sbumpc](../vs140/basic_streambuf--sbumpc.md), and stores them in the array beginning at `_Ptr`. It returns the number of elements actually extracted.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

@@ -20,9 +20,9 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3163
-**MSB3163: Build input parameter 'ComponentsLocation='<ComponentsLocation\>'' is not valid. The value must be one of 'HomeSite', 'Relative', or 'Absolute'. Defaulting to 'HomeSite'.**  
+**MSB3163: Build input parameter 'ComponentsLocation='\<ComponentsLocation>'' is not valid. The value must be one of 'HomeSite', 'Relative', or 'Absolute'. Defaulting to 'HomeSite'.**  
   
  This error occurs when the specified value for the `ComponentsLocation` property (the location from which prerequisites are installed) is invalid. `ComponentsLocation` should be one of three values: `HomeSite`, `Relative`, or `Absolute`.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

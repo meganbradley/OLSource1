@@ -31,7 +31,7 @@ A resource template is a customized resource that you have saved as an .rct file
  Once you have customized the resource template, you must save your changes in the template folder (or any location specified in the include path) so that the new resource template will appear under its resource type in the [Add Resource dialog box](../vs140/add-resource-dialog-box.md). You can then use the new resource template as often as needed.  
   
 > [!NOTE]
->  You can place language-specific template files in subdirectories of the main template directory. For example, you can place English-only template files in \\<resource template directory\>\1033.  
+>  You can place language-specific template files in subdirectories of the main template directory. For example, you can place English-only template files in \\\<resource template directory>\1033.  
   
 ### To create a template for resources  
   

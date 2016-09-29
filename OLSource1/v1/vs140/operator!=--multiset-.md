@@ -90,7 +90,7 @@ int main( )
  **The multisets s1 and s2 are not equal.**  
 **The multisets s1 and s3 are equal.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

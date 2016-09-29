@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Namespace or type specified in the project-level Imports &#39;&lt;qualifiedelementname&gt;&#39; doesn&#39;t contain any public member or cannot be found
-Namespace or type specified in the project-level Imports '<qualifiedelementname\>' doesn't contain any public member or cannot be found. Make sure the namespace or the type is defined and contains at least one public member. Make sure the alias name doesn't contain other aliases.  
+Namespace or type specified in the project-level Imports '\<qualifiedelementname>' doesn't contain any public member or cannot be found. Make sure the namespace or the type is defined and contains at least one public member. Make sure the alias name doesn't contain other aliases.  
   
  An import property of a project specifies a containing element that either cannot be found or does not define any `Public` members.  
   

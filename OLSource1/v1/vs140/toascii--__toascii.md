@@ -69,7 +69,7 @@ int __toascii(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`toascii`, `__toascii`|C: <ctype.h><br /><br /> C++: <cctype\> or <ctype.h>|  
+|`toascii`, `__toascii`|C: <ctype.h><br /><br /> C++: \<cctype> or <ctype.h>|  
   
  The `toascii` macro is a POSIX extension, and `__toascii` is a Microsoft-specific implementation of the POSIX extension. For additional compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

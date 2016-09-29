@@ -47,8 +47,8 @@ In mixed mode, you sometimes must marshal your data between native and managed t
 |std::string|System::String^|marshal_as|marshal_cppstd.h|  
 |System::String^|std::wstring|marshal_as|marshal_cppstd.h|  
 |std::wstring|System::String^|marshal_as|marshal_cppstd.h|  
-|System::String^|CStringT<char\>|marshal_as|marshal_atl.h|  
-|CStringT<char\>|System::String^|marshal_as|marshal_atl.h|  
+|System::String^|CStringT\<char>|marshal_as|marshal_atl.h|  
+|CStringT\<char>|System::String^|marshal_as|marshal_atl.h|  
 |System::String^|CStringT<wchar_t>|marshal_as|marshal_atl.h|  
 |CStringT<wchar_t>|System::String^|marshal_as|marshal_atl.h|  
 |System::String^|CComBSTR|marshal_as|marshal_atl.h|  

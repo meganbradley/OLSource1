@@ -97,7 +97,7 @@ int main( )
 **LPOS is advanced 4 steps forward to point to the fifth element: 5.**  
 **LPOS is moved 3 steps back to point to the 2nd element: 2.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

@@ -44,7 +44,7 @@ virtual string_type do_truename( ) const;
  See the example for [truename](../vs140/numpunct--truename.md), where the virtual member function is called by `truename`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

@@ -37,10 +37,10 @@ template <>
  The class is an explicit specialization of template class [regex_traits](../vs140/regex_traits-class.md) for elements of type `char` (so that it can take advantage of library functions that manipulate objects of this type).  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_traits](../vs140/regex_traits-class.md)

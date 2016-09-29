@@ -134,11 +134,11 @@ int main( )
 }  
 ```  
   
- **The initialized bitset<5> b1( 2 ) is: ( 00010 ).**  
-**The initialized bitset<5> b2( 6 ) is: ( 00110 ).**  
-**The bitset<5> b1 with the bit at position 0 set to 1 is: ( 00011 )**  
-**The bitset<5> b2 with the bit at position 4 set to the value**  
- **of the bit at position 0 of the bit in bitset<5> b1 is: ( 10110 )**  
+ **The initialized bitset\<5> b1( 2 ) is: ( 00010 ).**  
+**The initialized bitset\<5> b2( 6 ) is: ( 00110 ).**  
+**The bitset\<5> b1 with the bit at position 0 set to 1 is: ( 00011 )**  
+**The bitset\<5> b2 with the bit at position 4 set to the value**  
+ **of the bit at position 0 of the bit in bitset\<5> b1 is: ( 10110 )**  
 **The value of the object b = ~b2 [4] of type bool is false.**  
 **The value of the object b = b2 [4] of type bool is true.**  
 **Before flipping the value of the bit at position 4 in bitset b2,**  
@@ -147,7 +147,7 @@ int main( )
  **it becomes ( 00110 ).**  
 **After a second toggle, the value of the position 4 bit in b2 is now: 1.**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

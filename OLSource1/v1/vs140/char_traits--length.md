@@ -71,7 +71,7 @@ int main( )
  **The C-string str1 is: Hello**  
 **The length of C-string str1 is: 5.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

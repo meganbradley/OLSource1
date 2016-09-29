@@ -23,17 +23,17 @@ translation.priority.ht:
 # XML documentation parse error: &lt;error&gt;
 The following messages may appear with this error. See the individual topic for more information:  
   
--   [XML comment tag '<tag\>' appears with identical attributes more than once in the same XML comment block](../vs140/xml-comment-tag---tag---appears-with-identical-attributes-more-than-once-in-the-same-xml-comment-block.md)  
+-   [XML comment tag '\<tag>' appears with identical attributes more than once in the same XML comment block](../vs140/xml-comment-tag---tag---appears-with-identical-attributes-more-than-once-in-the-same-xml-comment-block.md)  
   
--   [XML comment tag '<tag\>' is not permitted on a '<element\>' language element](../vs140/xml-comment-tag---tag---is-not-permitted-on-a---element---language-element.md)  
+-   [XML comment tag '\<tag>' is not permitted on a '\<element>' language element](../vs140/xml-comment-tag---tag---is-not-permitted-on-a---element---language-element.md)  
   
--   [XML comment parameter '<parameter\>' does not match a parameter on the corresponding <keyword\> statement](../vs140/xml-comment-parameter---parameter---does-not-match-a-parameter-on-the-corresponding--keyword--statement.md)  
+-   [XML comment parameter '\<parameter>' does not match a parameter on the corresponding \<keyword> statement](../vs140/xml-comment-parameter---parameter---does-not-match-a-parameter-on-the-corresponding--keyword--statement.md)  
   
 -   [XML comment parameter must have a 'name' attribute](../vs140/xml-comment-parameter-must-have-a--name--attribute.md)  
   
--   [XML comment has a tag with a 'cref' attribute '<attribute\>' that could not be resolved](../vs140/xml-comment-has-a-tag-with-a--cref--attribute---attribute---that-could-not-be-resolved.md)  
+-   [XML comment has a tag with a 'cref' attribute '\<attribute>' that could not be resolved](../vs140/xml-comment-has-a-tag-with-a--cref--attribute---attribute---that-could-not-be-resolved.md)  
   
--   [XML comment tag 'include' must have a '<attribute\>' attribute](../vs140/xml-comment-tag--include--must-have-a---attribute---attribute.md)  
+-   [XML comment tag 'include' must have a '\<attribute>' attribute](../vs140/xml-comment-tag--include--must-have-a---attribute---attribute.md)  
   
  **Error ID:** BC42304  
   

@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Compiler Error CS0315
-The type 'valueType' cannot be used as type parameter 'T' in the generic type or method 'TypeorMethod<T\>'. There is no boxing conversion from 'valueType' to 'referenceType'.  
+The type 'valueType' cannot be used as type parameter 'T' in the generic type or method 'TypeorMethod\<T>'. There is no boxing conversion from 'valueType' to 'referenceType'.  
   
  This error occurs when you constrain a generic type to a particular class, and try to construct an instance of that class by using a value type that cannot be implicitly boxed to it.  
   

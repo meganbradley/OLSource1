@@ -53,7 +53,7 @@ End
 > [!IMPORTANT]
 >  The `End` statement calls the <xref:System.Environment.Exit*> method of the <xref:System.Environment*> class in the <xref:System*> namespace. <xref:System.Environment.Exit*> requires that you have `UnmanagedCode` permission. If you do not, a <xref:System.Security.SecurityException*> error occurs.  
   
- When followed by an additional keyword, [End <keyword\> Statement](../vs140/end--keyword--statement--visual-basic-.md) delineates the end of the definition of the appropriate procedure or block. For example, `End Function` terminates the definition of a `Function` procedure.  
+ When followed by an additional keyword, [End \<keyword> Statement](../vs140/end--keyword--statement--visual-basic-.md) delineates the end of the definition of the appropriate procedure or block. For example, `End Function` terminates the definition of a `Function` procedure.  
   
 ## Example  
  The following example uses the `End` statement to terminate code execution if the user requests it.  
@@ -66,4 +66,4 @@ End
 ## See Also  
  <xref:System.Security.Permissions.SecurityPermissionFlag*>   
  [Stop Statement (Visual Basic)](../vs140/stop-statement--visual-basic-.md)   
- [End <keyword\> Statement](../vs140/end--keyword--statement--visual-basic-.md)
+ [End \<keyword> Statement](../vs140/end--keyword--statement--visual-basic-.md)

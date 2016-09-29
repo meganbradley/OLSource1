@@ -44,7 +44,7 @@ typedef typename Allocator::pointer pointer;
  In most cases, an [iterator](../vs140/list--iterator.md) should be used to access the elements in a list object.  
   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

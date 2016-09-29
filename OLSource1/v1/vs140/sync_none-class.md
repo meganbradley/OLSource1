@@ -48,7 +48,7 @@ template <class Cache> class sync_none
 |[equals](#sync_none__equals)|Compares two caches for equality.|  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
@@ -105,4 +105,4 @@ bool equals(const sync<Cache>& Other) const;
 ### Remarks  
   
 ## See Also  
- [<allocators\>](../vs140/-allocators-.md)
+ [\<allocators>](../vs140/-allocators-.md)

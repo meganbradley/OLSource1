@@ -60,7 +60,7 @@ basic_istream(basic_istream&& _Right);
  See the example for [basic_ifstream::basic_ifstream](../vs140/basic_ifstream--basic_ifstream.md) to learn more about input streams.  
   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   

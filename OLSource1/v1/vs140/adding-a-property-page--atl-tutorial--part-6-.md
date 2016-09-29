@@ -110,7 +110,7 @@ Property pages are implemented as separate COM objects, which allow them to be s
   
 3.  Expand the `IDC_SIDES` node in the event list.  
   
-4.  Select `EN_CHANGE`, and from the drop-down menu to the right, click **<Add\> OnEnChangeSides**. The `OnEnChangeSides` handler declaration will be added to Polyprop.h, and the handler implementation to Polyprop.cpp.  
+4.  Select `EN_CHANGE`, and from the drop-down menu to the right, click **\<Add> OnEnChangeSides**. The `OnEnChangeSides` handler declaration will be added to Polyprop.h, and the handler implementation to Polyprop.cpp.  
   
  Next, you will modify the handler.  
   

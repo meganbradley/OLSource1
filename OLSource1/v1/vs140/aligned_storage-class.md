@@ -70,7 +70,7 @@ int main()
   
 ```  
   
-  **alignment_of<int\> == 4**  
+  **alignment_of\<int> == 4**  
 **aligned to double == 8**    
 ## Requirements  
  **Header:** <type_traits>  

@@ -68,7 +68,7 @@ int main()
   
 ```  
   
-  **add_pointer_t<int\> == int \***    
+  **add_pointer_t\<int> == int \***    
 ## Requirements  
  **Header:** <type_traits>  
   

@@ -46,11 +46,11 @@ void swap(
  The member function calls [swap](../vs140/basic_ios--swap.md)`(``_Right``)` to exchange the contents of this object for the contents of `_Right`.  
   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   
 ## See Also  
- [<ostream\>](../vs140/-ostream-.md)   
+ [\<ostream>](../vs140/-ostream-.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

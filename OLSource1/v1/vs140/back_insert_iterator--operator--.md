@@ -87,7 +87,7 @@ int main( )
  **The vector vec is: ( 10 20 ).**  
 **After the insertions, the vector vec becomes: ( 10 20 30 40 ).**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

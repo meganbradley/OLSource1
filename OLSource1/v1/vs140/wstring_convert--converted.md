@@ -44,7 +44,7 @@ size_t converted() const;
  The number of successful conversions is stored in the conversion count object.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

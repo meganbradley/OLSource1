@@ -94,7 +94,7 @@ int main( )
  **The stacks s1 and s2 are not equal.**  
 **The stacks s1 and s3 are equal.**   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

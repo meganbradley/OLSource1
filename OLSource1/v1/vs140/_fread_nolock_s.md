@@ -73,7 +73,7 @@ size_t _fread_nolock_s(
   
 |Function|Required header|  
 |--------------|---------------------|  
-|`_fread_nolock_s`|C: <stdio.h>; C++: <cstdio\> or <stdio.h>|  
+|`_fread_nolock_s`|C: <stdio.h>; C++: \<cstdio> or <stdio.h>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

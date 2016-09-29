@@ -58,7 +58,7 @@ A virtual function called to determine the hash value of sequences according to 
  See the example for [hash](../vs140/collate--hash.md), which calls `do_hash`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

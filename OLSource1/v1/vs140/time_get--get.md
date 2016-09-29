@@ -95,11 +95,11 @@ iter_type get(
  Any other element in the format must match the next input element, which is skipped. A match failure sets `ios_base::failbit` in `state` and returns.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
 ## See Also  
  [Time_get::do_get](../vs140/time_get--do_get.md)   
  [time_get Class](../vs140/time_get-class.md)   
- [<locale\>](../vs140/-locale-.md)
+ [\<locale>](../vs140/-locale-.md)

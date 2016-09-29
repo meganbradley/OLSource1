@@ -42,7 +42,7 @@ HRESULT get_checksumType ( 
   
 |Checksum Type|CryptoAPI Label|Description|  
 |-------------------|---------------------|-----------------|  
-|0|<none\>|No checksum present.|  
+|0|\<none>|No checksum present.|  
 |1|`CALG_MD5`|checksum generated with the MD5 hashing algorithm.|  
 |2|`CALG_SHA1`|checksum generated with the SHA1 hashing algorithm.|  
   

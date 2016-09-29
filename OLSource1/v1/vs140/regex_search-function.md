@@ -159,11 +159,11 @@ int main()
 **search(string, "abc") == true**  
  **matched: "abc"**   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_match](../vs140/regex_match-function.md)   
  [regex_replace](../vs140/regex_replace-function.md)

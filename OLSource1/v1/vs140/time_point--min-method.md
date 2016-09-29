@@ -40,4 +40,4 @@ static constexpr time_point min();
 ## See Also  
  [time_point Class](../vs140/time_point-class.md)   
  [duration::min](../vs140/duration--min-method.md)   
- [<chrono\>](../vs140/-chrono-.md)
+ [\<chrono>](../vs140/-chrono-.md)

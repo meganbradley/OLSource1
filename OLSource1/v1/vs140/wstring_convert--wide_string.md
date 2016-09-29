@@ -41,7 +41,7 @@ typedef std::basic_string<_Elem> wide_string;
  The type is a synonym for `std::basic_string<_Elem>`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

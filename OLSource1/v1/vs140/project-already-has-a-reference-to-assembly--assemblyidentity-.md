@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Project already has a reference to assembly &lt;assemblyidentity&gt;
-Project already has a reference to assembly <assemblyidentity\>. A second reference to '<filepath\>' cannot be added.  
+Project already has a reference to assembly \<assemblyidentity>. A second reference to '\<filepath>' cannot be added.  
   
  A project makes more than one reference to the same assembly.  
   

@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3166
-**MSB3166: Could not find required file '<file\>' for item '<package\>'.**  
+**MSB3166: Could not find required file '\<file>' for item '\<package>'.**  
   
  This error is generated when an end-user license agreement (EULA) or external check file is missing. Make sure the file exists on disk.  
   
@@ -34,4 +34,4 @@ translation.priority.ht:
 -   Copy the required files to the appropriate location.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

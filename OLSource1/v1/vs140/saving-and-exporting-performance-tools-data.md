@@ -65,7 +65,7 @@ This topic describes how to save and export performance data files.
   
 6.  Click **Export**.  
   
-     Each report view is saved to a separate file that is named <prefix\>_<report view name\>.<csv&#124;xml>  
+     Each report view is saved to a separate file that is named \<prefix>_\<report view name>.<csv&#124;xml>  
   
 #### To export performance reports from the Report view window  
   
@@ -85,7 +85,7 @@ This topic describes how to save and export performance data files.
   
 8.  Click **Export**.  
   
-     Each report view is saved to a separate file that is named <prefix\>_<report view name\>.<csv&#124;xml>  
+     Each report view is saved to a separate file that is named \<prefix>_\<report view name>.<csv&#124;xml>  
   
 ## See Also  
  [Analyzing Application Performance using Profiling Tools](../vs140/performance-explorer.md)   

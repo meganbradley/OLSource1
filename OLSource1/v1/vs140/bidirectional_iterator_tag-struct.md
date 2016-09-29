@@ -44,7 +44,7 @@ struct bidirectional_iterator_tag    : public forward_iterator_tag {};
  See [random_access_iterator_tag](../vs140/random_access_iterator_tag-struct.md) for an example of how to use `bidirectional_iterator_tag`.  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

@@ -36,7 +36,7 @@ typedef typename traits_type::pos_type pos_type;
 ```  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

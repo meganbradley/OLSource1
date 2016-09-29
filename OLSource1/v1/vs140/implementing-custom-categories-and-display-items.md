@@ -46,9 +46,9 @@ A VSPackage can provide control of the fonts and colors of its text to the [!INC
   
 ## To create or identify categories  
   
--   Construct a special type of category registry entry under [HKLM\SOFTWARE\Microsoft \Visual Studio\\*<Visual Studio version\>*\FontAndColors\\`<Category>`]  
+-   Construct a special type of category registry entry under [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>*\FontAndColors\\`<Category>`]  
   
-     *<Category\>* is the non-localized name of the category.  
+     *\<Category>* is the non-localized name of the category.  
   
 -   Populate the registry with two values:  
   
@@ -61,9 +61,9 @@ A VSPackage can provide control of the fonts and colors of its text to the [!INC
   
 ## To Create or Identify Groups  
   
--   Construct a special type of category registry entry under [HKLM\SOFTWARE\Microsoft \Visual Studio\\*<Visual Studio version\>*\FontAndColors\\*<group\>*]  
+-   Construct a special type of category registry entry under [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>*\FontAndColors\\*\<group>*]  
   
-     *<group\>* is the non-localized name of the group.  
+     *\<group>* is the non-localized name of the group.  
   
 -   Populate the registry with two values:  
   

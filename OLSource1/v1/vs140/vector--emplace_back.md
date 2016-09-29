@@ -59,7 +59,7 @@ int main()
 ```  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

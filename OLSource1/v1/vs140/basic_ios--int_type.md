@@ -36,7 +36,7 @@ typedef typename traits_type::int_type int_type;
 ```  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

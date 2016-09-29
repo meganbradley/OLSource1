@@ -42,7 +42,7 @@ virtual CharType do_thousands_sep( ) const;
  See the example for [thousands_sep](../vs140/moneypunct--thousands_sep.md), where the virtual member function is called by `thousands_sep`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

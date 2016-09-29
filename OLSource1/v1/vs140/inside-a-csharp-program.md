@@ -37,7 +37,7 @@ The section discusses the general structure of a C# program, and includes the st
   
 -   [C#Reference](../vs140/csharp-reference.md)  
   
--   [<paveover\>C# Sample Applications](assetId:///9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
+-   [\<paveover>C# Sample Applications](assetId:///9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](../vs140/includes/csharplangspec_md.md)]  

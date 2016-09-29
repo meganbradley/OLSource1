@@ -36,7 +36,7 @@ Use this dialog box to specify advanced options for [Mt.exe](http://msdn.microso
  Specifies the search path for files that are referenced in `<file>` elements. This option also uses the /hashupdate option.  
   
 ## See Also  
- [<file\> Element](../vs140/-file--element--clickonce-application-.md)   
+ [\<file> Element](../vs140/-file--element--clickonce-application-.md)   
  [ClickOnce Application Manifest](../vs140/clickonce-application-manifest.md)   
  [Manifest Tool Property Pages](../vs140/manifest-tool-property-pages.md)   
  [How to: Open Project Property Pages](../vs140/how-to--open-project-property-pages.md)   

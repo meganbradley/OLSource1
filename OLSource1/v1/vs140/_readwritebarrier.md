@@ -28,7 +28,7 @@ translation.priority.ht:
  Limits the compiler optimizations that can reorder memory accesses across the point of the call.  
   
 > [!CAUTION]
->  The `_ReadBarrier`, `_WriteBarrier`, and `_ReadWriteBarrier` compiler intrinsics and the `MemoryBarrier` macro are all deprecated and should not be used. For inter-thread communication, use mechanisms such as [atomic_thread_fence](../vs140/atomic_thread_fence-function.md) and [std::atomic<T\>](../vs140/-atomic-.md), which are defined in the [C++ Standard Template Library](../vs140/c---standard-library-reference.md). For hardware access, use the [/volatile:iso](../vs140/-volatile--volatile-keyword-interpretation-.md) compiler option together with the [volatile](../vs140/volatile--c---.md) keyword.  
+>  The `_ReadBarrier`, `_WriteBarrier`, and `_ReadWriteBarrier` compiler intrinsics and the `MemoryBarrier` macro are all deprecated and should not be used. For inter-thread communication, use mechanisms such as [atomic_thread_fence](../vs140/atomic_thread_fence-function.md) and [std::atomic\<T>](../vs140/-atomic-.md), which are defined in the [C++ Standard Template Library](../vs140/c---standard-library-reference.md). For hardware access, use the [/volatile:iso](../vs140/-volatile--volatile-keyword-interpretation-.md) compiler option together with the [volatile](../vs140/volatile--c---.md) keyword.  
   
 ## Syntax  
   

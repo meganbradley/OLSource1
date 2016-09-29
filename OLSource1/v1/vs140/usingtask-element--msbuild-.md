@@ -28,8 +28,8 @@ translation.priority.ht:
 # UsingTask Element (MSBuild)
 Maps the task that is referenced in a [Task](../vs140/task-element--msbuild-.md) element to the assembly that contains the task implementation.  
   
- <Project\>  
- <UsingTask\>  
+ \<Project>  
+ \<UsingTask>  
   
 ## Syntax  
   

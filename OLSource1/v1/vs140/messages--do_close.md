@@ -50,7 +50,7 @@ virtual void do_close(
  See the example for [close](../vs140/messages--close.md), which calls `do_close`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

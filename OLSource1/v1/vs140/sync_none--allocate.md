@@ -44,7 +44,7 @@ void *allocate(std::size_t _Count);
  The member function returns `cache.allocate(_Count)`, where `cache` is the cache object.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

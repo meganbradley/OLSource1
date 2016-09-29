@@ -73,10 +73,10 @@ int main()
   
 ```  
   
-  **is_volatile<trivial\> == false**  
-**is_volatile<volatile trivial\> == true**  
-**is_volatile<int\> == false**  
-**is_volatile<volatile int\> == true**    
+  **is_volatile\<trivial> == false**  
+**is_volatile\<volatile trivial> == true**  
+**is_volatile\<int> == false**  
+**is_volatile\<volatile int> == true**    
 ## Requirements  
  **Header:** <type_traits>  
   

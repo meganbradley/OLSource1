@@ -48,7 +48,7 @@ template <class Cache> class sync_shared
 |[equals](#sync_shared__equals)|Compares two caches for equality.|  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
@@ -108,4 +108,4 @@ bool equals(const sync_shared<Cache>& Other) const;
 ### Remarks  
   
 ## See Also  
- [<allocators\>](../vs140/-allocators-.md)
+ [\<allocators>](../vs140/-allocators-.md)

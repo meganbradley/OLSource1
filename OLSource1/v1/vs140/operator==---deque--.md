@@ -87,7 +87,7 @@ int main( )
  **The deques are equal.**  
 **The deques are not equal.**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

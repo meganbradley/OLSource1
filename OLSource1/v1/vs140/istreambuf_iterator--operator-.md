@@ -76,7 +76,7 @@ int main( )
 **I'll be back.**  
 **^Z**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

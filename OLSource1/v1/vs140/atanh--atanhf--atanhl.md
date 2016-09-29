@@ -80,7 +80,7 @@ long double atanhl(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`atanh`, `atanhf`, `atanhl`|<math.h>|<cmath\>|  
+|`atanh`, `atanhf`, `atanhl`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

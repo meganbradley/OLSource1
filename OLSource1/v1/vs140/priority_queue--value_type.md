@@ -66,7 +66,7 @@ int main( )
  **The value_type is AnInt = 69**  
 **The element at the top of the priority_queue is 69.**   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

@@ -73,10 +73,10 @@ int main()
   
 ```  
   
-  **is_scalar<trivial\> == false**  
+  **is_scalar\<trivial> == false**  
 **is_scalar<trivial \*> == true**  
-**is_scalar<int\> == true**  
-**is_scalar<float\> == true**    
+**is_scalar\<int> == true**  
+**is_scalar\<float> == true**    
 ## Requirements  
  **Header:** <type_traits>  
   

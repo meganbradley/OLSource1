@@ -20,9 +20,9 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3175
-**MSB3175: Invalid value for '<file\>' of item '<build task\>'.**  
+**MSB3175: Invalid value for '\<file>' of item '\<build task>'.**  
   
  This warning is generated when the build process does not recognize the value of various enumeration-based task item properties such as `AssemblyType`, `DependencyType`, `FileType`, or `TargetZone`. Applies to both application manifests and deployment manifests.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

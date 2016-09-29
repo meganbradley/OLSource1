@@ -23,10 +23,10 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # vector&lt;bool&gt;::reference Class
-The `vector<bool>::reference` class is a proxy class provided by the [vector<bool\> Class](../vs140/vector-bool--class.md) to simulate `bool&`.  
+The `vector<bool>::reference` class is a proxy class provided by the [vector\<bool> Class](../vs140/vector-bool--class.md) to simulate `bool&`.  
   
 ## Remarks  
- A simulated reference is required because C++ does not natively allow direct references to bits. `vector<bool>` uses only one bit per element, which can be referenced by using this proxy class. However, the reference simulation is not complete because certain assignments are not valid. For example, because the address of the `vector<bool>::reference` object cannot be taken, the following code that uses [vector<bool\>::operator&#91;&#93;](../vs140/vector-bool---operator.md) is not correct:  
+ A simulated reference is required because C++ does not natively allow direct references to bits. `vector<bool>` uses only one bit per element, which can be referenced by using this proxy class. However, the reference simulation is not complete because certain assignments are not valid. For example, because the address of the `vector<bool>::reference` object cannot be taken, the following code that uses [vector\<bool>::operator&#91;&#93;](../vs140/vector-bool---operator.md) is not correct:  
   
 ```cpp  
     vector<bool> vb;  
@@ -44,11 +44,11 @@ The `vector<bool>::reference` class is a proxy class provided by the [vector<boo
 |[operator=](../vs140/vector-bool---reference--operator=.md)|Assigns a Boolean value to a bit, or the value held by a referenced element to a bit.|  
   
 ## Requirements  
- **Header**: <vector\>  
+ **Header**: \<vector>  
   
  **Namespace:** std  
   
 ## See Also  
- [<vector\>](../vs140/-vector-.md)   
+ [\<vector>](../vs140/-vector-.md)   
  [Thread Safety in the C++ Standard Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

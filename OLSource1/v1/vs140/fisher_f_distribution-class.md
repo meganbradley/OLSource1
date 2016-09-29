@@ -60,7 +60,7 @@ public:
   
 #### Parameters  
  `RealType`  
- The floating-point result type, defaults to `double`. For possible types, see [<random\>](../vs140/-random-.md).  
+ The floating-point result type, defaults to `double`. For possible types, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Fisher's F-Distribution. The following table links to articles about individual members.  
@@ -72,7 +72,7 @@ public:
   
  The property functions `m()` and `n()` return the values for the stored distribution parameters `m` and `n` respectively.  
   
- For more information about distribution classes and their members, see [<random\>](../vs140/-random-.md).  
+ For more information about distribution classes and their members, see [\<random>](../vs140/-random-.md).  
   
  For detailed information about the F- distribution, see the Wolfram MathWorld article                 [F-Distribution](http://go.microsoft.com/fwlink/?LinkId=400899).  
   
@@ -210,7 +210,7 @@ Distribution for 10 samples:
 ```  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
@@ -264,4 +264,4 @@ struct param_type {
  This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

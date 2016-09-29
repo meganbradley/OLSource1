@@ -92,7 +92,7 @@ basic_filebuf<Elem, Tr> *open(
  See [basic_filebuf::close](../vs140/basic_filebuf--close.md) for an example that uses **open**.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

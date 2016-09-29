@@ -107,7 +107,7 @@ int main( )
 **The reversed multimap is: 3 2 1 .**  
 **After the erasure, the last element in the reversed multimap is 2.**   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

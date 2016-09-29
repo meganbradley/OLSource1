@@ -51,7 +51,7 @@ Calling any one of the potentially unsafe methods in the Standard C++ Library wi
     #pragma warning(disable:4996)  
     ```  
   
- Also, you can manually change the level of warning C4996 with the **/w<l\><n\>** compiler option. For example, to set warning C4996 to level 4:  
+ Also, you can manually change the level of warning C4996 with the **/w\<l>\<n>** compiler option. For example, to set warning C4996 to level 4:  
   
 ```  
 cl /w44996 [other compiler options] myfile.cpp  

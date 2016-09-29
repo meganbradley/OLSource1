@@ -117,7 +117,7 @@ int main( )
 **After the swap_range, vector v1 is ( 6 6 6 6 6 6 ).**  
 **After the swap_range deque d1 is   ( 0 1 2 3 4 5 ).**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

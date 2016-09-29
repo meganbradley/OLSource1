@@ -110,11 +110,11 @@ int main()
 **'3' is digit == true**  
 **hex C == 12**   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_traits](../vs140/regex_traits-class.md)   
  [regex_traits::translate](../vs140/regex_traits--translate.md)

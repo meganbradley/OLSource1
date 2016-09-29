@@ -98,6 +98,6 @@ int main( )
 **The imaginary part of c2 is imag ( c2 ) = -3.**  
 **The norm of (c1 \* conj (c1) ) is c1 \* c2 = 25**   
 ## Requirements  
- **Header:** <complex\>  
+ **Header:** \<complex>  
   
  **Namespace:** std

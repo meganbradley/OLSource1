@@ -61,7 +61,7 @@ Describes a function passed to [register_call](../vs140/ios_base--register_callb
  See [register_call](../vs140/ios_base--register_callback.md) for an example that uses `event_callback`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

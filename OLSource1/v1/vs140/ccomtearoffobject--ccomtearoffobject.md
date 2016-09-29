@@ -42,7 +42,7 @@ The constructor.
   
 #### Parameters  
  `pv`  
- [in] Pointer that will be converted to a pointer to a **CComObject<Owner\>** object.  
+ [in] Pointer that will be converted to a pointer to a **CComObject\<Owner>** object.  
   
 ## Remarks  
  Increments the owner's reference count by one.  

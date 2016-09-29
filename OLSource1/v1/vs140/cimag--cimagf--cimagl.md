@@ -75,7 +75,7 @@ long double cimagl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`cimag`,               `cimagf`, `cimagl`|<complex.h>|<ccomplex\>|  
+|`cimag`,               `cimagf`, `cimagl`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

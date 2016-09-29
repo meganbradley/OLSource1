@@ -46,10 +46,10 @@ typedef Type element_type;
  The type is a synonym for the template parameter `Ty`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
  [unique_ptr](../vs140/unique_ptr-class.md)   
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

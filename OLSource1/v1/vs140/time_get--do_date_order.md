@@ -51,7 +51,7 @@ order( ) const;
  See the example for [date_order](../vs140/time_get--date_order.md), which calls `do_date_order`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

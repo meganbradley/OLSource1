@@ -21,10 +21,10 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3165
-**MSB3165: The value of the '<public key\>' attribute in '<package\>' does not match that of file '<file\>'.**  
+**MSB3165: The value of the '\<public key>' attribute in '\<package>' does not match that of file '\<file>'.**  
   
  This warning occurs when the public key specified in the bootstrapper package file does not match the signature of the redistributable package on disk, or the redistributable package is not signed. The build will take the public key value of that on disk if it is signed, or take the hash of the redistributable package on disk if it is not signed.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)   
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)   
  [Product and Package Schema Reference](../vs140/product-and-package-schema-reference.md)

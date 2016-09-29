@@ -49,5 +49,5 @@ bool try_lock_until(const xtime *Abs_time);
   
 ## See Also  
  [unique_lock Class](../vs140/unique_lock-class.md)   
- [<mutex\>](../vs140/-mutex-.md)   
+ [\<mutex>](../vs140/-mutex-.md)   
  [time_point Class](../vs140/time_point-class.md)

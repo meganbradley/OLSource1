@@ -72,7 +72,7 @@ int main( )
 **The minimum base 10 exponent for type double is:  -307**  
 **The minimum base 10 exponent for type long double is:  -307**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

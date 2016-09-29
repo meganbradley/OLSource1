@@ -41,7 +41,7 @@ virtual streamsize showmanyc( );
  The default behavior is to return zero.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

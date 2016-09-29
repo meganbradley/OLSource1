@@ -61,7 +61,7 @@ In the IDE, all information that is needed to build a project is exposed as     
  The                  **Any CPU** target platform value that you might see in                  **Configuration Manager** has no effect on native C++ projects; it is relevant for C++/CLI and other .NET project types. For more information, see                  [/CLRIMAGETYPE (Specify Type of CLR Image)](../vs140/-clrimagetype--specify-type-of-clr-image-.md).  
   
 ## Property pages  
- As stated earlier, the Visual C++ project system is based on                  [MSBuild](../vs140/msbuild.md) and the values are stored in the XML project file, default .props and .targets files that (for Visual Studio 2015) are located in                     **<drive\>\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140** and in custom .props files that you might add. We highly recommend that you use NOT edit those files manually, and instead use the property pages in the IDE  to modify all properties, especially those that participate in inheritance, unless you have a very good understanding of MSBuild.  
+ As stated earlier, the Visual C++ project system is based on                  [MSBuild](../vs140/msbuild.md) and the values are stored in the XML project file, default .props and .targets files that (for Visual Studio 2015) are located in                     **\<drive>\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140** and in custom .props files that you might add. We highly recommend that you use NOT edit those files manually, and instead use the property pages in the IDE  to modify all properties, especially those that participate in inheritance, unless you have a very good understanding of MSBuild.  
   
  The following illustration shows the property pages for a Visual C++ project. In the left pane, the                  **VC++ Directories***rule* is selected, and the right pane lists the properties that are associated with that rule. The                  `$(...)` values are unfortunately called                  *macros*. These are                  *not* C/C++ macros but simply compile-time constants. Macros are discussed in the                  [Property Page Macros](#bkmkPropertiesVersusMacros) section later in this article.)  
   
@@ -138,7 +138,7 @@ In the IDE, all information that is needed to build a project is exposed as     
 3.  In the dialog box, specify a name and value for the macro. Optionally, select the                                          **Set this macro as an environment variable in the build environment** check box.  
   
 ## Property Editor  
- You can use the Property Editor to modify certain string properties and select macros as values. To access the Property Editor, select a property on a property page and then choose the down arrow button on the right. If the drop-down list contains                  **<Edit\>**, then you can choose it to display the Property Editor for that property.  
+ You can use the Property Editor to modify certain string properties and select macros as values. To access the Property Editor, select a property on a property page and then choose the down arrow button on the right. If the drop-down list contains                  **\<Edit>**, then you can choose it to display the Property Editor for that property.  
   
  ![Property&#95;Editor&#95;Dropdown](../vs140/media/property_editor_dropdown.png "Property_Editor_Dropdown")  
   
@@ -152,7 +152,7 @@ In the IDE, all information that is needed to build a project is exposed as     
 > [!IMPORTANT]
 >  **.user files and why they are problematic**  
 >   
->  Past versions of Visual Studio used global property sheets that had a .user file name extension and were located in the <userprofile\>\AppData\Local\Microsoft\MSBuild\v4.0\ folder. We no longer recommend these files because they set properties for project configurations on a per-user, per-computer basis. Such "global" settings can interfere with builds, especially when you are targeting more than one platform on your build computer. For example, if you have both an MFC project and Windows Phone project, the .user properties would be invalid for one of them. Reusable property sheets are more flexible and more robust.  
+>  Past versions of Visual Studio used global property sheets that had a .user file name extension and were located in the \<userprofile>\AppData\Local\Microsoft\MSBuild\v4.0\ folder. We no longer recommend these files because they set properties for project configurations on a per-user, per-computer basis. Such "global" settings can interfere with builds, especially when you are targeting more than one platform on your build computer. For example, if you have both an MFC project and Windows Phone project, the .user properties would be invalid for one of them. Reusable property sheets are more flexible and more robust.  
 >   
 >  Although .user files are still installed by Visual Studio and participate in property inheritance, they are empty by default. The best practice is to delete the reference to them in                      **Property Manager** to ensure that your projects operate independently of any per-user, per-computer settings This is important to ensure correct behavior in a SCC (source code control) environment.  
   

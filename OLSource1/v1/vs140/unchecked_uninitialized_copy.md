@@ -70,6 +70,6 @@ template<class InputIterator, class ForwardIterator, class Allocator>
  For more information on checked iterators, see [Checked Iterators](../vs140/checked-iterators.md).  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** stdext

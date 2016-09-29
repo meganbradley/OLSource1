@@ -42,7 +42,7 @@ typedef typename allocator_type::const_pointer const_pointer;
  In most cases, an [iterator](../vs140/multimap--iterator.md) should be used to access the elements in a multimap object.  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

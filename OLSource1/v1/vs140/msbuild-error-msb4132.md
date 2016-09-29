@@ -18,7 +18,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB4132
-**MSB4132: The tools version "'<version\>'" is unrecognized.**  
+**MSB4132: The tools version "'\<version>'" is unrecognized.**  
   
  [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] could find a Toolset that corresponds to the specified value of `ToolsVersion`.  
   

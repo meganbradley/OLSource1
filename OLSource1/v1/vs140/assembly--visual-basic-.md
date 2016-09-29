@@ -36,5 +36,5 @@ Specifies that an attribute at the beginning of a source file applies to the ent
  You can also apply an attribute to an assembly in the AssemblyInfo.vb file, in which case you do not have to use an attribute block in your main source-code file.  
   
 ## See Also  
- [Module <keyword\>](../vs140/module--keyword---visual-basic-.md)   
+ [Module \<keyword>](../vs140/module--keyword---visual-basic-.md)   
  [Attributes (C# and Visual Basic)](../vs140/attributes--csharp-and-visual-basic-.md)

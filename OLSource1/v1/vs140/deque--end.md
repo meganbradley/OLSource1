@@ -83,7 +83,7 @@ int main( )
 **The new next-to-last integer of c1 is 400**  
 **The deque is now: 10 400 30**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

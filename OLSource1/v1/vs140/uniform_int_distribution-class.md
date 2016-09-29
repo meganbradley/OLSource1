@@ -37,7 +37,7 @@ template<class IntType = int>class uniform_int_distribution{public:    // types 
   
 #### Parameters  
  `IntType`  
- The integer result type, defaults to `int`. For possible types, see [<random\>](../vs140/-random-.md).  
+ The integer result type, defaults to `int`. For possible types, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  The template class describes an inclusive-inclusive distribution that produces values of a user-specified integral type with a distribution so that every value is equally probable. The following table links to articles about individual members.  
@@ -47,9 +47,9 @@ template<class IntType = int>class uniform_int_distribution{public:    // types 
 |[uniform_int_distribution::uniform_int_distribution](#uniform_int_distribution__uniform_int_distribution)|`uniform_int_distribution::a`|`uniform_int_distribution::param`|  
 |`uniform_int_distribution::operator()`|`uniform_int_distribution::b`|[uniform_int_distribution::param_type](#uniform_int_distribution__param_type)|  
   
- The property member `a()` returns the currently stored minimum bound of the distribution, while `b()` returns the currently stored maximum bound. For this distribution class, these minimum and maximum values are the same as those returned by the common property functions `min()` and `max()` described in the [<random\>](../vs140/-random-.md) topic.  
+ The property member `a()` returns the currently stored minimum bound of the distribution, while `b()` returns the currently stored maximum bound. For this distribution class, these minimum and maximum values are the same as those returned by the common property functions `min()` and `max()` described in the [\<random>](../vs140/-random-.md) topic.  
   
- For more information about distribution classes and their members, see [<random\>](../vs140/-random-.md).  
+ For more information about distribution classes and their members, see [\<random>](../vs140/-random-.md).  
   
 ## Example  
   
@@ -110,7 +110,7 @@ int main()
 ## Output  
  **Use CTRL-Z to bypass data entry and run using default values.Enter an integer value for the lower bound of the distribution: 0Enter an integer value for the upper bound of the distribution: 12Enter an integer value for the sample count: 200lower bound == 0upper bound == 12Distribution for 200 samples:    0 :::::::::::::::    1 :::::::::::::::::::::    2 ::::::::::::::::::    3 :::::::::::::::    4 :::::::    5 :::::::::::::::::::::    6 :::::::::::::    7 ::::::::::    8 :::::::::::::::    9 :::::::::::::   10 ::::::::::::::::::::::   11 :::::::::::::   12 :::::::::::::::::**   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
@@ -164,4 +164,4 @@ struct param_type {
  This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

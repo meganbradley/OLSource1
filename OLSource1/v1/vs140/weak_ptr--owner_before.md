@@ -49,10 +49,10 @@ template<class Other>
  The template member function returns `true` if `*this` is `ordered before``ptr`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
  [weak_ptr Class](../vs140/weak_ptr-class.md)   
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

@@ -66,7 +66,7 @@ int fesetenv(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`fesetenv`|<fenv.h>|<cfenv\>|  
+|`fesetenv`|<fenv.h>|\<cfenv>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

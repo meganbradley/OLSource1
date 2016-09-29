@@ -47,7 +47,7 @@ char *str( );
  See [strstream::str](../vs140/strstreambuf--str.md) for a sample that uses **str**.  
   
 ## Requirements  
- **Header:** <strstream\>  
+ **Header:** \<strstream>  
   
  **Namespace:** std  
   

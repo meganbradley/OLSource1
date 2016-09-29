@@ -52,7 +52,7 @@ wbuffer_convert(std::streambuf* _Bytebuf = 0,
  This constructor constructs a stream buffer object, initializes the object representing the underlying byte stream buffer to `_Bytebuf`, initializesthe conversion objectto `_Pcvt`, and initializes the conversion state object to `_State`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

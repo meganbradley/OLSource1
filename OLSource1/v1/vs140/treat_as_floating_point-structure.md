@@ -39,4 +39,4 @@ struct treat_as_floating_point : is_floating_point< Rep>;
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<chrono\>](../vs140/-chrono-.md)
+ [\<chrono>](../vs140/-chrono-.md)

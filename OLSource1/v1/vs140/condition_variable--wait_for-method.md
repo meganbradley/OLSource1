@@ -50,7 +50,7 @@ bool wait_for(
   
 #### Parameters  
  `Lck`  
- A [unique_lock<mutex\>](unique_lock<mutex>) object.  
+ A [unique_lock\<mutex>](unique_lock<mutex>) object.  
   
  `Rel_time`  
  A `chrono::duration` object that specifies the amount of time before the thread wakes up.  

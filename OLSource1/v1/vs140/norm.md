@@ -106,6 +106,6 @@ int main( )
 **The norm of c2 given by: norm ( c2 ) = 25**  
 **The modulus of c2 is the square root of the norm: sqrt ( normc2 ) = 5.**   
 ## Requirements  
- **Header:** <complex\>  
+ **Header:** \<complex>  
   
  **Namespace:** std

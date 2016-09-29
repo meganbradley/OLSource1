@@ -67,7 +67,7 @@ int main( )
 ```  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

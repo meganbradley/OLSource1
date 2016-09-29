@@ -91,7 +91,7 @@ int main( )
  **The element ( 1,10 ) precedes the element ( 2,5 ).**  
 **The element ( 2,5 ) does not precede the element ( 1,10 ).**   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

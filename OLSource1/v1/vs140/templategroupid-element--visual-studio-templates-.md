@@ -24,9 +24,9 @@ translation.priority.ht:
 # TemplateGroupID Element (Visual Studio Templates)
 Specifies what kind of project an item templates will show up in. This element is significant when [ShowByDefault (Visual Studio Templates)](../vs140/showbydefault--visual-studio-templates-.md) is set to `false`. When [ShowByDefault (Visual Studio Templates)](../vs140/showbydefault--visual-studio-templates-.md) is set to `true`, then an item template is available in all project types.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <TemplateGroupID\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<TemplateGroupID>  
   
 ## Syntax  
   
@@ -57,7 +57,7 @@ Specifies what kind of project an item templates will show up in. This element i
 ## Remarks  
  `TemplateGroupID` is an element.  
   
- The value of the `TemplateGroupID` element is used along with project system registration (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<version number\>*\Projects\\) to filter templates that appear in the **Add New Item** dialog box.  
+ The value of the `TemplateGroupID` element is used along with project system registration (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<version number>*\Projects\\) to filter templates that appear in the **Add New Item** dialog box.  
   
 |Visual C++ Value|Meaning|  
 |------------------------|-------------|  

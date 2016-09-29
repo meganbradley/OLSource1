@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3164
-**MSB3164: No 'HomeSite' attribute has been provided for '<package\>', so the package will be published to the same location as the bootstrapper.**  
+**MSB3164: No 'HomeSite' attribute has been provided for '\<package>', so the package will be published to the same location as the bootstrapper.**  
   
  This warning is generated when the user wants to use HomeSite, but the appropriate HomeSite info for the specified package is not available.  
   
@@ -31,4 +31,4 @@ translation.priority.ht:
 -   Alternatively, do not use HomeSite.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

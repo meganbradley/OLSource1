@@ -44,6 +44,6 @@ typedef std::ptrdiff_t difference_type;
  The integer type implements  as a typedef for `std::ptrdiff_t`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext

@@ -80,7 +80,7 @@ int main( )
 **Whether int objects have an explicit specialization in the class: 1**  
 **Whether int\* objects have an explicit specialization in the class: 0**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

@@ -65,7 +65,7 @@ The maximum possible length of the vector is 1073741823.
 ```  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

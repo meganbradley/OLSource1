@@ -38,7 +38,7 @@ max_fixed_size();
  This constructor initializes the stored value `_Nblocks` to zero.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

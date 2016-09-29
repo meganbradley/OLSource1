@@ -34,12 +34,12 @@ Indicates that the text is multiple lines of code.
  The text to mark as code.  
   
 ## Remarks  
- Use the `<code>` tag to indicate multiple lines as code. Use [<c\> (Visual Basic)](../vs140/-c---visual-basic-.md) to indicate that text within a description should be marked as code.  
+ Use the `<code>` tag to indicate multiple lines as code. Use [\<c> (Visual Basic)](../vs140/-c---visual-basic-.md) to indicate that text within a description should be marked as code.  
   
  Compile with [/doc](../vs140/-doc.md) to process documentation comments to a file.  
   
 ## Example  
- This example uses the <code\> tag to include example code for using the `ID` field.  
+ This example uses the \<code> tag to include example code for using the `ID` field.  
   
  [!code[VbVbcnXmlDocComments#2](../vs140/codesnippet/VisualBasic/-code---visual-basic-_1.vb)]  
   

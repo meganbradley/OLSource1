@@ -87,7 +87,7 @@ int main( )
  **( 4 7 10 13 16 19 ).**  
 **The start index of slice vaSlice is: 3.**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

@@ -302,7 +302,7 @@ You can write your own host that processes text templates. A basic custom host i
     #>  
     ```  
   
-3.  In the code, replace <YOUR PATH\> with the path of the Sample.min file from the design-specific language you created in the first procedure.  
+3.  In the code, replace \<YOUR PATH> with the path of the Sample.min file from the design-specific language you created in the first procedure.  
   
 4.  Save and close the file.  
   

@@ -32,7 +32,7 @@ XML comment tag 'returns' is not permitted on a 'declare sub' language element. 
 -   Remove the unsupported `<`returns`>` tag.  
   
 ## See Also  
- [<returns\> (Visual Basic)](../vs140/-returns---visual-basic-.md)   
+ [\<returns> (Visual Basic)](../vs140/-returns---visual-basic-.md)   
  [Recommended XML Tags for Documentation Comments (Visual Basic)](../vs140/recommended-xml-tags-for-documentation-comments--visual-basic-.md)   
  [Documenting Your Code with XML (Visual Basic)](../vs140/documenting-your-code-with-xml--visual-basic-.md)   
  [Declare Statement](../vs140/declare-statement.md)

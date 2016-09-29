@@ -90,7 +90,7 @@ int main(int argc, char **argv)
 |[operator=](#basic_ofstream__operator_eq)|Assigns the content of this stream object. This is a move assignment involving an `rvalue reference` that does not leave a copy behind.|  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

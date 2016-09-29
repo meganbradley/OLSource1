@@ -133,7 +133,7 @@ int main( )
 **The recovered char_type of ch1 is equal to the original ch1.**  
 **The recovered char_type of ch2 is equal to the original ch2.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

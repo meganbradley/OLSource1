@@ -109,7 +109,7 @@ In Visual Studio 2015, the C++ compiler and standard library have been updated w
   
 ###  <a name="BK_CppStdLib"></a> C++ Standard Library  
   
--   **User-Defined Literals (UDLs) for Standard Library Types** The <chrono\>, <string\>, and <complex\> headers now provide UDL-operators for your convenience. For example, 123ms means std::chrono::milliseconds(123), "hello"s means std::string("hello"), and 3.14i means std::complex(0.0, 3.14).  
+-   **User-Defined Literals (UDLs) for Standard Library Types** The \<chrono>, \<string>, and \<complex> headers now provide UDL-operators for your convenience. For example, 123ms means std::chrono::milliseconds(123), "hello"s means std::string("hello"), and 3.14i means std::complex(0.0, 3.14).  
   
 -   **Null Forward Iterators** The standard library now allows the creation of forward iterators that do not refer to a container instance. Such iterators are value-initialized and compare equal for a particular container type. Comparing a value-initialized iterator to one that is not value-initialized is undefined. **(C++14)**  
   
@@ -123,7 +123,7 @@ In Visual Studio 2015, the C++ compiler and standard library have been updated w
   
 -   **Dual-Range equal(), is_permutation(), mismatch()** The standard library now supports overloads for std::equal(), std::is_permutation(), and std::mismatch() that accept two ranges. These overloads check that the two sequences are the same length, which removes this responsibility from the calling code; for sequences that don't support the requirements of a random iterator, these overloads check the length while comparing elements, which is more efficient. **(C++14)**  
   
--   **get<T\>()** The standard library now supports the get<T\>() template function to allow tuple elements to be addressed by their type. If a tuple contains two or more elements of the same type get<T\>() the tuple can't be addressed by that type, but other uniquely-typed elements can still be addressed. **(C++14)**  
+-   **get\<T>()** The standard library now supports the get\<T>() template function to allow tuple elements to be addressed by their type. If a tuple contains two or more elements of the same type get\<T>() the tuple can't be addressed by that type, but other uniquely-typed elements can still be addressed. **(C++14)**  
   
 -   **tuple_element_t** The standard library now supports the tuple_element_t<I, T> type alias which is an alias for typename tuple_element<I, T>::type. This provides some convenience for template programmers, similar to the other metafunction type aliases in <type_traits>. **(C++14)**  
   
@@ -131,7 +131,7 @@ In Visual Studio 2015, the C++ compiler and standard library have been updated w
   
 -   **Minimal Allocators** The standard library now supports the minimal allocator interface throughout; notable fixes include std::function, shared_ptr, allocate_shared(), and basic_string. **(C++11)**  
   
--   **<chrono\>** The chrono types high_resolution_clock and steady_clock have been fixed. **(C++11)**  
+-   **\<chrono>** The chrono types high_resolution_clock and steady_clock have been fixed. **(C++11)**  
   
 -   **N2761 Atomics in signal handlers (C++11)**  
   

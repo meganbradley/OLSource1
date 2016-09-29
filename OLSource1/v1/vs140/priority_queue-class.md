@@ -85,7 +85,7 @@ template <    class  Type ,     class  Container= vector <Type>, class Compare= 
 |[top](#priority_queue__top)|Returns a const reference to the largest element at the top of the `priority_queue`.|  
   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

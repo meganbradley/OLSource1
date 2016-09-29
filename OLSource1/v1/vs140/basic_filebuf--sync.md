@@ -40,7 +40,7 @@ virtual int sync( );
  Returns zero if the file pointer **fp** is a null pointer. Otherwise, it returns zero only if calls to both [overflow](../vs140/basic_filebuf--overflow.md) and `fflush`(**fp**) succeed in flushing any pending output to the stream.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

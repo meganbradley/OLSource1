@@ -80,5 +80,5 @@ bool compare_exchange_strong(
 ## See Also  
  [atomic_compare_exchange_strong_explicit](../vs140/atomic_compare_exchange_strong_explicit-function.md)   
  [atomic Structure](../vs140/atomic-structure.md)   
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [memory_order](../vs140/memory_order-enum.md)

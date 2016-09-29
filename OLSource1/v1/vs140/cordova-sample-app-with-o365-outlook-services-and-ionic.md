@@ -83,7 +83,7 @@ In this tutorial, you’ll learn how to create a mail, calendar and contact clie
   
 4.  Update the script references.  
   
-     In index.html, add the following Ionic references in the <head\> element, after the Cordova and platformOverrides script references.  
+     In index.html, add the following Ionic references in the \<head> element, after the Cordova and platformOverrides script references.  
   
     ```html  
     <script src="lib/ionic/js/ionic.bundle.min.js"></script>  
@@ -110,7 +110,7 @@ In this tutorial, you’ll learn how to create a mail, calendar and contact clie
   
 4.  Copy nprogress.css under the css folder  
   
-5.  In index.html, add the following NProgress references in the <head\> element.  
+5.  In index.html, add the following NProgress references in the \<head> element.  
   
     ```html  
     <link href="css/nprogress.css" rel="stylesheet" />  
@@ -162,7 +162,7 @@ In this tutorial, you’ll learn how to create a mail, calendar and contact clie
   
      ![Services folder in the app](../vs140/media/cordova_ionic_services_folder.png "Cordova_Ionic_Services_Folder")  
   
-2.  In index.html, add the following O365 references in the <head\> element.  
+2.  In index.html, add the following O365 references in the \<head> element.  
   
     ```html  
     <script src="services/office365/scripts/o365loader.js"></script>  

@@ -43,7 +43,7 @@ istringstream<char> istringstream;
  The type is a synonym for template class [basic_istringstream](../vs140/basic_istringstream-class.md), specialized for elements of type `char`*.*  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

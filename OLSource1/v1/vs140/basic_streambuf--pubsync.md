@@ -41,7 +41,7 @@ int pubsync( );
  Returns [sync](../vs140/basic_streambuf--sync.md) or –1 if failure.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

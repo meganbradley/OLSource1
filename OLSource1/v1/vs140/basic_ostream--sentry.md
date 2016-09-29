@@ -47,7 +47,7 @@ public:
  If `uncaught_exception` returns **false** and [flags](../vs140/ios_base--flags.md) **&** [unitbuf](../vs140/unitbuf.md) is nonzero, the destructor calls [flush](../vs140/basic_ostream--flush.md).  
   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   

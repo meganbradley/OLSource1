@@ -77,7 +77,7 @@ template<class T,
  When you see error C2280 in connection with a `unique_ptr`, it is almost certainly because you are attempting to invoke its copy constructor, which is a deleted function.  
   
 ## Requirements  
- <memory\>  
+ \<memory>  
   
 ## See Also  
  [How to: Create and Use unique_ptr Instances](../vs140/how-to--create-and-use-unique_ptr-instances.md)

@@ -176,12 +176,12 @@ size() == 6
 ```  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   
 ## See Also  
- [<map\>](../vs140/-map-.md)   
+ [\<map>](../vs140/-map-.md)   
  [map Class](../vs140/map-class.md)   
  [map::clear](../vs140/map--clear.md)   
  [map::max_size, map::clear, map::erase, and map::size](../vs140/map--max_size--map--clear--map--erase--and-map--size.md)   

@@ -93,7 +93,7 @@ __int64 _abs64(
  The `abs`, `labs`, `llabs` and `_abs64` functions return the absolute value of the parameter `n`. There is no error return.  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `abs` that take and return `long`, `long long`, `float`, `double`, and `long double` values. These overloads are defined in the <cmath\> header. In a C program, `abs` always takes and returns an int.  
+ Because C++ allows overloading, you can call overloads of `abs` that take and return `long`, `long long`, `float`, `double`, and `long double` values. These overloads are defined in the \<cmath> header. In a C program, `abs` always takes and returns an int.  
   
  **Microsoft Specific**  
   
@@ -105,10 +105,10 @@ __int64 _abs64(
   
 |Routine|Required C header|Required C++ header|  
 |-------------|-----------------------|---------------------------|  
-|`abs`, `labs`, `llabs`|<math.h> or <stdlib.h>|<cmath\>, <cstdlib\>, <stdlib.h> or <math.h>|  
-|`_abs64`|<stdlib.h>|<cstdlib\> or <stdlib.h>|  
+|`abs`, `labs`, `llabs`|<math.h> or <stdlib.h>|\<cmath>, \<cstdlib>, <stdlib.h> or <math.h>|  
+|`_abs64`|<stdlib.h>|\<cstdlib> or <stdlib.h>|  
   
- To use the overloaded versions of `abs` in C++, you must include the <cmath\> header.  
+ To use the overloaded versions of `abs` in C++, you must include the \<cmath> header.  
   
 ## Example  
  This program computes and displays the absolute values of several numbers.  

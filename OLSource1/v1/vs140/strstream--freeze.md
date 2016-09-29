@@ -49,7 +49,7 @@ Causes a stream buffer to be unavailable through stream buffer operations.
  See [strstreambuf::freeze](../vs140/strstreambuf--freeze.md) for an example that uses **freeze**.  
   
 ## Requirements  
- **Header:** <strstream\>  
+ **Header:** \<strstream>  
   
  **Namespace:** std  
   

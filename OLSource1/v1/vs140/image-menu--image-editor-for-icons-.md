@@ -65,10 +65,10 @@ The Image menu, which appears only when the Image editor is active, has commands
  Opens the [Grid Settings dialog box](../vs140/grid-settings-dialog-box--image-editor-for-icons-.md) in which you can specify grids for your image.  
   
  **New Image Type**  
- Opens the [New <Device\> Image Type dialog box](../vs140/new--device--image-type-dialog-box--image-editor-for-icons-.md). A single icon resource can contain several images of different sizes; windows can use the appropriate icon size depending on how it is going to be displayed. A new device type does not modify the size of the icon, but rather creates a new image within the icon. Only applies to icons and cursors.  
+ Opens the [New \<Device> Image Type dialog box](../vs140/new--device--image-type-dialog-box--image-editor-for-icons-.md). A single icon resource can contain several images of different sizes; windows can use the appropriate icon size depending on how it is going to be displayed. A new device type does not modify the size of the icon, but rather creates a new image within the icon. Only applies to icons and cursors.  
   
  **Current Icon/Cursor Image Type**  
- Opens a submenu that lists the first available cursor or icon images (the first nine). The last command on the submenu, **More...**, opens the [Open <Device\> Image dialog box](../vs140/open--device--image-dialog-box--image-editor-for-icons-.md).  
+ Opens a submenu that lists the first available cursor or icon images (the first nine). The last command on the submenu, **More...**, opens the [Open \<Device> Image dialog box](../vs140/open--device--image-dialog-box--image-editor-for-icons-.md).  
   
  **Delete Image Type**  
  Deletes the selected device image.  

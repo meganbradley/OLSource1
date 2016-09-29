@@ -28,7 +28,7 @@ translation.priority.ht:
 A utility class to valarray that is used to define one-dimensional subsets of a parent valarray. If a valarray is regarded as a two-dimensional matrix with all elements in an array, then the slice extracts a vector in one dimension out of the two-dimensional array.  
   
 ## Remarks  
- The class stores the parameters that characterize an object of type [slice_array](../vs140/slice_array-class.md) The subset of a valarray is indirectly constructed when an object of class slice appears as an argument for an object of class [valarray](../vs140/valarray-class.md#valarray__operator_at)**<Type\>**. The stored values that specify the subset selected from the parent valarray include:  
+ The class stores the parameters that characterize an object of type [slice_array](../vs140/slice_array-class.md) The subset of a valarray is indirectly constructed when an object of class slice appears as an argument for an object of class [valarray](../vs140/valarray-class.md#valarray__operator_at)**\<Type>**. The stored values that specify the subset selected from the parent valarray include:  
   
 -   A starting index in the valarray.  
   
@@ -55,7 +55,7 @@ A utility class to valarray that is used to define one-dimensional subsets of a 
 |[stride](#slice__stride)|Finds the distance between elements in a slice of a `valarray`.|  
   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

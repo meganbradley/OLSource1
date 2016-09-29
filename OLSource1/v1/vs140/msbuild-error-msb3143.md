@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3143
-**MSB3143: An error occurred trying to copy '<file\>' for item '<package\>': '<error\>'**  
+**MSB3143: An error occurred trying to copy '\<file>' for item '\<package>': '\<error>'**  
   
  This error occurs when bootstrapper packages are copied to the build output directory. Possible causes for this error could be:  
   
@@ -32,4 +32,4 @@ translation.priority.ht:
   
 ## See Also  
  [Product and Package Schema Reference](../vs140/product-and-package-schema-reference.md)   
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

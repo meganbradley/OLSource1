@@ -109,6 +109,6 @@ int main( )
 **The element-by-element result of the sum is the**  
  **valarray: ( 2 0 4 2 6 4 8 6 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std

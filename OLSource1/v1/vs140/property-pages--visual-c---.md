@@ -83,19 +83,19 @@ By using property pages, you can specify settings for Visual Studio projects. To
   
 1.  [NIB: Add Reference Search Path Dialog Box](assetId:///4520d80d-aa9f-4d11-b92b-2f64a1fd5cb2)  
   
-2.  [Advanced, Manifest Tool, Configuration Properties, <Projectname\> Property Pages Dialog Box](../vs140/advanced--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
+2.  [Advanced, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../vs140/advanced--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
   
 3.  [Command Line Property Pages](../vs140/command-line-property-pages.md)  
   
 4.  [Custom Build Step Property Page: General](../vs140/custom-build-step-property-page--general.md)  
   
-5.  [Framework and References, Common Properties, <Projectname\> Property Pages Dialog Box](../vs140/adding-references-in-visual-c---projects.md)  
+5.  [Framework and References, Common Properties, \<Projectname> Property Pages Dialog Box](../vs140/adding-references-in-visual-c---projects.md)  
   
 6.  [General Property Page (File)](../vs140/general-property-page--file-.md)  
   
 7.  [General Property Page (Project)](../vs140/general-property-page--project-.md)  
   
-8.  [General, Manifest Tool, Configuration Properties, <Projectname\> Property Pages Dialog Box](../vs140/general--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
+8.  [General, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../vs140/general--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
   
 9. [HLSL Property Pages](../vs140/hlsl-property-pages.md)  
   
@@ -105,9 +105,9 @@ By using property pages, you can specify settings for Visual Studio projects. To
   
 12. [HLSL Property Pages: Output Files](../vs140/hlsl-property-pages--output-files.md)  
   
-13. [Input and Output, Manifest Tool, Configuration Properties, <Projectname\> Property Pages Dialog Box](../vs140/input-and-output--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
+13. [Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../vs140/input-and-output--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
   
-14. [Isolated COM, Manifest Tool, Configuration Properties, <Projectname\> Property Pages Dialog Box](../vs140/isolated-com--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
+14. [Isolated COM, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../vs140/isolated-com--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
   
 15. [Linker Property Pages](../vs140/linker-property-pages.md)  
   

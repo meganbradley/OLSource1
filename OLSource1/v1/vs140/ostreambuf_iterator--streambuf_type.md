@@ -44,7 +44,7 @@ typedef basic_streambuf<CharType, Traits> streambuf_type;
  See [ostreambuf_iterator](../vs140/ostreambuf_iterator--ostreambuf_iterator.md) for an example of how to declare and use `streambuf_type`.  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

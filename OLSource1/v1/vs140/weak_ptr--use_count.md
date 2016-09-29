@@ -65,7 +65,7 @@ int main()
  **wp.use_count() == 1**  
 **wp.use_count() == 2**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

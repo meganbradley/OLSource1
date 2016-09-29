@@ -49,11 +49,11 @@ basic_iostream& operator=(basic_iostream&& _Right);
  The member operator calls `(``_Right``)`.  
   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_iostream Class](../vs140/basic_iostream-class.md)   
- [<istream\>](../vs140/-istream-.md)   
+ [\<istream>](../vs140/-istream-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)

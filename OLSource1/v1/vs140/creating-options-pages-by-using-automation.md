@@ -39,11 +39,11 @@ Managed VSPackages can use automation to extend the [!INCLUDE[vsprvs](../vs140/i
   
  Two registry entries are required to register an automation object:  
   
--   Under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version* \Packages\\*<PackageGUID\>*\Automation  
+-   Under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version* \Packages\\*\<PackageGUID>*\Automation  
   
--   Under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\AutomationProperties  
+-   Under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\AutomationProperties  
   
-     where *<Version\>* is the version of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] (such as 8.0) and *<PackageGUID\>* is the GUID of the VSPackage that implements the automation object.  
+     where *\<Version>* is the version of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] (such as 8.0) and *\<PackageGUID>* is the GUID of the VSPackage that implements the automation object.  
   
  Depending on the configuration under the AutomationProperties registry entry, the state of a **Tools Options** page may be automatically saved and restored through the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] settings mechanism when a user selects the **Import/Export Settings** command on the **Tools** menu. For more information on saving **Tools Options** page settings, see [Registering Custom Tools Options Pages](../vs140/registering-custom-options-pages.md).  
   

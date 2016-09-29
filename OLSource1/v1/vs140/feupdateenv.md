@@ -54,7 +54,7 @@ int feupdateenv(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`feupdateenv`|<fenv.h>|<cfenv\>|  
+|`feupdateenv`|<fenv.h>|\<cfenv>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

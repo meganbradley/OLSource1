@@ -23,10 +23,10 @@ translation.priority.ht:
 # Folder Element (Visual Studio Project Templates)
 Specifies a folder that will be added to the project.  
   
- <VSTemplate\>  
- <TemplateContent\>  
- <Project\>  
- <Folder\>  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<Project>  
+ \<Folder>  
   
 ## Syntax  
   

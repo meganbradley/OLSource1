@@ -36,7 +36,7 @@ Type t = i.GetType();
 Console.WriteLine(t.FullName); //"System.Int32"  
 ```  
   
- The C# [is](../vs140/is--csharp-reference-.md) operator also operates on a Nullable's underlying type. Therefore you cannot use `is` to determine whether a variable is a Nullable type. The following example shows that the `is` operator treats a Nullable<int\> variable as an int.  
+ The C# [is](../vs140/is--csharp-reference-.md) operator also operates on a Nullable's underlying type. Therefore you cannot use `is` to determine whether a variable is a Nullable type. The following example shows that the `is` operator treats a Nullable\<int> variable as an int.  
   
 ```  
 static void Main(string[] args)  

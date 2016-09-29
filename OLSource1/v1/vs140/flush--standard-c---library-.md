@@ -74,7 +74,7 @@ int main( )
   
  **testing**   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   

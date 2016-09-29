@@ -44,7 +44,7 @@ bool good( ) const;
  See [basic_ios::bad](../vs140/basic_ios--bad.md) for an example of using `good`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

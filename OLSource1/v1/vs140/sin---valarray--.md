@@ -100,7 +100,7 @@ int main( )
 **0.707107**  
 **-2.06823e-013**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

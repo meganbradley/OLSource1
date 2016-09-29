@@ -26,8 +26,8 @@ translation.priority.ht:
 # Task Element (MSBuild)
 Creates and executes an instance of an [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] task. The element name is determined by the name of the task being created.  
   
- <Project\>  
- <Target\>  
+ \<Project>  
+ \<Target>  
   
 ## Syntax  
   

@@ -451,7 +451,7 @@ require("cordova/exec/proxy").add("ToUpperPlugin", module.exports);
   
  The XML contains the minimum elements you need to get your plugin working. There are a few key elements that you have to get right so Visual Studio and Cordova can find your plugin files and call your plugin methods.  
   
--   **<plugin\>** The `id` attribute that you add to the `<plugin>` element is used to by Visual Studio to create a project folder with the plugin files. It is the name of your plugin and it is carried over into the project’s `config.xml` file. Here is how it appears in `plugin.xml`, part of the plugin:  
+-   **\<plugin>** The `id` attribute that you add to the `<plugin>` element is used to by Visual Studio to create a project folder with the plugin files. It is the name of your plugin and it is carried over into the project’s `config.xml` file. Here is how it appears in `plugin.xml`, part of the plugin:  
   
     ```xml  
   

@@ -75,7 +75,7 @@ int main( )
  **Elements written to output stream:**  
 **OUT**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

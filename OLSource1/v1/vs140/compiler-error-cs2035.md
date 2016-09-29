@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Compiler Error CS2035
-Command-line syntax error:  Missing ':<number\>' for 'compiler_option' option  
+Command-line syntax error:  Missing ':\<number>' for 'compiler_option' option  
   
  Some compiler options require a value.  
   

@@ -40,14 +40,14 @@ You can customize your application by writing code that runs when certain query-
   
 |**General Methods**|Description|  
 |-------------------------|-----------------|  
-|<QueryName\>_PreProcessQuery()|Called when the query is being formed. Enables you to further customize a query. Runs on the server.|  
+|\<QueryName>_PreProcessQuery()|Called when the query is being formed. Enables you to further customize a query. Runs on the server.|  
 |Query_Executing()|Called just before executing the query. Runs on the server.|  
 |Query_Executed()|Called just after successfully executing the query. Runs on the server.|  
 |Query_ExecuteFailed()|Called after a query fails to run. Runs on the server.|  
   
 |Security Methods|Description|  
 |----------------------|-----------------|  
-|<QueryName\>_CanExecute()|Called prior to executing the query in order to check permissions for the current user. Runs on the server.|  
+|\<QueryName>_CanExecute()|Called prior to executing the query in order to check permissions for the current user. Runs on the server.|  
   
 ## See Also  
  [Queries: Retrieving Information from a Data Source](../vs140/queries--retrieving-information-from-a-data-source.md)   

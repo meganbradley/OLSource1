@@ -104,7 +104,7 @@ deque dq is: -9 7 -2 4 8
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

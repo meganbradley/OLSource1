@@ -37,7 +37,7 @@ translation.priority.ht:
  The text you would like to indicate as code.  
   
 ## Remarks  
- The <c\> tag gives you a way to indicate that text within a description should be marked as code. Use [<code\>](../vs140/-code---csharp-programming-guide-.md) to indicate multiple lines as code.  
+ The \<c> tag gives you a way to indicate that text within a description should be marked as code. Use [\<code>](../vs140/-code---csharp-programming-guide-.md) to indicate multiple lines as code.  
   
  Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file.  
   

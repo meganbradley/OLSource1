@@ -71,7 +71,7 @@ int main( )
 **Bitset b2 = ~b1 is: ( 11000 ).**  
 **Bitset b3 = b1.flip( ) is: ( 11000 ).**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

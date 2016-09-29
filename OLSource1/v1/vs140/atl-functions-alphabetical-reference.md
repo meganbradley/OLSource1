@@ -127,7 +127,7 @@ In this section, reference topics for the ATL global functions are organized alp
 |[AtlUnicodeToUTF8](../vs140/atlunicodetoutf8.md)|Call this function to convert a Unicode string to UTF-8.|  
 |[AtlUnmarshalPtr](../vs140/atlunmarshalptr.md)|Converts the stream's marshaling data into an interface pointer that can be used by the client.|  
 |[AtlUnRegisterTypeLib](../vs140/atlunregistertypelib.md)|This function is called to unregister a type library.|  
-|[AtlUpdateRegistryFromResourceD](../vs140/atlupdateregistryfromresourced.md) **<Removed\>**|This function was deprecated in earlier releases and is removed in Visual Studio 2015.|  
+|[AtlUpdateRegistryFromResourceD](../vs140/atlupdateregistryfromresourced.md) **\<Removed>**|This function was deprecated in earlier releases and is removed in Visual Studio 2015.|  
 |[AtlWaitWithMessageLoop](../vs140/atlwaitwithmessageloop.md)|Waits for the object to be signaled, meanwhile dispatching window messages as needed.|  
 |[AtlWinModuleAddCreateWndData](../vs140/atlwinmoduleaddcreatewnddata.md)|This function is used to initialize and add an `_AtlCreateWndData` structure.|  
 |[AtlWinModuleExtractCreateWndData](../vs140/atlwinmoduleextractcreatewnddata.md)|Call this function to extract an existing `_AtlCreateWndData` structure.|  

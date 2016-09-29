@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # XML comment has a tag with a &#39;cref&#39; attribute &#39;&lt;attribute&gt;&#39; that could not be resolved
-XML comment has a tag with a 'cref' attribute <attribute\> that could not be resolved. XML comment will be ignored.  
+XML comment has a tag with a 'cref' attribute \<attribute> that could not be resolved. XML comment will be ignored.  
   
  Tags can have a `cref` attribute that designates a link to another element of the XML by specifying the relative name of the identifier. At compile time, the compiler replaces the value with the qualified XML identifier for the value pointed at by the user. The compiler uses its normal resolution rules for finding the type or member.  
   

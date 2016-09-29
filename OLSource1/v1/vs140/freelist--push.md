@@ -47,7 +47,7 @@ bool push(void* _Ptr);
  If the `full` function of the max class returns `false`, this member function adds the memory block pointed to by `_Ptr` to the head of the list.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

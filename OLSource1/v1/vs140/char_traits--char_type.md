@@ -46,7 +46,7 @@ type;
  See the example for [copy](../vs140/char_traits--copy.md) for an example of how to declare and use `char_type`.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

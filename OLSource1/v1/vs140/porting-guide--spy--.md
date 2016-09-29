@@ -137,7 +137,7 @@ typedef std::basic_ostringstream<TCHAR> ostrstream;
   
  Currently the project is building using MBCS \(Multi\-byte Character Set\), so char is the appropriate character data type. However, to allow an easier update the code to UTF\-16 Unicode, we update this to TCHAR, which resolves to char or wchar\_t depending on whether the **Character Set** property in the project settings is set to MBCS or Unicode.  
   
- A few other pieces of code need to be updated.  We replaced the base class ios with ios\_base, and we replaced ostream is by basic\_ostream\<T\>. We add two additional typedefs, and this section compiles.  
+ A few other pieces of code need to be updated.  We replaced the base class ios with ios\_base, and we replaced ostream is by basic\_ostream\\<T>. We add two additional typedefs, and this section compiles.  
   
 ```cpp  
   
@@ -150,7 +150,7 @@ typedef ios_base ios;
   
  Here’s the next error.  
   
- **error C2039: 'freeze': is not a member of 'std::basic\_stringbuf\<char,std::char\_traits\<char\>,std::allocator\<char\>\>'** The next issue is that basic\_stringbuf doesn’t have a freeze method. The freeze method is used to prevent a memory leak in the old ostream. We don’t need it now that we’re using the new ostringstream. We can delete the call to freeze.  
+ **error C2039: 'freeze': is not a member of 'std::basic\_stringbuf\<char,std::char\_traits\\<char>,std::allocator\\<char>\>'** The next issue is that basic\_stringbuf doesn’t have a freeze method. The freeze method is used to prevent a memory leak in the old ostream. We don’t need it now that we’re using the new ostringstream. We can delete the call to freeze.  
   
 ```cpp  
 //rdbuf()->freeze(0);  
@@ -168,7 +168,7 @@ LPSTR psz = str();
   
 ```  
   
- **2\>mstream.cpp\(167\): error C2065: 'ends': undeclared identifier2\>mstream.cpp\(168\): error C2440: 'initializing': cannot convert from 'std::basic\_string\<char,std::char\_traits\<char\>,std::allocator\<char\>\>' to 'LPSTR'** Using the new stream library, ends is not needed since the string is always null\-terminated, so that line can be removed. For the second issue, the problem is that now str\(\) doesn’t return a pointer to the character array for a string; it returns the std::string type. The solution to the second is to change the type to LPCSTR and use the c\_str\(\) method to request the pointer.  
+ **2\>mstream.cpp\(167\): error C2065: 'ends': undeclared identifier2\>mstream.cpp\(168\): error C2440: 'initializing': cannot convert from 'std::basic\_string\<char,std::char\_traits\\<char>,std::allocator\\<char>\>' to 'LPSTR'** Using the new stream library, ends is not needed since the string is always null\-terminated, so that line can be removed. For the second issue, the problem is that now str\(\) doesn’t return a pointer to the character array for a string; it returns the std::string type. The solution to the second is to change the type to LPCSTR and use the c\_str\(\) method to request the pointer.  
   
 ```cpp  
   

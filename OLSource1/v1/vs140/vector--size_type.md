@@ -38,7 +38,7 @@ typedef typename Allocator::size_type size_type;
  See the example for [capacity](../vs140/vector--capacity.md).  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

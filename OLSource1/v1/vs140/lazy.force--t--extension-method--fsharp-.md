@@ -36,15 +36,7 @@ Forces the execution of this value and returns its result. Same as <xref:System.
   
 ## Syntax  
   
-```  
-// Signature:  
-type System.Lazy with  
-  member Force : unit -> 'T  
-  
-// Usage:  
-lazy.Force ()  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
 ## Return Value  
  The value of the [Lazy](../vs140/control.lazy--t--type-abbreviation--fsharp-.md) object.  
   

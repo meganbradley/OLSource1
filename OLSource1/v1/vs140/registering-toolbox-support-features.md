@@ -46,7 +46,7 @@ VSPackages must update the registry if they extend the default set of **Toolbox*
   
  For automatic toolbox category selection to take place, the designer's or editor's factory object must be properly registered.  
   
- An appropriate registry entry is found in the following registry location: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\<Version\>\Editor<Editor Factory GUID\>, where <Version\> is the version number of the release of Visual Studio, such as 8.0, and <Editor Factory GUID\> is the GUID for the editor factory.  
+ An appropriate registry entry is found in the following registry location: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<Version>\Editor\<Editor Factory GUID>, where \<Version> is the version number of the release of Visual Studio, such as 8.0, and \<Editor Factory GUID> is the GUID for the editor factory.  
   
  The entry should contain:  
   
@@ -63,14 +63,14 @@ VSPackages must update the registry if they extend the default set of **Toolbox*
 > [!NOTE]
 >  Controls created with the Toolbox Control templates in the Visual Studio 10 SDK register automatically. For more information, see [How to: Create a Toolbox Control That Uses Windows Forms](../vs140/how-to--create-a-toolbox-control-that-uses-windows-forms.md) and [How to: Create a Toolbox Control That Uses WPF](../vs140/creating-a-wpf-toolbox-control.md).  
   
- Any VSPackage providing <xref:System.Drawing.Design.ToolboxItem*> objects must have a subkey, *Toolbox*, under its own package key, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\Packages\\*<Package GUID*>, where *<Version\>* is the version number of the release of Visual Studio, such as 8.0, and *<Package GUID\>* is the GUID of the package that provides **Toolbox** items.  
+ Any VSPackage providing <xref:System.Drawing.Design.ToolboxItem*> objects must have a subkey, *Toolbox*, under its own package key, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\Packages\\*<Package GUID*>, where *\<Version>* is the version number of the release of Visual Studio, such as 8.0, and *\<Package GUID>* is the GUID of the package that provides **Toolbox** items.  
   
  This Toolbox subkey must contain at least one entry, a DWORD entry named *Default**Items*.  
   
 > [!NOTE]
->  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>* can be overridden with an alternate root when the Visual Studio shell is initialized, or you can use <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute*>. For more information, see [Command-Line Switches (VS SDK)](../vs140/command-line-switches--visual-studio-sdk-.md).  
+>  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized, or you can use <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute*>. For more information, see [Command-Line Switches (VS SDK)](../vs140/command-line-switches--visual-studio-sdk-.md).  
   
- For the entry under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\Packages\\*<Package GUID*>:  
+ For the entry under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\Packages\\*<Package GUID*>:  
   
 |Name|Type|Data|Description|  
 |----------|----------|----------|-----------------|  
@@ -81,7 +81,7 @@ VSPackages must update the registry if they extend the default set of **Toolbox*
   
  If a <xref:System.Drawing.Design.ToolboxItem*> provider VSPackage does not register any special Clipboard formats, it must support the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] standard formats. For more information on the standard **Toolbox** Clipboard formats, see [Toolbox Overview](../vs140/extending-the-toolbox.md).  
   
- If a VSPackage does provide support for non-standard formats, it must register those formats under the VSPackage's **Toolbox** registration key HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\Packages\\*<Package GUID*>\Toolbox, by adding a string entry named `Formats`.  
+ If a VSPackage does provide support for non-standard formats, it must register those formats under the VSPackage's **Toolbox** registration key HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\Packages\\*<Package GUID*>\Toolbox, by adding a string entry named `Formats`.  
   
 > [!NOTE]
 >  If a VSPackage registers support for any custom format, it only supports those formats that it explicitly registers. A VSPackage registering custom Clipboard formats is no longer registered as supporting the default **Toolbox** Clipboard formats, unless it does so explicitly.  
@@ -91,13 +91,13 @@ VSPackages must update the registry if they extend the default set of **Toolbox*
 |`Formats`|REG_SZ|For custom formats, use a string for this subkey.|Specifies the Clipboard formats supported by a VSPackage providing custom **Toolbox** Clipboard formats (by implementing <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider*> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider2*>).<br /><br /> The formats should be specified in a comma-separated list.<br /><br /> A format can be specified either by a string containing its name, or its ID name. For example, a `Formats` entry might be `'1,13,16,HTML Format'`.<br /><br /> For more information about Clipboard formats, see <xref:System.Windows.Forms.DataFormats.Format*>.<br /><br /> In the Managed Package Framework, the value of `Formats` is obtained from the string used as an argument to the constructor for the instance of the <xref:Microsoft.VisualStudio.Shell.ProvideToolboxFormatAttribute*> object applied to the VSPackage providing <xref:System.Drawing.Design.ToolboxItem*> objects.|  
   
 ## Registering Support for Dynamic Toolbox-Item Configuration  
- If a VSPackage provides an implementation of <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*> it must add registry settings under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\CLSID. and HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\ToolboxItemConfiguration.  
+ If a VSPackage provides an implementation of <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*> it must add registry settings under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\CLSID. and HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\ToolboxItemConfiguration.  
   
- The registry data under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\CLSID contains the information the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] environment requires to invoke the implementation of <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*>.  
+ The registry data under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\CLSID contains the information the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] environment requires to invoke the implementation of <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*>.  
   
- The HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\ToolboxItemConfiguration data is used to select or filter which <xref:System.Drawing.Design.ToolboxItem*> objects the implementation of <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*> configures on the basis of the assemblies that contain them.  
+ The HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\ToolboxItemConfiguration data is used to select or filter which <xref:System.Drawing.Design.ToolboxItem*> objects the implementation of <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*> configures on the basis of the assemblies that contain them.  
   
- Content of the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\CLSID Registry Entry:  
+ Content of the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\CLSID Registry Entry:  
   
 > [!NOTE]
 >  Under the Managed Package Framework, these registry entries are created by the instance of <xref:Microsoft.VisualStudio.Shell.ProvideToolboxItemConfigurationAttribute*>. This instance is attached to the VSPackage that provides <xref:System.Drawing.Design.ToolboxItem*> configuration by using reflection. The reflection is performed on the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*> item that is provided to the <xref:Microsoft.VisualStudio.Shell.ProvideToolboxItemConfigurationAttribute*> constructor.  
@@ -111,17 +111,17 @@ VSPackages must update the registry if they extend the default set of **Toolbox*
 |`InprocServer32`|REG_SZ|Must always be set to `"C:\WINDOWS\System32\mscoree.dll"`|The in-process server|  
 |`ThreadingModel`|REG_SZ|Must always be set to `"Both"`|Threading model|  
   
- Content of the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\ToolboxItemConfiguration Registry Entry:  
+ Content of the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\ToolboxItemConfiguration Registry Entry:  
   
 > [!NOTE]
 >  Under the Managed Package Framework, these registry entries are created by the instance of <xref:Microsoft.VisualStudio.Shell.ProvideAssemblyFilterAttribute*> attached to the <xref:System.Type*> providing an implementation of <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*>.  
   
 |Name|Type|Data|Description|  
 |----------|----------|----------|-----------------|  
-|*<AssemblyName\>*|REG_SZ|Specification of the assemblies to select or filter.|The key's name, *<AssemblyName\>*, must be specified in the format of full assembly identification, which, depending on the assemblies to be filtered, may include:<br /><br /> - a simple name<br /><br /> - a version number<br /><br /> - a cryptographic key pair<br /><br /> - a supported culture<br /><br /> - a custom field<br /><br /> The key's name must be a comma-separated list of property value pairs. For more information on the format of full assembly names, see the <xref:System.Type.FullName*?displayProperty=fullName> property.<br /><br /> A wildcard character of `"*"` is supported in this value, and any field not provided is treated as a wildcard.<br /><br /> For instance, a key name of<br /><br /> `System.Windows.*, Version=8.0.*, Culture=*,PublicKeyToken=*`<br /><br /> selects all assemblies with namespaces under `System.Windows` (though not `System.Windows` itself), for all minor versions of the 8.0 release, and for all cultures, cryptographic key values, and custom strings.<br /><br /> In the Managed Package Framework, the *<Assembly Name\>* key's name is determined by the string used as the argument to the constructor for the <xref:Microsoft.VisualStudio.Shell.ProvideAssemblyFilterAttribute*> instance applied to the class implementing the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*> interface.|  
-|*<ImplementationObject\>*|REG_SZ|GUID|The name of this subkey of *AssemblyName* is the fully qualified name of the <xref:System.Type*> implementing the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*> interface.<br /><br /> The value of this subkey is the GUID of this <xref:System.Type*>.<br /><br /> In the Managed Package Framework this information is obtained through reflection from the class implementing the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*> interface with a <xref:Microsoft.VisualStudio.Shell.ProvideAssemblyFilterAttribute*> object applied to it.|  
+|*\<AssemblyName>*|REG_SZ|Specification of the assemblies to select or filter.|The key's name, *\<AssemblyName>*, must be specified in the format of full assembly identification, which, depending on the assemblies to be filtered, may include:<br /><br /> - a simple name<br /><br /> - a version number<br /><br /> - a cryptographic key pair<br /><br /> - a supported culture<br /><br /> - a custom field<br /><br /> The key's name must be a comma-separated list of property value pairs. For more information on the format of full assembly names, see the <xref:System.Type.FullName*?displayProperty=fullName> property.<br /><br /> A wildcard character of `"*"` is supported in this value, and any field not provided is treated as a wildcard.<br /><br /> For instance, a key name of<br /><br /> `System.Windows.*, Version=8.0.*, Culture=*,PublicKeyToken=*`<br /><br /> selects all assemblies with namespaces under `System.Windows` (though not `System.Windows` itself), for all minor versions of the 8.0 release, and for all cultures, cryptographic key values, and custom strings.<br /><br /> In the Managed Package Framework, the *\<Assembly Name>* key's name is determined by the string used as the argument to the constructor for the <xref:Microsoft.VisualStudio.Shell.ProvideAssemblyFilterAttribute*> instance applied to the class implementing the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*> interface.|  
+|*\<ImplementationObject>*|REG_SZ|GUID|The name of this subkey of *AssemblyName* is the fully qualified name of the <xref:System.Type*> implementing the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*> interface.<br /><br /> The value of this subkey is the GUID of this <xref:System.Type*>.<br /><br /> In the Managed Package Framework this information is obtained through reflection from the class implementing the <xref:Microsoft.VisualStudio.Shell.IConfigureToolboxItem*> interface with a <xref:Microsoft.VisualStudio.Shell.ProvideAssemblyFilterAttribute*> object applied to it.|  
   
- An example of an entry under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\ToolboxItemConfiguration would be:  
+ An example of an entry under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\ToolboxItemConfiguration would be:  
   
  `Vsip.*, Version=2.0.3500`  
   

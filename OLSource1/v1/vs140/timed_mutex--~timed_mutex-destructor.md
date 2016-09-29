@@ -38,5 +38,5 @@ Releases any resources that are used by the `mutex` object.
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<mutex\>](../vs140/-mutex-.md)   
+ [\<mutex>](../vs140/-mutex-.md)   
  [timed_mutex Class](../vs140/timed_mutex-class.md)

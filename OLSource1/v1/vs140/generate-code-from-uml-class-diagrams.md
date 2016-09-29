@@ -83,9 +83,9 @@ To generate Visual C# .NET code from UML class diagrams in Visual Studio, use th
   
 |**To create this C# type**|**Draw this UML type**|**Apply this stereotype**|  
 |---------------------------------|----------------------------|-------------------------------|  
-|Class|Class|<none\> or<br /><br /> C# class|  
-|Interface|Interface|<none\> or<br /><br /> C# interface|  
-|Enumeration|Enumeration|<none\> or<br /><br /> C# enum|  
+|Class|Class|\<none> or<br /><br /> C# class|  
+|Interface|Interface|\<none> or<br /><br /> C# interface|  
+|Enumeration|Enumeration|\<none> or<br /><br /> C# enum|  
 |Delegate|Class|C# delegate|  
 |Struct|Class|C# struct|  
   

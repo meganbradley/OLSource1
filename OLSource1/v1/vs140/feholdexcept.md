@@ -66,7 +66,7 @@ int feholdexcept(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`feholdexcept`|<fenv.h>|<cfenv\>|  
+|`feholdexcept`|<fenv.h>|\<cfenv>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

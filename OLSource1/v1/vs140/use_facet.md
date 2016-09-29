@@ -85,6 +85,6 @@ int main( )
  **The character 'a' in locale loc1 is alphabetic.**  
 **The character '!' in locale loc2 is not alphabetic.**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std

@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Compiler Error CS1554
-Declaration is not valid; use '<type\> operator op (...' instead  
+Declaration is not valid; use '\<type> operator op (...' instead  
   
  The return type for a user-defined [operator](../vs140/operator--csharp-reference-2.md) must appear before the keyword operator.  
   

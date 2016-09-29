@@ -47,6 +47,6 @@ bool try_lock_until(const xtime *Abs_time);
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<mutex\>](../vs140/-mutex-.md)   
+ [\<mutex>](../vs140/-mutex-.md)   
  [timed_mutex Class](../vs140/timed_mutex-class.md)   
  [time_point Class](../vs140/time_point-class.md)

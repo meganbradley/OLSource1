@@ -39,7 +39,7 @@ typedef typename allocator_type::size_type size_type;
  See the example for [size](../vs140/multimap--size.md) for an example of how to declare and use `size_type`  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

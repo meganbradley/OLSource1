@@ -44,7 +44,7 @@ typedef basic_istream<CharType, Traits> istream_type;
  See [istream_iterator](../vs140/istream_iterator--istream_iterator.md) for an example of how to declare and use `istream_type`.  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

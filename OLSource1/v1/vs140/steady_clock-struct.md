@@ -56,5 +56,5 @@ struct steady_clock;
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<chrono\>](../vs140/-chrono-.md)   
+ [\<chrono>](../vs140/-chrono-.md)   
  [system_clock Structure](../vs140/system_clock-structure.md)

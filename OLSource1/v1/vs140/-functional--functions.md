@@ -220,7 +220,7 @@ template<class Operation, class Type>    binder2nd <Operation> bind2nd(       co
 ### Remarks  
  Function binders are a kind of function adaptor and, because they return function objects, can be used in certain types of function composition to construct more complicated and powerful expressions.  
   
- If `_Func` is an object of type **Operation** and `c` is a constant, then `bind2nd` ( `_Func`, `c` ) is equivalent to the [binder2nd](../vs140/binder2nd-class.md) class constructor **binder2nd<Operation\>** ( `_Func`, `c` ) and more convenient.  
+ If `_Func` is an object of type **Operation** and `c` is a constant, then `bind2nd` ( `_Func`, `c` ) is equivalent to the [binder2nd](../vs140/binder2nd-class.md) class constructor **binder2nd\<Operation>** ( `_Func`, `c` ) and more convenient.  
   
 ### Example  
   

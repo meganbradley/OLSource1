@@ -67,7 +67,7 @@ int main( )
  **Current size of v1 = 1**  
 **Current size of v1 = 1**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

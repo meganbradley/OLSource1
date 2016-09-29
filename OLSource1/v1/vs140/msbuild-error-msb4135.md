@@ -18,7 +18,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB4135
-**MSB4135: Error reading the toolset information from the registry key "'<key\>'" or a subkey. '<key\>'**  
+**MSB4135: Error reading the toolset information from the registry key "'\<key>'" or a subkey. '\<key>'**  
   
  The custom Toolset information defined in the registry could not be read.  
   

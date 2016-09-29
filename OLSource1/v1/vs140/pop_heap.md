@@ -148,7 +148,7 @@ The 'greater than' heaped v1 with the smallest element
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

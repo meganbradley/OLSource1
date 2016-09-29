@@ -35,7 +35,7 @@ Coded UI test logs filter and record important information about your coded UI t
   
     -   Open the **QTAgent32_40.exe.config** file.  
   
-         By default, this file is located in **<drvie\>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
+         By default, this file is located in **\<drvie>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
   
          Modify the value for EqtTraceLevel to the log level you want.  
   
@@ -45,7 +45,7 @@ Coded UI test logs filter and record important information about your coded UI t
   
     -   Open the **QTAgent32.exe.config** file.  
   
-         By default, this file is located in **<drvie\>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
+         By default, this file is located in **\<drvie>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
   
          Modify the value of the EqtTraceLevel to the log level you want.  
   

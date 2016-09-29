@@ -60,7 +60,7 @@ string_type get(
  The member function returns [do_get](../vs140/messages--do_get.md)(`_Catval`, `_Set`, `_Message`, `_Dfault`).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

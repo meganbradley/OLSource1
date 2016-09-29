@@ -109,7 +109,7 @@ In this step, you will add a `ClickIn` and a `ClickOut` event to your ATL contro
   
 2.  In the **Properties** window, click the **Messages** icon and then click `WM_LBUTTONDOWN` from the list on the left.  
   
-3.  From the drop-down list that appears, click **<Add\> OnLButtonDown**. The `OnLButtonDown` handler declaration will be added to PolyCtl.h, and the handler implementation will be added to PolyCtl.cpp.  
+3.  From the drop-down list that appears, click **\<Add> OnLButtonDown**. The `OnLButtonDown` handler declaration will be added to PolyCtl.h, and the handler implementation will be added to PolyCtl.cpp.  
   
  Next, modify the handler.  
   

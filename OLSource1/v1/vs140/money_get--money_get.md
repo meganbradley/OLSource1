@@ -59,7 +59,7 @@ The constructor for objects of type `money_get` that are used to extract numeric
  The constructor initializes its base object with **locale::**[facet](../vs140/facet-class.md)(**_***Refs*).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

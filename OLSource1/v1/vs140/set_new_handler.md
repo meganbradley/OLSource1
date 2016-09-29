@@ -108,6 +108,6 @@ int main( )
 **The new_handler is called:**  
 **bad allocation**   
 ## Requirements  
- **Header:** <new\>  
+ **Header:** \<new>  
   
  **Namespace:** std

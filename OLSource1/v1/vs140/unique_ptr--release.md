@@ -88,11 +88,11 @@ int main() {
 **Deleting Sample(42)**  
 **Deleting Sample(3)**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
  [unique_ptr](../vs140/unique_ptr-class.md)   
  [How to: Create and Use unique_ptr Instances](../vs140/how-to--create-and-use-unique_ptr-instances.md)   
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

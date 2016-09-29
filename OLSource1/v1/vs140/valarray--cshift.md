@@ -103,7 +103,7 @@ int main()
 **The cyclically shifted valarray va2 is:**  
 **va2.shift (-4) = ( 4 3 2 1 10 9 8 7 6 5)**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

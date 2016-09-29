@@ -51,7 +51,7 @@ translation.priority.ht:
   
 |Icon|Description|  
 |----------|-----------------|  
-|<No Signal Icon\>|Public. Accessible from anywhere in this component and from any component that references it.|  
+|\<No Signal Icon>|Public. Accessible from anywhere in this component and from any component that references it.|  
 |![Signal Protected Symbol](../vs140/media/vxsignal_icon_key.gif "vxSignal_Icon_Key")|Protected. Accessible from the containing class or type, or those derived from the containing class or type.|  
 |![Signal Private Symbol](../vs140/media/vxsignal_icon_lock.gif "vxSignal_Icon_Lock")|Private. Accessible only in the containing class or type.|  
 |![Signal Sealed Symbol](../vs140/media/vxsignal_icon_envelope.gif "vxSignal_Icon_Envelope")|Sealed.|  

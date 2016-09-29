@@ -125,7 +125,7 @@ v2 with shifted insert = ( 0 3 6 9 0 10 0 10 20 27 30 )
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

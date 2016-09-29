@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Member &#39;&lt;membername1&gt;&#39; implicitly declares &#39;&lt;implicitmembername&gt;&#39;, which conflicts with a member in the base class &#39;&lt;baseclassname&gt;&#39;
-Member '<membername1\>' implicitly declares '<implicitmembername\>', which conflicts with a member in the base class '<baseclassname\>', and so the member should not be declared 'Overloads'  
+Member '\<membername1>' implicitly declares '\<implicitmembername>', which conflicts with a member in the base class '\<baseclassname>', and so the member should not be declared 'Overloads'  
   
  A property in a derived class generates an implicit member with the same name as a member of the base class and specifies the [Overloads](../vs140/overloads--visual-basic-.md) keyword.  
   

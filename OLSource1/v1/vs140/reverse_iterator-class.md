@@ -85,7 +85,7 @@ class reverse_iterator
 |[operator&#91;&#93;](#reverse_iterator__operator_at)|Returns a reference to an element offset from the element addressed by a                                         `reverse_iterator` by a specified number of positions.|  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   
@@ -962,6 +962,6 @@ int main( )
 ```  
   
 ## See Also  
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

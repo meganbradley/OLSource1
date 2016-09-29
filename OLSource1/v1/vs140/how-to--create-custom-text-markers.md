@@ -33,18 +33,18 @@ If you want to create a custom text marker to emphasize or organize code, you mu
   
 1.  Create a registry entry as follows:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\Text Editor\External Markers\\*<MarkerGUID\>*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\Text Editor\External Markers\\*\<MarkerGUID>*  
   
-     *<MarkerGUID\>*is a `GUID` used to identify the marker being added  
+     *\<MarkerGUID>*is a `GUID` used to identify the marker being added  
   
-     *<Version\>* is the version of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], for example 8.0  
+     *\<Version>* is the version of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], for example 8.0  
   
-     *<PackageGUID\>* is the GUID of the VSPackage implementing the automation object.  
+     *\<PackageGUID>* is the GUID of the VSPackage implementing the automation object.  
   
     > [!NOTE]
-    >  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>* can be overridden with an alternate root when the Visual Studio shell is initialized, for more information see, [Command Line Switches](../vs140/command-line-switches--visual-studio-sdk-.md).  
+    >  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized, for more information see, [Command Line Switches](../vs140/command-line-switches--visual-studio-sdk-.md).  
   
-2.  Create four values under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\Text Editor\External Markers\\*<MarkerGUID\>*  
+2.  Create four values under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\Text Editor\External Markers\\*\<MarkerGUID>*  
   
     -   (Default)  
   

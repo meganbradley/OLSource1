@@ -45,4 +45,4 @@ void make_ready_at_thread_exit(ArgTypes... args);
   
 ## See Also  
  [packaged_task Class](../vs140/packaged_task-class.md)   
- [<future\>](../vs140/-future-.md)
+ [\<future>](../vs140/-future-.md)

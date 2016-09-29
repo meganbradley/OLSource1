@@ -48,7 +48,7 @@ virtual int do_encoding( ) const throw( );
  See the example for [encoding](../vs140/codecvt--encoding.md), which calls `do_encoding`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

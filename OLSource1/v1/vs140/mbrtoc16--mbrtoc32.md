@@ -90,7 +90,7 @@ size_t mbrtoc32(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`mbrtoc16`,                `mbrtoc32`|<uchar.h>|<cuchar\>|  
+|`mbrtoc16`,                `mbrtoc32`|<uchar.h>|\<cuchar>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

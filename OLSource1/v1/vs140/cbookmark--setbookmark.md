@@ -53,7 +53,7 @@ Copies the bookmark value referenced by `pBuffer` to the `CBookmark` buffer and 
  A standard `HRESULT`.  
   
 ## Remarks  
- This function is only available in **CBookmark<0>**.  
+ This function is only available in **CBookmark\<0>**.  
   
 ## Requirements  
  **Header:** atldbcli.h  

@@ -29,4 +29,4 @@ This error occurs when you try to open the application definition file, but it i
 ## See Also  
  [Resources for Troubleshooting MSBuild Errors](../vs140/additional-msbuild-resources.md)   
  [The application definition file is already opened in an incompatible editor.](../vs140/the-application-definition-file-is-already-opened-in-an-incompatible-editor.md)   
- [An error occurred trying to create the application events file. '<error\>'](../vs140/an-error-occurred-trying-to-create-the-application-events-file.---error--.md)
+ [An error occurred trying to create the application events file. '\<error>'](../vs140/an-error-occurred-trying-to-create-the-application-events-file.---error--.md)

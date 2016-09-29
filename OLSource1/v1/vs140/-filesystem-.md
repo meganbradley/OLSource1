@@ -25,7 +25,7 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # &lt;filesystem&gt;
-Include the header <filesystem\> for access to classes and functions that manipulate and retrieve information about paths, files and directories.  
+Include the header \<filesystem> for access to classes and functions that manipulate and retrieve information about paths, files and directories.  
   
 ## Syntax  
   
@@ -92,7 +92,7 @@ using namespace std::experimental::filesystem::v1;
   
  A minor difference is the **preferred separator**, between the sequence of directories in a pathname. Both operating systems let you write a forward slash /, but in some contexts Windows prefers a backslash \\.  
   
- Finally, an important feature of path objects is that you can use them wherever a filename argument is required in the classes defined in the header <fstream\>.  
+ Finally, an important feature of path objects is that you can use them wherever a filename argument is required in the classes defined in the header \<fstream>.  
   
  For more information and code examples, see [File System Navigation](../vs140/file-system-navigation.md).  
   
@@ -114,10 +114,10 @@ using namespace std::experimental::filesystem::v1;
 |[space_info Structure](../vs140/space_info-structure.md)|Holds information about a volume.|  
   
 ## Functions  
- [<filesystem\> functions](../vs140/-filesystem--functions.md)  
+ [\<filesystem> functions](../vs140/-filesystem--functions.md)  
   
 ## Operators  
- [<filesystem\> operators](../vs140/-filesystem--operators.md)  
+ [\<filesystem> operators](../vs140/-filesystem--operators.md)  
   
 ## Enumerations  
   

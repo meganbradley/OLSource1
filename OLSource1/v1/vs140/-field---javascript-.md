@@ -75,7 +75,7 @@ Specifies documentation information, including a description, for either a field
  Optional. The keyword for F1 help.  
   
  `locid`  
- Optional. The identifier for localization information about the field. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [<loc\>](../vs140/-loc---javascript-.md) tag.  
+ Optional. The identifier for localization information about the field. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [\<loc>](../vs140/-loc---javascript-.md) tag.  
   
  `value`  
  Optional. Specifies code that should be evaluated for use by IntelliSense instead of the function code itself. For `<field>`, this attribute is supported for constructor functions, but is not supported for object literals. You can use this attribute is to provide type information when the field type is undefined. For example, you can use `value=’1’` to treat the field type as a number.  

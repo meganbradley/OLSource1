@@ -43,5 +43,5 @@ template<class To, class Rep, class Period>
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<chrono\>](../vs140/-chrono-.md)   
+ [\<chrono>](../vs140/-chrono-.md)   
  [duration Class](../vs140/duration-class.md)

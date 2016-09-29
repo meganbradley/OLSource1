@@ -144,7 +144,7 @@ streambuf( (char *)_Getptr, _Count );
  except that the stored mode makes the controlled sequence neither modifiable nor extendable.  
   
 ## Requirements  
- **Header:** <strstream\>  
+ **Header:** \<strstream>  
   
  **Namespace:** std  
   

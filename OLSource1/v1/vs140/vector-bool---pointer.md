@@ -32,7 +32,7 @@ typedef iterator pointer;
 ```  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

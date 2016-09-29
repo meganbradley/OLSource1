@@ -18,7 +18,7 @@ robots: noindex,nofollow
 |[wclog](#wclog)|[wcout](#wcout)|  
   
 ##  <a name="cerr"></a>  cerr  
- The object `cerr` controls output to a stream buffer associated with the object `stderr`, declared in <cstdio\>.  
+ The object `cerr` controls output to a stream buffer associated with the object `stderr`, declared in \<cstdio>.  
   
 ```  
 extern ostream cerr;  

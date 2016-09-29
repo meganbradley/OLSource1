@@ -65,7 +65,7 @@ int main()
   
 ```  
   
-  **add_const<int\> == int**    
+  **add_const\<int> == int**    
 ## Requirements  
  **Header:** <type_traits>  
   

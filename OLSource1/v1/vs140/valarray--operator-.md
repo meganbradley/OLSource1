@@ -82,7 +82,7 @@ int main( )
 **The element-by-element result of the operator+ is the**  
  **valarray: ( 0 0 -2 2 -4 4 -6 6 -8 8 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

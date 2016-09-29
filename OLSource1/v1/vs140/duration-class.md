@@ -297,5 +297,5 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<chrono\>](../vs140/-chrono-.md)   
+ [\<chrono>](../vs140/-chrono-.md)   
  [duration_values Structure](../vs140/duration_values-structure.md)

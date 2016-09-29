@@ -163,7 +163,7 @@ The first v2 element one position beyond
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

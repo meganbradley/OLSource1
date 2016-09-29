@@ -73,7 +73,7 @@ int main( )
  **The top integer of the stack s1 is 2.**  
 **The next integer down is 1.**   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

@@ -25,7 +25,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../vs140/includes/cppwrl_md
   
  To use a component, you must acquire an interface pointer to the type that is implemented by the component. And because the underlying technology of the [!INCLUDE[wrt](../vs140/includes/wrt_md.md)] is the Component Object Model (COM), you must follow COM rules to maintain an instance of the type. For example, you must maintain the *reference count* that determines when the type is deleted from memory.  
   
- To simplify the use of the [!INCLUDE[wrt](../vs140/includes/wrt_md.md)], [!INCLUDE[cppwrl_short](../vs140/includes/cppwrl_short_md.md)] provides the smart pointer template, [ComPtr<T\>](../vs140/comptr-class.md), that automatically performs reference counting. When you declare a variable, specify `ComPtr<`*interface-name*`>` *identifier*. To access an interface member, apply the arrow member-access operator (`->`) to the identifier.  
+ To simplify the use of the [!INCLUDE[wrt](../vs140/includes/wrt_md.md)], [!INCLUDE[cppwrl_short](../vs140/includes/cppwrl_short_md.md)] provides the smart pointer template, [ComPtr\<T>](../vs140/comptr-class.md), that automatically performs reference counting. When you declare a variable, specify `ComPtr<`*interface-name*`>` *identifier*. To access an interface member, apply the arrow member-access operator (`->`) to the identifier.  
   
 > [!IMPORTANT]
 >  When you call an interface function, always test the `HRESULT` return value.  

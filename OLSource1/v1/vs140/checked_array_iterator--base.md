@@ -69,7 +69,7 @@ int main() {
   
  **The iterator underlying rpos is bpos & it points to: 1.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** stdext  
   

@@ -53,7 +53,7 @@ Assigns a value to be stored as a `pword`.
  See [xalloc](../vs140/ios_base--xalloc.md) for an example of using `pword`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

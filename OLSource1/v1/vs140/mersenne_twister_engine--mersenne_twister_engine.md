@@ -29,6 +29,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # mersenne_twister_engine::mersenne_twister_engine
-This topic is deprecated. See [<random\>](../vs140/-random-.md).  
+This topic is deprecated. See [\<random>](../vs140/-random-.md).  
   
 ## Syntax

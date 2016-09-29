@@ -114,7 +114,7 @@ int main( )
 **The reversed list is: 30 20 10**  
 **The modified reversed list is: 30 20 40**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

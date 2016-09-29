@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Linker Tools Error LNK1332
-detected<count\> Windows Runtime types imported in one module and defined in another module  
+detected\<count> Windows Runtime types imported in one module and defined in another module  
   
  When it produced the current target, the linker detected <`count`> Windows Runtime types, each of which is imported in one module and also defined in another module.  
   

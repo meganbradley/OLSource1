@@ -73,9 +73,9 @@ int main()
   
 ```  
   
-  **is_floating_point<trivial\> == false**  
-**is_floating_point<int\> == false**  
-**is_floating_point<float\> == true**    
+  **is_floating_point\<trivial> == false**  
+**is_floating_point\<int> == false**  
+**is_floating_point\<float> == true**    
 ## Requirements  
  **Header:** <type_traits>  
   

@@ -76,7 +76,7 @@ int main( )
 **Whether int objects have an integral representation: 1**  
 **Whether unsigned char objects have an integral representation: 1**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

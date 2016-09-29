@@ -30,11 +30,11 @@ translation.priority.ht:
 ```  
   
 ## Remarks  
- /MANIFESTDEPENDENCY lets you specify attributes that will be placed in the <dependency\> section of the manifest file.  
+ /MANIFESTDEPENDENCY lets you specify attributes that will be placed in the \<dependency> section of the manifest file.  
   
  See [/MANIFEST](../vs140/-manifest--create-side-by-side-assembly-manifest-.md) for information on how to create a manifest file.  
   
- For more information on the <dependency\> section of the manifest file, see [Publisher Configuration Files](http://msdn.microsoft.com/library/aa375682).  
+ For more information on the \<dependency> section of the manifest file, see [Publisher Configuration Files](http://msdn.microsoft.com/library/aa375682).  
   
  /MANIFESTDEPENDENCY information can be passed to the linker in one of two ways:  
   

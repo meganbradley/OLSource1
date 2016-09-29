@@ -81,7 +81,7 @@ __time64_t _time64(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`time`, `_time32`, `_time64`|C: <time.h>, C++: <ctime\> or <time.h>|  
+|`time`, `_time32`, `_time64`|C: <time.h>, C++: \<ctime> or <time.h>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

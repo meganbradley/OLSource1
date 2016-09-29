@@ -52,9 +52,9 @@ OutputIterator copy_n(InputIterator first, Size count, OutputIterator dest);
  The template function evaluates `*(dest + N) = *(first + N))` once for each `N` in the range `[0,` `count``)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest` `+ N`. If `dest` and `first` designate regions of storage, `dest` must not be in the range `[``first``,` `Last``)`.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
- [<algorithm\>](../vs140/-algorithm-.md)
+ [\<algorithm>](../vs140/-algorithm-.md)

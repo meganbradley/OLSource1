@@ -28,7 +28,7 @@ Defines the container template class vector and several supporting templates.
   
  The `vector` is a container that organizes elements of a given type in a linear sequence. It enables fast random access to any element, and dynamic additions and removals to and from the sequence. The `vector` is the preferred container for a sequence when random-access performance is at a premium.  
   
- For more information about the class `vector`, see [vector Class](../vs140/vector-class.md). For information about the specialization `vector<bool>`, see [vector<bool\> Class](../vs140/vector-bool--class.md).  
+ For more information about the class `vector`, see [vector Class](../vs140/vector-class.md). For information about the specialization `vector<bool>`, see [vector\<bool> Class](../vs140/vector-bool--class.md).  
   
 ## Syntax  
   
@@ -115,10 +115,10 @@ template<class Type, class Allocator>
   
 |||  
 |-|-|  
-|[vector<bool\> Class](../vs140/vector-bool--class.md)|A full specialization of the template class vector for elements of type `bool` with an allocator for the underlying type used by the specialization.|  
+|[vector\<bool> Class](../vs140/vector-bool--class.md)|A full specialization of the template class vector for elements of type `bool` with an allocator for the underlying type used by the specialization.|  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

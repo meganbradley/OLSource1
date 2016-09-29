@@ -36,9 +36,9 @@ Yields `stdext::allocators::cache_chunklist<sizeof(Type)>`.
 ## Remarks  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
 ## See Also  
- [<allocators\>](../vs140/-allocators-.md)
+ [\<allocators>](../vs140/-allocators-.md)

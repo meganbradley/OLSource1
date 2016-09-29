@@ -41,7 +41,7 @@ This walkthrough shows how to add a DLL reference to a custom Start Page. The ex
   
 #### To write the XAML for the user control  
   
-1.  Open the XAML file for the user control. In the <Grid\> element, add the following row definitions to the control.  
+1.  Open the XAML file for the user control. In the \<Grid> element, add the following row definitions to the control.  
   
     ```vb  
     <Grid.RowDefinitions>  
@@ -155,11 +155,11 @@ This walkthrough shows how to add a DLL reference to a custom Start Page. The ex
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
     ```  
   
-3.  In the **XAML** pane, scroll to the <Grid\> section.  
+3.  In the **XAML** pane, scroll to the \<Grid> section.  
   
      The section contains a <xref:System.Windows.Controls.TabControl*> element in a <xref:System.Windows.Controls.Grid*> element.  
   
-4.  Add a <TabControl\> element containing a <TabItem\> that contains a reference to your user control.  
+4.  Add a \<TabControl> element containing a \<TabItem> that contains a reference to your user control.  
   
     ```xml  
   

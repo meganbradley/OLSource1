@@ -79,7 +79,7 @@ int main( )
  **The operand valarray is: ( 0 2 3 -3 8 0 -6 14 -3 -9 ).**  
 **The smallest element in the valarray is: -9.**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

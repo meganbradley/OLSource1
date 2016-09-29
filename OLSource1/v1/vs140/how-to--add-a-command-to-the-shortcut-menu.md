@@ -140,7 +140,7 @@ You can add menu commands to your domain-specific language (DSL) so that your us
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
 ##  <a name="CommandSet"></a> Define the Behavior of the Command  
- Your DSL already has some commands that are implemented in a partial class that is declared in DslPackage\GeneratedCode\CommandSet.cs. To add new commands, you must extend this class by creating a new file that contains a partial declaration of the same class. The name of the class is usually *<YourDslName\>*`CommandSet`. It is useful to begin by verifying the name of the class and inspecting its contents.  
+ Your DSL already has some commands that are implemented in a partial class that is declared in DslPackage\GeneratedCode\CommandSet.cs. To add new commands, you must extend this class by creating a new file that contains a partial declaration of the same class. The name of the class is usually *\<YourDslName>*`CommandSet`. It is useful to begin by verifying the name of the class and inspecting its contents.  
   
  The command set class is derived from <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet*>.  
   

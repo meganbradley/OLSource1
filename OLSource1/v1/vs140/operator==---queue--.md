@@ -95,7 +95,7 @@ int main( )
  **The queues q1 and q2 are not equal.**  
 **The queues q1 and q3 are equal.**   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

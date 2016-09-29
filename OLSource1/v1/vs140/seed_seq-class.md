@@ -96,7 +96,7 @@ Returns the number of elements in the `seed_seq`.
 Copies the internal sequence into the output iterator `dest`.  
   
 ## Example  
- The following code example exercises the three constructors and generates output from the resulting `seed_seq` instances when assigned to an array. For an example that uses `seed_seq` with a random number generator, see [<random\>](../vs140/-random-.md).  
+ The following code example exercises the three constructors and generates output from the resulting `seed_seq` instances when assigned to an array. For an example that uses `seed_seq` with a random number generator, see [\<random>](../vs140/-random-.md).  
   
 ```cpp  
 #include <iostream>  
@@ -163,9 +163,9 @@ int main()
  Member functions of this class do not throw exceptions.  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

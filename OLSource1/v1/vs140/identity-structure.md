@@ -50,9 +50,9 @@ template<class Type>
  For compatibility with older code, the class also defines the identity function `operator()` which returns its argument `_Left`.  
   
 ## Requirements  
- **Header:** <utility\>  
+ **Header:** \<utility>  
   
  **Namespace:** std  
   
 ## See Also  
- [<utility\>](../vs140/-utility-.md)
+ [\<utility>](../vs140/-utility-.md)

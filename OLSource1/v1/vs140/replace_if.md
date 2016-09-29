@@ -120,7 +120,7 @@ The vector v1 with a value 70 replacing those
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

@@ -68,7 +68,7 @@ int main()
  **not empty == false**  
 **not empty == true**   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

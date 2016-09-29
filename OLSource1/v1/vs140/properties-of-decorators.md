@@ -23,7 +23,7 @@ Decorators are icons, text, or expand/collapse chevrons that can appear on shape
 |--------------|-----------------|-------------|  
 |DisplayName|The name of the decorator that will be displayed in the generated designer.|Expand Collapse Decorator|  
 |Name|The name of the decorator.|ExpandCollapseDecorator|  
-|Notes|Informal notes that are associated with this decorator.|<none\>|  
+|Notes|Informal notes that are associated with this decorator.|\<none>|  
 |HorizontalOffset|The horizontal offset, relative to the default position of the decorator, in inches. (On shapes only.)|0|  
 |VerticalOffset|The vertical offset, relative to the default position of the decorator, in inches. (On shapes only.)|0|  
 |OffsetFromLine|The offset of the decorator from the line, relative to its default position, in inches. (On connectors only.)|0|  
@@ -34,10 +34,10 @@ Decorators are icons, text, or expand/collapse chevrons that can appear on shape
   
 |Property|Description|Default|  
 |--------------|-----------------|-------------|  
-|DefaultIcon|The path of the icon or image file to be displayed.|<none\>|  
+|DefaultIcon|The path of the icon or image file to be displayed.|\<none>|  
 |DisplayName|The name of the decorator to be displayed in the generated designer.|Icon Decorator|  
 |Name|The name of the decorator.|IconDecorator|  
-|Notes|Informal notes that are associated with the decorator.|<none\>|  
+|Notes|Informal notes that are associated with the decorator.|\<none>|  
 |HorizontalOffset|The horizontal offset, relative to the default position of the decorator, in inches. (On shapes only.)|0|  
 |VerticalOffset|The vertical offset, relative to the default position of the decorator, in inches. (On shapes only.)|0|  
 |OffsetFromLine|The offset of the decorator from the line, relative to its default position, in inches. (On connectors only.)|0|  
@@ -53,7 +53,7 @@ Decorators are icons, text, or expand/collapse chevrons that can appear on shape
 |FontSize|The font size for the text that is displayed in the decorator.|8|  
 |FontStyle|The font style for the text that is displayed in the decorator.|Regular|  
 |Name|The name of the decorator.|Label|  
-|Notes|Informal notes that are associated with the decorator.|<none\>|  
+|Notes|Informal notes that are associated with the decorator.|\<none>|  
 |HorizontalOffset|The horizontal offset, relative to the default position of the decorator, in inches. (On shapes only.)|0|  
 |VerticalOffset|The vertical offset, relative to the default position of the decorator, in inches. (On shapes only.)|0|  
 |OffsetFromLine|The offset of the decorator from the line, relative to its default position, in inches. (On connectors only.)|0|  

@@ -1,5 +1,5 @@
 ---
-title: "operator&gt; (stack) (STL-CLR)"
+title: "operator&lt; (stack) (STL-CLR)"
 ms.custom: na
 ms.date: "09/22/2016"
 ms.prod: "visual-studio-dev14"
@@ -9,28 +9,28 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: na
 ms.topic: "reference"
-H1: "operator&gt; (stack) (STL/CLR)"
+H1: "operator&lt; (stack) (STL/CLR)"
 f1_keywords: 
-  - "cliext::stack::operator>"
+  - "cliext::stack::operator<"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "operator> member [STL/CLR]"
-ms.assetid: 77979026-bed5-4d24-a2af-f720f8c362a2
-caps.latest.revision: 18
+  - "operator< member [STL/CLR]"
+ms.assetid: 77f8dd42-89d1-4ce1-a7ec-04c3a45dd3ee
+caps.latest.revision: 19
 translation.priority.ht: 
   - "de-de"
   - "ja-jp"
 ---
-# operator&gt; (stack) (STL-CLR)
-Stack greater than comparison.  
+# operator&lt; (stack) (STL-CLR)
+Stack less than comparison.  
   
 ## Syntax  
   
 ```  
 template<typename Value,  
     typename Container>  
-    bool operator>(stack<Value, Container>% left,  
+    bool operator<(stack<Value, Container>% left,  
         stack<Value, Container>% right);  
 ```  
   
@@ -42,12 +42,12 @@ template<typename Value,
  Right container to compare.  
   
 ## Remarks  
- The operator function returns `right` `<` `left`. You use it to test whether `left` is ordered after `right` when the two stacks are compared element by element.  
+ The operator function returns true if, for the lowest position `i` for which `!(``right``[i] <` `left``[i])` it is also true that `left``[i] <` `right``[i]`. Otherwise, it returns `left``->`[size](../vs140/stack--size--stl-clr-.md)`() <` `right``->size()` You use it to test whether `left` is ordered before `right` when the two stacks are compared element by element.  
   
 ## Example  
   
 ```  
-// cliext_stack_operator_gt.cpp   
+// cliext_stack_operator_lt.cpp   
 // compile with: /clr   
 #include <cliext/stack>   
   
@@ -75,10 +75,10 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
   
-    System::Console::WriteLine("[a b c] > [a b c] is {0}",   
-        c1 > c1);   
-    System::Console::WriteLine("[a b d] > [a b c] is {0}",   
-        c2 > c1);   
+    System::Console::WriteLine("[a b c] < [a b c] is {0}",   
+        c1 < c1);   
+    System::Console::WriteLine("[a b c] < [a b d] is {0}",   
+        c1 < c2);   
     return (0);   
     }  
   
@@ -86,8 +86,8 @@ int main()
   
   **a b c**  
  **a b d**  
-**[a b c] > [a b c] is False**  
-**[a b d] > [a b c] is True**   
+**[a b c] < [a b c] is False**  
+**[a b c] < [a b d] is True**   
 ## Requirements  
  **Header:** <cliext/stack>  
   
@@ -97,6 +97,6 @@ int main()
  [stack](../vs140/stack--stl-clr-.md)   
  [operator==](../vs140/operator==--stack---stl-clr-.md)   
  [operator!=](../vs140/operator!=--stack---stl-clr-.md)   
- [operator<](../vs140/operator---stack---stl-clr-.md)   
  [operator>=](../vs140/operator-=--stack---stl-clr-.md)   
+ [operator>](../vs140/operator---stack---stl-clr-.md)   
  [operator<=](../vs140/operator-=--stack---stl-clr-.md)

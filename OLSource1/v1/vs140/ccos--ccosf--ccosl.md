@@ -75,7 +75,7 @@ _Lcomplex ccosl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`ccos`,               `ccosf`, `ccosl`|<complex.h>|<ccomplex\>|  
+|`ccos`,               `ccosf`, `ccosl`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

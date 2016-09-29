@@ -62,7 +62,7 @@ int main()
   
  **\*sp0 == 5**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

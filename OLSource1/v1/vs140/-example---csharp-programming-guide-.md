@@ -35,7 +35,7 @@ translation.priority.ht:
  A description of the code sample.  
   
 ## Remarks  
- The <example\> tag lets you specify an example of how to use a method or other library member. This commonly involves using the [<code\>](../vs140/-code---csharp-programming-guide-.md) tag.  
+ The \<example> tag lets you specify an example of how to use a method or other library member. This commonly involves using the [\<code>](../vs140/-code---csharp-programming-guide-.md) tag.  
   
  Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file.  
   

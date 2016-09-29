@@ -66,9 +66,9 @@ template<class InputIterator, class Size, class ForwardIterator>
  unless the code throws an exception. In that case, all constructed objects are destroyed and the exception is rethrown.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

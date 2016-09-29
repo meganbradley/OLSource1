@@ -266,21 +266,21 @@ int main( void )
 ```  
   
   **count = 8; 10-byte buffer**  
- **new contents of dest: '<<<121>>'**  
+ **new contents of dest: '<<\<121>>'**  
 **count = 9; 10-byte buffer**  
- **new contents of dest: '<<<121>>>'**  
+ **new contents of dest: '<<\<121>>>'**  
 **count = 10; 10-byte buffer**  
- **new contents of dest: '<<<121>>>'**  
+ **new contents of dest: '<<\<121>>>'**  
 **Destination buffer too small:**  
 **count = 10; 10-byte buffer**  
 **Invalid parameter handler invoked: ("Buffer too small", 0)**  
  **new contents of dest: ''**  
 **Truncation examples:**  
 **10-byte buffer; truncation semantics**  
- **new contents of dest: '<<<1221>>'**  
+ **new contents of dest: '<<\<1221>>'**  
  **truncation did occur**  
 **10-byte buffer; truncation semantics**  
- **new contents of dest: '<<<121>>>'**  
+ **new contents of dest: '<<\<121>>>'**  
  **truncation did not occur**  
 **Secure template overload example:**  
 **Invalid parameter handler invoked: ("Buffer too small", 0)**  

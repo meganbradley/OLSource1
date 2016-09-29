@@ -72,7 +72,7 @@ int feclearexcept(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`feclearexcept`|<fenv.h>|<cfenv\>|  
+|`feclearexcept`|<fenv.h>|\<cfenv>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

@@ -18,7 +18,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3254
-**MSB3254: The file <name\> will be ignored because it cannot be read. This file was either passed in to InstalledAssemblySubsetTables or was found by searching the <name\> folder in the TargetFrameworkDirectories.**  
+**MSB3254: The file \<name> will be ignored because it cannot be read. This file was either passed in to InstalledAssemblySubsetTables or was found by searching the \<name> folder in the TargetFrameworkDirectories.**  
   
  This error occurs when the [!INCLUDE[net_client_v35_long](../vs140/includes/net_client_v35_long_md.md)] XML file, client.xml, cannot be read. The file is unreadable because of corruption, locking, or some other problem.  
   

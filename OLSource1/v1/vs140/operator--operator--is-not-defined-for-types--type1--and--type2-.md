@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Operator &#39;operator&#39; is not defined for types &#39;type1&#39; and &#39;type2&#39;
-Operator 'operator' is not defined for types 'type1' and 'type2'. You can use the 'Value' property to get the string value of the first element of '<parentElement\>'.  
+Operator 'operator' is not defined for types 'type1' and 'type2'. You can use the 'Value' property to get the string value of the first element of '\<parentElement>'.  
   
  An XML literal has been used in a binary or `Boolean` comparison.  
   

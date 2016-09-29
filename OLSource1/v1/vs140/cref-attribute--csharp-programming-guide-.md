@@ -23,7 +23,7 @@ translation.priority.ht:
 The `cref` attribute in an XML documentation tag means "code reference." It specifies that the inner text of the tag is a code element, such as a type, method, or property. Documentation tools like [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061) use the `cref` attributes to automatically generate hyperlinks to the page where the type or member is documented.  
   
 ## Example  
- The following example shows `cref` attributes used in [<see\>](../vs140/-see---csharp-programming-guide-.md) tags.  
+ The following example shows `cref` attributes used in [\<see>](../vs140/-see---csharp-programming-guide-.md) tags.  
   
  [!code[csProgGuideDocComments#3](../vs140/codesnippet/CSharp/cref-attribute--csharp-programming-guide-_1.cs)]  
   

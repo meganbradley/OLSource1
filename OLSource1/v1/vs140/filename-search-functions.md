@@ -36,9 +36,9 @@ translation.priority.ht:
 # Filename Search Functions
 These functions search for and close searches for specified file names:  
   
--   [_findnext, _wfindnext](../vs140/_findnext--_findnext32--_findnext32i64--_findnext64--_findnext64i32--_findnexti64--_wfindnext--_wfindnext32--_wfindnext32i64--_wfindnext64--_wfindnext64i32--_wfindnexti64.md)  
+-   [_findnext, _wfindnext](../vs140/75d97188-5add-4698-a46c-4c492378f0f8.md)  
   
--   [_findfirst, _wfindfirst](../vs140/_findfirst--_findfirst32--_findfirst32i64--_findfirst64--_findfirst64i32--_findfirsti64--_wfindfirst--_wfindfirst32--_wfindfirst32i64--_wfindfirst64--_wfindfirst64i32--_wfindfirsti64.md)  
+-   [_findfirst, _wfindfirst](../vs140/9bb46d1a-b946-47de-845a-a0b109a33ead.md)  
   
 -   [_findclose](../vs140/_findclose.md)  
   

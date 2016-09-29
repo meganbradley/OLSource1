@@ -32,10 +32,10 @@ typedef bool const_reference;
 ```  
   
 ## Remarks  
- For more information and code examples, see [vector<bool\>::reference::operator=](../vs140/vector-bool---reference--operator=.md).  
+ For more information and code examples, see [vector\<bool>::reference::operator=](../vs140/vector-bool---reference--operator=.md).  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

@@ -180,7 +180,7 @@ int main( )
 **The string str2f is: Wide World**   
 **The appended string str1 is: Hello World.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

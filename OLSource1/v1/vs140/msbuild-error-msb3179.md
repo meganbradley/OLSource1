@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3179
-**MSB3179: Problem isolating COM reference '<assembly\>': '<error\>'**  
+**MSB3179: Problem isolating COM reference '\<assembly>': '\<error>'**  
   
  This is a generic error message indicating a problem with the generation of RegFree COM entries in application manifest (as specified by the `IsolatedComReferences` task parameter). The latter part of the error message contains more information about the nature of the problem. A possible cause of this error is that RegFree COM components are not properly registered on the build computer.  
   
@@ -29,4 +29,4 @@ translation.priority.ht:
 -   Make sure that all COM components are registered on the build computer.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

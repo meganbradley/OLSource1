@@ -40,11 +40,11 @@ You can deploy Visual Studio LightSwitch applications, such as web applications 
   
 3.  On the **Application Services** page, choose the **Azure** option button, and then choose the **Next** button.  
   
-4.  On the **Azure subscription** page, in the **Subscriptions** list, choose the Azure subscription to use for the application. If the list is empty, choose **<Manage Settings\>** to manage your Azure subscriptions.  
+4.  On the **Azure subscription** page, in the **Subscriptions** list, choose the Azure subscription to use for the application. If the list is empty, choose **\<Manage Settings>** to manage your Azure subscriptions.  
   
 5.  Expand the **Service type selection** list and choose the **Cloud Service** option button, and then choose the **Next** button.  
   
-6.  On the **Azure cloud service and storage** page, in the **Cloud Service** list, choose the cloud service where you want to host the application. To create a new cloud service, choose **<Create new\>**.  
+6.  On the **Azure cloud service and storage** page, in the **Cloud Service** list, choose the cloud service where you want to host the application. To create a new cloud service, choose **\<Create new>**.  
   
 7.  In the **Environment** list, choose the environment (**Production** or **Staging**) to host the application.  
   
@@ -59,7 +59,7 @@ You can deploy Visual Studio LightSwitch applications, such as web applications 
 11. In the **Storage** list, choose the storage service in which the application binaries will be stored.  
   
     > [!NOTE]
-    >  If no storage services are listed, choose the **<Create new\>** link to create one for your subscription.  
+    >  If no storage services are listed, choose the **\<Create new>** link to create one for your subscription.  
   
 12. (Optional) Clear the **Enable deployment upgrade** check box to stop overwriting the previous version of an application each time that you publish it.  
   
@@ -112,7 +112,7 @@ You can deploy Visual Studio LightSwitch applications, such as web applications 
   
 3.  On the **Application Services** page, choose the **Azure** option button, and then choose the **Next** button.  
   
-4.  On the **Azure subscription** page, in the **Subscriptions** list, choose the Azure subscription to use for the application. If the list is empty, choose **<Manage Settings\>** to manage your Azure subscriptions.  
+4.  On the **Azure subscription** page, in the **Subscriptions** list, choose the Azure subscription to use for the application. If the list is empty, choose **\<Manage Settings>** to manage your Azure subscriptions.  
   
 5.  Expand the **Service type selection** list and choose the **Web Site** option button, and then choose the **Next** button.  
   

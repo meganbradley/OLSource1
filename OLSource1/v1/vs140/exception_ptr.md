@@ -43,5 +43,5 @@ typedef unspecified exception_ptr;
  You can use the equal (`==`) and not-equal (`!=`) operators to compare two `exception_ptr` objects. The operators do not compare the binary value (bit pattern) of the `EXCEPTION_RECORD` structures that represent the exceptions. Instead, the operators compare the addresses in the exception reference field of the `exception_ptr` objects. Consequently, a null `exception_ptr` and the NULL value compare as equal.  
   
 ## See Also  
- [<exception\>](../vs140/-exception-.md)   
+ [\<exception>](../vs140/-exception-.md)   
  [Transporting Exceptions Between Threads](../vs140/transporting-exceptions-between-threads.md)

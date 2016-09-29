@@ -79,7 +79,7 @@ The integer at the front of queue q1 is 10.
 ```  
   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

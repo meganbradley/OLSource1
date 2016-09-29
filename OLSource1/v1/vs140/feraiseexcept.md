@@ -67,7 +67,7 @@ int feraiseexcept(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`feraiseexcept`|<fenv.h>|<cfenv\>|  
+|`feraiseexcept`|<fenv.h>|\<cfenv>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

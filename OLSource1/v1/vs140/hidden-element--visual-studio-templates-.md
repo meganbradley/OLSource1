@@ -23,9 +23,9 @@ translation.priority.ht:
 # Hidden Element (Visual Studio Templates)
 Specifies whether the template appears in either the **New Project** or **Add New Item** dialog box.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <Hidden\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<Hidden>  
   
 ## Syntax  
   

@@ -53,7 +53,7 @@ class istrstream : public istream
 |[str](#istrstream__str)|Calls [freeze](../vs140/strstreambuf-class.md#strstreambuf__freeze), and then returns a pointer to the beginning of the controlled sequence.|  
   
 ## Requirements  
- **Header:** <strstream\>  
+ **Header:** \<strstream>  
   
  **Namespace:** std  
   

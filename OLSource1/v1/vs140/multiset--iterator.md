@@ -40,11 +40,11 @@ typedef implementation-defined iterator;
  See the example for [begin](../vs140/multiset--begin.md) for an example of how to declare and use an **iterator**.  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   
 ## See Also  
- [<set\>](../vs140/-set-.md)   
+ [\<set>](../vs140/-set-.md)   
  [multiset Class](../vs140/multiset-class.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

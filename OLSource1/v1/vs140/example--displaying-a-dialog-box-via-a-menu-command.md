@@ -51,7 +51,7 @@ This topic contains procedures to:
   
 3.  Add a class for your dialog box. See [Adding a Class](../vs140/adding-a-class--visual-c---.md) for more information.  
   
-4.  In **Class View**, select the document class (CDisplayDialogDoc). In the **Properties** window, click the **Events** button. Double-click the ID of the menu command (ID_VIEW_TEST) in the left pane of the **Properties** window and select **Command**. In the right pane, click the down arrow and select **<Add\> OnViewTest**.  
+4.  In **Class View**, select the document class (CDisplayDialogDoc). In the **Properties** window, click the **Events** button. Double-click the ID of the menu command (ID_VIEW_TEST) in the left pane of the **Properties** window and select **Command**. In the right pane, click the down arrow and select **\<Add> OnViewTest**.  
   
      If you added the menu command to the mainframe of an MDI application, select the application class (CDisplayDialogApp) instead.  
   

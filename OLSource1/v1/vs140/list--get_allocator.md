@@ -70,7 +70,7 @@ int main( )
 ```  
   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

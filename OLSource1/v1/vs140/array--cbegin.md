@@ -54,11 +54,11 @@ auto i2 = Container.cbegin(); // i2 is Container<T>::const_iterator
 ```  
   
 ## Requirements  
- **Header:** <array\>  
+ **Header:** \<array>  
   
  **Namespace:** std  
   
 ## See Also  
- [<array\>](../vs140/-array-.md)   
+ [\<array>](../vs140/-array-.md)   
  [array Class](../vs140/array-class--stl-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

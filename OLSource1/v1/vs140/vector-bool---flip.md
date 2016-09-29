@@ -74,7 +74,7 @@ The flipped vector is:
 ```  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

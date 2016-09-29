@@ -58,14 +58,14 @@ You can change the format in which a value is displayed in the **Watch** window 
   
 |Specifier|Format|Original Watch Value|Displays|  
 |---------------|------------|--------------------------|--------------|  
-|ac|Force evaluation of an expression. This can be useful when implicit evaluation of properties and implicit function calls is turned off. See [Side Effects and Expressions](../vs140/side-effects-and-expressions.md).|Message “Implicit function evaluation is turned off by the user”|<value\>|  
+|ac|Force evaluation of an expression. This can be useful when implicit evaluation of properties and implicit function calls is turned off. See [Side Effects and Expressions](../vs140/side-effects-and-expressions.md).|Message “Implicit function evaluation is turned off by the user”|\<value>|  
 |d|decimal integer|0x0065|101|  
 |dynamic|Displays the specified object using a Dynamic View|Displays all the members of the object, including the Dynamic View|Displays only the Dynamic View|  
 |h|hexadecimal integer|61541|0x0000F065|  
 |nq|string with no quotes|"My String"|My String|  
 |hidden|Displays all public and non-public members|Displays public members|Displays all members|  
-|raw|Displays item as it appears in the raw item node. Valid on proxy objects only.|Dictionary<T\>|Raw View of Dictionary<T\>|  
-|results|Used with a variable of a type that implements IEnumerable or IEnumerable<T\>, usually the result of a query expression. Displays only the members that contain the query result.|Displays all the members.|Displays the members the meet the conditions of the query.|  
+|raw|Displays item as it appears in the raw item node. Valid on proxy objects only.|Dictionary\<T>|Raw View of Dictionary\<T>|  
+|results|Used with a variable of a type that implements IEnumerable or IEnumerable\<T>, usually the result of a query expression. Displays only the members that contain the query result.|Displays all the members.|Displays the members the meet the conditions of the query.|  
   
 ## See Also  
  [How to: Watch an Expression in the Debugger](../vs140/watch-and-quickwatch-windows.md)   

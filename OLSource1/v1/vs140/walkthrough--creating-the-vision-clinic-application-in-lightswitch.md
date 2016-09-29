@@ -139,25 +139,25 @@ This walkthrough demonstrates the end-to-end process of creating an application 
   
      The name in the **Data Designer** title bar changes to "Patient", and the name in **Solution Explorer** changes to "Patients.lsml".  
   
-3.  In the **Name** column of the **Data Designer**, choose the **<Add property\>** link, enter **Name**, and then choose the Enter key.  
+3.  In the **Name** column of the **Data Designer**, choose the **\<Add property>** link, enter **Name**, and then choose the Enter key.  
   
      Notice that the appropriate data type, `String`, appears in the **Type** column and the **Required** check box is selected. Users must specify a name for every patient.  
   
-4.  In the **Name** column, choose the **<Add property\>** link, and then enter **Street**.  
+4.  In the **Name** column, choose the **\<Add property>** link, and then enter **Street**.  
   
-5.  In the **Name** column, choose the **<Add property\>** link, and then enter **Street2**.  
+5.  In the **Name** column, choose the **\<Add property>** link, and then enter **Street2**.  
   
 6.  In the **Required** column, clear the check box.  
   
      The second line of a street address is optional.  
   
-7.  In the **Name** column, choose the **<Add property\>** link, and then enter **City**.  
+7.  In the **Name** column, choose the **\<Add property>** link, and then enter **City**.  
   
-8.  In the **Name** column, choose the **<Add property\>** link, and then enter **State**.  
+8.  In the **Name** column, choose the **\<Add property>** link, and then enter **State**.  
   
-9. In the **Name** column, choose the **<Add property\>** link, and then enter **Zip**.  
+9. In the **Name** column, choose the **\<Add property>** link, and then enter **Zip**.  
   
-10. In the **Name** column, choose the **<Add property\>** link, and then enter **PrimaryPhone**.  
+10. In the **Name** column, choose the **\<Add property>** link, and then enter **PrimaryPhone**.  
   
 11. In the **Type** column, open the list, and then choose **PhoneNumber**.  
   
@@ -165,13 +165,13 @@ This walkthrough demonstrates the end-to-end process of creating an application 
   
 12. In the **Required** column, clear the check box.  
   
-13. In the **Name** column, choose the **<Add property\>** link, and then enter **SecondaryPhone**.  
+13. In the **Name** column, choose the **\<Add property>** link, and then enter **SecondaryPhone**.  
   
 14. In the **Type** column, open the list, and then choose **PhoneNumber**.  
   
 15. In the **Required** column, clear the check box.  
   
-16. In the **Name** column, choose the **<Add field\>** link, and then enter **Email**.  
+16. In the **Name** column, choose the **\<Add field>** link, and then enter **Email**.  
   
 17. In the **Type** column, open the list, and then choose **EmailAddress**.  
   
@@ -179,7 +179,7 @@ This walkthrough demonstrates the end-to-end process of creating an application 
   
 18. In the **Required** column, clear the check box.  
   
-19. In the  **Name** column, choose the **<Add property\>** link, and then enter **PolicyNumber**.  
+19. In the  **Name** column, choose the **\<Add property>** link, and then enter **PolicyNumber**.  
   
 20. In the **Properties** window, set the **Maximum Length** property to `12`.  
   
@@ -203,19 +203,19 @@ This walkthrough demonstrates the end-to-end process of creating an application 
   
 2.  In the **Properties** window, set the **Name** property to **Invoice**, and then choose the Enter key.  
   
-3.  In the **Name** column, choose the **<Add property\>** link, enter **InvoiceDate**, and then choose the Tab key.  
+3.  In the **Name** column, choose the **\<Add property>** link, enter **InvoiceDate**, and then choose the Tab key.  
   
 4.  In the **Type** column, open the list, and then choose **DateTime**.  
   
-5.  In the **Name** column, choose the **<Add property\>** link, enter **InvoiceDue**, and then choose the `Tab` key.  
+5.  In the **Name** column, choose the **\<Add property>** link, enter **InvoiceDue**, and then choose the `Tab` key.  
   
 6.  In the **Type** column, open the list, and then choose **DateTime**.  
   
-7.  In the **Name** column, choose the **<Add property\>** link, enter **InvoiceStatus**, and then choose the `Tab` key.  
+7.  In the **Name** column, choose the **\<Add property>** link, enter **InvoiceStatus**, and then choose the `Tab` key.  
   
 8.  In the **Type** column, open the list, and then choose **Integer**.  
   
-9. In the **Name** column, choose the **<Add property\>** link, enter **ShipDate**, and then choose the `Tab` key.  
+9. In the **Name** column, choose the **\<Add property>** link, enter **ShipDate**, and then choose the `Tab` key.  
   
 10. In the **Type** column, open the list, and then choose **DateTime**.  
   
@@ -225,11 +225,11 @@ This walkthrough demonstrates the end-to-end process of creating an application 
   
 12. In the **Properties** window, set the **Name** property to **InvoiceDetail**, and then choose the Enter key.  
   
-13. In the **Name** column, choose the **<Add property\>** link, enter **Quantity**, and then choose the `Tab` key.  
+13. In the **Name** column, choose the **\<Add property>** link, enter **Quantity**, and then choose the `Tab` key.  
   
 14. In the **Type** column, open the list, and then choose **Integer**.  
   
-15. In the **Name** column, choose the **<Add property\>** link, and then enter **UnitPrice**.  
+15. In the **Name** column, choose the **\<Add property>** link, and then enter **UnitPrice**.  
   
 16. In the **Type** column, open the list, and then choose **Money**.  
   
@@ -306,19 +306,19 @@ This walkthrough demonstrates the end-to-end process of creating an application 
   
 2.  In the **Properties** window, choose the **Name** text box, and then enter `Appointment`.  
   
-3.  In the **Data Designer**, choose the **<Add property\>** placeholder text in the **Name** column, and then enter `AppointmentTime`.  
+3.  In the **Data Designer**, choose the **\<Add property>** placeholder text in the **Name** column, and then enter `AppointmentTime`.  
   
 4.  In the **Type** column, open the list, and then choose **DateTime**.  
   
-5.  In the **Data Designer**, choose the **<Add property\>** placeholder text in the **Name** column, and then enter `AppointmentDate`.  
+5.  In the **Data Designer**, choose the **\<Add property>** placeholder text in the **Name** column, and then enter `AppointmentDate`.  
   
 6.  In the **Type** column, open the list, and then choose **Date**.  
   
-7.  In the **Name** column, choose the **<Add property\>** placeholder text, and then enter `AppointmentType`.  
+7.  In the **Name** column, choose the **\<Add property>** placeholder text, and then enter `AppointmentType`.  
   
 8.  In the **Type** column, open the list, and then choose **Short Integer**.  
   
-9. In the  **Name** column, choose the **<Add property\>** placeholder text, and then enter `DoctorNotes`.  
+9. In the  **Name** column, choose the **\<Add property>** placeholder text, and then enter `DoctorNotes`.  
   
 10. Accept the default type, **String**, and clear the **Required** check box.  
   
@@ -620,7 +620,7 @@ This walkthrough demonstrates the end-to-end process of creating an application 
   
 2.  In the **Data Designer**, on the **Perspective** bar, choose the **Server** tab.  
   
-3.  Choose the **<Add Property\>** link, enter `CurrentPrice`, and then choose the Tab key.  
+3.  Choose the **\<Add Property>** link, enter `CurrentPrice`, and then choose the Tab key.  
   
 4.  In the **Type** column, open the list, and then choose **Money**.  
   
@@ -851,7 +851,7 @@ This walkthrough demonstrates the end-to-end process of creating an application 
   
 1.  In **Solution Explorer**, open the shortcut menu for the **InvoiceDetails.lsml** node, and then choose **Open**.  
   
-2.  In the **Data Designer**, choose the **<Add Property\>** link, enter `SubTotal`, and then choose the `Tab` key.  
+2.  In the **Data Designer**, choose the **\<Add Property>** link, enter `SubTotal`, and then choose the `Tab` key.  
   
 3.  In the **Type** column, open the list, and then choose **Money**.  
   
@@ -873,7 +873,7 @@ This walkthrough demonstrates the end-to-end process of creating an application 
   
 7.  In **Solution Explorer**, open the shortcut menu for the **Invoices.lsml** node, and then choose **Open**.  
   
-8.  In the **Data Designer**, choose the **<Add Property\>** link, and enter `Tax`, and then choose the `Tab` key.  
+8.  In the **Data Designer**, choose the **\<Add Property>** link, and enter `Tax`, and then choose the `Tab` key.  
   
 9. In the **Type** column, open the list, and then choose **Money**.  
   
@@ -910,7 +910,7 @@ This walkthrough demonstrates the end-to-end process of creating an application 
   
 13. In **Solution Explorer**, open the shortcut menu for the **Invoices.lsml** node, and then choose **Open**.  
   
-14. In the **Data Designer**, choose the **<Add Property\>** link, enter `Total`, and then choose the `Tab` key.  
+14. In the **Data Designer**, choose the **\<Add Property>** link, enter `Total`, and then choose the `Tab` key.  
   
 15. In the **Type** column, open the list, and then choose **Money**.  
   

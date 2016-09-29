@@ -89,12 +89,12 @@ int main()
  **false**  
  **true**   
 ## Requirements  
- **Header:** <tuple\>  
+ **Header:** \<tuple>  
   
  **Namespace:** std  
   
 ## See Also  
- [<tuple\>](../vs140/-tuple-.md)   
+ [\<tuple>](../vs140/-tuple-.md)   
  [operator==](../vs140/operator==--tuple-.md)   
  [operator<](../vs140/operator---tuple-.md)   
  [operator<=](../vs140/operator-=--tuple-.md)   

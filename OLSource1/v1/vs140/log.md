@@ -114,6 +114,6 @@ The complex components log (vci), where abs (vci) = 1
 ```  
   
 ## Requirements  
- **Header:** <complex\>  
+ **Header:** \<complex>  
   
  **Namespace:** std

@@ -269,26 +269,13 @@ Length of the downloaded string: 33946.
   
  The `client.GetStringAsync` method returns a task of string that’s assigned to the `getStringTask` variable in `AccessTheWebAsync`. The following line in the example program shows the call to `client.GetStringAsync` and the assignment.  
   
-```vb  
-Dim getStringTask As Task(Of String) = client.GetStringAsync("http://msdn.microsoft.com")  
-```  
-  
+<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
  You can think of the task as a promise by `client.GetStringAsync` to produce an actual string eventually. In the meantime, if `AccessTheWebAsync` has work to do that doesn't depend on the promised string from `client.GetStringAsync`, that work can continue while  `client.GetStringAsync` waits. In the example, the following lines of output, which are labeled "THREE,” represent the opportunity to do independent work  
   
-```  
-  
-THREE: Back in AccessTheWebAsync.  
-           Task getStringTask is started.  
-           About to await getStringTask & return a Task<int> to startButton_Click.  
-  
-```  
-  
+<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
  The following statement suspends progress in `AccessTheWebAsync` when `getStringTask` is awaited.  
   
-```vb  
-Dim urlContents As String = Await getStringTask  
-```  
-  
+<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
  The following image shows the flow of control from `client.GetStringAsync` to the assignment to `getStringTask` and from the creation of `getStringTask` to the application of an Await operator.  
   
  ![Step THREE](../vs140/media/asynctrace-three.png "AsyncTrace-Three")  
@@ -305,26 +292,13 @@ Dim urlContents As String = Await getStringTask
   
  The following statement assigns this task to the `getLengthTask` variable.  
   
-```vb  
-Dim getLengthTask As Task(Of Integer) = AccessTheWebAsync()  
-```  
-  
+<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
  As in `AccessTheWebAsync`, `startButton_Click` can continue with work that doesn’t depend on the results of the asynchronous task (`getLengthTask`) until the task is awaited. The following output lines represent that work.  
   
-```  
-  
-FOUR:  Back in startButton_Click.  
-           Task getLengthTask is started.  
-           About to await getLengthTask -- no caller to return to.  
-  
-```  
-  
+<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
  Progress in `startButton_Click` is suspended when `getLengthTask` is awaited. The following assignment statement suspends `startButton_Click` until `AccessTheWebAsync` is complete.  
   
-```vb  
-Dim contentLength As Integer = Await getLengthTask  
-```  
-  
+<CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
  In the following illustration, the arrows show the flow of control from the await expression in `AccessTheWebAsync` to the assignment of a value to `getLengthTask`, followed by normal processing in `startButton_Click` until `getLengthTask` is awaited.  
   
  ![Step FOUR](../vs140/media/asynctrace-four.png "AsyncTrace-FOUR")  
@@ -332,15 +306,7 @@ Dim contentLength As Integer = Await getLengthTask
 ### Step FIVE  
  When `client.GetStringAsync` signals that it’s complete, processing in `AccessTheWebAsync` is released from suspension and can continue past the await statement. The following lines of output represent the resumption of processing.  
   
-```  
-  
-FIVE:  Back in AccessTheWebAsync.  
-           Task getStringTask is complete.  
-           Processing the return statement.  
-           Exiting from AccessTheWebAsync.  
-  
-```  
-  
+<CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
  The operand of the return statement, `urlContents.Length`, is stored in the task that  `AccessTheWebAsync` returns. The await expression retrieves that value from `getLengthTask` in `startButton_Click`.  
   
  The following image shows the transfer of control after `client.GetStringAsync` (and `getStringTask`) are complete.  
@@ -354,21 +320,10 @@ FIVE:  Back in AccessTheWebAsync.
   
  The following lines of output represent the resumption of processing in `startButton_Async`:  
   
-```  
-  
-SIX:   Back in startButton_Click.  
-           Task getLengthTask is finished.  
-           Result from AccessTheWebAsync is stored in contentLength.  
-           About to display contentLength and exit.  
-  
-```  
-  
+<CodeContentPlaceHolder>12</CodeContentPlaceHolder>  
  The await expression retrieves from `getLengthTask` the integer value that’s the operand of the return statement in `AccessTheWebAsync`. The following statement assigns that value to the `contentLength` variable.  
   
-```vb  
-Dim contentLength As Integer = Await getLengthTask  
-```  
-  
+<CodeContentPlaceHolder>13</CodeContentPlaceHolder>  
  The following image shows the return of control from `AccessTheWebAsync` to `startButton_Click`.  
   
  ![Step SIX](../vs140/media/asynctrace-six.png "AsyncTrace-SIX")  

@@ -45,7 +45,7 @@ static void deallocate(Alloc al,
  This method throws nothing.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

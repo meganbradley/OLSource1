@@ -54,11 +54,11 @@ template<class Money>
  `Money` must be of type `long double` or an instantiation of `basic_string` with the same element and traits parameters as `str`.  
   
 ## Requirements  
- **Header:** <iomanip\>  
+ **Header:** \<iomanip>  
   
  **Namespace:** std  
   
 ## See Also  
- [<iomanip\>](../vs140/-iomanip-.md)   
+ [\<iomanip>](../vs140/-iomanip-.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

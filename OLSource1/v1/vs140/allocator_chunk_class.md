@@ -43,7 +43,7 @@ template <std::size_t Sz, std::size_t Nelts = 20> class cache_chunklist
 |[deallocate](../vs140/cache_chunklist-class.md#cache_chunklist__deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
@@ -91,4 +91,4 @@ void deallocate(void* _Ptr, std::size_t _Count);
 ### Remarks  
   
 ## See Also  
- [<allocators\>](../vs140/-allocators-.md)
+ [\<allocators>](../vs140/-allocators-.md)

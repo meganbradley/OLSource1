@@ -35,7 +35,7 @@ Defines Standard Template Library (STL) types, functions, and operators that hel
 ```  
   
 ## Remarks  
- Pairs are widely used in the Standard C++ Library. They are required both as the arguments and return values for various functions and as element types for containers such as [map class](../vs140/map-class.md) and [multimap class](../vs140/multimap-class.md). The <utility\> header is automatically included by <map\> to assist in managing their key/value pair type elements.  
+ Pairs are widely used in the Standard C++ Library. They are required both as the arguments and return values for various functions and as element types for containers such as [map class](../vs140/map-class.md) and [multimap class](../vs140/multimap-class.md). The \<utility> header is automatically included by \<map> to assist in managing their key/value pair type elements.  
   
 ### Classes  
   

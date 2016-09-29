@@ -61,7 +61,7 @@ int main()
   
  **\*wp0.lock() == 5**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

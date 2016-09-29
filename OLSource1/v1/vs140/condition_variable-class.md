@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # condition_variable Class
-Use the `condition_variable` class to wait for an event when you have a `mutex` of type `unique_lock<mutex>`. Objects of this type may have better performance than objects of type [condition_variable_any<unique_lock<mutex\>>](../vs140/condition_variable_any-class.md).  
+Use the `condition_variable` class to wait for an event when you have a `mutex` of type `unique_lock<mutex>`. Objects of this type may have better performance than objects of type [condition_variable_any<unique_lock\<mutex>>](../vs140/condition_variable_any-class.md).  
   
 ## Syntax  
   
@@ -102,7 +102,7 @@ void wait(
   
 ### Parameters  
  `Lck`  
- A [unique_lock<mutex\>](../vs140/unique_lock-class.md) object.  
+ A [unique_lock\<mutex>](../vs140/unique_lock-class.md) object.  
   
  `Pred`  
  Any expression that returns `true` or `false`.  
@@ -142,7 +142,7 @@ bool wait_for(
   
 ### Parameters  
  `Lck`  
- A [unique_lock<mutex\>](../vs140/unique_lock-class.md) object.  
+ A [unique_lock\<mutex>](../vs140/unique_lock-class.md) object.  
   
  `Rel_time`  
  A `chrono::duration` object that specifies the amount of time before the thread wakes up.  
@@ -201,7 +201,7 @@ bool wait_until(
   
 ### Parameters  
  `Lck`  
- A [unique_lock<mutex\>](../vs140/unique_lock-class.md) object.  
+ A [unique_lock\<mutex>](../vs140/unique_lock-class.md) object.  
   
  `Abs_time`  
  A [chrono::time_point](../vs140/time_point-class.md) object.  

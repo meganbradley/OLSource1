@@ -44,7 +44,7 @@ base( );
  The (protected) constructor does nothing. A later call to **basic_ios::**[init](../vs140/basic_ios--init.md) must initialize the object before it can be safely destroyed. Thus, the only safe use for class ios_base is as a base class for template class [basic_ios](../vs140/basic_ios-class.md).  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

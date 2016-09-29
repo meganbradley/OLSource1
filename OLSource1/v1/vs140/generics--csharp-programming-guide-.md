@@ -75,5 +75,5 @@ Generics were added to version 2.0 of the C# language and the common language ru
  <xref:System.Collections.Generic*>   
  [C# Programming Guide](../vs140/csharp-programming-guide.md)   
  [Data Types](../vs140/types--csharp-programming-guide-.md)   
- [<typeparam\> (C# Programming Guide)](../vs140/-typeparam---csharp-programming-guide-.md)   
- [<typeparamref\> (C# Programming Guide)](../vs140/-typeparamref---csharp-programming-guide-.md)
+ [\<typeparam> (C# Programming Guide)](../vs140/-typeparam---csharp-programming-guide-.md)   
+ [\<typeparamref> (C# Programming Guide)](../vs140/-typeparamref---csharp-programming-guide-.md)

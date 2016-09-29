@@ -45,10 +45,10 @@ double p() const;
  For a code example, see [geometric_distribution Class](../vs140/geometric_distribution-class.md).  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [geometric_distribution Class](../vs140/geometric_distribution-class.md)

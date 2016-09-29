@@ -66,7 +66,7 @@ type type-name<type-parameters> type-definition
  [!code[FsLangRef1#1701](../vs140/codesnippet/FSharp/generics--fsharp-_2.fs)]  
   
 ## Explicitly Generic Constructs  
- You can also make a function generic by explicitly declaring its type parameters in angle brackets (< >). The following code illustrates this.  
+ You can also make a function generic by explicitly declaring its type parameters in angle brackets (\< >). The following code illustrates this.  
   
  [!code[FsLangRef1#1703](../vs140/codesnippet/FSharp/generics--fsharp-_3.fs)]  
   

@@ -45,7 +45,7 @@ void deallocate(void* _Ptr, std::size_t _Count);
  This member function locks the mutex, calls `cache.deallocate(_Ptr, _Count)`, where `cache` represents the cache object, and then unlocks the mutex.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

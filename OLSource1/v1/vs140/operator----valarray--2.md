@@ -113,6 +113,6 @@ int main( )
 **The element-by-element result of the difference is the**  
  **valarray: ( 10 -1 8 -3 6 -5 4 -7 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std

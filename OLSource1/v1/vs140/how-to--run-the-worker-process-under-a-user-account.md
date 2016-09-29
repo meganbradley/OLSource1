@@ -35,7 +35,7 @@ To set up your computer so that you can run the [!INCLUDE[vstecasp](../vs140/inc
   
 1.  Open the machine.config file, located on your computer in the CONFIG folder under the path where you installed the runtime.  
   
-2.  Find the <processModel\> section and change the user and password attributes to the name and password of the user account you want aspnet_wp.exe to run under.  
+2.  Find the \<processModel> section and change the user and password attributes to the name and password of the user account you want aspnet_wp.exe to run under.  
   
 3.  Save the machine.config file.  
   

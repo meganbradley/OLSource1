@@ -17,7 +17,7 @@ DslTextTransform.cmd is a script that calls TextTransform.exe and runs it with c
   
  DslTextTransform.cmd is located in the following directory:  
   
- **<Visual Studio SDK Installation Path\>\VisualStudioIntegration\Tools\Bin**  
+ **\<Visual Studio SDK Installation Path>\VisualStudioIntegration\Tools\Bin**  
   
  You can specify the following arguments as input to DslTextTransform.cmd:  
   

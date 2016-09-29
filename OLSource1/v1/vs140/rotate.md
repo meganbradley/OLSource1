@@ -128,7 +128,7 @@ int main( ) {
 **After the rotation of a single deque element to the back,**  
  **d1 is   ( 0 1 2 3 4 5 ).**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

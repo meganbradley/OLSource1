@@ -82,7 +82,7 @@ int main()
  **empty == true**  
 **empty == false**   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

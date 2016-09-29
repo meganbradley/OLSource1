@@ -38,7 +38,7 @@ template<class IntType = int>class geometric_distribution{public:    // types   
   
 #### Parameters  
  `IntType`  
- The integer result type, defaults to `int`. For possible types, see [<random\>](../vs140/-random-.md).  
+ The integer result type, defaults to `int`. For possible types, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  The template class describes a distribution that produces values of a user-specified integral type with a geometric distribution. The following table links to articles about individual members.  
@@ -50,7 +50,7 @@ template<class IntType = int>class geometric_distribution{public:    // types   
   
  The property function `p()` returns the value for stored distribution parameter `p`.  
   
- For more information about distribution classes and their members, see [<random\>](../vs140/-random-.md).  
+ For more information about distribution classes and their members, see [\<random>](../vs140/-random-.md).  
   
  For detailed information about the chi-squared distribution, see the Wolfram MathWorld article                 [Geometric Distribution](http://go.microsoft.com/fwlink/?LinkId=400529).  
   
@@ -115,7 +115,7 @@ int main()
   
  **Use CTRL-Z to bypass data entry and run using default values.Enter a floating point value for the 'p' distribution parameter: .1Enter an integer value for the sample count: 100min() == 0max() == 2147483647p() == 0.1000000000Distribution for 100 samples:    0 :::::::::    1 :::::::::::    2 :::::::    3 ::::::::    4 ::::::::    5 ::::::    6 :::::    7 ::::::    8 :::::    9 ::::   10 ::::   11 ::   12 :   13 :   14 :::   15 ::::   16 :::   17 :   18 :   19 :   20 ::   21 :   22 :   23 :   28 ::   33 :   35 :   40 :**   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
@@ -165,4 +165,4 @@ struct param_type {
  This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

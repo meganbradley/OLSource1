@@ -106,7 +106,7 @@ The deque with its values negated is:
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

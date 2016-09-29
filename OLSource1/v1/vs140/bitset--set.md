@@ -83,13 +83,13 @@ int main( )
 }  
 ```  
   
- **The set of bits in bitset<5> b1(6) is: ( 00110 )**  
+ **The set of bits in bitset\<5> b1(6) is: ( 00110 )**  
 **The collecion of bits obtained from setting the**  
  **zeroth bit of bitset b1 is: ( 00111 )**  
 **The collecion of bits obtained from setting all the**  
  **elements of the bitset b1 is: ( 11111 )**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

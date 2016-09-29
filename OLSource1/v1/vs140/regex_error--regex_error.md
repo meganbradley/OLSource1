@@ -76,10 +76,10 @@ int main()
   
  **regex error: unbalanced parentheses**   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_error](../vs140/regex_error-class.md)

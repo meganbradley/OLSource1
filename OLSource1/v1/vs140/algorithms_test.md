@@ -5501,7 +5501,7 @@ int main( ) {
 ```  
   
 ##  <a name="random_shuffle"></a>  random_shuffle  
- The std::random_shuffle() function is deprecated, replaced by                 [std::shuffle()](#std__shuffle). For a code example and more information, see                 [<random\>](../vs140/-random-.md) and the Stackoverflow posting                 [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/?LinkId=397954).  
+ The std::random_shuffle() function is deprecated, replaced by                 [std::shuffle()](#std__shuffle). For a code example and more information, see                 [\<random>](../vs140/-random-.md) and the Stackoverflow posting                 [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/?LinkId=397954).  
   
 ##  <a name="remove"></a>  remove  
  Eliminates a specified value from a given range without disturbing the order of the remaining elements and returning the end of a new range free of the specified value.  
@@ -7777,7 +7777,7 @@ void shuffle(RandomAccessIterator first,
  The random number generator that the                                 `shuffle()` function will use for the operation. Must meet the requirements of a                                 `UniformRandomNumberGenerator`.  
   
 ### Remarks  
- For more information, and a code sample that uses                         `shuffle()`, see                         [<random\>](../vs140/-random-.md).  
+ For more information, and a code sample that uses                         `shuffle()`, see                         [\<random>](../vs140/-random-.md).  
   
 ##  <a name="sort"></a>  sort  
  Arranges the elements in a specified range into a nondescending order or according to an ordering criterion specified by a binary predicate.  

@@ -146,7 +146,7 @@ int main()
  c1 = 10 20 30c1 = 10 100 20 30c1 = 10 100 200 200 20 30c1 = 10 40 50 100 200 200 20 30Moved first element: ac4 = 5 6 7 8 1 2 3 4  
   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

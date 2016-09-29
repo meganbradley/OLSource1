@@ -24,7 +24,7 @@ The following table contains a listing of [!INCLUDE[vbprvb](../vs140/includes/vb
 |-|-|-|-|  
 |[AddHandler](../vs140/addhandler-statement.md)|[Call](../vs140/call-statement--visual-basic-.md)|[Class](../vs140/class-statement--visual-basic-.md)|[Const](../vs140/const-statement--visual-basic-.md)|  
 |[Continue](../vs140/continue-statement--visual-basic-.md)|[Declare](../vs140/declare-statement.md)|[Delegate](../vs140/delegate-statement.md)|[Dim](../vs140/dim-statement--visual-basic-.md)|  
-|[Do...Loop](../vs140/do...loop-statement--visual-basic-.md)|[Else](../vs140/else-statement--visual-basic-.md)|[End](../vs140/end-statement.md)|[End <keyword\>](../vs140/end--keyword--statement--visual-basic-.md)|  
+|[Do...Loop](../vs140/do...loop-statement--visual-basic-.md)|[Else](../vs140/else-statement--visual-basic-.md)|[End](../vs140/end-statement.md)|[End \<keyword>](../vs140/end--keyword--statement--visual-basic-.md)|  
 |[Enum](../vs140/enum-statement--visual-basic-.md)|[Erase](../vs140/erase-statement--visual-basic-.md)|[Error](../vs140/error-statement.md)|[Event](../vs140/event-statement.md)|  
 |[Exit](../vs140/exit-statement--visual-basic-.md)||||  
   

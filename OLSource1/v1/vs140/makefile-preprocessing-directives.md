@@ -69,7 +69,7 @@ Preprocessing directives are not case sensitive. The initial exclamation point (
  Displays *text* to standard output. Spaces or tabs before *text* are ignored.  
   
  **!INCLUDE**[ **<**] *filename*[ **>**]  
- Reads *filename* as a makefile, then continues with the current makefile. NMAKE searches for *filename* first in the specified or current directory, then recursively through directories of any parent makefiles, then, if *filename* is enclosed by angle brackets (< >), in directories specified by the **INCLUDE** macro, which is initially set to the INCLUDE environment variable. Useful to pass **.SUFFIXES** settings, **.PRECIOUS**, and inference rules to recursive makefiles.  
+ Reads *filename* as a makefile, then continues with the current makefile. NMAKE searches for *filename* first in the specified or current directory, then recursively through directories of any parent makefiles, then, if *filename* is enclosed by angle brackets (\< >), in directories specified by the **INCLUDE** macro, which is initially set to the INCLUDE environment variable. Useful to pass **.SUFFIXES** settings, **.PRECIOUS**, and inference rules to recursive makefiles.  
   
  **!IF**  `constantexpression`  
  Processes statements between **!IF** and the next **!ELSE** or `!ENDIF` if `constantexpression` evaluates to a nonzero value.  

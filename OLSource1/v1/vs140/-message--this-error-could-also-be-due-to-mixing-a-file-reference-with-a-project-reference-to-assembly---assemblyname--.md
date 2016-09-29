@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;message&gt; This error could also be due to mixing a file reference with a project reference to assembly &#39;&lt;assemblyname&gt;&#39;
-<message\> This error could also be due to mixing a file reference with a project reference to assembly '<assemblyname\>. In this case, try replacing the file reference to '<assemblyfilename\>' in project '<projectname1\>' with a project reference to '<projectname2\>'.  
+\<message> This error could also be due to mixing a file reference with a project reference to assembly '\<assemblyname>. In this case, try replacing the file reference to '\<assemblyfilename>' in project '\<projectname1>' with a project reference to '\<projectname2>'.  
   
  Code in your project accesses a member of another project, but the configuration of your solution does not allow the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] compiler to resolve the reference.  
   

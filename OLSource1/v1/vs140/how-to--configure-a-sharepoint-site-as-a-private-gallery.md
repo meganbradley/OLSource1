@@ -41,7 +41,7 @@ You can create a SharePoint List page that describes and provides extensions as 
   
      **stsadm –o addsolution –name VisualStudioExtensionsList.wsp**  
   
-     **stsadm –o deploysolution –name VisualStudioExtensionsList.wsp –url http://<SERVERNAME\> –allowCasPolicies –allowgacdeployment –immediate**  
+     **stsadm –o deploysolution –name VisualStudioExtensionsList.wsp –url http://\<SERVERNAME> –allowCasPolicies –allowgacdeployment –immediate**  
   
      You may also have to activate the feature through the SharePoint user interface for a sub-site, as follows.  
   

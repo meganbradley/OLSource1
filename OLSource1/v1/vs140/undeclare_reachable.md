@@ -48,9 +48,9 @@ template<class Type>
  If `_Ptr` is not `null`, the function informs any `garbage collector` that `_Ptr` is hereafter not `reachable`. It returns a `safely derived` pointer that compares equal to `_Ptr`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

@@ -149,13 +149,13 @@ wchar_t *_wsetlocale(
  Sets the locale to the ANSI code page obtained from the operating system.  
   
  `setlocale( LC_ALL, "<localename>" );`  
- Sets the locale to the locale name that's indicated by *<localename\>*.  
+ Sets the locale to the locale name that's indicated by *\<localename>*.  
   
  `setlocale( LC_ALL, "<language>_<country>" );`  
- Sets the locale to the language and country/region indicated by *<language\>* and *<country\>*, together with the default code page obtained from the host operating system.  
+ Sets the locale to the language and country/region indicated by *\<language>* and *\<country>*, together with the default code page obtained from the host operating system.  
   
  `setlocale( LC_ALL, "<language>_<country>.<code_page>" );`  
- Sets the locale to the language, country/region, and code page indicated by the *<language\>*, *<country\>*, and *<code_page>* strings. You can use various combinations of language, country/region, and code page. For example, this call sets the locale to French Canada with code page 1252:  
+ Sets the locale to the language, country/region, and code page indicated by the *\<language>*, *\<country>*, and *<code_page>* strings. You can use various combinations of language, country/region, and code page. For example, this call sets the locale to French Canada with code page 1252:  
   
  `setlocale( LC_ALL, "French_Canada.1252" );`  
   
@@ -168,7 +168,7 @@ wchar_t *_wsetlocale(
  `setlocale( LC_ALL, "French_Canada.OCP" );`  
   
  `setlocale( LC_ALL, "<language>" );`  
- Sets the locale to the language that's indicated by *<language\>*, and uses the default country/region for the specified language and the user-default ANSI code page for that country/region as obtained from the host operating system. For example, the following calls to `setlocale` are functionally equivalent:  
+ Sets the locale to the language that's indicated by *\<language>*, and uses the default country/region for the specified language and the user-default ANSI code page for that country/region as obtained from the host operating system. For example, the following calls to `setlocale` are functionally equivalent:  
   
  `setlocale( LC_ALL, "en-US" );`  
   

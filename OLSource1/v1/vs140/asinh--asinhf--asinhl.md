@@ -79,7 +79,7 @@ long double asinhl(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`asinh`, `asinhf`, `asinhl`|<math.h>|<cmath\>|  
+|`asinh`, `asinhf`, `asinhl`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

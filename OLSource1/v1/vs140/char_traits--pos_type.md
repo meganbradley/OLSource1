@@ -39,7 +39,7 @@ typedef streampos pos_type;
  The type describes an object that can store all the information needed to restore an arbitrary file-position indicator within a stream. It is typically a synonym for [streampos](../vs140/streampos.md), but in any case it has essentially the same properties as that type.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

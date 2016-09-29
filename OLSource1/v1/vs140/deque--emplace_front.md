@@ -79,7 +79,7 @@ int main( )
 **New last element: 2**  
 **Moved last element: 2**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

@@ -64,7 +64,7 @@ int main( )
   
  **The list is not empty.**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

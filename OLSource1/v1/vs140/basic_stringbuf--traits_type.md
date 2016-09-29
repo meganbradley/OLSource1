@@ -44,7 +44,7 @@ type;
  The type is a synonym for the template parameter **Tr**.  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

@@ -23,16 +23,16 @@ translation.priority.ht:
 # XML comment tag &#39;returns&#39; is not permitted on a &#39;WriteOnly&#39; Property
 XML comment tag 'returns' is not permitted on a 'WriteOnly' Property. XML comment will be ignored.  
   
- An XML comment for a write-only property declaration cannot contain a <returns\> tag.  
+ An XML comment for a write-only property declaration cannot contain a \<returns> tag.  
   
  **Error ID:** BC42313  
   
 ### To correct this error  
   
--   Remove the unsupported <returns\> tag.  
+-   Remove the unsupported \<returns> tag.  
   
 ## See Also  
- [<returns\> (Visual Basic)](../vs140/-returns---visual-basic-.md)   
+ [\<returns> (Visual Basic)](../vs140/-returns---visual-basic-.md)   
  [Recommended Tags for Documentation Comments (Visual Basic)](../vs140/recommended-xml-tags-for-documentation-comments--visual-basic-.md)   
  [Documenting Your Code with XML (Visual Basic)](../vs140/documenting-your-code-with-xml--visual-basic-.md)   
  [Property Statement](../vs140/property-statement.md)

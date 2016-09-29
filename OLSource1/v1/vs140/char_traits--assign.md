@@ -100,7 +100,7 @@ int main( )
 **The target string s1 is: abcd-1234-abcd**  
 **The result1 = assign ( s1 , 4 , 'f' ) is: ffff-1234-abcd**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

@@ -42,7 +42,7 @@ typedef typename Allocator::pointer pointer;
  A type **pointer** can be used to modify the value of an element. An [iterator](../vs140/deque--iterator.md) is more commonly used to access a deque element.  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

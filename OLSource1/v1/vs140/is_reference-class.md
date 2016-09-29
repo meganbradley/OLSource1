@@ -73,7 +73,7 @@ int main()
   
 ```  
   
-  **is_reference<trivial\> == false**  
+  **is_reference\<trivial> == false**  
 **is_reference<trivial&> == true**  
 **is_reference<int()> == false**  
 **is_reference<int(&)()> == true**    

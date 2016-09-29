@@ -94,7 +94,7 @@ int main( )
  **The multiset s1 is less than the multiset s2.**  
 **The multiset s1 is not less than the multiset s3.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

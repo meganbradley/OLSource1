@@ -112,7 +112,7 @@ int main( )
 **c3 = 5 1**  
 **After merging c3 with c2 according to the '>' comparison relation: c2 = 6 5 4 3 2 1**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

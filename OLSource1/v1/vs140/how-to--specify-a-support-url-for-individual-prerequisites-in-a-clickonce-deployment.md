@@ -84,6 +84,6 @@ A [!INCLUDE[ndptecclick](../vs140/includes/ndptecclick_md.md)] deployment can te
 ## See Also  
  [Manifest Generation and Editing Tool (Mage.exe)](assetId:///77dfe576-2962-407e-af13-82255df725a1)   
  [Walkthrough: Deploying a ClickOnce Application Manually](../vs140/walkthrough--manually-deploying-a-clickonce-application.md)   
- [<compatibleFrameworks\> Element (ClickOnce Deployment)](../vs140/-compatibleframeworks--element--clickonce-deployment-.md)   
+ [\<compatibleFrameworks> Element (ClickOnce Deployment)](../vs140/-compatibleframeworks--element--clickonce-deployment-.md)   
  [ClickOnce Deployment and Authenticode](../vs140/clickonce-and-authenticode.md)   
  [Application Deployment Prerequisites (.NET Framework SDK Guide)](../vs140/application-deployment-prerequisites.md)

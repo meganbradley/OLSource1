@@ -44,7 +44,7 @@ translation.priority.ht:
   
 3.  Set the string value `LogFilePath` to the full path and filename of your preferred custom log location.  
   
-     This location must be in a directory to which the user has write access. For example, on Windows Vista, create the following folder structure and set `LogFilePath` to C:\Users\\<username\>\Documents\Logs\ClickOnce\installation.log.  
+     This location must be in a directory to which the user has write access. For example, on Windows Vista, create the following folder structure and set `LogFilePath` to C:\Users\\\<username>\Documents\Logs\ClickOnce\installation.log.  
   
 ## See Also  
  [Troubleshooting ClickOnce Deployments](../vs140/troubleshooting-clickonce-deployments.md)

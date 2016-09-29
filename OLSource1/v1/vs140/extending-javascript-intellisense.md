@@ -171,7 +171,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     -   `externalid`. Read/write. Returns a string that represents the member ID of the function.  
   
-    -   `params`. Read/write. Gets or sets the array of parameters for the function. Each element in the parameters array is a `parameter` object that has properties that correspond to the following attributes of the [<param\>](../vs140/-param---javascript-.md) element:  
+    -   `params`. Read/write. Gets or sets the array of parameters for the function. Each element in the parameters array is a `parameter` object that has properties that correspond to the following attributes of the [\<param>](../vs140/-param---javascript-.md) element:  
   
         -   `name`. Read/write. Returns a string that represents the parameter name.  
   

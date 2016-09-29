@@ -54,9 +54,9 @@ Creating a source-control plug-in involves three steps:
   
          HideInVisualStudio is a DWORD value and is set to 1 to hide the plug-in or 0 to show the plug-in. If the registry entry does not appear, the default behavior is to show the plug-in.  
   
-    -   The DisableSccManager registry entry can be used to disable or hide the **Launch <Source Control Server\>** menu option that normally appears under the **File** -> **Source Control** sub-menu. Selecting this menu option calls the [SccRunScc Function](../vs140/sccrunscc-function.md) function. Your source control plug-in may not support an external program and therefore you may want to disable or even hide the **Launch** menu option.  
+    -   The DisableSccManager registry entry can be used to disable or hide the **Launch \<Source Control Server>** menu option that normally appears under the **File** -> **Source Control** sub-menu. Selecting this menu option calls the [SccRunScc Function](../vs140/sccrunscc-function.md) function. Your source control plug-in may not support an external program and therefore you may want to disable or even hide the **Launch** menu option.  
   
-         DisableSccManager is a DWORD value is set to 0 to enable the **Launch <Source Control Server\>** menu option, set to 1 to disable the menu option, and set to 2 to hide the menu option. If this registry entry does not appear, the default behavior is to show the menu option.  
+         DisableSccManager is a DWORD value is set to 0 to enable the **Launch \<Source Control Server>** menu option, set to 1 to disable the menu option, and set to 2 to hide the menu option. If this registry entry does not appear, the default behavior is to show the menu option.  
   
     |Sample Registry Entry|Sample Value|  
     |---------------------------|------------------|  

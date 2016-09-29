@@ -42,7 +42,7 @@ typedef typename allocator_type::const_pointer const_pointer;
  In most cases, a [const_iterator](../vs140/set--const_iterator.md) should be used to access the elements in a const set object.  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

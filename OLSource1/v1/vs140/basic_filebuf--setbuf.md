@@ -53,7 +53,7 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
  `setbuf` calls `setvbuf`(**fp**, (`char` \*)`_Buffer`, `_IOFBF`, `_Count` \* `sizeof` (**Elem**) ) to offer the array of `_Count` elements beginning at _*Buffer* as a buffer for the stream. If that function returns a nonzero value, the function returns a null pointer. Otherwise, it returns **this** to signal success.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

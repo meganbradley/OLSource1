@@ -120,7 +120,7 @@ int main() {
 }  
 ```  
   
- **C<T\>::g**   
+ **C\<T>::g**   
 ## Example  
  In definitions that are outside of the template class declaration, if a template class has a base class that does not depend on a template argument and if the base class or one of its members has the same name as a template argument, then the base class or member name hides the template argument.  
   

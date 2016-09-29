@@ -85,7 +85,7 @@ You can analyze the structure and content of expression trees when you debug you
      10D  
   
 ## BlockExpression  
- If the type of a <xref:System.Linq.Expressions.BlockExpression*> object differs from the type of the last expression in the block, the type is displayed in the `DebugInfo` property in angle brackets (< and >). Otherwise, the type of the <xref:System.Linq.Expressions.BlockExpression*> object is not displayed.  
+ If the type of a <xref:System.Linq.Expressions.BlockExpression*> object differs from the type of the last expression in the block, the type is displayed in the `DebugInfo` property in angle brackets (\< and >). Otherwise, the type of the <xref:System.Linq.Expressions.BlockExpression*> object is not displayed.  
   
 ### Examples  
   

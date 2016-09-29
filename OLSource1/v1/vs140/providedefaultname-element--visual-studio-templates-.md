@@ -23,9 +23,9 @@ translation.priority.ht:
 # ProvideDefaultName Element (Visual Studio Templates)
 Specifies whether the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] project system will generate a default name for the template in the **Add New Item** or **New Project** dialog box.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <ProvideDefaultName\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ProvideDefaultName>  
   
 ## Syntax  
   

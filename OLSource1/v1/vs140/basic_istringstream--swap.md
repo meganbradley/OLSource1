@@ -48,12 +48,12 @@ void swap(
  The member function exchanges the values of this object and the values of `_Right`.  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_istringstream Class](../vs140/basic_istringstream-class.md)   
- [<sstream\>](../vs140/-sstream-.md)   
+ [\<sstream>](../vs140/-sstream-.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

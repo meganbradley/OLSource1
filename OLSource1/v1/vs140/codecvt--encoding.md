@@ -74,7 +74,7 @@ int main( )
 **1**  
 **1**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

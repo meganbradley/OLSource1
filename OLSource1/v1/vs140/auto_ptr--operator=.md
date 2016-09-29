@@ -61,7 +61,7 @@ auto_ptr<Type>& operator=(
  For an example of the use of the member operator, see [auto_ptr::auto_ptr](../vs140/auto_ptr--auto_ptr.md).  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

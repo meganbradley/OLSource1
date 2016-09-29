@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;returns&gt; (Visual C++)
-The <returns\> tag should be used in the comment for a method declaration to describe the return value.  
+The \<returns> tag should be used in the comment for a method declaration to describe the return value.  
   
 ## Syntax  
   

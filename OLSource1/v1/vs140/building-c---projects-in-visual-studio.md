@@ -38,7 +38,7 @@ In the Visual Studio integrated development environment (IDE), there are several
   
  To build a project that's selected in **Solution Explorer**, you can:  
   
--   On the menu bar, choose **Build**, **Build <Project Name\>**.  
+-   On the menu bar, choose **Build**, **Build \<Project Name>**.  
   
 -   Or, in **Solution Explorer**, open the shortcut menu for the project and then choose **Build**.  
   

@@ -41,5 +41,5 @@ future<Ty> get_future();
   
 ## See Also  
  [packaged_task Class](../vs140/packaged_task-class.md)   
- [<future\>](../vs140/-future-.md)   
+ [\<future>](../vs140/-future-.md)   
  [future Class](../vs140/future-class.md)

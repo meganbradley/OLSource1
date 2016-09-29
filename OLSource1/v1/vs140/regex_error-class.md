@@ -41,7 +41,7 @@ public:
  The class describes an exception object thrown to report an error in the construction or use of a `basic_regex` object.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
@@ -138,5 +138,5 @@ int main()
   
   **regex error: unbalanced parentheses**    
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_error](../vs140/regex_error-class.md)

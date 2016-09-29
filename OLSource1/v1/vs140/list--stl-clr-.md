@@ -120,7 +120,7 @@ template<typename Value>
 |<xref:System.Collections.ICollection*>|Maintain group of elements.|  
 |<xref:System.Collections.Generic.IEnumerable`1*>|Sequence through typed elements.|  
 |<xref:System.Collections.Generic.ICollection`1*>|Maintain group of typed elements.|  
-|IList<Value\>|Maintain generic container.|  
+|IList\<Value>|Maintain generic container.|  
   
 ## Remarks  
  The object allocates and frees storage for the sequence it controls as individual nodes in a bidirectional link list. It rearranges elements by altering the links between nodes, never by copying the contents of one node to another. That means you can insert and remove elements freely without disturbing remaining elements. Thus, a list is a good candidate for the underlying container for template class [queue](../vs140/queue--stl-clr-.md) or template class [stack](../vs140/stack--stl-clr-.md).  

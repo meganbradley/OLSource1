@@ -74,7 +74,7 @@ struct ctype_base : public locale::facet
  You can characterize a combination of classifications by ORing these constants. In particular, it is always true that **alnum** == ( **alpha**``&#124; **digit**\) and **graph** \=\= \( **alnum**``&#124; **punct**).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

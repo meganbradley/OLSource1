@@ -104,7 +104,7 @@ long double tgammal(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`tgamma`,                `tgammaf`,  `tgammal`|<math.h>|<cmath\>|  
+|`tgamma`,                `tgammaf`,  `tgammal`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

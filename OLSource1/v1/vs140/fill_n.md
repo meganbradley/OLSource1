@@ -123,7 +123,7 @@ modified v = ( 1 1 1 2 2 2 3 3 3 )
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

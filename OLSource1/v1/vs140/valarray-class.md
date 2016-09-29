@@ -30,9 +30,9 @@ The template class describes an object that controls a sequence of elements of t
 ## Remarks  
  The class is a representation of the mathematical concept of an ordered set of values and the elements are numbered sequentially from zero. The class is described as a near container because it supports some, but not all, of the capabilities that first-class sequence containers, such as [vector](../vs140/vector-class.md), support. It differs from template class vector in two important ways:  
   
--   It defines numerous arithmetic operations between corresponding elements of **valarray<Type\>** objects of the same type and length, such as                         *xarr* = cos(                        *yarr*) + sin(                        *zarr*).  
+-   It defines numerous arithmetic operations between corresponding elements of **valarray\<Type>** objects of the same type and length, such as                         *xarr* = cos(                        *yarr*) + sin(                        *zarr*).  
   
--   It defines a variety of interesting ways to subscript a **valarray<Type\>** object, by overloading [operator&#91;&#93;](#valarray__operator_at).  
+-   It defines a variety of interesting ways to subscript a **valarray\<Type>** object, by overloading [operator&#91;&#93;](#valarray__operator_at).  
   
  An object of class **Type**:  
   
@@ -91,7 +91,7 @@ The template class describes an object that controls a sequence of elements of t
 |[operator~](#valarray__operator_dtor)|A unary operator that obtains the bitwise `NOT` values of each element in a `valarray`.|  
   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   
@@ -114,7 +114,7 @@ valarray<Type> apply(    Type  _Func(Type) ) const; valarray<Type> apply(    Typ
  A valarray whose elements have had `_Func` applied element-wise to the elements of the operand valarray.  
   
 ### Remarks  
- The member function returns an object of class [valarray](../vs140/valarray-class.md)**<Type\>**, of length [size](#valarray__size), each of whose elements `I` is **func**(( **\*this**)[ `I`]).  
+ The member function returns an object of class [valarray](../vs140/valarray-class.md)**\<Type>**, of length [size](#valarray__size), each of whose elements `I` is **func**(( **\*this**)[ `I`]).  
   
 ### Example  
   
@@ -1734,7 +1734,7 @@ valarray(
   
 -   For `valarray(const Type* Ptr, Count)`, the element at position `I` is initialized with `Ptr`[ `I`].  
   
- Each remaining constructor initializes the object to a valarray<Type\> object determined by the subset specified in the argument.  
+ Each remaining constructor initializes the object to a valarray\<Type> object determined by the subset specified in the argument.  
   
  The last constructor is the same as the next to last, but with an [rvalue reference](../vs140/rvalue-reference-declarator----.md).  
   

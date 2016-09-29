@@ -67,7 +67,7 @@ EndGlobal
          ConfigName.1 = Release  
     ```  
   
-     When the environment reads the `GlobalSection('name')` tag, it maps the name to a VSPackage using the registry. The key name should exist in the registry under [HKLM\\<Application ID Registry Root\>\SolutionPersistence\AggregateGUIDs]. The keys' default value is the Package GUID (REG_SZ) of the VSPackage that wrote the entries.  
+     When the environment reads the `GlobalSection('name')` tag, it maps the name to a VSPackage using the registry. The key name should exist in the registry under [HKLM\\\<Application ID Registry Root>\SolutionPersistence\AggregateGUIDs]. The keys' default value is the Package GUID (REG_SZ) of the VSPackage that wrote the entries.  
   
 2.  The environment loads the VSPackage, calls `QueryInterface` on the VSPackage for the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps*> interface, and calls the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps*> method with the data in the section so the VSPackage can store the data. The environment repeats this process for each `preSolution` section.  
   

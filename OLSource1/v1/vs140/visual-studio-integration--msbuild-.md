@@ -133,7 +133,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
      The project is marked **(unavailable)**.  
   
-2.  In **Solution Explorer**, open the shortcut menu for the unavailable project, and then choose **Edit <Project File\>**.  
+2.  In **Solution Explorer**, open the shortcut menu for the unavailable project, and then choose **Edit \<Project File>**.  
   
      The project file opens in the Visual Studio XML Editor.  
   
@@ -142,7 +142,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4.  In **Solution Explorer**, open the shortcut menu for the unavailable project, and then choose **Reload Project**.  
   
 ## IntelliSense and Validation  
- When using the XML editor to edit project files, IntelliSense and validation is driven by the [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] schema files. These are installed in the schema cache, which can be found in *<Visual Studio installation directory\>*\Xml\Schemas\1033\MSBuild.  
+ When using the XML editor to edit project files, IntelliSense and validation is driven by the [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] schema files. These are installed in the schema cache, which can be found in *\<Visual Studio installation directory>*\Xml\Schemas\1033\MSBuild.  
   
  The core [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] types are defined in Microsoft.Build.Core.xsd and common types used by [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] are defined in Microsoft.Build.CommonTypes.xsd. To customize the schemas so that you have IntelliSense and validation for custom item type names, properties, and tasks, you can either edit Microsoft.Build.xsd, or create your own schema that includes the CommonTypes or Core schemas. If you create your own schema you will have to direct the XML editor to find it using the **Properties** window.  
   

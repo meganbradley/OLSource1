@@ -35,16 +35,16 @@ operator bool( ) const;
 ```  
   
 ## Return Value  
- The Boolean value of the element of the [vector<bool\>](../vs140/vector-bool--class.md) object.  
+ The Boolean value of the element of the [vector\<bool>](../vs140/vector-bool--class.md) object.  
   
 ## Remarks  
  The `vector<bool>` object cannot be modified by this operator.  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   
 ## See Also  
- [vector<bool\>::reference Class](../vs140/vector-bool---reference-class.md)   
+ [vector\<bool>::reference Class](../vs140/vector-bool---reference-class.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

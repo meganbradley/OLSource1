@@ -43,7 +43,7 @@ ostringstream<char> ostringstream;
  The type is a synonym for template class [basic_ostringstream](../vs140/basic_ostringstream-class.md), specialized for elements of type `char`*.*  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

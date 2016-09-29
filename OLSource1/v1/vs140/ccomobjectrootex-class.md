@@ -83,9 +83,9 @@ template<
   
  A class that implements a COM server must inherit from `CComObjectRootEx` or [CComObjectRoot](../vs140/ccomobjectroot-class.md).  
   
- If your class definition specifies the [DECLARE_POLY_AGGREGATABLE](../vs140/declare_poly_aggregatable.md) macro, ATL creates an instance of **CComPolyObject<CYourClass\>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**,                 **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**,                 **IUnknown** is implemented for an aggregated object.  
+ If your class definition specifies the [DECLARE_POLY_AGGREGATABLE](../vs140/declare_poly_aggregatable.md) macro, ATL creates an instance of **CComPolyObject\<CYourClass>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**,                 **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**,                 **IUnknown** is implemented for an aggregated object.  
   
- If your class does not specify the `DECLARE_POLY_AGGREGATABLE` macro, ATL creates an instance of **CAggComObject<CYourClass\>** for aggregated objects or an instance of **CComObject<CYourClass\>** for nonaggregated objects.  
+ If your class does not specify the `DECLARE_POLY_AGGREGATABLE` macro, ATL creates an instance of **CAggComObject\<CYourClass>** for aggregated objects or an instance of **CComObject\<CYourClass>** for nonaggregated objects.  
   
  The advantage of using `CComPolyObject` is that you avoid having both `CComAggObject` and `CComObject` in your module to handle the aggregated and nonaggregated cases. A single `CComPolyObject` object handles both cases. Therefore, only one copy of the vtable and one copy of the functions exist in your module. If your vtable is large, this can substantially decrease your module size. However, if your vtable is small, using `CComPolyObject` can result in a slightly larger module size because it is not optimized for an aggregated or nonaggregated object, as are `CComAggObject` and `CComObject`.  
   

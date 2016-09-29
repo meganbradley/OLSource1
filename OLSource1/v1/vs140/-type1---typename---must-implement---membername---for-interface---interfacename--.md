@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;type1&gt;&#39;&lt;typename&gt;&#39; must implement &#39;&lt;membername&gt;&#39; for interface &#39;&lt;interfacename&gt;&#39;
-'<typename\>' must implement '<membername\>' for interface '<interfacename\>'. Implementing property must have matching 'ReadOnly'/'WriteOnly' specifiers.  
+'\<typename>' must implement '\<membername>' for interface '\<interfacename>'. Implementing property must have matching 'ReadOnly'/'WriteOnly' specifiers.  
   
  A class or structure claims to implement an interface but does not implement a procedure, property, or event defined by the interface. Every member of the interface must be implemented.  
   

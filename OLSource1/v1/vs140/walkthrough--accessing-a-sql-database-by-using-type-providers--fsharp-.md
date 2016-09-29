@@ -209,25 +209,7 @@ This walkthrough explains how to use the SqlDataConnection (LINQ to SQL) type pr
   
      The following code assumes that there is a procedure `Procedure1` on the database that takes two nullable integers as parameters, runs a query that returns a column named `TestData1`, and returns an integer.  
   
-    ```f#  
-  
-    type schema = SqlDataConnection<"Data Source=MYSERVER\INSTANCE;Initial Catalog=MyDatabase;Integrated Security=SSPI;",  
-                                    StoredProcedures = true>  
-  
-    let testdb = schema.GetDataContext()  
-  
-    let nullable value = new System.Nullable<_>(value)  
-  
-    let callProcedure1 a b =  
-        let results = testdb.Procedure1(nullable a, nullable b)  
-        for result in results do  
-            printfn "%d" (result.TestData1.GetValueOrDefault())  
-        results.ReturnValue :?> int  
-  
-    printfn "Return Value: %d" (callProcedure1 10 20)  
-  
-    ```  
-  
+<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
 ##  <a name="BKMK_UpdateDB"></a> Updating the database  
  The LINQ DataContext type contains methods that make it easier to perform transacted database updates in a fully typed fashion with the generated types.  
   
@@ -235,41 +217,10 @@ This walkthrough explains how to use the SqlDataConnection (LINQ to SQL) type pr
   
 1.  In the following code, several rows are added to the database. If you are only adding a row, you can use <xref:System.Data.Linq.Table`1.InsertOnSubmit*> to specify the new row to add. If you are inserting multiple rows, you should put them into a collection and call <xref:System.Data.Linq.Table`1.InsertAllOnSubmit*>. When you call either of these methods, the database is not immediately changed. You must call <xref:System.Data.Linq.DataContext.SubmitChanges*> to actually commit the changes. By default, everything that you do before you call <xref:System.Data.Linq.DataContext.SubmitChanges*> is implicitly part of the same transaction.  
   
-    ```f#  
-    let newRecord = new dbSchema.ServiceTypes.Table1(Id = 100,  
-                                                     TestData1 = 35,   
-                                                     TestData2 = 2.0,  
-                                                     Name = "Testing123")  
-    let newValues =  
-        [ for i in [1 .. 10] ->  
-              new dbSchema.ServiceTypes.Table3(Id = 700 + i,  
-                                               Name = "Testing" + i.ToString(),  
-                                               Data = i) ]  
-    // Insert the new data into the database.  
-    db.Table1.InsertOnSubmit(newRecord)  
-    db.Table3.InsertAllOnSubmit(newValues)  
-    try  
-        db.DataContext.SubmitChanges()  
-        printfn "Successfully inserted new rows."  
-    with  
-       | exn -> printfn "Exception:\n%s" exn.Message  
-  
-    ```  
-  
+<CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
 2.  Now clean up the rows by calling a delete operation.  
   
-    ```f#  
-    // Now delete what was added.  
-    db.Table1.DeleteOnSubmit(newRecord)  
-    db.Table3.DeleteAllOnSubmit(newValues)  
-    try  
-        db.DataContext.SubmitChanges()  
-        printfn "Successfully deleted all pending rows."  
-    with  
-       | exn -> printfn "Exception:\n%s" exn.Message  
-  
-    ```  
-  
+<CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
 ##  <a name="BKMK_CustomSQL"></a> Executing Transact-SQL code  
  You can also specify Transact-SQL directly by using the <xref:System.Data.Linq.DataContext.ExecuteCommand*> method on the `DataContext` class.  
   
@@ -277,18 +228,7 @@ This walkthrough explains how to use the SqlDataConnection (LINQ to SQL) type pr
   
 -   The following code shows how to send SQL commands to insert a record into a table and also to delete a record from a table.  
   
-    ```f#  
-    try  
-       db.DataContext.ExecuteCommand("INSERT INTO Table3 (Id, Name, Data) VALUES (102, 'Testing', 55)") |> ignore  
-    with  
-       | exn -> printfn "Exception:\n%s" exn.Message  
-    try //AND Name = 'Testing' AND Data = 55  
-       db.DataContext.ExecuteCommand("DELETE FROM Table3 WHERE Id = 102 ") |> ignore  
-    with  
-       | exn -> printfn "Exception:\n%s" exn.Message  
-  
-    ```  
-  
+<CodeContentPlaceHolder>12</CodeContentPlaceHolder>  
 ##  <a name="BKMK_UseFullDataContext"></a> Using the full data context  
  In the previous examples, the `GetDataContext` method was used to get what is called the *simplified data context* for the database schema. The simplified data context is easier to use when you are constructing queries because there are not as many members available. Therefore, when you browse the properties in IntelliSense, you can focus on the database structure, such as the tables and stored procedures. However, there is a limit to what you can do with the simplified data context. A full data context that provides the ability to perform other actions. is also available This is located in the `ServiceTypes` and has the name of the `DataContext` static parameter if you provided it. If you did not provide it, the name of the data context type is generated for you by SqlMetal.exe based on the other input. The full data context inherits from <xref:System.Data.Linq.DataContext*> and exposes the members of its base class, including references to ADO.NET data types such as the `Connection` object, methods such as <xref:System.Data.Linq.DataContext.ExecuteCommand*> and <xref:System.Data.Linq.DataContext.ExecuteQuery*> that you can use to write queries in SQL, and also a means to work with transactions explicitly.  
   
@@ -296,31 +236,7 @@ This walkthrough explains how to use the SqlDataConnection (LINQ to SQL) type pr
   
 -   The following code demonstrates getting a full data context object and using it to execute commands directly against the database. In this case, two commands are executed as part of the same transaction.  
   
-    ```f#  
-    let dbConnection = testdb.Connection  
-    let fullContext = new dbSchema.ServiceTypes.MyDatabase(dbConnection)  
-    dbConnection.Open()  
-    let transaction = dbConnection.BeginTransaction()  
-    fullContext.Transaction <- transaction  
-    try  
-        let result1 = fullContext.ExecuteCommand("INSERT INTO Table3 (Id, Name, Data) VALUES (102, 'A', 55)")  
-        printfn "ExecuteCommand Result: %d" result1  
-        let result2 = fullContext.ExecuteCommand("INSERT INTO Table3 (Id, Name, Data) VALUES (103, 'B', -2)")  
-        printfn "ExecuteCommand Result: %d" result2  
-        if (result1 <> 1 || result2 <> 1) then  
-            transaction.Rollback()  
-            printfn "Rolled back creation of two new rows."  
-        else  
-            transaction.Commit()  
-            printfn "Successfully committed two new rows."  
-    with  
-        | exn -> transaction.Rollback()  
-                 printfn "Rolled back creation of two new rows due to exception:\n%s" exn.Message  
-  
-    dbConnection.Close()  
-  
-    ```  
-  
+<CodeContentPlaceHolder>13</CodeContentPlaceHolder>  
 ##  <a name="BKMK_DeleteRows"></a> Deleting data  
  This step shows you how to delete rows from a data table.  
   

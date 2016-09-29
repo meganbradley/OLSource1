@@ -37,12 +37,12 @@ The following map entries correspond to the function prototypes.
   
 |Map entry|Function prototype|  
 |---------------|------------------------|  
-|ON_BN_CLICKED( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_BN_DISABLE( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_BN_DOUBLECLICKED( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_BN_HILITE( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_BN_PAINT( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_BN_UNHILITE( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
+|ON_BN_CLICKED( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_BN_DISABLE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_BN_DOUBLECLICKED( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_BN_HILITE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_BN_PAINT( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_BN_UNHILITE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
   
 ## See Also  
  [Message Maps](../vs140/message-maps--mfc-.md)

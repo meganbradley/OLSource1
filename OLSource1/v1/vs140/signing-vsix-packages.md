@@ -45,7 +45,7 @@ Extension assemblies do not need to be signed before they can run in Visual Stud
   
  For example to sign with a password protected certificate file:  
   
- VSIXSignTool.exe sign /f <certfile\> /p <password\> <VSIXfile\>  
+ VSIXSignTool.exe sign /f \<certfile> /p \<password> \<VSIXfile>  
   
 ## See Also  
  [VSIX Deployment](../vs140/shipping-visual-studio-extensions.md)

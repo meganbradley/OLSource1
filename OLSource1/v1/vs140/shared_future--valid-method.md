@@ -39,4 +39,4 @@ bool valid() _NOEXCEPT;
   
 ## See Also  
  [shared_future Class](../vs140/shared_future-class.md)   
- [<future\>](../vs140/-future-.md)
+ [\<future>](../vs140/-future-.md)

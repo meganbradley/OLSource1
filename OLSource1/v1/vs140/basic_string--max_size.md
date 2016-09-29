@@ -113,7 +113,7 @@ The max_size of modified string str1 is: 4294967294.
 ```  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

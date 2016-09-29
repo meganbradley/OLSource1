@@ -85,7 +85,7 @@ public:
 -   [swap Function](../vs140/-regex--functions.md#swap_function)  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
@@ -728,5 +728,5 @@ int main()
 **match == a**  
 **match == a**    
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_iterator](../vs140/regex_iterator-class.md)

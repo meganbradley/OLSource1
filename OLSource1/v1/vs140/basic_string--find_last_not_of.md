@@ -210,7 +210,7 @@ int main( )
 **The index of the last occurrence of an element not in '12'**  
  **in str4 before the end position is: 10**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

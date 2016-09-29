@@ -48,7 +48,7 @@ type;
  For an example of how to declare and use `string_type`, see [transform](../vs140/collate--transform.md).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

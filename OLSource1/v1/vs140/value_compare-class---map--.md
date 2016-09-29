@@ -49,7 +49,7 @@ public:
   See example for [value_comp](../vs140/map-class.md#map__value_comp) for an example of how to declare and use `value_compare`.  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

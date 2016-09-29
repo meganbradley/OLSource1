@@ -55,7 +55,7 @@ typedef basic_ifstream<char, char_traits<char> > ifstream;
  `}`  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

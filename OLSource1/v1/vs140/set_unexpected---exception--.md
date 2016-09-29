@@ -82,10 +82,10 @@ My unhandled exception function called.
 ```  
   
 ## Requirements  
- **Header:** <exception\>  
+ **Header:** \<exception>  
   
  **Namespace:** std  
   
 ## See Also  
- [<exception\>](../vs140/-exception-.md)   
+ [\<exception>](../vs140/-exception-.md)   
  [get_unexpected](../vs140/get_unexpected.md)

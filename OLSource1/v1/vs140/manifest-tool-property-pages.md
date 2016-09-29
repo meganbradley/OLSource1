@@ -24,13 +24,13 @@ Use the **Manifest Tool** property pages to set build options for mt.exe.
   
  For more information on the manifest tool, see [Mt.exe](http://msdn.microsoft.com/library/aa375649).  
   
- [General, Manifest Tool, Configuration Properties, <Projectname\> Property Pages Dialog Box](../vs140/general--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
+ [General, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../vs140/general--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
   
- [Input and Output, Manifest Tool, Configuration Properties, <Projectname\> Property Pages Dialog Box](../vs140/input-and-output--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
+ [Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../vs140/input-and-output--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
   
- [Isolated COM, Manifest Tool, Configuration Properties, <Projectname\> Property Pages Dialog Box](../vs140/isolated-com--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
+ [Isolated COM, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../vs140/isolated-com--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
   
- [Advanced, Manifest Tool, Configuration Properties, <Projectname\> Property Pages Dialog Box](../vs140/advanced--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
+ [Advanced, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../vs140/advanced--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md)  
   
 ## See Also  
  [Property Pages (C++)](../vs140/property-pages--visual-c---.md)

@@ -40,7 +40,7 @@ You can run the installation application for [!INCLUDE[vsprvs](../vs140/includes
      Installation may also fail if the folder names in the path include embedded spaces (for example, "\\\\*ServerName*\IDE install" or \\\\*ServerName*\Visual Studio\\).  
   
 ## Deploying Visual Studio in unattended mode  
- To deploy [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] in unattended mode, you must modify the AdminDeployment.xml file. To do this, you must first create the AdminDeployment.xml file by using the `/CreateAdminFile` *<file location\>* command-line parameter. Then, you can use this file to either push a deployment of Visual Studio to your network or pull it into an installation if you put that file in the *Drive*:\IDEinstall\packages directory. The AdminDeployment.xml file is not unique to an operating system, architecture, edition of Visual Studio, or operating-system language.  
+ To deploy [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] in unattended mode, you must modify the AdminDeployment.xml file. To do this, you must first create the AdminDeployment.xml file by using the `/CreateAdminFile` *\<file location>* command-line parameter. Then, you can use this file to either push a deployment of Visual Studio to your network or pull it into an installation if you put that file in the *Drive*:\IDEinstall\packages directory. The AdminDeployment.xml file is not unique to an operating system, architecture, edition of Visual Studio, or operating-system language.  
   
 > [!CAUTION]
 >  Sometimes, items listed as selected in the AdminDeployment.xml file do not get installed. To resolve this issue, place the items marked “Selected="yes"” at the **end** of the AdminDeployment.xml file.  
@@ -135,7 +135,7 @@ You can run the installation application for [!INCLUDE[vsprvs](../vs140/includes
   
     2.  After the /Layout is complete, copy the new image to a new location.  
   
-    3.  Create and modify the AdminDeployment.xml file. To do this,  use the `/CreateAdminFile`*<file location\>* command-line parameter. (For more information, see the "Deploying Visual Studio in unattended mode" section of this article.)  
+    3.  Create and modify the AdminDeployment.xml file. To do this,  use the `/CreateAdminFile`*\<file location>* command-line parameter. (For more information, see the "Deploying Visual Studio in unattended mode" section of this article.)  
   
     4.  On the client machine, run the following  command to update the copy of Visual Studio that you previously installed: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart".  
   

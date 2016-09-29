@@ -42,6 +42,6 @@ typedef void ( *new_handler )( );
  See [set_new_handler](../vs140/set_new_handler.md) for an example using `new_handler` as a return value.  
   
 ## Requirements  
- **Header:** <new\>  
+ **Header:** \<new>  
   
  **Namespace:** std

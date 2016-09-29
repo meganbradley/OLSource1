@@ -64,7 +64,7 @@ template<>
 -   [rebind](../vs140/allocator-class.md#allocator__rebind), a nested template class.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

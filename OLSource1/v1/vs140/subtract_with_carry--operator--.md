@@ -25,6 +25,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # subtract_with_carry::operator()
-This class is deprecated. See [<random\>](../vs140/-random-.md).  
+This class is deprecated. See [\<random>](../vs140/-random-.md).  
   
 ## Syntax

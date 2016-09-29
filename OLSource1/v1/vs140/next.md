@@ -53,11 +53,11 @@ template<class InputIterator>
  The template function returns `next` incremented `_Off` times  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   
 ## See Also  
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [advance](../vs140/advance--stl-samples-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

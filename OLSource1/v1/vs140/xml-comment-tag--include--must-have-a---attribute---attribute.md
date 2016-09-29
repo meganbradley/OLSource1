@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # XML comment tag &#39;include&#39; must have a &#39;&lt;attribute&gt;&#39; attribute
-XML comment tag 'include' must have a <attribute\> attribute. XML comment will be ignored.  
+XML comment tag 'include' must have a \<attribute> attribute. XML comment will be ignored.  
   
  A `file` or `path` attribute, passed to the `<`include`>` tag, was missing or incomplete.  
   
@@ -29,8 +29,8 @@ XML comment tag 'include' must have a <attribute\> attribute. XML comment will b
   
 ### To correct this error  
   
--   Add or complete the required attribute to the <include\> tag.  
+-   Add or complete the required attribute to the \<include> tag.  
   
 ## See Also  
- [<include\> (Visual Basic)](../vs140/-include---visual-basic-.md)   
+ [\<include> (Visual Basic)](../vs140/-include---visual-basic-.md)   
  [Documenting Your Code with XML (Visual Basic)](../vs140/documenting-your-code-with-xml--visual-basic-.md)

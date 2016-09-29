@@ -67,7 +67,7 @@ int main( )
  **The first element is 10**  
 **The second element is 20**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

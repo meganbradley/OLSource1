@@ -73,8 +73,8 @@ Any ClickOnce application based on an .exe file can be silently installed and up
     ```  
   
 ## Next Steps  
- A ClickOnce application can also add custom update logic, including a custom user interface to show during the update process. For more information, see <xref:System.Deployment.Application.UpdateCheckInfo*>. A ClickOnce application can also suppress the standard Start menu entry, shortcut, and Add or Remove Programs entry by using a `<customUX>` element. For more information, see [<entryPoint\> Element](../vs140/-entrypoint--element--clickonce-application-.md) and <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId*>.  
+ A ClickOnce application can also add custom update logic, including a custom user interface to show during the update process. For more information, see <xref:System.Deployment.Application.UpdateCheckInfo*>. A ClickOnce application can also suppress the standard Start menu entry, shortcut, and Add or Remove Programs entry by using a `<customUX>` element. For more information, see [\<entryPoint> Element](../vs140/-entrypoint--element--clickonce-application-.md) and <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId*>.  
   
 ## See Also  
  [ClickOnce Application Manifest](../vs140/clickonce-application-manifest.md)   
- [<entryPoint\> Element](../vs140/-entrypoint--element--clickonce-application-.md)
+ [\<entryPoint> Element](../vs140/-entrypoint--element--clickonce-application-.md)

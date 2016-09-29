@@ -57,7 +57,7 @@ size_t _Refs = 0
  The constructor initializes its base object with **locale::**[facet](../vs140/facet-class.md)(_*Refs*).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

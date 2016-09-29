@@ -132,7 +132,7 @@ int main( )
 **The current size of downsized string str1 is: 5.**  
 **The capacity of downsized string str1 is: 47.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

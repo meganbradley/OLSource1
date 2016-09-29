@@ -66,7 +66,7 @@ Add-ins are now deprecated. To make a new Visual Studio extension, you need to c
   
 1.  Create a VSPackage that has a menu command. (For more information, see [Creating a VSPackage with a Menu Command](../vs140/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Open the file that contains the definition of the VSPackage. (In a C# project, it's *<your project name\>*Package.cs.)  
+2.  Open the file that contains the definition of the VSPackage. (In a C# project, it's *\<your project name>*Package.cs.)  
   
 3.  Add the following `using` statements to the file:  
   
@@ -128,7 +128,7 @@ Add-ins are now deprecated. To make a new Visual Studio extension, you need to c
   
 #### To get the DTE object from a VSPackage  
   
-1.  In a VSIX project with a Visual Studio Package item template, look for the *<project name\>*Package.cs file. This is the class that derives from <xref:Microsoft.VisualStudio.Shell.Package*>; it can help you interact with Visual Studio. In this case, you use its <xref:Microsoft.VisualStudio.Shell.Package.GetService*> to get the <xref:EnvDTE80.DTE2*> object.  
+1.  In a VSIX project with a Visual Studio Package item template, look for the *\<project name>*Package.cs file. This is the class that derives from <xref:Microsoft.VisualStudio.Shell.Package*>; it can help you interact with Visual Studio. In this case, you use its <xref:Microsoft.VisualStudio.Shell.Package.GetService*> to get the <xref:EnvDTE80.DTE2*> object.  
   
 2.  Add these `using` statements:  
   
@@ -160,7 +160,7 @@ Add-ins are now deprecated. To make a new Visual Studio extension, you need to c
   
 1.  Create a VSPackage that has a menu command, as in the [How do I start developing VSPackage extensions?](../vs140/faq--converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) section.  
   
-2.  Open the file that contains the definition of the VSPackage. (In a C# project, it's *<your project name\>*Package.cs.)  
+2.  Open the file that contains the definition of the VSPackage. (In a C# project, it's *\<your project name>*Package.cs.)  
   
 3.  Add these `using` statements:  
   
@@ -208,7 +208,7 @@ Add-ins are now deprecated. To make a new Visual Studio extension, you need to c
   
 1.  Create a VSPackage that has a menu command, as in the [How do I start developing VSPackage extensions?](../vs140/faq--converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) section.  
   
-2.  Open the file that contains the definition of the VSPackage. (In a C# project, it's *<your project name\>*Package.cs.)  
+2.  Open the file that contains the definition of the VSPackage. (In a C# project, it's *\<your project name>*Package.cs.)  
   
 3.  Add these `using` statements:  
   

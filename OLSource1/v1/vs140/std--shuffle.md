@@ -42,13 +42,13 @@ void shuffle(RandomAccessIterator first,
  The random number generator that the `shuffle()` function will use for the operation. Must meet the requirements of a `UniformRandomNumberGenerator`.  
   
 ## Remarks  
- For more information, and a code sample that uses `shuffle()`, see [<random\>](../vs140/-random-.md).  
+ For more information, and a code sample that uses `shuffle()`, see [\<random>](../vs140/-random-.md).  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

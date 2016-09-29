@@ -68,7 +68,7 @@ int main( )
 ```  
   
 ## Requirements  
- **Header:** <strstream\>  
+ **Header:** \<strstream>  
   
  **Namespace:** std  
   

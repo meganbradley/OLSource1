@@ -127,7 +127,7 @@ int main( )
 **Resorted (greater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )**  
 **Resorted (UDgreater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

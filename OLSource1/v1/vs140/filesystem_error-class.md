@@ -29,7 +29,7 @@ class filesystem_error    : public system_error;
 ```  
   
 ## Remarks  
- The class serves as the base class for all exceptions thrown to report an error in <filesystem\> functions. It stores an object of type string, called mymesg here for the purposes of exposition. It also stores two objects of type path, called mypval1 and mypval2.  
+ The class serves as the base class for all exceptions thrown to report an error in \<filesystem> functions. It stores an object of type string, called mymesg here for the purposes of exposition. It also stores two objects of type path, called mypval1 and mypval2.  
   
 ## filesystem_error::filesystem_error  
   
@@ -77,5 +77,5 @@ const char *what() const noexcept;
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
  [system_error Class](../vs140/system_error-class.md)   
- [<filesystem\>](../vs140/-filesystem-.md)   
- [<exception\>](../vs140/-exception-.md)
+ [\<filesystem>](../vs140/-filesystem-.md)   
+ [\<exception>](../vs140/-exception-.md)

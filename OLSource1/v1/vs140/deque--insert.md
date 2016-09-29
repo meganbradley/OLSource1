@@ -207,7 +207,7 @@ Moved first element: a
 ```  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

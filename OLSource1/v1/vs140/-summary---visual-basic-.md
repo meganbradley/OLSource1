@@ -34,7 +34,7 @@ Specifies the summary of the member.
  A summary of the object.  
   
 ## Remarks  
- Use the `<summary>` tag to describe a type or a type member. Use [<remarks\> (Visual Basic)](../vs140/-remarks---visual-basic-.md) to add supplemental information to a type description.  
+ Use the `<summary>` tag to describe a type or a type member. Use [\<remarks> (Visual Basic)](../vs140/-remarks---visual-basic-.md) to add supplemental information to a type description.  
   
  The text for the `<summary>` tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser. For information about the Object Browser, see [Viewing the Structure of Code](../vs140/viewing-the-structure-of-code.md).  
   

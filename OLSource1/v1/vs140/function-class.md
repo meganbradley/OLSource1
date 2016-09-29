@@ -132,7 +132,7 @@ template<class Fty2>
 |[function::operator=](#function__operator_eq)|Replaces the stored callable object.|  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

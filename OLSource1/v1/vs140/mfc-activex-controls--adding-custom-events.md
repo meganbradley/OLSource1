@@ -92,7 +92,7 @@ Custom events differ from stock events in that they are not automatically fired 
   
 4.  From the Properties window, select the message you want to handle. For this example, select `WM_LBUTTONDOWN`.  
   
-5.  From the drop-down list box on the right, select **<Add\> OnLButtonDown**.  
+5.  From the drop-down list box on the right, select **\<Add> OnLButtonDown**.  
   
 6.  Double-click the new handler function in Class View to jump to the message handler code in the implementation (.CPP) file of your ActiveX control.  
   

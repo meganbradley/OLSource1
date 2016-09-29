@@ -49,7 +49,7 @@ basic_streambuf<Elem, Tr> *pubsetbuf(
  Returns [setbuf](../vs140/basic_streambuf--setbuf.md)(`_Buffer`, `_Count`).  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

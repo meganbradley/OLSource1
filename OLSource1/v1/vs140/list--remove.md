@@ -83,7 +83,7 @@ int main( )
  **The initial list is c1 = 5 100 5 200 5 300**  
 **After removing elements with value 5, the list becomes c2 = 100 200 300**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

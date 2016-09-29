@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Operator &#39;&lt;operatorname&gt;&#39; is not defined for types &#39;&lt;typename1&gt;&#39; and &#39;&lt;typename2&gt;&#39;
-Operator '<operatorname\>' is not defined for types '<typename1\>' and '<typename2\>'. Use 'Is' operator to compare two reference types.  
+Operator '\<operatorname>' is not defined for types '\<typename1>' and '\<typename2>'. Use 'Is' operator to compare two reference types.  
   
  An attempt was made to use an operator in a way that is inappropriate for the specified types. This error can be caused by using the "=" operator instead of using the `Is` operator to compare two objects.  
   

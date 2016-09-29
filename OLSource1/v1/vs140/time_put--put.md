@@ -126,7 +126,7 @@ int main( )
  **num_put( ) = x: 05:30:40 07/04/00**  
 **strftime( ) = x: 05:30:40 07/04/00**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

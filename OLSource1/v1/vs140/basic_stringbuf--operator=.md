@@ -41,4 +41,4 @@ basic_stringbuf& basic_stringbuf::operator=(const basic_stringbuf& other)
 ## Remarks  
   
 ## Requirements  
- **Header**: <sstream\> **Namespace**: std
+ **Header**: \<sstream> **Namespace**: std

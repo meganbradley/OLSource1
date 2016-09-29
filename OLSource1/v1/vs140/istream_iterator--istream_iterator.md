@@ -87,7 +87,7 @@ int main( )
  **a character ( try example: '2 4 6 8 a' ): 2 4 6 8 a**  
 **vec = 2 4 6 8**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

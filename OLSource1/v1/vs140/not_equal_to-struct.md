@@ -128,7 +128,7 @@ between v1 & v2 is: ( 0 0 1 0 1 0 )
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

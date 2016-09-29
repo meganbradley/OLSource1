@@ -99,7 +99,7 @@ int main( )
 **The reversed deque is: 30 20 10**   
 **Last element in deque is now 40.**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

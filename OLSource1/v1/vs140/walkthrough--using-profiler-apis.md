@@ -144,9 +144,9 @@ DataCollection.CurrentId);
   
      **VsPefCLREnv /traceon**  
   
-3.  Type the following command:**VSInstr <filename\>.exe**  
+3.  Type the following command:**VSInstr \<filename>.exe**  
   
-4.  Type the following command:**VSPerfCmd /start:trace /output:<filename\>.vsp**  
+4.  Type the following command:**VSPerfCmd /start:trace /output:\<filename>.vsp**  
   
 5.  Type the following command:**VSPerfCmd /globaloff**  
   
@@ -154,7 +154,7 @@ DataCollection.CurrentId);
   
 7.  Type the following command:**VSPerfCmd /shutdown**  
   
-8.  Type the following command:**VSPerfReport /calltrace:<filename\>.vsp**  
+8.  Type the following command:**VSPerfReport /calltrace:\<filename>.vsp**  
   
      A .csv file is created in the current directory with the resulting performance data.  
   

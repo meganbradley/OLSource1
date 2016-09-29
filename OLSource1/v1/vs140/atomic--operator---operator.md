@@ -41,5 +41,5 @@ Ty atomic<Ty>::operator++() _NOEXCEPT;
   
 ## See Also  
  [atomic Structure](../vs140/atomic-structure.md)   
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic_fetch_add_explicit](../vs140/atomic_fetch_add_explicit-function.md)

@@ -37,7 +37,7 @@ template<class RealType = double>class uniform_real_distribution{public:    // t
   
 #### Parameters  
  `RealType`  
- The floating-point result type, defaults to `double`. For possible types, see [<random\>](../vs140/-random-.md).  
+ The floating-point result type, defaults to `double`. For possible types, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  The template class describes an inclusive-exclusive distribution that produces values of a user-specified integral floating point type with a distribution so that every value is equally probable. The following table links to articles about individual members.  
@@ -47,9 +47,9 @@ template<class RealType = double>class uniform_real_distribution{public:    // t
 |[uniform_real_distribution::uniform_real_distribution](#uniform_real_distribution__uniform_real_distribution)|`uniform_real_distribution::a`|`uniform_real_distribution::param`|  
 |`uniform_real_distribution::operator()`|`uniform_real_distribution::b`|[uniform_real_distribution::param_type](#uniform_real_distribution__param_type)|  
   
- The property member `a()` returns the currently stored minimum bound of the distribution, while `b()` returns the currently stored maximum bound. For this distribution class, these minimum and maximum values are the same as those returned by the common property functions `min()` and `max()` described in the [<random\>](../vs140/-random-.md) topic.  
+ The property member `a()` returns the currently stored minimum bound of the distribution, while `b()` returns the currently stored maximum bound. For this distribution class, these minimum and maximum values are the same as those returned by the common property functions `min()` and `max()` described in the [\<random>](../vs140/-random-.md) topic.  
   
- For more information about distribution classes and their members, see [<random\>](../vs140/-random-.md).  
+ For more information about distribution classes and their members, see [\<random>](../vs140/-random-.md).  
   
 ## Example  
   
@@ -112,7 +112,7 @@ int main()
 ## Output  
  **Use CTRL-Z to bypass data entry and run using default values.Enter a floating point value for the lower bound of the distribution: .5Enter a floating point value for the upper bound of the distribution: 1Enter an integer value for the sample count: 20lower bound == 0.5upper bound == 1Distribution for 20 samples:          1: 0.5144304741          2: 0.6003997192          3: 0.6060792968          4: 0.6270416650          5: 0.6295091197          6: 0.6437749373          7: 0.6513740058          8: 0.7062379346          9: 0.7117609406         10: 0.7206888566         11: 0.7423223702         12: 0.7826033033         13: 0.8112872958         14: 0.8440467608         15: 0.8461254641         16: 0.8598305065         17: 0.8640874069         18: 0.8770968361         19: 0.9397858282         20: 0.9804645012**   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
@@ -166,4 +166,4 @@ struct param_type {
  This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

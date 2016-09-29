@@ -51,7 +51,7 @@ basic_ios();
  The first constructor initializes its member objects by calling [init](../vs140/basic_ios--init.md)(_*Sb*). The second (protected) constructor leaves its member objects uninitialized. A later call to **init** must initialize the object before it can be safely destroyed.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

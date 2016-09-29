@@ -113,7 +113,7 @@ int main( )
 **The current size of string str1 is: 11.**  
 **The reduced capacity of string str1 is: 47.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

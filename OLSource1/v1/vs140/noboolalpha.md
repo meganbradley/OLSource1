@@ -57,7 +57,7 @@ Specifies that variables of type [bool](../vs140/bool--c---.md) appear as 1 or 0
  See [boolalpha](../vs140/boolalpha.md) for an example of using `noboolalpha`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

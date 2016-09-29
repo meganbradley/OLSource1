@@ -86,7 +86,7 @@ int main( )
 **The element-by-element result of the logical NOT operator! is the**  
  **valarray: ( 1 1 1 0 1 0 1 0 1 0 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

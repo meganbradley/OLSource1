@@ -59,7 +59,7 @@ virtual const CharType *do_scan_is(
  See the example for [scan_is](../vs140/ctype--scan_is.md), which calls `do_scan_is`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

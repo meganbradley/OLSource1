@@ -51,5 +51,5 @@ bool operator>= (
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<thread\>](../vs140/-thread-.md)   
- [operator< Operator (<thread\>)](../vs140/operator--operator---thread--.md)
+ [\<thread>](../vs140/-thread-.md)   
+ [operator< Operator (\<thread>)](../vs140/operator--operator---thread--.md)

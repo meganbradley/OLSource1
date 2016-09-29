@@ -35,7 +35,7 @@ This walkthrough illustrates how to create a Visual Studio add-in that consumes 
   
 4.  On the **Select a Programming Language**  page, select **Create an Add-In using Visual C#** or **Create an Add-In using Visual Basic**.  
   
-5.  On the **Select an Application Host** page, select **Microsoft Visual Studio <version\>**.  
+5.  On the **Select an Application Host** page, select **Microsoft Visual Studio \<version>**.  
   
 6.  On the **Enter a Name and Description** page, type `MyAddin` in the **Name** box and `MyAddin Walkthrough` in the **Description** box.  
   

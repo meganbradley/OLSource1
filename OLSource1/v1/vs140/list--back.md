@@ -75,7 +75,7 @@ int main( )
  **The last integer of c1 is 11**  
 **The next-to-last integer of c1 is 10**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

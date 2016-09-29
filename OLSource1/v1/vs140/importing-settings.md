@@ -213,7 +213,7 @@ The [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] integrated development en
     class MyPackage: Package   
     ```  
   
-     In this case, the attribute informs the IDE that the `MyPackageProfileManager` class provides a settings implementation to the `MyPackage` class. The Custom Settings Point in the registry is created under HKLM\Software\Microsoft\VisualStudio\\*<Version\>*\UserSettings\ CoreUI_MyPackage, where *<Version\>* is the version of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], for example 8.0.  
+     In this case, the attribute informs the IDE that the `MyPackageProfileManager` class provides a settings implementation to the `MyPackage` class. The Custom Settings Point in the registry is created under HKLM\Software\Microsoft\VisualStudio\\*\<Version>*\UserSettings\ CoreUI_MyPackage, where *\<Version>* is the version of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], for example 8.0.  
   
      For more information, see [Registering Settings Persistence Support](../vs140/support-for-user-settings.md) and <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute*>  
   

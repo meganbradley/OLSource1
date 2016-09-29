@@ -30,11 +30,11 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # normal_distribution::operator()
-Topic deprecated, see [<random\>](../vs140/-random-.md).  
+Topic deprecated, see [\<random>](../vs140/-random-.md).  
   
 ## Syntax  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std

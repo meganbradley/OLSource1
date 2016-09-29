@@ -44,7 +44,7 @@ typedef Allocator allocator_type;
  See example for [get_allocator](../vs140/map--get_allocator.md) for an example that uses `allocator_type`.  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

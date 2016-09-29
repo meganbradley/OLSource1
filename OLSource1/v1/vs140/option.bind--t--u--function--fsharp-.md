@@ -70,7 +70,7 @@ bind binder option
   
  **Output**  
   
- **Some "egamI rorriM"<null\>**   
+ **Some "egamI rorriM"\<null>**   
 ## Platforms  
  Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2  
   

@@ -69,4 +69,4 @@ Identifies the application deployed in a [!INCLUDE[ndptecclick](../vs140/include
   
 ## See Also  
  [ClickOnce Application Manifest](../vs140/clickonce-application-manifest.md)   
- [<assemblyIdentity\> Element (ClickOnce Deployment)](../vs140/-assemblyidentity--element--clickonce-deployment-.md)
+ [\<assemblyIdentity> Element (ClickOnce Deployment)](../vs140/-assemblyidentity--element--clickonce-deployment-.md)

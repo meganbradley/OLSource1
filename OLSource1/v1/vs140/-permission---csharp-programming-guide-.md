@@ -34,13 +34,13 @@ translation.priority.ht:
  cref = " `member`"  
  A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and translates `member` to the canonical element name in the output XML. *member* must appear within double quotation marks (" ").  
   
- For information on how to create a cref reference to a generic type, see [<see\> (C# Programmer's Reference)](../vs140/-see---csharp-programming-guide-.md).  
+ For information on how to create a cref reference to a generic type, see [\<see> (C# Programmer's Reference)](../vs140/-see---csharp-programming-guide-.md).  
   
  `description`  
  A description of the access to the member.  
   
 ## Remarks  
- The <permission\> tag lets you document the access of a member. The <xref:System.Security.PermissionSet*> class lets you specify access to a member.  
+ The \<permission> tag lets you document the access of a member. The <xref:System.Security.PermissionSet*> class lets you specify access to a member.  
   
  Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file.  
   

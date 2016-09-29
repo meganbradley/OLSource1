@@ -111,7 +111,7 @@ The reverse_iterator rpos = 3.
 ```  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

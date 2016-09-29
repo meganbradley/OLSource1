@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;permission&gt; (Visual C++)
-The <permission\> tag lets you document the access of a member. <xref:System.Security.PermissionSet*> lets you specify access to a member.  
+The \<permission> tag lets you document the access of a member. <xref:System.Security.PermissionSet*> lets you specify access to a member.  
   
 ## Syntax  
   
@@ -38,7 +38,7 @@ The <permission\> tag lets you document the access of a member. <xref:System.Sec
   
  The compiler issues a warning if it does not find `member`.  
   
- For information on how to create a cref reference to a generic type, see [<see\> (C++)](../vs140/-see---visual-c---.md).  
+ For information on how to create a cref reference to a generic type, see [\<see> (C++)](../vs140/-see---visual-c---.md).  
   
  `description`  
  A description of the access to the member.  
@@ -46,7 +46,7 @@ The <permission\> tag lets you document the access of a member. <xref:System.Sec
 ## Remarks  
  Compile with [/doc](../vs140/-doc--process-documentation-comments---c-c---.md) to process documentation comments to a file.  
   
- The Visual C++ compiler will attempt to resolve cref references in one pass through the documentation comments.  Therefore, if using the C++ lookup rules, a symbol is not found by the compiler the reference will be marked as unresolved. See [<seealso\> (C++)](../vs140/-seealso---visual-c---.md) for more information.  
+ The Visual C++ compiler will attempt to resolve cref references in one pass through the documentation comments.  Therefore, if using the C++ lookup rules, a symbol is not found by the compiler the reference will be marked as unresolved. See [\<seealso> (C++)](../vs140/-seealso---visual-c---.md) for more information.  
   
 ## Example  
   

@@ -39,7 +39,7 @@ typedef CharType char_type;
  The type is a synonym for the template parameter **CharType.**  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

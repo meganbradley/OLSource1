@@ -944,230 +944,58 @@ In Visual C++ 2015, ongoing improvements to compiler conformance can sometimes c
   
  **error C2039: *'type'*: is not a member of *'`global namespace''***     Example 1:  use of an undeclared type (before)  
   
-    ```cpp  
-    struct s1  
-    {  
-      template <typename T>  
-      auto f() -> decltype(s2<T>::type::f());  // error C2039  
-  
-      template<typename>  
-      struct s2 {};  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>49</CodeContentPlaceHolder>  
      Example 1 (after)  
   
-    ```cpp  
-    struct s1  
-    {  
-      template <typename>  // forward declare s2struct s2;  
-  
-      template <typename T>  
-      auto f() -> decltype(s2<T>::type::f());  
-  
-      template<typename>  
-      struct s2 {};  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>50</CodeContentPlaceHolder>  
      When this new behavior parses a `decltype` expression that is missing a necessary use of the `typename` keyword to specify that a dependent name is a type, the compiler issues  compiler warning C4346 together with compiler error C2923.  
   
  **warning C4346: *'S2<T\>::Type'*: dependent name is not a type error C2923: *'s1'*: *'S2<T\>::Type'* is not a valid template type argument for parameter *'T'***     Example 2: dependent name is not a type (before)  
   
-    ```cpp  
-    template <typename T>  
-    struct s1  
-    {  
-      typedef T type;  
-    };  
-  
-    template <typename T>  
-    struct s2  
-    {  
-      typedef T type;  
-    };  
-  
-    template <typename T>  
-    T declval();  
-  
-    struct s  
-    {  
-      template <typename T>  
-      auto f(T t) -> decltype(t(declval<S1<S2<T>::type>::type>()));  // warning C4346, error C2923  
-    };  
-    ```  
-  
+<CodeContentPlaceHolder>51</CodeContentPlaceHolder>  
      Example 2 (after)  
   
-    ```cpp  
-    template <typename T> struct s1 {...};  // as above  
-    template <typename T> struct s2 {...};  // as above  
-  
-    template <typename T>  
-    T declval();  
-  
-    struct s  
-    {  
-      template <typename T>  
-      auto f(T t) -> decltype(t(declval<S1<typename S2<T>::type>::type>()));  
-    };  
-    ```  
-  
+<CodeContentPlaceHolder>52</CodeContentPlaceHolder>  
 -   `volatile` **member variables prevent implicitly defined constructors and assignment operators**  
   
      Previous versions of the compiler allowed a class that has `volatile` member variables to have default copy/move constructors and default copy/move assignment operators automatically generated. This old behavior was incorrect and does not conform to the C++ standard. The compiler now considers a class that has volatile member variables to have non-trivial construction and assignment operators which prevents default implementations of these operators from being automatically generated.  When such a class is a member of a union (or an anonymous union inside of a class), the copy/move constructors and copy/move assignment operators of the union (or the class containing the unonymous union) will be implicitly defined as deleted. Attempting to construct or copy the union (or class containing the anonymous union) without explicitly defining them is an error and the compiler  issues compiler error C2280 as a result.  
   
  **error C2280: *'B::B(const B &)'*: attempting to reference a deleted function**     Example (before)  
   
-    ```cpp  
-    struct A  
-    {  
-      volatile int i;  
-      volatile int j;  
-    };  
-  
-    extern A* pa;  
-  
-    struct B  
-    {  
-      union  
-      {  
-        A a;  
-        int i;  
-      };  
-    };  
-  
-    B b1 {*pa};  
-    B b2 (b1);  // error C2280  
-    ```  
-  
+<CodeContentPlaceHolder>53</CodeContentPlaceHolder>  
      Example (after)  
   
-    ```cpp  
-    struct A  
-    {  
-      int i;int j;  
-    };  
-  
-    extern volatile A* pa;  
-  
-    A getA()  // returns an A instance copied from contents of pa  
-    {  
-      A a;  
-      a.i = pa->i;  
-      a.j = pa->j;  
-      return a;  
-    }  
-  
-    struct B;  // as above  
-  
-    B b1 {GetA()};  
-    B b2 (b1);  // error C2280  
-    ```  
-  
+<CodeContentPlaceHolder>54</CodeContentPlaceHolder>  
 -   **Static member functions do not support cv-qualifiers.**  
   
      Previous versions of Visual C++ 2015 allowed static member functions to have cv-qualifiers. This behavior is due to a regression in Visual C++ 2015 and Visual C++ 2015 Update 1; Visual C++ 2013 and previous versions of Visual C++ reject code written in this way. The behavior of Visual C++ 2015 and Visual C++ 2015 Update 1 is incorrect and does not conform to the C++ standard.  Visual Studio 2015 Update 2 rejects code written in this way and issues compiler error C2511 instead.  
   
  **error C2511: 'void A::func(void) const': overloaded member function not found in 'A'**     Example (before)  
   
-    ```  
-    struct A  
-    {  
-      static void func();  
-    };  
-  
-    void A::func() const {}  // C2511  
-  
-    ```  
-  
+<CodeContentPlaceHolder>55</CodeContentPlaceHolder>  
      Example (after)  
   
-    ```  
-    struct A  
-    {  
-      static void func();  
-    };  
-  
-    void A::func() {}  // removed const  
-  
-    ```  
-  
+<CodeContentPlaceHolder>56</CodeContentPlaceHolder>  
 -   **Forward declaration of enum is not allowed in WinRT code** (affects /ZW only)  
   
      Code compiled for the Windows Runtime (WinRT) doesn't allow `enum` types to be forward declared, similarly to when managed C++ code is compiled for the .Net Framework using the /clr compiler switch. This behavior is ensures that the size of an enumeration is always known and can be correctly projected to the WinRT type system. The compiler rejects code written in this way and  issues compiler error C2599 together with compiler error C3197.  
   
  **error C2599: *'CustomEnum'*: the forward declaration of a WinRT enum is not allowed error C3197: *'public'*: can only be used in definitions**     Example (before)  
   
-    ```cpp  
-    namespace A {  
-      public enum class CustomEnum: int32;  // forward declaration; error C2599, error C3197  
-    }  
-  
-    namespace A {  
-      public enum class CustomEnum: int32  
-      {  
-        Value1  
-      };  
-    }  
-  
-    public ref class Component sealed  
-    {  
-    public:  
-      CustomEnum f()  
-      {  
-        return CustomEnum::Value1;  
-      }  
-    };  
-    ```  
-  
+<CodeContentPlaceHolder>57</CodeContentPlaceHolder>  
      Example (after)  
   
-    ```cpp  
-  
-              // forward declaration of CustomEnum removed  
-  
-    namespace A {  
-      public enum class CustomEnum: int32  
-      {  
-        Value1  
-      };  
-    }  
-  
-    public ref class Component sealed  
-    {  
-    public:  
-      CustomEnum f()  
-      {  
-        return CustomEnum::Value1;  
-      }  
-    };  
-    ```  
-  
+<CodeContentPlaceHolder>58</CodeContentPlaceHolder>  
 -   **Overloaded non-member operator new and operator delete may not be declared inline** (Level 1 (/W1) on-by-default)  
   
      Previous versions of the compiler do not issue a warning when non-member operator new and operator delete functions are declared inline. Code written in this way is ill-formed (no diagnostic required) and can cause memory issues  resulting from mismatched new and delete operators (especially when used together with sized deallocation) that can be difficult to diagnose.   The compiler now issues compiler warning C4595 to help identify code written in this way.  
   
  **warning C4595: *'operator new'*: non-member operator new or delete functions may not be declared inline**     Example (before)  
   
-    ```cpp  
-  
-              inline void* operator new(size_t sz)  // warning C4595  
-    {  
-      ...  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>59</CodeContentPlaceHolder>  
      Example (after)  
   
-    ```cpp  
-  
-              void* operator new(size_t sz)  // removed inline  
-    {  
-      ...  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>60</CodeContentPlaceHolder>  
      Fixing code that's written in this way might require that the operator definitions be moved out of a header file and into a corresponding source file.  
   
 ##  <a name="VS_Update3"></a> Conformance Improvements in Update 3  
@@ -1180,24 +1008,7 @@ In Visual C++ 2015, ongoing improvements to compiler conformance can sometimes c
   
      Example  
   
-    ```cpp  
-    #include <type_traits>  
-  
-    class X1  
-    {  
-    public:  
-        X1(const X1&) = delete;  
-    };  
-  
-    class X2  
-    {  
-    private:  
-        X2(const X2&);  
-    };  
-  
-    static_assert(std::is_convertible<X1&, X1>::value, "BOOM");static_assert(std::is_convertible<X2&, X2>::value, "BOOM");  
-    ```  
-  
+<CodeContentPlaceHolder>61</CodeContentPlaceHolder>  
      In previous versions of Visual C++, the static assertions at the bottom of this example pass because `std::is_convertable<>::value` was incorrectly set to `true`. Now, `std::is_convertable<>::value` is correctly set to `false`, causing the static assertions to fail.  
   
 -   **Defaulted or deleted trivial copy and move constructors respect access specifiers**  
@@ -1206,42 +1017,10 @@ In Visual C++ 2015, ongoing improvements to compiler conformance can sometimes c
   
  **error C2248: *'S::S'* cannot access private member declared in class *'S'***     Example (before)  
   
-    ```cpp  
-    class S {  
-    public:  
-    	   S() = default;  
-    private:  
-        S(const S&) = default;  
-    };  
-  
-    void f(S);  // pass S by value  
-  
-    int main()  
-    {  
-        S s;  
-        f(s);  // error C2248, can't invoke private copy constructor  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>62</CodeContentPlaceHolder>  
      Example (after)  
   
-    ```cpp  
-    class S {  
-    public:  
-    	   S() = default;  
-    private:  
-        S(const S&) = default;  
-    };  
-  
-    void f(const S&);  // pass S by reference  
-  
-    int main()  
-    {  
-        S s;  
-        f(s);  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>63</CodeContentPlaceHolder>  
 -   **Deprecation of attributed ATL code support** (Level 1 (/W1) on-by-default)  
   
      Previous versions of the compiler supported attributed ATL code. As the next phase of removing support for attributed ATL code that [began in Visual C++ 2008](https://msdn.microsoft.com/library/bb384632\(v=vs.90\).aspx), attributed ATL code has been deprecated. The compiler now issues compiler warning C4467 to help identify this kind of deprecated code.  
@@ -1250,94 +1029,27 @@ In Visual C++ 2015, ongoing improvements to compiler conformance can sometimes c
   
      Example 1 (before)  
   
-    ```cpp  
-  
-              [uuid("594382D9-44B0-461A-8DE3-E06A3E73C5EB")]  
-    class A {};  
-    ```  
-  
+<CodeContentPlaceHolder>64</CodeContentPlaceHolder>  
      Example 1 (after)  
   
-    ```cpp  
-  
-    __declspec(uuid("594382D9-44B0-461A-8DE3-E06A3E73C5EB")) A {};  
-  
-    ```  
-  
+<CodeContentPlaceHolder>65</CodeContentPlaceHolder>  
      Sometimes you might need or want to create an IDL file to avoid the use deprecated ATL attributes, as in the example code below  
   
      Example 2 (before)  
   
-    ```cpp  
-    [emitidl];  
-    [module(name="Foo")];  
-  
-    [object, local, uuid("9e66a290-4365-11d2-a997-00c04fa37ddb")]  
-    __interface ICustom {  
-        HRESULT Custom([in] long l, [out, retval] long *pLong);  
-        [local] HRESULT CustomLocal([in] long l, [out, retval] long *pLong);  
-    };  
-  
-    [coclass, appobject, uuid("9e66a294-4365-11d2-a997-00c04fa37ddb")]  
-    class CFoo : public ICustom  
-    {  
-        // ...  
-    };  
-    ```  
-  
+<CodeContentPlaceHolder>66</CodeContentPlaceHolder>  
      First, create the *.idl file; the vc140.idl generated file can be used to obtain an \*.idl file containing the interfaces and annotations.  
   
      Next, add a MIDL step to your build to make sure that the C++ interface definitions are generated.  
   
      Example 2 IDL (after)  
   
-    ```cpp  
-    import "docobj.idl";  
-  
-    [  
-        object,local,uuid(9e66a290-4365-11d2-a997-00c04fa37ddb)  
-    ]  
-  
-    interface ICustom : IUnknown {  
-        HRESULT  Custom([in] long l, [out,retval] long *pLong);  
-        [local] HRESULT  CustomLocal([in] long l, [out,retval] long *pLong);  
-    };  
-  
-    [ version(1.0), uuid(29079a2c-5f3f-3325-99a1-3ec9c40988bb) ]  
-    library Foo  
-    {  
-        importlib("stdole2.tlb");  
-        importlib("olepro32.dll");  
-            [  
-                version(1.0),  
-                appobject,uuid(9e66a294-4365-11d2-a997-00c04fa37ddb)  
-            ]  
-  
-        coclass CFoo {  
-            interface ICustom;  
-        };  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>67</CodeContentPlaceHolder>  
      Then, use ATL directly in the implementation file, as in the example code below.  
   
      Example 2  Implementation (after)  
   
-    ```cpp  
-    #include <idl.header.h>  
-    #include <atlbase.h>  
-  
-    class ATL_NO_VTABLE CFooImpl :  
-        public ICustom,  
-        public ATL::CComObjectRootEx<CComMultiThreadModel>  
-    {  
-    public:  
-        BEGIN_COM_MAP(CFooImpl)  
-        COM_INTERFACE_ENTRY(ICustom)  
-        END_COM_MAP()  
-    };  
-    ```  
-  
+<CodeContentPlaceHolder>68</CodeContentPlaceHolder>  
 -   **Precompiled header (PCH) files and mismatched #include directives** (only affects /Wall /WX)  
   
      Previous versions of the compiler accepted mismatched `#include` directives in source files between `-Yc` and `-Yu` compilations when using precompiled header (PCH)  files. Code written in this way is no longer accepted by the compiler.   The compiler now issues compiler warning CC4598 to help identify mismatched `#include` directives when using PCH files.  
@@ -1346,38 +1058,18 @@ In Visual C++ 2015, ongoing improvements to compiler conformance can sometimes c
   
      X.cpp (-Ycc.h)  
   
-    ```cpp  
-    #include "a.h"  
-    #include "b.h"  
-    #include "c.h"  
-    ```  
-  
+<CodeContentPlaceHolder>69</CodeContentPlaceHolder>  
      Z.cpp (-Yuc.h)  
   
-    ```cpp  
-    #include "b.h"  
-    #include "a.h"  // mismatched order relative to X.cpp  
-    #include "c.h"  
-    ```  
-  
+<CodeContentPlaceHolder>70</CodeContentPlaceHolder>  
      Example (after)  
   
      X.cpp (-Ycc.h)  
   
-    ```cpp  
-    #include "a.h"  
-    #include "b.h"   
-    #include "c.h"  
-    ```  
-  
+<CodeContentPlaceHolder>71</CodeContentPlaceHolder>  
      Z.cpp (-Yuc.h)  
   
-    ```cpp  
-    #include "a.h"  
-    #include "b.h" // matched order relative to X.cpp  
-    #include "c.h"  
-    ```  
-  
+<CodeContentPlaceHolder>72</CodeContentPlaceHolder>  
 -   **Precompiled header (PCH) files and mismatched include directories** (only affects /Wall /WX)  
   
      Previous versions of the compiler accepted mismatched include directory (`-I`) command line arguments to the compiler between `-Yc` and `-Yu` compilations when using precompiled header (PCH)  files. Code written in this way is no longer accepted by the compiler.   The compiler now issues compiler warning CC4599 to help identify mismatched include directory (`-I`) command line arguments when using PCH files.  

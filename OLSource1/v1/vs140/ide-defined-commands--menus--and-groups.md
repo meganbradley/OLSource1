@@ -34,7 +34,7 @@ Many menus, commands and command groups are already defined for use by the [!INC
   
 -   ShellCmdPlace.vsct  
   
- These files are located in *<Visual Studio SDK installation path\>*\VisualStudioIntegration\Common\Inc\\. These files provide the definitions and GUIDs of the menus and groups that you can use in the command table configuration (.vsct) file of your VSPackage as containers for your own menus, groups, and commands.  
+ These files are located in *\<Visual Studio SDK installation path>*\VisualStudioIntegration\Common\Inc\\. These files provide the definitions and GUIDs of the menus and groups that you can use in the command table configuration (.vsct) file of your VSPackage as containers for your own menus, groups, and commands.  
   
 ## In This Section  
  [GUIDs and IDs of Visual Studio Menus](../vs140/guids-and-ids-of-visual-studio-menus.md)  

@@ -229,7 +229,7 @@ int main( )
 **At least one of the elements in vector v2b is not contained in vector v2a.**  
 **At least one of the elements in vector v3b is  not contained under mod_lesser in vector v3a.**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

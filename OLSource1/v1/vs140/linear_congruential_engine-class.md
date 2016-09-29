@@ -60,7 +60,7 @@ public:
   
 #### Parameters  
  `UIntType`  
- The unsigned integer result type. For possible types, see [<random\>](../vs140/-random-.md).  
+ The unsigned integer result type. For possible types, see [\<random>](../vs140/-random-.md).  
   
  `A`  
  **Multiplier**.                         **Precondition**: See Remarks section.  
@@ -80,7 +80,7 @@ public:
   
  `default_seed` is a member constant, defined as `1u`, used as the default parameter value for `linear_congruential_engine::seed` and the single value constructor.  
   
- For more information about engine members, see [<random\>](../vs140/-random-.md).  
+ For more information about engine members, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  The `linear_congruential_engine` template class is the simplest generator engine, but not the fastest or highest quality. An improvement over this engine is the [substract_with_carry_engine](../vs140/subtract_with_carry_engine-class.md). Neither of these engines is as fast or with as high quality results as the [mersenne_twister_engine](../vs140/mersenne_twister_engine-class.md).  
@@ -108,9 +108,9 @@ typedef linear_congruential_engine<unsigned int, 48271, 0, 2147483647> minstd_ra
  For detailed information about the linear congruential engine algorithm, see the Wikipedia article                 [Linear congruential generator](http://go.microsoft.com/fwlink/?LinkId=402446).  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

@@ -50,10 +50,10 @@ auto i2 = Container.cbegin(); // i2 is Container<T>::const_iterator
 ```  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_string Class](../vs140/basic_string-class.md)   
- [<string\>](../vs140/-string-.md)
+ [\<string>](../vs140/-string-.md)

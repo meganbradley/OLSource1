@@ -38,7 +38,7 @@ void wait(
   
 #### Parameters  
  `Lck`  
- A [unique_lock<mutex\>](unique_lock<mutex>) object.  
+ A [unique_lock\<mutex>](unique_lock<mutex>) object.  
   
  `Pred`  
  Any expression that returns `true` or `false`.  

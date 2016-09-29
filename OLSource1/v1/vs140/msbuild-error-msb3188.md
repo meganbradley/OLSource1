@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3188
-**MSB3188: Assembly '<assembly\>' must be strong signed in order to be marked as a prerequisite.**  
+**MSB3188: Assembly '\<assembly>' must be strong signed in order to be marked as a prerequisite.**  
   
  This error is generated when a prerequisite assembly is not strong-signed. It applies only to application manifests.  
   

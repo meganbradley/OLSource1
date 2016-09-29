@@ -90,8 +90,8 @@ bool isnan(
   
 |Routine|Required header (C)|Required header (C++)|  
 |-------------|---------------------------|-------------------------------|  
-|`isnan`, `_isnanf`|<math.h>|<math.h> or <cmath\>|  
-|`_isnan`|<float.h>|<float.h> or <cfloat\>|  
+|`isnan`, `_isnanf`|<math.h>|<math.h> or \<cmath>|  
+|`_isnan`|<float.h>|<float.h> or \<cfloat>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

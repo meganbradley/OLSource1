@@ -44,6 +44,6 @@ typedef Type *pointer;
  The pointer type implements  as a typedef for `Type``*`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext

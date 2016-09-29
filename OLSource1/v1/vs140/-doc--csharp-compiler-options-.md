@@ -52,7 +52,7 @@ The **/doc** option allows you to place documentation comments in an XML file.
   
  To use the generated .xml file for use with the [IntelliSense](../vs140/using-intellisense.md) feature, let the file name of the .xml file be the same as the assembly you want to support and then make sure the .xml file is in the same directory as the assembly. Thus, when the assembly is referenced in the Visual Studio project, the .xml file is found as well. See [Supplying Code Comments](../vs140/supplying-xml-code-comments.md) and for more information.  
   
- Unless you compile with [/target:module](../vs140/-target-module--csharp-compiler-options-.md), `file` will contain <assembly\></assembly\> tags specifying the name of the file containing the assembly manifest for the output file of the compilation.  
+ Unless you compile with [/target:module](../vs140/-target-module--csharp-compiler-options-.md), `file` will contain \<assembly></assembly\> tags specifying the name of the file containing the assembly manifest for the output file of the compilation.  
   
 > [!NOTE]
 >  The /doc option applies to all input files; or, if set in the Project Settings, all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../vs140/sharppragma-warning--csharp-reference-.md).  

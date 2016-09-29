@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Operator &#39;&lt;operatorsymbol&gt;&#39; doesn&#39;t return a value on all code paths
-Operator '<operatorsymbol\>' doesn't return a value on all code paths. A null reference exception could occur at run time when the result is used.  
+Operator '\<operatorsymbol>' doesn't return a value on all code paths. A null reference exception could occur at run time when the result is used.  
   
  An operator procedure has at least one possible path through its code that does not return a value.  
   

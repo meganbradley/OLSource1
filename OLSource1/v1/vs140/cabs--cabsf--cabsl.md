@@ -75,7 +75,7 @@ long double cabsl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`cabs`,               `cabsf`, `cabsl`|<complex.h>|<ccomplex\>|  
+|`cabs`,               `cabsf`, `cabsl`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

@@ -64,7 +64,7 @@ int main( )
   
  **The deque is not empty.**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

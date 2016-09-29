@@ -52,7 +52,7 @@ Changes the locale.
  See [basic_ios::imbue](../vs140/basic_ios--imbue.md) for a sample.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

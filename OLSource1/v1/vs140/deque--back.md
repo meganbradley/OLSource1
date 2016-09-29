@@ -75,7 +75,7 @@ int main( )
  **The last integer of c1 is 11**  
 **The next-to-last integer of c1 is 10**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

@@ -47,33 +47,20 @@ By using <xref:System.Threading.Tasks.Task.WhenAny*?displayProperty=fullName>, y
   
  The **CancelAfterOneTask** project already includes a query that, when executed, creates a collection of tasks. Each call to `ProcessURLAsync` in the following code returns a <xref:System.Threading.Tasks.Task`1*> where `TResult` is an integer.  
   
-```vb  
-Dim downloadTasksQuery As IEnumerable(Of Task(Of Integer)) =  
-    From url In urlList Select ProcessURLAsync(url, client, ct)  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
  In the MainWindow.xaml.vb file of the  project, make the following changes to the `AccessTheWebAsync` method.  
   
 -   Execute the query by applying <xref:System.Linq.Enumerable.ToList*?displayProperty=fullName> instead of <xref:System.Linq.Enumerable.ToArray*>.  
   
-    ```vb  
-    Dim downloadTasks As List(Of Task(Of Integer)) = downloadTasksQuery.ToList()  
-    ```  
-  
+<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
 -   Add a while loop that performs the following steps for each task in the collection.  
   
     1.  Awaits a call to `WhenAny` to identify the first task in the collection to finish its download.  
   
-        ```vb  
-        Dim firstFinishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)  
-        ```  
-  
+<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
     2.  Removes that task from the collection.  
   
-        ```vb  
-        downloadTasks.Remove(firstFinishedTask)  
-        ```  
-  
+<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
     3.  Awaits `firstFinishedTask`, which is returned by a call to `ProcessURLAsync`. The `firstFinishedTask` variable is a <xref:System.Threading.Tasks.Task`1*> where `TReturn` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows.  
   
         ```vb  

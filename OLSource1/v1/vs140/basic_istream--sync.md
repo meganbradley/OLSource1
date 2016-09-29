@@ -42,7 +42,7 @@ int sync( );
  If [rdbuf](../vs140/basic_ios--rdbuf.md) is a null pointer, the function returns -1. Otherwise, it calls `rdbuf` ->[pubsync](../vs140/basic_streambuf--pubsync.md). If that returns -1, the function calls [setstate](../vs140/basic_ios--setstate.md)(**badbit**) and returns -1. Otherwise, the function returns zero.  
   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   

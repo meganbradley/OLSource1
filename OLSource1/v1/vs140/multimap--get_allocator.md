@@ -111,7 +111,7 @@ The allocators are interchangeable.
 ```  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

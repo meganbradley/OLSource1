@@ -29,7 +29,7 @@ You have opened a project which targets a framework that is not installed on you
  **Change target to .NET Framework 4.5. You can change back to .NET Framework** *Version*  **at a later time.**  
  Retargets your project to .NET Framework 4.5. You can later reinstall the previous version and then retarget the project.  
   
- **Download the targeting pack for .NET Framework <Version\>. The project will not change.**  
+ **Download the targeting pack for .NET Framework \<Version>. The project will not change.**  
  Opens the Microsoft Download Center website, where you can download the version of the .NET Framework that you want. Your project is unloaded from the solution. After you download and install the desired framework, you must restart Visual Studio, and then reopen the project.  
   
  **Do not load the project.**  
@@ -47,4 +47,4 @@ You have opened a project which targets a framework that is not installed on you
 ## See Also  
  [How to: Target a Specific .NET Framework Version](../vs140/how-to--target-a-version-of-the-.net-framework.md)   
  [Troubleshooting .NET Framework Targeting Errors](../vs140/troubleshooting-.net-framework-targeting-errors.md)   
- [Frameworks and References, Common Properties, <Projectname\> Properties Dialog Box](../vs140/adding-references-in-visual-c---projects.md)
+ [Frameworks and References, Common Properties, \<Projectname> Properties Dialog Box](../vs140/adding-references-in-visual-c---projects.md)

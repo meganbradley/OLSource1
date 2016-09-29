@@ -47,7 +47,7 @@ Below are the accelerator keys for the Image editor commands that are bound to k
 |Image.LineTool|CTRL + L|Draws a straight line with the selected shape, size, and color.|  
 |Image.MagnificationTool|CTRL + M|Activates the **Magnify** tool, which allows you to magnify specific sections of your image.|  
 |Image.Magnify|CTRL + SHIFT + M|Toggles between the current magnification and 1:1 magnification.|  
-|Image.NewImageType|INSERT|Launches the [New <Device\> Image Type dialog box](../vs140/new--device--image-type-dialog-box--image-editor-for-icons-.md) with which you can create an image for a different image type.|  
+|Image.NewImageType|INSERT|Launches the [New \<Device> Image Type dialog box](../vs140/new--device--image-type-dialog-box--image-editor-for-icons-.md) with which you can create an image for a different image type.|  
 |Image.NextColor|CTRL + ]<br /><br /> - or -<br /><br /> CTRL + RIGHT ARROW|Changes the drawing foreground color to the next palette color.|  
 |Image.NextRightColor|CTRL + SHIFT + ]<br /><br /> - or -<br /><br /> SHIFT + CTRL + RIGHT ARROW|Changes the drawing background color to the next palette color.|  
 |Image.OutlinedEllipseTool|SHIFT + ALT + P|Draws a filled ellipse with an outline.|  

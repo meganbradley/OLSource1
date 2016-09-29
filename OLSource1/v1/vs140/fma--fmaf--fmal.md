@@ -117,7 +117,7 @@ long double fmal(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`fma`,                `fmaf`,  `fmal`|<math.h>|<cmath\>|  
+|`fma`,                `fmaf`,  `fmal`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

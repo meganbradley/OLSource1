@@ -38,8 +38,8 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
  The first member function reduces the stored tick count modulo Div and returns *this. The second member function reduces the stored tick count modulo Div.count() and returns \*this.  
   
 ## Requirements  
- **Header:** <chrono\> **Namespace:** std::chrono  
+ **Header:** \<chrono> **Namespace:** std::chrono  
   
 ## See Also  
- [<chrono\>](../vs140/-chrono-.md)   
+ [\<chrono>](../vs140/-chrono-.md)   
  [duration Class](../vs140/duration-class.md)

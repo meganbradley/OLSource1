@@ -42,7 +42,7 @@ virtual string do_grouping( ) const;
  See the example for [grouping](../vs140/moneypunct--grouping.md), where the virtual member function is called by **grouping**.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

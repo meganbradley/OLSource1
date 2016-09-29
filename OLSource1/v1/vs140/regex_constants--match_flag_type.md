@@ -71,10 +71,10 @@ static const match_flag_type match_any, match_default, match_not_bol,
  `format_first_only` -- do not search for matches after the first one  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_constants](../vs140/regex_constants-class.md)

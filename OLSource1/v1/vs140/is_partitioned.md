@@ -56,7 +56,7 @@ template<class InputIterator, class BinaryPredicate>
  The template function returns `true` only if all elements in `[``_First``,` `_Last``)` are partitioned by `_Comp`; that is, all elements `X` in `[``_First``,` `_Last``)` for which `_Comp``(X)` is true occur before all elements `Y` for which `_Comp``(Y)` is `false`.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
@@ -65,5 +65,5 @@ template<class InputIterator, class BinaryPredicate>
  [is_sorted_until](../vs140/is_sorted_until.md)   
  [partition_point](../vs140/partition_point.md)   
  [partition_copy](../vs140/partition_copy.md)   
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

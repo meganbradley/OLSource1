@@ -106,7 +106,7 @@ compare ( s4 , s3 , 4 ) = 1
 ```  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

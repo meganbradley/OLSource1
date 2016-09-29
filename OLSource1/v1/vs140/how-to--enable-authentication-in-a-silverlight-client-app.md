@@ -69,7 +69,7 @@ In LightSwitch, you can make your application more secure by preventing unauthor
      The application will not require users to provide credentials in order to access the application, and any user can access every part of the application.  
   
 ##  <a name="perms"></a> Permissions  
- The next step in securing your application is to create permissions. You can define permissions for screens, commands, data entities, and queries. First, define a permission object in the **Application Designer**. Then, you can reference the object in code, in one of the `Can` methods such as `CanRun`*<ScreenName\>* or *<QueryName\>*`_CanExecute`. Code in these methods typically checks whether the current user or role has the permission, and then displays the form or executes the query only if permission is validated.  
+ The next step in securing your application is to create permissions. You can define permissions for screens, commands, data entities, and queries. First, define a permission object in the **Application Designer**. Then, you can reference the object in code, in one of the `Can` methods such as `CanRun`*\<ScreenName>* or *\<QueryName>*`_CanExecute`. Code in these methods typically checks whether the current user or role has the permission, and then displays the form or executes the query only if permission is validated.  
   
  To test your code, run the application as both a user who has the permission and as a user who does not.  By setting debug permissions, you can impersonate a user when you test or debug the application.  
   
@@ -79,7 +79,7 @@ In LightSwitch, you can make your application more secure by preventing unauthor
   
 2.  In the **Application Designer**, choose the **Access Control** tab.  
   
-3.  In the **Define permissions or select permissions to use for debugging** grid, in the **Name** column, choose **<Add New Permission\>**, and then enter a programmatic name for the permission.  
+3.  In the **Define permissions or select permissions to use for debugging** grid, in the **Name** column, choose **\<Add New Permission>**, and then enter a programmatic name for the permission.  
   
      The name must begin with an alphabetical character, and it can only contain alphabetical or numeric characters, or underscores.  
   

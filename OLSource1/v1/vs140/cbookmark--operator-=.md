@@ -43,7 +43,7 @@ Assigns a `CBookmark` object to another.
 ```  
   
 ## Remarks  
- This operator is needed only in **CBookmark<0>**.  
+ This operator is needed only in **CBookmark\<0>**.  
   
 ## Requirements  
  **Header:** atldbcli.h  

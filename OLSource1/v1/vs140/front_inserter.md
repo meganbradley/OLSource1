@@ -95,7 +95,7 @@ int main( )
 **After the front insertions, the list L is:**  
  **( 200 100 -1 0 1 2 3 4 5 6 7 8 ).**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

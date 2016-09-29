@@ -83,7 +83,7 @@ _Lcomplex clog10l(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`clog10`,               `clog10f`, `clogl`|<complex.h>|<ccomplex\>|  
+|`clog10`,               `clog10f`, `clogl`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

@@ -87,7 +87,7 @@ int main( )
 **German_Germany.1252(day, month, year)**  
 **English_United Kingdom.1252(day, month, year)**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

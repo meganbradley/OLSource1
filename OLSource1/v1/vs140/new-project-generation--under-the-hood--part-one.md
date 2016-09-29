@@ -77,7 +77,7 @@ devenv /installvstemplates
   
  If you look up the GUID in the nearby Packages key and examine the SatelliteDll subkey, you can find the path of the assembly that contains the string resource:  
   
- <Visual Studio installation path\>\VC#\VCSPackages\1033\csprojui.dll  
+ \<Visual Studio installation path>\VC#\VCSPackages\1033\csprojui.dll  
   
  To verify this, open the File Explorer and drag csprojui.dll into the Visual Studio directory.. The string table shows that resource #2345 has the caption **Visual C#**.  
   
@@ -124,16 +124,16 @@ devenv /installvstemplates
 ##### Finding the Root Node for a Project Type  
  When Visual Studio traverses the ProjectTemplates folders, it opens all .zip files and extracts any .vstemplate files. A .vstemplate file uses XML to describe an application template. For more information, see [New Project Generation: Under the Hood, Part Two](../vs140/new-project-generation--under-the-hood--part-two.md).  
   
- The <ProjectType\> tag determines the project type for the application. For example, the \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip file contains an EmptyProject.vstemplate file that has this tag:  
+ The \<ProjectType> tag determines the project type for the application. For example, the \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip file contains an EmptyProject.vstemplate file that has this tag:  
   
 ```  
 <ProjectType>CSharp</ProjectType>  
 ```  
   
- The <ProjectType\> tag, and not the subfolder in the ProjectTemplates folder, determines an application's root node in the **Project types** tree. In the example, Windows CE applications would appear under the **Visual C#** root node, and even if you were to move the WindowsCE folder to the VisualBasic folder, Windows CE applications still would appear under the **Visual C#** root node.  
+ The \<ProjectType> tag, and not the subfolder in the ProjectTemplates folder, determines an application's root node in the **Project types** tree. In the example, Windows CE applications would appear under the **Visual C#** root node, and even if you were to move the WindowsCE folder to the VisualBasic folder, Windows CE applications still would appear under the **Visual C#** root node.  
   
 ##### Localizing the Node Name  
- When Visual Studio traverses the ProjectTemplates folders, it examines any .vstdir files it finds. A .vstdir file is an XML file that controls the appearance of the project type in the **New Project** dialog box. In the .vstdir file, use the <LocalizedName\> tag to name the **Project types** node.  
+ When Visual Studio traverses the ProjectTemplates folders, it examines any .vstdir files it finds. A .vstdir file is an XML file that controls the appearance of the project type in the **New Project** dialog box. In the .vstdir file, use the \<LocalizedName> tag to name the **Project types** node.  
   
  For example, the \CSharp\Database\TemplateIndex.vstdir file contains this tag:  
   
@@ -143,10 +143,10 @@ devenv /installvstemplates
   
  This determines the satellite DLL and resource ID of the localized string that names the root node, in this case, **Database**. The localized name can contain special characters that are not available for folder names, such as **.NET**.  
   
- If no <LocalizedName\> tag is present, the project type is named by the folder itself, **SmartPhone2003**.  
+ If no \<LocalizedName> tag is present, the project type is named by the folder itself, **SmartPhone2003**.  
   
 ##### Finding the Sort Order for a Project Type  
- To determine the sort order of the project type, .vstdir files use the <SortOrder\> tag.  
+ To determine the sort order of the project type, .vstdir files use the \<SortOrder> tag.  
   
  For example, the \CSharp\Windows\Windows.vstdir file contains this tag:  
   
@@ -160,9 +160,9 @@ devenv /installvstemplates
 <SortOrder>5000</SortOrder>  
 ```  
   
- The lower the number in the <SortOrder\> tag, the higher the position in the tree, so the **Windows** node appears higher than the **Database** node in the **Project types** tree.  
+ The lower the number in the \<SortOrder> tag, the higher the position in the tree, so the **Windows** node appears higher than the **Database** node in the **Project types** tree.  
   
- If no <SortOrder\> tag is specified for a project type, it appears in alphabetical order following any project types that contain <SortOrder\> specifications.  
+ If no \<SortOrder> tag is specified for a project type, it appears in alphabetical order following any project types that contain \<SortOrder> specifications.  
   
  Note that there are no .vstdir files in the My Documents (**My Templates**) folders. User application project type names are not localized and appear in alphabetical order.  
   

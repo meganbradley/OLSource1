@@ -46,7 +46,7 @@ Managed VSPackages can use the COM-based interop assemblies of the [!INCLUDE[vsi
 -   A pointer to the DialogProc for the page.  
   
 ## Registering a Tools Options Page  
- You can register a **Tools Options** page by creating an entry in the following registry location: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>*\ToolsOptionsPages, where *<Version\>* is the version of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], such as 8.0.  
+ You can register a **Tools Options** page by creating an entry in the following registry location: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>*\ToolsOptionsPages, where *\<Version>* is the version of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], such as 8.0.  
   
  To register the page, you can either manually edit the registry or use a registry script (.rgs file). For more information, see [Creating Registrar Scripts](../vs140/creating-registrar-scripts.md).  
   

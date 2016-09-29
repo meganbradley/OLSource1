@@ -21,9 +21,9 @@ translation.priority.ht:
 # EnableEditOfLocationField Element (Visual Studio Templates)
 Specifies if the user can edit the location field.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <EnableEditOfLocationField\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<EnableEditOfLocationField>  
   
 ## Syntax  
   

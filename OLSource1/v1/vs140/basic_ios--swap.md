@@ -43,7 +43,7 @@ void swap(basic_ios&& _Right);
  The protected member function exchanges all the values stored in `_Right` with `*this` except the stored `stream buffer pointer`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

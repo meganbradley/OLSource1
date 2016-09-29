@@ -36,12 +36,12 @@ typedef regex_iterator<const char*> cregex_iterator;
  The type describes a specialization of template class [regex_iterator](../vs140/regex_iterator-class.md) for iterators of type `const char*`.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_iterator](../vs140/regex_iterator-class.md)   
  [sregex_iterator](../vs140/sregex_iterator-typedef.md)   
  [wcregex_iterator](../vs140/wcregex_iterator-typedef.md)   

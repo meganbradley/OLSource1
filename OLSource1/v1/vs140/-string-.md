@@ -97,14 +97,14 @@ Defines the container template class `basic_string` and various supporting templ
   
 |||  
 |-|-|  
-|[char_traits<char\> struct](../vs140/char_traits-char--struct.md)|A struct that is a specialization of the template struct `char_traits`<CharType\> to an element of type `char`.|  
-|[char_traits<wchar_t> struct](../vs140/char_traits-wchar_t--struct.md)|A struct that is a specialization of the template struct `char_traits`<CharType\> to an element of type `wchar_t`.|  
-|[char_traits<char16_t> struct](../vs140/char_traits-char16_t--struct.md)|A struct that is a specialization of the template struct `char_traits`<CharType\> to an element of type `char16_t`.|  
-|[char_traits<char32_t> struct](../vs140/char_traits-char32_t--struct.md)|A struct that is a specialization of the template struct `char_traits`<CharType\> to an element of type `char32_t`.|  
+|[char_traits\<char> struct](../vs140/char_traits-char--struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type `char`.|  
+|[char_traits<wchar_t> struct](../vs140/char_traits-wchar_t--struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type `wchar_t`.|  
+|[char_traits<char16_t> struct](../vs140/char_traits-char16_t--struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type `char16_t`.|  
+|[char_traits<char32_t> struct](../vs140/char_traits-char32_t--struct.md)|A struct that is a specialization of the template struct `char_traits`\<CharType> to an element of type `char32_t`.|  
   
 ## Requirements  
   
--   **Header:** <string\>  
+-   **Header:** \<string>  
   
 -   **Namespace:** std  
   

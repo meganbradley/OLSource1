@@ -41,7 +41,7 @@ typedef implementation-defined iterator;
  See the example for [begin](../vs140/vector--begin.md).  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

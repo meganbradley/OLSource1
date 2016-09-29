@@ -105,7 +105,7 @@ int main()
  **v1 = ( 10 20 10 40 10 )**  
 **The number of 10s in v2 is: 3.**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

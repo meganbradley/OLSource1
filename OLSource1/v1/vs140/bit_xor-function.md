@@ -68,11 +68,11 @@ template<>
  The `bit_xor` functor is restricted to integral types for the basic data types, or to user-defined types that implement binary `operator^`.  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   
 ## See Also  
- [<functional\>](../vs140/-functional-.md)   
+ [\<functional>](../vs140/-functional-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

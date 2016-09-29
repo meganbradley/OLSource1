@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &#39;Char&#39; values cannot be converted to &#39;&lt;typename&gt;&#39;
-'Char' values cannot be converted to '<typename\>'. Use Microsoft.VisualBasic.AscW to interpret a character as a Unicode value or Microsoft.VisualBasic.Val to interpret it as a digit.  
+'Char' values cannot be converted to '\<typename>'. Use Microsoft.VisualBasic.AscW to interpret a character as a Unicode value or Microsoft.VisualBasic.Val to interpret it as a digit.  
   
  An expression attempts to convert a `Char` value to a data type other than `String` or `Object`.  
   

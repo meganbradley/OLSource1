@@ -71,7 +71,7 @@ void open(
  See [basic_filebuf::open](../vs140/basic_filebuf--open.md) for an example of how to use **open**.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

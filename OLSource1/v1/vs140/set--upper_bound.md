@@ -96,7 +96,7 @@ int main( )
 **The first element of s1 with a key greater than**  
 **that of the initial element of s1 is: 20.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

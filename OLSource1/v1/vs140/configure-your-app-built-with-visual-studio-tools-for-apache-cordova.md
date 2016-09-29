@@ -75,7 +75,7 @@ translation.priority.ht:
 -   res\screens\\*platform* contains splash screens for each platform.  
   
 > [!CAUTION]
->  Visual Studio 2015 now uses the <icon\> and <splashscreen\> config.xml elements to set the location of these files. If you are using a config.xml file from an earlier version, you will need to add these elements to your config.xml file. To do this, simply create a new project from the Blank template, choose **View Code** from the shortcut menu for the config.xml file in each project, and then copy the required elements from the Blank project to your project.  
+>  Visual Studio 2015 now uses the \<icon> and \<splashscreen> config.xml elements to set the location of these files. If you are using a config.xml file from an earlier version, you will need to add these elements to your config.xml file. To do this, simply create a new project from the Blank template, choose **View Code** from the shortcut menu for the config.xml file in each project, and then copy the required elements from the Blank project to your project.  
   
  The file name of each resource provides some information about the asset. For example, the `screen-ldpi-portrait.png` file in the res\icons\screens\android folder represents a splash screen for a low-resolution screen (ldpi, or 426x320) for an Android device in portrait orientation.  
   

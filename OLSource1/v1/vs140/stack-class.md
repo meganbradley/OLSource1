@@ -39,7 +39,7 @@ template <    class  Type ,     class  Container= deque <Type>  > class stack
  The element data type to be stored in the stack.  
   
  `Container`  
- The type of the underlying container used to implement the stack. The default value is the class `deque`*<Type\>*.  
+ The type of the underlying container used to implement the stack. The default value is the class `deque`*\<Type>*.  
   
 ## Remarks  
  The elements of class **Type** stipulated in the first template parameter of a stack object are synonymous with [value_type](#stack__value_type) and must match the type of element in the underlying container class **Container** stipulated by the second template parameter. The **Type** must be assignable, so that it is possible to copy objects of that type and to assign values to variables of that type.  
@@ -79,7 +79,7 @@ template <    class  Type ,     class  Container= deque <Type>  > class stack
 |[top](#stack__top)|Returns a reference to an element at the top of the `stack`.|  
   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

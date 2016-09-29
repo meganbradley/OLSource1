@@ -61,7 +61,7 @@ Specifies that integer variables shall appear in base 16 notation.
  See [dec](../vs140/dec.md) for an example of how to use **hex**.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

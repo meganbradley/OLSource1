@@ -103,6 +103,6 @@ The character-set 'backslash-t' in the locale
 ```  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std

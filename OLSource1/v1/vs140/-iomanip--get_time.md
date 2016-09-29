@@ -54,11 +54,11 @@ template<class Elem>
  The manipulator returns an object that, when extracted from the stream `str`, behaves as a `formatted input function` that calls the member function `get` for the locale facet `time_get` associated with `str`, using `tptr` to indicate the time structure and `fmt` to indicate the beginning of a null-terminated format string. If successful, the call stores in the time structure the values associated with any extracted time fields. The manipulator then returns `str`.  
   
 ## Requirements  
- **Header:** <iomanip\>  
+ **Header:** \<iomanip>  
   
  **Namespace:** std  
   
 ## See Also  
- [<iomanip\>](../vs140/-iomanip-.md)   
+ [\<iomanip>](../vs140/-iomanip-.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

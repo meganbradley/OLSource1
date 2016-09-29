@@ -65,11 +65,11 @@ template<class ForwardIterator, class BinaryPredicate>
  The second template function behaves the same, except that it replaces `operator<(X, Y)` with `_Comp``(X, Y)`.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
  [is_sorted](../vs140/is_sorted.md)   
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

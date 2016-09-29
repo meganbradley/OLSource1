@@ -67,7 +67,7 @@ int main( )
  **The priority_queue length is 1.**  
 **The priority_queue length is now 2.**   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

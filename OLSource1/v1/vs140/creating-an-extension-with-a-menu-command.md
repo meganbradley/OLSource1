@@ -107,7 +107,7 @@ This walkthrough shows how to create an extension with a menu command that launc
   
  You can find the .vsix file for this extension in the FirstMenuCommand bin directory. Specifically, assuming you have built the Release configuration, it will be in:  
   
- **<code directory\>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix**  
+ **\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix**  
   
  To install the extension, your friend needs to close all open instances of Visual Studio, then double-click the .vsix file, which brings up the **VSIX Installer**. The files are copied to the **%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions** directory.  
   

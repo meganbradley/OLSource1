@@ -67,7 +67,7 @@ int main( )
  **v**  
 **l**   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   

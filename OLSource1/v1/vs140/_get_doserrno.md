@@ -64,7 +64,7 @@ errno_t _get_doserrno( 
   
 |Routine|Required header|Optional header|  
 |-------------|---------------------|---------------------|  
-|`_get_doserrno`|<stdlib.h>, <cstdlib\> (C++)|<errno.h>, <cerrno\> (C++)|  
+|`_get_doserrno`|<stdlib.h>, \<cstdlib> (C++)|<errno.h>, \<cerrno> (C++)|  
   
  `_get_doserrno` is a Microsoft extension. For more compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

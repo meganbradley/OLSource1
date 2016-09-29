@@ -72,7 +72,7 @@ int main( )
 **Whether double objects have infinity: 1**  
 **Whether long int objects have infinity: 0**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

@@ -141,7 +141,7 @@ The following procedure creates a C# version of the traditional "Hello World!" p
  [C# Programming Guide](../vs140/csharp-programming-guide.md)   
  [Inside a C# Program](../vs140/inside-a-csharp-program.md)   
  [Strings (C# Programming Guide)](../vs140/strings--csharp-programming-guide-.md)   
- [<paveover\>C# Sample Applications](assetId:///9a9d7aaa-51d3-4224-b564-95409b0f3e15)   
+ [\<paveover>C# Sample Applications](assetId:///9a9d7aaa-51d3-4224-b564-95409b0f3e15)   
  [C# Reference](../vs140/csharp-reference.md)   
  [Main() and Command-Line Arguments (C# Programming Guide)](../vs140/main---and-command-line-arguments--csharp-programming-guide-.md)   
  [Getting Started Tutorials](../vs140/getting-started-with-visual-csharp-and-visual-basic.md)

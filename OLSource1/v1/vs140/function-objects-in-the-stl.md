@@ -52,7 +52,7 @@ int main()
  The last line of the `main` function shows how you call the function object. This call looks like a call to a function, but it is actually calling operator() of the Functor type. This similarity between calling a function object and a function is how the term function object came about.  
   
 ## Function Objects and Containers  
- The Standard Template Library contains several function objects in the [<functional\>](../vs140/-functional-.md) header file. One use of these function objects is as a sorting criterion for containers. For example, the `set` container is declared as follows:  
+ The Standard Template Library contains several function objects in the [\<functional>](../vs140/-functional-.md) header file. One use of these function objects is as a sorting criterion for containers. For example, the `set` container is declared as follows:  
   
 ```  
 template <  
@@ -76,7 +76,7 @@ template<class ForwardIterator, class Predicate>
     );  
 ```  
   
- The last argument to `remove_if` is a function object that returns a boolean value (a *predicate*). If the result of the function object is `true`, then the element is removed from the container being accessed by the iterators `_First` and `_Last`. You can use any of the function objects declared in the [<functional\>](../vs140/-functional-.md) header for the argument `_Pred` or you can create your own.  
+ The last argument to `remove_if` is a function object that returns a boolean value (a *predicate*). If the result of the function object is `true`, then the element is removed from the container being accessed by the iterators `_First` and `_Last`. You can use any of the function objects declared in the [\<functional>](../vs140/-functional-.md) header for the argument `_Pred` or you can create your own.  
   
 ## See Also  
  [Standard Template Library](../vs140/standard-template-library.md)

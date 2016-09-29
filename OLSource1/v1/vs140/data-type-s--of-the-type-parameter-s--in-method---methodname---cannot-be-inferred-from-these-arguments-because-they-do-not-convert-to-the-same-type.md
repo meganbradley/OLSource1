@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Data type(s) of the type parameter(s) in method &#39;&lt;methodname&gt;&#39; cannot be inferred from these arguments because they do not convert to the same type
-Data type(s) of the type parameter(s) in method '<methodname\>' cannot be inferred from these arguments because they do not convert to the same type. Specifying the data type(s) explicitly might correct this error.  
+Data type(s) of the type parameter(s) in method '\<methodname>' cannot be inferred from these arguments because they do not convert to the same type. Specifying the data type(s) explicitly might correct this error.  
   
  An attempt has been made to use type inference to determine the data type or types of the type parameter or parameters when evaluating a call to a generic procedure. The compiler could not find a data type that meets the constraints of all the arguments. Therefore, it reported this error.  
   

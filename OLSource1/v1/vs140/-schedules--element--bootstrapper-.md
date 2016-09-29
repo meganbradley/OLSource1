@@ -49,7 +49,7 @@ The `Schedules` element contains `Schedule` elements, which define specific time
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`Name`|Required. The name of the schedule item. This corresponds to the `ScheduleName` property of the `Command` element. When a `Command` references the named schedule, it will only be executed at the time indicated by that `Schedule` element. Schedules may also be associated with the `FailIf` and `BypassIf` elements, which restrict these conditional tests to executing on the specified schedule. For more information, see [<Commands\> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
+|`Name`|Required. The name of the schedule item. This corresponds to the `ScheduleName` property of the `Command` element. When a `Command` references the named schedule, it will only be executed at the time indicated by that `Schedule` element. Schedules may also be associated with the `FailIf` and `BypassIf` elements, which restrict these conditional tests to executing on the specified schedule. For more information, see [\<Commands> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
   
  A given `Schedule` element may have exactly one of the following children.  
   
@@ -63,5 +63,5 @@ The `Schedules` element contains `Schedule` elements, which define specific time
  The `AfterPackage` element instructs the installer to execute a command after the specified package is installed.  
   
 ## See Also  
- [<Product\> Element (ClickOnce Bootstrapper)](../vs140/-product--element--bootstrapper-.md)   
+ [\<Product> Element (ClickOnce Bootstrapper)](../vs140/-product--element--bootstrapper-.md)   
  [Product and Package Schema Reference](../vs140/product-and-package-schema-reference.md)

@@ -39,10 +39,10 @@ template <class Iterator>
  This is the unchecked version of the [checked_array_iterator Class](../vs140/checked_array_iterator-class.md) and supports all the same overloads and members. For more information on the checked iterator feature with code examples, see [Checked Iterators](../vs140/checked-iterators.md).  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** stdext  
   
 ## See Also  
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

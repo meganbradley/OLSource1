@@ -45,7 +45,7 @@ t> wstringbuf;
  The type is a synonym for template class [basic_stringbuf](../vs140/basic_stringbuf-class.md), specialized for elements of type `wchar_t`.  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

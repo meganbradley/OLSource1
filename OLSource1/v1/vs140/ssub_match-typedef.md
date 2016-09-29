@@ -36,12 +36,12 @@ typedef sub_match<string::const_iterator> ssub_match;
  The type describes a specialization of template class [sub_match](../vs140/sub_match-class.md) for iterators of type `string::const_iterator`.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [sub_match](../vs140/sub_match-class.md)   
  [csub_match](../vs140/csub_match-typedef.md)   
  [wcsub_match](../vs140/wcsub_match-typedef.md)   

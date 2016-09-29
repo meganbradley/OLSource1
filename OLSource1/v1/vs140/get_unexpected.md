@@ -28,10 +28,10 @@ unexpected_handler get_unexpected( );
 ```  
   
 ## Requirements  
- **Header:** <exception\>  
+ **Header:** \<exception>  
   
  **Namespace:** std  
   
 ## See Also  
- [<exception\>](../vs140/-exception-.md)   
+ [\<exception>](../vs140/-exception-.md)   
  [set_unexpected](../vs140/set_unexpected---exception--.md)

@@ -45,7 +45,7 @@ A *self-hosted service* is a WCF service that does not run inside IIS, the WCF S
   
     2.  Click **Set Startup Projects**.  
   
-    3.  In the **Solution <name\> Properties** dialog box, select **Multiple Startup Projects**.  
+    3.  In the **Solution \<name> Properties** dialog box, select **Multiple Startup Projects**.  
   
     4.  In the **Multiple Startup Projects** grid, on the line that corresponds to the server project, click **Action** and choose **Start**.  
   

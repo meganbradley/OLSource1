@@ -62,7 +62,7 @@ int main( )
  **The character ch1 is: G.**  
 **The character ch2 is: H.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

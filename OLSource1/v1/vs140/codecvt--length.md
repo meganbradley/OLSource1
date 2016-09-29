@@ -86,7 +86,7 @@ int main( )
   
  **The length of the string is: 50.**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

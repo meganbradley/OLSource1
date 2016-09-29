@@ -43,7 +43,7 @@ typedef typename Container::size_type size_type;
  See the example for [size](../vs140/stack--size.md) for an example of how to declare and use `size_type`.  
   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

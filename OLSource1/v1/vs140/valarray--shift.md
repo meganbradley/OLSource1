@@ -100,7 +100,7 @@ int main( )
 **The operand valarray va2(10) is: ( 10 9 8 7 6 5 4 3 2 1 ).**  
 **The shifted valarray va2 is: va2.shift (-4) = ( 0 0 0 0 10 9 8 7 6 5 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

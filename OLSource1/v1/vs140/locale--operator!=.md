@@ -88,7 +88,7 @@ int main( )
 **locales loc1 (German_Germany.1252) and**  
  **loc3 (English_United States.1252) are not equal.**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

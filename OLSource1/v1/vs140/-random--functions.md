@@ -27,7 +27,7 @@ RealType generate_canonical(Generator& Gen);
   
 ### Parameters  
  `RealType`  
- The floating point integral type. For possible types, see [<random\>](../vs140/-random-.md).  
+ The floating point integral type. For possible types, see [\<random>](../vs140/-random-.md).  
   
  `Bits`  
  The random number generator.  

@@ -208,4 +208,4 @@ template<class T>
 |[underlying_type](../vs140/underlying_type-class.md)|Produces the underlying integral type for an enumeration type.|  
   
 ## See Also  
- [<functional\>](../vs140/-functional-.md)
+ [\<functional>](../vs140/-functional-.md)

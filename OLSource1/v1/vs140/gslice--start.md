@@ -92,7 +92,7 @@ int main( )
  **va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).**  
 **The index of the first element of vaResult is: 0.**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

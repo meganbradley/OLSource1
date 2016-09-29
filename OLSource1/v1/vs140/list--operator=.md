@@ -100,7 +100,7 @@ v2 = 10 20 30 40 50
 ```  
   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

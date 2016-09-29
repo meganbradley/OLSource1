@@ -102,7 +102,7 @@ When you create a test project in Microsoft Visual Studio, the most recent versi
   
 4.  In Solution Explorer, choose **Unload Project** from your new Visual C++ test project.  
   
-5.  In Solution Explorer, choose the unloaded Visual C++ test project and then choose **Edit <project name\>.vcxproj**.  
+5.  In Solution Explorer, choose the unloaded Visual C++ test project and then choose **Edit \<project name>.vcxproj**.  
   
      The .vcxproj file opens in the editor.  
   

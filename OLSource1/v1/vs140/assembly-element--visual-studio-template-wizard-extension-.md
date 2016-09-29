@@ -24,9 +24,9 @@ translation.priority.mt:
 # Assembly Element (Visual Studio Template Wizard Extension)
 Specifies the name or strong name of the assembly that implements the `IWizard` interface.  
   
- <VSTemplate\>  
-<WizardExtension\>  
-<Assembly\>  
+ \<VSTemplate>  
+\<WizardExtension>  
+\<Assembly>  
   
 ## Syntax  
   

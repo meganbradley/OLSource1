@@ -65,7 +65,7 @@ int main( )
  **The value_type is AnInt = 69**  
 **The element at the top of the stack is 69.**   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

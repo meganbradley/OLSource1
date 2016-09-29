@@ -104,7 +104,7 @@ You can deploy an application that targets multiple versions of the .NET Framewo
   
 ## See Also  
  [Publishing ClickOnce Applications](../vs140/publishing-clickonce-applications.md)   
- [<compatibleFrameworks\> Element](../vs140/-compatibleframeworks--element--clickonce-deployment-.md)   
- [<dependency\> Element](../vs140/-dependency--element--clickonce-application-.md)   
+ [\<compatibleFrameworks> Element](../vs140/-compatibleframeworks--element--clickonce-deployment-.md)   
+ [\<dependency> Element](../vs140/-dependency--element--clickonce-application-.md)   
  [ClickOnce Deployment Manifest](../vs140/clickonce-deployment-manifest.md)   
  [Application Configuration Files](assetId:///69003d39-dc8a-460c-a6be-e6d93e690b38)

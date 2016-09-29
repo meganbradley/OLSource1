@@ -24,9 +24,9 @@ translation.priority.ht:
 # WizardExtension Element (Visual Studio Templates)
 Contains the registration elements for customizing the template wizard.  
   
- <VSTemplate\>  
+ \<VSTemplate>  
  ...  
- <WizardExtension\>  
+ \<WizardExtension>  
   
 ## Syntax  
   

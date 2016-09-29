@@ -89,6 +89,6 @@ int main( void )
 **In Test::~Test("outside try block")**  
  **std::uncaught_exception( ) = 0**   
 ## Requirements  
- **Header:** <exception\>  
+ **Header:** \<exception>  
   
  **Namespace:** std

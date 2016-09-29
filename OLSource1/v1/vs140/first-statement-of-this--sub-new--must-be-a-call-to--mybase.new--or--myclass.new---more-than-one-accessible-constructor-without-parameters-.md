@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # First statement of this &#39;Sub New&#39; must be a call to &#39;MyBase.New&#39; or &#39;MyClass.New&#39; (More Than One Accessible Constructor Without Parameters)
-First statement of this 'Sub New' must be a call to 'MyBase.New' or 'MyClass.New' because base class '<base\>' of '<derived\>' has more than one accessible 'Sub New' that can be called with no arguments.  
+First statement of this 'Sub New' must be a call to 'MyBase.New' or 'MyClass.New' because base class '\<base>' of '\<derived>' has more than one accessible 'Sub New' that can be called with no arguments.  
   
  A class constructor does not supply a call to a base class constructor, and [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] cannot provide an implicit call because it cannot determine which base class constructor to call.  
   

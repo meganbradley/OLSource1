@@ -50,7 +50,7 @@ xdcmake.exe is a program that compiles .xdc files into an .xml file. An .xdc fil
 |Option|Description|  
 |------------|-----------------|  
 |/?, /help|Display help for xdcmake.exe.|  
-|/assembly:*filename*|Lets you specify the value of the <assembly\> tag in the .xml file.  By default, the value of the <assembly\> tag is the same as the filename of the .xml file.|  
+|/assembly:*filename*|Lets you specify the value of the \<assembly> tag in the .xml file.  By default, the value of the \<assembly> tag is the same as the filename of the .xml file.|  
 |/nologo|Suppress copyright message.|  
 |/out:*filename*|Lets you specify the name of the .xml file.  By default, the name of the .xml file is the filename of the first .xdc file processed by xdcmake.exe.|  
   

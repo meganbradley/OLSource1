@@ -33,24 +33,10 @@ The [.NET Compiler Platform](https://github.com/dotnet/roslyn) (“Roslyn”) he
   
  Users are familiar with writing code like the following:  
   
-```c#  
-var a1 = new int[0];  
-Console.WriteLine("a1.Length = { 0}", a1.Length);  
-var a2 = new int[] { 1, 2, 3, 4, 5 };  
-Console.WriteLine("a2.Length = { 0}", a2.Length);  
-  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
  Creating empty arrays to fill in with subsequent lines of code and using collection initializer syntax are very familiar to C# developers.  However, writing the same code for an ImmutableArray crashes at runtime:  
   
-```c#  
-var b1 = new ImmutableArray<int>();  
-Console.WriteLine("b1.Length = { 0}", b1.Length);  
-var b2 = new ImmutableArray<int> { 1, 2, 3, 4, 5 };  
-Console.WriteLine("b2.Length = { 0}", b2.Length);  
-  
-```  
-  
+<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
  The first error is due to ImmutableArray implementation’s using a struct to wrap the underlying data storage.  Structs must have parameterless constructors so that `default(T)` expressions can return structs with all zero or null members.  When the code accesses `b1.Length`, there is a run time null dereference error because there is no underlying storage array in the ImmutableArray struct.  The correct way to create an empty ImmutableArray is `ImmutableArray<int>.Empty`.  
   
  The error with collection initializers happens because the ImmutableArray.Add method returns new instances each time you call it.  Because ImmutableArrays never change, when you add a new element, you get back a new ImmutableArray object (which may share storage for performance reasons with a previously existing ImmutableArray).  Because `b2` points to the first ImmutableArray before calling `Add()` five times, `b2` is a default ImmutableArray.  Calling Length on it also crashes with a null dereference error.  The correct way to initialize an ImmutableArray without manually calling Add is to use `ImmutableArray.CreateRange(new int[] {1, 2, 3, 4, 5})`.  
@@ -65,42 +51,26 @@ Console.WriteLine("b2.Length = { 0}", b2.Length);
   
  The template opens a DiagnosticAnalyzer.cs file.  Choose that editor buffer tab.  This file has an analyzer class (formed from the name you gave the project) that derives from `DiagnosticAnalyzer` (a Roslyn API type).  Your new class has a `DiagnosticAnalyzerAttribute` declaring your analyzer is relevant to the C# language so that the compiler discovers and loads your analyzer.  
   
-```c#  
-[DiagnosticAnalyzer(LanguageNames.CSharp)]  
-public class ImmutableArrayAnalyzerAnalyzer : DiagnosticAnalyzer  
-{}  
-```  
-  
+<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
  You can implement an analyzer using Visual Basic that targets C# code, and vice versa.  It is more important in the DiagnosticAnalyzerAttribute to choose whether your analyzer targets one language or both.  More sophisticated analyzers that require detailed modeling of the language can only target a single language.  If your analyzer, for example, only checks type names or public member names, it may be possible to use the common language model Roslyn offers across Visual Basic and C#.  For example, FxCop warns that a class implements <xref:System.Runtime.Serialization.ISerializable*>, but the class does not have the <xref:System.SerializableAttribute*> attribute is language-independent and works for both Visual Basic and C# code.  
   
 ## Initalizing the Analyzer  
  Scroll down a little in the `DiagnosticAnalyzer` class to see the `Initialize` method.  The compiler calls this method when activating an analyzer.  The method takes an `AnalysisContext` object that allows your analyzer to get at context information and to register callbacks for events for the kinds of code you want to analyze.  
   
-```c#  
-public override void Initialize(AnalysisContext context) {}  
-```  
-  
+<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
  Open a new line in this method and type “context.” to see an Intellisense completion list.  You can see in the completion list there are many `Register…` methods to handle various kinds of events.  For example, the first one, `RegisterCodeBlockAction`, calls back to your code for a block, which is usually code between curly braces.  Registering for a block also calls back to your code for the initializer of a field, the value given to an attribute, or the value of an optional parameter.  
   
  As another example, `RegisterCompilationStartAction`, calls back to your code at the start of a compilation, which is useful when you need to collect state over many locations.  You can create a data structure, say, to collect all symbols used, and each time your analyzer is called back for some syntax or symbol, you can save information about each location in your data structure.  When you’re called back due to the compilation ending, you can analyze all the locations you saved, for example, to report what symbols the code uses from each `using` statement.  
   
  Using the **Syntax Visualizer**, you learned that you want to be called when the compiler processes an ObjectCreationExpression.  You use this code to set up the callback:  
   
-```c#  
-  
-context.RegisterSyntaxNodeAction(c => AnalyzeObjectCreation(c),  
-                                 SyntaxKind.ObjectCreationExpression);  
-```  
-  
+<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
  You register for a syntax node and filter for only object creation syntax nodes.  By convention, analyzer authors use a lambda when registering actions, which helps to keep analyzers stateless.  You can use the Visual Studio feature **Generate From Usage** to create the `AnalyzeObjectCreation` method.  This generates the correct type of context parameter for you too.  
   
 ## Setting Properties for Users of Your Analyzer  
  So that your Analyzer shows up in Visual Studio UI appropriately, look for and modify the following line of code to identify your analyzer:  
   
-```c#  
-internal const string Category = "Naming";  
-```  
-  
+<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
  Change `"Naming"` to `"API Guidance"`.  
   
  Next find and open the Resources.resx file in your project using the **Solution Explorer**.  You can put in a description for your Analyzer, title, etc.  You can change the value for all of these to `“Don’t use ImmutableArray<T> constructor”` for now.  You can put string formatting arguments in your string ({0}, {1}, etc.), and later when you call `Diagnostic.Create()`, you can supply a params array of arguments to be passed.  
@@ -110,23 +80,13 @@ internal const string Category = "Naming";
   
  Get the node, which you can assume is the type for which you filtered the syntax node action:  
   
-```c#  
-var objectCreation = (ObjectCreationExpressionSyntax)context.Node;  
-```  
-  
+<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
 ### Launching Visual Studio with Your Analyzer the First Time  
  Launch Visual Studio by building and executing your analyzer (press **F5**).  Because the startup project in the **Solution Explorer** is the VSIX project, running your code builds your code and a VSIX, and then launches Visual Studio with that VSIX installed.  When you launch Visual Studio in this way, it launches with a distinct registry hive so that your main use of Visual Studio will not be affected by your testing instances while building analyzers.  The first time you launch this way, Visual Studio does several initializations similar to when you first launched Visual Studio after installing it.  
   
  Create a console project and then enter the array code into your console applications Main method:  
   
-```c#  
-var b1 = new ImmutableArray<int>();  
-Console.WriteLine("b1.Length = {0}", b1.Length);  
-var b2 = new ImmutableArray<int> { 1, 2, 3, 4, 5 };  
-Console.WriteLine("b2.Length = {0}", b2.Length);  
-  
-```  
-  
+<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
  The lines of code with `ImmutableArray` have squiggles because you need to get the immutable NuGet package and add a `using` statement to your code.  Press the right pointer button on the project node in the **Solution Explorer** and choose **Manage NuGet Packages …**.  In the NuGet manager, type “Immutable” into the search box, and choose the item “System.Collections.Immutable” (do not choose “Microsoft.Bcl.Immutable”) in the left pane and press the Install button in the right pane.  Installing the package adds a reference to your project references.  
   
  You still see red squiggles under `ImmutableArray`, so place the caret in that identifier and press **CTRL+.** (period) to bring up the suggested fix menu and choose to add the appropriate `using` statement.  
@@ -144,22 +104,14 @@ Console.WriteLine("b2.Length = {0}", b2.Length);
   
  **Get ImmutableArray<T\> Type object.** You need to check if the type being created is ImmutableArray.  First, you get the object that represents this type.  You check types using the semantic model to ensure you have exactly the right type, and you don’t compare the string from ToString().  Enter the following line of code at the end of the function:  
   
-```c#  
-  
-var immutableArrayOfTType =   
-    context.SemanticModel  
-           .Compilation  
-           .GetTypeByMetadataName("System.Collections.Immutable.ImmutableArray`1");  
-  
-```  
-  
- You designate generic types in metadata with backquotes (`) and the number of generic parameters.  That is why you do not see “…ImmutableArray<T\>” in the metadata name.  
+<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
+ You designate generic types in metadata with backquotes (`) and the number of generic parameters.  That is why you do not see “…ImmutableArray\<T>” in the metadata name.  
   
  The semantic model has many useful things on it that let you ask questions about symbols, data flow, variable lifetime, etc.  Roslyn separates syntax nodes from the semantic model for various engineering reasons (performance, modeling erroneous code, etc.).  You want the compilation model to look up information contained in references for accurate comparison.  
   
  You can drag the yellow execution pointer on the left side of the editor window.  Drag it up to the line that sets the `objectCreation` variable and step over your new line of code using **F10**.  If you hover the mouse pointer over the variable `immutableArrayOfType`, you see that we found the exact type in the semantic model.  
   
- **Get the object creation expression’s type.** “Type” is used in a few ways in this article, but this means if you have “new Foo” expression, you need to get a model of Foo.  You need to get the type of the object creation expression to see if it is the ImmutableArray<T\> type.  Use the semantic model again to get symbol information for the type symbol (ImmutableArray) in the object creation expression.  Enter the following line of code at the end of the function:  
+ **Get the object creation expression’s type.** “Type” is used in a few ways in this article, but this means if you have “new Foo” expression, you need to get a model of Foo.  You need to get the type of the object creation expression to see if it is the ImmutableArray\<T> type.  Use the semantic model again to get symbol information for the type symbol (ImmutableArray) in the object creation expression.  Enter the following line of code at the end of the function:  
   
 ```c#  
 var symbolInfo = context.SemanticModel.GetSymbolInfo(objectCreation.Type) as INamedTypeSymbol;  
@@ -301,12 +253,12 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 ## Trying Your Code Fix  
  You can now press **F5** to execute your analyzer in a second instance of Visual Studio.  Open the console project you used before.  Now you should see the light bulb appear where your new object creation expression is for `ImmutableArray<int>`.  If you press **CTRL+.** (period), then you will see your code fix, and you will see an automatically generated code difference preview in the light bulb UI.  Roslyn creates this for you.  
   
- Pro Tip: If you launch the second instance of Visual Studio, and you don’t see the light bulb with your code fix, then you may need to clear the Visual Studio component cache.  Clearing the cache forces Visual Studio to re-examine the components, so Visual Studio should then pick up your latest component.  First, shut down the second instance of Visual Studio.  Then in Windows Explorer, go to your user directory (c:\users\\<userid\>) and find AppData\Local\Microsoft\VisualStudio\14.0Roslyn\\.  In this directory, delete the sub directory ComponentModelCache.  The “14” changes version to version with Visual Studio.  
+ Pro Tip: If you launch the second instance of Visual Studio, and you don’t see the light bulb with your code fix, then you may need to clear the Visual Studio component cache.  Clearing the cache forces Visual Studio to re-examine the components, so Visual Studio should then pick up your latest component.  First, shut down the second instance of Visual Studio.  Then in Windows Explorer, go to your user directory (c:\users\\\<userid>) and find AppData\Local\Microsoft\VisualStudio\14.0Roslyn\\.  In this directory, delete the sub directory ComponentModelCache.  The “14” changes version to version with Visual Studio.  
   
 ## Talk Video and Finish Code Project  
  You can see this example developed and discussed further in [this talk](http://channel9.msdn.com/events/Build/2015/3-725).  The talk demonstrates the working analyzer and walks you through building it.  
   
- You can see all the finished code [here](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers).  The sub folders DoNotUseImmutableArrayCollectionInitializer and DoNotUseImmutableArrayCtor each have a C# file for finding issues and a C# file that implements the code fixes that show up in the Visual Studio light bulb UI.  Note, the finished code has a little more abstraction to avoid fetching the ImmutableArray<T\> type object over and over.  It uses nested registered actions to save the type object in a context that is available whenever the sub actions (analyze object creation and analyze collection initializations) execute.  
+ You can see all the finished code [here](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers).  The sub folders DoNotUseImmutableArrayCollectionInitializer and DoNotUseImmutableArrayCtor each have a C# file for finding issues and a C# file that implements the code fixes that show up in the Visual Studio light bulb UI.  Note, the finished code has a little more abstraction to avoid fetching the ImmutableArray\<T> type object over and over.  It uses nested registered actions to save the type object in a context that is available whenever the sub actions (analyze object creation and analyze collection initializations) execute.  
   
 ## See Also  
  [\\\Build 2015 talk](http://channel9.msdn.com/events/Build/2015/3-725)   

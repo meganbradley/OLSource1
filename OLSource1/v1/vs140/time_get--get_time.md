@@ -110,7 +110,7 @@ int main( )
 **tm_min: 13**  
 **tm_hour: 11**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

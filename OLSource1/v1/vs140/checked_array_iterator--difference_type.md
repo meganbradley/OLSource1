@@ -43,7 +43,7 @@ typedef typename iterator_traits<_Iterator>::difference_type difference_type;
  For more information, see [Checked Iterators](../vs140/checked-iterators.md).  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

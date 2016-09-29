@@ -78,7 +78,7 @@ int main( )
  **The original vector vec is: ( 1 2 3 ).**  
 **After the insertion, the vector is: ( 1 2 3 40 ).**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

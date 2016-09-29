@@ -41,7 +41,7 @@ To implement a connection point using the Implement Connection Point Wizard, you
   
 3.  Select the connection point interfaces to implement from the appropriate type libraries and click **Finish**.  
   
-4.  In Class View, examine the proxy classes created for each connection point. The classes appear as CProxy*InterfaceName*<T\> and are derived from [IConnectionPointImpl](../vs140/iconnectionpointimpl-class.md).  
+4.  In Class View, examine the proxy classes created for each connection point. The classes appear as CProxy*InterfaceName*\<T> and are derived from [IConnectionPointImpl](../vs140/iconnectionpointimpl-class.md).  
   
 5.  Double-click the connection point class to display the definition of the connection point's class.  
   

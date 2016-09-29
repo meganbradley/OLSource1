@@ -42,5 +42,5 @@ static time_t to_time_t(
   
 ## See Also  
  [system_clock Structure](../vs140/system_clock-structure.md)   
- [<chrono\>](../vs140/-chrono-.md)   
+ [\<chrono>](../vs140/-chrono-.md)   
  [system_clock::from_time_t Method](../vs140/system_clock--from_time_t-method.md)

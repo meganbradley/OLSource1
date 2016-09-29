@@ -22,7 +22,7 @@ translation.priority.ht:
 # Pointer Comparison (C# Programming Guide)
 You can apply the following operators to compare pointers of any type:  
   
- **==   !=   <   >   <=   >=**  
+ **==   !=   \<   >   <=   >=**  
   
  The comparison operators compare the addresses of the two operands as if they are unsigned integers.  
   

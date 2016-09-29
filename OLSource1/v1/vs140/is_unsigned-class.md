@@ -73,10 +73,10 @@ int main()
   
 ```  
   
-  **is_unsigned<trivial\> == false**  
-**is_unsigned<int\> == false**  
-**is_unsigned<unsigned int\> == true**  
-**is_unsigned<float\> == false**    
+  **is_unsigned\<trivial> == false**  
+**is_unsigned\<int> == false**  
+**is_unsigned\<unsigned int> == true**  
+**is_unsigned\<float> == false**    
 ## Requirements  
  **Header:** <type_traits>  
   

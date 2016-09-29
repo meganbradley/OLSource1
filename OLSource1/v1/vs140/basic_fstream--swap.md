@@ -48,13 +48,13 @@ void swap(basic_fstream& _Right);
  The member function exchanges the contents of this object and the contents of `_Right`.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_fstream Class](../vs140/basic_fstream-class.md)   
- [<fstream\>](../vs140/-fstream-.md)   
+ [\<fstream>](../vs140/-fstream-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

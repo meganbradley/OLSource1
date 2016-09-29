@@ -36,7 +36,7 @@ typedef typename traits_type::off_type off_type;
 ```  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

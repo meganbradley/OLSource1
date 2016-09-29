@@ -48,9 +48,9 @@ void declare_no_pointers(
  The function informs any `garbage collector` that the range of addresses `[``_Ptr``,` `_Ptr` `+` `_Size``)` no longer contain traceable pointers. (Any pointers to allocated storage must not be dereferenced unless made `reachable`.)  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

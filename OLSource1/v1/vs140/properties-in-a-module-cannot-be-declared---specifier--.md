@@ -31,4 +31,4 @@ You have attempted to use a specifier, such as `MustOverride`, `NotOverridable`,
   
 ## See Also  
  [Module Statement](../vs140/module-statement.md)   
- [Module <keyword\>](../vs140/module--keyword---visual-basic-.md)
+ [Module \<keyword>](../vs140/module--keyword---visual-basic-.md)

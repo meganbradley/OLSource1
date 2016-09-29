@@ -25,6 +25,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # mt19937_64 TypeDef
-Topic deprecated, see [<random\>](../vs140/-random-.md).  
+Topic deprecated, see [\<random>](../vs140/-random-.md).  
   
 ## Syntax

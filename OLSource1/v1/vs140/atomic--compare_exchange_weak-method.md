@@ -82,5 +82,5 @@ bool compare_exchange_weak(
 ## See Also  
  [atomic_compare_exchange_weak_explicit](../vs140/atomic_compare_exchange_weak_explicit-function.md)   
  [atomic Structure](../vs140/atomic-structure.md)   
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [memory_order](../vs140/memory_order-enum.md)

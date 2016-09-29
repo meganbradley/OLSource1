@@ -39,4 +39,4 @@ operator bool() const _NOEXCEPT;
   
 ## See Also  
  [packaged_task Class](../vs140/packaged_task-class.md)   
- [<future\>](../vs140/-future-.md)
+ [\<future>](../vs140/-future-.md)

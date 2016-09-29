@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;type&gt; &#39;&lt;typename&gt;&#39; shadows an overridable method in the base class
-<type\> '<typename\>' shadows an overridable method in the base class. If you want to override the base method, this method must be declared 'Overrides'.  
+\<type> '\<typename>' shadows an overridable method in the base class. If you want to override the base method, this method must be declared 'Overrides'.  
   
  A programming element is declared with the same name as an overridable procedure or property defined in the base class. In this situation, the element in this class should shadow the base class element.  
   

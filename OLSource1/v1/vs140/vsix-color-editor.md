@@ -137,7 +137,7 @@ The Visual Studio Extension Color Editor tool can create and edit custom colors 
   
  ![VSIX Color Editor Resource Code Viewer](../vs140/media/vsix-color-editor-resource-code-viewer.png "VSIX Color Editor Resource Code Viewer")  
   
- Include this code in a static class in the project. A reference to **Microsoft.VisualStudio.Shell.<VSVersion\>.0.dll** needs to be added to the project to use the **ThemeResourceKey** type.  
+ Include this code in a static class in the project. A reference to **Microsoft.VisualStudio.Shell.\<VSVersion>.0.dll** needs to be added to the project to use the **ThemeResourceKey** type.  
   
 ```c#  
 namespace MyCustomColors  

@@ -114,7 +114,7 @@ int main()
 **after clearing stream: stream good**  
 **test1test3**   
 ## Requirements  
- **Header:** <strstream\>  
+ **Header:** \<strstream>  
   
  **Namespace:** std  
   

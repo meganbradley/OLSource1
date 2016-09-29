@@ -69,7 +69,7 @@ template<class Alloc>
 |[allocator_traits::select_on_container_copy_construction](#allocator_traits__select_on_container_copy_construction_method)|Static method that calls `select_on_container_copy_construction` on the specified allocator.|  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
@@ -193,6 +193,6 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
  This method is used to specify an allocator when the associated container is copy-constructed.  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)   
+ [\<memory>](../vs140/-memory-.md)   
  [pointer_traits Struct](../vs140/pointer_traits-struct.md)   
  [scoped_allocator_adaptor Class](../vs140/scoped_allocator_adaptor-class.md)

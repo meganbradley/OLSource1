@@ -28,13 +28,13 @@ translation.priority.ht:
 # When Element (MSBuild)
 Specifies a possible block of code for the `Choose` element to select.  
   
- <Project\>  
- <Choose\>  
- <When\>  
- <Choose\>  
+ \<Project>  
+ \<Choose>  
+ \<When>  
+ \<Choose>  
  ...  
- <Otherwise\>  
- <Choose\>  
+ \<Otherwise>  
+ \<Choose>  
  ...  
   
 ## Syntax  

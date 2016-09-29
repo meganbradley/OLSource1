@@ -81,6 +81,6 @@ int main()
   **x \* x == 9**  
 **bad function call**    
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std

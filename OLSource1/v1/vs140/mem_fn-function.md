@@ -86,7 +86,7 @@ int main()
  **3^2 == 9**  
 **3\*2 == 6**   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

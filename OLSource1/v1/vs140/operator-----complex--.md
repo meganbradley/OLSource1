@@ -87,6 +87,6 @@ int main( )
   
   **`2.0`**    
 ## Requirements  
- **Header:** <complex\>  
+ **Header:** \<complex>  
   
  **Namespace:** std

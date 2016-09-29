@@ -53,15 +53,15 @@ class discard_block_engine;
 |`discard_block_engine::discard_block_engine`|`discard_block_engine::base`|`discard_block_engine::discard`|  
 |`discard_block_engine::operator()`|`discard_block_engine::base_type`|`discard_block_engine::seed`|  
   
- For more information about engine members, see [<random\>](../vs140/-random-.md).  
+ For more information about engine members, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  This template class describes an engine adaptor that produces values by discarding some of the values returned by its base engine.  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

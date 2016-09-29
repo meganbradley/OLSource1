@@ -73,5 +73,5 @@ inline bool atomic_compare_exchange_weak_explicit(
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic Structure](../vs140/atomic-structure.md)

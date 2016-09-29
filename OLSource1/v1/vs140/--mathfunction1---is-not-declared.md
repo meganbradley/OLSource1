@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &#39;&lt;mathfunction1&gt;&#39; is not declared
-'<mathfunction1\>' is not declared. Function has moved to the System.Math class and is now called '<mathfunction2\>'.  
+'\<mathfunction1>' is not declared. Function has moved to the System.Math class and is now called '\<mathfunction2>'.  
   
  Several functions that were intrinsic to [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] in previous versions have been moved to the <xref:System.Math*?displayProperty=fullName> namespace. This makes their functionality more generally available to all programming languages.  
   

@@ -116,7 +116,7 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
 </Image>  
 ```  
   
- Some symbols are predefined for all manifests. These can be used in the Uri attribute of the <Source\> or <Import\> element to reference paths on the local machine.  
+ Some symbols are predefined for all manifests. These can be used in the Uri attribute of the \<Source> or \<Import> element to reference paths on the local machine.  
   
 |||  
 |-|-|  
@@ -131,9 +131,9 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
   
  **Image**  
   
- The <Image\> element defines an image that can be referenced by a moniker. The GUID and ID taken together form the image moniker. The moniker for the image must be unique across the entire image library. If more than one image has a given moniker, the first one encountered while building the library is the one that is retained.  
+ The \<Image> element defines an image that can be referenced by a moniker. The GUID and ID taken together form the image moniker. The moniker for the image must be unique across the entire image library. If more than one image has a given moniker, the first one encountered while building the library is the one that is retained.  
   
- It must contain at least one source. Size-neutral sources will give the best results across a broad range of sizes, but they are not required. If the service is asked for an image of a size not defined in the <Image\> element and there is no size-neutral source, the service will choose the best size-specific source and scale it to the requested size.  
+ It must contain at least one source. Size-neutral sources will give the best results across a broad range of sizes, but they are not required. If the service is asked for an image of a size not defined in the \<Image> element and there is no size-neutral source, the service will choose the best size-specific source and scale it to the requested size.  
   
 ```xml  
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">  
@@ -151,7 +151,7 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
   
  **Source**  
   
- The <Source\> element defines a single image source asset (XAML and PNG).  
+ The \<Source> element defines a single image source asset (XAML and PNG).  
   
 ```xml  
 <Source Uri="uri" Background="background">  
@@ -166,17 +166,17 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
 |Background|[Optional] Indicates what on kind of background the source is intended to be used.<br /><br /> It can be one of the following:<br /><br /> *Light:* The source can be used on a light background.<br /><br /> *Dark:*The source can be used on a dark background.<br /><br /> *HighContrast:* The source can be used on any background in High Contrast mode.<br /><br /> *HighContrastLight:* The source can be used on a light background in High Contrast mode.<br /><br /> *HighContrastDark:* The source can be used on a dark background in High Contrast mode.<br /><br /> If the Background attribute is omitted, the source can be used on any background.<br /><br /> If Background is *Light*, *Dark*, *HighContrastLight*, or *HighContrastDark*, the source’s colors are never inverted. If Background is omitted or set to *HighContrast*, the inversion of the source’s colors is controlled by the image’s **AllowColorInversion** attribute.|  
 |||  
   
- A <Source\> element can have exactly one of the following optional subelements:  
+ A \<Source> element can have exactly one of the following optional subelements:  
   
 ||||  
 |-|-|-|  
 |**Element**|**Attributes (all required)**|**Definition**|  
-|<Size\>|Value|The source will be used for images of the given size (in device units). The image will be square.|  
-|<SizeRange\>|MinSize, MaxSize|The source will be used for images from MinSize to MaxSize (in device units) inclusively. The image will be square.|  
-|<Dimensions\>|Width, Height|The source will be used for images of the given width and height (in device units).|  
-|<DimensionRange\>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|The source will be used for images from the minimum width/height to the maximum width/height (in device units) inclusively.|  
+|\<Size>|Value|The source will be used for images of the given size (in device units). The image will be square.|  
+|\<SizeRange>|MinSize, MaxSize|The source will be used for images from MinSize to MaxSize (in device units) inclusively. The image will be square.|  
+|\<Dimensions>|Width, Height|The source will be used for images of the given width and height (in device units).|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|The source will be used for images from the minimum width/height to the maximum width/height (in device units) inclusively.|  
   
- A <Source\> element can also have an optional <NativeResource\> subelement, which defines a <Source\> that is loaded from a native assembly rather than a managed assembly.  
+ A \<Source> element can also have an optional \<NativeResource> subelement, which defines a \<Source> that is loaded from a native assembly rather than a managed assembly.  
   
 ```xml  
 <NativeResource Type="type" ID="int" />  
@@ -190,7 +190,7 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
   
  **ImageList**  
   
- The <ImageList\> element defines a collection of images that can be returned in a single strip. The strip is built on demand, as needed.  
+ The \<ImageList> element defines a collection of images that can be returned in a single strip. The strip is built on demand, as needed.  
   
 ```xml  
 <ImageList>  
@@ -237,7 +237,7 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
   
     -   Required if you use the **BrushToColorConverter** for the ImageThemingUtilities.**ImageBackgroundColor** in your WPF UI  
   
--   **Microsoft.VisualStudio.Shell.<VSVersion\>.0**  
+-   **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
   
     -   Required if you use the **IVsUIObject** type  
   
@@ -310,7 +310,7 @@ This cookbook contains guidance and best practices for adopting the Visual Studi
   
  Updating existing WPF UI is a relatively simple process that consists of three basic steps:  
   
-1.  Replace all <Image\> elements in your UI with <CrispImage\> elements  
+1.  Replace all \<Image> elements in your UI with \<CrispImage> elements  
   
 2.  Change all the Source attributes to Moniker attributes  
   
@@ -491,7 +491,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
  **What if my .vsct file also needs to be read by older versions of Visual Studio?**  
   
- Older versions of Visual Studio do not recognize the **IconIsMoniker** command flag. You can use images from the image service on versions of Visual Studio that support it, but continue to use old-style images on older versions of Visual Studio. To do this, you’d leave the .vsct file unchanged (and therefore compatible with older versions of Visual Studio), and create a CSV (comma-separated values) file that maps from GUID/ID pairs defined in a .vsct file’s <Bitmaps\> element to image moniker GUID/ID pairs.  
+ Older versions of Visual Studio do not recognize the **IconIsMoniker** command flag. You can use images from the image service on versions of Visual Studio that support it, but continue to use old-style images on older versions of Visual Studio. To do this, you’d leave the .vsct file unchanged (and therefore compatible with older versions of Visual Studio), and create a CSV (comma-separated values) file that maps from GUID/ID pairs defined in a .vsct file’s \<Bitmaps> element to image moniker GUID/ID pairs.  
   
  The format of the mapping CSV file is:  
   
@@ -568,7 +568,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
   
 2.  If you are using only **KnownMonikers**, then do the following:  
   
-    -   Replace the <Images\> section of the manifest with <Images/\>.  
+    -   Replace the \<Images> section of the manifest with <Images/\>.  
   
     -   Remove all the subimage IDs (anything with <imagestrip name>_##).  
   

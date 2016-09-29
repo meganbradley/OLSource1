@@ -36,4 +36,4 @@ inline void yield() _NOEXCEPT;
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<thread\>](../vs140/-thread-.md)
+ [\<thread>](../vs140/-thread-.md)

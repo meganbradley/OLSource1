@@ -141,44 +141,24 @@ End Sub
   
  You can declare a generic type parameter covariant in a generic delegate by using the `out` keyword. The covariant type can be used only as a method return type and not as a type of method arguments. The following code example shows how to declare a covariant generic delegate.  
   
-```vb  
-Public Delegate Function DCovariant(Of Out R)() As R  
-```  
-  
+<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
  You can declare a generic type parameter contravariant in a generic delegate by using the `in` keyword. The contravariant type can be used only as a type of method arguments and not as a method return type. The following code example shows how to declare a contravariant generic delegate.  
   
-```vb  
-Public Delegate Sub DContravariant(Of In A)(ByVal a As A)  
-```  
-  
+<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
 > [!IMPORTANT]
 >  `ByRef` parameters in Visual Basic can't be marked as variant.  
   
  It is also possible to support both variance and covariance in the same delegate, but for different type parameters. This is shown in the following example.  
   
-```vb  
-Public Delegate Function DVariant(Of In A, Out R)(ByVal a As A) As R  
-```  
-  
+<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
 ### Instantiating and Invoking Variant Generic Delegates  
  You can instantiate and invoke variant delegates just as you instantiate and invoke invariant delegates. In the following example, the delegate is instantiated by a lambda expression.  
   
-```vb  
-Dim dvariant As DVariant(Of String, String) = Function(str) str + " "  
-dvariant("test")  
-```  
-  
+<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
 ### Combining Variant Generic Delegates  
  You should not combine variant delegates. The <xref:System.Delegate.Combine*> method does not support variant delegate conversion and expects delegates to be of exactly the same type. This can lead to a run-time exception when you combine delegates either by using the <xref:System.Delegate.Combine*> method (in C# and Visual Basic) or by using the `+` operator (in C#), as shown in the following code example.  
   
-```vb  
-im actObj As Action(Of Object) = Sub(x) Console.WriteLine("object: {0}", x)  
-Dim actStr As Action(Of String) = Sub(x) Console.WriteLine("string: {0}", x)  
-  
-' The following statement throws an exception at run time.  
-' Dim actCombine = [Delegate].Combine(actStr, actObj)  
-```  
-  
+<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
 ## Variance in Generic Type Parameters for Value and Reference Types  
  Variance for generic type parameters is supported for reference types only. For example, `DVariant(Of Int)`can't be implicitly converted to `DVariant(Of Object)` or `DVariant(Of Long)`, because integer is a value type.  
   

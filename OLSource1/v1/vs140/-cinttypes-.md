@@ -18,7 +18,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;cinttypes&gt;
-Includes the Standard C library header <inttypes.h>. Including this header also includes <cstdint\>.  
+Includes the Standard C library header <inttypes.h>. Including this header also includes \<cstdint>.  
   
 ## Syntax  
   
@@ -31,7 +31,7 @@ Includes the Standard C library header <inttypes.h>. Including this header also 
  Including this header ensures that the names declared by using external linkage in the Standard C library header are declared in the `std` namespace.  
   
 ## See Also  
- [<cstdint\>](../vs140/-cstdint-.md)   
+ [\<cstdint>](../vs140/-cstdint-.md)   
  [Header Files](../vs140/c---standard-library-header-files.md)   
  [Standard C++ Library Overview](../vs140/c---standard-library-overview.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

@@ -76,11 +76,11 @@ int main()
 ```  
   
 ## Requirements  
- **Header:** <array\>  
+ **Header:** \<array>  
   
  **Namespace:** std  
   
 ## See Also  
- [<array\>](../vs140/-array-.md)   
+ [\<array>](../vs140/-array-.md)   
  [array](../vs140/array-class--stl-.md)   
  [operator_sub](../vs140/array--operator.md)

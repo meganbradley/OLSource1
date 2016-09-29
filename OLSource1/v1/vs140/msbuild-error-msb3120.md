@@ -20,13 +20,13 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3120
-**MSB3120: File association extension '<extension\>' exceeds the maximum allowed length of <maximumlength\>.**  
+**MSB3120: File association extension '\<extension>' exceeds the maximum allowed length of \<maximumlength>.**  
   
  The number of characters in the file association extension must not exceed the indicated number.  
   
 ### To correct this error  
   
--   Set the [<fileAssociation\> Element](../vs140/clickonce-deployment-manifest.md)`extension` attribute to a value that does not contain more characters than the allowed limit for the target operating system.  
+-   Set the [\<fileAssociation> Element](../vs140/clickonce-deployment-manifest.md)`extension` attribute to a value that does not contain more characters than the allowed limit for the target operating system.  
   
 ## See Also  
  [Publish Page, Project Designer](../vs140/publish-page--project-designer.md)   

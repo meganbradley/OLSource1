@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Compiler Error CS0311
-The type 'type1' cannot be used as type parameter 'T' in the generic type or method '<name\>'. There is no implicit reference conversion from 'type1' to 'type2'.  
+The type 'type1' cannot be used as type parameter 'T' in the generic type or method '\<name>'. There is no implicit reference conversion from 'type1' to 'type2'.  
   
  When a constraint is applied to a generic type parameter, an implicit identity or reference conversion must exist from the concrete argument to the type of the constraint.  
   

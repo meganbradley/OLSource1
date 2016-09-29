@@ -141,7 +141,7 @@ long double nexttowardl(
 ## Remarks  
  The `nextafter` and `nexttoward` function families are equivalent, except for the parameter type of `y`. If `x` and `y` are equal, the value returned is `y` converted to the return type.  
   
- Because C++ allows overloading, if you include <cmath\> you can call overloads of `nextafter` and `nexttoward` that return `float` and `long double` types. In a C program, `nextafter` and `nexttoward` always return `double`.  
+ Because C++ allows overloading, if you include \<cmath> you can call overloads of `nextafter` and `nexttoward` that return `float` and `long double` types. In a C program, `nextafter` and `nexttoward` always return `double`.  
   
  The `_nextafter` and `_nextafterf` functions are Microsoft specific. The `_nextafterf` function is only available when compiling for x64.  
   
@@ -149,8 +149,8 @@ long double nexttowardl(
   
 |Routine|Required header (C)|Required header (C++)|  
 |-------------|---------------------------|-------------------------------|  
-|`nextafter`, `nextafterf`, `nextafterl`, `_nextafterf`, `nexttoward`, `nexttowardf`, `nexttowardl`|<math.h>|<math.h> or <cmath\>|  
-|`_nextafter`|<float.h>|<float.h> or <cfloat\>|  
+|`nextafter`, `nextafterf`, `nextafterl`, `_nextafterf`, `nexttoward`, `nexttowardf`, `nexttowardl`|<math.h>|<math.h> or \<cmath>|  
+|`_nextafter`|<float.h>|<float.h> or \<cfloat>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

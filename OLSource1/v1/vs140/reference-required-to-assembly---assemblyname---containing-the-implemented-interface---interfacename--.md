@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Reference required to assembly &#39;&lt;assemblyname&gt;&#39; containing the implemented interface &#39;&lt;interfacename&gt;&#39;
-Reference required to assembly '<assemblyname\>' containing the implemented interface '<interfacename\>'. Add one to your project.  
+Reference required to assembly '\<assemblyname>' containing the implemented interface '\<interfacename>'. Add one to your project.  
   
  The interface is defined in a dynamic-link library (DLL) or assembly that is not directly referenced in your project. The [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] compiler requires a reference to avoid ambiguity in case the interface is defined in more than one DLL or assembly.  
   

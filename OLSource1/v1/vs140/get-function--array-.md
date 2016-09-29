@@ -89,10 +89,10 @@ Output:
 ```  
   
 ## Requirements  
- **Header:** <array\>  
+ **Header:** \<array>  
   
  **Namespace:** std  
   
 ## See Also  
- [<array\>](../vs140/-array-.md)   
+ [\<array>](../vs140/-array-.md)   
  [tuple_element](../vs140/tuple_element-class--array-.md)

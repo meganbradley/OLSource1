@@ -31,14 +31,14 @@ The Visual Studio Remote Debugger can run as an application or as a background s
   
  In the remote debugger window, click **Tools / Options**, and set the TCP/IP port number.  
   
- On the command line, start the remote debugger with the **/port** switch: **msvsmon /port <port number\>**.  
+ On the command line, start the remote debugger with the **/port** switch: **msvsmon /port \<port number>**.  
   
  You can find all the remote debugger command line switches in the remote debugging help (press **F1** or click **Help / Usage** in the remote debugger window).  
   
 ## The Remote Debugger Port on 64-bit Operating Systems  
  When the 64-bit version of the remote debugger is started, it uses the 4020 port by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4021. If you run the 32-bit remote debugger, it uses 4020, and 4021 is not used.  
   
- This port is configurable from the command line: **Msvsmon /wow64port <port number\>**.  
+ This port is configurable from the command line: **Msvsmon /wow64port \<port number>**.  
   
 ## The Discovery Port  
  UDP 3702 is used for finding running instances of the remote debugger on the network (for example, the **Find** dialog in the **Attach to Process** dialog). It is used only for discovering a machine running the remote debugger, so it is  optional if you have some other way of knowing the machine name or IP address of the target computer. This is a standard port for discovery, so the port number cannot be configured.  

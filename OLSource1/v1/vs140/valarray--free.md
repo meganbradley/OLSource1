@@ -45,7 +45,7 @@ v = valarray<T>(); // equivalent to v.free()
 ```  
   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

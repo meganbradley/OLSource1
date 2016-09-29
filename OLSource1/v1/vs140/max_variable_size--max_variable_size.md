@@ -38,7 +38,7 @@ max_variable_size();
  The constructor initializes the stored values `_Nblocks` and `_Nallocs` to zero.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

@@ -113,7 +113,7 @@ int main() {
 **tiger lion cougar**  
 **tiger cougar**   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

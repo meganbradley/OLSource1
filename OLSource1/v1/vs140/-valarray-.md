@@ -98,7 +98,7 @@ Defines the template class valarray and numerous supporting template classes and
   
 |||  
 |-|-|  
-|[valarray<bool\> Class](../vs140/valarray-bool--class.md)|A specialized version of the template class valarray<**Type**> to elements of type `bool`.|  
+|[valarray\<bool> Class](../vs140/valarray-bool--class.md)|A specialized version of the template class valarray<**Type**> to elements of type `bool`.|  
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   

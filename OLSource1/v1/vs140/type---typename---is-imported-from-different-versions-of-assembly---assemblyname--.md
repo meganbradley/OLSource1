@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Type &#39;&lt;typename&gt;&#39; is imported from different versions of assembly &#39;&lt;assemblyname&gt;&#39;
-Type '<typename\>' is imported from different versions of assembly '<assemblyname\>'. Different versions of the same assembly cannot be used in the same project.  
+Type '\<typename>' is imported from different versions of assembly '\<assemblyname>'. Different versions of the same assembly cannot be used in the same project.  
   
  A type was imported from different versions of the same assembly, creating ambiguity.  
   

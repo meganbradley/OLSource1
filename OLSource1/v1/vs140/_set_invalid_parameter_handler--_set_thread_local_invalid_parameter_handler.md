@@ -84,7 +84,7 @@ void _invalid_parameter(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`_set_invalid_parameter_handler`, `_set_thread_local_invalid_parameter_handler`|C: <stdlib.h><br /><br /> C++: <cstdlib\> or <stdlib.h>|  
+|`_set_invalid_parameter_handler`, `_set_thread_local_invalid_parameter_handler`|C: <stdlib.h><br /><br /> C++: \<cstdlib> or <stdlib.h>|  
   
  The `_set_invalid_parameter_handler` and `_set_thread_local_invalid_parameter_handler` functions are Microsoft specific. For compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

@@ -38,7 +38,7 @@ This article explains the role of activation in the visual editing of OLE items.
   
  It is also possible to edit embedded OLE items in a separate window. This will happen if either the container or server application does not support in-place activation. In this case, when the user double-clicks an embedded item, the server application is launched in a separate window and the embedded item appears as its own document. The user edits the item in this window. When editing is complete, the user closes the server application and returns to the container application.  
   
- As an alternative, the user can choose "open editing" with the **<object\> Open** command on the **Edit** menu. This opens the object in a separate window.  
+ As an alternative, the user can choose "open editing" with the **\<object> Open** command on the **Edit** menu. This opens the object in a separate window.  
   
 > [!NOTE]
 >  Editing embedded items in a separate window was standard behavior in version 1 of OLE, and some OLE applications may support only this style of editing.  

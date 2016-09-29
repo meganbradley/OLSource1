@@ -68,7 +68,7 @@ int main( )
  **German_Germany.1252 international decimal point ,**  
 **German_Germany.1252 domestic decimal point ,**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

@@ -53,7 +53,7 @@ binder2nd <Operation> bind2nd(
 ## Remarks  
  Function binders are a kind of function adaptor and, because they return function objects, can be used in certain types of function composition to construct more complicated and powerful expressions.  
   
- If `_Func` is an object of type **Operation** and `c` is a constant, then `bind2nd` ( `_Func`, `c` ) is equivalent to the [binder2nd](../vs140/binder2nd-class.md) class constructor **binder2nd<Operation\>** ( `_Func`, `c` ) and more convenient.  
+ If `_Func` is an object of type **Operation** and `c` is a constant, then `bind2nd` ( `_Func`, `c` ) is equivalent to the [binder2nd](../vs140/binder2nd-class.md) class constructor **binder2nd\<Operation>** ( `_Func`, `c` ) and more convenient.  
   
 ## Example  
   
@@ -120,7 +120,7 @@ int main()
 **The number of elements in v1 greater than 15 is: 2.**  
 **The number of elements in v1 less than 10 is: 2.**   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

@@ -44,11 +44,11 @@ You include the contents of a standard header by naming it in an include directi
   
  The C++ Standard requires that the C Standard headers declare all external names in namespace `std`, then hoist them into the global namespace with individual `using` declarations for each of the names. But in some translation environments the C Standard headers include no namespace declarations, declaring all names directly in the global namespace. Thus, the most portable way to deal with namespaces is to follow two rules:  
   
--   To assuredly declare in namespace `std` an external name that is traditionally declared in <stdlib.h>, for example, include the header <cstdlib\>. Know that the name might also be declared in the global namespace.  
+-   To assuredly declare in namespace `std` an external name that is traditionally declared in <stdlib.h>, for example, include the header \<cstdlib>. Know that the name might also be declared in the global namespace.  
   
 -   To assuredly declare in the global namespace an external name declared in <stdlib.h>, include the header <stdlib.h> directly. Know that the name might also be declared in namespace `std`.  
   
- Thus, if you want to call `std::abort` to cause abnormal termination, you should include <cstdlib\>. If you want to call `abort`, you should include <stdlib.h>.  
+ Thus, if you want to call `std::abort` to cause abnormal termination, you should include \<cstdlib>. If you want to call `abort`, you should include <stdlib.h>.  
   
  Alternatively, you can write the declaration:  
   

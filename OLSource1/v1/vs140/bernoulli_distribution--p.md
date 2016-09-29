@@ -42,10 +42,10 @@ double p() const;
  The `p` parameter from the stored `param_type`.  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [bernoulli_distribution Class](../vs140/bernoulli_distribution-class.md)

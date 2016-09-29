@@ -62,10 +62,7 @@ The `group` clause returns a sequence of <xref:System.Linq.IGrouping`2*> objects
 ### Grouping by Composite Keys  
  Use a composite key when you want to group elements according to more than one key. You create a composite key by using an anonymous type or a named type to hold the key element. In the following example, assume that a class `Person` has been declared with members named `surname` and `city`. The `group` clause causes a separate group to be created for each set of persons with the same last name and the same city.  
   
-```  
-group person by new {name = person.surname, city = person.city};  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
  Use a named type if you must pass the query variable to another method. Create a special class using auto-implemented properties for the keys, and then override the <xref:System.Object.Equals*> and <xref:System.Object.GetHashCode*> methods. You can also use a struct, in which case you do not strictly have to override those methods. For more information see [How to: Implement a Lightweight Class with Auto-Implemented Properties (C# Programming Guide)](../vs140/how-to--implement-a-lightweight-class-with-auto-implemented-properties--csharp-programming-guide-.md) and [How To: Query for Duplicate Files in a Directory Tree (LINQ)](../vs140/how-to--query-for-duplicate-files-in-a-directory-tree--linq-.md). The latter topic has a code example that demonstrates how to use a composite key with a named type.  
   
 ## Example  

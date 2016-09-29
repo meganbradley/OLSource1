@@ -44,7 +44,7 @@ Sets the compiler to target the [!INCLUDE[Compact](../vs140/includes/compact_md.
   
  The `/netcf` option changes the following language features:  
   
--   The [End <keyword\> Statement](../vs140/end--keyword--statement--visual-basic-.md) keyword, which terminates execution of a program, is disabled. The following program compiles and runs without `/netcf` but fails at compile time with `/netcf`.  
+-   The [End \<keyword> Statement](../vs140/end--keyword--statement--visual-basic-.md) keyword, which terminates execution of a program, is disabled. The following program compiles and runs without `/netcf` but fails at compile time with `/netcf`.  
   
      [!code[VbVbalrCompiler#34](../vs140/codesnippet/VisualBasic/-netcf_1.vb)]  
   

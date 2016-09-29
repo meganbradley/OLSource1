@@ -68,7 +68,7 @@ Type: class std::domain_error
 ```  
   
 ## Requirements  
- **Header:** <stdexcept\>  
+ **Header:** \<stdexcept>  
   
  **Namespace:** std  
   

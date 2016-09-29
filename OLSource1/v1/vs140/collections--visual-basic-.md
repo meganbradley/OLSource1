@@ -56,69 +56,20 @@ For many applications, you want to create and manage groups of related objects. 
   
  The following example creates a list of strings and then iterates through the strings by using a [For Each…Next](../vs140/for-each...next-statement--visual-basic-.md) statement.  
   
-```vb  
-' Create a list of strings.  
-Dim salmons As New List(Of String)  
-salmons.Add("chinook")  
-salmons.Add("coho")  
-salmons.Add("pink")  
-salmons.Add("sockeye")  
-  
-' Iterate through the list.  
-For Each salmon As String In salmons  
-    Console.Write(salmon & " ")  
-Next  
-'Output: chinook coho pink sockeye  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
  If the contents of a collection are known in advance, you can use a *collection initializer* to initialize the collection. For more information, see [Collection Initializers Overview (Visual Basic)](../vs140/collection-initializers--visual-basic-.md).  
   
  The following example is the same as the previous example, except a collection initializer is used to add elements to the collection.  
   
-```vb  
-' Create a list of strings by using a  
-' collection initializer.  
-Dim salmons As New List(Of String) From  
-    {"chinook", "coho", "pink", "sockeye"}  
-  
-For Each salmon As String In salmons  
-    Console.Write(salmon & " ")  
-Next  
-'Output: chinook coho pink sockeye  
-```  
-  
+<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
  You can use a [For…Next](../vs140/for...next-statement--visual-basic-.md) statement instead of a `For Each` statement to iterate through a collection. You accomplish this by accessing the collection elements by the index position. The index of the elements starts at 0 and ends at the element count minus 1.  
   
  The following example iterates through the elements of a collection by using `For…Next` instead of `For Each`.  
   
-```vb  
-Dim salmons As New List(Of String) From  
-    {"chinook", "coho", "pink", "sockeye"}  
-  
-For index = 0 To salmons.Count - 1  
-    Console.Write(salmons(index) & " ")  
-Next  
-'Output: chinook coho pink sockeye  
-```  
-  
+<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
  The following example removes an element from the collection by specifying the object to remove.  
   
-```vb  
-' Create a list of strings by using a  
-' collection initializer.  
-Dim salmons As New List(Of String) From  
-    {"chinook", "coho", "pink", "sockeye"}  
-  
-' Remove an element in the list by specifying  
-' the object.  
-salmons.Remove("coho")  
-  
-For Each salmon As String In salmons  
-    Console.Write(salmon & " ")  
-Next  
-'Output: chinook pink sockeye  
-```  
-  
+<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
  The following example removes elements from a generic list. Instead of a `For Each` statement, a [For…Next](../vs140/for...next-statement--visual-basic-.md) statement that iterates in descending order is used. This is because the <xref:System.Collections.Generic.List`1.RemoveAt*> method causes elements after a removed element to have a lower index value.  
   
 ```vb  
@@ -242,83 +193,13 @@ End Class
   
  The following example creates a `Dictionary` collection and iterates through the dictionary by using a `For Each` statement.  
   
-```vb  
-Private Sub IterateThroughDictionary()  
-    Dim elements As Dictionary(Of String, Element) = BuildDictionary()  
-  
-    For Each kvp As KeyValuePair(Of String, Element) In elements  
-        Dim theElement As Element = kvp.Value  
-  
-        Console.WriteLine("key: " & kvp.Key)  
-        With theElement  
-            Console.WriteLine("values: " & .Symbol & " " &  
-                .Name & " " & .AtomicNumber)  
-        End With  
-    Next  
-End Sub  
-  
-Private Function BuildDictionary() As Dictionary(Of String, Element)  
-    Dim elements As New Dictionary(Of String, Element)  
-  
-    AddToDictionary(elements, "K", "Potassium", 19)  
-    AddToDictionary(elements, "Ca", "Calcium", 20)  
-    AddToDictionary(elements, "Sc", "Scandium", 21)  
-    AddToDictionary(elements, "Ti", "Titanium", 22)  
-  
-    Return elements  
-End Function  
-  
-Private Sub AddToDictionary(ByVal elements As Dictionary(Of String, Element),  
-ByVal symbol As String, ByVal name As String, ByVal atomicNumber As Integer)  
-    Dim theElement As New Element  
-  
-    theElement.Symbol = symbol  
-    theElement.Name = name  
-    theElement.AtomicNumber = atomicNumber  
-  
-    elements.Add(Key:=theElement.Symbol, value:=theElement)  
-End Sub  
-  
-Public Class Element  
-    Public Property Symbol As String  
-    Public Property Name As String  
-    Public Property AtomicNumber As Integer  
-End Class  
-```  
-  
+<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
  To instead use a collection initializer to build the `Dictionary` collection, you can replace the `BuildDictionary` and `AddToDictionary` methods with the following method.  
   
-```vb  
-Private Function BuildDictionary2() As Dictionary(Of String, Element)  
-    Return New Dictionary(Of String, Element) From  
-        {  
-            {"K", New Element With  
-                {.Symbol = "K", .Name = "Potassium", .AtomicNumber = 19}},  
-            {"Ca", New Element With  
-                {.Symbol = "Ca", .Name = "Calcium", .AtomicNumber = 20}},  
-            {"Sc", New Element With  
-                {.Symbol = "Sc", .Name = "Scandium", .AtomicNumber = 21}},  
-            {"Ti", New Element With  
-                {.Symbol = "Ti", .Name = "Titanium", .AtomicNumber = 22}}  
-        }  
-End Function  
-```  
-  
+<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
  The following example uses the <xref:System.Collections.Generic.Dictionary`2.ContainsKey*> method and the <xref:System.Collections.Generic.Dictionary`2.Item*> property of `Dictionary` to quickly find an item by key. The `Item` property enables you to access an item in the `elements` collection by using the `elements(symbol)` code in Visual Basic.  
   
-```vb  
-Private Sub FindInDictionary(ByVal symbol As String)  
-    Dim elements As Dictionary(Of String, Element) = BuildDictionary()  
-  
-    If elements.ContainsKey(symbol) = False Then  
-        Console.WriteLine(symbol & " not found")  
-    Else  
-        Dim theElement = elements(symbol)  
-        Console.WriteLine("found: " & theElement.Name)  
-    End If  
-End Sub  
-```  
-  
+<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
  The following example instead uses the <xref:System.Collections.Generic.Dictionary`2.TryGetValue*> method quickly find an item by key.  
   
 ```vb  
@@ -465,74 +346,7 @@ End Class
   
  The `GetEnumerator` method returns an instance of the `ColorEnumerator` class. `ColorEnumerator` implements the <xref:System.Collections.IEnumerator*> interface, which requires that the <xref:System.Collections.IEnumerator.Current*> property, <xref:System.Collections.IEnumerator.MoveNext*> method, and <xref:System.Collections.IEnumerator.Reset*> method be implemented.  
   
-```vb  
-Public Sub ListColors()  
-    Dim colors As New AllColors()  
-  
-    For Each theColor As Color In colors  
-        Console.Write(theColor.Name & " ")  
-    Next  
-    Console.WriteLine()  
-    ' Output: red blue green  
-End Sub  
-  
-' Collection class.  
-Public Class AllColors  
-    Implements System.Collections.IEnumerable  
-  
-    Private _colors() As Color =  
-    {  
-        New Color With {.Name = "red"},  
-        New Color With {.Name = "blue"},  
-        New Color With {.Name = "green"}  
-    }  
-  
-    Public Function GetEnumerator() As System.Collections.IEnumerator _  
-        Implements System.Collections.IEnumerable.GetEnumerator  
-  
-        Return New ColorEnumerator(_colors)  
-  
-        ' Instead of creating a custom enumerator, you could  
-        ' use the GetEnumerator of the array.  
-        'Return _colors.GetEnumerator  
-    End Function  
-  
-    ' Custom enumerator.  
-    Private Class ColorEnumerator  
-        Implements System.Collections.IEnumerator  
-  
-        Private _colors() As Color  
-        Private _position As Integer = -1  
-  
-        Public Sub New(ByVal colors() As Color)  
-            _colors = colors  
-        End Sub  
-  
-        Public ReadOnly Property Current() As Object _  
-            Implements System.Collections.IEnumerator.Current  
-            Get  
-                Return _colors(_position)  
-            End Get  
-        End Property  
-  
-        Public Function MoveNext() As Boolean _  
-            Implements System.Collections.IEnumerator.MoveNext  
-            _position += 1  
-            Return (_position < _colors.Length)  
-        End Function  
-  
-        Public Sub Reset() Implements System.Collections.IEnumerator.Reset  
-            _position = -1  
-        End Sub  
-    End Class  
-End Class  
-  
-' Element class.  
-Public Class Color  
-    Public Property Name As String  
-End Class  
-```  
-  
+<CodeContentPlaceHolder>12</CodeContentPlaceHolder>  
 ##  <a name="BKMK_Iterators"></a> Iterators  
  An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [Yield](../vs140/yield-statement--visual-basic-.md) statement to return each element of the collection one at a time.  
   

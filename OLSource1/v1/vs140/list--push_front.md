@@ -88,7 +88,7 @@ int main( )
 **New first element: 2**  
 **Moved first element: a**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

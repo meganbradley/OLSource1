@@ -65,7 +65,7 @@ int main( )
  **The string pstr1a is: In Here.**  
 **The C-string cstr1c is: Out There.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

@@ -658,7 +658,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     |----------|----------|----------|  
     |(Default)|REG_SZ|(value not set)|  
     |Class|REG_SZ|CustomDP.CustomDirectiveProcessor|  
-    |CodeBase|REG_SZ|**<Path to Your Solution\>**CustomDP\bin\Debug\CustomDP.dll|  
+    |CodeBase|REG_SZ|**\<Path to Your Solution>**CustomDP\bin\Debug\CustomDP.dll|  
   
      If you have put the assembly in the GAC, the values should look like the following:  
   

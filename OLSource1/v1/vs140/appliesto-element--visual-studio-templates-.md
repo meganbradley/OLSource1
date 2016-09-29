@@ -23,9 +23,9 @@ Specifies an optional expression to match one or more capabilities. (see <xref:M
   
  Introduced in Visual Studio 2013 Update 2. To reference the correct version, see [Referencing Assemblies Delivered in the Visual Studio 2013 SDK Update 2](assetId:///42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
- <VSTemplate\>  
- <TemplateData\>  
- <AppliesTo\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<AppliesTo>  
   
 ## Syntax  
   

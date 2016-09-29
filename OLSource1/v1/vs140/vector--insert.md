@@ -131,7 +131,7 @@ int main( )
 **v1 = 10 50 50 40 50 50 50 50 20 30**  
 **vv1[0] = 10 50 50 40 50 50 50 50 20 30**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

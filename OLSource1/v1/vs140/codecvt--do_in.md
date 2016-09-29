@@ -83,7 +83,7 @@ virtual result do_in(
  See the example for [in](../vs140/codecvt--in.md), which calls `do_in`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

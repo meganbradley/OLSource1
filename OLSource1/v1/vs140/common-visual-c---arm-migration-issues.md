@@ -53,7 +53,7 @@ The same Visual C++ source code might produce different results on the ARM archi
   
  Floating-point conversion can only be relied on if you know that the value is within the range of the integer type that it's being converted to.  
   
-### Shift Operator (<< >>) Behavior  
+### Shift Operator (<\< >>) Behavior  
  On the ARM architecture, a value can be shifted left or right up to 255 bits before the pattern begins to repeat. On x86 and x64 architectures, the pattern is repeated at every multiple of 32 unless the source of the pattern is a 64-bit variable; in that case, the pattern repeats at every multiple of 64 on x64, and every multiple of 256 on x86, where a software implementation is employed. For example, for a 32-bit variable that has a value of 1 shifted left by 32 positions, on ARM the result is 0, on x86 the result is 1, and on x64 the result is also 1. However, if the source of the value is a 64-bit variable, then the result on all three platforms is 4294967296, and the value doesn't "wrap around" until it's shifted 64 positions on x64, or 256 positions on ARM and x86.  
   
  Because the result of a shift operation that exceeds the number of bits in the source type is undefined, the compiler is not required to have consistent behavior in all situations. For example, if both operands of a shift are known at compile time, the compiler may optimize the program by using an internal routine to precompute the result of the shift and then substituting the result in place of the shift operation. If the shift amount is too large, or negative, the result of the internal routine might be different than the result of the same shift expression as executed by the CPU.  

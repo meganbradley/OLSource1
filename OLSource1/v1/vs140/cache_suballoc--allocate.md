@@ -46,7 +46,7 @@ void *allocate(std::size_t _Count);
 ## Remarks  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

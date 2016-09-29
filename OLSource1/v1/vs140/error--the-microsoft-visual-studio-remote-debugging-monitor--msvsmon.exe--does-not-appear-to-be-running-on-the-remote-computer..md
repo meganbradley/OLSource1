@@ -50,7 +50,7 @@ This error message means that Visual Studio could not find the correct instance 
   
 -   You can stop the remote debugger and restart it with the account you are using on the local computer.  
   
--   You can start the remote debugger from the command line with the **/allow <username\>** parameter: `msvsmon /allow <username@computer>`  
+-   You can start the remote debugger from the command line with the **/allow \<username>** parameter: `msvsmon /allow <username@computer>`  
   
 -   You can add the user to the remote debugger's permissions (in the remote debugger window, **Tools / Permissions**).  
   
@@ -69,9 +69,9 @@ This error message means that Visual Studio could not find the correct instance 
  You may need to do remote debugging at a different time, or reschedule work on the network for a different time.  
   
 ## More help  
- To get more remote debugger help, including command-line switches, click **Help / Usage** in the remote debugger window. If you don't have it open you can see the web page by copying the following line to a  **File Explorer** window. (You need to replace <Visual Studio installation directory\> with the location of your Visual Studio installation.)  
+ To get more remote debugger help, including command-line switches, click **Help / Usage** in the remote debugger window. If you don't have it open you can see the web page by copying the following line to a  **File Explorer** window. (You need to replace \<Visual Studio installation directory> with the location of your Visual Studio installation.)  
   
- res://*<Visual Studio installation directory\>*\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm  
+ res://*\<Visual Studio installation directory>*\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm  
   
 ## See Also  
  [Remote Debugging Errors and Troubleshooting](../vs140/remote-debugging-errors-and-troubleshooting.md)

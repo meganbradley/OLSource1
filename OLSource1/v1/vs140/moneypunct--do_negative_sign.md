@@ -42,7 +42,7 @@ virtual string_type do_negative_sign( ) const;
  See the example for [negative_sign](../vs140/moneypunct--negative_sign.md), where the virtual member function is called by `negative_sign`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

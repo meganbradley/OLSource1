@@ -29,7 +29,7 @@ This lesson shows how to calculate data by using a computed property in a LightS
   
 1.  In **Solution Explorer**, open the shortcut menu for the **Orders.lsml** node, and then choose **Open**.  
   
-2.  In the **Data Designer**, on the **Perspective** bar, choose **Server**, and then choose the **<Add Property\>** link and enter `OrderTotal`.  
+2.  In the **Data Designer**, on the **Perspective** bar, choose **Server**, and then choose the **\<Add Property>** link and enter `OrderTotal`.  
   
 3.  In the **Type** column, choose **Money**.  
   

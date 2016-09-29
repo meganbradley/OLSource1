@@ -45,7 +45,7 @@ thread(thread&& Other) _NOEXCEPT;
 ## Remarks  
  The first constructor constructs an object that's not associated with a thread of execution. The value that's returned by a call to `get_id` for the constructed object is `thread::id()`.  
   
- The second constructor constructs an object that's associated with a new thread of execution and executes the pseudo-function `INVOKE` that's defined in [<functional\>](../vs140/-functional-.md). If not enough resources are available to start a new thread, the function throws a [system_error](../vs140/system_error-class.md) object that has an error code of `resource_unavailable_try_again`. If the call to `F` terminates with an uncaught exception, [terminate](../vs140/terminate---exception--.md) is called.  
+ The second constructor constructs an object that's associated with a new thread of execution and executes the pseudo-function `INVOKE` that's defined in [\<functional>](../vs140/-functional-.md). If not enough resources are available to start a new thread, the function throws a [system_error](../vs140/system_error-class.md) object that has an error code of `resource_unavailable_try_again`. If the call to `F` terminates with an uncaught exception, [terminate](../vs140/terminate---exception--.md) is called.  
   
  The third constructor constructs an object that's associated with the thread that's associated with `Other`. `Other` is then set to a default-constructed state.  
   
@@ -56,5 +56,5 @@ thread(thread&& Other) _NOEXCEPT;
   
 ## See Also  
  [thread Class](../vs140/thread-class.md)   
- [<thread\>](../vs140/-thread-.md)   
+ [\<thread>](../vs140/-thread-.md)   
  [thread::id Class](../vs140/thread--id-class.md)

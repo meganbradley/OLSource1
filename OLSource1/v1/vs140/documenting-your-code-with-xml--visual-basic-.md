@@ -35,11 +35,11 @@ In [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)], you can document your cod
   
 -   Developers are free to create their own set of tags. There is a recommended set of tags (see "Related Sections" in this topic). Some of the recommended tags have special meanings:  
   
-    -   The <param\> tag is used to describe parameters. If used, the compiler will verify that the parameter exists and that all parameters are described in the documentation. If the verification fails, the compiler issues a warning.  
+    -   The \<param> tag is used to describe parameters. If used, the compiler will verify that the parameter exists and that all parameters are described in the documentation. If the verification fails, the compiler issues a warning.  
   
     -   The `cref` attribute can be attached to any tag to provide a reference to a code element. The compiler verifies that this code element exists. If the verification fails, the compiler issues a warning. The compiler also respects any `Imports` statements when looking for a type described in the `cref` attribute.  
   
-    -   The <summary\> tag is used by IntelliSense in [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] to display additional information about a type or member.  
+    -   The \<summary> tag is used by IntelliSense in [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] to display additional information about a type or member.  
   
 ## Related Sections  
  For details on creating an XML file with documentation comments, see the following topics:  

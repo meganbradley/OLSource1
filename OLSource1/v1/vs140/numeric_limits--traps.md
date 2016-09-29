@@ -73,7 +73,7 @@ int main( )
 **Whether long int types have implemented trapping: 0**  
 **Whether unsigned char types have implemented trapping: 0**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

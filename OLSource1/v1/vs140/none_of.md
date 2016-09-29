@@ -57,7 +57,7 @@ bool none_of(
  The template function returns `true` only if, for some `N` in the range `[0,` `_Last` `-` `_First``)`, the predicate `_Comp``(*(``_First` `+ N))` is always `false`.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

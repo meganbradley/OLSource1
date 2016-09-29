@@ -107,7 +107,7 @@ The partitioned set of elements in v1 is: ( 10 8 9 6 7 5 0 3 4 2 1 ).
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

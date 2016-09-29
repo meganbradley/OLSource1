@@ -28,8 +28,8 @@ translation.priority.ht:
 # PropertyGroup Element (MSBuild)
 Contains a set of user-defined [Property](../vs140/property-element--msbuild-.md) elements. Every `Property` element used in an [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] project must be a child of a `PropertyGroup` element.  
   
- <Project\>  
- <PropertyGroup\>  
+ \<Project>  
+ \<PropertyGroup>  
   
 ## Syntax  
   

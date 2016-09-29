@@ -77,7 +77,7 @@ _Right
   
 ### Parameters  
  `_Right`  
- An object of type                                 **bitset<N\>** that is to be inserted into the output stream as a string.  
+ An object of type                                 **bitset\<N>** that is to be inserted into the output stream as a string.  
   
 ### Return Value  
  A text representation of the bit sequence in                         **ostr**.  

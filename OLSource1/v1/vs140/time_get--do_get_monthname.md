@@ -76,7 +76,7 @@ A protected virtual member function that is called to parse a string as the name
  See the example for [get_monthname](../vs140/time_get--get_monthname.md), which calls `do_get_monthname`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

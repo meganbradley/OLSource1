@@ -76,10 +76,10 @@ This page lists key feature names for each version of Visual Basic with descript
  Readonly Interface Properties  
  You can implement readonly interface properties using a readwrite property.  The interface guarantees minimum functionality, and it does not stop an implementing class from allowing the property to be set.  
   
- [TypeOf <expr\> IsNot <type\>](../vs140/typeof-operator--visual-basic-.md)  
+ [TypeOf \<expr> IsNot \<type>](../vs140/typeof-operator--visual-basic-.md)  
  For more readability of your code, you can now use `TypeOf` with `IsNot`.  
   
- [#Disable Warning <ID\> and #Enable Warning <ID\>](../vs140/directives--visual-basic-.md)  
+ [#Disable Warning \<ID> and #Enable Warning \<ID>](../vs140/directives--visual-basic-.md)  
  You can disable and enable specific warnings for regions within a source file.  
   
  XML Doc-comment Improvements  

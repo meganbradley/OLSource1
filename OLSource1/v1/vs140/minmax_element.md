@@ -75,7 +75,7 @@ template<class ForwardIterator, class BinaryPredicate>
  If the sequence is non-empty, the function performs at most `3 * (``_Last` `-` `_First` `- 1) / 2` comparisons.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
@@ -85,5 +85,5 @@ template<class ForwardIterator, class BinaryPredicate>
  [min_element](../vs140/min_element.md)   
  [max](../vs140/max.md)   
  [max_element](../vs140/max_element.md)   
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

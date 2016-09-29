@@ -112,7 +112,7 @@ int main( )
  **The allocator objects cv1Alloc & v1Alloc are equal.**  
 **The allocator objects cAlloc & Alloc are equal.**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

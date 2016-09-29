@@ -26,9 +26,9 @@ translation.priority.ht:
 # Item Element (MSBuild)
 Contains a user-defined item and its metadata. Every item that is used in a [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] project must be specified as a child of an `ItemGroup` element.  
   
- <Project\>  
- <ItemGroup\>  
- <Item\>  
+ \<Project>  
+ \<ItemGroup>  
+ \<Item>  
   
 ## Syntax  
   

@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Class &#39;&lt;classname&gt;&#39; cannot be found
-Class '<classname\>' cannot be found. This condition is usually the result of a mismatched 'Microsoft.VisualBasic.dll'.  
+Class '\<classname>' cannot be found. This condition is usually the result of a mismatched 'Microsoft.VisualBasic.dll'.  
   
  A defined member could not be located.  
   

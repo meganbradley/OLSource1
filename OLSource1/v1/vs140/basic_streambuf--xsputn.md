@@ -53,7 +53,7 @@ Protected, virtual function to insert elements into the output stream.
  The protected virtual member function inserts up to `_Count` elements into the output stream, as if by repeated calls to [sputc](../vs140/basic_streambuf--sputc.md), from the array beginning at `_Ptr`. The insertion of characters into the output stream stops once all `_Count` characters have been written, or if calling `sputc(_Count)` would return `traits::eof()`. It returns the number of elements actually inserted.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

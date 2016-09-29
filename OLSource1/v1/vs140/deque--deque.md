@@ -320,7 +320,7 @@ c9 = 5 6 7 8
 ```  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

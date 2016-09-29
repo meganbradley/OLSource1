@@ -41,7 +41,7 @@ typedef typename wide_string::traits_type::int_type int_type;
  The type is a synonym for `wide_string::traits_type::int_type`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

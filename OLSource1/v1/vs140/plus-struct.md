@@ -115,7 +115,7 @@ The element-wise sums are: ( -4 -2 0 2 4 6 )
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

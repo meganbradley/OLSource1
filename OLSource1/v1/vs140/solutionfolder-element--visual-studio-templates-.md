@@ -24,10 +24,10 @@ translation.priority.ht:
 # SolutionFolder Element (Visual Studio Templates)
 Groups projects in multi-project templates.  
   
- <VSTemplate\>  
- <TemplateContent\>  
- <ProjectCollection\>  
- <SolutionFolder\>  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectCollection>  
+ \<SolutionFolder>  
   
 ## Syntax  
   

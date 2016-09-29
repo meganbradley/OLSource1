@@ -56,12 +56,12 @@ InputIterator find(InputIterator first, InputIterator last,
  For a code example using `find()`, see [find_if()](../vs140/find_if.md).  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [adjacent_find](../vs140/adjacent_find.md)   
  [find_if](../vs140/find_if.md)   
  [find_if_not](../vs140/find_if_not.md)   

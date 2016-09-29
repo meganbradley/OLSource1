@@ -47,9 +47,9 @@ pair<Type1, Type2>&_Right);
  One advantage of `swap` is that the types of objects that are being stored are determined automatically by the compiler and do not have to be explicitly specified. Don't use explicit template arguments such as `swap<int, int>(1, 2)` when you use `swap` because it is unnecessarily verbose and adds complex rvalue reference problems that might cause compilation failure.  
   
 ## Requirements  
- **Header:** <utility\>  
+ **Header:** \<utility>  
   
  **Namespace:** std  
   
 ## See Also  
- [<utility\>](../vs140/-utility-.md)
+ [\<utility>](../vs140/-utility-.md)

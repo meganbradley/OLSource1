@@ -68,7 +68,7 @@ int main()
   **0**  
 **3**    
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

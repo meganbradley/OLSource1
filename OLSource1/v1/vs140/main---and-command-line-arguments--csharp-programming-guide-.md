@@ -62,4 +62,4 @@ The `Main` method is the entry point of a C# console application or windows appl
  [C# Programming Guide](../vs140/csharp-programming-guide.md)   
  [Methods (C# Programming Guide)](../vs140/methods--csharp-programming-guide-.md)   
  [Inside a C# Program](../vs140/inside-a-csharp-program.md)   
- [<paveover\>C# Sample Applications](assetId:///9a9d7aaa-51d3-4224-b564-95409b0f3e15)
+ [\<paveover>C# Sample Applications](assetId:///9a9d7aaa-51d3-4224-b564-95409b0f3e15)

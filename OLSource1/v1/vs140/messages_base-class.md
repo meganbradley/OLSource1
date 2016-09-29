@@ -40,7 +40,7 @@ struct messages_base : locale::facet {
  The type catalog is a synonym for type `int` that describes the possible return values from messages:: [do_open](../vs140/messages-class.md#messages__do_open).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

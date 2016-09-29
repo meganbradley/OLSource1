@@ -49,4 +49,4 @@ bool operator==(
  Returns `_Left`**.**[size](../vs140/container-class--size.md) **==** `_Right`**.size && equal**(_*Left***.**[begin](../vs140/container-class--begin.md), `_Left`. [end](../vs140/container-class--end.md)*, _Right***.begin**).  
   
 ## See Also  
- [<sample container\>](../vs140/-sample-container-.md)
+ [\<sample container>](../vs140/-sample-container-.md)

@@ -48,7 +48,7 @@ typedef typename allocator_type::reference reference;
  See the example for [at](../vs140/basic_string--at.md) for an example of how to declare and use **reference**.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

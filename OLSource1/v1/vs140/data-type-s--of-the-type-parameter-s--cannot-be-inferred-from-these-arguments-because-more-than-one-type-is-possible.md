@@ -31,7 +31,7 @@ Data type(s) of the type parameter(s) cannot be inferred from these arguments be
 > [!NOTE]
 >  When specifying arguments is not an option (for example, for query operators in query expressions), the error message appears without the second sentence.  
   
- For more information and examples, see [Data type(s) of the type parameter(s) in method '<methodname\>' cannot be inferred from these arguments because more than one type is possible](../vs140/data-type-s--of-the-type-parameter-s--in-method---methodname---cannot-be-inferred-from-these-arguments-because-more-than-one-type-is-possible.md).  
+ For more information and examples, see [Data type(s) of the type parameter(s) in method '\<methodname>' cannot be inferred from these arguments because more than one type is possible](../vs140/data-type-s--of-the-type-parameter-s--in-method---methodname---cannot-be-inferred-from-these-arguments-because-more-than-one-type-is-possible.md).  
   
  **Error ID:** BC36653 and BC36650  
   

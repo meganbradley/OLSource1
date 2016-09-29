@@ -32,7 +32,7 @@ Include the standard header `<typeinfo>` to define several types associated with
 ```  
   
 ## Remarks  
- For information on classes defined in <typeinfo\>, see the following topics:  
+ For information on classes defined in \<typeinfo>, see the following topics:  
   
 -   [bad_cast Exception](../vs140/bad_cast-exception.md)  
   

@@ -81,6 +81,6 @@ int main()
 **bitset 2: 0011**  
 **bitset 3: 0110**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std

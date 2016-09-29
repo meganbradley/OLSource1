@@ -146,7 +146,7 @@ int main( ) {
 ```  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

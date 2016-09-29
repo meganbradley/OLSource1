@@ -112,7 +112,7 @@ You can call external tools from inside Visual Studio. A few default tools are a
 |Target Directory|$(TargetDir)|The directory of the item to be built.|  
 |Target Name|$(TargetName)|The file name of the item to be built.|  
 |Target Extension|$(TargetExt)|The file name extension of the item to be built.|  
-|Binary Directory|$(BinDir)|The final location of the binary that is being built (defined as drive + path). For example:**\\...\My Documents\Visual Studio <Version\>\\<ProjectName\>\bin\debug**|  
+|Binary Directory|$(BinDir)|The final location of the binary that is being built (defined as drive + path). For example:**\\...\My Documents\Visual Studio \<Version>\\\<ProjectName>\bin\debug**|  
 |Project Directory|$(ProjDir)|The directory of the current project (drive + path).|  
 |Project file name|$(ProjFileName)|The file name of the current project (drive + path + file name).|  
 |Solution Directory|$(SolutionDir)|The directory of the current solution (drive + path).|  

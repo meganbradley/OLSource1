@@ -41,7 +41,7 @@ typedef implementation-defined const_iterator;
  See the example for [back](../vs140/vector--back.md) for an example that uses `const_iterator`.  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

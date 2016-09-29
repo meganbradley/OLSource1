@@ -71,7 +71,7 @@ virtual const CharType *do_is(
  See the example for [is](../vs140/ctype--is.md), which calls `do_is`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

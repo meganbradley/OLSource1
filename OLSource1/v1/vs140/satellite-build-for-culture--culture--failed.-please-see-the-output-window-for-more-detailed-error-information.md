@@ -21,4 +21,4 @@ translation.priority.ht:
 A satellite assembly for a particular culture could not be built, and that extended error information (stderr from ALINK.EXE) has been written to the output pane.  
   
 ## See Also  
- [Satellite build for culture 'culture' failed. <reason\>](../vs140/satellite-build-for-culture--culture--failed.--reason-.md)
+ [Satellite build for culture 'culture' failed. \<reason>](../vs140/satellite-build-for-culture--culture--failed.--reason-.md)

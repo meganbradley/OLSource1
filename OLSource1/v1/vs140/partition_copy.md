@@ -65,10 +65,10 @@ template<class InputIterator, class OutputIterator1, class OutputIterator2, clas
  The template function copies each element `X` in `[``_First``,` `_Last``)` to `*``_Dest1``++` if `_Pred``(X)` is true, or to `*``_Dest2``++ if not`. It returns `pair<OutputIterator1, OutputIterator2>(``_Dest1``,` `_Dest2``)`.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

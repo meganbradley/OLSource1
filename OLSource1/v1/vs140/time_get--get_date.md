@@ -123,7 +123,7 @@ int main( )
 **tm_yday: 0**  
 **tm_isdst: 0**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

@@ -80,7 +80,7 @@ int main( )
  **& use a ctrl-Z Enter key combination to exit): Hello world!**  
 **The iterators are equal.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

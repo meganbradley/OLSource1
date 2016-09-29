@@ -28,8 +28,8 @@ translation.priority.ht:
 # ItemGroup Element (MSBuild)
 Contains a set of user-defined [Item](../vs140/item-element--msbuild-.md) elements. Every item used in a [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] project must be specified as a child of an `ItemGroup` element.  
   
- <Project\>  
- <ItemGroup\>  
+ \<Project>  
+ \<ItemGroup>  
   
 ## Syntax  
   

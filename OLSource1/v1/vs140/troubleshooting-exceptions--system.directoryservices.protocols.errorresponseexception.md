@@ -19,7 +19,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Troubleshooting Exceptions: System.DirectoryServices.Protocols.ErrorResponseException
-The exception that occurs when the server returns an <errorResponse\>.  
+The exception that occurs when the server returns an \<errorResponse>.  
   
 ## See Also  
  <xref:System.DirectoryServices.Protocols.ErrorResponseException*>   

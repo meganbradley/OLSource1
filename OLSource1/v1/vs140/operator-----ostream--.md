@@ -282,7 +282,7 @@ template<class _Elem, class _Tr, class _Ty>
  See [flush](../vs140/flush--standard-c---library-.md) for an example using `operator<<`.  
   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   

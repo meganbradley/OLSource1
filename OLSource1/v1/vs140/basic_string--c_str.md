@@ -39,7 +39,7 @@ const value_type *c_str( ) const;
  A pointer to the C-style version of the invoking string.  The pointer value is not valid after calling a non-const function, including the destructor, in the basic_string class on the object.  
   
 ## Remarks  
- Objects of type string belonging to the C++ template class basic_string<char\> are not necessarily null terminated. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character. There is an automatic conversion from const **char\*** into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **basic_string<char\>**.  
+ Objects of type string belonging to the C++ template class basic_string\<char> are not necessarily null terminated. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character. There is an automatic conversion from const **char\*** into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **basic_string\<char>**.  
   
  The returned C-style string should not be modified, as this could invalidate the pointer to the string, or deleted, as the string has a limited lifetime and is owned by the class string.  
   
@@ -85,7 +85,7 @@ int main( )
 **The C-style string c_str1 is: Hello world**  
 **The length of C-style string str1 = 11**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

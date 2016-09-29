@@ -25,7 +25,7 @@ A statement attempts to convert one data type to another in a way that is not de
   
 -   A conversion specifies two data types between which no conversion exists. An example of this is a conversion from a `Boolean` value to the `Date` type.  
   
--   An initialization of an array does not include braces (`{}`) following a `New` clause. In this case, <type2\> is of the form '1-dimensional array of <type\>'.  
+-   An initialization of an array does not include braces (`{}`) following a `New` clause. In this case, \<type2> is of the form '1-dimensional array of \<type>'.  
   
  **Error ID:** BC30311  
   
@@ -33,7 +33,7 @@ A statement attempts to convert one data type to another in a way that is not de
   
 -   Make sure the expression can be converted to the destination data type.  
   
--   If <type2\> is an array, make sure the `New` clause contains both parentheses and braces following the type name. The following code illustrates correct initialization of an array.  
+-   If \<type2> is an array, make sure the `New` clause contains both parentheses and braces following the type name. The following code illustrates correct initialization of an array.  
   
     ```  
     Dim anIntArray As Integer() = New Integer() {}  

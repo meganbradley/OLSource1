@@ -59,11 +59,11 @@ BidirectionalIterator2 move_backward(
  `move` and `move_backward` are functionally equivalent to using `copy` and `copy_backward` with a move iterator.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [copy_backward](../vs140/copy_backward.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

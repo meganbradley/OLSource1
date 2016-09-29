@@ -76,7 +76,7 @@ int main ( )
   
  **Caught an exception: ios_base::failbit set**   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

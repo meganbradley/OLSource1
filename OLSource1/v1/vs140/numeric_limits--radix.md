@@ -72,7 +72,7 @@ int main( )
 **The base for type int is:  2**  
 **The base for type long double is:  2**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

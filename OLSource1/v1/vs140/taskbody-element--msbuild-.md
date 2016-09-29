@@ -26,9 +26,9 @@ translation.priority.ht:
 # TaskBody Element (MSBuild)
 Contains the data that is passed to a `UsingTask``TaskFactory`. For more information, see [UsingTask](../vs140/usingtask-element--msbuild-.md).  
   
- <Project\>  
- <UsingTask\>  
- <TaskBody\>  
+ \<Project>  
+ \<UsingTask>  
+ \<TaskBody>  
   
 ## Syntax  
   

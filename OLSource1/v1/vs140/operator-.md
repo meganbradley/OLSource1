@@ -113,6 +113,6 @@ int main( )
 **The element-by-element result of the bitwise operator & is the**  
  **valarray: ( 0 0 0 0 0 4 0 0 0 8 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std

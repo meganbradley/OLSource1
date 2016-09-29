@@ -328,7 +328,7 @@ You can create a build environment within your organization by installing Visual
   
      Open a Command Prompt window that has administrative rights and run this command for each file:  
   
-     **gacutil -i <file\>**  
+     **gacutil -i \<file>**  
   
     > [!NOTE]
     >  A reboot may be required for an assembly to fully install into the GAC.  

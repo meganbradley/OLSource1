@@ -49,7 +49,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
  See example for [rbegin](../vs140/map--rbegin.md) for an example of how to declare and use `reverse_iterator`.  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

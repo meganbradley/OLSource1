@@ -116,7 +116,7 @@ int main()
 ## Output  
  **The starting multimap m1 is (key, value):2 elements: (40, Zr) (45, Rh)Inserting the following vector data into m1:6 elements: (43, Tc) (41, Nb) (46, Pd) (42, Mo) (44, Ru) (44, Ru)The modified multimap m1 is (key, value):8 elements: (40, Zr) (41, Nb) (42, Mo) (43, Tc) (44, Ru) (44, Ru) (45, Rh) (46, Pd)Trying find() on value 45Element found: (45, Rh)Trying find() on value 6Element not found.**   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

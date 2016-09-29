@@ -23,9 +23,9 @@ translation.priority.ht:
 # EnableLocationBrowseButton Element (Visual Studio Templates)
 Specifies whether the **Browse** button is available in the **New Project** dialog box, so that users can easily modify the default directory where a new project is saved.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <EnableLocationBrowseButton\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<EnableLocationBrowseButton>  
   
 ## Syntax  
   

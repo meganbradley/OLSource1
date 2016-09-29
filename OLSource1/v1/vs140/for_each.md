@@ -171,7 +171,7 @@ int main( )
 **The average of the elements of v1 is:**  
  **Average ( v1mod2 ) = 10.**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

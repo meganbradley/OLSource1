@@ -66,7 +66,7 @@ template<class InputIterator, class OutputIterator, class BinaryPredicate>
  once for each `N` in the range `[0,` `_Last` `-` `_First``)`, for strictly increasing values of `N` starting with the lowest value. If `_Dest` and `_First` designate regions of storage, `_Dest` must not be in the range `[``_First``,` `_Last``)`.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Property &#39;&lt;propertyname&gt;&#39; doesn&#39;t return a value on all code paths
-Property '<propertyname\>' doesn't return a value on all code paths. A null reference exception could occur at run time when the result is used.  
+Property '\<propertyname>' doesn't return a value on all code paths. A null reference exception could occur at run time when the result is used.  
   
  A property `Get` procedure has at least one possible path through its code that does not return a value.  
   

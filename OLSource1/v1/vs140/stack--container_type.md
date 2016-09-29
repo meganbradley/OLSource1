@@ -45,7 +45,7 @@ typedef Container container_type;
  See the example for [stack::stack](../vs140/stack--stack.md) for an example of how to declare and use `container_type`.  
   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

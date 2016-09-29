@@ -35,4 +35,4 @@ timed_mutex();
   
 ## See Also  
  [timed_mutex Class](../vs140/timed_mutex-class.md)   
- [<mutex\>](../vs140/-mutex-.md)
+ [\<mutex>](../vs140/-mutex-.md)

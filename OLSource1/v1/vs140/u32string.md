@@ -42,10 +42,10 @@ typedef basic_string<char32_t, char_traits<char32_t>, allocator<char32_t>> u32st
  For a list of string constructors, see [basic_string::basic_string](../vs140/basic_string--basic_string.md).  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
 ## See Also  
- [<string\>](../vs140/-string-.md)   
+ [\<string>](../vs140/-string-.md)   
  [basic_string Class](../vs140/basic_string-class.md)

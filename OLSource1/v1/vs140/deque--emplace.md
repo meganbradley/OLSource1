@@ -93,7 +93,7 @@ int main( )
  **v1 = 10 20 30**  
 **vv1[0] = 10 20 30**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

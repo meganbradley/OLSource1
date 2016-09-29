@@ -41,21 +41,14 @@ Events enable you to associate function calls with user actions and are importan
   
  The output is as follows.  
   
-```  
-Event1 occurred! Object data: Hello World!  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
  The additional functionality provided by the `Event` module is illustrated here. The following code example illustrates the basic use of `Event.create` to create an event and a trigger method, add two event handlers in the form of lambda expressions, and then trigger the event to execute both lambda expressions.  
   
  [!code[FsLangRef2#3603](../vs140/codesnippet/FSharp/events--fsharp-_4.fs)]  
   
  The output of the previous code is as follows.  
   
-```  
-Event occurred.  
-Given a value: Event occurred.  
-```  
-  
+<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
 ## Processing Event Streams  
  Instead of just adding an event handler for an event by using the [Event.add](../vs140/event.add--t--del--function--fsharp-.md) function, you can use the functions in the `Event` module to process streams of events in highly customized ways. To do this, you use the forward pipe (`|>`) together with the event as the first value in a series of function calls, and the `Event` module functions as subsequent function calls.  
   
@@ -68,57 +61,7 @@ Given a value: Event occurred.
 ## Implementing an Interface Event  
  As you develop UI components, you often start by creating a new form or a new control that inherits from an existing form or control. Events are frequently defined on an interface, and, in that case, you must implement the interface to implement the event. The <xref:System.ComponentModel.INotifyPropertyChanged*> interface defines a single <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged*> event. The following code illustrates how to implement the event that this inherited interface defined:  
   
-```f#  
-module CustomForm  
-  
-open System.Windows.Forms  
-open System.ComponentModel  
-  
-type AppForm() as this =  
-   inherit Form()  
-  
-   // Define the propertyChanged event.  
-   let propertyChanged = Event<PropertyChangedEventHandler, PropertyChangedEventArgs>()  
-   let mutable underlyingValue = "text0"  
-  
-   // Set up a click event to change the properties.  
-   do  
-      this.Click |> Event.add(fun evArgs -> this.Property1 <- "text2"  
-                                            this.Property2 <- "text3")  
-  
-   // This property does not have the property-changed event set.  
-   member val Property1 : string = "text" with get, set  
-  
-   // This property has the property-changed event set.  
-   member this.Property2  
-        with get() = underlyingValue  
-        and set(newValue) =  
-            underlyingValue <- newValue  
-            propertyChanged.Trigger(this, new PropertyChangedEventArgs("Property2"))  
-  
-   // Expose the PropertyChanged event as a first class .NET event.  
-   [<CLIEvent>]  
-   member this.PropertyChanged = propertyChanged.Publish  
-  
-   // Define the add and remove methods to implement this interface.  
-   interface INotifyPropertyChanged with  
-       member this.add_PropertyChanged(handler) = propertyChanged.Publish.AddHandler(handler)  
-       member this.remove_PropertyChanged(handler) = propertyChanged.Publish.RemoveHandler(handler)  
-  
-   // This is the event-handler method.  
-   member this.OnPropertyChanged(args : PropertyChangedEventArgs) =  
-       let newProperty = this.GetType().GetProperty(args.PropertyName)  
-       let newValue = newProperty.GetValue(this :> obj) :?> string  
-       printfn "Property %s changed its value to %s" args.PropertyName newValue  
-  
-// Create a form, hook up the event handler, and start the application.  
-let appForm = new AppForm()  
-let inpc = appForm :> INotifyPropertyChanged  
-inpc.PropertyChanged.Add(appForm.OnPropertyChanged)  
-Application.Run(appForm)  
-  
-```  
-  
+<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
  If you want to hook up the event in the constructor, the code is a bit more complicated because the event hookup must be in a `then` block in an additional constructor, as in the following example:  
   
 ```f#  

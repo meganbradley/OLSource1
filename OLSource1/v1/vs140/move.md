@@ -71,10 +71,10 @@ template<class Type>
  If the value passed in `Arg` is an lvalue—that is, it has a name or its address can be taken—it's invalidated when the move occurs. Do not refer to the value passed in `Arg` by its name or address after it's been moved.  
   
 ## Requirements  
- **Header:** <utility\>  
+ **Header:** \<utility>  
   
  **Namespace:** std  
   
 ## See Also  
- [<utility\>](../vs140/-utility-.md)   
+ [\<utility>](../vs140/-utility-.md)   
  [Lvalues and Rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)

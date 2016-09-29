@@ -47,7 +47,7 @@ bool equals(const sync_shared<Cache>& Other) const;
 ## Remarks  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

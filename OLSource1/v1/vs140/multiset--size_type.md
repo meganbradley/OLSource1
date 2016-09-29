@@ -39,7 +39,7 @@ typedef typename allocator_type::size_type size_type;
  See example for [size](../vs140/multiset--size.md) for an example of how to declare and use `size_type`  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

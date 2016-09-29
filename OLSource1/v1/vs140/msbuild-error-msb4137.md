@@ -18,7 +18,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB4137
-**MSB4137: Invalid value specified in the configuration file at "<x\>". Neither Property name nor ToolsVersion may be an empty string.**  
+**MSB4137: Invalid value specified in the configuration file at "\<x>". Neither Property name nor ToolsVersion may be an empty string.**  
   
  A Toolset definition contains invalid property names or values.  
   

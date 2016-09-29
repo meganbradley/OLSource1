@@ -51,7 +51,7 @@ By using the **Call Stack** window, you can view the function or procedure calls
   
  In managed code, by default. the **Call Stack** window hides information for non-user code. The following notation appears instead of the hidden information:  
   
- **[<External Code\>]**  
+ **[\<External Code>]**  
   
  Non-user code is any code that is not "My Code You can choose to display the call stack information for non-user code by using the shortcut menu.  
   

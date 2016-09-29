@@ -35,7 +35,7 @@ vector<bool>::const_reference operator[](size_type Pos) const;
 |`Pos`|The position of the `vector<bool>` element.|  
   
 ## Return Value  
- A [vector<bool\>::reference](../vs140/vector-bool---reference-class.md) or [vector<bool\>::const_reference](../vs140/vector-bool---const_reference.md) object that contains the value of the indexed element.  
+ A [vector\<bool>::reference](../vs140/vector-bool---reference-class.md) or [vector\<bool>::const_reference](../vs140/vector-bool---const_reference.md) object that contains the value of the indexed element.  
   
  If the position specified is greater than or equal to the size of the container, the result is undefined.  
   
@@ -84,10 +84,10 @@ The held value from the second element of vb is false
 ```  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   
 ## See Also  
- [vector<bool\> Class](../vs140/vector-bool--class.md)   
+ [vector\<bool> Class](../vs140/vector-bool--class.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

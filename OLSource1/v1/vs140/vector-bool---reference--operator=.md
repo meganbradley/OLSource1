@@ -121,10 +121,10 @@ The original value of the 3rd element still stored in a bool: false
 ```  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   
 ## See Also  
- [vector<bool\>::reference Class](../vs140/vector-bool---reference-class.md)   
+ [vector\<bool>::reference Class](../vs140/vector-bool---reference-class.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

@@ -71,8 +71,8 @@ int main()
   
 ```  
   
-  **is_array<trivial\> == false**  
-**is_array<int\> == false**  
+  **is_array\<trivial> == false**  
+**is_array\<int> == false**  
 **is_array<int[5]> == true**    
 ## Requirements  
  **Header:** <type_traits>  

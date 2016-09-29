@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3071
-**All drive letters from A: to Z: are currently in use. Since the working directory "'<path\>'" is a UNC path, The "Exec" task needs a free drive letter to map the UNC path to. Disconnect from one or more shared resources to free up drive letters, or specify a local working directory before attempting this command again.**  
+**All drive letters from A: to Z: are currently in use. Since the working directory "'\<path>'" is a UNC path, The "Exec" task needs a free drive letter to map the UNC path to. Disconnect from one or more shared resources to free up drive letters, or specify a local working directory before attempting this command again.**  
   
  All drive letters from A: through Z: are currently in use. Because the specified working directory is a UNC path, the `Exec` task needs a free drive letter to which to map the UNC path to.  
   

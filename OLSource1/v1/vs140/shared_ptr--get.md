@@ -66,7 +66,7 @@ int main()
  **sp0.get() == 0 == true**  
 **\*sp1.get() == 5**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

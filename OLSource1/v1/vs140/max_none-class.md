@@ -50,7 +50,7 @@ template <std::size_t Max> class max_none
 |[saved](#max_none__saved)|Increments the count of memory blocks on the free list.|  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
@@ -120,4 +120,4 @@ void saved();
  This member function does nothing. It is called by `cache_freelist::deallocate` whenever it puts a memory block on the free list.  
   
 ## See Also  
- [<allocators\>](../vs140/-allocators-.md)
+ [\<allocators>](../vs140/-allocators-.md)

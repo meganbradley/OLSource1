@@ -44,7 +44,7 @@ void deallocate(void* _Ptr, std::size_t _Count);
 ## Remarks  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

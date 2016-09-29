@@ -113,8 +113,8 @@ Global macros that hold error codes that are set during program execution, and s
   
 |Global macro|Required header|Optional header|  
 |------------------|---------------------|---------------------|  
-|`errno`|<errno.h> or <stdlib.h>, <cerrno\> or <cstdlib\> (C++)||  
-|`_doserrno`, `_sys_errlist`, `_sys_nerr`|<stdlib.h>, <cstdlib\> (C++)|<errno.h>, <cerrno\> (C++)|  
+|`errno`|<errno.h> or <stdlib.h>, \<cerrno> or \<cstdlib> (C++)||  
+|`_doserrno`, `_sys_errlist`, `_sys_nerr`|<stdlib.h>, \<cstdlib> (C++)|<errno.h>, \<cerrno> (C++)|  
   
  The `_doserrno`, `_sys_errlist`, and `_sys_nerr` macros are Microsoft extensions. For more compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

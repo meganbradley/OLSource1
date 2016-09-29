@@ -72,7 +72,7 @@ int main( )
 **French_France.1252 truename true**  
 **French_France.1252 falsename false**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

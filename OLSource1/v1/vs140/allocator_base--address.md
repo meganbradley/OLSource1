@@ -50,7 +50,7 @@ const_pointer address(const_reference _Val);
  This member function is implemented for the user-defined allocator by returning `&_Val`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

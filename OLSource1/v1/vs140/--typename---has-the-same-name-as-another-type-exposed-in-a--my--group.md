@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &#39;&lt;typename&gt;&#39; has the same name as another type exposed in a &#39;My&#39; group
-'<typename\>' has the same name as another type exposed in a 'My' group. Rename the form or its enclosing namespace.  
+'\<typename>' has the same name as another type exposed in a 'My' group. Rename the form or its enclosing namespace.  
   
  A class or structure is declared with the same name as a class or structure in one of the `My` objects.  
   

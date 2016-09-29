@@ -79,7 +79,7 @@ int main( )
  **The initial valarray is: 0 -1 -2 -3 4 5 6 7 8 .**  
 **The absolute value of the initial valarray is: 0 1 2 3 4 5 6 7 8 .**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

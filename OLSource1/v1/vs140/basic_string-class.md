@@ -129,7 +129,7 @@ class basic_string;
  References, pointers, and iterators that designate elements of the controlled sequence can become invalid after any call to a function that alters the controlled sequence, or after the first call to a non- **const** member function.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
@@ -754,7 +754,7 @@ const value_type *c_str( ) const;
  A pointer to the C-style version of the invoking string.  The pointer value is not valid after calling a non-const function, including the destructor, in the basic_string class on the object.  
   
 ### Remarks  
- Objects of type string belonging to the C++ template class basic_string<char\> are not necessarily null terminated. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character. There is an automatic conversion from const **char\*** into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **basic_string<char\>**.  
+ Objects of type string belonging to the C++ template class basic_string\<char> are not necessarily null terminated. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character. There is an automatic conversion from const **char\*** into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **basic_string\<char>**.  
   
  The returned C-style string should not be modified, as this could invalidate the pointer to the string, or deleted, as the string has a limited lifetime and is owned by the class string.  
   
@@ -1465,9 +1465,9 @@ const value_type *data( ) const;
  A pointer to the first element of the array containing the contents of the string, or, for an empty array, a non-null pointer that cannot be dereferenced.  
   
 ### Remarks  
- Objects of type string belonging to the C++ template class basic_string <char\> are not necessarily null terminated. The return type for **data** is not a valid C-string, because no null character gets appended. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string, but has no special meaning in an object of type string and may be a part of the string object just like any other character.  
+ Objects of type string belonging to the C++ template class basic_string \<char> are not necessarily null terminated. The return type for **data** is not a valid C-string, because no null character gets appended. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string, but has no special meaning in an object of type string and may be a part of the string object just like any other character.  
   
- There is an automatic conversion from const **char\*** into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **basic_string <char\>**.  
+ There is an automatic conversion from const **char\*** into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **basic_string \<char>**.  
   
  The returned string should not be modified, because this could invalidate the pointer to the string, or deleted, because the string has a limited lifetime and is owned by the class string.  
   
@@ -4386,7 +4386,7 @@ typedef Traits traits_type;
 ### Remarks  
  The type is a synonym for the second template parameter **Traits**.  
   
- For type **string**, it is equivalent to **char_traits<char\>**.  
+ For type **string**, it is equivalent to **char_traits\<char>**.  
   
 ### Example  
   See the example for [copy](../vs140/char_traits-struct.md#char_traits__copy) for an example of how to declare and use `traits_type`.  
@@ -4425,5 +4425,5 @@ int main( )
   **The character ch1 is: G.**  
 **The character ch2 is: H.**    
 ## See Also  
- [<string\>](../vs140/-string-.md)   
+ [\<string>](../vs140/-string-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

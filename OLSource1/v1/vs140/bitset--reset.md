@@ -80,13 +80,13 @@ int main( )
 }  
 ```  
   
- **The set of bits in bitset<5> b1(13) is: ( 01101 )**  
+ **The set of bits in bitset\<5> b1(13) is: ( 01101 )**  
 **The collecion of bits obtained from resetting the**  
  **third bit of bitset b1 is: ( 01001 )**  
 **The collecion of bits obtained from resetting all**  
  **the elements of the bitset b1 is: ( 00000 )**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

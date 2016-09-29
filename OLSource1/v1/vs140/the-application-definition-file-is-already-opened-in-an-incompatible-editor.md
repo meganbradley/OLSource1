@@ -34,5 +34,5 @@ translation.priority.ht:
   
 ## See Also  
  [Resources for Troubleshooting MSBuild Errors](../vs140/additional-msbuild-resources.md)   
- [There was an error trying to open or create the application definition file for this project. '<error\>'](../vs140/there-was-an-error-trying-to-open-or-create-the-application-definition-file-for-this-project.---error--.md)   
- [An error occurred trying to create the application events file. '<error\>'](../vs140/an-error-occurred-trying-to-create-the-application-events-file.---error--.md)
+ [There was an error trying to open or create the application definition file for this project. '\<error>'](../vs140/there-was-an-error-trying-to-open-or-create-the-application-definition-file-for-this-project.---error--.md)   
+ [An error occurred trying to create the application events file. '\<error>'](../vs140/an-error-occurred-trying-to-create-the-application-events-file.---error--.md)

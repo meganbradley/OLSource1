@@ -91,7 +91,7 @@ int main( )
 **German_Germany.1252 domestic frac_digits**  
  **to the right of the radix character: 2**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

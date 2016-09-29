@@ -39,10 +39,10 @@ void pop_back();
  This member function effectively calls `erase(size() - 1)` to erase the last element of the sequence, which must be non-empty.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_string Class](../vs140/basic_string-class.md)   
- [<string\>](../vs140/-string-.md)
+ [\<string>](../vs140/-string-.md)

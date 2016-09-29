@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Reference required to assembly &#39;&lt;assemblyname&gt;&#39; containing the base class &#39;&lt;classname&gt;&#39;
-Reference required to assembly '<assemblyname\>' containing the base class '<classname\>'. Add one to your project.  
+Reference required to assembly '\<assemblyname>' containing the base class '\<classname>'. Add one to your project.  
   
  The class is defined in a dynamic-link library (DLL) or assembly that is not directly referenced in your project. The [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] compiler requires a reference to avoid ambiguity in case the class is defined in more than one DLL or assembly.  
   

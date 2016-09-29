@@ -75,7 +75,7 @@ UML models help you understand, discuss, and design software systems. Visual Stu
   
 2.  On the **Project** menu, click **Add New Item**.  
   
-3.  In the **Add New Item -** *<project name\>* dialog box, under **Templates**, click the modeling diagram type, for example, **UML Component Diagram**.  
+3.  In the **Add New Item -** *\<project name>* dialog box, under **Templates**, click the modeling diagram type, for example, **UML Component Diagram**.  
   
 4.  Type a name for the diagram, and then click **Add**.  
   

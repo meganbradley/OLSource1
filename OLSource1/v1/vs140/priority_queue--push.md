@@ -75,7 +75,7 @@ int main( )
  **The priority_queue length is 3.**  
 **The element at the top of the priority_queue is 30.**   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

@@ -40,4 +40,4 @@ static constexpr duration min();
 ## See Also  
  [duration Class](../vs140/duration-class.md)   
  [duration_values Structure](../vs140/duration_values-structure.md)   
- [<chrono\>](../vs140/-chrono-.md)
+ [\<chrono>](../vs140/-chrono-.md)

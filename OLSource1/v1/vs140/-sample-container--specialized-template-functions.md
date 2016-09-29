@@ -18,4 +18,4 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;sample container&gt; Specialized Template Functions
-For more information about the specialized template functions in <sample container\>, see [<sample container\>](../vs140/-sample-container-.md).
+For more information about the specialized template functions in \<sample container>, see [\<sample container>](../vs140/-sample-container-.md).

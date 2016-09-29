@@ -145,10 +145,10 @@ int main()
  **0 1 2 3**  
  **4 5 6 7**   
 ## Requirements  
- **Header:** <tuple\>  
+ **Header:** \<tuple>  
   
  **Namespace:** std  
   
 ## See Also  
- [<tuple\>](../vs140/-tuple-.md)   
+ [\<tuple>](../vs140/-tuple-.md)   
  [tuple](../vs140/tuple-class.md)

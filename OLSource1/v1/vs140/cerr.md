@@ -32,7 +32,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # cerr
-The object `cerr` controls output to a stream buffer associated with the object `stderr`, declared in <cstdio\>.  
+The object `cerr` controls output to a stream buffer associated with the object `stderr`, declared in \<cstdio>.  
   
 ## Syntax  
   
@@ -95,7 +95,7 @@ test for wclog
 ```  
   
 ## Requirements  
- **Header:** <iostream\>  
+ **Header:** \<iostream>  
   
  **Namespace:** std  
   

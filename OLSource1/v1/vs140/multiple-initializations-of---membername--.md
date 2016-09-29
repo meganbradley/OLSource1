@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Multiple initializations of &#39;&lt;membername&gt;&#39;
-Multiple initializations of '<membername\>'. Fields and properties can be initialized only once in an object initializer expression.  
+Multiple initializations of '\<membername>'. Fields and properties can be initialized only once in an object initializer expression.  
   
  You can assign an initial value to each field and property in an object initializer list only one time. The following declaration is not valid.  
   

@@ -47,7 +47,7 @@ This topic describes how to configure the firewall to enable remote debugging on
   
 3.  In the **Allowed apps and features** list, look for **Visual Studio Remote Debugger Discovery**. If it is listed, make sure that it is selected, and that one or more network types are also selected.  
   
-4.  If **Visual Studio Remote Debugger Discovery** is not listed, click **Allow another app**. If you still don’t see it in the **Add an app** window, click **Browse** and navigate to **<Visual Studio installation directory\>\Common7\IDE\Remote Debugger**. Find the appropriate folder for the application (x86, x64, Appx) and then select **msvsmon.exe**. Then click **Add**.  
+4.  If **Visual Studio Remote Debugger Discovery** is not listed, click **Allow another app**. If you still don’t see it in the **Add an app** window, click **Browse** and navigate to **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger**. Find the appropriate folder for the application (x86, x64, Appx) and then select **msvsmon.exe**. Then click **Add**.  
   
 5.  In the **Allowed apps and features** list, select **Visual Studio Remote Debugging Monitor**. Check one or more network types (**Domain, Home/Work (Private), Public**) that you want the remote debugging monitor to communicate with. The types must include the network to which the Visual Studio computer is connected.  
   
@@ -57,7 +57,7 @@ This topic describes how to configure the firewall to enable remote debugging on
 ## To configure the Windows firewall of the remote computer for remote debugging  
  The remote debugging components can be installed on the remote computer or run from a shared directory. The firewall of the remote computer must be configured in both cases. The remote debugging components are located in:  
   
- **<Visual Studio installation directory\>\Common7\IDE\Remote Debugger**  
+ **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger**  
   
  The instructions for configuring the Windows firewall differ slightly on different operating systems. On Windows 7 or Windows Server 2008, the word **program** is used; on Windows 8/8.1, Windows 10, and Windows Server 2012, the word **app** is used.  In the following steps we will use the word **app**.  
   
@@ -67,7 +67,7 @@ This topic describes how to configure the firewall to enable remote debugging on
   
 3.  In the **Allowed apps and features** list, look for **Visual Studio Remote Debugging Monitor**. If it is listed, make sure that it is selected, and that one or more network types are also selected.  
   
-4.  If **Visual Studio Remote Debugging Monitor** is not listed, click **Allow another app**. If you still don’t see it in the **Add an app window**, click **Browse** and navigate to **<Visual Studio installation directory\>\Common7\IDE\Remote Debugger**. Find the appropriate folder for the application (x86, x64, Appx) and then select **msvsmon.exe**. Then click **Add**.  
+4.  If **Visual Studio Remote Debugging Monitor** is not listed, click **Allow another app**. If you still don’t see it in the **Add an app window**, click **Browse** and navigate to **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger**. Find the appropriate folder for the application (x86, x64, Appx) and then select **msvsmon.exe**. Then click **Add**.  
   
 5.  In the **Allowed apps** list, select **Visual Studio Remote Debugging Monitor**. Check one or more network types (**Domain, Home/Work (Private), Public**) that you want the remote debugging monitor to communicate with. The types must include the network to which the Visual Studio computer is connected.  
   

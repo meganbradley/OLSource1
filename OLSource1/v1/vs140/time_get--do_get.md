@@ -123,10 +123,10 @@ virtual iter_type
  Any other conversion specifier sets `ios_base::failbit` in `state` and returns. In this implementation, any modifier has no effect.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
 ## See Also  
  [time_get Class](../vs140/time_get-class.md)   
- [<locale\>](../vs140/-locale-.md)
+ [\<locale>](../vs140/-locale-.md)

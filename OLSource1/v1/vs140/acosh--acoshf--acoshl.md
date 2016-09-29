@@ -84,7 +84,7 @@ long double acoshl(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`acosh`, `acoshf`, `acoshl`|<math.h>|<cmath\>|  
+|`acosh`, `acoshf`, `acoshl`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

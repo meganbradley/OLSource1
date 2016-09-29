@@ -113,7 +113,7 @@ Visual Studio Tools for Unity change log.
   
 -   An error message is no longer displayed when Visual Studio locks XML intellisense files.  
   
--   Handle <<When Changed\>> conditional breakpoints when conditional argument is not a boolean value.  
+-   Handle <\<When Changed>> conditional breakpoints when conditional argument is not a boolean value.  
   
 -   Fixed references to UnityEngine and UnityEditor assemblies for Windows Store apps.  
   

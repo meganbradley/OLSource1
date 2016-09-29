@@ -42,7 +42,7 @@ RealType generate_canonical(Generator& Gen);
   
 #### Parameters  
  `RealType`  
- The floating point integral type. For possible types, see [<random\>](../vs140/-random-.md).  
+ The floating point integral type. For possible types, see [\<random>](../vs140/-random-.md).  
   
  `Bits`  
  The random number generator.  
@@ -54,9 +54,9 @@ RealType generate_canonical(Generator& Gen);
  The template function calls `operator()` of `Gen` repeatedly and packs the returned values into a floating-point value `x` of type `RealType` until it has gathered the specified number of mantissa bits in `x`. The specified number is the smaller of `Bits` (which must be nonzero) and the full number of mantissa bits in `RealType`. The first call supplies the lowest-order bits. The function returns `x`.  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

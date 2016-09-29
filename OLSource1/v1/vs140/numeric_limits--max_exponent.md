@@ -72,7 +72,7 @@ int main( )
 **The maximum radix-based exponent for type double is:  1024**  
 **The maximum radix-based exponent for type long double is:  1024**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

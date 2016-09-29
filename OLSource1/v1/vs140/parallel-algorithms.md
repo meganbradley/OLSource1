@@ -241,7 +241,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
   
  [!code[concrt-basic-parallel-sort#1](../vs140/codesnippet/CPP/parallel-algorithms_10.cpp)]  
   
- This example shows how to provide a custom compare function. It uses the [std::complex::real](../vs140/complex--real.md) method to sort [std::complex<double\>](../vs140/complex-class.md) values in ascending order.  
+ This example shows how to provide a custom compare function. It uses the [std::complex::real](../vs140/complex--real.md) method to sort [std::complex\<double>](../vs140/complex-class.md) values in ascending order.  
   
  [!code[concrt-basic-parallel-sort#2](../vs140/codesnippet/CPP/parallel-algorithms_11.cpp)]  
   

@@ -39,7 +39,7 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
  This method is used to specify an allocator when the associated container is copy-constructed.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

@@ -58,7 +58,7 @@ void clear(io_state state);
  See [rdstate](../vs140/basic_ios--rdstate.md) and [getline](../vs140/getline-template-function.md) for examples using **clear**.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

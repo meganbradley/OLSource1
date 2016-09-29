@@ -43,7 +43,7 @@ typedef implementation-defined const_iterator;
  See the example for [begin](../vs140/basic_string--begin.md) for an example of how to declare and use `const_iterator`.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

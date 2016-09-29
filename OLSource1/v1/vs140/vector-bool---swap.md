@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # vector&lt;bool&gt;::swap
-Static member function that exchanges two elements of Boolean vectors (`vector<bool>`) by using the proxy class [vector<bool\>::reference](../vs140/vector-bool---reference-class.md).  
+Static member function that exchanges two elements of Boolean vectors (`vector<bool>`) by using the proxy class [vector\<bool>::reference](../vs140/vector-bool---reference-class.md).  
   
 ## Syntax  
   
@@ -46,7 +46,7 @@ static void swap(
  This overload supports the special proxy requirements of `vector<bool>`. [vector::swap](../vs140/vector--swap.md) has the same functionality as the single-argument overload of `vector<bool>::swap()`.  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

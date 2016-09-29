@@ -107,7 +107,7 @@ double _yn(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`_j0`, `_j1`, `_jn`, `_y0`, `_y1`, `_yn`|<cmath\> (C++), <math.h> (C, C++)|  
+|`_j0`, `_j1`, `_jn`, `_y0`, `_y1`, `_yn`|\<cmath> (C++), <math.h> (C, C++)|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

@@ -42,7 +42,7 @@ Declares objects that control reading from and writing to the standard streams. 
   
  Once you perform certain operations on a stream, such as the standard input, you cannot perform operations of a different orientation on the same stream. Therefore, a program cannot operate interchangeably on both [cin](#cin) and [wcin](#wcin), for example.  
   
- All the objects declared in this header share a peculiar property — you can assume they are constructed before any static objects you define, in a translation unit that includes <iostream\>. Equally, you can assume that these objects are not destroyed before the destructors for any such static objects you define. (The output streams are, however, flushed during program termination.) Therefore, you can safely read from or write to the standard streams before program startup and after program termination.  
+ All the objects declared in this header share a peculiar property — you can assume they are constructed before any static objects you define, in a translation unit that includes \<iostream>. Equally, you can assume that these objects are not destroyed before the destructors for any such static objects you define. (The output streams are, however, flushed during program termination.) Therefore, you can safely read from or write to the standard streams before program startup and after program termination.  
   
  This guarantee is not universal, however. A static constructor may call a function in another translation unit. The called function cannot assume that the objects declared in this header have been constructed, given the uncertain order in which translation units participate in static construction. To use these objects in such a context, you must first construct an object of class [ios_base::Init](../vs140/ios_base-class.md#ios_base__init).  
   
@@ -60,7 +60,7 @@ Declares objects that control reading from and writing to the standard streams. 
 |[wcout](#wcout)|Specifies the `wcout` global stream.|  
   
 ###  <a name="cerr"></a>  cerr  
- The object `cerr` controls output to a stream buffer associated with the object `stderr`, declared in <cstdio\>.  
+ The object `cerr` controls output to a stream buffer associated with the object `stderr`, declared in \<cstdio>.  
   
 ```  
 extern ostream cerr;  

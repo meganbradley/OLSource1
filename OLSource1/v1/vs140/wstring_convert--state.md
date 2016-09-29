@@ -43,7 +43,7 @@ state_type state() const;
 ## Remarks  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

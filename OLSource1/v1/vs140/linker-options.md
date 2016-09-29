@@ -92,7 +92,7 @@ LINK.exe links Common Object File Format (COFF) object files and libraries to cr
 |[/LTCG](../vs140/-ltcg--link-time-code-generation-.md)|Specifies link-time code generation.|  
 |[/MACHINE](../vs140/-machine--specify-target-platform-.md)|Specifies the target platform.|  
 |[/MANIFEST](../vs140/-manifest--create-side-by-side-assembly-manifest-.md)|Creates a side-by-side manifest file and optionally embeds it in the binary.|  
-|[/MANIFESTDEPENDENCY](../vs140/-manifestdependency--specify-manifest-dependencies-.md)|Specifies a <dependentAssembly\> section in the manifest file.|  
+|[/MANIFESTDEPENDENCY](../vs140/-manifestdependency--specify-manifest-dependencies-.md)|Specifies a \<dependentAssembly> section in the manifest file.|  
 |[/MANIFESTFILE](../vs140/-manifestfile--name-manifest-file-.md)|Changes the default name of the manifest file.|  
 |[/MANIFESTINPUT](../vs140/-manifestinput--specify-manifest-input-.md)|Specifies a manifest input file for the linker to process and embed in the binary. You can use this option multiple times to specify more than one manifest input file.|  
 |[/MANIFESTUAC](../vs140/-manifestuac--embeds-uac-information-in-manifest-.md)|Specifies whether User Account Control (UAC) information is embedded in the program manifest.|  

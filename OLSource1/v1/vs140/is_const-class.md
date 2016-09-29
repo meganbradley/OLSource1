@@ -73,10 +73,10 @@ int main()
   
 ```  
   
-  **is_const<trivial\> == false**  
-**is_const<const trivial\> == true**  
-**is_const<int\> == false**  
-**is_const<const int\> == true**    
+  **is_const\<trivial> == false**  
+**is_const\<const trivial> == true**  
+**is_const\<int> == false**  
+**is_const\<const int> == true**    
 ## Requirements  
  **Header:** <type_traits>  
   

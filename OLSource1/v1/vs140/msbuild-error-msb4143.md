@@ -18,7 +18,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB4143
-**MSB4143: The expression "<expression\>" cannot be evaluated.**  
+**MSB4143: The expression "\<expression>" cannot be evaluated.**  
   
  A property expression that reads its value from the registry cannot be evaluated.  
   

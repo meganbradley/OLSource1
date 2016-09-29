@@ -31,7 +31,7 @@ Groups a set of related elements for a function or method to provide documentati
   
 #### Parameters  
  `externalid`  
- Optional. If the `format` attribute for the [<loc\>](../vs140/-loc---javascript-.md) element is `vsdoc`, this attribute specifies the member ID used to locate the XML code that's associated with the signature. Unlike the `locid` attribute, this attribute specifies that all elements in the member that has this ID should be loaded. Any associated description information present in the XML code will also be merged with the elements specified in the signature. This enables you to specify additional elements, such as `<capability>`, in the sidecar file without specifying them in the source file. `externalid` is an optional attribute.  
+ Optional. If the `format` attribute for the [\<loc>](../vs140/-loc---javascript-.md) element is `vsdoc`, this attribute specifies the member ID used to locate the XML code that's associated with the signature. Unlike the `locid` attribute, this attribute specifies that all elements in the member that has this ID should be loaded. Any associated description information present in the XML code will also be merged with the elements specified in the signature. This enables you to specify additional elements, such as `<capability>`, in the sidecar file without specifying them in the source file. `externalid` is an optional attribute.  
   
  `externalFile`  
  Optional. Specifies the name of the file in which to find the `externalid`. This attribute is ignored if no `externalid` is present. This is an optional attribute. The default value is the name of the current file but with a file extension of .xml instead of .js. By default, managed resource lookup rules for localization are used to locate the file.  
@@ -40,12 +40,12 @@ Groups a set of related elements for a function or method to provide documentati
  Optional. The keyword for F1 help.  
   
  `locid`  
- Optional. The identifier for localization information about the field. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [<loc\>](../vs140/-loc---javascript-.md) tag.  
+ Optional. The identifier for localization information about the field. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [\<loc>](../vs140/-loc---javascript-.md) tag.  
   
 ## Remarks  
  Use one `<signature>` element for each overloaded function description in the .js file, or use one `<signature>` element for each external member ID specified.  
   
- The `<signature>` element must be placed in the function body before any statements. When using [<summary\>](../vs140/-summary---javascript-.md), [<param\>](../vs140/-param---javascript-.md), or [<returns\>](../vs140/-returns---javascript-.md) elements with the `<signature>` element, place the other elements inside the `<signature>` block.  
+ The `<signature>` element must be placed in the function body before any statements. When using [\<summary>](../vs140/-summary---javascript-.md), [\<param>](../vs140/-param---javascript-.md), or [\<returns>](../vs140/-returns---javascript-.md) elements with the `<signature>` element, place the other elements inside the `<signature>` block.  
   
 ## Example  
  The following code example shows how to use the `<signature>` element.  

@@ -96,7 +96,7 @@ int main( )
  **of the character 'd' is: d-1234-abcd**  
 **The result2 of the search is NULL.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

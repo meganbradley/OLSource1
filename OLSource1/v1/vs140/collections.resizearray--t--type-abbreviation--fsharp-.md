@@ -35,10 +35,7 @@ An abbreviation for the CLI type <xref:System.Collections.Generic.List`1*>`.`
   
 ## Syntax  
   
-```  
-type ResizeArray<'T> = System.Collections.Generic.List<'T>  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
 ## Remarks  
   
 ## Platforms  

@@ -83,10 +83,10 @@ int main()
   
  **whole match: caaa**   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [sub_match](../vs140/sub_match-class.md)

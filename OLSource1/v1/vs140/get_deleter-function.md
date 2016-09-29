@@ -90,7 +90,7 @@ int main()
  **get_deleter(sp0) != 0 == false**  
 **get_deleter(sp1) != 0 == true**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

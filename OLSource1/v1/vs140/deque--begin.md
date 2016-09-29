@@ -76,7 +76,7 @@ int main( )
  **The first element of c1 is 1**  
 **The first element of c1 is now 20**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

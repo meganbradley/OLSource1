@@ -74,4 +74,4 @@ Defines localized strings for product names, package names, and installation err
 ```  
   
 ## See Also  
- [<Package\> Element (ClickOnce Bootstrapper)](../vs140/-package--element--bootstrapper-.md)
+ [\<Package> Element (ClickOnce Bootstrapper)](../vs140/-package--element--bootstrapper-.md)

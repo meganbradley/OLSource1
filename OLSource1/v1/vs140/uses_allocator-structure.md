@@ -38,4 +38,4 @@ struct uses_allocator<packaged_task< Ty>, Alloc> : true_type;
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<future\>](../vs140/-future-.md)
+ [\<future>](../vs140/-future-.md)

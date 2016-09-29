@@ -31,7 +31,7 @@ You can use the project configurations in Visual Studio to set up C++ applicatio
 2.  Open the property pages for that project. For more information, see [How to: Open Project Property Pages](../vs140/how-to--open-project-property-pages.md).  
   
     > [!NOTE]
-    >  For .NET projects, make sure that the **Configuration Properties** node, or one of its child nodes, is selected in the **<Projectname\> Property Pages** dialog box; otherwise, the **Configuration Manager** button remains unavailable.  
+    >  For .NET projects, make sure that the **Configuration Properties** node, or one of its child nodes, is selected in the **\<Projectname> Property Pages** dialog box; otherwise, the **Configuration Manager** button remains unavailable.  
   
 3.  Choose the **Configuration Manager** button to open the **Configuration Manager** dialog box.  
   
@@ -44,7 +44,7 @@ You can use the project configurations in Visual Studio to set up C++ applicatio
   
 6.  Choose the **OK** button. The platform that you selected in the preceding step appears under **Active Solution Platform** in the **Configuration Manager** dialog box.  
   
-7.  Choose the **Close** button in the **Configuration Manager** dialog box, and then choose the **OK** button in the **<Projectname\> Property Pages** dialog box.  
+7.  Choose the **Close** button in the **Configuration Manager** dialog box, and then choose the **OK** button in the **\<Projectname> Property Pages** dialog box.  
   
 ### To copy Win32 project settings into a 64-bit project configuration  
   

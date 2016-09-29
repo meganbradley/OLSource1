@@ -77,7 +77,7 @@ template < class  CharType    class  Traits =  char_traits <CharType> > class is
 |[operator->](#istreambuf_iterator__operator-_gt_)|Returns the value of a member, if any.|  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   
@@ -416,6 +416,6 @@ int main( )
   
 ## See Also  
  [iterator Class](../vs140/iterator-struct.md)   
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

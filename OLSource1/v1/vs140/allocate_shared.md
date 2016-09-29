@@ -52,9 +52,9 @@ template<class Type, class Allocator, class... Types>
  The function creates the object `shared_ptr``<Type>`, a pointer to `Type(``Args``...)` as allocated and constructed by `Alloc`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

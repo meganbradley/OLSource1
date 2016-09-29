@@ -24,7 +24,7 @@ You can create an XML-based .vsct file from an existing command table .ctc sourc
   
 1.  Obtain a copy of the Perl language.  
   
-2.  Obtain a copy of the Perl script ConvertCTCToVSCT.pl, typically located in the *<Visual Studio SDK installation path\>*\VisualStudioIntegration\Tools\bin folder.  
+2.  Obtain a copy of the Perl script ConvertCTCToVSCT.pl, typically located in the *\<Visual Studio SDK installation path>*\VisualStudioIntegration\Tools\bin folder.  
   
 3.  Obtain a copy of the .ctc source file that you want to convert.  
   

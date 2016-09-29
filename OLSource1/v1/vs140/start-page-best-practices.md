@@ -48,9 +48,9 @@ Because the Start Page can access Visual Studio commands, and opens whenever Vis
   
 1.  If you are using the Start Page project template, press F5. Otherwise:  
   
-    1.  Copy your .xaml file and any supporting text or markup to \\%USERPROFILE%\My Documents\Visual Studio *<version\>*\StartPages\\.  
+    1.  Copy your .xaml file and any supporting text or markup to \\%USERPROFILE%\My Documents\Visual Studio *\<version>*\StartPages\\.  
   
-    2.  Copy any required assemblies into *<Visual Studio installation path\>*\Common7\IDE\PrivateAssemblies\\.  
+    2.  Copy any required assemblies into *\<Visual Studio installation path>*\Common7\IDE\PrivateAssemblies\\.  
   
     3.  Open an experimental instance of Visual Studio by using the following command at a Visual Studio command prompt.  
   

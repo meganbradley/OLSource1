@@ -182,4 +182,4 @@ Identifies the version of the application to install, and the location of the ap
   
 ## See Also  
  [ClickOnce Deployment Manifest](../vs140/clickonce-deployment-manifest.md)   
- [<dependency\> Element (ClickOnce Application)](../vs140/-dependency--element--clickonce-application-.md)
+ [\<dependency> Element (ClickOnce Application)](../vs140/-dependency--element--clickonce-application-.md)

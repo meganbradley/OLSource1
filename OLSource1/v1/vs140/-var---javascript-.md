@@ -67,7 +67,7 @@ Specifies documentation information for a variable.
  Optional. The keyword for F1 Help.  
   
  `locid`  
- Optional. The identifier for localization information about the variable. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [<loc\>](../vs140/-loc---javascript-.md) tag.  
+ Optional. The identifier for localization information about the variable. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [\<loc>](../vs140/-loc---javascript-.md) tag.  
   
  `description`  
  Optional. A description of the variable.  

@@ -85,7 +85,7 @@ long double sqrtl(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`sqrt`, `sqrtf`, `sqrtl`|<math.h>|<cmath\>|  
+|`sqrt`, `sqrtf`, `sqrtl`|<math.h>|\<cmath>|  
   
  For compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

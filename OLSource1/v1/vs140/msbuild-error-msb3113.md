@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3113
-**MSB3113: Could not find file '<file\>'.**  
+**MSB3113: Could not find file '\<file>'.**  
   
  This error is generated when an irresolvable reference is encountered when creating a new manifest. It might have originated from the project file or as a task parameter.  
   
@@ -29,4 +29,4 @@ translation.priority.ht:
 -   Check your project file (and build parameters, if you are custom building) for conflicts in file references.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

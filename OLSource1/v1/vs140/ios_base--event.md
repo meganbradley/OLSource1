@@ -48,7 +48,7 @@ enum event {erase_event, imbue_event, copyfmt_event};
  See [register_callback](../vs140/ios_base--register_callback.md) for an example.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

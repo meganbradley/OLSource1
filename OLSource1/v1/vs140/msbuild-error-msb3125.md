@@ -22,11 +22,11 @@ translation.priority.ht:
 # MSBuild Error MSB3125
 **MSB3125: The application is using file associations but has no EntryPoint build parameter.**  
   
- This error occurs when no entryPoint build parameter is present. When you configure an application to use file associations, there must be an entryPoint build parameter in the application manifest. The <entryPoint\> element identifies the assembly that should be executed when the application is run.  
+ This error occurs when no entryPoint build parameter is present. When you configure an application to use file associations, there must be an entryPoint build parameter in the application manifest. The \<entryPoint> element identifies the assembly that should be executed when the application is run.  
   
 ### To correct this error  
   
--   Set the [<entryPoint\> Element](../vs140/-entrypoint--element--clickonce-application-.md) to a valid value. For more information, see [ClickOnce Application Manifest](../vs140/clickonce-application-manifest.md).  
+-   Set the [\<entryPoint> Element](../vs140/-entrypoint--element--clickonce-application-.md) to a valid value. For more information, see [ClickOnce Application Manifest](../vs140/clickonce-application-manifest.md).  
   
 ## See Also  
  [Publish Page, Project Designer](../vs140/publish-page--project-designer.md)   

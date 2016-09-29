@@ -34,7 +34,7 @@ An `End Operator` statement appears with no matching `Operator` declaration prec
 -   Move the `End Operator` statement to the appropriate place in the code.  
   
 ## See Also  
- [End <keyword\> Statement](../vs140/end--keyword--statement--visual-basic-.md)   
+ [End \<keyword> Statement](../vs140/end--keyword--statement--visual-basic-.md)   
  [Operator Procedures](../vs140/operator-procedures--visual-basic-.md)   
  [Operator Statement](../vs140/operator-statement.md)   
  [How to: Define an Operator](../vs140/how-to--define-an-operator--visual-basic-.md)   

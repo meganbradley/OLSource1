@@ -48,10 +48,10 @@ class hash_set
  The element data type to be stored in the hash_set.  
   
  `Traits`  
- The type which includes two function objects, one of class compare that is a binary predicate able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type **size_t**. This argument is optional, and the `hash_compare`*<Key,* **less***<Key\> >* is the default value.  
+ The type which includes two function objects, one of class compare that is a binary predicate able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type **size_t**. This argument is optional, and the `hash_compare`*<Key,* **less***\<Key> >* is the default value.  
   
  `Allocator`  
- The type that represents the stored allocator object that encapsulates details about the hash_set's allocation and deallocation of memory. This argument is optional, and the default value is **allocator***<Key\>.*  
+ The type that represents the stored allocator object that encapsulates details about the hash_set's allocation and deallocation of memory. This argument is optional, and the default value is **allocator***\<Key>.*  
   
 ## Remarks  
  The hash_set is:  
@@ -72,7 +72,7 @@ class hash_set
   
  The hash_set should be the associative container of choice when the conditions associating the values with their keys are satisfied by the application. The elements of a hash_set are unique and serve as their own sort keys. A model for this type of structure is an ordered list of, say, words in which the words may occur only once. If multiple occurrences of the words were allowed, then a hash_multiset would be the appropriate container structure. If values need to be attached to a list of unique key words, then a hash_map would be an appropriate structure to contain this data. If instead the keys are not unique, then a hash_multimap would be the container of choice.  
   
- The hash_set orders the sequence it controls by calling a stored hash **Traits** object of type [value_compare](#hash_set__value_compare). This stored object may be accessed by calling the member function [key_comp](#hash_set__key_comp). Such a function object must behave the same as an object of class                 *hash_compare<Key, less<Key\> >.* Specifically, for all values `_Key` of type Key, the call Trait( `_Key` ) yields a distribution of values of type size_t.  
+ The hash_set orders the sequence it controls by calling a stored hash **Traits** object of type [value_compare](#hash_set__value_compare). This stored object may be accessed by calling the member function [key_comp](#hash_set__key_comp). Such a function object must behave the same as an object of class                 *hash_compare<Key, less\<Key> >.* Specifically, for all values `_Key` of type Key, the call Trait( `_Key` ) yields a distribution of values of type size_t.  
   
  In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the non-equivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate                 *f*(                *x*,                *y*) is a function object that has two argument objects x and y and a return value of true or false. An ordering imposed on a hash_set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects                 *x* and                 *y* are defined to be equivalent when both                 *f*(                *x*,                *y*) and                 *f*(                *y*,                *x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.  
   

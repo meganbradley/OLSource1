@@ -56,12 +56,12 @@ template<class Ty, class Size>
  For a code example, see [begin](../vs140/begin.md).  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   
 ## See Also  
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [begin](../vs140/begin.md)   
  [cbegin](../vs140/cbegin.md)   
  [cend](../vs140/cend.md)

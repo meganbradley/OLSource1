@@ -86,7 +86,7 @@ int main( )
 **The new next-to-last integer of c1 is 400**  
 **The list is now: 10 400 30**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

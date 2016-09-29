@@ -24,7 +24,7 @@ translation.priority.ht:
 # Compiler Warning (level 1) CS1590
 Invalid XML include element -- Missing file attribute  
   
- A path or doc attribute, passed to the [<include\>](../vs140/-include---csharp-programming-guide-.md) tag, was missing or incomplete.  
+ A path or doc attribute, passed to the [\<include>](../vs140/-include---csharp-programming-guide-.md) tag, was missing or incomplete.  
   
  The following sample generates CS1590:  
   

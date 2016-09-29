@@ -78,7 +78,7 @@ int main()
 **cref(i) = 1**  
 **cref(neg)(i) = -1**   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

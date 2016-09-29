@@ -56,7 +56,7 @@ int main( )
   
  **The inttype1 = 100.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

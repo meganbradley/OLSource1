@@ -69,8 +69,8 @@ int main()
   
 ```  
   
-  **is_class<trivial\> == true**  
-**is_class<int\> == false**    
+  **is_class\<trivial> == true**  
+**is_class\<int> == false**    
 ## Requirements  
  **Header:** <type_traits>  
   

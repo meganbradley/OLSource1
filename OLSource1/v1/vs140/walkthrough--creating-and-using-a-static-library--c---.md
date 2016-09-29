@@ -105,7 +105,7 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
   
 1.  After you create a console app, an empty program is created for you. The name for the source file is the same as the name that you chose earlier. In this example, it's named **MyExecRefsLib.cpp**.  
   
-2.  Before you can use the math routines in the static library, you must reference it. To do this, open the shortcut menu for the **MyExecRefsLib** project in **Solution Explorer**, and then choose **References**. In the **MyExecRefsLibProperty Pages** dialog box, expand the **Common Properties** node, select **Framework and References**, and then choose the **Add New Reference** button. For more information about the **References** dialog box, see [References, Common Properties, <Projectname\> Property Pages Dialog Box](../vs140/adding-references-in-visual-c---projects.md).  
+2.  Before you can use the math routines in the static library, you must reference it. To do this, open the shortcut menu for the **MyExecRefsLib** project in **Solution Explorer**, and then choose **References**. In the **MyExecRefsLibProperty Pages** dialog box, expand the **Common Properties** node, select **Framework and References**, and then choose the **Add New Reference** button. For more information about the **References** dialog box, see [References, Common Properties, \<Projectname> Property Pages Dialog Box](../vs140/adding-references-in-visual-c---projects.md).  
   
 3.  The **Add Reference** dialog box lists the libraries that you can reference. The **Projects** tab lists the projects in the current solution and any libraries that they contain. On the **Projects** tab, select the **MathFuncsLib** check box, and then choose the **OK** button.  
   

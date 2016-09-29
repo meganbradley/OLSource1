@@ -472,7 +472,7 @@ cout << "The integer with the greater absolute value is: " << result4 << endl;
 **Vector v4 = max (v1,v2) is ( 0 1 2 ).**  
 **Vector v5 = max (v1,v3) is ( 0 2 4 ).**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

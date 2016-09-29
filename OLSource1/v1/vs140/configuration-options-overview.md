@@ -32,9 +32,9 @@ Projects in [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] can support multi
   
 |Configuration Name|Platform — Win32|Platform — Win64|  
 |------------------------|----------------------|----------------------|  
-|Debug|<Debug Win32 settings\>|<Debug Win64 settings\>|  
-|Release|<Release Win32 settings\>|<Release Win64 settings\>|  
-|MyConfig|N/A|<MyConfig Win64 settings\>|  
+|Debug|\<Debug Win32 settings>|\<Debug Win64 settings>|  
+|Release|\<Release Win32 settings>|\<Release Win64 settings>|  
+|MyConfig|N/A|\<MyConfig Win64 settings>|  
   
 > [!NOTE]
 >  You cannot create a "MyConfig" solution configuration that excludes a "Win32" platform unless the project you are targeting does not support Win32.  

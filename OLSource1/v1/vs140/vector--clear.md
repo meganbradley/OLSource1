@@ -62,7 +62,7 @@ int main( )
  **The size of v1 is 3**  
 **The size of v1 after clearing is 0**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

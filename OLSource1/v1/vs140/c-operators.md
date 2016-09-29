@@ -46,8 +46,8 @@ The C operators are a subset of the [C++ operators](../vs140/c---operators.md).
 |------------|----------|  
 |**\* / %**|Multiplicative operators|  
 |**+ –**|Additive operators|  
-|**<< >>**|Shift operators|  
-|**<   >   <=   >=   ==   !=**|Relational operators|  
+|**<\< >>**|Shift operators|  
+|**\<   >   <=   >=   ==   !=**|Relational operators|  
 |**&   &#124; ^**|Bitwise operators|  
 |**&&   &#124;&#124;**|Logical operators|  
 |**,**|Sequential-evaluation operator|  

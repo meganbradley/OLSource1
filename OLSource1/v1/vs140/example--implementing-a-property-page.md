@@ -51,7 +51,7 @@ This example shows how to build a property page that displays (and allows you to
 |----------|-----------|  
 |Title|TextDocument|  
 |Doc String|VCUE TextDocument Properties|  
-|Helpfile|*<blank\>*|  
+|Helpfile|*\<blank>*|  
   
  The values that you set on this page of the wizard will be returned to the property page container when it calls **IPropertyPage::GetPageInfo**. What happens to the strings after that is dependent on the container, but typically they will be used to identify your page to the user. The Title will usually appear in a tab above your page and the Doc String may be displayed in a status bar or ToolTip (although the standard property frame doesn't use this string at all).  
   

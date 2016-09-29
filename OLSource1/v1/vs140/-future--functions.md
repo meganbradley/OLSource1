@@ -57,7 +57,7 @@ template<class Fn, class... ArgTypes>
 > [!NOTE]
 >  For a `future`—or the last [shared_future](../vs140/shared_future-class.md)—that's attached to a task started with `std::async`, the destructor blocks if the task has not completed; that is, it blocks if this thread did not yet call `.get()` or `.wait()` and the task is still running. If a `future` obtained from `std::async` is moved outside the local scope, other code that uses it must be aware that its destructor may block for the shared state to become ready.  
   
- The pseudo-function `INVOKE` is defined in [<functional\>](../vs140/-functional-.md).  
+ The pseudo-function `INVOKE` is defined in [\<functional>](../vs140/-functional-.md).  
   
 ##  <a name="future_category_function"></a>  future_category Function  
  Returns a reference to the [error_category](../vs140/error_category-class.md) object that characterizes errors that are associated with `future` objects.  

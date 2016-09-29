@@ -66,7 +66,7 @@ struct money_base : public locale::facet
 -   **value** to match or generate a monetary value.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

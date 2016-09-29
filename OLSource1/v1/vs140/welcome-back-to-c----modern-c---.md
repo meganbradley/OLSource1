@@ -30,15 +30,15 @@ C++ is one of the most widely used programming languages in the world. Well-writ
   
 -   Smart pointers instead of raw pointers.  
   
--   `std::string` and `std::wstring` types (see [<string\>](../vs140/-string-.md)) instead of raw `char[]` arrays.  
+-   `std::string` and `std::wstring` types (see [\<string>](../vs140/-string-.md)) instead of raw `char[]` arrays.  
   
--   [Standard template library](../vs140/c---standard-library-header-files.md) (STL) containers like `vector`, `list`, and `map` instead of raw arrays or custom containers. See [<vector\>](../vs140/-vector-.md), [<list\>](../vs140/-list-.md), and [<map\>](../vs140/-map-.md).  
+-   [Standard template library](../vs140/c---standard-library-header-files.md) (STL) containers like `vector`, `list`, and `map` instead of raw arrays or custom containers. See [\<vector>](../vs140/-vector-.md), [\<list>](../vs140/-list-.md), and [\<map>](../vs140/-map-.md).  
   
 -   [STL algorithms](../vs140/-algorithm-.md) instead of manually coded ones.  
   
 -   Exceptions, to report and handle error conditions.  
   
--   Lock-free inter-thread communication using STL `std::atomic<>` (see [<atomic\>](../vs140/-atomic-.md)) instead of other inter-thread communication mechanisms.  
+-   Lock-free inter-thread communication using STL `std::atomic<>` (see [\<atomic>](../vs140/-atomic-.md)) instead of other inter-thread communication mechanisms.  
   
 -   Inline [lambda functions](../vs140/lambda-expressions-in-c--.md) instead of small functions implemented separately.  
   

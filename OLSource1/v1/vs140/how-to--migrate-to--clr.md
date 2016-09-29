@@ -138,7 +138,7 @@ COMObj2->Method(args);  // C++ equivalent
  When moving from native to MSIL, you will notice an increase in the size of your working set. This is because the common language runtime provides many features to ensure that programs run correctly. If your **/clr** application is not running correctly, you may want to enable C4793 (off by default), see [Compiler Warning (level 1 and 3) C4793](../vs140/compiler-warning--level-1-and-3--c4793.md) for more information.  
   
 ### Program Crashes on Shutdown  
- In some cases, the CLR can shutdown before your managed code is finished running. Using `std::set_terminate` and `SIGTERM` can cause this. See [signal Constants](../vs140/signal-constants.md) and [set_terminate (<exception\>)](../vs140/set_terminate---exception--.md) for more information.  
+ In some cases, the CLR can shutdown before your managed code is finished running. Using `std::set_terminate` and `SIGTERM` can cause this. See [signal Constants](../vs140/signal-constants.md) and [set_terminate (\<exception>)](../vs140/set_terminate---exception--.md) for more information.  
   
 ## Using New Visual C++ Features  
  After your application compiles, links, and runs, you can begin using .NET features in any module compiled with **/clr**. For more information, see [New C++ Language Features](../vs140/component-extensions-for-runtime-platforms.md).  

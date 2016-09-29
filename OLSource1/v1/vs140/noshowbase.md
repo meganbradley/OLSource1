@@ -55,7 +55,7 @@ Turns off indicating the notational base in which a number is displayed.
  See [showbase](../vs140/showbase.md) for an example of how to use `noshowbase`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

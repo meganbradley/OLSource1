@@ -61,7 +61,7 @@ public:
   
 #### Parameters  
  `IntType`  
- The integer result type, defaults to `int`. For possible types, see [<random\>](../vs140/-random-.md).  
+ The integer result type, defaults to `int`. For possible types, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  The template class describes a distribution that produces values of a user-specified integral type, or type `int` if none is provided, distributed according to the Binomial Distribution discrete probability function. The following table links to articles about individual members.  
@@ -73,7 +73,7 @@ public:
   
  The property members `t()` and `p()` return the currently stored distribution parameter values `t` and `p` respectively.  
   
- For more information about distribution classes and their members, see [<random\>](../vs140/-random-.md).  
+ For more information about distribution classes and their members, see [\<random>](../vs140/-random-.md).  
   
  For detailed information about the binomial distribution discrete probability function, see the Wolfram MathWorld article                 [Binomial Distribution](http://go.microsoft.com/fwlink/?LinkId=398469).  
   
@@ -206,7 +206,7 @@ Histogram for 100 samples:
 ```  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
@@ -262,4 +262,4 @@ struct param_type {
  This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

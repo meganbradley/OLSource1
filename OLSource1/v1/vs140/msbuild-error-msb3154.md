@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3154
-**MSB3154: Could not find string resources for item '<package\>'.**  
+**MSB3154: Could not find string resources for item '\<package>'.**  
   
  This error is generated when the specified package does not contain any culture-specific information. Either a package.xml file does not exist, or it does not contain a `Culture` attribute.  
   

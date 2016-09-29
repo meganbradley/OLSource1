@@ -39,7 +39,7 @@ typedef ForwardIterator iter_type;
  The type is a synonym for the template parameter **ForwardIterator**.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

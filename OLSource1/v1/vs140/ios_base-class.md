@@ -127,7 +127,7 @@ The class describes the storage and member functions common to both input and ou
 |[operator=](#ios_base__operator_eq)|The assignment operator for `ios_base` objects.|  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   
@@ -362,7 +362,7 @@ static const fmtflags floatfield;
   
 -   `floatfield`, defined as `fixed` &#124; `scientific`  
   
- For examples of functions that modify these format flags, see [<iomanip\>](../vs140/-iomanip-.md).  
+ For examples of functions that modify these format flags, see [\<iomanip>](../vs140/-iomanip-.md).  
   
 ##  <a name="ios_base__getloc"></a>  ios_base::getloc  
  Returns the stored locale object.  

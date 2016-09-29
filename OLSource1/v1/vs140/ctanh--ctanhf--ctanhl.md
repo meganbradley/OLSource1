@@ -80,7 +80,7 @@ _Lcomplex ctanhl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`ctanh`,               `ctanhf`, `ctanhl`|<complex.h>|<ccomplex\>|  
+|`ctanh`,               `ctanhf`, `ctanhl`|<complex.h>|\<ccomplex>|  
   
  For compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

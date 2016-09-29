@@ -28,13 +28,13 @@ translation.priority.ht:
 # Choose Element (MSBuild)
 Evaluates child elements to select one set of `ItemGroup` elements and/or `PropertyGroup` elements to evaluate.  
   
- <Project\>  
- <Choose\>  
- <When\>  
- <Choose\>  
+ \<Project>  
+ \<Choose>  
+ \<When>  
+ \<Choose>  
  ...  
- <Otherwise\>  
- <Choose\>  
+ \<Otherwise>  
+ \<Choose>  
  ...  
   
 ## Syntax  

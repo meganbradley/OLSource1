@@ -197,7 +197,7 @@ int main( )
  **the 5th position in str4 is: 25**  
 **The index of the 1st element of 'clear' in str4 is: 0**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

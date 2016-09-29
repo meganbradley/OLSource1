@@ -43,7 +43,7 @@ HRESULT get_frontEndMinor ( 
 ## Remarks  
  A compiler is typically composed of two primary elements: the front end (the parser), which handles parsing the source code into an intermediate form, and a back end (code generator), which converts the intermediate form into assembly. It is not uncommon for the front end to have a different version than the back end.  
   
- A front end or back end version number is composed of three parts: <major\>.<minor\>.<build\>, where <major\> is the major version number, <minor\> is the minor version number, and <build\> is the build number. For example, 13.10.3077.  
+ A front end or back end version number is composed of three parts: \<major>.\<minor>.\<build>, where \<major> is the major version number, \<minor> is the minor version number, and \<build> is the build number. For example, 13.10.3077.  
   
 ## Requirements  
   

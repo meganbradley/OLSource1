@@ -175,7 +175,7 @@ In Visual Studio, you can use a *UML class diagram* to describe data types and t
   
 -   A type that is defined in your model.  
   
--   A parameterized value of a template type, written Template<Parameter\>. See [Template Types](#Templates).  
+-   A parameterized value of a template type, written Template\<Parameter>. See [Template Types](#Templates).  
   
  You can also write the name of a type that you have not yet defined in your model. The name will be listed under **Unspecified Types** in UML Model Explorer.  
   

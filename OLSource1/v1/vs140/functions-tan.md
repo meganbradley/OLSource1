@@ -112,6 +112,6 @@ int main( )
 **(-0.713931,0.85004)**  
 **(-1.55741,-7.08476e-013)**   
 ## Requirements  
- **Header:** <complex\>  
+ **Header:** \<complex>  
   
  **Namespace:** std

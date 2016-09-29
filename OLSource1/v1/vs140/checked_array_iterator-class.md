@@ -182,7 +182,7 @@ int main()
 |[operator&#91;&#93;](#checked_array_iterator__operator_at)|Returns a reference to an element offset from the element addressed by a `checked_array_iterator` by a specified number of positions.|  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** stdext  
   
@@ -953,5 +953,5 @@ typedef typename iterator_traits<_Iterator>::reference reference;
  For more information, see [Checked Iterators](../vs140/checked-iterators.md).  
   
 ## See Also  
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

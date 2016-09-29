@@ -108,7 +108,7 @@ int main( )
 **The reversed deque is: 30 20 10**   
 **The modified reversed deque is: 30 20 40**    
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

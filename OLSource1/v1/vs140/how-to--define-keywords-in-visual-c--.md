@@ -33,7 +33,7 @@ Keywords are predefined, reserved identifiers that have special meanings. They c
   
 2.  In `usertype.dat`, type each user-defined keyword on a separate line.  
   
-3.  Save `usertype.dat`in the directory that contains devenv.exe. By default, the path of that directory is *<drive\>*:\Program Files\\[!INCLUDE[TLA#tla_visualstu](../vs140/includes/tlasharptla_visualstu_md.md)] *<major.minor version number>*\Common7\\[!INCLUDE[TLA2#tla_ide](../vs140/includes/tla2sharptla_ide_md.md)]. Because that directory is read-only by default, you need administrative credentials to save `usertype.dat`.  
+3.  Save `usertype.dat`in the directory that contains devenv.exe. By default, the path of that directory is *\<drive>*:\Program Files\\[!INCLUDE[TLA#tla_visualstu](../vs140/includes/tlasharptla_visualstu_md.md)] *<major.minor version number>*\Common7\\[!INCLUDE[TLA2#tla_ide](../vs140/includes/tla2sharptla_ide_md.md)]. Because that directory is read-only by default, you need administrative credentials to save `usertype.dat`.  
   
 4.  Exit Visual Studio, and then restart it.  
   

@@ -77,7 +77,7 @@ template <class Type, class Sync> class allocator_base
 |[max_size](#allocator_base__max_size)|Returns the number of elements of type `Type` that could be allocated by an object of class allocator before the free memory is used up.|  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
@@ -288,4 +288,4 @@ typedef Type value_type;
 ```  
   
 ## See Also  
- [<allocators\>](../vs140/-allocators-.md)
+ [\<allocators>](../vs140/-allocators-.md)

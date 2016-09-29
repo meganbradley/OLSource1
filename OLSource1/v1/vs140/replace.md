@@ -117,7 +117,7 @@ The vector v1 with a value 700 replacing that of 7 is:
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

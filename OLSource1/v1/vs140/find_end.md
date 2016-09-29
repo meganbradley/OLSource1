@@ -166,7 +166,7 @@ int main( )
 **There is a sequence of elements in v1 that are equivalent to those**  
  **in v2 under the binary predicate twice and that begins at position 8.**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

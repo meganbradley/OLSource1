@@ -100,7 +100,7 @@ int main( )
 **The size of vaResult is:**  
  **vaGSlice.size ( ) = ( 4 4 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

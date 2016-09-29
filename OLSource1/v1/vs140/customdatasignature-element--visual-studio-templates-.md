@@ -22,9 +22,9 @@ translation.priority.ht:
 # CustomDataSignature Element (Visual Studio Templates)
 Specifies the text signature to locate the custom data.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <CustomDataSignature\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<CustomDataSignature>  
   
 ## Syntax  
   

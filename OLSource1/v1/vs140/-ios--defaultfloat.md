@@ -48,11 +48,11 @@ ios_base& defaultfloat(
  The manipulator effectively calls _I`osbase.`[unsetf](../vs140/ios_base--unsetf.md)`(ios_base::floatfield)`, then returns _I`osbase`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   
 ## See Also  
- [<ios\>](../vs140/-ios-.md)   
+ [\<ios>](../vs140/-ios-.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

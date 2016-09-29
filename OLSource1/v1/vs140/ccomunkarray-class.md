@@ -62,7 +62,7 @@ class CComUnkArray
 |[CComUnkArray::Remove](../vs140/ccomunkarray--remove.md)|Call this method to remove an **IUnknown** pointer from the array.|  
   
 ## Remarks  
- **CComUnkArray** holds a fixed number of **IUnknown** pointers, each an interface on a connection point. **CComUnkArray** can be used as a parameter to the [IConnectionPointImpl](../vs140/iconnectionpointimpl-class.md) template class. **CComUnkArray<1>** is a template specialization of **CComUnkArray** that has been optimized for one connection point.  
+ **CComUnkArray** holds a fixed number of **IUnknown** pointers, each an interface on a connection point. **CComUnkArray** can be used as a parameter to the [IConnectionPointImpl](../vs140/iconnectionpointimpl-class.md) template class. **CComUnkArray\<1>** is a template specialization of **CComUnkArray** that has been optimized for one connection point.  
   
  The **CComUnkArray** methods [begin](../vs140/ccomunkarray--begin.md) and [end](../vs140/ccomunkarray--end.md) can be used to loop through all connection points (for example, when an event is fired).  
   

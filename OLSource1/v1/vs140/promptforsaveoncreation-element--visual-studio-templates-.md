@@ -23,9 +23,9 @@ translation.priority.ht:
 # PromptForSaveOnCreation Element (Visual Studio Templates)
 Specifies whether the user is prompted for a project save location via the **New Project** dialog box when creating a project. If this element is set to `true`, then the user is prompted for a save location; if `false`, then they are not prompted. (That is, a temporary project is created.)  
   
- <VSTemplate\>  
- <TemplateData\>  
- <PromptForSaveOnCreation\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<PromptForSaveOnCreation>  
   
 ## Syntax  
   

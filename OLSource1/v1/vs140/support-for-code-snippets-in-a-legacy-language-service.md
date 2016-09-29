@@ -47,7 +47,7 @@ A code snippet is a piece of code that is inserted into the source file. The sni
 3.  Invoking the <xref:Microsoft.VisualStudio.Package.ExpansionProvider*> object.  
   
 ### Installing the Snippet Files  
- All snippets for a language are stored as templates in XML files, typically one snippet template per file. For details on the XML schema used for code snippet templates, see [Code Snippets Schema Reference](../vs140/code-snippets-schema-reference.md). Each snippet template is identified with a language ID. This language ID is specified in the registry and is put into the `Language` attribute of the <Code\> tag in the template.  
+ All snippets for a language are stored as templates in XML files, typically one snippet template per file. For details on the XML schema used for code snippet templates, see [Code Snippets Schema Reference](../vs140/code-snippets-schema-reference.md). Each snippet template is identified with a language ID. This language ID is specified in the registry and is put into the `Language` attribute of the \<Code> tag in the template.  
   
  There are typically two locations where snippet template files are stored: 1) where your language was installed and 2) in the user's folder. These locations are added to the registry so that the Visual Studio **Code Snippets Manager** can find the snippets. The user's folder is where snippets created by the user are stored.  
   
@@ -76,13 +76,13 @@ A code snippet is a piece of code that is inserted into the source file. The sni
 </SnippetCollection>  
 ```  
   
- The <Language\> tag specifies the language ID (the `Lang` attribute) and the language service GUID.  
+ The \<Language> tag specifies the language ID (the `Lang` attribute) and the language service GUID.  
   
- This example assumes you have installed your language service in the Visual Studio installation folder. The %LCID% is replaced with the user's current locale ID. Multiple <SnippetDir\> tags can be added, one for each different directory and locale. In addition, a snippet folder can contain subfolders, each of which is identified in the index file with the <SnippetSubDir\> tag that is embedded in a <SnippetDir\> tag.  
+ This example assumes you have installed your language service in the Visual Studio installation folder. The %LCID% is replaced with the user's current locale ID. Multiple \<SnippetDir> tags can be added, one for each different directory and locale. In addition, a snippet folder can contain subfolders, each of which is identified in the index file with the \<SnippetSubDir> tag that is embedded in a \<SnippetDir> tag.  
   
  Users can also create their own snippets for your language. These are typically stored in the user's settings folder, for example *[TestDocs]*\Code Snippets\\*[TestLanguage]*\Test Code Snippets, where *[TestDocs]* is the location of the user's settings folder for Visual Studio.  
   
- The following substitution elements can be placed in the path stored in the <DirPath\> tag in the index file.  
+ The following substitution elements can be placed in the path stored in the \<DirPath> tag in the index file.  
   
 |Element|Description|  
 |-------------|-----------------|  

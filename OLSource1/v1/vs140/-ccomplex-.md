@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;ccomplex&gt;
-Includes the STL header [<complex\>](../vs140/-complex-.md), which effectively includes the Standard C library header <complex.h> and adds the associated names to the `std` namespace.  
+Includes the STL header [\<complex>](../vs140/-complex-.md), which effectively includes the Standard C library header <complex.h> and adds the associated names to the `std` namespace.  
   
 ## Syntax  
   
@@ -32,7 +32,7 @@ Includes the STL header [<complex\>](../vs140/-complex-.md), which effectively i
 ## Remarks  
  Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.  
   
- The name `clog`, which is declared in <complex.h>, is not defined in the `std` namespace because of potential conflicts with the `clog` that is declared in [<iostream\>](../vs140/-iostream-.md).  
+ The name `clog`, which is declared in <complex.h>, is not defined in the `std` namespace because of potential conflicts with the `clog` that is declared in [\<iostream>](../vs140/-iostream-.md).  
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   

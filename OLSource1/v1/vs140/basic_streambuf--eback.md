@@ -43,7 +43,7 @@ type *eback( ) const;
  A pointer to the beginning of the input buffer.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

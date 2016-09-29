@@ -75,7 +75,7 @@ _Lcomplex conjl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`conj`,               `conjf`, `conjl`|<complex.h>|<ccomplex\>|  
+|`conj`,               `conjf`, `conjl`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

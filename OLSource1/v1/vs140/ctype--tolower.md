@@ -82,7 +82,7 @@ int main( )
   
  **The lowercase string is: hello, my name is john**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

@@ -45,7 +45,7 @@ t> wistringstream;
  The type is a synonym for template class [basic_istringstream](../vs140/basic_istringstream-class.md), specialized for elements of type `wchar_t`.  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

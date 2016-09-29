@@ -89,7 +89,7 @@ int main( )
  **Bitset b1 is the same as bitset b2.**  
 **Bitset b1 is different from bitset b3.**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

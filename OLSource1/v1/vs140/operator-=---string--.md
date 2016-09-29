@@ -130,7 +130,7 @@ int main( )
 **The string s3 is greater than or equal to the string s1.**  
 **The string s2 is greater than or equal to the string s3.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

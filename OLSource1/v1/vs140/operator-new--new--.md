@@ -123,10 +123,10 @@ Destructing MyClass.00311AEC
 ```  
   
 ## Requirements  
- **Header:** <new\>  
+ **Header:** \<new>  
   
  **Namespace:** std  
   
 ## See Also  
  [nothrow_t Class](../vs140/nothrow_t-structure.md)   
- [operator delete&#91;&#93; (<new\>)](../vs140/operator-delete--new--.md)
+ [operator delete&#91;&#93; (\<new>)](../vs140/operator-delete--new--.md)

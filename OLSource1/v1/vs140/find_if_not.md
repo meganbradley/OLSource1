@@ -55,12 +55,12 @@ InputIterator find_if_not(InputIterator first, InputIterator last,
  For a code example readily adaptable to `find_if_not()`, see [find_if()](../vs140/find_if.md).  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [adjacent_find](../vs140/adjacent_find.md)   
  [find](../vs140/find--stl-.md)   
  [find_if](../vs140/find_if.md)   

@@ -28,7 +28,7 @@ translation.priority.ht:
   
 1.  On the **Build** menu, click **Configuration Manager**.  
   
-2.  In the **Active solution platform box**, select the platform you want your solution to target, or select **<New\>** to create a new platform. [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] will compile your application to target the platform that is set as the active platform in the **Configuration Manager** dialog box.  
+2.  In the **Active solution platform box**, select the platform you want your solution to target, or select **\<New>** to create a new platform. [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] will compile your application to target the platform that is set as the active platform in the **Configuration Manager** dialog box.  
   
 ## Removing a Platform  
  If you realize that you have no need for a platform, you can remove it using the Configuration Manager dialog box. This will remove all solution and project settings that you configured for that combination of configuration and target.  
@@ -37,7 +37,7 @@ translation.priority.ht:
   
 1.  On the **Build** menu, click **Configuration Manager**.  
   
-2.  In the **Active solution platform box**, select **<Edit\>**. The **Edit Solution Platforms** dialog box opens.  
+2.  In the **Active solution platform box**, select **\<Edit>**. The **Edit Solution Platforms** dialog box opens.  
   
 3.  Click the platform you want to remove, and click **Remove**.  
   

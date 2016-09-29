@@ -29,7 +29,7 @@ static pointer pointer_to(element_type& obj);
 ```  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

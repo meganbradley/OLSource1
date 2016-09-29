@@ -49,4 +49,4 @@ future(
   
 ## See Also  
  [future Class](../vs140/future-class.md)   
- [<future\>](../vs140/-future-.md)
+ [\<future>](../vs140/-future-.md)

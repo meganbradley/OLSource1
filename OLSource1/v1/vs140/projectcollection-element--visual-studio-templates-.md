@@ -24,9 +24,9 @@ translation.priority.ht:
 # ProjectCollection Element (Visual Studio Templates)
 Specifies the organization and contents of multi-project templates.  
   
- <VSTemplate\>  
- <TemplateContent\>  
- <ProjectCollection\>  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectCollection>  
   
 ## Syntax  
   

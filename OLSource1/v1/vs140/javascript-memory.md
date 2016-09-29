@@ -279,14 +279,14 @@ The JavaScript memory analyzer is available in Visual Studio to help you underst
   
  To filter differential info between snapshots, choose one of the **Scope** filters at the top of the differential views.  
   
--   **Objects left over from Snapshot #<number\>**. This filter shows the diff between the objects added to the heap and removed from the heap compared to the baseline snapshot and the previous snapshot. For example, if the snapshot summary shows +205 / -195 in the object count, this filter will show you the ten objects that were added but not removed.  
+-   **Objects left over from Snapshot #\<number>**. This filter shows the diff between the objects added to the heap and removed from the heap compared to the baseline snapshot and the previous snapshot. For example, if the snapshot summary shows +205 / -195 in the object count, this filter will show you the ten objects that were added but not removed.  
   
     > [!TIP]
     >  To show the most useful info in this filter, follow the steps described in [Isolate a memory leak](#Isolate).  
   
--   **Objects added between Snapshot #<number\> and #<number\>**. This filter shows all objects added to the heap from the previous snapshot.  
+-   **Objects added between Snapshot #\<number> and #\<number>**. This filter shows all objects added to the heap from the previous snapshot.  
   
--   **All objects in Snapshot #<number\>**. This filter setting doesn't filter out any objects on the heap.  
+-   **All objects in Snapshot #\<number>**. This filter setting doesn't filter out any objects on the heap.  
   
  To show object references that don't match the current **Scope** filter, select **Show non-matching references** in the settings list ![Settings drop&#45;down list in memory analyzer](../vs140/media/js_mem_settings.png "JS_Mem_Settings") in the upper-right corner of the pane. If you enable this setting, non-matching references are displayed with gray text.  
   
@@ -371,7 +371,7 @@ if (performance && performance.mark) {
   
 ##  <a name="Tips"></a> Tips for identifying memory issues  
   
--   Follow the workflow described in [Isolate a memory leak](#Isolate) and use the **Objects left over from Snapshot #<number\>** filter in a diff view to identify likely candidates for memory leaks.  
+-   Follow the workflow described in [Isolate a memory leak](#Isolate) and use the **Objects left over from Snapshot #\<number>** filter in a diff view to identify likely candidates for memory leaks.  
   
 -   Use [Show in roots view](#ShowInRootsView) to see where an object is referenced in the memory hierarchy. The Roots view shows how an object is rooted to the global object, which would prevent it from being garbage-collected.  
   

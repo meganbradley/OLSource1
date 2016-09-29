@@ -122,7 +122,7 @@ int main( )
 **There are two adjacent elements where the second is twice the first.**  
  **They have values of 10 & 20.**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

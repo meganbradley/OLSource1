@@ -73,7 +73,7 @@ You can deploy an ASP.NET Web application to a Windows Server 2008 R2 computer w
   
 -   In Visual Studio, click **Debug / Attach to Process**.  
   
--   Set the Qualifier field to **<remote computer name\>:4020**.  
+-   Set the Qualifier field to **\<remote computer name>:4020**.  
   
 -   You should see some processes appear in the **Available Processes** window.  
   
@@ -81,7 +81,7 @@ You can deploy an ASP.NET Web application to a Windows Server 2008 R2 computer w
   
 -   Look for **w3wp.exe** and click **Attach**.  
   
--   Open the remote computer's website. In a browser, go to **http://<remote computer name\>**.  
+-   Open the remote computer's website. In a browser, go to **http://\<remote computer name>**.  
   
 -   You should see the ASP.NET web page. Click **About**.  
   

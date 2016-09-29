@@ -18,9 +18,9 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Unable to obtain a stream for the log
-Unable to obtain a stream for the log. Potential file names based on <name\> are already in use.  
+Unable to obtain a stream for the log. Potential file names based on \<name> are already in use.  
   
- The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener*> class could not create a new log file because all potential log file names based on <name\> are already in use.  
+ The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener*> class could not create a new log file because all potential log file names based on \<name> are already in use.  
   
  Having too many log files may indicate an architectural problem with the application. See the documentation for the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener*> class for more information.  
   

@@ -46,7 +46,7 @@ bool is_open( ) const;
  See [basic_filebuf::is_open](../vs140/basic_filebuf--is_open.md) for an example that uses `is_open`.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

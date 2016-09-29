@@ -72,7 +72,7 @@ A virtual function called to compare two character sequences according to their 
  See the example for [collate::compare](../vs140/collate--compare.md), which calls `do_compare`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

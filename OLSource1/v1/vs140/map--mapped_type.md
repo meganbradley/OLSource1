@@ -44,7 +44,7 @@ typedef Type mapped_type;
  See example for [value_type](../vs140/map--value_type.md) for an example of how to declare and use `mapped_type`.  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

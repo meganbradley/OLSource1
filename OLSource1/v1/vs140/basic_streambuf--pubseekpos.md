@@ -55,7 +55,7 @@ Calls [seekpos](../vs140/basic_streambuf--seekpos.md), a protected virtual funct
  The member function returns [seekpos](../vs140/basic_streambuf--seekpos.md)(_*Sp*, `_Which`).  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

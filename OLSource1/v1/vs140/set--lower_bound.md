@@ -95,7 +95,7 @@ int main( )
 **The set s1 doesn't have an element with a key of 40.**  
 **The element of s1 with a key matching that of the last element is: 30.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

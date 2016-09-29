@@ -25,7 +25,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # char_traits&lt;char16_t&gt; Struct
-A struct that is a specialization of the template struct **char_traits<CharType\>** to an element of type `char16_t`.  
+A struct that is a specialization of the template struct **char_traits\<CharType>** to an element of type `char16_t`.  
   
 ## Syntax  
   
@@ -37,11 +37,11 @@ template<> struct char_traits<char16_t>;
  Specialization allows the struct to take advantage of library functions that manipulate objects of the type `char16_t`.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
 ## See Also  
- [<string\>](../vs140/-string-.md)   
+ [\<string>](../vs140/-string-.md)   
  [char_traits Class](../vs140/char_traits-struct.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

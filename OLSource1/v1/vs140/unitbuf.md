@@ -59,7 +59,7 @@ Causes output to be processed when the buffer is not empty.
  The manipulator effectively calls `_Str.`[setf](../vs140/ios_base--setf.md)([ios_base::unitbuf](../vs140/ios_base--fmtflags.md)), and then returns `_Str`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

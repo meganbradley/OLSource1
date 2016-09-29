@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Option Strict On disallows operands of type Object for operator &#39;&lt;operatorname&gt;&#39;
-Option Strict On disallows operands of type Object for operator '<operatorname\>'. Use the Is operator to test for object identity.  
+Option Strict On disallows operands of type Object for operator '\<operatorname>'. Use the Is operator to test for object identity.  
   
  An arithmetic comparison operator such as `=` is used with one or more object variables when `Option Strict` is `On`.  
   

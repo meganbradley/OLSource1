@@ -127,7 +127,7 @@ The tuples in the vector are
 ```  
   
 ## Requirements  
- **Header:** <tuple\>  
+ **Header:** \<tuple>  
   
  **Namespace:** std  
   
@@ -336,5 +336,5 @@ int main()
  **0 1 2 3**  
  **4 5 6 7**    
 ## See Also  
- [<tuple\>](../vs140/-tuple-.md)   
+ [\<tuple>](../vs140/-tuple-.md)   
  [make_tuple](../vs140/-tuple--functions.md#make_tuple_function)

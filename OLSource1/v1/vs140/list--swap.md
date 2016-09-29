@@ -95,7 +95,7 @@ int main( )
 **After swapping with c2, list c1 is: 10 20**  
 **After swapping with c3, list c1 is: 100**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

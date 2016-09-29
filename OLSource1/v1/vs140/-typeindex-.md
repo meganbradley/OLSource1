@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;typeindex&gt;
-Include the standard header <typeindex\> to define a class and function that support the indexing of objects of class [type_info](../vs140/type_info-class.md).  
+Include the standard header \<typeindex> to define a class and function that support the indexing of objects of class [type_info](../vs140/type_info-class.md).  
   
 ## Syntax  
   

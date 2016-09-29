@@ -100,6 +100,6 @@ The character 'backslash-n' in the locale is  not a printable character.
 ```  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std

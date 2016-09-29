@@ -158,7 +158,7 @@ Time.Set(atime);
   
 -   *expr1* `||`  *expr2*  
   
- Overloaded infix operators << and >> do not work if both operands are class variables:  
+ Overloaded infix operators <\< and >> do not work if both operands are class variables:  
   
 -   *object1* <<*object2*  
   

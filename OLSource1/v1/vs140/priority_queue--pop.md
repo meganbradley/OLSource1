@@ -82,7 +82,7 @@ int main( )
 **After a pop, the priority_queue length is 2.**  
 **After a pop, the element at the top of the priority_queue is 20.**   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

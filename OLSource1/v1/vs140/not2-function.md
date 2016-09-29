@@ -101,7 +101,7 @@ int main( )
 **Sorted vector v1 = ( 41 6262 6262 6334 18467 19169 26500 )**  
 **Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )**   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

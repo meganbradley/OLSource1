@@ -80,7 +80,7 @@ template<class Type,
 |[operator++](#istream_iterator__operator_add_add)|Either extracts an incremented object from the input stream or copies the object before incrementing it and returns the copy.|  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   
@@ -379,6 +379,6 @@ int main( )
 ## See Also  
  [input_iterator_tag Struct](../vs140/input_iterator_tag-struct.md)   
  [iterator Class](../vs140/iterator-struct.md)   
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

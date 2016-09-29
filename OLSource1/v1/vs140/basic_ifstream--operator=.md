@@ -50,13 +50,13 @@ basic_ifstream& operator=(
  The member operator replaces the contents of the object by using the contents of `_Right`, treated as an rvalue reference. For more information, see [Lvalues and Rvalues](../vs140/lvalues-and-rvalues--visual-c---.md).  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_ifstream Class](../vs140/basic_ifstream-class.md)   
- [<fstream\>](../vs140/-fstream-.md)   
+ [\<fstream>](../vs140/-fstream-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

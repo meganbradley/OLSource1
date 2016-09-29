@@ -105,7 +105,7 @@ basic_istream& operator>>(
  The stream (**\*this**).  
   
 ## Remarks  
- The `<istream>` header also defines several global extraction operators. For more information, see [operator>> (<istream\>)](../vs140/operator-----istream--.md).  
+ The `<istream>` header also defines several global extraction operators. For more information, see [operator>> (\<istream>)](../vs140/operator-----istream--.md).  
   
  The first member function ensures that an expression of the form **istr** >> `ws` calls [ws](../vs140/ws.md)(**istr**), and then returns **\*this**. The second and third functions ensure that other manipulators, such as [hex](../vs140/hex.md), behave similarly. The remaining functions constitute the formatted input functions.  
   
@@ -213,12 +213,12 @@ i is cin
 ```  
   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_istream Class](../vs140/basic_istream-class.md)   
- [operator>> (<istream\>)](../vs140/operator-----istream--.md)   
+ [operator>> (\<istream>)](../vs140/operator-----istream--.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

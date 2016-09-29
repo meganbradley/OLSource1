@@ -53,7 +53,7 @@ Assigns a value to be stored as an `iword`.
  See [xalloc](../vs140/ios_base--xalloc.md) for a sample of how to use `iword`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

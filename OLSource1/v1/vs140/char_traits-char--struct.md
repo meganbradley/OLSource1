@@ -25,7 +25,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # char_traits&lt;char&gt; Struct
-A struct that is a specialization of the template struct **char_traits<CharType\>** to an element of type `char`.  
+A struct that is a specialization of the template struct **char_traits\<CharType>** to an element of type `char`.  
   
 ## Syntax  
   
@@ -40,6 +40,6 @@ template<> struct char_traits<char>;
  See the typedefs and member functions of the template class [char_traits Class](../vs140/char_traits-struct.md)< **CharType**> for examples involving elements of type `char`.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std

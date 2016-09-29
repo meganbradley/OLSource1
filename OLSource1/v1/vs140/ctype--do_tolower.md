@@ -61,7 +61,7 @@ virtual const CharType *do_tolower(
  See the example for [tolower](../vs140/ctype--tolower.md), which calls `do_tolower`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

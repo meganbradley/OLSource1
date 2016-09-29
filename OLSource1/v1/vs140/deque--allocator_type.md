@@ -42,7 +42,7 @@ typedef Allocator allocator_type;
  See the example for [get_allocator](../vs140/deque--get_allocator.md).  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

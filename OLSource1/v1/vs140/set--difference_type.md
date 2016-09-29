@@ -97,7 +97,7 @@ int main( )
 **The number '20' occurs 1 times in set s1.**  
 **The number of elements in the set s1 is: 2.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

@@ -92,7 +92,7 @@ int main( )
  **The initial list is c1 = 3 4 5 6 7 8**  
 **After removing the odd elements, the list becomes c2 = 4 6 8**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

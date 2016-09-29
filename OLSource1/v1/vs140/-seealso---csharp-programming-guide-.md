@@ -38,15 +38,15 @@ translation.priority.ht:
  cref = " `member`"  
  A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML.`member` must appear within double quotation marks (" ").  
   
- For information on how to create a cref reference to a generic type, see [<see\> (C# Programmer's Reference)](../vs140/-see---csharp-programming-guide-.md).  
+ For information on how to create a cref reference to a generic type, see [\<see> (C# Programmer's Reference)](../vs140/-see---csharp-programming-guide-.md).  
   
 ## Remarks  
- The <seealso\> tag lets you specify the text that you might want to appear in a See Also section. Use [<see\>](../vs140/-see---csharp-programming-guide-.md) to specify a link from within text.  
+ The \<seealso> tag lets you specify the text that you might want to appear in a See Also section. Use [\<see>](../vs140/-see---csharp-programming-guide-.md) to specify a link from within text.  
   
  Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file.  
   
 ## Example  
- See [<summary\>](../vs140/-summary---csharp-programming-guide-.md) for an example of using <seealso\>.  
+ See [\<summary>](../vs140/-summary---csharp-programming-guide-.md) for an example of using \<seealso>.  
   
 ## See Also  
  [C# Programming Guide](../vs140/csharp-programming-guide.md)   

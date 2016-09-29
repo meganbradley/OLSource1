@@ -51,7 +51,7 @@ basic_istream<Elem, Tr>& ignore(
  The stream (**\*this**).  
   
 ## Remarks  
- The unformatted input function extracts up to `_Count` elements and discards them. If `_Count` equals **numeric_limits<int\>::max**, however, it is taken as arbitrarily large. Extraction stops early on end of file or on an element `_Ch` such that **traits_type::**[to_int_type](../vs140/char_traits--to_int_type.md)(`_Ch`) compares equal to _*Delim* (which is also extracted). The function returns **\*this**.  
+ The unformatted input function extracts up to `_Count` elements and discards them. If `_Count` equals **numeric_limits\<int>::max**, however, it is taken as arbitrarily large. Extraction stops early on end of file or on an element `_Ch` such that **traits_type::**[to_int_type](../vs140/char_traits--to_int_type.md)(`_Ch`) compares equal to _*Delim* (which is also extracted). The function returns **\*this**.  
   
 ## Example  
   
@@ -72,7 +72,7 @@ int main( )
   
   **`abcdef` `abcdef`def**   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   

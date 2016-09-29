@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &#39;&lt;nullconstant&gt;&#39; is not declared
-'<nullconstant\>' is not declared. Null constant is no longer supported; use System.DBNull instead.  
+'\<nullconstant>' is not declared. Null constant is no longer supported; use System.DBNull instead.  
   
  A statement uses the `Null` keyword, which is no longer supported in Visual Basic.  
   

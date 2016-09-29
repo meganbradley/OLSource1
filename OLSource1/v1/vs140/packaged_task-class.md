@@ -148,7 +148,7 @@ template<class Fn, class Alloc>
  A `packaged_task` object.  
   
  `alloc`  
- A memory allocator. For more information, see [<allocators\>](../vs140/-allocators-.md).  
+ A memory allocator. For more information, see [\<allocators>](../vs140/-allocators-.md).  
   
  `fn`  
  A function object.  
@@ -205,4 +205,4 @@ bool valid() const;
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<future\>](../vs140/-future-.md)
+ [\<future>](../vs140/-future-.md)

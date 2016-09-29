@@ -48,7 +48,7 @@ You can define one or more parse trees in your registrar script, where each pars
 > [!NOTE]
 >  `HKEY_CLASSES_ROOT` and `HKCR` are equivalent; `HKEY_CURRENT_USER` and `HKCU` are equivalent; and so on.  
   
- A parse tree can add multiple keys and subkeys to the <root key\>. In doing so, it keeps a subkey's handle open until the parser has completed parsing all of its subkeys. This approach is more efficient than operating on a single key at a time, as seen in the following example:  
+ A parse tree can add multiple keys and subkeys to the \<root key>. In doing so, it keeps a subkey's handle open until the parser has completed parsing all of its subkeys. This approach is more efficient than operating on a single key at a time, as seen in the following example:  
   
 ```  
 HKEY_CLASSES_ROOT  

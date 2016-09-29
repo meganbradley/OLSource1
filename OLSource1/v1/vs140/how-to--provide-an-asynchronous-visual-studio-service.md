@@ -148,7 +148,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
     ```  
   
-     Don’t forget to change *<userpath\>* to a filename and path that makes sense on your machine!  
+     Don’t forget to change *\<userpath>* to a filename and path that makes sense on your machine!  
   
 2.  Build and run the code. When the experimental instance of Visual Studio appears, open a solution. This causes the AsyncPackage to autoload. When the initializer has run, you should find a file in the location you specified.  
   

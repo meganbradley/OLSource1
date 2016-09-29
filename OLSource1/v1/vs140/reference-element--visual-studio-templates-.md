@@ -24,10 +24,10 @@ translation.priority.ht:
 # Reference Element (Visual Studio Templates)
 Specifies the assembly reference to add when the item is added to a project.  
   
- <VSTemplate\>  
- <TemplateContent\>  
- <References\>  
- <Reference\>  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<References>  
+ \<Reference>  
   
 ## Syntax  
   

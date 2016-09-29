@@ -58,7 +58,7 @@ You can migrate a legacy language service to a later version of Visual Studio by
   
     -   On the **Application** tab, change **Target framework** to **4.6.1**.  
   
-    -   On the **Debug** tab, in the **Start external program** box, type **<Visual Studio installation path\>\Common7\IDE\devenv.exe.**.  
+    -   On the **Debug** tab, in the **Start external program** box, type **\<Visual Studio installation path>\Common7\IDE\devenv.exe.**.  
   
          In the **Command line arguments** box, type /**rootsuffix Exp**.  
   

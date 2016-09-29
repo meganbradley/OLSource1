@@ -70,7 +70,7 @@ int main( )
   
  **Moved first element: a**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

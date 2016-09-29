@@ -45,7 +45,7 @@ void deallocate(void* _Ptr, std::size_t _Count);
  The member function calls `caches[_IDX].deallocate(_Ptr, _Count)`, where the index `_IDX` is determined by the requested block size `_Count`, or, if `_Count` is too large, it returns `operator delete(_Ptr)`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

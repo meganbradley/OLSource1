@@ -18,7 +18,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3253
-**MSB3254: The assembly <name\> referenced in the project depends on <name2\> which is not contained in the .NET Framework Client Profile.**  
+**MSB3254: The assembly \<name> referenced in the project depends on \<name2> which is not contained in the .NET Framework Client Profile.**  
   
  One of the assemblies, or dependent assemblies, referenced in the project depends on another assembly that is not contained in the [!INCLUDE[net_client_v35_long](../vs140/includes/net_client_v35_long_md.md)].  
   

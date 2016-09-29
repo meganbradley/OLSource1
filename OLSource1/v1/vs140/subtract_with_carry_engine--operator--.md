@@ -26,6 +26,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # subtract_with_carry_engine::operator()
-This topic is deprecated. See [<random\>](../vs140/-random-.md).  
+This topic is deprecated. See [\<random>](../vs140/-random-.md).  
   
 ## Syntax

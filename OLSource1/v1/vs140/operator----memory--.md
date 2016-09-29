@@ -59,11 +59,11 @@ template<class Ty1, class Ty2>
  Returns `_Left``.get() >` `_Right``.get().`  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)   
+ [\<memory>](../vs140/-memory-.md)   
  [shared_ptr Class](../vs140/shared_ptr-class.md)   
  [unique_ptr Class](../vs140/unique_ptr-class.md)

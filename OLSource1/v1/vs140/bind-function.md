@@ -121,7 +121,7 @@ int main()
 **2^2 == 4**  
 **3^2 == 9**   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

@@ -51,7 +51,7 @@ std::streambuf *rdbuf(std::streambuf *_Bytebuf);
  The second member function stores `_Bytebuf` in the object representing the byte stream buffer.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

@@ -79,7 +79,7 @@ int fegetexceptflag(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`fegetexceptflag`|<fenv.h>|<cfenv\>|  
+|`fegetexceptflag`|<fenv.h>|\<cfenv>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

@@ -40,7 +40,7 @@ Visual Studio extensions are code packages that run inside Visual Studio and pro
  If you want to stop using an extension, you can either disable it or uninstall it. Disabling an extension keeps it installed but unloaded. You can disable only VSIX extensions; extensions that were installed using an MSI can only be uninstalled. Find the extension and click **Uninstall** or **Disable**. You must restart Visual Studio in order to unload a disabled extension.  
   
 ## Per-User and Administrative Extensions  
- Most extensions are per-user extensions and are installed in the **%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio version\>\Extensions\\** folder. A few extensions are administrative extensions, and are installed in the **<Visual Studio installation folder\>\Common7\IDE\Extensions\\** folder.  
+ Most extensions are per-user extensions and are installed in the **%LocalAppData%\Microsoft\VisualStudio\\\<Visual Studio version>\Extensions\\** folder. A few extensions are administrative extensions, and are installed in the **\<Visual Studio installation folder>\Common7\IDE\Extensions\\** folder.  
   
  To protect your system against extensions that may contain errors or malicious code, you can restrict per-user extensions to load only when Visual Studio is run with normal user permissions. This means that per-user extensions are disabled when Visual Studio is run with administrative user permissions. To do this, go to the **Extensions and Updates** options page (**Tools / Options**, **Environment**, **Extensions and Updates**, or just type **Extension** in the **Quick Launch** window). Clear the **Load per user extensions when running as administrator** check box, then restart Visual Studio.  
   

@@ -34,7 +34,7 @@ translation.priority.ht:
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest.HostInBrowser*>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest.TargetFrameworkVersion*>   
  [Publish Page, Project Designer](../vs140/publish-page--project-designer.md)   
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)   
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)   
  [MSBuild Error MSB3116](../vs140/msbuild-error-msb3116.md)   
  [MSBuild Error MSB3117](../vs140/msbuild-error-msb3117.md)   
  [MSBuild Error MSB3118](../vs140/msbuild-error-msb3118.md)   

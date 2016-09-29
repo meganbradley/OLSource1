@@ -65,7 +65,7 @@ int main( )
  **The size of the set is initially 2.**  
 **The size of the set after clearing is 0.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

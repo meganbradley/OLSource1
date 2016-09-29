@@ -66,7 +66,7 @@ int main()
   
 ```  
   
-  **rank<int\> == 0**  
+  **rank\<int> == 0**  
 **rank<int[5]> == 1**  
 **rank<int[5][10]> == 2**    
 ## Requirements  

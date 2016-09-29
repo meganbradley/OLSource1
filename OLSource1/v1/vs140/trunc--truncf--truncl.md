@@ -100,7 +100,7 @@ long double truncl(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`trunc`,                `truncf`,  `truncl`|<math.h>|<cmath\>|  
+|`trunc`,                `truncf`,  `truncl`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

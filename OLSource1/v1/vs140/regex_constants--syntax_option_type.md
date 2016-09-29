@@ -64,10 +64,10 @@ static const syntax_option_type awk, basic, collate, ECMAScript,
  `collate` -- make matches locale-sensitive  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_constants](../vs140/regex_constants-class.md)

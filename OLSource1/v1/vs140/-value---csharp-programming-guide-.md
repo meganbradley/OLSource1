@@ -34,7 +34,7 @@ translation.priority.ht:
  A description for the property.  
   
 ## Remarks  
- The <value\> tag lets you describe the value that a property represents. Note that when you add a property via code wizard in the Visual Studio .NET development environment, it will add a [<summary\>](../vs140/-summary---csharp-programming-guide-.md) tag for the new property. You should then manually add a <value\> tag to describe the value that the property represents.  
+ The \<value> tag lets you describe the value that a property represents. Note that when you add a property via code wizard in the Visual Studio .NET development environment, it will add a [\<summary>](../vs140/-summary---csharp-programming-guide-.md) tag for the new property. You should then manually add a \<value> tag to describe the value that the property represents.  
   
  Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file.  
   

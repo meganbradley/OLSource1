@@ -43,7 +43,7 @@ template <
  The element data type to be stored in the deque.  
   
  `Allocator`  
- The type that represents the stored allocator object that encapsulates details about the deque's allocation and deallocation of memory. This argument is optional, and the default value is **allocator<Type\>***.*  
+ The type that represents the stored allocator object that encapsulates details about the deque's allocation and deallocation of memory. This argument is optional, and the default value is **allocator\<Type>***.*  
   
 ## Remarks  
  The choice of container type should be based in general on the type of searching and inserting required by the application. [Vectors](../vs140/vector-class.md) should be the preferred container for managing a sequence when random access to any element is at a premium and insertions or deletions of elements are only required at the end of a sequence. The performance of the [list](../vs140/list-class.md) container is superior when efficient insertions and deletions (in constant time) at any location within the sequence is at a premium. Such operations in the middle of the sequence require element copies and assignments proportional to the number of elements in the sequence (linear time).  
@@ -127,7 +127,7 @@ template <
 |[operator=](#deque__operator_eq)|Replaces the elements of the `deque` with a copy of another `deque`.|  
   
 ## Requirements  
- **Header**: <deque\>  
+ **Header**: \<deque>  
   
 ##  <a name="deque__allocator_type"></a>  deque::allocator_type  
  A type that represents the allocator class for the deque object.  

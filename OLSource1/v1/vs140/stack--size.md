@@ -67,7 +67,7 @@ int main( )
  **The stack length is 1.**  
 **The stack length is now 2.**   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

@@ -35,5 +35,5 @@ void rethrow_exception(exception_ptr P);
  After you store a caught exception in an `exception_ptr` object, the primary thread can process the object. In your primary thread, call the `rethrow_exception` function together with the `exception_ptr` object as its argument. The `rethrow_exception` function extracts the exception from the `exception_ptr` object and then throws the exception in the context of the primary thread.  
   
 ## See Also  
- [<exception\>](../vs140/-exception-.md)   
+ [\<exception>](../vs140/-exception-.md)   
  [Transporting Exceptions Between Threads](../vs140/transporting-exceptions-between-threads.md)

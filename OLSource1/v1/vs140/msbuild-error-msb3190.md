@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3190
-**MSB3190: ClickOnce does not support the requested execution level '<level\>'.**  
+**MSB3190: ClickOnce does not support the requested execution level '\<level>'.**  
   
  This error is generated on computers running Windows Vista when the application's embedded User Account Control (UAC) manifest specifies that a ClickOnce application run with administrative credentials. ClickOnce and Registration Free COM require an external manifest that specifies that the application run as the current user.  
   

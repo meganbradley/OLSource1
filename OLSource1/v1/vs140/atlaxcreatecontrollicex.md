@@ -57,7 +57,7 @@ BSTR bstrLic= NULL
   
 -   A reference to an Active document such as "file://\\\Documents\MyDoc.doc"  
   
--   A fragment of HTML such as "MSHTML:<HTML\><BODY\>This is a line of text</BODY\></HTML\>"  
+-   A fragment of HTML such as "MSHTML:\<HTML>\<BODY>This is a line of text</BODY\></HTML\>"  
   
     > [!NOTE]
     >  "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream.  

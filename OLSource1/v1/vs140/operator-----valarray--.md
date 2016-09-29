@@ -112,6 +112,6 @@ int main( )
 **The element-by-element result of the left shift is the**  
  **valarray: ( 1 -2 4 -8 16 -32 64 -128 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std

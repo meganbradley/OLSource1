@@ -93,6 +93,6 @@ int main( )
 **The character '@' in the locale is  not alphanumeric.**  
 **The character '3' in the locale is alphanumeric.**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std

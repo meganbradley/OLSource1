@@ -70,7 +70,7 @@ template <class CharType>
 |[open](#messages__open)|Opens the message catalog.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
@@ -281,6 +281,6 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
  The type describes a specialization of template class [basic_string](../vs140/basic_string-class.md) whose objects can store copies of the message sequences.  
   
 ## See Also  
- [<locale\>](../vs140/-locale-.md)   
+ [\<locale>](../vs140/-locale-.md)   
  [messages_base Class](../vs140/messages_base-class.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

@@ -51,4 +51,4 @@ The data type specified for this member is not part of the [Common Language Spec
   
 ## See Also  
  [Reflection Overview](assetId:///d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775)   
- [<PAVE OVER\> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)
+ [\<PAVE OVER> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)

@@ -43,7 +43,7 @@ type *pbase( ) const;
  A pointer to the beginning of the output buffer.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

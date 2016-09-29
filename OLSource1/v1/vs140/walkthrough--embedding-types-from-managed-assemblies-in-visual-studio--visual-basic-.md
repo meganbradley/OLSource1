@@ -68,17 +68,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 6.  Open the ISampleInterface.vb file. Add the following code to the ISampleInterface class file to create the ISampleInterface interface.  
   
-    ```vb  
-    Imports System.Runtime.InteropServices  
-  
-    <ComImport()>  
-    <Guid("8DA56996-A151-4136-B474-32784559F6DF")>  
-    Public Interface ISampleInterface  
-        Sub GetUserInput()  
-        ReadOnly Property UserInput As String  
-    End Interface  
-    ```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
 7.  On the **Tools** menu, click **Create Guid**. In the **Create GUID** dialog box, click **Registry Format** and then click **Copy**. Click **Exit**.  
   
 8.  In the `Guid` attribute, delete the sample GUID and paste in the GUID that you copied from the **Create GUID** dialog box. Remove the braces ({}) from the copied GUID.  
@@ -87,10 +77,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 10. In **Solution Explorer**, expand the **My Project** folder. Double-click the AssemblyInfo.vb. Add the following attribute to the file.  
   
-    ```vb  
-    <Assembly: ImportedFromTypeLib("")>  
-    ```  
-  
+<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
      Save the file.  
   
 11. Save the project.  
@@ -119,26 +106,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 9. Add the following code to the SampleClass class file to create the SampleClass class.  
   
-    ```vb  
-    Imports TypeEquivalenceInterface  
-  
-    Public Class SampleClass  
-        Implements ISampleInterface  
-  
-        Private p_UserInput As String  
-        Public ReadOnly Property UserInput() As String Implements ISampleInterface.UserInput  
-            Get  
-                Return p_UserInput  
-            End Get  
-        End Property  
-  
-        Public Sub GetUserInput() Implements ISampleInterface.GetUserInput  
-            Console.WriteLine("Please enter a value:")  
-            p_UserInput = Console.ReadLine()  
-        End Sub  
-    End Class  
-    ```  
-  
+<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
 10. Save the project.  
   
 11. Right-click the TypeEquivalenceRuntime project and click **Build**. The class library .dll file is compiled and saved to the specified build output path (for example, C:\TypeEquivalenceSample).  
@@ -161,25 +129,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 7.  Add the following code to the Module1.vb file to create the client program.  
   
-    ```vb  
-    Imports TypeEquivalenceInterface  
-    Imports System.Reflection  
-  
-    Module Module1  
-  
-        Sub Main()  
-            Dim sampleAssembly = Assembly.Load("TypeEquivalenceRuntime")  
-            Dim sampleClass As ISampleInterface = CType( _  
-                sampleAssembly.CreateInstance("TypeEquivalenceRuntime.SampleClass"), ISampleInterface)  
-            sampleClass.GetUserInput()  
-            Console.WriteLine(sampleClass.UserInput)  
-            Console.WriteLine(sampleAssembly.GetName().Version)  
-            Console.ReadLine()  
-        End Sub  
-  
-    End Module  
-    ```  
-  
+<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
 8.  Press CTRL+F5 to build and run the program.  
   
 ## Modifying the Interface  
@@ -192,10 +142,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 3.  Open the ISampleInterface.vb file. Add the following line of code to the ISampleInterface interface.  
   
-    ```vb  
-    Function GetDate() As Date  
-    ```  
-  
+<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
      Save the file.  
   
 4.  Save the project.  

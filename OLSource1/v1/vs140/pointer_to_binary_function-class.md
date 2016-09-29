@@ -66,7 +66,7 @@ template<class Arg1, class Arg2, class Result>
  The constructor of `pointer_to_binary_function` is rarely used directly. See the helper function [ptr_fun](../vs140/-functional--functions.md#ptr_fun_function) for an example of how to declare and use the `pointer_to_binary_function` adaptor predicate.  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

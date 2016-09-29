@@ -52,7 +52,7 @@ and [access-modifier] type-name2 ...
 ## Remarks  
  Classes represent the fundamental description of .NET object types; the class is the primary type concept that supports object-oriented programming in F#.  
   
- In the preceding syntax, the `type-name` is any valid identifier. The `type-params` describes optional generic type parameters. It consists of type parameter names and constraints enclosed in angle brackets (< and >). For more information, see [Generics](../vs140/generics--fsharp-.md) and [Constraints](../vs140/constraints--fsharp-.md). The `parameter-list` describes constructor parameters. The first access modifier pertains to the type; the second pertains to the primary constructor. In both cases, the default is `public`.  
+ In the preceding syntax, the `type-name` is any valid identifier. The `type-params` describes optional generic type parameters. It consists of type parameter names and constraints enclosed in angle brackets (\< and >). For more information, see [Generics](../vs140/generics--fsharp-.md) and [Constraints](../vs140/constraints--fsharp-.md). The `parameter-list` describes constructor parameters. The first access modifier pertains to the type; the second pertains to the primary constructor. In both cases, the default is `public`.  
   
  You specify the base class for a class by using the `inherit` keyword. You must supply arguments, in parentheses, for the base class constructor.  
   
@@ -107,7 +107,7 @@ type MyClass2(dataIn) as self =
  The self identifier that is declared with the `as` keyword is not initialized until after the `let` bindings are executed. Therefore, it cannot be used in the `let` bindings. You can use the self identifier in the `do` bindings section.  
   
 ## Generic Type Parameters  
- Generic type parameters are specified in angle brackets (< and >), in the form of a single quotation mark followed by an identifier. Multiple generic type parameters are separated by commas. The generic type parameter is in scope throughout the declaration. The following code example shows how to specify generic type parameters.  
+ Generic type parameters are specified in angle brackets (\< and >), in the form of a single quotation mark followed by an identifier. Multiple generic type parameters are separated by commas. The generic type parameter is in scope throughout the declaration. The following code example shows how to specify generic type parameters.  
   
  [!code[FsLangRef1#2403](../vs140/codesnippet/FSharp/classes--fsharp-_2.fs)]  
   

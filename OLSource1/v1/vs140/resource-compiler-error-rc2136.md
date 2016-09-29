@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Resource Compiler Error RC2136
-missing '=' in EXSTYLE=<flags\>  
+missing '=' in EXSTYLE=\<flags>  
   
  An equal sign (**=**) was missing from an **EXSTYLE** (Extended Style Flags) statement. When the **EXSTYLE** is embedded in the **DIALOG** or **MENU** statement it must have the following form:  
   

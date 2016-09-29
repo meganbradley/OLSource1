@@ -38,38 +38,10 @@ The following code example illustrates how to write a non-generic collection cla
   
  For example, change the following lines in the previous example.  
   
-```c#  
-  
-// Change the Tokens class so that it no longer implements IEnumerable.  
-public class Tokens  
-{  
-    // . . .  
-  
-    // Change the return type for the GetEnumerator method.  
-    public TokenEnumerator GetEnumerator()  
-    {   }  
-  
-    // Change TokenEnumerator so that it no longer implements IEnumerator.  
-    public class TokenEnumerator  
-    {  
-        // . . .  
-  
-        // Change the return type of method Current to string.  
-        public string Current  
-        {   }  
-    }  
- }  
-  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
  Because `Current` returns a string, the compiler can detect when an incompatible type is used in a `foreach` statement, as shown in the following code.  
   
-```c#  
-  
-// Error: Cannot convert type string to int.  
-foreach (int item in f)    
-```  
-  
+<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
  The disadvantage of omitting <xref:System.Collections.IEnumerable*> and <xref:System.Collections.IEnumerator*> is that the collection class is no longer interoperable with the `foreach` statements, or equivalent statements, of other common language runtime languages.  
   
 ## See Also  

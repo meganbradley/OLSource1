@@ -55,7 +55,7 @@ You can add fields to an entity or a table in the LightSwitch database and modif
     |**Date**|DateTime|DateTime||A DateTime that's treated as a date only.|  
     |**DateTime**|DateTime|DateTime|12:00:00 AM, Jan 1, 0001 through 11:59:59 PM, Dec 31, 9999.||  
     |**DateTimeOffset**|DateTime|DateTime||A value that represents a date and time in Coordinated Universal Time (UTC) format.|  
-    |**Decimal**|Decimal|decimal|±1.0 × 10<sup\>−28</sup\> to ±7.9 × 10<sup\>28</sup\>.|A fixed decimal point with 28-29 significant digits; good for accounting numbers.|  
+    |**Decimal**|Decimal|decimal|±1.0 × 10\<sup>−28</sup\> to ±7.9 × 10\<sup>28</sup\>.|A fixed decimal point with 28-29 significant digits; good for accounting numbers.|  
     |**Double**|Double|double|±5.0e−324 to ±1.7e308.|A floating decimal point with 15-16 digits precision; good for scientific numbers.|  
     |**Email Address**|String|string||A string that's treated as an email address.|  
     |**Guid**|String|string||A string that's formatted as a globally unique identifier (GUID). The value is automatically generated for each record.|  

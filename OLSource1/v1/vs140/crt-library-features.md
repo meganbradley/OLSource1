@@ -59,8 +59,8 @@ This topic discusses the various .lib files that comprise the C run-time librari
 |-------------|--------------------|---------------------|------------|-----------------------------|  
 |libvcruntime.lib|None|Statically linked into your code.|**/MT**|_MT|  
 |libvcruntimed.lib|None|Debug version for static linking. Not redistributable.|**/MTd**|_MT, _DEBUG|  
-|vcruntime.lib|vcruntime<version\>.dll|DLL import library for the vcruntime.|**/MD**|_MT, _DLL|  
-|vcruntimed.lib|vcruntime<version\>d.dll|DLL import library for the Debug vcruntime. Not redistributable.|**/MDd**|_DEBUG, _MT, _DLL|  
+|vcruntime.lib|vcruntime\<version>.dll|DLL import library for the vcruntime.|**/MD**|_MT, _DLL|  
+|vcruntimed.lib|vcruntime\<version>d.dll|DLL import library for the Debug vcruntime. Not redistributable.|**/MDd**|_DEBUG, _MT, _DLL|  
   
  The code that initializes the CRT is in one of several libraries, based on whether the CRT library is statically or dynamically linked, or native, managed, or mixed code. This code handles CRT startup, internal per-thread data initialization, and termination. It is specific to the version of the compiler used. This library is always statically linked, even when using a dynamically linked UCRT.  
   
@@ -98,9 +98,9 @@ This topic discusses the various .lib files that comprise the C run-time librari
 |Standard C++ Library|Characteristics|Option|Preprocessor directives|  
 |----------------------------|---------------------|------------|-----------------------------|  
 |LIBCPMT.LIB|Multithreaded, static link|**/MT**|_MT|  
-|MSVCPRT.LIB|Multithreaded, dynamic link (import library for MSVCP<version\>.dll)|**/MD**|_MT, _DLL|  
+|MSVCPRT.LIB|Multithreaded, dynamic link (import library for MSVCP\<version>.dll)|**/MD**|_MT, _DLL|  
 |LIBCPMTD.LIB|Multithreaded, static link|**/MTd**|_DEBUG, _MT|  
-|MSVCPRTD.LIB|Multithreaded, dynamic link (import library for MSVCP<version\>D.DLL)|**/MDd**|_DEBUG, _MT, _DLL|  
+|MSVCPRTD.LIB|Multithreaded, dynamic link (import library for MSVCP\<version>D.DLL)|**/MDd**|_DEBUG, _MT, _DLL|  
   
  When you build a release version of your project, one of the basic C run-time libraries (LIBCMT.LIB, MSVCMRT.LIB, MSVCRT.LIB) is linked by default, depending on the compiler option you choose (multithreaded, DLL, /clr). If you include one of the [Standard C++ Library Header Files](../vs140/c---standard-library-header-files.md) in your code, a Standard C++ Library will be linked in automatically by [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] at compile time. For example:  
   

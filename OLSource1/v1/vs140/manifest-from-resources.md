@@ -19,18 +19,18 @@ The Manifest from Resources tool is a console application that takes a list of i
 ## How to use the tool  
  **Syntax**  
   
- ManifestFromResources /resources:<Dir1\>;<Img1\> /assembly:<AssemblyName\> <Optional Args\>  
+ ManifestFromResources /resources:\<Dir1>;\<Img1> /assembly:\<AssemblyName> \<Optional Args>  
   
  **Arguments**  
   
 ||||  
 |-|-|-|  
 |**Switch name**|**Notes**|**Required or Optional**|  
-|/resources|A semicolon-delimited list of images or directories. This list should always contain the full list of images that will be in the manifest. If only a partial list is given, the entries not included will be lost.<br /><br /> If a given resource file is an image strip, the tool will split it into separate images before adding each subimage to the manifest.<br /><br /> If the image is a .png file, we recommended you format the name like this so that the tool can fill in the right attributes for the image: <Name\>.<Width\>.<Height\>.png.|Required|  
+|/resources|A semicolon-delimited list of images or directories. This list should always contain the full list of images that will be in the manifest. If only a partial list is given, the entries not included will be lost.<br /><br /> If a given resource file is an image strip, the tool will split it into separate images before adding each subimage to the manifest.<br /><br /> If the image is a .png file, we recommended you format the name like this so that the tool can fill in the right attributes for the image: \<Name>.\<Width>.\<Height>.png.|Required|  
 |/assembly|The name of the managed assembly (not including the extension), or the runtime path of the native assembly that hosts the resources (relative to the manifest’s runtime location).|Required|  
-|/manifest|The name to give to the generated .imagemanifest file. This can also include an absolute or relative path to create the file in a different location. The default name matches the assembly name.<br /><br /> Default: <Current Directory\>\\<Assembly\>.imagemanifest|Optional|  
+|/manifest|The name to give to the generated .imagemanifest file. This can also include an absolute or relative path to create the file in a different location. The default name matches the assembly name.<br /><br /> Default: \<Current Directory>\\\<Assembly>.imagemanifest|Optional|  
 |/guidName|The name to give to the GUID symbol for all of the images in the generated manifest.<br /><br /> Default: AssetsGuid|Optional|  
-|/rootPath|The root path that needs to be stripped off before creating managed resource URIs. (This flag is to help with cases where the tool gets the relative URI path wrong, causing resources to fail to load.)<br /><br /> Default: <Current Directory\>|Optional|  
+|/rootPath|The root path that needs to be stripped off before creating managed resource URIs. (This flag is to help with cases where the tool gets the relative URI path wrong, causing resources to fail to load.)<br /><br /> Default: \<Current Directory>|Optional|  
 |/recursive|Setting this flag tells the tool to recursively search any directories in the /resources argument. Omitting this flag will result in a top-level-only search of directories.|Optional|  
 |/isNative|Set this flag when the assembly argument is a path for a native assembly. Omit this flag when the assembly argument is the name of a managed assembly. (See the Notes section for additional information about this flag.)|Optional|  
 |/newGuids|Setting this flag tells the tool to create a new value for the images’ GUID symbol instead of merging the one from the existing manifest.|Optional|  

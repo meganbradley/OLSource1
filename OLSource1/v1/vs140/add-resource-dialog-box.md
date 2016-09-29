@@ -31,7 +31,7 @@ Use this dialog box to add resources to a C++ Windows desktop application projec
  **Resource Type**  
  Specifies the kind of resource you want to create.  
   
- You can expand the cursor and dialog box resource categories to reveal additional resources. These resources are located in ...\Microsoft Visual Studio `version`\VC\VCResourceTemplates\\<LCID\>\mfc.rct. If you add .rct files, you must put them in this directory or you must specify an [include path](../vs140/how-to--specify-include-directories-for-resources.md) for them. The resources in those files then appear at the second level under the appropriate category. There is no preset limit to the number of .rct files you can add.  
+ You can expand the cursor and dialog box resource categories to reveal additional resources. These resources are located in ...\Microsoft Visual Studio `version`\VC\VCResourceTemplates\\\<LCID>\mfc.rct. If you add .rct files, you must put them in this directory or you must specify an [include path](../vs140/how-to--specify-include-directories-for-resources.md) for them. The resources in those files then appear at the second level under the appropriate category. There is no preset limit to the number of .rct files you can add.  
   
  The resources shown at the top level in the tree control are the default resources that are provided by Visual Studio.  
   

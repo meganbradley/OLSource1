@@ -87,7 +87,7 @@ int main( )
 **1808.04**  
 **22026.5**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

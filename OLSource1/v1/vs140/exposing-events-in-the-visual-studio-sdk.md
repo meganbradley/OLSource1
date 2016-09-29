@@ -47,7 +47,7 @@ translation.priority.mt:
 ## Registry Entries from the Basic Project Sample  
  This section shows where to add automation event values to the registry.  
   
- [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID\>\AutomationEvents]  
+ [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\\<PkgGUID>\AutomationEvents]  
   
  "AutomationProjectEvents"="Returns the AutomationProjectEvents Object"  
   

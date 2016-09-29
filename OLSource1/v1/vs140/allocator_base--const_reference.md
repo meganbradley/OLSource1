@@ -44,6 +44,6 @@ typedef const Type& const_reference;
  The reference type implements  as a typedef for `const Type&`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext

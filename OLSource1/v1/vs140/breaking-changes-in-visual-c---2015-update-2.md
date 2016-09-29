@@ -29,155 +29,38 @@ When you upgrade to Visual C++ 2015 Update 2 CTP you might encounter compilation
   
  **error C2039: *'type'*: is not a member of *'`global namespace''***     Example 1:  use of an undeclared type (before)  
   
-    ```cpp  
-    struct s1  
-    {  
-      template <typename T>  
-      auto f() -> decltype(s2<T>::type::f());  // error C2039  
-  
-      template<typename>  
-      struct s2 {};  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
      Example 1 (after)  
   
-    ```cpp  
-    struct s1  
-    {  
-      template <typename>  // forward declare s2struct s2;  
-  
-      template <typename T>  
-      auto f() -> decltype(s2<T>::type::f());  
-  
-      template<typename>  
-      struct s2 {};  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
      When this new behavior parses a `decltype` expression that is missing a necessary use of the `typename` keyword to specify that a dependent name is a type, the compiler issues  compiler warning C4346 together with compiler error C2923.  
   
  **warning C4346: *'S2<T\>::Type'*: dependent name is not a type error C2923: *'s1'*: *'S2<T\>::Type'* is not a valid template type argument for parameter *'T'***     Example 2: dependent name is not a type (before)  
   
-    ```cpp  
-    template <typename T>  
-    struct s1  
-    {  
-      typedef T type;  
-    };  
-  
-    template <typename T>  
-    struct s2  
-    {  
-      typedef T type;  
-    };  
-  
-    template <typename T>  
-    T declval();  
-  
-    struct s  
-    {  
-      template <typename T>  
-      auto f(T t) -> decltype(t(declval<S1<S2<T>::type>::type>()));  // warning C4346, error C2923  
-    };  
-    ```  
-  
+<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
      Example 2 (after)  
   
-    ```cpp  
-    template <typename T> struct s1 {...};  // as above  
-    template <typename T> struct s2 {...};  // as above  
-  
-    template <typename T>  
-    T declval();  
-  
-    struct s  
-    {  
-      template <typename T>  
-      auto f(T t) -> decltype(t(declval<S1<typename S2<T>::type>::type>()));  
-    };  
-    ```  
-  
+<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
 -   `volatile` **member variables prevent implicitly defined constructors and assignment operators**  
   
      Previous versions of the compiler allowed a class that has `volatile` member variables to have default copy/move constructors and default copy/move assignment operators automatically generated. This old behavior was incorrect and does not conform to the C++ standard. The compiler now considers a class that has volatile member variables to have non-trivial construction and assignment operators which prevents default implementations of these operators from being automatically generated.  When such a class is a member of a union (or an anonymous union inside of a class), the copy/move constructors and copy/move assignment operators of the union (or the class containing the unonymous union) will be implicitly defined as deleted. Attempting to construct or copy the union (or class containing the anonymous union) without explicitly defining them is an error and the compiler  issues compiler error C2280 as a result.  
   
  **error C2280: *'B::B(const B &)'*: attempting to reference a deleted function**     Example (before)  
   
-    ```cpp  
-    struct A  
-    {  
-      volatile int i;  
-      volatile int j;  
-    };  
-  
-    extern A* pa;  
-  
-    struct B  
-    {  
-      union  
-      {  
-        A a;  
-        int i;  
-      };  
-    };  
-  
-    B b1 {*pa};  
-    B b2 (b1);  // error C2280  
-    ```  
-  
+<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
      Example (after)  
   
-    ```cpp  
-    struct A  
-    {  
-      int i;int j;  
-    };  
-  
-    extern volatile A* pa;  
-  
-    A getA()  // returns an A instance copied from contents of pa  
-    {  
-      A a;  
-      a.i = pa->i;  
-      a.j = pa->j;  
-      return a;  
-    }  
-  
-    struct B;  // as above  
-  
-    B b1 {GetA()};  
-    B b2 (b1);  // error C2280  
-    ```  
-  
+<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
 -   **Static member functions do not support cv-qualifiers.**  
   
      Previous versions of Visual C++ 2015 allowed static member functions to have cv-qualifiers. This behavior is due to a regression in Visual C++ 2015 and Visual C++ 2015 Update 1; Visual C++ 2013 and previous versions of Visual C++ reject code written in this way. The behavior of Visual C++ 2015 and Visual C++ 2015 Update 1 is incorrect and does not conform to the C++ standard.  Visual Studio 2015 Update 2 rejects code written in this way and issues compiler error C2511 instead.  
   
  **error C2511: 'void A::func(void) const': overloaded member function not found in 'A'**     Example (before)  
   
-    ```  
-    struct A  
-    {  
-      static void func();  
-    };  
-  
-    void A::func() const {}  // C2511  
-  
-    ```  
-  
+<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
      Example (after)  
   
-    ```  
-    struct A  
-    {  
-      static void func();  
-    };  
-  
-    void A::func() {}  // removed const  
-  
-    ```  
-  
+<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
 -   **Forward declaration of enum is not allowed in WinRT code** (affects /ZW only)  
   
      Code compiled for the Windows Runtime (WinRT) doesn't allow `enum` types to be forward declared, similarly to when managed C++ code is compiled for the .Net Framework using the /clr compiler switch. This behavior is ensures that the size of an enumeration is always known and can be correctly projected to the WinRT type system. The compiler rejects code written in this way and  issues compiler error C2599 together with compiler error C3197.  

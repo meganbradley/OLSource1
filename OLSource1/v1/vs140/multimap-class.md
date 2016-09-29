@@ -143,11 +143,11 @@ template <
 |[operator=](#multimap__operator_eq)|Replaces the elements of a `multimap` with a copy of another `multimap`.|  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   
- The ( **key**, **value**) pairs are stored in a multimap as objects of type `pair`. The pair class requires the header <utility\>, which is automatically included by <map\>.  
+ The ( **key**, **value**) pairs are stored in a multimap as objects of type `pair`. The pair class requires the header \<utility>, which is automatically included by \<map>.  
   
 ##  <a name="multimap__allocator_type"></a>  multimap::allocator_type  
  A type that represents the allocator class for the multimap object.  
@@ -2217,7 +2217,7 @@ int main( )
 **The keys of the mapped elements are: 1 2.**  
 **The values of the mapped elements are: 10 20.**    
 ## See Also  
- [<map\> Members](assetId:///7e8f0bc2-6034-40f6-9d14-76d4cef86308)   
+ [\<map> Members](assetId:///7e8f0bc2-6034-40f6-9d14-76d4cef86308)   
  [Containers](../vs140/containers--modern-c---.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

@@ -28,10 +28,10 @@ terminate_handler get_terminate( );
 ```  
   
 ## Requirements  
- **Header:** <exception\>  
+ **Header:** \<exception>  
   
  **Namespace:** std  
   
 ## See Also  
- [<exception\>](../vs140/-exception-.md)   
+ [\<exception>](../vs140/-exception-.md)   
  [set_terminate](../vs140/set_terminate---exception--.md)

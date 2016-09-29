@@ -55,7 +55,7 @@ A protected virtual member function that tries to alter the current positions fo
  If `_Which` & **ios_base::in** is nonzero and the input buffer exists, the function alters the next position to read in the input buffer. If `_Which` & `ios_base::out` is nonzero and the output buffer exists, the function also sets the next position to write to match the next position to read. Otherwise, if `_Which` & `ios_base::out` is nonzero and the output buffer exists, the function alters the next position to write in the output buffer. Otherwise, the positioning operation fails. For a positioning operation to succeed, the resulting stream position must lie within the controlled sequence.  
   
 ## Requirements  
- **Header:** <strstream\>  
+ **Header:** \<strstream>  
   
  **Namespace:** std  
   

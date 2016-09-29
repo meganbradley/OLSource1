@@ -48,7 +48,7 @@ A protected function that stores `_Pbeg` in the beginning pointer and `_Pend` in
  A pointer to the end of the buffer.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

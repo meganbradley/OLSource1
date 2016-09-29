@@ -62,7 +62,7 @@ Identifies the assembly that should be executed when this [!INCLUDE[ndptecclick]
  `entryPoint` has the following elements.  
   
 ## assemblyIdentity  
- Required. The role of `assemblyIdentity` and its attributes is defined in [<assemblyIdentity\> Element (ClickOnce Reference)](../vs140/-assemblyidentity--element--clickonce-application-.md).  
+ Required. The role of `assemblyIdentity` and its attributes is defined in [\<assemblyIdentity> Element (ClickOnce Reference)](../vs140/-assemblyidentity--element--clickonce-application-.md).  
   
  The `processorArchitecture` attribute of this element and the `processorArchitecture` attribute defined in the `assemblyIdentity` elsewhere in the application manifest must match.  
   

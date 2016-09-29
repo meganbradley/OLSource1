@@ -29,13 +29,13 @@ A [!INCLUDE[ndptecclick](../vs140/includes/ndptecclick_md.md)] application manif
   
 |Element|Description|Attributes|  
 |-------------|-----------------|----------------|  
-|[<assembly\> Element (ClickOnce Reference)](../vs140/-assembly--element--clickonce-application-.md)|Required. Top-level element.|`manifestVersion`|  
-|[<assemblyIdentity\> Element (ClickOnce Reference)](../vs140/-assemblyidentity--element--clickonce-application-.md)|Required. Identifies the primary assembly of the [!INCLUDE[ndptecclick](../vs140/includes/ndptecclick_md.md)] application.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[<trustInfo\> Element](../vs140/-trustinfo--element--clickonce-application-.md)|Identifies the application security requirements.|None|  
-|[<entryPoint\> Element](../vs140/-entrypoint--element--clickonce-application-.md)|Required. Identifies the application code entry point.|`name`|  
-|[<dependency\> Element (ClickOnce Reference)](../vs140/-dependency--element--clickonce-application-.md)|Required. Identifies each dependency required for the application to run. Optionally identifies assemblies that need to be preinstalled.|None|  
-|[<file\> Element](../vs140/-file--element--clickonce-application-.md)|Optional. Identifies each nonassembly file that is used by the application. Can include Component Object Model (COM) isolation data associated with the file.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
-|[<fileAssociation\> Element](../vs140/-fileassociation--element--clickonce-application-.md)|Optional. Identifies a file extension to be associated with the application.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
+|[\<assembly> Element (ClickOnce Reference)](../vs140/-assembly--element--clickonce-application-.md)|Required. Top-level element.|`manifestVersion`|  
+|[\<assemblyIdentity> Element (ClickOnce Reference)](../vs140/-assemblyidentity--element--clickonce-application-.md)|Required. Identifies the primary assembly of the [!INCLUDE[ndptecclick](../vs140/includes/ndptecclick_md.md)] application.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[\<trustInfo> Element](../vs140/-trustinfo--element--clickonce-application-.md)|Identifies the application security requirements.|None|  
+|[\<entryPoint> Element](../vs140/-entrypoint--element--clickonce-application-.md)|Required. Identifies the application code entry point.|`name`|  
+|[\<dependency> Element (ClickOnce Reference)](../vs140/-dependency--element--clickonce-application-.md)|Required. Identifies each dependency required for the application to run. Optionally identifies assemblies that need to be preinstalled.|None|  
+|[\<file> Element](../vs140/-file--element--clickonce-application-.md)|Optional. Identifies each nonassembly file that is used by the application. Can include Component Object Model (COM) isolation data associated with the file.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
+|[\<fileAssociation> Element](../vs140/-fileassociation--element--clickonce-application-.md)|Optional. Identifies a file extension to be associated with the application.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## Remarks  
  The [!INCLUDE[ndptecclick](../vs140/includes/ndptecclick_md.md)] application manifest file identifies an application deployed using [!INCLUDE[ndptecclick](../vs140/includes/ndptecclick_md.md)]. For more information about [!INCLUDE[ndptecclick](../vs140/includes/ndptecclick_md.md)], see [ClickOnce Deployment Overview](../vs140/clickonce-security-and-deployment.md).  

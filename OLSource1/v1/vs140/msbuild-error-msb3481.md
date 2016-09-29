@@ -29,4 +29,4 @@ translation.priority.ht:
 -   Make sure that a valid certificate that matches your project's .pfx file is in your personal certificate store.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

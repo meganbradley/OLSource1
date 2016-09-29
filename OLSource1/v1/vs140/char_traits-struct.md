@@ -74,7 +74,7 @@ template <
 |[to_int_type](#char_traits__to_int_type)|Converts a `char_type` character to the corresponding `int_type` character and returns the result.|  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
@@ -324,7 +324,7 @@ int main( )
   
   **The source string is: abcd-1234-abcd**  
 **The destination string is: ABCD-1234**  
-**The result1 = _Copy_s(s1, char_traits<char\>::length(s1), s2, 4) is: ABCD-1234-abcd**    
+**The result1 = _Copy_s(s1, char_traits\<char>::length(s1), s2, 4) is: ABCD-1234-abcd**    
 ##  <a name="char_traits__eof"></a>  char_traits::eof  
  Returns the end-of-file (EOF) character.  
   
@@ -367,7 +367,7 @@ int main()
 ```  
   
   **char_type ch1 is 'x' and corresponds to int_type 120.**  
-**The eof marker for char_traits<char\> is: -1**  
+**The eof marker for char_traits\<char> is: -1**  
 **The eof marker for char_traits<wchar_t> is: 65535**    
 ##  <a name="char_traits__eq"></a>  char_traits::eq  
  Tests whether two `char_type` characters are equal.  
@@ -806,9 +806,9 @@ int main( )
   
   **The source string sFrom1 is: abcd-1234-abcd**  
 **The destination stringsTo1 is: ABCD-1234**  
-**The result1 = _Move_s(sTo1, char_traits<char\>::length(sTo1), sFrom1, 4) is: abcd-1234**  
+**The result1 = _Move_s(sTo1, char_traits\<char>::length(sTo1), sFrom1, 4) is: abcd-1234**  
 **The source/destination string sToFrom2 is: abcd-1234-ABCD**  
-**The result2 = _Move_s(sToFrom2, char_traits<char\>::length(sToFrom2), findc, 8) is: cd-1234-4-ABCD**    
+**The result2 = _Move_s(sToFrom2, char_traits\<char>::length(sToFrom2), findc, 8) is: cd-1234-4-ABCD**    
 ##  <a name="char_traits__not_eof"></a>  char_traits::not_eof  
  Tests whether a character is not the end-of-file (EOF) character or is the EOF.  
   

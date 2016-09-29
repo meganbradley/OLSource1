@@ -67,7 +67,7 @@ virtual const char *do_widen(
  See the example for [widen](../vs140/ctype--widen.md), which calls `do_widen`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

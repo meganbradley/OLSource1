@@ -43,7 +43,7 @@ basic_filebuf<Elem, Tr> *rdbuf( ) const
  See [basic_filebuf::close](../vs140/basic_filebuf--close.md) for an example that uses `rdbuf`.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

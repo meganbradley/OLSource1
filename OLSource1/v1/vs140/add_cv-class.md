@@ -65,7 +65,7 @@ int main()
   
 ```  
   
-  **add_cv_t<int\> == int**    
+  **add_cv_t\<int> == int**    
 ## Requirements  
  **Header:** <type_traits>  
   

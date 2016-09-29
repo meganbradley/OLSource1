@@ -81,11 +81,11 @@ template<class Type>
  The template classes define all their member operators as returning `_Left``.owner_before(``_Right``)`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
  [shared_ptr::owner_before](../vs140/shared_ptr--owner_before.md)   
  [weak_ptr::owner_before](../vs140/weak_ptr--owner_before.md)   
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

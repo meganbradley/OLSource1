@@ -75,7 +75,7 @@ int main( )
  **The list L is: ( 10 20 30 ).**  
 **The first element in the list L is: 10.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

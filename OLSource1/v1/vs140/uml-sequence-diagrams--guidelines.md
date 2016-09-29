@@ -174,7 +174,7 @@ In Visual Studio, you can draw a *sequence diagram* to show an interaction. An i
   
 -   Use the **Synchronous** tool to describe an interaction in which the sender waits for the receiver to return a response (3).  
   
-     A **<<return\>>** arrow will be shown at the end of the execution occurrence. It indicates return of control to the sender.  
+     A **<\<return>>** arrow will be shown at the end of the execution occurrence. It indicates return of control to the sender.  
   
 -   Use the **Asynchronous** tool to describe an interaction in which the sender can continue immediately without waiting for the receiver (4).  
   

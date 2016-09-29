@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;code&gt; (Visual C++)
-The <code\> tag gives you a way to indicate one or more lines as code.  
+The \<code> tag gives you a way to indicate one or more lines as code.  
   
 ## Syntax  
   
@@ -37,12 +37,12 @@ The <code\> tag gives you a way to indicate one or more lines as code.
  The text you want marked as code.  
   
 ## Remarks  
- Use [<c\>](../vs140/-c---visual-c---.md) to indicate a portion of text should be marked as code.  
+ Use [\<c>](../vs140/-c---visual-c---.md) to indicate a portion of text should be marked as code.  
   
  Compile with [/doc](../vs140/-doc--process-documentation-comments---c-c---.md) to process documentation comments to a file.  
   
 ## Example  
- See the [<example\>](../vs140/-example---visual-c---.md) topic for an example of how to use the <code\> tag.  
+ See the [\<example>](../vs140/-example---visual-c---.md) topic for an example of how to use the \<code> tag.  
   
 ## See Also  
  [XML Documentation](../vs140/xml-documentation--visual-c---.md)

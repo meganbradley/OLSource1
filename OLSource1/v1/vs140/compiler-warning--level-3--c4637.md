@@ -22,9 +22,9 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Compiler Warning (level 3) C4637
-XML document comment target: <include\> tag discarded.  reason  
+XML document comment target: \<include> tag discarded.  reason  
   
- The syntax of an [<include\>](../vs140/-include---visual-c---.md) tag was not correct.  
+ The syntax of an [\<include>](../vs140/-include---visual-c---.md) tag was not correct.  
   
  The following sample generates C4637:  
   

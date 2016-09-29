@@ -68,10 +68,10 @@ static const error_type error_badbrace, error_badrepeat, error_brace,
  `error_backref` -- the expression contained an invalid back reference  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_constants](../vs140/regex_constants-class.md)

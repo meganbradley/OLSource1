@@ -170,7 +170,7 @@ int main( ) {
  **to those in v2 under the binary predicate twice**  
  **and the first one begins at position 2.**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

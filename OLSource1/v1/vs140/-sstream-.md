@@ -91,7 +91,7 @@ template<class CharType, class Traits, class Allocator>
 |`_Right`|Reference to an `sstream` object.|  
   
 ## Remarks  
- Objects of type `char *` can use the functionality in [<strstream\>](../vs140/-strstream-.md) for streaming. However, `<strstream>` is deprecated and the use of `<sstream>` is encouraged.  
+ Objects of type `char *` can use the functionality in [\<strstream>](../vs140/-strstream-.md) for streaming. However, `<strstream>` is deprecated and the use of `<sstream>` is encouraged.  
   
 ### Typedefs  
   
@@ -123,7 +123,7 @@ template<class CharType, class Traits, class Allocator>
   
 ## Requirements  
   
--   **Header:** <sstream\>  
+-   **Header:** \<sstream>  
   
 -   **Namespace:** std  
   

@@ -43,7 +43,7 @@ type *egptr( ) const;
  A pointer just past the end of the input buffer.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

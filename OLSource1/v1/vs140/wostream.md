@@ -49,7 +49,7 @@ t> > wostream;
  The type is a synonym for template class [basic_ostream](../vs140/basic_ostream-class.md), specialized for elements of type `wchar_t` with default character traits.  
   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   

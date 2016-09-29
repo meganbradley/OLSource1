@@ -64,7 +64,7 @@ int main()
  **(bool)sp0 == false**  
 **(bool)sp1 == true**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

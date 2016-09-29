@@ -51,7 +51,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
  See the example for [rend](../vs140/map--rend.md) for an example of how to declare and use `const_reverse_iterator`.  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

@@ -41,10 +41,10 @@ Retrieves the locally unique identifiers (LUIDs) and attribute flags from the `C
   
 #### Parameters  
  `pPrivileges`  
- Pointer to an array of [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261) objects. **CLUIDArray** is a typedef defined as **CAtlArray<LUID\> CLUIDArray**.  
+ Pointer to an array of [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261) objects. **CLUIDArray** is a typedef defined as **CAtlArray\<LUID> CLUIDArray**.  
   
  `pAttributes`  
- Pointer to an array of DWORD objects. If this parameter is omitted or NULL, the attributes are not retrieved. **CAttributes** is a typedef defined as **CAtlArray <DWORD\> CAttributes**.  
+ Pointer to an array of DWORD objects. If this parameter is omitted or NULL, the attributes are not retrieved. **CAttributes** is a typedef defined as **CAtlArray \<DWORD> CAttributes**.  
   
 ## Remarks  
  This method will enumerate all of the privileges contained in the `CTokenPrivileges` access token object and place the individual LUIDs and (optionally) the attribute flags into array objects.  

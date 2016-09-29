@@ -39,9 +39,9 @@ The debugger stopped execution of code on the Web site. This caused Internet Inf
   
      IIS Manager opens.  
   
-3.  In the **Connections** pane, expand the <computer name\> node if necessary.  
+3.  In the **Connections** pane, expand the \<computer name> node if necessary.  
   
-4.  Under the <computer name\> node, click **Application Pools**.  
+4.  Under the \<computer name> node, click **Application Pools**.  
   
 5.  In the **Application Pools** list, right-click the name of the pool your application runs in, and then click **Advanced Settings**.  
   

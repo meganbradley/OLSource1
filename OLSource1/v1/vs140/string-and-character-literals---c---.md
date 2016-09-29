@@ -298,7 +298,7 @@ u32string str5{ U"hello"s };
 u32string str6{ UR"(She said "hello.")"s };  
 ```  
   
- std::string literals are defined in the namespace `std::literals::string_literals` in the <string\> header file. Because `std::literals::string_literals`, and `std::literals` are both declared as [inline namespaces](../vs140/namespaces--c---.md), `std::literals::string_literals` is automatically treated as if it belonged directly in namespace `std`.  
+ std::string literals are defined in the namespace `std::literals::string_literals` in the \<string> header file. Because `std::literals::string_literals`, and `std::literals` are both declared as [inline namespaces](../vs140/namespaces--c---.md), `std::literals::string_literals` is automatically treated as if it belonged directly in namespace `std`.  
   
 ### Size of String Literals  
  For ANSI char\* strings and other single-byte encodings (not UTF-8), the size (in bytes) of a string literal is the number of characters plus 1 for the terminating null character. For all other string types, the size is not strictly related to the number of characters. UTF-8 uses up to four char elements to encode some *code units*, and char16_t or wchar_t encoded as UTF-16 may use two elements (for a total of four bytes) to encode a single *code unit*.   This example shows the size of a wide string literal in bytes:  

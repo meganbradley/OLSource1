@@ -107,7 +107,7 @@ int main( )
 **After swapping with c3, deque c1 is: 100**  
 **After swapping with c2, deque c1 is: 1 2 3**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

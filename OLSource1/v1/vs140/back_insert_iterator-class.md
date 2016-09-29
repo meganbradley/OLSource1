@@ -62,7 +62,7 @@ template <class             Container> class back_insert_iterator;
 |[operator=](#back_insert_iterator__operator_eq)|Assignment operator used to implement the output iterator expression *                                        `i` =                                         `x` for a back insertion.|  
   
 ## Requirements  
- **Header**: <iterator\>  
+ **Header**: \<iterator>  
   
  **Namespace:** std  
   
@@ -404,6 +404,6 @@ int main( )
   **The vector vec is: ( 1 2 3 ).**  
 **The last element in the vector vec is: 3.**    
 ## See Also  
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

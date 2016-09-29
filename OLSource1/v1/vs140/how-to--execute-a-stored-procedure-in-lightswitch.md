@@ -229,7 +229,7 @@ END;
   
 2.  On the **Access Control** tab, choose the type of authentication to use if it’s not already specified.  
   
-3.  Choose the **<Add New Permission\>** link, and then and enter `UpdatePersonalInfo`.  
+3.  Choose the **\<Add New Permission>** link, and then and enter `UpdatePersonalInfo`.  
   
     > [!NOTE]
     >  You can substitute a name that describes what your stored procedure does.  

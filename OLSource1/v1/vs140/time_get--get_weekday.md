@@ -106,7 +106,7 @@ int main( )
  **time_get::get_time(mercredi) =**  
 **tm_wday: 3**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

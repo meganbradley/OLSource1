@@ -43,7 +43,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
  See the example for [rend](../vs140/multiset--rend.md) for an example of how to declare and use the `const_reverse_iterator`.  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

@@ -83,7 +83,7 @@ template<
   
  You should derive the class implementing the tear-off from `CComTearOffObjectBase` and from whichever interfaces you want your tear-off object to support. `CComTearOffObjectBase` is templatized on the owner class and the thread model. The owner class is the class of the object for which a tear-off is being implemented. If you do not specify a thread model, the default thread model is used.  
   
- You should create a COM map for your tear-off class. When ATL instantiates the tear-off, it will create **CComTearOffObject<CYourTearOffClass\>** or **CComCachedTearOffObject<CYourTearOffClass\>**.  
+ You should create a COM map for your tear-off class. When ATL instantiates the tear-off, it will create **CComTearOffObject\<CYourTearOffClass>** or **CComCachedTearOffObject\<CYourTearOffClass>**.  
   
  For example, in the BEEPER sample, the `CBeeper2` class is the tear-off class and the `CBeeper` class is the owner class:  
   
@@ -122,7 +122,7 @@ CComTearOffObject(
   
 ### Parameters  
  `pv`  
- [in] Pointer that will be converted to a pointer to a **CComObject<Owner\>** object.  
+ [in] Pointer that will be converted to a pointer to a **CComObject\<Owner>** object.  
   
 ### Remarks  
  Increments the owner's reference count by one.  

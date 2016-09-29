@@ -100,7 +100,7 @@ The values of the mapped elements are: 10 20 30.
 ```  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

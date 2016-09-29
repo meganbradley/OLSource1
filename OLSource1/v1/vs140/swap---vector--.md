@@ -49,7 +49,7 @@ void swap(
  See the code example for member function [vector::swap](../vs140/vector--swap.md) for an example that uses the template version of `swap`.  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

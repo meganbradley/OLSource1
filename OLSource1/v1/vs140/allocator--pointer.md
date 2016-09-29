@@ -79,7 +79,7 @@ int main( )
  **( 3 6 9 12 15 18 21 ).**  
 **The integer addressed by v1Ptr has a value of: \*v1Ptr = 12.**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

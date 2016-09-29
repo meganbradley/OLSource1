@@ -76,10 +76,10 @@ int main()
   
  **sp0 == 3f3040 (varies)**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
- [<memory\> Members](assetId:///0d39e979-01a0-4d3e-a1ed-af6bb6957c29)   
+ [\<memory> Members](assetId:///0d39e979-01a0-4d3e-a1ed-af6bb6957c29)   
  [shared_ptr](../vs140/shared_ptr-class.md)

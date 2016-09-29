@@ -123,7 +123,7 @@ Resorted vector v1 = ( 29358 26500 19169 18467 15724 11478 6334 41 )
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

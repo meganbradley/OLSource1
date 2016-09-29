@@ -40,6 +40,6 @@ In [!INCLUDE[vsPreShort](../vs140/includes/vspreshort_md.md)] and [!INCLUDE[vsUl
   
     -   Select the rule set that you want to use.  
   
-    -   Select **<Browse\>** to specify an existing custom rule set that is not in the list.  
+    -   Select **\<Browse>** to specify an existing custom rule set that is not in the list.  
   
     -   Define a custom rule set. For more information, see [Creating Custom Rule Sets](../vs140/creating-custom-code-analysis-rule-sets.md).

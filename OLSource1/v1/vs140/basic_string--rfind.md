@@ -196,7 +196,7 @@ int main( )
 **The substring 'clear' was not found in str4 before the 15th position.**  
 **The index of the 1st element of 'clear' in str4 is: 17**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

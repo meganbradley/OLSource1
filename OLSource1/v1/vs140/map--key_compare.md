@@ -45,7 +45,7 @@ typedef Traits key_compare;
  See example for [key_comp](../vs140/map--key_comp.md) for an example of how to declare and use `key_compare`.  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

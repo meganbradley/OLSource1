@@ -56,7 +56,7 @@ explicit num_put(
  The constructor initializes its base object with **locale::**[facet](../vs140/facet-class.md)(_*Refs*).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

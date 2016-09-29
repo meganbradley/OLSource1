@@ -24,9 +24,9 @@ translation.priority.ht:
 # NumberOfParentCategoriesToRollUp (Visual Studio Templates)
 Specifies the number of parent categories that will display the template in the **New Project** dialog box.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <NumberOfParentCategoriesToRollUp\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<NumberOfParentCategoriesToRollUp>  
   
 ## Syntax  
   

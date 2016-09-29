@@ -30,6 +30,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # discard_block::operator()
-This class is deprecated. See [<random\>](../vs140/-random-.md).  
+This class is deprecated. See [\<random>](../vs140/-random-.md).  
   
 ## Syntax

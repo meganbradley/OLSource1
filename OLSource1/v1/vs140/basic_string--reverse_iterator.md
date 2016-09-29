@@ -43,7 +43,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
  See the example for [rbegin](../vs140/basic_string--rbegin.md) for an example of how to declare and use `reverse_iterator`.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

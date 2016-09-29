@@ -73,9 +73,9 @@ int main()
   
 ```  
   
-  **is_integral<trivial\> == false**  
-**is_integral<int\> == true**  
-**is_integral<float\> == false**    
+  **is_integral\<trivial> == false**  
+**is_integral\<int> == true**  
+**is_integral\<float> == false**    
 ## Requirements  
  **Header:** <type_traits>  
   

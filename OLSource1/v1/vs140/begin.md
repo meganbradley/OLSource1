@@ -122,12 +122,12 @@ error C2228: left of '.begin' must have class/struct/union
 ```  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   
 ## See Also  
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [cbegin](../vs140/cbegin.md)   
  [cend](../vs140/cend.md)   
  [end](../vs140/end.md)

@@ -121,7 +121,7 @@ Sorted vector v1 = ( 41 6334 11478 15724 18467 19169 26500 )
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

@@ -75,10 +75,10 @@ int main()
   
 ```  
   
-  **is_pointer<trivial\> == false**  
+  **is_pointer\<trivial> == false**  
 **is_pointer<int trivial::\*> == false**  
 **is_pointer<trivial \*> == true**  
-**is_pointer<int\> == false**  
+**is_pointer\<int> == false**  
 **is_pointer<int \*> == true**    
 ## Requirements  
  **Header:** <type_traits>  

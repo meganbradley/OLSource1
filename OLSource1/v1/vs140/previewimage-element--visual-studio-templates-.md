@@ -22,9 +22,9 @@ translation.priority.ht:
 # PreviewImage Element (Visual Studio Templates)
 Specifies the preview image, as a file name, for the preview image that will appear in either the **New Project** or **Add New Item** dialog box.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <PreviewImage\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<PreviewImage>  
   
 ## Syntax  
   

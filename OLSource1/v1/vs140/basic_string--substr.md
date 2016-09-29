@@ -81,7 +81,7 @@ int main( )
  **Heterological paradoxes are persistent.**  
  **which is the entire original string.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

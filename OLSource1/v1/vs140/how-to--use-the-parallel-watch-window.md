@@ -36,7 +36,7 @@ In the Parallel Watch window, you can simultaneously display the values that one
     > [!TIP]
     >  You must open the **Parallel Task** window to display the task information in the **Parallel Watch** window.  
   
--   The **<Add Watch\>** column, in which you can enter expressions to watch.  
+-   The **\<Add Watch>** column, in which you can enter expressions to watch.  
   
  [!INCLUDE[note_settings_general](../vs140/includes/note_settings_general_md.md)]  
   
@@ -50,7 +50,7 @@ In the Parallel Watch window, you can simultaneously display the values that one
   
 ### To add a watch expression  
   
--   Select **<Add Watch\>** and then specify a watch expression.  
+-   Select **\<Add Watch>** and then specify a watch expression.  
   
 ### To flag or unflag a thread  
   

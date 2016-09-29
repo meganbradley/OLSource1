@@ -66,7 +66,7 @@ translation.priority.ht:
   
 -   References, pointers, and iterators that designate elements of the controlled sequences being swapped remain valid.  
   
- An object of a container class defined by STL allocates and frees storage for the sequence it controls through a stored object of type `Alloc`, which is typically a template parameter. Such an allocator object must have the same external interface as an object of class **allocator<Ty\>**. In particular, `Alloc` must be the same type as **Alloc::rebind<value_type>::other**  
+ An object of a container class defined by STL allocates and frees storage for the sequence it controls through a stored object of type `Alloc`, which is typically a template parameter. Such an allocator object must have the same external interface as an object of class **allocator\<Ty>**. In particular, `Alloc` must be the same type as **Alloc::rebind<value_type>::other**  
   
  For *all* container classes defined by STL, the member function **Alloc get_allocator const;** returns a copy of the stored allocator object. Note that the stored allocator object is *not* copied when the container object is assigned. All constructors initialize the value stored in **allocator**, to `Alloc` if the constructor contains no allocator parameter.  
   
@@ -91,7 +91,7 @@ translation.priority.ht:
 -   Type **Alloc::pointer** does not need to be the same as **Ty \***. (A pointer can be a class.)  
   
 ## Requirements  
- **Header**: <sample container\>  
+ **Header**: \<sample container>  
   
 ## See Also  
- [<sample container\>](../vs140/-sample-container-.md)
+ [\<sample container>](../vs140/-sample-container-.md)

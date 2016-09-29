@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;type1&gt; &#39;&lt;membername&gt;&#39; shadows an overloadable member declared in the base &lt;type2&gt; &#39;&lt;classname&gt;&#39;
-<type1\> '<membername\>' shadows an overloadable member declared in the base <type2\> '<classname\>. If you want to overload the base method, this method must be declared 'Overloads'.  
+\<type1> '\<membername>' shadows an overloadable member declared in the base \<type2> '\<classname>. If you want to overload the base method, this method must be declared 'Overloads'.  
   
  A derived class defines a `Function` or `Sub` procedure or a `Property` with the same name as a procedure or property defined in the base class. Because procedures and properties are overloadable members, the derived class can either overload or shadow the base class member. However, the derived class code does not specify either [Overloads](../vs140/overloads--visual-basic-.md) or [Shadows](../vs140/shadows--visual-basic-.md) in the declaration. In the absence of either keyword, the compiler assumes `Shadows`.  
   

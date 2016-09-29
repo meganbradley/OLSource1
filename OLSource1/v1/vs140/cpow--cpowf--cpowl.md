@@ -78,7 +78,7 @@ _Lcomplex cpowl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`cpow`,               `cpowf`, `cpowl`|<complex.h>|<ccomplex\>|  
+|`cpow`,               `cpowf`, `cpowl`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

@@ -24,7 +24,7 @@ This dialog box will appear if the settings, for projects opened in the IDE, are
  Provides information regarding the complication such as the invalid path or file name. To resolve errors, remove or replace any invalid references from the property pages of your project. Save your project, and then reload it in the IDE.  
   
  **Do not show this dialog again this session**  
- When selected, the Project Load Warning for <Projectname\> Dialog Box will no longer appear until the next time you open the IDE.  
+ When selected, the Project Load Warning for \<Projectname> Dialog Box will no longer appear until the next time you open the IDE.  
   
 ## See Also  
  [Property Inheritance](../vs140/property-inheritance.md)

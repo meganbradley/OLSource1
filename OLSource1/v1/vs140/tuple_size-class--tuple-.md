@@ -89,11 +89,11 @@ Output:
 ```  
   
 ## Requirements  
- **Header:** <tuple\>  
+ **Header:** \<tuple>  
   
  **Namespace:** std  
   
 ## See Also  
- [<tuple\>](../vs140/-tuple-.md)   
+ [\<tuple>](../vs140/-tuple-.md)   
  [tuple](../vs140/tuple-class.md)   
  [tuple_element](../vs140/tuple_element-class--tuple-.md)

@@ -102,7 +102,7 @@ int main( )
 **After the +2 offset, the iterator rVPOS1 now points**  
  **to the third element in the reversed sequence: 6.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

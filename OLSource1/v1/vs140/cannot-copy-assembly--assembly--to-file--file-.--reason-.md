@@ -16,4 +16,4 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Cannot copy assembly &#39;assembly&#39; to file &#39;file&#39;. &lt;reason&gt;
-For more information, see [The file 'filename' cannot be copied to the run directory. <reason\>](../vs140/the-file--filename--cannot-be-copied-to-the-run-directory.--reason-.md).
+For more information, see [The file 'filename' cannot be copied to the run directory. \<reason>](../vs140/the-file--filename--cannot-be-copied-to-the-run-directory.--reason-.md).

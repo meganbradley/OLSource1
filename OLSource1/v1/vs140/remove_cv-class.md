@@ -66,7 +66,7 @@ int main()
   
 ```  
   
-  **remove_cv_t<const volatile int\> == int**    
+  **remove_cv_t\<const volatile int> == int**    
 ## Requirements  
  **Header:** <type_traits>  
   

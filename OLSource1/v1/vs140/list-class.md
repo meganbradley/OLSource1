@@ -48,7 +48,7 @@ template <    class  Type ,     class  Allocator= allocator< Type >  > class lis
   
  List reallocation occurs when a member function must insert or erase elements of the list. In all such cases, only iterators or references that point at erased portions of the controlled sequence become invalid.  
   
- Include the STL standard header <list\> to define the [container](../vs140/stl-containers.md) template class list and several supporting templates.  
+ Include the STL standard header \<list> to define the [container](../vs140/stl-containers.md) template class list and several supporting templates.  
   
 ### Constructors  
   
@@ -119,7 +119,7 @@ template <    class  Type ,     class  Allocator= allocator< Type >  > class lis
 |[operator=](#list__operator_eq)|Replaces the elements of the list with a copy of another list.|  
   
 ## Requirements  
- **Header**: <list\>  
+ **Header**: \<list>  
   
 ##  <a name="list__allocator_type"></a>  list::allocator_type  
  A type that represents the allocator class for a list object.  
@@ -2395,6 +2395,6 @@ int main( )
   
  **44**    
 ## See Also  
- [<list\>](../vs140/-list-.md)   
+ [\<list>](../vs140/-list-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

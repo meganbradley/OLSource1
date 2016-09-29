@@ -28,8 +28,8 @@ translation.priority.ht:
 # ItemDefinitionGroup Element (MSBuild)
 The `ItemDefinitionGroup` element lets you define a set of Item Definitions, which are metadata values that are applied to all items in the project, by default. ItemDefinitionGroup supersedes the need to use the [CreateItem Task](../vs140/createitem-task.md) and the [CreateProperty Task](../vs140/createproperty-task.md). For more information, see [Item Definitions](../vs140/item-definitions.md).  
   
- <Project\>  
- <ItemDefinitionGroup\>  
+ \<Project>  
+ \<ItemDefinitionGroup>  
   
 ## Syntax  
   

@@ -146,7 +146,7 @@ The in place output partial_sum list L1 is:
 ```  
   
 ## Requirements  
- **Header:** <numeric\>  
+ **Header:** \<numeric>  
   
  **Namespace:** std  
   

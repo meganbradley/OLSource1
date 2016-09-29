@@ -55,11 +55,11 @@ float stof(
  The function converts the sequence of elements in `_Str` to a value `_Val` of type `float` as if by calling `strtof(_Str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If `_Str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `_Idx` is not a null pointer, the function stores `*_Eptr - _Str.c_str()` in `*_Idx` and returns `_Val`.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
 ## See Also  
  [string](../vs140/string--c---stl--string--.md)   
  [wstring](../vs140/wstring.md)   
- [<string\>](../vs140/-string-.md)
+ [\<string>](../vs140/-string-.md)

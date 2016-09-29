@@ -74,7 +74,7 @@ template <    class  Elem ,     class  Tr  = char _ traits< Elem >,     class  A
 |[operator=](#basic_istringstream__operator_eq)|Assigns the values to this `basic_istringstream` object from the object parameter.|  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

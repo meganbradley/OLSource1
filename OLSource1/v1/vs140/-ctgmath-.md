@@ -18,7 +18,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;ctgmath&gt;
-In effect, includes the Standard C++ library headers <ccomplex\> and <cmath\>, which provide type-generic math macros equivalent to <tgmath.h>.  
+In effect, includes the Standard C++ library headers \<ccomplex> and \<cmath>, which provide type-generic math macros equivalent to <tgmath.h>.  
   
 ## Syntax  
   
@@ -28,13 +28,13 @@ In effect, includes the Standard C++ library headers <ccomplex\> and <cmath\>, w
 ```  
   
 ## Remarks  
- The functionality of the Standard C library header <tgmath.h> is provided by overloads in <ccomplex\> and <cmath\>.  
+ The functionality of the Standard C library header <tgmath.h> is provided by overloads in \<ccomplex> and \<cmath>.  
   
  Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.  
   
 ## See Also  
- [<ccomplex\>](../vs140/-ccomplex-.md)   
- [<cmath\>](../vs140/-cmath-.md)   
+ [\<ccomplex>](../vs140/-ccomplex-.md)   
+ [\<cmath>](../vs140/-cmath-.md)   
  [Header Files](../vs140/c---standard-library-header-files.md)   
  [Standard C++ Library Overview](../vs140/c---standard-library-overview.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

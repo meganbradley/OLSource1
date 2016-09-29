@@ -128,7 +128,7 @@ int main()
 |[C3531](../vs140/compiler-error-c3531.md)|A symbol that is declared with the `auto` keyword must have an initializer.|  
 |[C3532](../vs140/compiler-error-c3532.md)|You incorrectly used the `auto` keyword to declare a type. For example, you declared a method return type or an array.|  
 |[C3533](../vs140/compiler-error-c3533.md), [C3539](../vs140/compiler-error-c3539.md)|A parameter or template argument cannot be declared with the `auto` keyword.|  
-|[C3534](../vs140/compiler-error-c3534.md)|A symbol that is declared with the `auto` keyword in a `new` expression must have an initializer. For more information, see [operator new (<new\>)](../vs140/operator-new---new--.md).|  
+|[C3534](../vs140/compiler-error-c3534.md)|A symbol that is declared with the `auto` keyword in a `new` expression must have an initializer. For more information, see [operator new (\<new>)](../vs140/operator-new---new--.md).|  
 |[C3535](../vs140/compiler-error-c3535.md)|A method or template parameter cannot be declared with the `auto` keyword.|  
 |[C3536](../vs140/compiler-error-c3536.md)|A symbol cannot be used before it is initialized. In practice, this means that a variable cannot be used to initialize itself.|  
 |[C3537](../vs140/compiler-error-c3537.md)|You cannot cast to a type that is declared with the `auto` keyword.|  
@@ -233,7 +233,7 @@ int main()
  [/Zc:auto (Deduce Variable Type)](../vs140/-zc-auto--deduce-variable-type-.md)   
  [sizeof Operator](../vs140/sizeof-operator.md)   
  [typeid](../vs140/typeid---c---component-extensions-.md)   
- [operator new (<new\>)](../vs140/operator-new---new--.md)   
+ [operator new (\<new>)](../vs140/operator-new---new--.md)   
  [Declarations](../vs140/declarations.md)   
  [Examples of Lambda Expressions](../vs140/examples-of-lambda-expressions.md)   
  [Initializers](../vs140/initializers.md)   

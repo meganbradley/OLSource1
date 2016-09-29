@@ -43,7 +43,7 @@ translation.priority.ht:
   
     -   `defaultIcon`: An icon to use for this file type. The icon must be added as a file resource in the application manifest. For more information, see [How To: Include a Data File in a ClickOnce Application](../vs140/how-to--include-a-data-file-in-a-clickonce-application.md).  
   
-     For an example of the `file` and `fileAssociation` elements, see [<fileAssociation\> Element](../vs140/-fileassociation--element--clickonce-application-.md).  
+     For an example of the `file` and `fileAssociation` elements, see [\<fileAssociation> Element](../vs140/-fileassociation--element--clickonce-application-.md).  
   
 5.  If you want to associate more than one file type with the application, add additional `fileAssociation` elements. Note that the `progid` attribute should be different for each.  
   
@@ -54,6 +54,6 @@ translation.priority.ht:
      For more information, see [Manifest Generation and Editing Tool (Mage.exe)](assetId:///77dfe576-2962-407e-af13-82255df725a1)  
   
 ## See Also  
- [<fileAssociation\> Element](../vs140/-fileassociation--element--clickonce-application-.md)   
+ [\<fileAssociation> Element](../vs140/-fileassociation--element--clickonce-application-.md)   
  [ClickOnce Application Manifest](../vs140/clickonce-application-manifest.md)   
  [Manifest Generation and Editing Tool (Mage.exe)](assetId:///77dfe576-2962-407e-af13-82255df725a1)

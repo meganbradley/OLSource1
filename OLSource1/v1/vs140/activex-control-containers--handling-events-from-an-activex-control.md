@@ -66,7 +66,7 @@ This article discusses using the Properties window to install event handlers for
   
 4.  Select the event you want the dialog class to handle. For this example, select **Click**.  
   
-5.  From the drop-down list box on the right, select **<Add\> ClickCircctrl1**.  
+5.  From the drop-down list box on the right, select **\<Add> ClickCircctrl1**.  
   
 6.  Double-click the new handler function from Class View to jump to the event handler code in the implementation (.CPP) file of `CContainerDlg`.  
   

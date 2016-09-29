@@ -41,5 +41,5 @@ template <class E>
  An application typically does not require the `make_exception_ptr` function, and we discourage its use.  
   
 ## See Also  
- [<exception\>](../vs140/-exception-.md)   
+ [\<exception>](../vs140/-exception-.md)   
  [Transporting Exceptions Between Threads](../vs140/transporting-exceptions-between-threads.md)

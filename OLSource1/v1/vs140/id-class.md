@@ -47,7 +47,7 @@ private:
  The member class describes the static member object required by each unique locale facet. Note that you cannot copy or assign an object of class **id**.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

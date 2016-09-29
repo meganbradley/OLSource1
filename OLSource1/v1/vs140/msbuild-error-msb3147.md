@@ -20,9 +20,9 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3147
-**MSB3147: Could not find required file '<file\>' in '<path\>'.**  
+**MSB3147: Could not find required file '\<file>' in '\<path>'.**  
   
  This error occurs when the bootstrapper cannot find setup.bin on the disk.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

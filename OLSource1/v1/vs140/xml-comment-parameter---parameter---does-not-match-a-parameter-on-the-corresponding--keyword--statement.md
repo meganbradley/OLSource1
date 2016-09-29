@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # XML comment parameter &#39;&lt;parameter&gt;&#39; does not match a parameter on the corresponding &lt;keyword&gt; statement
-XML comment parameter <parameter\> does not match a parameter on the corresponding <keyword\> statement. XML comment will be ignored.  
+XML comment parameter \<parameter> does not match a parameter on the corresponding \<keyword> statement. XML comment will be ignored.  
   
  An XML comment tag was specified for some but not all parameters in a method.  
   

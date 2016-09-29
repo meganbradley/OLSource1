@@ -152,8 +152,8 @@ int main()
 }  
 ```  
   
- **(10,23): Error C2111 : <some error text\>**  
- **(Related to symbol '<symbol\>' defined on line 5).**   
+ **(10,23): Error C2111 : \<some error text>**  
+ **(Related to symbol '\<symbol>' defined on line 5).**   
 ## .NET Framework Equivalent  
  [System::Console::Write](https://msdn.microsoft.com/en-us/library/system.console.write.aspx)  
   

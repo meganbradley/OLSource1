@@ -114,7 +114,7 @@ int main( )
 **The stack s1 is greater than or equal to the stack s3.**  
 **The stack s1 from the top down is: ( 8 6 4 2 ).**   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

@@ -44,7 +44,7 @@ typedef Type mapped_type;
  See the example for [value_type](../vs140/multimap--value_type.md) for an example of how to declare and use `key_type`.  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

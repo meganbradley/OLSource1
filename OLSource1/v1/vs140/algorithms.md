@@ -55,7 +55,7 @@ Algorithms are a fundamental part of the Standard Template Library. Algorithms d
   
  A sequence of elements designated by iterators in the range [`First`, `Last`) is a heap ordered by **operator<** if, for each *N* in the range [1, `Last` - `First`) the predicate !(\*`First` < \*(`First` + *N*)) is true. (The first element is the largest.) Its internal structure is otherwise known only to the template functions [make_heap](../vs140/make_heap.md), [pop_heap](../vs140/pop_heap.md), and [push_heap](../vs140/push_heap.md). As with an ordered sequence, the predicate function **operator<**, or any replacement for it, must not alter either of its operands, and it must impose a strict weak ordering on the operands it compares. It must yield the same `bool` result every time it is evaluated, and it must yield the same result if a copy of either operand is substituted for the operand.  
   
- The STL algorithms are located in the [<algorithm\>](../vs140/-algorithm-.md) and [<numeric\>](../vs140/-numeric-.md) header files.  
+ The STL algorithms are located in the [\<algorithm>](../vs140/-algorithm-.md) and [\<numeric>](../vs140/-numeric-.md) header files.  
   
 ## See Also  
  [Standard Template Library](../vs140/standard-template-library.md)   

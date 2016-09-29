@@ -20,9 +20,9 @@ This topic describes the structure of the DslDefinition.dsl file in the Dsl proj
  Examples in this topic are taken from the Component Diagram solution template. To see an example, create a domain-specific language solution that is based on the Component Models solution template. After you create the solution, the DslDefinition.dsl file appears in the Domain-Specific Language Designer. Close the file, right-click it in **Solution Explorer**, point to **Open With**, click **XML Editor**, and then click **OK**.  
   
 ## Sections of the DslDefinition.dsl File  
- The root element is <Dsl\>, and its attributes identify the name of the domain-specific language, the namespace, and major and minor version numbers for versioning. The `DslDefinitionModel` schema defines the content and structure for a valid DslDefinition.dsl file.  
+ The root element is \<Dsl>, and its attributes identify the name of the domain-specific language, the namespace, and major and minor version numbers for versioning. The `DslDefinitionModel` schema defines the content and structure for a valid DslDefinition.dsl file.  
   
- The child elements of the <Dsl\> root element are as follows:  
+ The child elements of the \<Dsl> root element are as follows:  
   
  Classes  
  This section defines each domain class that generates a class in the generated code.  

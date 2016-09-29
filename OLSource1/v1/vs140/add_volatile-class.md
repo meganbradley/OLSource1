@@ -65,7 +65,7 @@ int main()
   
 ```  
   
-  **add_volatile<int\> == int**    
+  **add_volatile\<int> == int**    
 ## Requirements  
  **Header:** <type_traits>  
   

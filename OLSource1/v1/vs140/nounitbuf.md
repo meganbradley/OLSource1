@@ -52,7 +52,7 @@ Causes output to be buffered and processed on when the buffer is full.
  The manipulator effectively calls `_Str.`[unsetf](../vs140/ios_base--unsetf.md)(`ios_base::unitbuf`), and then returns `_Str`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

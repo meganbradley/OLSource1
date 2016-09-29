@@ -36,12 +36,12 @@ typedef match_results<wstring::const_iterator> wsmatch;
  The type describes a specialization of template class [match_results](../vs140/match_results-class.md) for iterators of type `wstring::const_iterator`.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [match_results](../vs140/match_results-class.md)   
  [cmatch](../vs140/cmatch-typedef.md)   
  [smatch](../vs140/smatch-typedef.md)   

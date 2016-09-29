@@ -54,6 +54,6 @@ Ty atomic<Ty>::fetch_xor (
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic Structure](../vs140/atomic-structure.md)   
  [atomic_fetch_xor_explicit](../vs140/atomic_fetch_xor_explicit-function.md)

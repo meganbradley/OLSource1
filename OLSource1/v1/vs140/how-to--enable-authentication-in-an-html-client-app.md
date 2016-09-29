@@ -53,7 +53,7 @@ In LightSwitch, you can make your HTML client app more secure by preventing unau
      The application will now require users to provide credentials in order to access the application.  
   
 ##  <a name="perm"></a> Permissions  
- The next step in securing your HTML client application is to create permissions. First, define a permission object in the **Application Designer**. Then, you can reference the object in code, in one of the `Can` methods such as *<Entity\>*`CanUpdate`. Code in these methods typically checks whether the current user or role has the permission, and then allows the operation only if permission is validated.  
+ The next step in securing your HTML client application is to create permissions. First, define a permission object in the **Application Designer**. Then, you can reference the object in code, in one of the `Can` methods such as *\<Entity>*`CanUpdate`. Code in these methods typically checks whether the current user or role has the permission, and then allows the operation only if permission is validated.  
   
  To test your code, run the application as both a user who has the permission and as a user who does not.  By setting debug permissions, you can impersonate a user when you test or debug the application.  
   
@@ -63,7 +63,7 @@ In LightSwitch, you can make your HTML client app more secure by preventing unau
   
 2.  In the **Application Designer**, choose the **Access Control** tab.  
   
-3.  In the **Define permissions or select permissions to use for debugging** grid, in the **Name** column, choose **<Add New Permission\>**, and then enter a programmatic name for the permission.  
+3.  In the **Define permissions or select permissions to use for debugging** grid, in the **Name** column, choose **\<Add New Permission>**, and then enter a programmatic name for the permission.  
   
      The name must begin with an alphabetical character, and it can only contain alphabetical or numeric characters, or underscores.  
   

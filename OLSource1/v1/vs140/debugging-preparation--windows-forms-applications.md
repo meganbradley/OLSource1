@@ -32,7 +32,7 @@ translation.priority.ht:
 # Debugging Preparation: Windows Forms Applications
 The Windows Forms project template creates a Windows Forms application. Debugging this type of application in [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] is straightforward. For more information, see [Creating a Windows Application Project](assetId:///b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
- When you create a Windows Forms project with the project template, [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] automatically creates required settings for the Debug and Release configurations. If necessary, you can change these settings. These settings can be changed in the **<project name\> Property Pages** dialog box (**My Project** in Visual Basic).  
+ When you create a Windows Forms project with the project template, [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] automatically creates required settings for the Debug and Release configurations. If necessary, you can change these settings. These settings can be changed in the **\<project name> Property Pages** dialog box (**My Project** in Visual Basic).  
   
  For more information, see [Managed Debugging: Recommended Property Settings](../vs140/managed-debugging--recommended-property-settings.md).  
   

@@ -59,7 +59,7 @@ class CBookmark< 0 > : public CBookmarkBase
 |[operator =](../vs140/cbookmark--operator-=.md)|Assigns one `CBookmark` class to another.|  
   
 ## Remarks  
- **CBookmark<0>** is a template specialization of `CBookmark`; its buffer is dynamically created at run time.  
+ **CBookmark\<0>** is a template specialization of `CBookmark`; its buffer is dynamically created at run time.  
   
 ## Requirements  
  **Header:** atldbcli.h  

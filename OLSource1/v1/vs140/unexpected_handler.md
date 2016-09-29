@@ -39,6 +39,6 @@ typedef void (*unexpected_handler)( );
  See [set_unexpected](../vs140/set_unexpected---exception--.md) for an example of the use of `unexpected_handler`.  
   
 ## Requirements  
- **Header:** <exception\>  
+ **Header:** \<exception>  
   
  **Namespace:** std

@@ -125,7 +125,7 @@ The element-wise remainders of the modular division
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

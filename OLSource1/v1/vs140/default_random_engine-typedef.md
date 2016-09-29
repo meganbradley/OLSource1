@@ -25,6 +25,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # default_random_engine typedef
-Topic deprecated, see [<random\>](../vs140/-random-.md).  
+Topic deprecated, see [\<random>](../vs140/-random-.md).  
   
 ## Syntax

@@ -41,7 +41,7 @@ typedef std::basic_string<char> byte_string;
  The type is a synonym for `std::basic_string<char>`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

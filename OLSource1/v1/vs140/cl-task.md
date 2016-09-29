@@ -76,7 +76,7 @@ Wraps the Visual C++ compiler tool, cl.exe. The compiler produces executable (.e
   
      Specify one of the following values, each of which corresponds to a command-line option.  
   
-    -   **NoListing** - *<none\>*  
+    -   **NoListing** - *\<none>*  
   
     -   **AssemblyCode** - **/FA**  
   
@@ -96,7 +96,7 @@ Wraps the Visual C++ compiler tool, cl.exe. The compiler produces executable (.e
   
      Specify one of the following values, each of which corresponds to a command-line option.  
   
-    -   **Default** -                          *<none\>*  
+    -   **Default** -                          *\<none>*  
   
     -   **StackFrameRuntimeCheck** - **/RTCs**  
   
@@ -160,7 +160,7 @@ Wraps the Visual C++ compiler tool, cl.exe. The compiler produces executable (.e
   
      Specify one of the following values, each of which corresponds to a command-line option.  
   
-    -   **Default** - *<none\>*  
+    -   **Default** - *\<none>*  
   
     -   **CompileAsC** - **/TC**  
   
@@ -176,7 +176,7 @@ Wraps the Visual C++ compiler tool, cl.exe. The compiler produces executable (.e
   
      Specify one of the following values, each of which corresponds to a command-line option.  
   
-    -   **false** - *<none\>*  
+    -   **false** - *\<none>*  
   
     -   **true** - **/clr**  
   
@@ -284,7 +284,7 @@ Wraps the Visual C++ compiler tool, cl.exe. The compiler produces executable (.e
   
      Specify one of the following values, each of which corresponds to a command-line option.  
   
-    -   **false** - *<none\>*  
+    -   **false** - *\<none>*  
   
     -   **Async** - **/EHa**  
   
@@ -310,7 +310,7 @@ Wraps the Visual C++ compiler tool, cl.exe. The compiler produces executable (.e
   
      Specify one of the following values, each of which corresponds to a command-line option.  
   
-    -   **Neither** - *<none\>*  
+    -   **Neither** - *\<none>*  
   
     -   **Size** - **/Os**  
   
@@ -398,7 +398,7 @@ Wraps the Visual C++ compiler tool, cl.exe. The compiler produces executable (.e
   
      Specify one of the following values, each of which corresponds to a command-line option.  
   
-    -   **Default** - *<none\>*  
+    -   **Default** - *\<none>*  
   
     -   **Disabled** - **/Ob0**  
   
@@ -496,7 +496,7 @@ Wraps the Visual C++ compiler tool, cl.exe. The compiler produces executable (.e
   
      Specify one of the following values, each of which corresponds to a command-line option.  
   
-    -   **NotUsing** - *<none\>*  
+    -   **NotUsing** - *\<none>*  
   
     -   **Create** - **/Yc**  
   

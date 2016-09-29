@@ -70,5 +70,5 @@ template<class Rep2, class Period2>
   
 ## See Also  
  [duration Class](../vs140/duration-class.md)   
- [<chrono\>](../vs140/-chrono-.md)   
+ [\<chrono>](../vs140/-chrono-.md)   
  [treat_as_floating_point Structure](../vs140/treat_as_floating_point-structure.md)

@@ -27,23 +27,23 @@ In JavaScript you can create documentation for your code by including XML tags i
   
  The following tags are supported:  
   
--   [<deprecated\>](../vs140/-deprecated---javascript-.md)  
+-   [\<deprecated>](../vs140/-deprecated---javascript-.md)  
   
--   [<field\>](../vs140/-field---javascript-.md)  
+-   [\<field>](../vs140/-field---javascript-.md)  
   
--   [<loc\>](../vs140/-loc---javascript-.md)  
+-   [\<loc>](../vs140/-loc---javascript-.md)  
   
--   [<param\>](../vs140/-param---javascript-.md)  
+-   [\<param>](../vs140/-param---javascript-.md)  
   
--   [<returns\>](../vs140/-returns---javascript-.md)  
+-   [\<returns>](../vs140/-returns---javascript-.md)  
   
--   [<signature\>](../vs140/-signature---javascript-.md)  
+-   [\<signature>](../vs140/-signature---javascript-.md)  
   
--   [<summary\>](../vs140/-summary---javascript-.md)  
+-   [\<summary>](../vs140/-summary---javascript-.md)  
   
--   [<value\>](../vs140/-value---javascript-.md)  
+-   [\<value>](../vs140/-value---javascript-.md)  
   
--   [<var\>](../vs140/-var---javascript-.md)  
+-   [\<var>](../vs140/-var---javascript-.md)  
   
 ## See Also  
  [JavaScript IntelliSense](../vs140/javascript-intellisense.md)

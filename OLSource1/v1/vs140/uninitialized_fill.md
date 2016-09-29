@@ -99,6 +99,6 @@ int main( )
   
  **The initialized Array contains: 25 25 25 25 25 25 25 25 25 25**    
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std

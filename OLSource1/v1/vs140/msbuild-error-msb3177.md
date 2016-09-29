@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3177
-**MSB3177: Reference '<reference\>' does not allow partially trusted callers.**  
+**MSB3177: Reference '\<reference>' does not allow partially trusted callers.**  
   
  This warning is generated during application manifest generation when the application is a partially trusted application and if *reference* was added as a project reference, has a strong name, and does not have the APTCA attribute.  
   
@@ -29,4 +29,4 @@ translation.priority.ht:
 -   Add the APTCA attribute to the referenced assembly, or stop using it, if the former is not possible.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

@@ -31,7 +31,7 @@ The compiler produces executable (.exe) files, dynamic-link libraries (.dll), or
   
  Every compiler option is available in two forms: **-option** and **/option**. The documentation only shows the **/option** form.  
   
- In Visual Web Developer 2008, you set compiler options in the web.config file. For more information, see [<compiler\> Element](assetId:///7a151659-b803-4c27-b5ce-1c4aa0d5a823).  
+ In Visual Web Developer 2008, you set compiler options in the web.config file. For more information, see [\<compiler> Element](assetId:///7a151659-b803-4c27-b5ce-1c4aa0d5a823).  
   
 ## In This Section  
  [Command-line Building With csc.exe](../vs140/command-line-building-with-csc.exe.md)  

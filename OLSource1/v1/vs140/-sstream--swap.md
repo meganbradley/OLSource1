@@ -64,11 +64,11 @@ template<class Elem, class Tr, class Alloc>
  The template function executes `_Left``.swap(``_Right``)`.  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   
 ## See Also  
- [<sstream\>](../vs140/-sstream-.md)   
+ [\<sstream>](../vs140/-sstream-.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

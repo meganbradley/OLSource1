@@ -18,6 +18,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # queue Functions
-Topic deprecated, see [Welcome Back To C++](../vs140/welcome-back-to-c----modern-c---.md) and [<queue\>](../vs140/-queue-.md).  
+Topic deprecated, see [Welcome Back To C++](../vs140/welcome-back-to-c----modern-c---.md) and [\<queue>](../vs140/-queue-.md).  
   
 ## Syntax

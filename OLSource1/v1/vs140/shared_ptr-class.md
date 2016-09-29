@@ -245,7 +245,7 @@ shared_ptr<int> sp6(sp2);   // error, template parameter int and argument shared
 |[shared_ptr::operator-&gt;](#shared_ptr__operator-_gt_)|Gets a pointer to the designated value.|  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

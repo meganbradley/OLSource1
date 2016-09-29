@@ -93,7 +93,7 @@ int main( )
   
  **Xhello everyone**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

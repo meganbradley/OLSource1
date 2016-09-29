@@ -31,5 +31,5 @@ This member function is not part of the ISO C++ Standard and is not supported in
 ## Syntax  
   
 ## See Also  
- [vector<bool\>::reference Class](../vs140/vector-bool---reference-class.md)   
+ [vector\<bool>::reference Class](../vs140/vector-bool---reference-class.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

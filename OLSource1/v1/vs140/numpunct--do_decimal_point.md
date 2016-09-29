@@ -42,7 +42,7 @@ virtual CharType do_decimal_point( ) const;
  See the example for [decimal_point](../vs140/numpunct--decimal_point.md), where the virtual member function is called by `decimal_point`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

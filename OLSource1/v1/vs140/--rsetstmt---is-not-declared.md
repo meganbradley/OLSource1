@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &#39;&lt;rsetstmt&gt;&#39; is not declared
-'<rsetstmt\>' is not declared. RSet statements are no longer supported; use Microsoft.VisualBasic.RSet instead.  
+'\<rsetstmt>' is not declared. RSet statements are no longer supported; use Microsoft.VisualBasic.RSet instead.  
   
  Several functions that were intrinsic to [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] in previous versions have been moved to the <xref:Microsoft.VisualBasic*?displayProperty=fullName> namespace. This makes their functionality more generally available to all programming languages.  
   

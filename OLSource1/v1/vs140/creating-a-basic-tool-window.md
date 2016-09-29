@@ -51,7 +51,7 @@ Tool windows are common Visual Studio: the **Solution Explorer**, **Task List**,
   
 2.  Click the button. A message appears with the text:  
   
-     We are inside [Company.<VSPackage name\>.MyControl].button1_Click().  
+     We are inside [Company.\<VSPackage name>.MyControl].button1_Click().  
   
 ## See Also  
  [How to: Create a Tool Window Programmatically (C#)](../vs140/opening-a-tool-window-programmatically.md)   

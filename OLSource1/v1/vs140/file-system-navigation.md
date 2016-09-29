@@ -18,10 +18,10 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # File System Navigation
-The <filesystem\> header implements the C++ File System Technical Specification ISO/IEC TS 18822:2015 (Final draft: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)) and has types and functions that enable you to write platform-independent code for navigating the file system. Because it is cross-platform, it contains APIs that are not relevant for Windows systems. For example, this means that `is_fifo(const path&)` always returns `false` on Windows. The header is based on a draft Technical Specification that was not voted into the C++17 standard as of Visual Studio 2015 RTM. Its members are found in the  `std::experimental::filesystem::v1` namespace.  
+The \<filesystem> header implements the C++ File System Technical Specification ISO/IEC TS 18822:2015 (Final draft: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)) and has types and functions that enable you to write platform-independent code for navigating the file system. Because it is cross-platform, it contains APIs that are not relevant for Windows systems. For example, this means that `is_fifo(const path&)` always returns `false` on Windows. The header is based on a draft Technical Specification that was not voted into the C++17 standard as of Visual Studio 2015 RTM. Its members are found in the  `std::experimental::filesystem::v1` namespace.  
   
 ## Overview  
- Use the <filesystem\> APIs for the following tasks:  
+ Use the \<filesystem> APIs for the following tasks:  
   
 -   iterate over files and directories under a specified path  
   
@@ -171,7 +171,7 @@ wchar_t* p = L"C:/test";
 ```  
   
 ## Iterating directories and files  
- The <filesystem\> header provides the [directory_iterator](../vs140/directory_iterator-class.md) type to iterate over single directories, and the [recursive_directory_iterator](../vs140/recursive_directory_iterator-class.md) class to iterate recursively over a directory and its subdirectories. After you construct an iterator by passing it a `path` object, the iterator points to the first directory_entry in the path. Create the end iterator by calling the default constructor.  
+ The \<filesystem> header provides the [directory_iterator](../vs140/directory_iterator-class.md) type to iterate over single directories, and the [recursive_directory_iterator](../vs140/recursive_directory_iterator-class.md) class to iterate recursively over a directory and its subdirectories. After you construct an iterator by passing it a `path` object, the iterator points to the first directory_entry in the path. Create the end iterator by calling the default constructor.  
   
  When iterating through a directory, there are several kinds of items you might encounter, including but not limited to directories, files, symbolic links, and socket files. The `directory_iterator` returns its items as [directory_entry](../vs140/directory_entry-class.md) objects, and each object has a [status()](assetId:///a70a3c55-3a76-417f-abaf-862ff94b2056) member that tells what kind of entry you are looking at. By examining this value, you can make decisions about what to do for any particular entry. The following example iterates over a single directory, and if the directory entry is a regular file, the code prints out some information about that file. If the entry is a directory, only the name is displayed.  
   

@@ -75,7 +75,7 @@ long double creall(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`creal`,               `crealf`, `creall`|<complex.h>|<ccomplex\>|  
+|`creal`,               `crealf`, `creall`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

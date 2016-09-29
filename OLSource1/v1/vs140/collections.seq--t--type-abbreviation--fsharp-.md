@@ -35,10 +35,7 @@ An abbreviation for the .NET Framework type <xref:System.Collections.Generic.IEn
   
 ## Syntax  
   
-```  
-type seq<'T> = System.Collections.Generic.IEnumerable<'T>  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
 ## Remarks  
  For information about functions that operate on sequences, see [Seq Module](../vs140/collections.seq-module--fsharp-.md). For an overview of sequences in F#, see [Sequences (F#)](../vs140/sequences--fsharp-.md).  
   

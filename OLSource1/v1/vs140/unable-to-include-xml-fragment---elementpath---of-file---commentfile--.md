@@ -32,4 +32,4 @@ An `<include>` tag in an XML comment contains an XPath expression for an element
 2.  Verify that the XML fragment exists in the file.  
   
 ## See Also  
- [<include\> (Visual Basic)](../vs140/-include---visual-basic-.md)
+ [\<include> (Visual Basic)](../vs140/-include---visual-basic-.md)

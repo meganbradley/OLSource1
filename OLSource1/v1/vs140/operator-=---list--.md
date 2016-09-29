@@ -84,7 +84,7 @@ int main( )
   
  **List c1 is less than or equal to list c2.**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

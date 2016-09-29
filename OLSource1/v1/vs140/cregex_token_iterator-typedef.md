@@ -36,12 +36,12 @@ typedef regex_token_iterator<const char*> cregex_token_iterator;
  The type describes a specialization of template class [regex_token_iterator](../vs140/regex_token_iterator-class.md) for iterators of type `const char*`.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_token_iterator](../vs140/regex_token_iterator-class.md)   
  [sregex_token_iterator](../vs140/sregex_token_iterator-typedef.md)   
  [wcregex_token_iterator](../vs140/wcregex_token_iterator-typedef.md)   

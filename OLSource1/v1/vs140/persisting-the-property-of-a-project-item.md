@@ -127,7 +127,7 @@ You may want to persist a property you add to a project item, such as the author
     > [!NOTE]
     >  You can autoload a VSPackage in the UI context <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT_SolutionExists*>. For more information, see [How to: Autoload a VSPackage](../vs140/loading-vspackages.md).  
   
-4.  Close [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] and then open the project file in Notepad. You should see the <Author\> tag with the value Tom, as follows:  
+4.  Close [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] and then open the project file in Notepad. You should see the \<Author> tag with the value Tom, as follows:  
   
     ```  
     <Compile Include="VsPkg.cs">  

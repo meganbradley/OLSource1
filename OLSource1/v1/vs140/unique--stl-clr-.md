@@ -35,7 +35,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `unique`. For more information, see [unique (<algorithm\>)](../vs140/unique---algorithm--.md).  
+ This function behaves the same as the STL function `unique`. For more information, see [unique (\<algorithm>)](../vs140/unique---algorithm--.md).  
   
 ## Requirements  
  **Header:** <cliext/algorithm>  

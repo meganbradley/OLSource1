@@ -46,7 +46,7 @@ void close(
  The member function calls [do_close](../vs140/messages--do_close.md)(_*Catval*).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

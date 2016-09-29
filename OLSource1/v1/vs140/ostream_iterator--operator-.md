@@ -78,7 +78,7 @@ int main( )
 **20**  
 **30**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

@@ -21,9 +21,9 @@ translation.priority.ht:
 # Description Element (Visual Studio Templates)
 Specifies the description of the template as it appears in either the **New Project** or **Add New Item** dialog box.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <Description\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<Description>  
   
 ## Syntax  
   

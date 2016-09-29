@@ -25,7 +25,7 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # &lt;streambuf&gt;
-Include the iostreams standard header <streambuf\> to define the template class [basic_streambuf](../vs140/basic_streambuf-class.md), which is basic to the operation of the iostreams classes. This header is typically included for you by another of the iostreams headers; you rarely need to include it directly.  
+Include the iostreams standard header \<streambuf> to define the template class [basic_streambuf](../vs140/basic_streambuf-class.md), which is basic to the operation of the iostreams classes. This header is typically included for you by another of the iostreams headers; you rarely need to include it directly.  
   
 ## Syntax  
   

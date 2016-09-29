@@ -65,11 +65,11 @@ translation.priority.ht:
 ##  <a name="UI"></a> Create the UI  
  The main UI in the task list sample app consists of the following elements:  
   
--   An <input\> element for new list items.  
+-   An \<input> element for new list items.  
   
 -   An AngularJS template that will display each task in the task list.  
   
- The <input\> element looks like this:  
+ The \<input> element looks like this:  
   
 ```html  
 <input id="new-todo" placeholder="What needs to be done?" td-text-change="toDoCtrl.addToDo()" ng-model="toDoCtrl.newToDoText" autofocus>  
@@ -77,7 +77,7 @@ translation.priority.ht:
   
  When you first run the app, some of the attributes in the preceding code won't do anything. For example, the AngularJS `ng-model` directive enables two-way data binding, and allows you to save the entered task when the `addToDo()` function runs.  
   
- For the task list, we define a template using some nested <div\> elements that wrap several other elements. For example, the nested <input\> element shown here is used to display each task string.  
+ For the task list, we define a template using some nested \<div> elements that wrap several other elements. For example, the nested \<input> element shown here is used to display each task string.  
   
 ```html  
     <div class="templateWrapper" ng-repeat="toDoItem in toDoCtrl.todos">  
@@ -89,7 +89,7 @@ translation.priority.ht:
 </div>  
 ```  
   
- In the preceding code, the AngularJS attribute, `ng-repeat`, allows you to define the top <div\> element as a template to display task list items. Later, when you attach actual data and run the app, `ng-repeat` will add the child <div\> element (templateContainer) and its child elements to the DOM for each stored task list item.  
+ In the preceding code, the AngularJS attribute, `ng-repeat`, allows you to define the top \<div> element as a template to display task list items. Later, when you attach actual data and run the app, `ng-repeat` will add the child \<div> element (templateContainer) and its child elements to the DOM for each stored task list item.  
   
 > [!NOTE]
 >  Because Cordova is not dependent on any particular JavaScript framework, we are not trying to provide in-depth information about [AngularJS programming](https://docs.angularjs.org/tutorial) in these steps. Instead, we are showing a good example of one way to create a cross-platform app using Visual Studio Tools for Apache Cordova.  
@@ -98,7 +98,7 @@ translation.priority.ht:
   
 #### Add markup for the list  
   
--   Open index.html, and replace the <head\> and <body\> element with the following code.  
+-   Open index.html, and replace the \<head> and \<body> element with the following code.  
   
     ```html  
     <head>  
@@ -404,7 +404,7 @@ translation.priority.ht:
   
 #### Update the script references  
   
--   In index.html, add the following AngularJS references in the <body\> element, after the Cordova and platformOverrides script references.  
+-   In index.html, add the following AngularJS references in the \<body> element, after the Cordova and platformOverrides script references.  
   
     ```html  
     <!-- Angular JS -->  
@@ -413,7 +413,7 @@ translation.priority.ht:
   
     ```  
   
-     Your script references in the <body\> element should now look like this.  
+     Your script references in the \<body> element should now look like this.  
   
     ```html  
     <!-- Cordova reference, this is added to your app when it's built. -->  
@@ -429,7 +429,7 @@ translation.priority.ht:
     > [!NOTE]
     >  cordova.js needs to load before the AngularJS framework files.  
   
--   Add script references for your AngularJS modules at the end of the <body\> element, after the AngularJS references. Those additional references should look like this.  
+-   Add script references for your AngularJS modules at the end of the \<body> element, after the AngularJS references. Those additional references should look like this.  
   
     ```html  
     <!-- Initialize all the modules -->  

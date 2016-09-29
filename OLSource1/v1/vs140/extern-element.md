@@ -44,7 +44,7 @@ Extern Element
 |---------------|-----------------|  
 |href|Required. The path to the header file:<br /><br /> href="stdidcmd.h"|  
 |Condition|Optional. See [Conditional Attributes](../vs140/vsct-xml-schema-conditional-attributes.md).|  
-|language|Optional. The default language of all [<Strings\>](../vs140/strings-element.md) elements in the command table:<br /><br /> language="en-us"|  
+|language|Optional. The default language of all [\<Strings>](../vs140/strings-element.md) elements in the command table:<br /><br /> language="en-us"|  
   
 ### Child Elements  
   

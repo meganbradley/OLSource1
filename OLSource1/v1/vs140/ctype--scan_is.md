@@ -79,7 +79,7 @@ int main( )
   
  **The first punctuation is "," at position: 5**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

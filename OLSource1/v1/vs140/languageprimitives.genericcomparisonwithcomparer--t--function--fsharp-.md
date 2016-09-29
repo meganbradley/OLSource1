@@ -36,14 +36,7 @@ Compare two values. May be called as a recursive case from an implementation of 
   
 ## Syntax  
   
-```  
-// Signature:  
-GenericComparisonWithComparer : IComparer -> 'T -> 'T -> int (requires comparison)  
-  
-// Usage:  
-GenericComparisonWithComparer comp e1 e2  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
 #### Parameters  
  `comp`  
  Type: <xref:System.Collections.IComparer*>  

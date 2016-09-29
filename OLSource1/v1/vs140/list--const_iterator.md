@@ -43,7 +43,7 @@ typedef implementation-defined const_iterator;
  See the example for [back](../vs140/list--back.md).  
   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Linker Tools Error LNK2023
-bad dll or entry point <dll or entry point\>  
+bad dll or entry point \<dll or entry point>  
   
  The linker is loading an incorrect version of msobj90.dll. Ensure that link.exe and msobj90.dll in your path have the same version.  
   

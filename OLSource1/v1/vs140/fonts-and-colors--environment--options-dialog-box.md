@@ -193,7 +193,7 @@ The **Fonts and Colors** page of the **Options** dialog box lets you establish a
 |**XML Delimiter**|XML Syntax delimiters, including <, <?, <!, <!--, --\>, ?\>, <![, ]]>, and [, ].|  
 |**XML Doc Attribute**|The value of an xml documentation attribute, such as <param name="I"\> where the "I" is colorized.|  
 |**XML Doc Comment**|The comments enclosed in the xml documentation comments.|  
-|**XML Doc Tag**|The tags in XML doc comments, such as<br /><br /> /// <summary\>.|  
+|**XML Doc Tag**|The tags in XML doc comments, such as<br /><br /> /// \<summary>.|  
 |**XML Keyword**|DTD keywords such as CDATA, IDREF, and NDATA.|  
 |**XML Name**|Element names and Processing Instructions target name.|  
 |**XML Processing Instruction**|Contents of Processing Instructions, not including target name.|  

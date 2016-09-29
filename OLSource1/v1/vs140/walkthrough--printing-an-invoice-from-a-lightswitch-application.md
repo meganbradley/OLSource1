@@ -33,7 +33,7 @@ You can’t print directly from a LightSwitch application, but you can create a 
   
 5.  In the **Properties** window, set the value of the **Name** property to `Customer`.  
   
-6.  In the entity designer, choose the **<Add Property\>** link, and then enter `Name`.  
+6.  In the entity designer, choose the **\<Add Property>** link, and then enter `Name`.  
   
 7.  In the **Type** column, choose the `String` data type.  
   
@@ -41,11 +41,11 @@ You can’t print directly from a LightSwitch application, but you can create a 
   
 9. In the **Properties** window, set the value of the **Name** property to `Order`.  
   
-10. In the entity designer, choose the **<Add Property\>** link, and then enter `OrderItem`.  
+10. In the entity designer, choose the **\<Add Property>** link, and then enter `OrderItem`.  
   
 11. In the **Type** column, choose the `String` data type.  
   
-12. In the entity designer, choose the **<Add Property\>** link, and then enter `OrderAmount`.  
+12. In the entity designer, choose the **\<Add Property>** link, and then enter `OrderAmount`.  
   
 13. In the **Type** column, choose the `Money` data type.  
   
@@ -57,7 +57,7 @@ You can’t print directly from a LightSwitch application, but you can create a 
   
 16. In **Solution Explorer**, open the shortcut menu for **Customers**, and then choose **Open**.  
   
-17. In the entity designer, choose the **<Add Property\>** link, and then enter `OrderTotal`.  
+17. In the entity designer, choose the **\<Add Property>** link, and then enter `OrderTotal`.  
   
 18. In the **Type** column, choose the `Money` data type.  
   

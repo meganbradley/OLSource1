@@ -84,7 +84,7 @@ The string object str2 is empty.
 ```  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

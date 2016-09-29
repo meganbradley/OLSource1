@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;thread&gt;
-Include the standard header <thread\> to define the class `thread` and various supporting functions.  
+Include the standard header \<thread> to define the class `thread` and various supporting functions.  
   
 ## Syntax  
   

@@ -315,4 +315,4 @@ MemoryBlock(MemoryBlock&& other)
   
 ## See Also  
  [Rvalue Reference Operator: &&](../vs140/rvalue-reference-declarator----.md)   
- [<utility\> move](assetId:///abef7e85-9dd6-4724-85da-d7f7fe95dca9)
+ [\<utility> move](assetId:///abef7e85-9dd6-4724-85da-d7f7fe95dca9)

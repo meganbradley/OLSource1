@@ -115,6 +115,6 @@ int main( )
 **The element-by-element result of the greater than or equal test is the**  
  **valarray: ( 1 1 0 1 0 1 0 1 0 1 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std

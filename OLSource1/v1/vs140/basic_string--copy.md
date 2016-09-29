@@ -104,7 +104,7 @@ int main( )
 **The number of copied characters in array2 is: 5**  
 **The copied characters array2 is: World**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

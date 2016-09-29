@@ -33,7 +33,7 @@ This topic is the second in a series of articles that demonstrates the process o
   
  ComSpyCtl doesn't compile though due to this compiler error:  
   
- **atlcom.h(611): error C2664: 'HRESULT CComSpy::IPersistStreamInit_Save(LPSTREAM,BOOL,ATL::ATL_PROPMAP_ENTRY \*)': cannot convert argument 3 from 'const ATL::ATL_PROPMAP_ENTRY \*' to 'ATL::ATL_PROPMAP_ENTRY \*'atlcom.h(611): note: Conversion loses qualifiersatlcom.h(608): note: while compiling class template member function 'HRESULT ATL::IPersistStreamInitImpl<CComSpy\>::Save(LPSTREAM,BOOL)'\spy\spy\comspyctl\ccomspy.h(28): note: see reference to class template instantiation 'ATL::IPersistStreamInitImpl<CComSpy\>' being compiled** The error references the Save method on the IPersistStreamInitImpl class in atlcom.h.  
+ **atlcom.h(611): error C2664: 'HRESULT CComSpy::IPersistStreamInit_Save(LPSTREAM,BOOL,ATL::ATL_PROPMAP_ENTRY \*)': cannot convert argument 3 from 'const ATL::ATL_PROPMAP_ENTRY \*' to 'ATL::ATL_PROPMAP_ENTRY \*'atlcom.h(611): note: Conversion loses qualifiersatlcom.h(608): note: while compiling class template member function 'HRESULT ATL::IPersistStreamInitImpl\<CComSpy>::Save(LPSTREAM,BOOL)'\spy\spy\comspyctl\ccomspy.h(28): note: see reference to class template instantiation 'ATL::IPersistStreamInitImpl\<CComSpy>' being compiled** The error references the Save method on the IPersistStreamInitImpl class in atlcom.h.  
   
 ```cpp  
 STDMETHOD(Save)(_Inout_ LPSTREAM pStm, _In_ BOOL fClearDirty)  

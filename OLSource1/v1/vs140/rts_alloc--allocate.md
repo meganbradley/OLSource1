@@ -47,7 +47,7 @@ void *allocate(std::size_t _Count);
  The member function returns `caches[_IDX].allocate(_Count)`, where the index `_IDX` is determined by the requested block size `_Count`, or, if `_Count` is too large, it returns `operator new(_Count)`.`cache`, which represents the cache object.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

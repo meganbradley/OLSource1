@@ -150,7 +150,7 @@ template <
 |[operator=](#map__operator_eq)|Replaces the elements of a map with a copy of another map.|  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   
@@ -2497,7 +2497,7 @@ int main( )
 ```  
   
 ## See Also  
- [<map\> Members](assetId:///7e8f0bc2-6034-40f6-9d14-76d4cef86308)   
+ [\<map> Members](assetId:///7e8f0bc2-6034-40f6-9d14-76d4cef86308)   
  [Containers](../vs140/containers--modern-c---.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

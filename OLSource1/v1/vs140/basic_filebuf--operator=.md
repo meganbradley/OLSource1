@@ -48,11 +48,11 @@ basic_filebuf& operator=(basic_filebuf&& _Right);
  The member operator replaces the contents of the object by using the contents of `_Right`, treated as an rvalue reference. For more information, see [Rvalue Reference Declarator: &&](../vs140/rvalue-reference-declarator----.md).  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_filebuf Class](../vs140/basic_filebuf-class.md)   
- [<fstream\>](../vs140/-fstream-.md)   
+ [\<fstream>](../vs140/-fstream-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)

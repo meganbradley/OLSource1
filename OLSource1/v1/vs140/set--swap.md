@@ -92,7 +92,7 @@ int main( )
 **After swapping with s2, list s1 is: 100 200.**  
 **After swapping with s3, list s1 is: 300.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

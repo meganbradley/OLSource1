@@ -48,10 +48,10 @@ unsigned long long to_ullong() const;
  Returns the sum of the bit values in the bit sequence as an unsigned long long.  
   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   
 ## See Also  
  [bitset Class](../vs140/bitset-class.md)   
- [<bitset\>](../vs140/-bitset-.md)
+ [\<bitset>](../vs140/-bitset-.md)

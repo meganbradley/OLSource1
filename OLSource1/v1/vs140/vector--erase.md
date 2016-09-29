@@ -95,7 +95,7 @@ int main( )
 **v1 = 20 30 40 50**  
 **v1 = 20 50**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

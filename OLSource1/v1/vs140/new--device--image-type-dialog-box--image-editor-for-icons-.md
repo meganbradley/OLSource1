@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # New &lt;Device&gt; Image Type Dialog Box (Image Editor for Icons)
-Enables you to create a new device image of a specified type. To open the **New <Device\> Image** dialog box, click **New Image Type** on the **Image** menu. For more information on the icon sizes that Windows uses, see [Icons](_win32_Icons_cpp) in the Windows SDK documentation.  
+Enables you to create a new device image of a specified type. To open the **New \<Device> Image** dialog box, click **New Image Type** on the **Image** menu. For more information on the icon sizes that Windows uses, see [Icons](_win32_Icons_cpp) in the Windows SDK documentation.  
   
  **Target Image Type**  
  Lists the available image types. Select the image type you want to open:  

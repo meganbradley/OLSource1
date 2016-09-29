@@ -94,11 +94,11 @@ When developing Apache Cordova apps in Visual Studio, you can use diagnostic too
   
      You can make changes to your UI right here in DOM Explorer (in the live DOM view, Styles, and Layout tabs), and see the changes immediately reflected in your running app. This makes the UI easier to debug.  
   
-     For example, you could edit the font size for a list item (an <input\> element) in the Styles tab.  
+     For example, you could edit the font size for a list item (an \<input> element) in the Styles tab.  
   
      ![Editings a value in the Styles tab](../vs140/media/cordova_videos_debugging_dom_ex_styles.png "Cordova_Videos_Debugging_DOM_Ex_Styles")  
   
-9. Select an element such as the location under a ToDo list item (an <h3\> element) and edit the value.  
+9. Select an element such as the location under a ToDo list item (an \<h3> element) and edit the value.  
   
      Your changes will appear in the app in the Ripple emulator.  
   

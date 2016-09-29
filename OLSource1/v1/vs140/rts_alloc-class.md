@@ -51,7 +51,7 @@ template <class Cache> class rts_alloc
 |[equals](#rts_alloc__equals)|Compares two caches for equality.|  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
@@ -110,4 +110,4 @@ bool equals(const sync<_Cache>& _Other) const;
   
 ## See Also  
  [ALLOCATOR_DECL](../vs140/-allocators--functions.md#allocator_decl)   
- [<allocators\>](../vs140/-allocators-.md)
+ [\<allocators>](../vs140/-allocators-.md)

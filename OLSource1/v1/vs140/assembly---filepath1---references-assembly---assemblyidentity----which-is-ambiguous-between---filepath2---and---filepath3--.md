@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Assembly &#39;&lt;filepath1&gt;&#39; references assembly &#39;&lt;assemblyidentity&gt;&#39;, which is ambiguous between &#39;&lt;filepath2&gt;&#39; and &#39;&lt;filepath3&gt;&#39;
-Assembly '<filepath1\>' references assembly '<assemblyidentity\>', which is ambiguous between '<filepath2\>' and '<filepath3\>'. '<filepath2\>' will be used.  
+Assembly '\<filepath1>' references assembly '\<assemblyidentity>', which is ambiguous between '\<filepath2>' and '\<filepath3>'. '\<filepath2>' will be used.  
   
  An assembly accesses a type in another assembly to which it has more than one file reference.  
   

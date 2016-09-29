@@ -67,7 +67,7 @@ int main( )
  **The current size of string str1 is: 11.**  
 **The capacity of string str1 is: 15.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

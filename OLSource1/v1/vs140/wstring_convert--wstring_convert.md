@@ -58,7 +58,7 @@ wstring_convert(const byte_string& _Berr,
  The third constructor stores the conversion object in the conversion object, `_State` in the conversion state object, *_Berr* in the byte-string error message object, and *_Werr* in the wide-string error message object.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

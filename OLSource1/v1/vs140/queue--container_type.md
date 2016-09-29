@@ -45,7 +45,7 @@ typedef Container container_type;
  See the example for [queue](../vs140/queue--queue.md) for an example of how to declare and use `container_type`.  
   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

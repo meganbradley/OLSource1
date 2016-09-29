@@ -76,7 +76,7 @@ int main( )
 **The minimum value for type int is:  -2147483648**  
 **The minimum value for type short int is:  -32768**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

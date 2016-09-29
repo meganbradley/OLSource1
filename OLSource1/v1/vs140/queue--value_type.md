@@ -66,7 +66,7 @@ using namespace std;
  **The value_type is AnInt = 69**  
 **The element at the front of the queue is 69.**   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

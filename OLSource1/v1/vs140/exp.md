@@ -128,6 +128,6 @@ The complex components exp (vci), where abs (vci) = 1
 ```  
   
 ## Requirements  
- **Header:** <complex\>  
+ **Header:** \<complex>  
   
  **Namespace:** std

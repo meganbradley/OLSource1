@@ -78,7 +78,7 @@ int main( )
  **The initial valarray is: ( 0 1 4 9 16 ).**  
 **The square root of the initial valarray is: ( 0 1 2 3 4 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

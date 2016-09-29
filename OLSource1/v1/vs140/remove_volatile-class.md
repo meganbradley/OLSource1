@@ -65,7 +65,7 @@ int main()
   
 ```  
   
-  **remove_volatile_t<volatile int\> == int**    
+  **remove_volatile_t\<volatile int> == int**    
 ## Requirements  
  **Header:** <type_traits>  
   

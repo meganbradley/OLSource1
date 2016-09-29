@@ -371,7 +371,7 @@ friend CArchive& operator >>(    CArchive& ar ,    CObject *& pOb ); throw(    C
  [!code[NVC_MFCSerialization#33](../vs140/codesnippet/CPP/carchive-class_14.cpp)]  
   
 ### Example  
- This example demonstrates the use of the `CArchive` insertion and extraction operators << and >> with the `CStringT` type.  
+ This example demonstrates the use of the `CArchive` insertion and extraction operators <\< and >> with the `CStringT` type.  
   
  [!code[NVC_MFCSerialization#34](../vs140/codesnippet/CPP/carchive-class_15.cpp)]  
   

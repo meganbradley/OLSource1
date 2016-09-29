@@ -103,6 +103,6 @@ The character 'q' in the locale is  not a hexidecimal digit-character.
 ```  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std

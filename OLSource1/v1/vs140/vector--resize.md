@@ -204,7 +204,7 @@ After vector::resize(2000):
 ```  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

@@ -218,4 +218,4 @@ Identifies a platform or assembly dependency that is required for the applicatio
   
 ## See Also  
  [ClickOnce Application Manifest](../vs140/clickonce-application-manifest.md)   
- [<dependency\> Element (ClickOnce Deployment)](../vs140/-dependency--element--clickonce-deployment-.md)
+ [\<dependency> Element (ClickOnce Deployment)](../vs140/-dependency--element--clickonce-deployment-.md)

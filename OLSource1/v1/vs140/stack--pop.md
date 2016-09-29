@@ -82,7 +82,7 @@ int main( )
 **After a pop, the stack length is 2.**  
 **After a pop, the element at the top of the stack is 20.**   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

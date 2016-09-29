@@ -201,7 +201,7 @@ int main( )
 **After another next_permutation of vector v1,**  
  **v1 =   ( -3 -2 -1 1 0 2 3 ).**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

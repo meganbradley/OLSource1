@@ -77,7 +77,7 @@ int main()
  **sp1.unique() == true**  
 **sp1.unique() == false**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

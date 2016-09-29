@@ -43,7 +43,7 @@ typedef implementation-defined const_iterator;
  See the example for [back](../vs140/deque--back.md).  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

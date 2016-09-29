@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;value&gt; (Visual C++)
-The <value\> tag lets you describe a property and property accessor methods. Note that when you add a property with a code wizard in the Visual Studio integrated development environment, it will add a [<summary\>](../vs140/-summary---visual-c---.md) tag for the new property. You should then manually add a <value\> tag to describe the value that the property represents.  
+The \<value> tag lets you describe a property and property accessor methods. Note that when you add a property with a code wizard in the Visual Studio integrated development environment, it will add a [\<summary>](../vs140/-summary---visual-c---.md) tag for the new property. You should then manually add a \<value> tag to describe the value that the property represents.  
   
 ## Syntax  
   

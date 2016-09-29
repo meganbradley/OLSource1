@@ -30,7 +30,7 @@ The `for each` keyword can be used to iterate over a Standard C++ Library (STL) 
 ## Examples  
  **Example**  
   
- The following code example uses `for each` to iterate over a [<map\>](../vs140/-map-.md).  
+ The following code example uses `for each` to iterate over a [\<map>](../vs140/-map-.md).  
   
 ```  
 // for_each_stl.cpp  

@@ -45,7 +45,7 @@ void construct(pointer _Ptr, const Type& _Val);
  This member function is implemented for the user-defined allocator by calling `new((void*)_Ptr Type(_Val)`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

@@ -36,7 +36,7 @@ Here’s how to upgrade your extension.
   
 4.  Build the solution. The built files are deployed to:  
   
-     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\<Author Name\>\\<Project Name\>\\<Project Version\>\\**.  
+     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\\<Author Name>\\\<Project Name>\\\<Project Version>\\**.  
   
 #### To update an extensibility project to NuGet VS SDK reference assemblies  
   

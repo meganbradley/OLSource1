@@ -211,7 +211,7 @@ The **IntelliTrace stand-alone collector** lets you collect IntelliTrace diagnos
   
 1.  To start collecting data, open a PowerShell command window as an administrator, then run this command:  
   
-     `Start-IntelliTraceCollection` `"` *<ApplicationPool\>* `"` *<PathToCollectionPlan\>* *<FullPathToITraceFileDirectory\>*  
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*  
   
     > [!IMPORTANT]
     >  After you run this command, type **Y** to confirm that you want to start collecting data.  
@@ -234,7 +234,7 @@ The **IntelliTrace stand-alone collector** lets you collect IntelliTrace diagnos
   
 3.  To take a snapshot of the .iTrace file, use this syntax:  
   
-     `Checkpoint-IntelliTraceCollection` `"` *<ApplicationPool\>* `"`  
+     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`  
   
 4.  To check collection status, use this syntax:  
   
@@ -242,7 +242,7 @@ The **IntelliTrace stand-alone collector** lets you collect IntelliTrace diagnos
   
 5.  To stop collecting data, use this syntax:  
   
-     `Stop-IntelliTraceCollection` `"` *<ApplicationPool\>* `"`  
+     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`  
   
     > [!IMPORTANT]
     >  After you run this command, type **Y** to confirm that you want to stop collecting data. Otherwise, the collector might continue collecting data, the iTrace file will remain locked, or the file might not contain any useful data.  
@@ -253,7 +253,7 @@ The **IntelliTrace stand-alone collector** lets you collect IntelliTrace diagnos
   
 1.  To start your app and collect data at the same time, use this syntax:  
   
-     *<FullPathToIntelliTraceCollectorExecutable\>* `\IntelliTraceSC.exe launch /cp:` *<PathToCollectionPlan\>* `/f:` *<FullPathToITraceFileDirectoryAndFileName\>* *<PathToAppExecutableFileAndFileName\>*  
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*  
   
      For example, to collect data from an app named **MyApp**:  
   

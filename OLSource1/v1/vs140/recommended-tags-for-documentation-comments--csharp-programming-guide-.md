@@ -34,12 +34,12 @@ The C# compiler processes documentation comments in your code and formats them a
   
 ||||  
 |-|-|-|  
-|[<c\>](../vs140/-c---csharp-programming-guide-.md)|[<para\>](../vs140/-para---csharp-programming-guide-.md)|[<see\>](../vs140/-see---csharp-programming-guide-.md)*|  
-|[<code\>](../vs140/-code---csharp-programming-guide-.md)|[<param\>](../vs140/-param---csharp-programming-guide-.md)*|[<seealso\>](../vs140/-seealso---csharp-programming-guide-.md)*|  
-|[<example\>](../vs140/-example---csharp-programming-guide-.md)|[<paramref\>](../vs140/-paramref---csharp-programming-guide-.md)|[<summary\>](../vs140/-summary---csharp-programming-guide-.md)|  
-|[<exception\>](../vs140/-exception---csharp-programming-guide-.md)*|[<permission\>](../vs140/-permission---csharp-programming-guide-.md)*|[<typeparam\>](../vs140/-typeparam---csharp-programming-guide-.md)*|  
-|[<include\>](../vs140/-include---csharp-programming-guide-.md)*|[<remarks\>](../vs140/-remarks---csharp-programming-guide-.md)|[<typeparamref\>](../vs140/-typeparamref---csharp-programming-guide-.md)|  
-|[<list\>](../vs140/-list---csharp-programming-guide-.md)|[<returns\>](../vs140/-returns---csharp-programming-guide-.md)|[<value\>](../vs140/-value---csharp-programming-guide-.md)|  
+|[\<c>](../vs140/-c---csharp-programming-guide-.md)|[\<para>](../vs140/-para---csharp-programming-guide-.md)|[\<see>](../vs140/-see---csharp-programming-guide-.md)*|  
+|[\<code>](../vs140/-code---csharp-programming-guide-.md)|[\<param>](../vs140/-param---csharp-programming-guide-.md)*|[\<seealso>](../vs140/-seealso---csharp-programming-guide-.md)*|  
+|[\<example>](../vs140/-example---csharp-programming-guide-.md)|[\<paramref>](../vs140/-paramref---csharp-programming-guide-.md)|[\<summary>](../vs140/-summary---csharp-programming-guide-.md)|  
+|[\<exception>](../vs140/-exception---csharp-programming-guide-.md)*|[\<permission>](../vs140/-permission---csharp-programming-guide-.md)*|[\<typeparam>](../vs140/-typeparam---csharp-programming-guide-.md)*|  
+|[\<include>](../vs140/-include---csharp-programming-guide-.md)*|[\<remarks>](../vs140/-remarks---csharp-programming-guide-.md)|[\<typeparamref>](../vs140/-typeparamref---csharp-programming-guide-.md)|  
+|[\<list>](../vs140/-list---csharp-programming-guide-.md)|[\<returns>](../vs140/-returns---csharp-programming-guide-.md)|[\<value>](../vs140/-value---csharp-programming-guide-.md)|  
   
  (* denotes that the compiler verifies syntax.)  
   

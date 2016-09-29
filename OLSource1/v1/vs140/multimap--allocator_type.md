@@ -42,7 +42,7 @@ typedef Allocator allocator_type;
  See the example for [get_allocator](../vs140/multimap--get_allocator.md) for an example using `allocator_type`.  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

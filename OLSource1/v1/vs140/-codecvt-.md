@@ -78,7 +78,7 @@ Defines several template classes that describe objects based on template class [
 |[codecvt_utf16](../vs140/codecvt_utf16.md)|Represents a locale facet that converts between wide characters encoded as UCS-2 or UCS-4 and a byte stream encoded as UTF-16LE or UTF-16BE.|  
   
 ## Requirements  
- **Header:** <codecvt\>  
+ **Header:** \<codecvt>  
   
  **Namespace:** stdt  
   

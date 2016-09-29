@@ -70,23 +70,23 @@ int main() {
 |x<br /><br /> **h**|hexadecimal integer|102|0xcccccccc|  
 |X<br /><br /> **H**|hexadecimal integer|102|0xCCCCCCCC|  
 |c|single character|0x0065, c|101 'e'|  
-|s|const char* string|<location\> “hello world”|"hello world"|  
-|**sb**|const char* string|<location\> “hello world”|hello world|  
-|s8|const char* string|<location\> “hello world”|"hello world"|  
-|**s8b**|const char* string|<location\> “hello world”|"hello world"|  
-|su|const wchar_t*  const<br /><br /> char16_t\* string|<location\> L”hello world”|L"hello world"<br /><br /> u"hello world"|  
-|sub|const wchar_t*  const<br /><br /> char16_t\* string|<location\> L”hello world”|hello world|  
-|bstr|BSTR string|<location\> L”hello world”|L”hello world”|  
-|**s32**|UTF-32 string|<location\> U”hello world”|U”hello world”|  
-|**s32b**|UTF-32 string (no quotation marks)|<location\> U”hello world”|hello world|  
+|s|const char* string|\<location> “hello world”|"hello world"|  
+|**sb**|const char* string|\<location> “hello world”|hello world|  
+|s8|const char* string|\<location> “hello world”|"hello world"|  
+|**s8b**|const char* string|\<location> “hello world”|"hello world"|  
+|su|const wchar_t*  const<br /><br /> char16_t\* string|\<location> L”hello world”|L"hello world"<br /><br /> u"hello world"|  
+|sub|const wchar_t*  const<br /><br /> char16_t\* string|\<location> L”hello world”|hello world|  
+|bstr|BSTR string|\<location> L”hello world”|L”hello world”|  
+|**s32**|UTF-32 string|\<location> U”hello world”|U”hello world”|  
+|**s32b**|UTF-32 string (no quotation marks)|\<location> U”hello world”|hello world|  
 |**en**|enum|Saturday(6)|Saturday|  
-|**hv**|Pointer type - indicates that the pointer value being inspected is the result of the heap allocation of an array, for example, `new int[3]`.|<location\>{<first member\>}|<location\>{<first member\>, <second member\>, …}|  
-|**na**|Suppresses the memory address of a pointer to an object.|<location\>, {member=value…}|{member=value…}|  
+|**hv**|Pointer type - indicates that the pointer value being inspected is the result of the heap allocation of an array, for example, `new int[3]`.|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, …}|  
+|**na**|Suppresses the memory address of a pointer to an object.|\<location>, {member=value…}|{member=value…}|  
 |**nd**|Displays only the base class information, ignoring derived classes|`(Shape*) square` includes base class and derived class information|Displays only base class information|  
 |hr|HRESULT or Win32 error code. (The debugger now decodes HRESULTs automatically, so this specifier is not required in those cases.|S_OK|S_OK|  
 |wc|Window class flag|0x0010|WC_DEFAULTCHAR|  
 |wm|Windows message numbers|16|WM_CLOSE|  
-|!|raw format, ignoring any data type views customizations|<customized representation\>|4|  
+|!|raw format, ignoring any data type views customizations|\<customized representation>|4|  
   
 > [!NOTE]
 >  When the **hv** format specifier is present, the debugger attempts to determine the length of the buffer and display the appropriate number of elements. Because it is not always possible for the debugger to find the exact buffer size of an array, you should use a size specifier `(pBuffer,[bufferSize])` whenever possible. The **hv** format specifier is intended for scenarios where the buffer size is not readily available  
@@ -113,15 +113,15 @@ int main() {
 |**f**|signed floating point|(3./2.), f|1.500000|  
 |**e**|signed scientific notation|(3.0/2.0)|1.500000e+000|  
 |**g**g|signed floating point or signed scientific notation, whichever is shorter|(3.0/2.0)|1.5|  
-|c|single character|<location\>|101 'e'|  
-|s|const char*|<location\>|"hello world"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|<location\>|L"hello world"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|<location\>|hello world|  
-|s8|const char*|<location\>|"hello world"|  
+|c|single character|\<location>|101 'e'|  
+|s|const char*|\<location>|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hello world|  
+|s8|const char*|\<location>|"hello world"|  
 |hr|HRESULT or Win32 error code. (The debugger now decodes HRESULTs automatically, so this specifier is not required in those cases.|S_OK|S_OK|  
 |wc|Window class flag.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Windows message numbers|0x0010|WM_CLOSE|  
-|!|raw format, ignoring any data type views customizations|<customized representation\>|4|  
+|!|raw format, ignoring any data type views customizations|\<customized representation>|4|  
   
 ###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Format specifiers memory locations in interop debugging with C++/CLI  
  The following table contains formatting symbols used for memory locations. You can use a memory location specifier with any value or expression that evaluates to a location.  

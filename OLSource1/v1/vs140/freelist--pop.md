@@ -41,7 +41,7 @@ void *pop();
  The member function returns `NULL` if the list is empty. Otherwise, it removes the first memory block from the list.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

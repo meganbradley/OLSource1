@@ -71,10 +71,10 @@ template<class Type1, class Type2>
  For an example about how to use the helper function `make_pair` to declare and initialize a pair, see [pair Structure](../vs140/pair-structure.md).  
   
 ## Requirements  
- **Header:** <utility\>  
+ **Header:** \<utility>  
   
  **Namespace:** std  
   
 ## See Also  
- [<utility\>](../vs140/-utility-.md)   
+ [\<utility>](../vs140/-utility-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)

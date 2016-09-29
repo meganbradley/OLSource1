@@ -53,7 +53,7 @@ Frees a specified number of objects from storage beginning at a specified positi
  For an example using the member function, see [allocator::allocate](../vs140/allocator--allocate.md).  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

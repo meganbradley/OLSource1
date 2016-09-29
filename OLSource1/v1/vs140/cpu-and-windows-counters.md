@@ -120,9 +120,9 @@ The Visual Studio Profiler enables you to collect performance data that was gene
   
 2.  Type  
   
-     **<Visual Studio Performance Tools Directory\>\VSPerfCmd /querycounters**  
+     **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
   
-     where **<Visual Studio Performance Tools Directory\>** is the path to the Performance Tools directory of your Visual Studio installation, usually  
+     where **\<Visual Studio Performance Tools Directory>** is the path to the Performance Tools directory of your Visual Studio installation, usually  
   
      C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   

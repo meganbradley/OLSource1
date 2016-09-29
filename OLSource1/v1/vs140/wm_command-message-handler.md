@@ -31,7 +31,7 @@ The following map entry corresponds to the function prototype.
   
 |Map entry|Function prototype|  
 |---------------|------------------------|  
-|ON_COMMAND(<id\>, <memberFxn\>)|afx_msg void memberFxn( );|  
+|ON_COMMAND(\<id>, \<memberFxn>)|afx_msg void memberFxn( );|  
   
 ## See Also  
  [Message Maps](../vs140/message-maps--mfc-.md)

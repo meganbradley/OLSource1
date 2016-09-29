@@ -90,7 +90,7 @@ RFX_Custom(pFX, "Col2", m_Col2);
   
 -   **Name** — Append field names for fields marked dirty  
   
--   **NameValue** — Append "<column name\>=?" for fields marked dirty  
+-   **NameValue** — Append "\<column name>=?" for fields marked dirty  
   
 -   **Value** — Append "?" followed by separator, like ',' or ' '  
   

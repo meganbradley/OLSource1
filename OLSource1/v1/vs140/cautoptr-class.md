@@ -227,7 +227,7 @@ template< >
  A class type.  
   
 ### Return Value  
- Returns a reference to a **CAutoPtr< T >**.  
+ Returns a reference to a **CAutoPtr\< T >**.  
   
 ### Remarks  
  The assignment operator detaches the `CAutoPtr` object from any current pointer and attaches the new pointer, `p`, in its place.  

@@ -51,7 +51,7 @@ private:
  In such cases, the constructor for the base class facet should have a zero `_Refs` argument. When the object is no longer needed, it is deleted. Thus, you supply a nonzero _*Refs* argument only in those rare cases where you take responsibility for the lifetime of the object.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

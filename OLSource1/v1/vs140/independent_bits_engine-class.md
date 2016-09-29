@@ -44,7 +44,7 @@ class independent_bits_engine;
  **Word size**. Size, in bits, of each number generated.                         **Precondition**: `0 < W ≤ numeric_limits<UIntType>::digits`  
   
  `UIntType`  
- The unsigned integer result type. For possible types, see [<random\>](../vs140/-random-.md).  
+ The unsigned integer result type. For possible types, see [\<random>](../vs140/-random-.md).  
   
 ## Members  
   
@@ -53,15 +53,15 @@ class independent_bits_engine;
 |`independent_bits_engine::independent_bits_engine`|`independent_bits_engine::base`|`independent_bits_engine::discard`|  
 |`independent_bits_engine::operator()`|`independent_bits_engine::base_type`|`independent_bits_engine::seed`|  
   
- For more information about engine members, see [<random\>](../vs140/-random-.md).  
+ For more information about engine members, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  This template class describes an *engine adaptor* that produces values by repacking bits from the values returned by its base engine, resulting in `W`-bit values.  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

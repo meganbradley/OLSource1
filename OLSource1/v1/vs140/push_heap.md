@@ -156,7 +156,7 @@ The greater than reheaped v1 with 11 added is
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

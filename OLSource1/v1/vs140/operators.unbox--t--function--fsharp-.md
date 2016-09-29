@@ -29,7 +29,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Operators.unbox&lt;&#39;T&gt; Function (F#)
-Unboxes a strongly typed value. This is the inverse of `box`, unbox<t\>(box<t\> a) equals a.  
+Unboxes a strongly typed value. This is the inverse of `box`, unbox\<t>(box\<t> a) equals a.  
   
  **Namespace/Module Path:** Microsoft.FSharp.Core.Operators  
   

@@ -128,198 +128,25 @@ Your control can be more easily tested if you implement support for the coded UI
   
 4.  Implement the property provider by placing property names and property descriptors in a <xref:System.Collections.Generic.Dictionary`2*>.  
   
-    ```c#  
-    // Define a map of property descriptors for CurveLegend  
-    private static Dictionary<string, UITestPropertyDescriptor> curveLegendPropertiesMap = null;  
-    private static Dictionary<string, UITestPropertyDescriptor> CurveLegendPropertiesMap  
-    {  
-        get  
-        {  
-            if (curveLegendPropertiesMap == null)  
-            {  
-                UITestPropertyAttributes read =  
-                    UITestPropertyAttributes.Readable |  
-                    UITestPropertyAttributes.DoNotGenerateProperties;  
-                curveLegendPropertiesMap =  
-                    new Dictionary<string, UITestPropertyDescriptor>  
-                        (StringComparer.OrdinalIgnoreCase);  
-                curveLegendPropertiesMap.Add("State",  
-                    new UITestPropertyDescriptor(typeof(string), read));  
-            }  
-            return curveLegendPropertiesMap;  
-        }  
-    }  
-  
-    // return the property descriptor  
-    public override UITestPropertyDescriptor GetPropertyDescriptor(UITestControl uiTestControl, string propertyName)  
-    {  
-        return CurveLegendPropertiesMap[propertyName];  
-    }  
-  
-    // return the property names  
-    public override ICollection<string> GetPropertyNames(UITestControl uiTestControl)  
-    {  
-        if (uiTestControl.ControlType.NameEquals("Chart") || uiTestControl.ControlType.NameEquals("Text"))  
-        {  
-            // the keys of the property map are the collection of property names  
-            return CurveLegendPropertiesMap.Keys;  
-        }  
-  
-        // this is not my control  
-        throw new NotSupportedException();  
-    }  
-  
-    // Get the property value by parsing the accessible description  
-    public override object GetPropertyValue(UITestControl uiTestControl, string propertyName)  
-    {  
-        if (String.Equals(propertyName, "State", StringComparison.OrdinalIgnoreCase))  
-        {  
-            object[] native = uiTestControl.NativeElement as object[];  
-            IAccessible acc = native[0] as IAccessible;  
-  
-            string[] descriptionTokens = acc.accDescription.Split(new char[] { ';' });  
-            return descriptionTokens[1];  
-        }  
-  
-        // this is not my control  
-        throw new NotSupportedException();  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
 5.  Override <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel*?displayProperty=fullName> to indicate that your assembly provides control-specific support for your control and its children.  
   
-    ```c#  
-    public override int GetControlSupportLevel(UITestControl uiTestControl)  
-    {  
-        // For MSAA, check the control type  
-        if (string.Equals(uiTestControl.TechnologyName, "MSAA",  
-            StringComparison.OrdinalIgnoreCase) &&  
-            (uiTestControl.ControlType == "Chart"||uiTestControl.ControlType == "Text"))  
-        {  
-            return (int)ControlSupport.ControlSpecificSupport;  
-        }  
-  
-        // This is not my control, so return NoSupport  
-        return (int)ControlSupport.NoSupport;  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
 6.  Override the remaining abstract methods of <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider*?displayProperty=fullName>.  
   
-    ```c#  
-    public override string[] GetPredefinedSearchProperties(Type specializedClass)  
-    {  
-        throw new NotImplementedException();  
-    }  
-  
-    public override Type GetSpecializedClass(UITestControl uiTestControl)  
-    {  
-        throw new NotImplementedException();  
-    }  
-  
-    public override Type GetPropertyNamesClassType(UITestControl uiTestControl)  
-    {  
-        throw new NotImplementedException();  
-    }  
-  
-    public override void SetPropertyValue(UITestControl uiTestControl, string propertyName, object value)  
-    {  
-        throw new NotImplementedException();  
-    }  
-  
-    public override string GetPropertyForAction(UITestControl uiTestControl, UITestAction action)  
-    {  
-        throw new NotImplementedException();  
-    }  
-  
-    public override string[] GetPropertyForControlState(UITestControl uiTestControl, ControlStates uiState, out bool[] stateValues)  
-    {  
-        throw new NotImplementedException();  
-    }  
-  
-    ```  
-  
+<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
 7.  Add an extension package class that’s derived from <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage*>.  
   
-    ```c#  
-    using System;  
-    using Microsoft.VisualStudio.TestTools.UITesting;  
-    using Microsoft.VisualStudio.TestTools.UITest.Extension;  
-    using Microsoft.VisualStudio.TestTools.UITest.Common;  
-  
-    namespace ChartControlExtensionPackage  
-    {  
-        internal class ChartControlExtensionPackage : UITestExtensionPackage  
-        {  
-        }  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
 8.  Define the `UITestExtensionPackage` attribute for the assembly.  
   
-    ```c#  
-    [assembly: Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage(  
-                    "ChartControlExtensionPackage",  
-                    typeof(ChartControlExtensionPackage.ChartControlExtensionPackage))]  
-    namespace ChartControlExtensionPackage  
-    {  
-       …  
-    ```  
-  
+<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
 9. In the extension package class, override <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService*?displayProperty=fullName> to return the property provider class when a property provider is requested.  
   
-    ```c#  
-    internal class ChartControlExtensionPackage : UITestExtensionPackage  
-    {  
-        public override object GetService(Type serviceType)  
-        {  
-            if (serviceType == typeof(UITestPropertyProvider))  
-            {  
-                if (propertyProvider == null)  
-                {  
-                    propertyProvider = new ChartControlPropertyProvider();  
-                }  
-                return propertyProvider;  
-            }  
-            return null;  
-        }  
-  
-        private UITestPropertyProvider propertyProvider = null;  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
 10. Override the remaining abstract methods and properties of <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage*>.  
   
-    ```c#  
-  
-    public override void Dispose() { }  
-  
-    public override string PackageDescription  
-    {  
-        get { return "Supports coded UI testing of ChartControl"; }  
-    }  
-  
-    public override string PackageName  
-    {  
-        get { return "ChartControl Test Extension"; }  
-    }  
-  
-    public override string PackageVendor  
-    {  
-        get { return "Microsoft (sample)"; }  
-    }  
-  
-    public override Version PackageVersion  
-    {  
-        get { return new Version(1, 0); }  
-    }  
-  
-    public override Version VSVersion  
-    {  
-        get { return new Version(10, 0); }  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
 11. Build your binaries and copy them to **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.  
   
 > [!NOTE]
@@ -328,83 +155,25 @@ Your control can be more easily tested if you implement support for the coded UI
 ##  <a name="codegeneration"></a> Support Code Generation by implementing a Class to Access Custom Properties  
  When the coded UI test builder generates code from a session recording, it uses the <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl*> class to access your controls.  
   
-```c#  
-  
-      UITestControl uIAText = this.UIItemWindow.UIChartControlWindow.UIAText;  
-Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.GetProperty("State").ToString());  
-```  
-  
+<CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
  If you’ve implemented a property provider to provide access to your control’s custom properties, you can add a specialized class that is used to access those properties so that the generated code is simplified.  
   
-```c#  
-  
-      ControlLegend uIAText = this.UIItemWindow.UIChartControlWindow.UIAText;  
-Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);  
-```  
-  
+<CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
 ### To add a specialized class to access your control  
  ![CUIT&#95;CodeGen](../vs140/media/cuit_codegen.png "CUIT_CodeGen")  
   
 1.  Implement a class that’s derived from <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl*> and add the control’s type to the search properties collection in the constructor.  
   
-    ```c#  
-    public class CurveLegend:WinControl   
-    {  
-       public CurveLegend(UITestControl c) : base(c)   
-       {  
-          // The curve legend control is a “text” type of control  
-          SearchProperties.Add(  
-             UITestControl.PropertyNames.ControlType, "Text");  
-       }  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>12</CodeContentPlaceHolder>  
 2.  Implement your control’s custom properties as properties of the class.  
   
-    ```c#  
-    public virtual string State  
-    {  
-        get  
-        {  
-            return (string)GetProperty("State");  
-        }  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>13</CodeContentPlaceHolder>  
 3.  Override your property provider’s <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass*?displayProperty=fullName> method to return the type of the new class for the curve legend child controls.  
   
-    ```c#  
-    public override Type GetSpecializedClass(UITestControl uiTestControl)   
-    {   
-       if (uiTestControl.ControlType.NameEquals("Text"))   
-       {   
-          // This is text type of control. For my control,  
-          // that means it’s a curve legend control.  
-          return typeof(CurveLegend);   
-       }   
-  
-       // this is not a curve legend control  
-       return null;  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>14</CodeContentPlaceHolder>  
 4.  Override your property provider’s <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType*> method to return the type of the new class’ PropertyNames method.  
   
-    ```c#  
-    public override Type GetPropertyNamesClassType(UITestControl uiTestControl)  
-    {  
-        if (uiTestControl.ControlType.NameEquals("Text"))  
-        {  
-          // This is text type of control. For my control,  
-          // that means it’s a curve legend control.  
-            return typeof(CurveLegend.PropertyNames);  
-        }  
-  
-        // this is not a curve legend control  
-        return null;  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>15</CodeContentPlaceHolder>  
 ##  <a name="intentawareactions"></a> Support Intent-Aware Actions by implementing an Action Filter  
  When Visual Studio records a test, it captures each mouse and keyboard event. However, in some cases, the intent of the action can be lost in the series of mouse and keyboard events. For example, if your control supports autocomplete, the same set of mouse and keyboard events may result in a different value when the test is played back in a different environment. You can add an action filter plug-in that replaces the series of keyboard and mouse events with a single action. This way, you can replace the series of mouse and keyboard events resulting in the selection of a value with a single action that sets the value. Doing that protects coded UI tests from the differences in autocomplete from one environment to another.  
   
@@ -413,101 +182,13 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
   
 1.  Implement an action filter class that’s derived from <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter*>, overriding the properties <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout*>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category*>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled*>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType*>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group*> and <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name*>.  
   
-    ```c#  
-    internal class MyActionFilter : UITestActionFilter  
-    {  
-       // If the user actions we are aggregating exceeds the time allowed,  
-       // this filter is not applied. (The timeout is configured when the  
-       // test is run.)  
-       public override bool ApplyTimeout  
-       {  
-          get { return true; }  
-       }  
-  
-       // Gets the category of this filter. Categories of filters  
-       // are applied in priority order.  
-       public override UITestActionFilterCategory Category  
-       {  
-          get { return UITestActionFilterCategory.PostSimpleToCompoundActionConversion; }  
-       }  
-  
-       public override bool Enabled  
-       {  
-          get { return true; }  
-       }  
-  
-       public override UITestActionFilterType FilterType  
-       {  
-          // This action filter operates on a single action  
-          get { return UITestActionFilterType.Unary; }  
-       }  
-  
-       // Gets the name of the group to which this filter belongs.  
-       // A group can be enabled/disabled using configuration file.  
-       public override string Group  
-       {  
-          get { return "ChartControlActionFilters"; }  
-       }  
-  
-       // Gets the name of this filter.  
-       public override string Name  
-       {  
-          get { return "Convert Double-Click to Single-Click"; }  
-       }  
-    ```  
-  
+<CodeContentPlaceHolder>16</CodeContentPlaceHolder>  
 2.  Override <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule*>. The example here realpces a double-click action with a single click action.  
   
-    ```c#  
-    public override bool ProcessRule(IUITestActionStack actionStack)  
-    {  
-        if (actionStack.Count > 0)  
-        {  
-            MouseAction lastAction = actionStack.Peek() as MouseAction;  
-            if (lastAction != null)  
-            {  
-                if (lastAction.UIElement.ControlTypeName.Equals(  
-                     ControlType.Text.ToString(),  
-                     StringComparison.OrdinalIgnoreCase))  
-                {  
-                    if(lastAction.ActionType == MouseActionType.DoubleClick)  
-                    {  
-                        // Convert to single click  
-                        lastAction.ActionType = MouseActionType.Click;  
-                    }  
-                }  
-            }  
-        }  
-        // Do not stop aggregation  
-        return false;  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>17</CodeContentPlaceHolder>  
 3.  Add the action filter to the <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService*> method of your extension package.  
   
-    ```c#  
-    public override object GetService(Type serviceType)   
-    {   
-       if (serviceType == typeof(UITestPropertyProvider))   
-       {   
-          if (propertyProvider == null)  
-          {  
-             propertyProvider = new PropertyProvider();  
-          }   
-          return propertyProvider;  
-       }   
-       else if (serviceType == typeof(UITestActionFilter))   
-       {   
-          if (actionFilter == null)  
-          {  
-             actionFilter = new RadGridViewActionFilter();  
-          }  
-          return actionFilter;   
-       }   
-       return null;  
-    }  
-    ```  
-  
+<CodeContentPlaceHolder>18</CodeContentPlaceHolder>  
 4.  Build your binaries and copy them to %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  
   
 > [!NOTE]

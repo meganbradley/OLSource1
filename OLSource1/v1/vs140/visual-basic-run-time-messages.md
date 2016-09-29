@@ -21,7 +21,7 @@ translation.priority.ht:
 # Visual Basic Run-Time Messages
 This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] error messages that occur at run time.  
   
- [<address\> is not a valid remote file address](../vs140/-address--is-not-a-valid-remote-file-address.md)  
+ [\<address> is not a valid remote file address](../vs140/-address--is-not-a-valid-remote-file-address.md)  
   
  [A delimiter cannot be Nothing or an empty String](../vs140/a-delimiter-cannot-be-nothing-or-an-empty-string.md)  
   
@@ -33,7 +33,7 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [A startup form has not been specified](../vs140/a-startup-form-has-not-been-specified.md)  
   
- [Access denied to '<name\>'](../vs140/access-denied-to---name--.md)  
+ [Access denied to '\<name>'](../vs140/access-denied-to---name--.md)  
   
  [Add failed. Duplicate key value supplied](../vs140/add-failed.-duplicate-key-value-supplied.md)  
   
@@ -47,45 +47,45 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Application-defined or object-defined error](../vs140/application-defined-or-object-defined-error.md)  
   
- [Argument '<argument1\>' must be less than or equal to the length of argument '<argument2\>'](../vs140/argument---argument1---must-be-less-than-or-equal-to-the-length-of-argument---argument2--.md)  
+ [Argument '\<argument1>' must be less than or equal to the length of argument '\<argument2>'](../vs140/argument---argument1---must-be-less-than-or-equal-to-the-length-of-argument---argument2--.md)  
   
- [Argument '<argumentname\>' cannot be a multidimensional array](../vs140/argument---argumentname---cannot-be-a-multidimensional-array.md)  
+ [Argument '\<argumentname>' cannot be a multidimensional array](../vs140/argument---argumentname---cannot-be-a-multidimensional-array.md)  
   
- [Argument <argumentname\> cannot be an empty string or Nothing](../vs140/argument--argumentname--cannot-be-an-empty-string-or-nothing.md)  
+ [Argument \<argumentname> cannot be an empty string or Nothing](../vs140/argument--argumentname--cannot-be-an-empty-string-or-nothing.md)  
   
- [Argument '<argumentname\>' cannot be converted to a numeric value](../vs140/argument---argumentname---cannot-be-converted-to-a-numeric-value.md)  
+ [Argument '\<argumentname>' cannot be converted to a numeric value](../vs140/argument---argumentname---cannot-be-converted-to-a-numeric-value.md)  
   
- [Argument '<argumentname\>' cannot be converted to type '<typename\>'](../vs140/argument---argumentname---cannot-be-converted-to-type---typename--.md)  
+ [Argument '\<argumentname>' cannot be converted to type '\<typename>'](../vs140/argument---argumentname---cannot-be-converted-to-type---typename--.md)  
   
- [Argument '<argumentname\>' cannot be converted to type 'Date'](../vs140/argument---argumentname---cannot-be-converted-to-type--date-.md)  
+ [Argument '\<argumentname>' cannot be converted to type 'Date'](../vs140/argument---argumentname---cannot-be-converted-to-type--date-.md)  
   
- [Argument '<argumentname\>' is not a valid value](../vs140/argument---argumentname---is-not-a-valid-value.md)  
+ [Argument '\<argumentname>' is not a valid value](../vs140/argument---argumentname---is-not-a-valid-value.md)  
   
- [Argument '<argumentname\>' is not valid for the array](../vs140/argument---argumentname---is-not-valid-for-the-array.md)  
+ [Argument '\<argumentname>' is not valid for the array](../vs140/argument---argumentname---is-not-valid-for-the-array.md)  
   
- [Argument '<argumentname\>' is Nothing](../vs140/argument---argumentname---is-nothing.md)  
+ [Argument '\<argumentname>' is Nothing](../vs140/argument---argumentname---is-nothing.md)  
   
- [Argument '<argumentname\>' is Nothing or empty](../vs140/argument---argumentname---is-nothing-or-empty.md)  
+ [Argument '\<argumentname>' is Nothing or empty](../vs140/argument---argumentname---is-nothing-or-empty.md)  
   
- [Argument '<argumentname\>' must be greater than 0 or equal to -1](../vs140/argument---argumentname---must-be-greater-than-0-or-equal-to--1.md)  
+ [Argument '\<argumentname>' must be greater than 0 or equal to -1](../vs140/argument---argumentname---must-be-greater-than-0-or-equal-to--1.md)  
   
- [Argument '<argumentname\>' must be greater than or equal to 1](../vs140/argument---argumentname---must-be-greater-than-or-equal-to-1.md)  
+ [Argument '\<argumentname>' must be greater than or equal to 1](../vs140/argument---argumentname---must-be-greater-than-or-equal-to-1.md)  
   
- [Argument '<argumentname\>' must be greater than or equal to -1](../vs140/argument---argumentname---must-be-greater-than-or-equal-to--1.md)  
+ [Argument '\<argumentname>' must be greater than or equal to -1](../vs140/argument---argumentname---must-be-greater-than-or-equal-to--1.md)  
   
- [Argument <argumentname\> must be greater than or equal to zero](../vs140/argument--argumentname--must-be-greater-than-or-equal-to-zero.md)  
+ [Argument \<argumentname> must be greater than or equal to zero](../vs140/argument--argumentname--must-be-greater-than-or-equal-to-zero.md)  
   
- [Argument '<argumentname\>' must be greater than or equal to zero](../vs140/argument---argumentname---must-be-greater-than-or-equal-to-zero.md)  
+ [Argument '\<argumentname>' must be greater than or equal to zero](../vs140/argument---argumentname---must-be-greater-than-or-equal-to-zero.md)  
   
- [Argument '<argumentname\>' must be greater than zero](../vs140/argument---argumentname---must-be-greater-than-zero.md)  
+ [Argument '\<argumentname>' must be greater than zero](../vs140/argument---argumentname---must-be-greater-than-zero.md)  
   
- [Argument '<argumentname\>' must be in the range of -32768 to 65535](../vs140/argument---argumentname---must-be-in-the-range-of--32768-to-65535.md)  
+ [Argument '\<argumentname>' must be in the range of -32768 to 65535](../vs140/argument---argumentname---must-be-in-the-range-of--32768-to-65535.md)  
   
- [Argument '<argumentname\>' must be within the range 0 to 99](../vs140/argument---argumentname---must-be-within-the-range-0-to-99.md)  
+ [Argument '\<argumentname>' must be within the range 0 to 99](../vs140/argument---argumentname---must-be-within-the-range-0-to-99.md)  
   
- [Argument '<argumentname\>' must be within the range 1 to 255](../vs140/argument---argumentname---must-be-within-the-range-1-to-255.md)  
+ [Argument '\<argumentname>' must be within the range 1 to 255](../vs140/argument---argumentname---must-be-within-the-range-1-to-255.md)  
   
- [Argument '<argumentname1\>' must be less than or equal the length of argument '<argumentname2\>'](../vs140/argument---argumentname1---must-be-less-than-or-equal-the-length-of-argument---argumentname2--.md)  
+ [Argument '\<argumentname1>' must be less than or equal the length of argument '\<argumentname2>'](../vs140/argument---argumentname1---must-be-less-than-or-equal-the-length-of-argument---argumentname2--.md)  
   
  [Argument 'Access' is not valid. Valid values for Append mode are 'OpenAccess.Write' and 'OpenAccess.Default'](../vs140/argument--access--is-not-valid.-valid-values-for-append-mode-are--openaccess.write--and--openaccess.default-.md)  
   
@@ -115,7 +115,7 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Argument 'Period' must be less than or equal to argument 'Life'](../vs140/argument--period--must-be-less-than-or-equal-to-argument--life-.md)  
   
- [Argument value '<pathname\>' contains characters that are not valid in a path name](../vs140/argument-value---pathname---contains-characters-that-are-not-valid-in-a-path-name.md)  
+ [Argument value '\<pathname>' contains characters that are not valid in a path name](../vs140/argument-value---pathname---contains-characters-that-are-not-valid-in-a-path-name.md)  
   
  [Arguments are not valid](../vs140/arguments-are-not-valid.md)  
   
@@ -147,11 +147,11 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Cannot call friend function on object which is not an instance of defining class](../vs140/cannot-call-friend-function-on-object-which-is-not-an-instance-of-defining-class.md)  
   
- [Cannot convert argument '<argumentname\>' of type '<type1\>' to type '<type2\>'](../vs140/cannot-convert-argument---argumentname---of-type---type1---to-type---type2--.md)  
+ [Cannot convert argument '\<argumentname>' of type '\<type1>' to type '\<type2>'](../vs140/cannot-convert-argument---argumentname---of-type---type1---to-type---type2--.md)  
   
- [Cannot convert start value of type '<type1\>' and step value of type '<type2\>' to a common type](../vs140/cannot-convert-start-value-of-type---type1---and-step-value-of-type---type2---to-a-common-type.md)  
+ [Cannot convert start value of type '\<type1>' and step value of type '\<type2>' to a common type](../vs140/cannot-convert-start-value-of-type---type1---and-step-value-of-type---type2---to-a-common-type.md)  
   
- [Cannot convert start value of type '<type1\>', limit value of '<type2\>' and step value of '<type3\>' to a common type](../vs140/cannot-convert-start-value-of-type---type1----limit-value-of---type2---and-step-value-of---type3---to-a-common-type.md)  
+ [Cannot convert start value of type '\<type1>', limit value of '\<type2>' and step value of '\<type3>' to a common type](../vs140/cannot-convert-start-value-of-type---type1----limit-value-of---type2---and-step-value-of---type3---to-a-common-type.md)  
   
  [Cannot create ActiveX Component](../vs140/cannot-create-activex-component.md)  
   
@@ -167,11 +167,11 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Can't perform requested operation (Visual Basic)](../vs140/can-t-perform-requested-operation--visual-basic-.md)  
   
- [Cast from string "<string\>" to type '<typename\>' is not valid](../vs140/cast-from-string---string---to-type---typename---is-not-valid.md)  
+ [Cast from string "\<string>" to type '\<typename>' is not valid](../vs140/cast-from-string---string---to-type---typename---is-not-valid.md)  
   
- [Cast from type '<typename1\>' to type '<typename2\>' is not valid](../vs140/cast-from-type---typename1---to-type---typename2---is-not-valid.md)  
+ [Cast from type '\<typename1>' to type '\<typename2>' is not valid](../vs140/cast-from-type---typename1---to-type---typename2---is-not-valid.md)  
   
- [Class '<classname\>' does not implement the System.Collections.ICollection interface](../vs140/class---classname---does-not-implement-the-system.collections.icollection-interface.md)  
+ [Class '\<classname>' does not implement the System.Collections.ICollection interface](../vs140/class---classname---does-not-implement-the-system.collections.icollection-interface.md)  
   
  [Class does not support Automation or does not support expected interface](../vs140/class-does-not-support-automation-or-does-not-support-expected-interface.md)  
   
@@ -209,7 +209,7 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Division by zero (Visual Basic Run-Time Error)](../vs140/division-by-zero--visual-basic-run-time-error-.md)  
   
- [Drive '<drivename\>' not found](../vs140/drive---drivename---not-found.md)  
+ [Drive '\<drivename>' not found](../vs140/drive---drivename---not-found.md)  
   
  [Encoding cannot be set to Nothing](../vs140/encoding-cannot-be-set-to-nothing.md)  
   
@@ -217,19 +217,19 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Error number must be within the range 0 and 65535](../vs140/error-number-must-be-within-the-range-0-and-65535.md)  
   
- [Expression '<name\>' is not a procedure, but occurs as the target of a procedure call](../vs140/expression---name---is-not-a-procedure--but-occurs-as-the-target-of-a-procedure-call.md)  
+ [Expression '\<name>' is not a procedure, but occurs as the target of a procedure call](../vs140/expression---name---is-not-a-procedure--but-occurs-as-the-target-of-a-procedure-call.md)  
   
  [Expression too complex](../vs140/expression-too-complex.md)  
   
  [Feature not yet implemented](../vs140/feature-not-yet-implemented.md)  
   
- [Field '<fieldname\>' of type '<typename\>' is 'ReadOnly'](../vs140/field---fieldname---of-type---typename---is--readonly-.md)  
+ [Field '\<fieldname>' of type '\<typename>' is 'ReadOnly'](../vs140/field---fieldname---of-type---typename---is--readonly-.md)  
   
- [File '<filename\>' cannot be deleted because it is open](../vs140/file---filename---cannot-be-deleted-because-it-is-open.md)  
+ [File '\<filename>' cannot be deleted because it is open](../vs140/file---filename---cannot-be-deleted-because-it-is-open.md)  
   
- [File '<filename\>' is write protected](../vs140/file---filename---is-write-protected.md)  
+ [File '\<filename>' is write protected](../vs140/file---filename---is-write-protected.md)  
   
- [File '<filename\>' not found](../vs140/file---filename---not-found.md)  
+ [File '\<filename>' not found](../vs140/file---filename---not-found.md)  
   
  [File already exists](../vs140/file-already-exists.md)  
   
@@ -237,9 +237,9 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [File format not valid](../vs140/file-format-not-valid.md)  
   
- [File I/O of a structure with field '<fieldname\>' of type '<typename\>' is not valid](../vs140/file-i-o-of-a-structure-with-field---fieldname---of-type---typename---is-not-valid.md)  
+ [File I/O of a structure with field '\<fieldname>' of type '\<typename>' is not valid](../vs140/file-i-o-of-a-structure-with-field---fieldname---of-type---typename---is-not-valid.md)  
   
- [File I/O with type '<typename\>' is not valid](../vs140/file-i-o-with-type---typename---is-not-valid.md)  
+ [File I/O with type '\<typename>' is not valid](../vs140/file-i-o-with-type---typename---is-not-valid.md)  
   
  [File information cannot be queried if the file does not exist](../vs140/file-information-cannot-be-queried-if-the-file-does-not-exist.md)  
   
@@ -275,7 +275,7 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Internal error (Visual Basic)](../vs140/internal-error--visual-basic-.md)  
   
- [Internal error happened at <location\>](../vs140/internal-error-happened-at--location-.md)  
+ [Internal error happened at \<location>](../vs140/internal-error-happened-at--location-.md)  
   
  [Internal error in the Microsoft Visual Basic runtime](../vs140/internal-error-in-the-microsoft-visual-basic-runtime.md)  
   
@@ -283,31 +283,31 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Key cannot be deleted because it has subkeys](../vs140/key-cannot-be-deleted-because-it-has-subkeys.md)  
   
- [Late-bound assignment to a field of value type '<typename\>' is not valid when '<name\>' is the result of a late-bound expression](../vs140/late-bound-assignment-to-a-field-of-value-type---typename---is-not-valid-when---name---is-the-result-of-a-late-bound-expression.md)  
+ [Late-bound assignment to a field of value type '\<typename>' is not valid when '\<name>' is the result of a late-bound expression](../vs140/late-bound-assignment-to-a-field-of-value-type---typename---is-not-valid-when---name---is-the-result-of-a-late-bound-expression.md)  
   
- [Length of argument '<argumentname\>' must be greater than zero](../vs140/length-of-argument---argumentname---must-be-greater-than-zero.md)  
+ [Length of argument '\<argumentname>' must be greater than zero](../vs140/length-of-argument---argumentname---must-be-greater-than-zero.md)  
   
- [Line <number\> cannot be parsed using the current Delimiters](../vs140/line--number--cannot-be-parsed-using-the-current-delimiters.md)  
+ [Line \<number> cannot be parsed using the current Delimiters](../vs140/line--number--cannot-be-parsed-using-the-current-delimiters.md)  
   
- [Line <number\> cannot be parsed using the current FieldWidths](../vs140/line--number--cannot-be-parsed-using-the-current-fieldwidths.md)  
+ [Line \<number> cannot be parsed using the current FieldWidths](../vs140/line--number--cannot-be-parsed-using-the-current-fieldwidths.md)  
   
- [Line <number\> cannot be read because it exceeds the maximum line size.](../vs140/line--number--cannot-be-read-because-it-exceeds-the-maximum-line-size..md)  
+ [Line \<number> cannot be read because it exceeds the maximum line size.](../vs140/line--number--cannot-be-read-because-it-exceeds-the-maximum-line-size..md)  
   
- [Locale ID '<name\>' is not supported on this system](../vs140/locale-id---name---is-not-supported-on-this-system.md)  
+ [Locale ID '\<name>' is not supported on this system](../vs140/locale-id---name---is-not-supported-on-this-system.md)  
   
- [Loop control variable of type '<typename\>' does not implement the 'System.IComparable' interface](../vs140/loop-control-variable-of-type---typename---does-not-implement-the--system.icomparable--interface.md)  
+ [Loop control variable of type '\<typename>' does not implement the 'System.IComparable' interface](../vs140/loop-control-variable-of-type---typename---does-not-implement-the--system.icomparable--interface.md)  
   
  [Managed classes derived from a COM class cannot be called late-bound.](../vs140/managed-classes-derived-from-a-com-class-cannot-be-called-late-bound..md)  
   
- [Method '<methodname\>' cannot be called with <number\> arguments](../vs140/method---methodname---cannot-be-called-with--number--arguments.md)  
+ [Method '\<methodname>' cannot be called with \<number> arguments](../vs140/method---methodname---cannot-be-called-with--number--arguments.md)  
   
- [Method '<methodname\>' has no parameter named '<parametername\>'](../vs140/method---methodname---has-no-parameter-named---parametername--.md)  
+ [Method '\<methodname>' has no parameter named '\<parametername>'](../vs140/method---methodname---has-no-parameter-named---parametername--.md)  
   
  [Method or data member not found](../vs140/method-or-data-member-not-found.md)  
   
  [My.Application.Log cannot determine the amount of free disk space](../vs140/my.application.log-cannot-determine-the-amount-of-free-disk-space.md)  
   
- [Named argument '<argumentname\>' specified multiple times](../vs140/named-argument---argumentname---specified-multiple-times.md)  
+ [Named argument '\<argumentname>' specified multiple times](../vs140/named-argument---argumentname---specified-multiple-times.md)  
   
  [Named argument not found (Visual Basic)](../vs140/named-argument-not-found--visual-basic-.md)  
   
@@ -315,19 +315,19 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Need property array index](../vs140/need-property-array-index.md)  
   
- [No accessible overloaded '<methodname\>' can be called with these arguments without a narrowing conversion](../vs140/no-accessible-overloaded---methodname---can-be-called-with-these-arguments-without-a-narrowing-conversion.md)  
+ [No accessible overloaded '\<methodname>' can be called with these arguments without a narrowing conversion](../vs140/no-accessible-overloaded---methodname---can-be-called-with-these-arguments-without-a-narrowing-conversion.md)  
   
- [No accessible overloaded '<methodname\>' can be called with these arguments without a narrowing conversion: <list\>](../vs140/no-accessible-overloaded---methodname---can-be-called-with-these-arguments-without-a-narrowing-conversion---list-.md)  
+ [No accessible overloaded '\<methodname>' can be called with these arguments without a narrowing conversion: \<list>](../vs140/no-accessible-overloaded---methodname---can-be-called-with-these-arguments-without-a-narrowing-conversion---list-.md)  
   
- [No accessible overloaded '<methodname\>' can be called with these arguments without a widening conversion: <list\>](../vs140/no-accessible-overloaded---methodname---can-be-called-with-these-arguments-without-a-widening-conversion---list-.md)  
+ [No accessible overloaded '\<methodname>' can be called with these arguments without a widening conversion: \<list>](../vs140/no-accessible-overloaded---methodname---can-be-called-with-these-arguments-without-a-widening-conversion---list-.md)  
   
- [No accessible overloaded '<methodname\>' can be called with these arguments: <list\>](../vs140/no-accessible-overloaded---methodname---can-be-called-with-these-arguments---list-.md)  
+ [No accessible overloaded '\<methodname>' can be called with these arguments: \<list>](../vs140/no-accessible-overloaded---methodname---can-be-called-with-these-arguments---list-.md)  
   
- [No default member found for type '<typename\>'](../vs140/no-default-member-found-for-type---typename--.md)  
+ [No default member found for type '\<typename>'](../vs140/no-default-member-found-for-type---typename--.md)  
   
- [No files found matching '<filename\>'](../vs140/no-files-found-matching---filename--.md)  
+ [No files found matching '\<filename>'](../vs140/no-files-found-matching---filename--.md)  
   
- [No method '<methodname\>' can accept an argument of type '<typename\>' for parameter '<parametername\>'](../vs140/no-method---methodname---can-accept-an-argument-of-type---typename---for-parameter---parametername--.md)  
+ [No method '\<methodname>' can accept an argument of type '\<typename>' for parameter '\<parametername>'](../vs140/no-method---methodname---can-accept-an-argument-of-type---typename---for-parameter---parametername--.md)  
   
  [No mouse is present](../vs140/no-mouse-is-present.md)  
   
@@ -353,9 +353,9 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Only the first eight characters of a custom log name are significant](../vs140/only-the-first-eight-characters-of-a-custom-log-name-are-significant.md)  
   
- [Operator is not valid for '<name1\>' and '<name2\>'](../vs140/operator-is-not-valid-for---name1---and---name2--.md)  
+ [Operator is not valid for '\<name1>' and '\<name2>'](../vs140/operator-is-not-valid-for---name1---and---name2--.md)  
   
- [Operator is not valid for type '<typename\>'](../vs140/operator-is-not-valid-for-type---typename--.md)  
+ [Operator is not valid for type '\<typename>'](../vs140/operator-is-not-valid-for-type---typename--.md)  
   
  [Ordinal is not valid](../vs140/ordinal-is-not-valid.md)  
   
@@ -367,7 +367,7 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Overflow (Visual Basic Run-Time Error)](../vs140/overflow--visual-basic-run-time-error-.md)  
   
- [Path '<pathname\>' not found](../vs140/path---pathname---not-found.md)  
+ [Path '\<pathname>' not found](../vs140/path---pathname---not-found.md)  
   
  [Path not found](../vs140/path-not-found.md)  
   
@@ -381,11 +381,11 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Procedure call or argument is not valid (Visual Basic)](../vs140/procedure-call-or-argument-is-not-valid--visual-basic-.md)  
   
- [Process '<processname\>' was not found](../vs140/process---processname---was-not-found.md)  
+ [Process '\<processname>' was not found](../vs140/process---processname---was-not-found.md)  
   
- [Property <propertyname\> cannot be set to an empty string or Nothing](../vs140/property--propertyname--cannot-be-set-to-an-empty-string-or-nothing.md)  
+ [Property \<propertyname> cannot be set to an empty string or Nothing](../vs140/property--propertyname--cannot-be-set-to-an-empty-string-or-nothing.md)  
   
- [Property <propertyname\> cannot be set to Nothing](../vs140/property--propertyname--cannot-be-set-to-nothing.md)  
+ [Property \<propertyname> cannot be set to Nothing](../vs140/property--propertyname--cannot-be-set-to-nothing.md)  
   
  [Property array index is not valid](../vs140/property-array-index-is-not-valid.md)  
   
@@ -397,7 +397,7 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Property value is not valid](../vs140/property-value-is-not-valid.md)  
   
- [Public member '<membername\>' on type '<typename\>' not found](../vs140/public-member---membername---on-type---typename---not-found.md)  
+ [Public member '\<membername>' on type '\<typename>' not found](../vs140/public-member---membername---on-type---typename---not-found.md)  
   
  ['ReDim' can only change the right-most dimension](../vs140/-redim--can-only-change-the-right-most-dimension.md)  
   
@@ -405,9 +405,9 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  ['ReDim' Preserve operand cannot be Nothing](../vs140/-redim--preserve-operand-cannot-be-nothing.md)  
   
- [Registry key '<keyname\>' could not be created](../vs140/registry-key---keyname---could-not-be-created.md)  
+ [Registry key '\<keyname>' could not be created](../vs140/registry-key---keyname---could-not-be-created.md)  
   
- [Registry key '<keyname\>' could not be found](../vs140/registry-key---keyname---could-not-be-found.md)  
+ [Registry key '\<keyname>' could not be found](../vs140/registry-key---keyname---could-not-be-found.md)  
   
  [Replacements too long](../vs140/replacements-too-long.md)  
   
@@ -491,9 +491,9 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [The stream passed to TextFieldParser cannot be read](../vs140/the-stream-passed-to-textfieldparser-cannot-be-read.md)  
   
- [The value of <argumentname\> must be a positive number](../vs140/the-value-of--argumentname--must-be-a-positive-number.md)  
+ [The value of \<argumentname> must be a positive number](../vs140/the-value-of--argumentname--must-be-a-positive-number.md)  
   
- [The value of <argumentname\> must be greater than or equal to 1000](../vs140/the-value-of--argumentname--must-be-greater-than-or-equal-to-1000.md)  
+ [The value of \<argumentname> must be greater than or equal to 1000](../vs140/the-value-of--argumentname--must-be-greater-than-or-equal-to-1000.md)  
   
  [This array is fixed or temporarily locked (Visual Basic)](../vs140/this-array-is-fixed-or-temporarily-locked--visual-basic-.md)  
   
@@ -517,7 +517,7 @@ This section contains the [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] err
   
  [Type mismatch (Visual Basic)](../vs140/type-mismatch--visual-basic-.md)  
   
- [Type of argument '<argumentname\>' is '<typename\>', which is not numeric](../vs140/type-of-argument---argumentname---is---typename----which-is-not-numeric.md)  
+ [Type of argument '\<argumentname>' is '\<typename>', which is not numeric](../vs140/type-of-argument---argumentname---is---typename----which-is-not-numeric.md)  
   
  [Unable to get serial port names because of an internal system error](../vs140/unable-to-get-serial-port-names-because-of-an-internal-system-error.md)  
   

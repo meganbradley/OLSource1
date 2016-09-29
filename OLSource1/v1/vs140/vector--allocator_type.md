@@ -41,7 +41,7 @@ typedef Allocator allocator_type;
  See the example for [get_allocator](../vs140/vector--get_allocator.md) for an example that uses `allocator_type`.  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

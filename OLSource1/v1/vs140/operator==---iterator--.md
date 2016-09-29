@@ -132,7 +132,7 @@ int main( )
  **in the reversed sequence: 8.**  
 **The iterators are not equal.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

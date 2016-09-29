@@ -107,7 +107,7 @@ The character with index 8 in the const string cstr2 is: n.
 ```  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

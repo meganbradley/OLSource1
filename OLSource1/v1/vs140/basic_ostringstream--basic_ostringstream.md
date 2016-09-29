@@ -59,7 +59,7 @@ explicit basic_ostringstream(
  The second constructor initializes the base class by calling basic_ostream(**sb**). It also initializes **sb** by calling basic_stringbuf<**Elem**, **Tr**, `Alloc`>(_*Str*, `_Mode` &#124; `ios_base::out`).  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

@@ -39,7 +39,7 @@ promise(
   
 #### Parameters  
  `Al`  
- A memory allocator. See [<allocators\>](../vs140/-allocators-.md) for more information.  
+ A memory allocator. See [\<allocators>](../vs140/-allocators-.md) for more information.  
   
  `Other`  
  A `promise` object.  
@@ -58,4 +58,4 @@ promise(
   
 ## See Also  
  [promise Class](../vs140/promise-class.md)   
- [<future\>](../vs140/-future-.md)
+ [\<future>](../vs140/-future-.md)

@@ -56,10 +56,10 @@ template<class ForwardIterator, class Predicate>
  The template function finds the first iterator `it` in `[``_First``,``_Last``)` for which `_Comp(*it)` is `false`. The sequence must be ordered by `_Comp`.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

@@ -26,7 +26,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;chrono&gt;
-Include the standard header <chrono\> to define classes and functions that represent and manipulate time durations and time instants.  
+Include the standard header \<chrono> to define classes and functions that represent and manipulate time durations and time instants.  
   
  **(Visual Studio 2015:)** The implementation of `steady_clock` has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on QueryPerformanceCounter() and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in Visual C++ `steady_clock::time_point` is now a typedef for `chrono::time_point<steady_clock>`; however, this is not necessarily the case for other implementations.  
   
@@ -37,7 +37,7 @@ Include the standard header <chrono\> to define classes and functions that repre
 ```  
   
 ### Literals  
- Literals in the <chrono\> header are members of the literals::chrono_literals inline namespace. For more information, see [chrono literals](../vs140/-chrono--functions.md#chrono_literals).  
+ Literals in the \<chrono> header are members of the literals::chrono_literals inline namespace. For more information, see [chrono literals](../vs140/-chrono--functions.md#chrono_literals).  
   
 |||  
 |-|-|  
@@ -89,7 +89,7 @@ Include the standard header <chrono\> to define classes and functions that repre
 |[operator>= Operator](../vs140/-chrono--operators.md#operator_gt__eq)|Determines whether one `duration` or `time_point` object is greater than or equal to another `duration` or `time_point` object.|  
   
 ### Predefined Duration Types  
- For more information about ratio types that are used in the following typedefs, see [<ratio\>](../vs140/-ratio-.md).  
+ For more information about ratio types that are used in the following typedefs, see [\<ratio>](../vs140/-ratio-.md).  
   
 |Typedef|Description|  
 |-------------|-----------------|  
@@ -101,16 +101,16 @@ Include the standard header <chrono\> to define classes and functions that repre
 |`typedef duration<int, ratio<3600> > hours;`|Synonym for a `duration` type that has a tick period of one hour.|  
   
 ### Literals  
- **(C++11)**The <chrono\> header defines the following [user-defined literals](../vs140/user-defined-literals---c---.md) that you can use for greater convenience, type-safety and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when std::chrono is in scope.  
+ **(C++11)**The \<chrono> header defines the following [user-defined literals](../vs140/user-defined-literals---c---.md) that you can use for greater convenience, type-safety and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when std::chrono is in scope.  
   
 |Literal|Description|  
 |-------------|-----------------|  
 |chrono::hours operator "" h(unsigned long long Val)|Specifies hours as an integral value.|  
-|chrono::duration<double, ratio<3600> > operator "" h(long double Val)|Specifies hours as a floating-point value.|  
+|chrono::duration<double, ratio\<3600> > operator "" h(long double Val)|Specifies hours as a floating-point value.|  
 |chrono::minutes (operator "" min)(unsigned long long Val)|Specifies minutes as an integral value.|  
-|chrono::duration<double, ratio<60> > (operator "" min)( long double Val)|Specifies minutes as a floating-point value.|  
+|chrono::duration<double, ratio\<60> > (operator "" min)( long double Val)|Specifies minutes as a floating-point value.|  
 |chrono::seconds operator "" s(unsigned long long Val)|Specifies minutes as an integral value.|  
-|chrono::duration<double\> operator "" s(long double Val)|Specifies seconds as a floating-point value.|  
+|chrono::duration\<double> operator "" s(long double Val)|Specifies seconds as a floating-point value.|  
 |chrono::milliseconds operator "" ms(unsigned long long Val)|Specifies milliseconds as an integral value.|  
 |chrono::duration<double, milli> operator "" ms(long double Val)|Specifies milliseconds as a floating-point value.|  
 |chrono::microseconds operator "" us(unsigned long long Val)|Specifies microseconds as an integral value.|  

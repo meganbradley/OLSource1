@@ -64,4 +64,4 @@ The top-level element for the deployment manifest.
   
 ## See Also  
  [ClickOnce Deployment Manifest](../vs140/clickonce-deployment-manifest.md)   
- [<assembly\> Element (ClickOnce Application)](../vs140/-assembly--element--clickonce-application-.md)
+ [\<assembly> Element (ClickOnce Application)](../vs140/-assembly--element--clickonce-application-.md)

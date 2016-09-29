@@ -29,7 +29,7 @@ In this lesson, you’ll learn how to define an entity field so that users can c
   
      The **Data Designer** opens and displays the **Contacts** entity.  
   
-2.  In the **Name** column, replace the **<Add Property\>** placeholder with **ContactType**, and then choose the Enter key.  
+2.  In the **Name** column, replace the **\<Add Property>** placeholder with **ContactType**, and then choose the Enter key.  
   
 3.  In the **Type** column, open the list, and then choose **Integer**.  
   

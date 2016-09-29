@@ -37,7 +37,7 @@ template<class RealType = double>class chi_squared_distribution{public:    // ty
   
 #### Parameters  
  `RealType`  
- The floating-point result type, defaults to `double`. For possible types, see [<random\>](../vs140/-random-.md).  
+ The floating-point result type, defaults to `double`. For possible types, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  The template class describes a distribution that produces values of a user-specified integral type, or type `double` if none is provided, distributed according to the Chi-Squared Distribution. The following table links to articles about individual members.  
@@ -49,7 +49,7 @@ template<class RealType = double>class chi_squared_distribution{public:    // ty
   
  The property function `n()` returns the value for the stored distribution parameter `n`.  
   
- For more information about distribution classes and their members, see [<random\>](../vs140/-random-.md).  
+ For more information about distribution classes and their members, see [\<random>](../vs140/-random-.md).  
   
  For detailed information about the chi-squared distribution, see the Wolfram MathWorld article                 [Chi-Squared Distribution](http://go.microsoft.com/fwlink/?LinkId=400528).  
   
@@ -179,7 +179,7 @@ Distribution for 10 samples:
 ```  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
@@ -229,4 +229,4 @@ struct param_type {
  This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

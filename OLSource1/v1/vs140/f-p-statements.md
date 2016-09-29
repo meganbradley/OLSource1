@@ -26,7 +26,7 @@ The following table contains a listing of [!INCLUDE[vbprvb](../vs140/includes/vb
 |[GoTo](../vs140/goto-statement.md)|[If...Then...Else](../vs140/if...then...else-statement--visual-basic-.md)|[Implements](../vs140/implements-statement.md)|[Imports (.NET Namespace and Type)](../vs140/imports-statement--.net-namespace-and-type-.md)|  
 |[Imports (XML Namespace)](../vs140/imports-statement--xml-namespace-.md)|[Inherits](../vs140/inherits-statement.md)|[Interface](../vs140/interface-statement--visual-basic-.md)|[Mid](../vs140/mid-statement.md)|  
 |[Module](../vs140/module-statement.md)|[Namespace](../vs140/namespace-statement.md)|[On Error](../vs140/on-error-statement--visual-basic-.md)|[Operator](../vs140/operator-statement.md)|  
-|[Option <keyword\>](../vs140/option--keyword--statement.md)|[Option Compare](../vs140/option-compare-statement.md)|[Option Explicit](../vs140/option-explicit-statement--visual-basic-.md)|[Option Infer](../vs140/option-infer-statement.md)|  
+|[Option \<keyword>](../vs140/option--keyword--statement.md)|[Option Compare](../vs140/option-compare-statement.md)|[Option Explicit](../vs140/option-explicit-statement--visual-basic-.md)|[Option Infer](../vs140/option-infer-statement.md)|  
 |[Option Strict](../vs140/option-strict-statement.md)|[Property](../vs140/property-statement.md)|||  
   
 ## See Also  

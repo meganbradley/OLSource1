@@ -48,10 +48,10 @@ template<class... Types>
  The function executes `left.swap(right)`.  
   
 ## Requirements  
- **Header:** <tuple\>  
+ **Header:** \<tuple>  
   
  **Namespace:** std  
   
 ## See Also  
- [<tuple\>](../vs140/-tuple-.md)   
+ [\<tuple>](../vs140/-tuple-.md)   
  [tuple Class](../vs140/tuple-class.md)

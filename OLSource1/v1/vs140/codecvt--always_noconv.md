@@ -74,7 +74,7 @@ int main( )
  **No conversion is needed.**  
 **At least one conversion is required.**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

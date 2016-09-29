@@ -43,7 +43,7 @@ type *epptr( ) const;
  A pointer just past the end of the output buffer.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

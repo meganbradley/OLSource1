@@ -85,6 +85,6 @@ The upper case of '$' in the locale is: $.
 ```  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std

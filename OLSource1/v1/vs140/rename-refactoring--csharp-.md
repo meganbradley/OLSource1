@@ -121,7 +121,7 @@ translation.priority.ht:
   
      Move the mouse pointer over the smart tag prompt to display the smart tag. Then move the mouse pointer over the smart tag and click the DOWN ARROW to display the smart tag menu.  
   
-4.  Select the **Rename '<identifer1\>' to '<identifier2\>'** menu item to invoke rename refactoring without a preview of the changes to your code. All references to **<identifer1\>** will automatically be updated to **<identifier2\>**.  
+4.  Select the **Rename '\<identifer1>' to '\<identifier2>'** menu item to invoke rename refactoring without a preview of the changes to your code. All references to **\<identifer1>** will automatically be updated to **\<identifier2>**.  
   
      -or-  
   

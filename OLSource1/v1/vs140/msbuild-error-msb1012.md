@@ -26,7 +26,7 @@ translation.priority.ht:
   
 ### To correct this error  
   
--   Specify a response file. The syntax is @<file name\>, for example, `@BuildHW.txt`  
+-   Specify a response file. The syntax is @\<file name>, for example, `@BuildHW.txt`  
   
 -   Do not include the @ switch on the command line.  
   

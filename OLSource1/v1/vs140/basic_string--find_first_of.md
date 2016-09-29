@@ -208,7 +208,7 @@ int main( )
 **The index of the 1st occurrence of an element of 'a2' in str4 after**  
  **the 0th position is: 1**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

@@ -153,11 +153,11 @@ When you modify or add text templates in a domain-specific language solution, yo
   
      (C#)  
   
-     **Compiling transformation: Microsoft.VisualStudio.TextTemplating<GUID\>. GeneratedTextTransformation' does not contain a definition for 'ExampleModel'**  
+     **Compiling transformation: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation' does not contain a definition for 'ExampleModel'**  
   
      (Visual Basic)  
   
-     **Compiling transformation: 'ExampleModel' is not a member of 'Microsoft.VisualStudio.TextTemplating<GUID\>.GeneratedTextTransformation'.**  
+     **Compiling transformation: 'ExampleModel' is not a member of 'Microsoft.VisualStudio.TextTemplating\<GUID>.GeneratedTextTransformation'.**  
   
      In this case, the text template code contains an incorrect property name. You have specified `ExampleModel` as the property name, but the correct property name is `LibraryModel`. You can find the correct property name in the provides parameter, as shown in the following code:  
   

@@ -28,9 +28,9 @@ translation.priority.ht:
 # OnError Element (MSBuild)
 Causes one or more targets to execute, if the `ContinueOnError` attribute is `false` for a failed task.  
   
- <Project\>  
- <Target\>  
- <OnError\>  
+ \<Project>  
+ \<Target>  
+ \<OnError>  
   
 ## Syntax  
   

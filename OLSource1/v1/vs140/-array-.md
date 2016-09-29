@@ -57,5 +57,5 @@ Defines the container template class `array` and several supporting templates.
 |[swap](../vs140/-array--functions.md#swap_function)|Exchanges the contents of one array with the contents of another array.|  
   
 ## See Also  
- [<tuple\>](../vs140/-tuple-.md)   
+ [\<tuple>](../vs140/-tuple-.md)   
  [Header Files](../vs140/c---standard-library-header-files.md)

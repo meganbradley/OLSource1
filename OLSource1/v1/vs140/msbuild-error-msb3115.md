@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3115
-**MSB3115: File '<file\>' is not a valid entry point.**  
+**MSB3115: File '\<file>' is not a valid entry point.**  
   
  This error is generated when a manifest specifies an entry point that is not valid.  
   

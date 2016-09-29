@@ -42,7 +42,7 @@ virtual string_type do_positive_sign( ) const;
  See the example for [positive_sign](../vs140/moneypunct--positive_sign.md), where the virtual member function is called by `positive_sign`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

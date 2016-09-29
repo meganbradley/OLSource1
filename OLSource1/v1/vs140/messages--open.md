@@ -53,7 +53,7 @@ catalog open(
  The member function returns [do_open](../vs140/messages--do_open.md)(`_Catname`, `_Loc`).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

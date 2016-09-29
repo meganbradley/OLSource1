@@ -45,7 +45,7 @@ traits<char> > ostream;
  The type is a synonym for template class [basic_ostream](../vs140/basic_ostream-class.md), specialized for elements of type `char` with default character traits.  
   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   

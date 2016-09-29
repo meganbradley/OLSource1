@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3171
-**MSB3171: Problem generating manifest. '<error\>'**  
+**MSB3171: Problem generating manifest. '\<error>'**  
   
  This is an unexpected error generated when obtaining information about the referenced file or assembly. This message can be generated while generating the application manifest or deployment manifest.  
   

@@ -43,7 +43,7 @@ basic_stringbuf<Elem, Tr, Alloc> *rdbuf( ) const;
  See [basic_filebuf::close](../vs140/basic_filebuf--close.md) for an example that uses `rdbuf`.  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

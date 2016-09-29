@@ -50,10 +50,10 @@ basic_string<wchar_t> wstr(L"");
 >  The size of `wchar_t` is implementation-defined. If your code depends on `wchar_t` to be a certain size, check your platform's implementation (for example, with `sizeof(wchar_t)`). If you need a string character type with a width that is guaranteed to remain the same on all platforms, use [string](../vs140/string--c---stl--string--.md), [u16string](../vs140/u16string.md), or [u32string](../vs140/u32string.md).  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
 ## See Also  
- [<string\>](../vs140/-string-.md)   
+ [\<string>](../vs140/-string-.md)   
  [basic_string Class](../vs140/basic_string-class.md)

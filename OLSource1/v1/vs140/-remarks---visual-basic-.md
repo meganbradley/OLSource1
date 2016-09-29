@@ -34,7 +34,7 @@ Specifies a remarks section for the member.
  A description of the member.  
   
 ## Remarks  
- Use the `<remarks>` tag to add information about a type, supplementing the information specified with [<summary\> (Visual Basic)](../vs140/-summary---visual-basic-.md).  
+ Use the `<remarks>` tag to add information about a type, supplementing the information specified with [\<summary> (Visual Basic)](../vs140/-summary---visual-basic-.md).  
   
  This information appears in the Object Browser. For information about the Object Browser, see [Viewing the Structure of Code](../vs140/viewing-the-structure-of-code.md).  
   

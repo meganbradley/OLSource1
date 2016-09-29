@@ -206,7 +206,7 @@ template <typename T> struct Identity {
 ###  <a name="atomics"></a> Atomics, and More  
  [Atomics](http://go.microsoft.com/fwlink/p/?LinkID=235111), [strong compare and exchange](http://go.microsoft.com/fwlink/p/?LinkID=235112), [bidirectional fences](http://go.microsoft.com/fwlink/p/?LinkID=235113), and [data-dependency ordering](http://go.microsoft.com/fwlink/p/?LinkID=235114) specify Standard Library machinery, which are now implemented.  
   
- **Related STL headers:** [<atomic\>](../vs140/-atomic-.md), [<chrono\>](../vs140/-chrono-.md), [<condition_variable>](../vs140/-condition_variable-.md), [<future\>](../vs140/-future-.md), [<mutex\>](../vs140/-mutex-.md), [<ratio\>](../vs140/-ratio-.md), [<scoped_allocator>](../vs140/-scoped_allocator-.md), and [<thread\>](../vs140/-thread-.md).  
+ **Related STL headers:** [\<atomic>](../vs140/-atomic-.md), [\<chrono>](../vs140/-chrono-.md), [<condition_variable>](../vs140/-condition_variable-.md), [\<future>](../vs140/-future-.md), [\<mutex>](../vs140/-mutex-.md), [\<ratio>](../vs140/-ratio-.md), [<scoped_allocator>](../vs140/-scoped_allocator-.md), and [\<thread>](../vs140/-thread-.md).  
   
  [[go to top](#top)]  
   

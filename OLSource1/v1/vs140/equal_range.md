@@ -237,7 +237,7 @@ Result of equal_range with val = fred:
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

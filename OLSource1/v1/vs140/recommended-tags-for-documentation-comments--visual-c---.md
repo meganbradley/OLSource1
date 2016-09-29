@@ -31,12 +31,12 @@ The Visual C++ compiler will process documentation comments in your code and cre
   
 ||||  
 |-|-|-|  
-|[<c\>](../vs140/-c---visual-c---.md)|[<code\>](../vs140/-code---visual-c---.md)|[<example\>](../vs140/-example---visual-c---.md)|  
-|[<exception\>](../vs140/-exception---visual-c---.md)1|[<include\>](../vs140/-include---visual-c---.md)1|[<list\>](../vs140/-list---visual-c---.md)|  
-|[<para\>](../vs140/-para---visual-c---.md)|[<param\>](../vs140/-param---visual-c---.md)1|[<paramref\>](../vs140/-paramref---visual-c---.md)1|  
-|[<permission\>](../vs140/-permission---visual-c---.md)1|[<remarks\>](../vs140/-remarks---visual-c---.md)|[<returns\>](../vs140/-returns---visual-c---.md)|  
-|[<see\>](../vs140/-see---visual-c---.md)1|[<seealso\>](../vs140/-seealso---visual-c---.md)1|[<summary\>](../vs140/-summary---visual-c---.md)|  
-|[<value\>](../vs140/-value---visual-c---.md)|||  
+|[\<c>](../vs140/-c---visual-c---.md)|[\<code>](../vs140/-code---visual-c---.md)|[\<example>](../vs140/-example---visual-c---.md)|  
+|[\<exception>](../vs140/-exception---visual-c---.md)1|[\<include>](../vs140/-include---visual-c---.md)1|[\<list>](../vs140/-list---visual-c---.md)|  
+|[\<para>](../vs140/-para---visual-c---.md)|[\<param>](../vs140/-param---visual-c---.md)1|[\<paramref>](../vs140/-paramref---visual-c---.md)1|  
+|[\<permission>](../vs140/-permission---visual-c---.md)1|[\<remarks>](../vs140/-remarks---visual-c---.md)|[\<returns>](../vs140/-returns---visual-c---.md)|  
+|[\<see>](../vs140/-see---visual-c---.md)1|[\<seealso>](../vs140/-seealso---visual-c---.md)1|[\<summary>](../vs140/-summary---visual-c---.md)|  
+|[\<value>](../vs140/-value---visual-c---.md)|||  
   
  1. Compiler verifies syntax.  
   

@@ -26,7 +26,7 @@ translation.priority.ht:
  The code in this topic is the sample file for [QuickStart: Debug HTML, CSS, and JavaScript](../vs140/quickstart--debug-html-and-css.md). The errors present by design in the QuickStart are fixed in this version of the code.  
   
 ## Sample Code  
- The following HTML code is used in the <body\> tag in the QuickStart.  
+ The following HTML code is used in the \<body> tag in the QuickStart.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  

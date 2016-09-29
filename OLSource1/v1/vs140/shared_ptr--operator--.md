@@ -65,7 +65,7 @@ int main()
  **sp0->first == 1**  
 **sp0->second == 2**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

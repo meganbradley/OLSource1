@@ -75,7 +75,7 @@ int main( )
  **The queue length is 3.**  
 **The element at the front of the queue is 10.**   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

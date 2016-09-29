@@ -46,7 +46,7 @@ pos_type tellp( );
  See [seekp](../vs140/basic_ostream--seekp.md) for an example using `tellp`.  
   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   

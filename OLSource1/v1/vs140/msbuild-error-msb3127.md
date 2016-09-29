@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3127
-**MSB3127: The default icon <iconname\> could not be found in the current file references or is not part of the required download group. The default icon file name is case sensitive so the file name referenced in the application manifest must exactly match the icon's file name.**  
+**MSB3127: The default icon \<iconname> could not be found in the current file references or is not part of the required download group. The default icon file name is case sensitive so the file name referenced in the application manifest must exactly match the icon's file name.**  
   
  When you publish an application that is configured to use file associations, the default icon that is referenced in the manifest must be located in the current file references, or it must be part of the required download group. The default icon is the icon that appears for files that have the configured file association (the configured file name extension).  
   

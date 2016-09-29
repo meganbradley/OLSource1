@@ -67,7 +67,7 @@ public:
   
  The property member `p()` returns the currently stored distribution parameter value `p`.  
   
- For more information about distribution classes and their members, see [<random\>](../vs140/-random-.md).  
+ For more information about distribution classes and their members, see [\<random>](../vs140/-random-.md).  
   
  For detailed information about the Bernoulli distribution discrete probability function, see the Wolfram MathWorld article                 [Bernoulli Distribution](http://go.microsoft.com/fwlink/?LinkId=398467).  
   
@@ -135,7 +135,7 @@ false :::::::::::::::::::::::::::::::::::::::::::::::::::::
 ```  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
@@ -187,4 +187,4 @@ struct param_type {
  This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

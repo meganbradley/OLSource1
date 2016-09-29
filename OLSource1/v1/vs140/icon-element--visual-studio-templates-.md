@@ -23,9 +23,9 @@ translation.priority.ht:
 # Icon Element (Visual Studio Templates)
 Specifies the path and the filename of the image file that serves as the icon, which appears in either the **New Project** or the **Add New Item** dialog box, for the template.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <Icon\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<Icon>  
   
 ## Syntax  
   

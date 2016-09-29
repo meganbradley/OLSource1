@@ -156,7 +156,7 @@ A list copy of vector v1 with the value -1
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

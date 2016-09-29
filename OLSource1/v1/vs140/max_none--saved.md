@@ -38,7 +38,7 @@ void saved();
  This member function does nothing. It is called by `cache_freelist::deallocate` whenever it puts a memory block on the free list.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

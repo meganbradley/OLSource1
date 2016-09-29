@@ -54,7 +54,7 @@ void str(
  See [basic_stringbuf::str](../vs140/basic_stringbuf--str.md) for an example that uses **str**.  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

@@ -100,7 +100,7 @@ int main( )
  **ablE was I ere I saw elbo**  
 **The string str2 is empty.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

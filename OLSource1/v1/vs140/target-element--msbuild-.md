@@ -28,8 +28,8 @@ translation.priority.ht:
 # Target Element (MSBuild)
 Contains a set of tasks for [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] to execute sequentially.  
   
- <Project\>  
- <Target\>  
+ \<Project>  
+ \<Target>  
   
 ## Syntax  
   

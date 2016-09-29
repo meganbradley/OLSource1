@@ -104,7 +104,7 @@ int main( )
 **The source/destination string sToFrom2 is: abcd-1234-ABCD**  
 **The result2 = move ( sToFrom2 , findc , 8 ) is: cd-1234-4-ABCD**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

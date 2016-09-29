@@ -41,6 +41,6 @@ A property definition applies the <xref:System.CLSCompliantAttribute*> attribute
 -   If the property should be CLS-compliant, mark the `Property` statement as `<CLSCompliant(True)>`.  
   
 ## See Also  
- [<PAVE OVER\> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)   
+ [\<PAVE OVER> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)   
  [Get Statement](../vs140/get-statement.md)   
  [Set Statement (Visual Basic)](../vs140/set-statement--visual-basic-.md)

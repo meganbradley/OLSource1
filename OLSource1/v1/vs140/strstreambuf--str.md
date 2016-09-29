@@ -47,7 +47,7 @@ char *str( );
  See [strstreambuf::freeze](../vs140/strstreambuf--freeze.md) for a sample that uses **str**.  
   
 ## Requirements  
- **Header:** <strstream\>  
+ **Header:** \<strstream>  
   
  **Namespace:** std  
   

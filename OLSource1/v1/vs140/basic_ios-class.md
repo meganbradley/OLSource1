@@ -109,7 +109,7 @@ Traits
 |[operator!](#basic_ios__operator_not)|Indicates if the stream is not bad.|  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

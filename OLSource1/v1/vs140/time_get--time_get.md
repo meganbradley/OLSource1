@@ -59,7 +59,7 @@ The constructor for objects of type `time_get`.
  The constructor initializes its base object with **locale::**[facet](../vs140/facet-class.md)(`_Refs`).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

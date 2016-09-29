@@ -69,7 +69,7 @@ Type class std::invalid_argument
 ```  
   
 ## Requirements  
- **Header:** <stdexcept\>  
+ **Header:** \<stdexcept>  
   
  **Namespace:** std  
   

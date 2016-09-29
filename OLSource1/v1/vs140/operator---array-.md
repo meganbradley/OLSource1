@@ -97,12 +97,12 @@ int main()
  **false**  
  **true**   
 ## Requirements  
- **Header:** <array\>  
+ **Header:** \<array>  
   
  **Namespace:** std  
   
 ## See Also  
- [<array\>](../vs140/-array-.md)   
+ [\<array>](../vs140/-array-.md)   
  [begin](../vs140/array--begin.md)   
  [end](../vs140/array--end.md)   
  [operator==](../vs140/operator==--array-.md)   

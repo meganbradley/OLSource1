@@ -71,7 +71,7 @@ int main()
   
  **sp1 == 3**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

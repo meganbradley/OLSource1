@@ -102,7 +102,7 @@ In this walkthrough, you will create an application that resembles File Explorer
     class CMFCShellControlsView : public CView  
     ```  
   
-     Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the **WM_CREATE** message. From the drop down list next to **WM_CREATE**, select **<Add\> OnCreate**. This creates a message handler for us and automatically updates the MFC message map.  
+     Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the **WM_CREATE** message. From the drop down list next to **WM_CREATE**, select **\<Add> OnCreate**. This creates a message handler for us and automatically updates the MFC message map.  
   
      In the `OnCreate` method we will now create our `CMFCShellListCtrl` object. Find the `OnCreate` method definition in the MFCShellControlsView.cpp source file, and replace its implementation with the following code:  
   

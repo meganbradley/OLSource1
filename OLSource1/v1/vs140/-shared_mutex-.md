@@ -238,4 +238,4 @@ void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<mutex\>](../vs140/-mutex-.md)
+ [\<mutex>](../vs140/-mutex-.md)

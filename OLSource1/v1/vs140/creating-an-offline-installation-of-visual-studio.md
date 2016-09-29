@@ -27,7 +27,7 @@ You can install Visual Studio when you are not connected to the Internet. Howeve
   
 1.  Choose the edition of Visual Studio that you want to install from the  [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) download page.  
   
-2.  After you download the installer to a location on your file system, run "<executable name\> /layout".  
+2.  After you download the installer to a location on your file system, run "\<executable name> /layout".  
   
      For example, run: `vs_enterprise.exe /layout D:\VisualStudio2015`  
   

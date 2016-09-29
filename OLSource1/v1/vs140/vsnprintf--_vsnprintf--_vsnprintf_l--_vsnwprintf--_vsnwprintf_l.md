@@ -198,8 +198,8 @@ int _vsnwprintf_l(
   
 |Routine|Required header (C)|Required header (C++)|  
 |-------------|---------------------------|-------------------------------|  
-|`vsnprintf`, `_vsnprintf`, `_vsnprintf_l`|<stdio.h>|<stdio.h> or  <cstdio\>|  
-|`_vsnwprintf`, `_vsnwprintf_l`|<stdio.h> or <wchar.h>|<stdio.h>, <wchar.h>, <cstdio\>, or <cwchar\>|  
+|`vsnprintf`, `_vsnprintf`, `_vsnprintf_l`|<stdio.h>|<stdio.h> or  \<cstdio>|  
+|`_vsnwprintf`, `_vsnwprintf_l`|<stdio.h> or <wchar.h>|<stdio.h>, <wchar.h>, \<cstdio>, or \<cwchar>|  
   
  The `_vsnprintf`, `_vsnprintf_l`, `_vsnwprintf` and `_vsnwprintf_l` functions are Microsoft specific. For additional compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

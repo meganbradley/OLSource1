@@ -51,4 +51,4 @@ inline bool atomic_flag_test_and_set_explicit(
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)
+ [\<atomic>](../vs140/-atomic-.md)

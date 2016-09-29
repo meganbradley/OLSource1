@@ -58,6 +58,6 @@ inline T atomic_fetch_and_explicit(
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic Structure](../vs140/atomic-structure.md)   
  [atomic_fetch_and](../vs140/atomic_fetch_and-function.md)

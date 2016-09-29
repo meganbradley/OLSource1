@@ -84,7 +84,7 @@ The initialized bitset<5> b1( 2 ) is: ( 00110 ).
 ```  
   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

@@ -93,7 +93,7 @@ long double modfl(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`modf`, `modff`, `modfl`|C: <math.h><br /><br /> C++: , <cmath\> or <math.h>|  
+|`modf`, `modff`, `modfl`|C: <math.h><br /><br /> C++: , \<cmath> or <math.h>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

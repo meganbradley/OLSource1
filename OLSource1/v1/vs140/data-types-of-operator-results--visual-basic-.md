@@ -96,7 +96,7 @@ translation.priority.ht:
 |Unary `+`|Short|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
 |Unary `–`|Short|SByte|Short|Short|Integer|Integer|Long|Long|Decimal|  
   
-### << and >> Operators  
+### <\< and >> Operators  
  The following table shows the result data types for the two bit-shift operators, `<<` and `>>`. [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] treats each bit-shift operator as a unary operator on its left operand (the bit pattern to be shifted).  
   
 |||||||||||  

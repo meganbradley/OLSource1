@@ -98,7 +98,7 @@ int main( )
  **AblE was I ere I saw elbA**  
 **The string str2 is empty.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

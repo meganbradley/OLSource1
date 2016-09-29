@@ -12,4 +12,4 @@ ms.assetid: 74a34fb8-e05c-49e8-b1b9-794ac53cc771
 caps.latest.revision: 7
 ---
 # MSBuild Error MSB8028
-The intermediate directory *<directory\>* contains files shared from another project *<project\>*.  This can lead to incorrect clean and rebuild behavior.
+The intermediate directory *\<directory>* contains files shared from another project *\<project>*.  This can lead to incorrect clean and rebuild behavior.

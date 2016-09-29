@@ -63,7 +63,7 @@ int main()
 }  
 ```  
   
-  **add_lvalue_reference_t<int\> == int**    
+  **add_lvalue_reference_t\<int> == int**    
 ## Requirements  
  **Header:** <type_traits>  
   

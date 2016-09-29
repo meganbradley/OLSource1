@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Project &#39;&lt;projectname&gt;&#39; makes an indirect reference to assembly &#39;&lt;assemblyname&gt;&#39; which contains &#39;&lt;classname&gt;&#39;
-Project '<projectname\>' makes an indirect reference to assembly '<assemblyname\>' which contains '<classname\>'. Add a reference to '<assemblyname\>' to your project.  
+Project '\<projectname>' makes an indirect reference to assembly '\<assemblyname>' which contains '\<classname>'. Add a reference to '\<assemblyname>' to your project.  
   
  This project contains members that depend on an assembly that is not contained in the project references.  
   

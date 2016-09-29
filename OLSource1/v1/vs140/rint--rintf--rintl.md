@@ -71,7 +71,7 @@ long double rintl( long double x );
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`rint`, `rintf`, `rintl`|<math.h>|<cmath\>|  
+|`rint`, `rintf`, `rintl`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

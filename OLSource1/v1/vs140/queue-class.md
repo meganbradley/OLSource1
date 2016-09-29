@@ -81,7 +81,7 @@ template <    class  Type ,     class  Container =  deque <Type>  > class queue
 |[size](#queue__size)|Returns the number of elements in the `queue`.|  
   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

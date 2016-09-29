@@ -38,4 +38,4 @@ Releases any resources that are associated with the `unique_lock` object.
   
 ## See Also  
  [unique_lock Class](../vs140/unique_lock-class.md)   
- [<mutex\>](../vs140/-mutex-.md)
+ [\<mutex>](../vs140/-mutex-.md)

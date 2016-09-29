@@ -49,7 +49,7 @@ void swap(
  See the example for [deque::swap](../vs140/deque--swap.md).  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

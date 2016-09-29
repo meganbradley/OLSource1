@@ -35,10 +35,7 @@ The type of delayed computations. This type is an abbreviation for <xref:System.
   
 ## Syntax  
   
-```  
-type Lazy<'T> = Lazy<'T>  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
 ## Remarks  
  Use the values in the `Lazy` module to manipulate values of this type, and the notation `lazy expr` to create values of type <xref:System.Lazy`1*>.  
   

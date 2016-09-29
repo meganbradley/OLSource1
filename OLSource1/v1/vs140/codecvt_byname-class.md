@@ -65,7 +65,7 @@ protected:
  Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [codecvt](../vs140/codecvt-class.md)<CharType, Byte, StateType>( `_Refs`).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

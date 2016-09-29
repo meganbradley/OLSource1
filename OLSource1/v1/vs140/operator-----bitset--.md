@@ -123,6 +123,6 @@ int main()
 ```  
   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std

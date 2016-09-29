@@ -61,7 +61,7 @@ protected:
  For an example of usage, see [enable_shared_from_this::shared_from_this](#enable_shared_from_this__shared_from_this).  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

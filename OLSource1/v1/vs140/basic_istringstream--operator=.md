@@ -49,13 +49,13 @@ basic_istringstream& operator=(
  The member operator replaces the contents of the object with the contents of `_Right`, treated as an rvalue reference move assignment.  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_istringstream Class](../vs140/basic_istringstream-class.md)   
- [<sstream\>](../vs140/-sstream-.md)   
+ [\<sstream>](../vs140/-sstream-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

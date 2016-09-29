@@ -146,7 +146,7 @@ template <class T, class D> class unique_ptr<T[], D> {   public:          typede
 |[operator=](#unique_ptr_operator_eq)|Assigns the value of a `unique_ptr` (or a `pointer-type`) to the current `unique_ptr`.|  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
@@ -365,4 +365,4 @@ template<class Ty2, Class Del2>
  The destructor calls `get_deleter()(stored_ptr)`.  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

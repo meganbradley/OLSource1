@@ -79,7 +79,7 @@ int main( )
   
  **First nonalpha character is "," at position: 5**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

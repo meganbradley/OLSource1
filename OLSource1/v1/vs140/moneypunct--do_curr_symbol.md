@@ -42,7 +42,7 @@ virtual string_type do_curr_symbol( ) const;
  See the example for [curr_symbol](../vs140/moneypunct--curr_symbol.md), where the virtual member function is called by `curr_symbol`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

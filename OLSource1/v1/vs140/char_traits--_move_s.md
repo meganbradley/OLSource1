@@ -98,11 +98,11 @@ int main( )
   
  **The source string sFrom1 is: abcd-1234-abcd**  
 **The destination stringsTo1 is: ABCD-1234**  
-**The result1 = _Move_s(sTo1, char_traits<char\>::length(sTo1), sFrom1, 4) is: abcd-1234**  
+**The result1 = _Move_s(sTo1, char_traits\<char>::length(sTo1), sFrom1, 4) is: abcd-1234**  
 **The source/destination string sToFrom2 is: abcd-1234-ABCD**  
-**The result2 = _Move_s(sToFrom2, char_traits<char\>::length(sToFrom2), findc, 8) is: cd-1234-4-ABCD**   
+**The result2 = _Move_s(sToFrom2, char_traits\<char>::length(sToFrom2), findc, 8) is: cd-1234-4-ABCD**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

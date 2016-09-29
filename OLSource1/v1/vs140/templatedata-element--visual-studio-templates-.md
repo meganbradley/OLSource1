@@ -23,8 +23,8 @@ translation.priority.ht:
 # TemplateData Element (Visual Studio Templates)
 Categorizes the template and defines how it displays in either the **New Project** or the **Add New Item** dialog box.  
   
- <VSTemplate\>  
- <TemplateData\>  
+ \<VSTemplate>  
+ \<TemplateData>  
   
 ## Syntax  
   

@@ -28,8 +28,8 @@ translation.priority.ht:
 # Import Element (MSBuild)
 Imports the contents of one project file into another project file.  
   
- <Project\>  
- <Import\>  
+ \<Project>  
+ \<Import>  
   
 ## Syntax  
   

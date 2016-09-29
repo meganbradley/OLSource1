@@ -62,7 +62,7 @@ template <class Container> class front_insert_iterator;
 |[operator=](#front_insert_iterator__operator_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a front insertion.|  
   
 ## Requirements  
- **Header**: <iterator\>  
+ **Header**: \<iterator>  
   
  **Namespace:** std  
   
@@ -379,6 +379,6 @@ The first element in the list L is: 30.
 ```  
   
 ## See Also  
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

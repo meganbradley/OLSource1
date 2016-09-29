@@ -99,7 +99,7 @@ int main( )
 **LPOS is advanced 7 steps forward to point  to the eighth element: 12.**  
 **The distance from L.begin( ) to LPOS is: 7.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

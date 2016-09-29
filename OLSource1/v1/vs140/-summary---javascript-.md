@@ -30,13 +30,13 @@ Specifies the description for a function or method.
   
 #### Parameters  
  `locid`  
- Optional. The identifier for localization information about the function or method. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [<loc\>](../vs140/-loc---javascript-.md) element.  
+ Optional. The identifier for localization information about the function or method. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [\<loc>](../vs140/-loc---javascript-.md) element.  
   
  `description`  
  Optional. A description of the function or method.  
   
 ## Remarks  
- The elements used to annotate functions, which include [<summary\>](../vs140/-summary---javascript-.md), [<param\>](../vs140/-param---javascript-.md), and [<returns\>](../vs140/-returns---javascript-.md), must be placed in the function body before any statements.  
+ The elements used to annotate functions, which include [\<summary>](../vs140/-summary---javascript-.md), [\<param>](../vs140/-param---javascript-.md), and [\<returns>](../vs140/-returns---javascript-.md), must be placed in the function body before any statements.  
   
 ## Example  
  The following code shows how to use the `<summary>` element.  

@@ -98,7 +98,7 @@ int main( )
 **The reduced size of c1 is: 2**  
 **The value of the last element is now 20**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

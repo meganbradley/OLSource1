@@ -61,7 +61,7 @@ HRESULT CreateControlEx(
   
 -   A reference to an Active document such as "file://\\\Documents\MyDoc.doc"  
   
--   A fragment of HTML such as "MSHTML:<HTML\><BODY\>This is a line of text</BODY\></HTML\>"  
+-   A fragment of HTML such as "MSHTML:\<HTML>\<BODY>This is a line of text</BODY\></HTML\>"  
   
     > [!NOTE]
     >  "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream. Only the ProgID and CLSID are supported in Windows Mobile platforms. Windows CE embedded platforms, other than Windows Mobile with support for CE IE support all types including ProgID, CLSID, URL, reference to active document, and fragment of HTML.  

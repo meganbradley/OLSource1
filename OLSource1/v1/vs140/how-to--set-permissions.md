@@ -67,13 +67,13 @@ This topic describes how an Administrator of a computer grants the security perm
   
 2.  Right-click the folder and then click **Properties**.  
   
-     The **<folder name\> Properties** dialog box appears.  
+     The **\<folder name> Properties** dialog box appears.  
   
 3.  Click the **Security** tab.  
   
 4.  Click the name of the user's account in the **Group or user names** box.  
   
-5.  In the **Permissions for <user name\>** box, select the check box for **Full Control**.  
+5.  In the **Permissions for \<user name>** box, select the check box for **Full Control**.  
   
 6.  Click **OK**.  
   
@@ -107,7 +107,7 @@ This topic describes how an Administrator of a computer grants the security perm
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
     ```  
   
-     This command grants the <user name\> or <group name\> account access to the Profiling tools. The <right\> option determines the profiling functionality the user can access. The <right\> option can be one or more of the following values:  
+     This command grants the \<user name> or \<group name> account access to the Profiling tools. The \<right> option determines the profiling functionality the user can access. The \<right> option can be one or more of the following values:  
   
     -   FullAccess - allows access to all profiling methods including collecting performance data from services, sampling, and cross session profiling.  
   

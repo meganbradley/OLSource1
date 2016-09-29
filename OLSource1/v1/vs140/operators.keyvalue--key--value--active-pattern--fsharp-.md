@@ -35,11 +35,7 @@ An active pattern to match values of type <xref:System.Collections.Generic.KeyVa
   
 ## Syntax  
   
-```  
-// Signature:  
-( |KeyValue| ) : KeyValuePair<'Key,'Value> -> 'Key * 'Value  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
 #### Parameters  
  `keyValuePair`  
  Type: <xref:System.Collections.Generic.KeyValuePair`2*>`<'Key,                                                                                                              'Value>`  

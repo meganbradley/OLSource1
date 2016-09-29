@@ -84,7 +84,7 @@ A protected virtual member function that is called to parse a string as the date
  See the example for [get_date](../vs140/time_get--get_date.md), which calls `do_get_date`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

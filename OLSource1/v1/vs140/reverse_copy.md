@@ -116,7 +116,7 @@ The original vector v1 remains unmodified as:
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

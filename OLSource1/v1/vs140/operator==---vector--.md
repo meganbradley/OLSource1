@@ -81,7 +81,7 @@ int main( )
   
  **Vectors equal.**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

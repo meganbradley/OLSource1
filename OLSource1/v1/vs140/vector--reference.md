@@ -38,7 +38,7 @@ typedef typename Allocator::reference reference;
  See [at](../vs140/vector--at.md) for an example of how to use **reference** in the vector class.  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

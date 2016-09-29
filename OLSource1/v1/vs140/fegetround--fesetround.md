@@ -98,7 +98,7 @@ int fesetround(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`fegetround`,                `fesetround`|<fenv.h>|<cfenv\>|  
+|`fegetround`,                `fesetround`|<fenv.h>|\<cfenv>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

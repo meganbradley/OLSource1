@@ -36,10 +36,10 @@ typedef basic_regex<wchar_t> wregex;
  The type describes a specialization of template class [basic_regex](../vs140/basic_regex-class.md) for elements of type `wchar_t`.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex](../vs140/regex-typedef.md)

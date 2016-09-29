@@ -63,7 +63,7 @@ int main() {
  **The size of the list is initially 3**  
 **The size of list after clearing is 0**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

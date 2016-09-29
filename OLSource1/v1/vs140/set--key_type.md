@@ -46,7 +46,7 @@ typedef Key key_type;
  See the example for [value_type](../vs140/set--value_type.md) for an example of how to declare and use `key_type`.  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

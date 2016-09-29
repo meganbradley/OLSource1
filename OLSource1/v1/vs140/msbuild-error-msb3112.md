@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3112
-**MSB3112: Two or more assemblies have the same identity '<assembly\>'.**  
+**MSB3112: Two or more assemblies have the same identity '\<assembly>'.**  
   
  This warning is generated when more than one of the referenced assemblies have the same identity.  
   
@@ -29,4 +29,4 @@ translation.priority.ht:
 -   Remove one of the referenced assemblies from the project.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

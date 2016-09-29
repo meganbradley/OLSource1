@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &#39;&lt;membername&gt;&#39; exists in multiple base interfaces
-'<membername\>' exists in multiple base interfaces. Use the name of the interface that declares '<membername\>' in the 'Implements' clause instead of the name of the derived interface.  
+'\<membername>' exists in multiple base interfaces. Use the name of the interface that declares '\<membername>' in the 'Implements' clause instead of the name of the derived interface.  
   
  This interface inherits members with the same name from multiple interfaces, creating ambiguity.  
   

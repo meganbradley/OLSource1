@@ -73,7 +73,7 @@ int main( )
  **The first element of deque is 1.**  
 **The first element of the reversed deque is 2.**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

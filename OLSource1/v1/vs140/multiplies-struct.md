@@ -122,7 +122,7 @@ The element-wise products of vectors V1 & v2
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

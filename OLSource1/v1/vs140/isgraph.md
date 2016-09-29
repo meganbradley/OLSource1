@@ -105,6 +105,6 @@ The character '.' in the locale is
 ```  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std

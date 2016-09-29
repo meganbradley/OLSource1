@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Project Type Not Available
-This dialog box appears with the error "The project <project\> cannot be opened because its project type <project type\> is not supported by this version of the application."  
+This dialog box appears with the error "The project \<project> cannot be opened because its project type \<project type> is not supported by this version of the application."  
   
 ## Workaround  
   

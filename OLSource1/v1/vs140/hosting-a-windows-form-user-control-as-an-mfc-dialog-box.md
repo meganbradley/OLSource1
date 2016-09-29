@@ -76,7 +76,7 @@ MFC provides the template class [CWinFormsDialog](../vs140/cwinformsdialog-class
   
 9. Add a handler for OnInitDialog.  
   
-     Display the **Properties** window (F4). In **Class View**, select CHostForWinForm. In the **Properties** window, select overrides and in the row for OnInitDialog, click in the left hand column and select < Add >. This adds the following line to CHostForWinForm.h:  
+     Display the **Properties** window (F4). In **Class View**, select CHostForWinForm. In the **Properties** window, select overrides and in the row for OnInitDialog, click in the left hand column and select \< Add >. This adds the following line to CHostForWinForm.h:  
   
     ```  
     virtual BOOL OnInitDialog();  

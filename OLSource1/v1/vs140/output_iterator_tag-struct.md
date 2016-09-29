@@ -46,7 +46,7 @@ struct output_iterator_tag {};
  See [iterator_traits](../vs140/iterator_traits-struct.md) or [random_access_iterator_tag](../vs140/random_access_iterator_tag-struct.md) for an example of how to use **iterator_tag**s.  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

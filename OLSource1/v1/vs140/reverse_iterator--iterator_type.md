@@ -42,7 +42,7 @@ typedef RandomIterator iterator_type;
  See [reverse_iterator::base](../vs140/reverse_iterator--base.md) for an example of how to declare and use `iterator_type`.  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

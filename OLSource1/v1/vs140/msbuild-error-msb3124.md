@@ -20,13 +20,13 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3124
-**MSB3124: A file association has already been created for extension '<extensionname\>'.**  
+**MSB3124: A file association has already been created for extension '\<extensionname>'.**  
   
  This error occurs when a duplicate file association extension is encountered.  
   
 ### To correct this error  
   
--   Remove [<fileAssociation\> Element](../vs140/clickonce-deployment-manifest.md)`extension` attributes that are not unique. Each listed <fileAssociation\> element's extension attributes must be unique.  
+-   Remove [\<fileAssociation> Element](../vs140/clickonce-deployment-manifest.md)`extension` attributes that are not unique. Each listed \<fileAssociation> element's extension attributes must be unique.  
   
 ## See Also  
  [Publish Page, Project Designer](../vs140/publish-page--project-designer.md)   

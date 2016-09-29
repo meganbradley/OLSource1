@@ -20,6 +20,6 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3162
-**MSB3162: Item '<package\>' could not find dependent item '<package\>'.**  
+**MSB3162: Item '\<package>' could not find dependent item '\<package>'.**  
   
  This error occurs when one bootstrapper package depends on another, but the manifest for the dependent bootstrapper prerequisite cannot be found.

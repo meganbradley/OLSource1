@@ -56,7 +56,7 @@ void swap(
  See the code example for the member class [set::swap](../vs140/set--swap.md) for an example of the use of the template version of `swap`.  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

@@ -50,7 +50,7 @@ atomic<Ty>::operator^= (
   
 ## See Also  
  [atomic Structure](../vs140/atomic-structure.md)   
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic::operator&=](../vs140/atomic--operator-=-operator.md)   
  [atomic::operator&#124;=](../vs140/atomic--operator-=-operator.md)   
  [atomic_fetch_xor_explicit](../vs140/atomic_fetch_xor_explicit-function.md)

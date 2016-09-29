@@ -79,7 +79,7 @@ int main( )
   
  **Vectors not equal.**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

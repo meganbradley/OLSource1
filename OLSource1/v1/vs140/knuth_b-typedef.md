@@ -25,6 +25,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # knuth_b TypeDef
-Topic deprecated, see [<random\>](../vs140/-random-.md).  
+Topic deprecated, see [\<random>](../vs140/-random-.md).  
   
 ## Syntax

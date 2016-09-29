@@ -213,7 +213,7 @@ q6 = ( 10 30 )
 ```  
   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

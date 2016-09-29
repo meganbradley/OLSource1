@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Compiler Error C3189
-'typeid<type abstract declarator\>': this syntax is no longer supported, use ::typeid instead  
+'typeid\<type abstract declarator>': this syntax is no longer supported, use ::typeid instead  
   
  An obsolete form of [typeid](../vs140/typeid---c---component-extensions-.md) was used, use the new form.  
   

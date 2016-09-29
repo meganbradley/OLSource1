@@ -101,7 +101,7 @@ This section describes how to debug the basic project types created by the [!INC
   
  Debugging this type of application in [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] is similar to that in managed Windows Forms applications.  
   
- When you create a Windows Forms project with the project template, [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] automatically creates required settings for the Debug and Release configurations. If necessary, you can change these settings in the **<project name\> Property Pages** dialog box. For more information, see [Debug and Release Configurations](../vs140/how-to--set-debug-and-release-configurations.md).  
+ When you create a Windows Forms project with the project template, [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] automatically creates required settings for the Debug and Release configurations. If necessary, you can change these settings in the **\<project name> Property Pages** dialog box. For more information, see [Debug and Release Configurations](../vs140/how-to--set-debug-and-release-configurations.md).  
   
  For more information, see [Project Settings for a C++ Debug Configuration](../vs140/project-settings-for-a-c---debug-configuration.md).  
   

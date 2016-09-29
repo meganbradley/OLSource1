@@ -24,9 +24,9 @@ translation.priority.ht:
 # SortOrder Element (Visual Studio Templates)
 Specifies a value that is used to arrange the template, among other templates in the same category, as it appears in either the **New Project** or **Add New Item** dialog box.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <SortOrder\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<SortOrder>  
   
 ## Syntax  
   

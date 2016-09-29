@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3021
-**Unable to copy file "'<file\>'" to file "'<file\>'". '<error\>'**  
+**Unable to copy file "'\<file>'" to file "'\<file>'". '\<error>'**  
   
  The `Copy` task cannot copy the specified file.  
   

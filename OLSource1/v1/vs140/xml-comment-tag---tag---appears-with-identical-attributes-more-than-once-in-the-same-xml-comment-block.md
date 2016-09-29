@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # XML comment tag &#39;&lt;tag&gt;&#39; appears with identical attributes more than once in the same XML comment block
-XML comment tag <tag\> appears with identical attributes more than once in the same XML comment block. XML comment will be ignored.  
+XML comment tag \<tag> appears with identical attributes more than once in the same XML comment block. XML comment will be ignored.  
   
  The XML comment contains more than one tag with identical attributes.  
   

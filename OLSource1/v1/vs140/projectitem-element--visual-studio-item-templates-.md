@@ -27,9 +27,9 @@ Specifies a file that is included in the item template.
 > [!NOTE]
 >  The `ProjectItem` element accepts different attributes depending on whether the template is for a project or an item. This topic explains the `ProjectItem` element for item. For an explanation of the `ProjectItem` element for project templates, see [ProjectItem Element (Visual Studio Project Templates)](../vs140/projectitem-element--visual-studio-project-templates-.md).  
   
- <VSTemplate\>  
- <TemplateContent\>  
- <ProjectItem\>  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectItem>  
   
 ## Syntax  
   

@@ -22,20 +22,20 @@ translation.priority.mt:
 # Basic Math Functions
 This example has been deprecated. Please refer to the following headers for your math needs:  
   
--   [<cmath\>](../vs140/-cmath-.md) to use C Runtime `math.h` functions.  
+-   [\<cmath>](../vs140/-cmath-.md) to use C Runtime `math.h` functions.  
   
--   [<complex\>](../vs140/-complex-.md)  
+-   [\<complex>](../vs140/-complex-.md)  
   
--   [<functional\>](../vs140/-functional-.md) for transparent operator functors.  
+-   [\<functional>](../vs140/-functional-.md) for transparent operator functors.  
   
--   [<limits\>](../vs140/-limits-.md)  
+-   [\<limits>](../vs140/-limits-.md)  
   
--   [<numeric\>](../vs140/-numeric-.md)  
+-   [\<numeric>](../vs140/-numeric-.md)  
   
--   [<random\>](../vs140/-random-.md)  
+-   [\<random>](../vs140/-random-.md)  
   
--   [<ratio\>](../vs140/-ratio-.md)  
+-   [\<ratio>](../vs140/-ratio-.md)  
   
--   [<valarray\>](../vs140/-valarray-.md)  
+-   [\<valarray>](../vs140/-valarray-.md)  
   
 ## Syntax

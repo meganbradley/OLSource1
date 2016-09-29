@@ -60,10 +60,10 @@ This document describes some of the key points to keep in mind when you use the 
  [Windows::Foundation::IAsyncAction](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncaction.aspx)  
  Represents an asynchronous action.  
   
- [Windows::Foundation::IAsyncActionWithProgress<TProgress\>](http://msdn.microsoft.com/library/windows/apps/br206581.aspx)  
+ [Windows::Foundation::IAsyncActionWithProgress\<TProgress>](http://msdn.microsoft.com/library/windows/apps/br206581.aspx)  
  Represents an asynchronous action that reports progress.  
   
- [Windows::Foundation::IAsyncOperation<TResult\>](http://msdn.microsoft.com/library/windows/apps/br206598.aspx)  
+ [Windows::Foundation::IAsyncOperation\<TResult>](http://msdn.microsoft.com/library/windows/apps/br206598.aspx)  
  Represents an asynchronous operation that returns a result.  
   
  [Windows::Foundation::IAsyncOperationWithProgress<TResult, TProgress>](http://msdn.microsoft.com/library/windows/apps/br206594.aspx)  
@@ -97,7 +97,7 @@ This document describes some of the key points to keep in mind when you use the 
  [!code[concrt-windowsstore-primes#100](../vs140/codesnippet/CPP/creating-asynchronous-operations-in-c---for-windows-store-apps_1.cpp)]  
   
 ##  <a name="example-component"></a> Example: Creating a C++ Windows Runtime Component and Consuming it from C#  
- Consider an app that uses XAML and C# to define the UI and a C++ [!INCLUDE[wrt](../vs140/includes/wrt_md.md)] component to perform compute-intensive operations. In this example, the C++ component computes which numbers in a given range are prime. To illustrate the differences among the four [!INCLUDE[wrt](../vs140/includes/wrt_md.md)] asynchronous task interfaces, start, in Visual Studio, by creating a **Blank Solution** and naming it `Primes`. Then add to the solution a **Windows Runtime Component** project and naming it `PrimesLibrary`. Add the following code to the generated C++ header file (this example renames Class1.h to Primes.h). Each `public` method defines one of the four asynchronous interfaces. The methods that return a value return a [Windows::Foundation::Collections::IVector<int\>](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) object. The methods that report progress produce `double` values that define the percentage of overall work that has completed.  
+ Consider an app that uses XAML and C# to define the UI and a C++ [!INCLUDE[wrt](../vs140/includes/wrt_md.md)] component to perform compute-intensive operations. In this example, the C++ component computes which numbers in a given range are prime. To illustrate the differences among the four [!INCLUDE[wrt](../vs140/includes/wrt_md.md)] asynchronous task interfaces, start, in Visual Studio, by creating a **Blank Solution** and naming it `Primes`. Then add to the solution a **Windows Runtime Component** project and naming it `PrimesLibrary`. Add the following code to the generated C++ header file (this example renames Class1.h to Primes.h). Each `public` method defines one of the four asynchronous interfaces. The methods that return a value return a [Windows::Foundation::Collections::IVector\<int>](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) object. The methods that report progress produce `double` values that define the percentage of overall work that has completed.  
   
  [!code[concrt-windowsstore-primes#1](../vs140/codesnippet/CPP/creating-asynchronous-operations-in-c---for-windows-store-apps_2.h)]  
   

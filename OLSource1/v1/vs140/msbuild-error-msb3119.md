@@ -26,7 +26,7 @@ translation.priority.ht:
   
 ### To correct this error  
   
--   Set the [<fileAssociation\> Element](../vs140/clickonce-deployment-manifest.md)`extension` attribute to a value that starts with a period character (.), for example, ".doc".  
+-   Set the [\<fileAssociation> Element](../vs140/clickonce-deployment-manifest.md)`extension` attribute to a value that starts with a period character (.), for example, ".doc".  
   
 ## See Also  
  [Publish Page, Project Designer](../vs140/publish-page--project-designer.md)   

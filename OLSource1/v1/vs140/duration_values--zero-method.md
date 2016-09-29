@@ -39,4 +39,4 @@ static constexpr Rep zero();
   
 ## See Also  
  [duration_values Structure](../vs140/duration_values-structure.md)   
- [<chrono\>](../vs140/-chrono-.md)
+ [\<chrono>](../vs140/-chrono-.md)

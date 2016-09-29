@@ -176,7 +176,7 @@ The largest element in v1 under the mod_lesser
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

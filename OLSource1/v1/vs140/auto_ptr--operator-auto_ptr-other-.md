@@ -60,7 +60,7 @@ int main()
 ```  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

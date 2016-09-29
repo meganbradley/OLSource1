@@ -66,7 +66,7 @@ int main( )
  **German_Germany.1252 decimal point ,**  
 **German_Germany.1252 thousands separator .**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

@@ -91,7 +91,7 @@ int main( )
   
  **The list L1 is: ( 30 20 10 ).**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

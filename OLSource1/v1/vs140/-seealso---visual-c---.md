@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;seealso&gt; (Visual C++)
-The <seealso\> tag lets you specify the text that you might want to appear in a See Also section. Use [<see\>](../vs140/-see---visual-c---.md) to specify a link from within text.  
+The \<seealso> tag lets you specify the text that you might want to appear in a See Also section. Use [\<see>](../vs140/-see---visual-c---.md) to specify a link from within text.  
   
 ## Syntax  
   
@@ -38,12 +38,12 @@ The <seealso\> tag lets you specify the text that you might want to appear in a 
   
  The compiler checks that the given code element exists and resolves `member` to the element name in the output XML.  The compiler issues a warning if it does not find `member`.  
   
- For information on how to create a cref reference to a generic type, see [<see\> (C++)](../vs140/-see---visual-c---.md).  
+ For information on how to create a cref reference to a generic type, see [\<see> (C++)](../vs140/-see---visual-c---.md).  
   
 ## Remarks  
  Compile with [/doc](../vs140/-doc--process-documentation-comments---c-c---.md) to process documentation comments to a file.  
   
- See [<summary\> (C++)](../vs140/-summary---visual-c---.md) for an example of using <seealso\>.  
+ See [\<summary> (C++)](../vs140/-summary---visual-c---.md) for an example of using \<seealso>.  
   
  The Visual C++ compiler will attempt to resolve cref references in one pass through the documentation comments.  Therefore, if using the C++ lookup rules, a symbol is not found by the compiler the reference will be marked as unresolved.  
   

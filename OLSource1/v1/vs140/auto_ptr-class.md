@@ -97,11 +97,11 @@ public:
 |[operator=](#auto_ptr__operator_eq)|An assignment operator that transfers ownership from one                                         `auto_ptr` object to another.|  
 |[operator*](#auto_ptr__operator_star)|The dereferencing operator for objects of type                                         `auto_ptr`.|  
 |[operator->](#auto_ptr__operator-_gt_)|The operator for allowing member access.|  
-|[operator auto_ptr<Other\>](#auto_ptr__operator_auto_ptr_lt_other_gt_)|Casts from one kind of                                         `auto_ptr` to another kind of                                         `auto_ptr`.|  
-|[operator auto_ptr_ref<Other\>](#auto_ptr__operator_auto_ptr_ref_lt_other_gt_)|Casts from an                                         `auto_ptr` to an                                         `auto_ptr_ref`.|  
+|[operator auto_ptr\<Other>](#auto_ptr__operator_auto_ptr_lt_other_gt_)|Casts from one kind of                                         `auto_ptr` to another kind of                                         `auto_ptr`.|  
+|[operator auto_ptr_ref\<Other>](#auto_ptr__operator_auto_ptr_ref_lt_other_gt_)|Casts from an                                         `auto_ptr` to an                                         `auto_ptr_ref`.|  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

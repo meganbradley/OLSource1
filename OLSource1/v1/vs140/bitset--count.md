@@ -82,7 +82,7 @@ int main( )
 **The collection of flipped bits in the modified bitset is: ( 11011 )**  
 **The number of bits in the bitset set to 1 is: 4.**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

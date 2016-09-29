@@ -70,7 +70,7 @@ void init(
 -   [iword](../vs140/ios_base--iword.md) returns zero, and [pword](../vs140/ios_base--pword.md) returns a null pointer for all argument values.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

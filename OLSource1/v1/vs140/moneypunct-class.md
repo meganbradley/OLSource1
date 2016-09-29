@@ -83,7 +83,7 @@ template<class CharType, bool Intl> 
 |[thousands_sep](#moneypunct__thousands_sep)|Returns a locale-specific sequence of elements to use as a thousands separator symbol.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
@@ -720,5 +720,5 @@ int main( )
 **English_Canada.1252 international thousands separator: ,**  
 **English_Canada.1252 domestic thousands separator: ,**    
 ## See Also  
- [<locale\>](../vs140/-locale-.md)   
+ [\<locale>](../vs140/-locale-.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

@@ -121,7 +121,7 @@ setstate(state);
 |[operator=](#basic_istream__operator_eq)|Assigns the `basic_istream` on the right side of the operator to this object. This is a move assignment involving an `rvalue` reference that does not leave a copy behind.|  
   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   
@@ -361,7 +361,7 @@ basic_istream<Elem, Tr>& ignore(
  The stream ( **\*this**).  
   
 ### Remarks  
- The unformatted input function extracts up to `_Count` elements and discards them. If `_Count` equals **numeric_limits<int\>::max**, however, it is taken as arbitrarily large. Extraction stops early on end of file or on an element `_Ch` such that **traits_type::**[to_int_type](../vs140/char_traits-struct.md#char_traits__to_int_type)( `_Ch`) compares equal to _                        *Delim* (which is also extracted). The function returns **\*this**.  
+ The unformatted input function extracts up to `_Count` elements and discards them. If `_Count` equals **numeric_limits\<int>::max**, however, it is taken as arbitrarily large. Extraction stops early on end of file or on an element `_Ch` such that **traits_type::**[to_int_type](../vs140/char_traits-struct.md#char_traits__to_int_type)( `_Ch`) compares equal to _                        *Delim* (which is also extracted). The function returns **\*this**.  
   
 ### Example  
   
@@ -452,7 +452,7 @@ basic_istream& operator>>(
  The stream ( **\*this**).  
   
 ### Remarks  
- The `<istream>` header also defines several global extraction operators. For more information, see [operator>> (<istream\>)](../vs140/-istream--operators.md#operator_gt__gt_).  
+ The `<istream>` header also defines several global extraction operators. For more information, see [operator>> (\<istream>)](../vs140/-istream--operators.md#operator_gt__gt_).  
   
  The first member function ensures that an expression of the form **istr** >> `ws` calls [ws](../vs140/-istream--functions.md#ws)( **istr**), and then returns **\*this**. The second and third functions ensure that other manipulators, such as [hex](../vs140/-ios--functions.md#hex), behave similarly. The remaining functions constitute the formatted input functions.  
   

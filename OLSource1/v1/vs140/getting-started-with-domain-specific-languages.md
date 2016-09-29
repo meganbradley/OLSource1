@@ -136,7 +136,7 @@ This topic explains the basic concepts in defining and using a domain-specific l
   
  You can view a model as a tree in the **Explorer** view while you are editing a model. As you add shapes to the diagram, the model elements also appear in the explorer. The explorer can be used even if there is no diagram.  
   
- If you cannot see the Explorer in the debugging instance of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], on the **View** menu point to **Other Windows**, and then click *<Your Language\>* **Explorer**.  
+ If you cannot see the Explorer in the debugging instance of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], on the **View** menu point to **Other Windows**, and then click *\<Your Language>* **Explorer**.  
   
 ### The API of your DSL  
  Your DSL generates an API that allows you to read and update models that are instances of the DSL. One application of the API is to generate text files from a model. For more information, see [Code Generation in a Visual Studio Project](../vs140/design-time-code-generation-by-using-t4-text-templates.md).  
@@ -195,7 +195,7 @@ This topic explains the basic concepts in defining and using a domain-specific l
   
     2.  Open the Properties window and position it so that you can see DSL Explorer and Properties at the same time.  
   
-    3.  In DSL Explorer, expand **Editor**, **Toolbox Tabs**, *<your DSL\>*, and then **Tools**.  
+    3.  In DSL Explorer, expand **Editor**, **Toolbox Tabs**, *\<your DSL>*, and then **Tools**.  
   
     4.  Click **ExampleElement**. This is the toolbox item that is used to create elements.  
   
@@ -319,7 +319,7 @@ This topic explains the basic concepts in defining and using a domain-specific l
   
     1.  In **DSL Explorer**, expand **Editor** then **Toolbox Tabs**.  
   
-    2.  Right-click *<your DSL\>* and then click **Add New Element Tool**.  
+    2.  Right-click *\<your DSL>* and then click **Add New Element Tool**.  
   
     3.  Set the **Name** property of the new tool, and set its **Class** property to Town.  
   
@@ -327,7 +327,7 @@ This topic explains the basic concepts in defining and using a domain-specific l
   
 7.  Create a connector tool for making a link between towns and people.  
   
-    1.  Right-click *<your DSL\>* and then click **Add New Connector Tool**.  
+    1.  Right-click *\<your DSL>* and then click **Add New Connector Tool**.  
   
     2.  Set the Name property of the new tool.  
   

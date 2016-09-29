@@ -69,24 +69,24 @@ This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../vs140/includ
     ```  
   
 ## Creating the XML MSBuild Project File  
- An [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] project file is an XML file that contains a project root element (<Project\>). In the following example project, the <Project\> element contains seven child elements:  
+ An [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] project file is an XML file that contains a project root element (\<Project>). In the following example project, the \<Project> element contains seven child elements:  
   
--   Three item group tags (<ItemGroup\>) that specify project configuration and platform, source file name, and header file name.  
+-   Three item group tags (\<ItemGroup>) that specify project configuration and platform, source file name, and header file name.  
   
--   Three import tags (<Import\>) that specify the location of Microsoft [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] settings.  
+-   Three import tags (\<Import>) that specify the location of Microsoft [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] settings.  
   
--   A property group tag (<PropertyGroup\>) that specifies project settings.  
+-   A property group tag (\<PropertyGroup>) that specifies project settings.  
   
 #### To create the MSBuild project file  
   
-1.  Use a text editor to create a project file that is named `myproject.vcxproj`, and then add the following root <Project\> element. Insert the elements in the following procedure steps between the root <Project\> tags:  
+1.  Use a text editor to create a project file that is named `myproject.vcxproj`, and then add the following root \<Project> element. Insert the elements in the following procedure steps between the root \<Project> tags:  
   
     ```xml  
     <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     </Project>  
     ```  
   
-2.  Add the following two <ProjectConfiguration\> child elements in an <ItemGroup\> element. The child element specifies debug and release configurations for a 32-bit Windows operating system:  
+2.  Add the following two \<ProjectConfiguration> child elements in an \<ItemGroup> element. The child element specifies debug and release configurations for a 32-bit Windows operating system:  
   
     ```xml  
     <ItemGroup>  
@@ -109,7 +109,7 @@ This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../vs140/includ
   
     ```  
   
-4.  Add the following property group element (<PropertyGroup\>) that specifies two project properties:  
+4.  Add the following property group element (\<PropertyGroup>) that specifies two project properties:  
   
     ```xml  
     <PropertyGroup>  
@@ -124,7 +124,7 @@ This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../vs140/includ
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />  
     ```  
   
-6.  Add the following <ClCompile\> child element in an <ItemGroup\> element. The child element specifies the name of the C/C++ source file to compile:  
+6.  Add the following \<ClCompile> child element in an \<ItemGroup> element. The child element specifies the name of the C/C++ source file to compile:  
   
     ```xml  
     <ItemGroup>  
@@ -132,7 +132,7 @@ This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../vs140/includ
     </ItemGroup>  
     ```  
   
-7.  Add the following <ClInclude\> child element in an <ItemGroup\> element. The child element specifies the name of the header file for the C/C++ source file:  
+7.  Add the following \<ClInclude> child element in an \<ItemGroup> element. The child element specifies the name of the header file for the C/C++ source file:  
   
     ```xml  
     <ItemGroup>  
@@ -140,7 +140,7 @@ This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../vs140/includ
     </ItemGroup>  
     ```  
   
-8.  Add the following <Import\> element that specifies the path of the file that defines the target for this project:  
+8.  Add the following \<Import> element that specifies the path of the file that defines the target for this project:  
   
     ```xml  
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Targets" />  

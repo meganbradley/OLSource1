@@ -36,5 +36,5 @@ const error_category& future_category() _NOEXCEPT;
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<future\>](../vs140/-future-.md)   
+ [\<future>](../vs140/-future-.md)   
  [future Class](../vs140/future-class.md)

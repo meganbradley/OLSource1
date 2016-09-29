@@ -97,7 +97,7 @@ long double powl(
   
 |Values of x and y|Return value of pow|  
 |-----------------------|-------------------------|  
-|`x` < > 0 and `y` = 0.0|1|  
+|`x` \< > 0 and `y` = 0.0|1|  
 |`x` = 0.0 and `y` = 0.0|1|  
 |`x` = 0.0 and `y` < 0|INF|  
   

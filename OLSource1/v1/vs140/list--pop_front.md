@@ -70,7 +70,7 @@ int main( )
 **The second element is: 2**  
 **After deleting the element at the beginning of the list, the first element is: 2**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

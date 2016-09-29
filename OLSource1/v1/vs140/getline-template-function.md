@@ -144,10 +144,10 @@ int main()
 ## Output  
  **Enter a sentence, press ENTER between sentences. (Ctrl-Z to stop):This is test one.New line.^ZThe following input was stored with newline delimiter:This is test one.New line.This is test two.New line.^ZThe following input was stored with whitespace as delimiter:Thisistesttwo.Newline.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_string Class](../vs140/basic_string-class.md)   
- [<string\>](../vs140/-string-.md)
+ [\<string>](../vs140/-string-.md)

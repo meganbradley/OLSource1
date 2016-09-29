@@ -22,7 +22,7 @@ The custom tool did not run successfully.
   
  If you encounter an MSDataSetGenerator error when you update projects that contain N-Tier datasets, you must rerun the custom tool after all projects are updated.  
   
- The custom tool 'MSDataSetGenerator' failed. The project specified in the DataSetProject attribute in <dataset name\> must target a version of the .NET Framework that is equal to or later than the current project.  
+ The custom tool 'MSDataSetGenerator' failed. The project specified in the DataSetProject attribute in \<dataset name> must target a version of the .NET Framework that is equal to or later than the current project.  
   
 ### To correct MSDataSetGenerator errors in N-Tier datasets  
   

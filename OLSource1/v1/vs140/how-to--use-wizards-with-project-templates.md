@@ -206,7 +206,7 @@ Visual Studio provides the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard*>
   
 1.  Sign the assembly. In the **Solution Explorer**, select the VSIX project, right-click, and select **Project Properties**.  
   
-2.  In the **Project Properties** window, select the **Signing** tab. in the **Signing** tab, check **Sign the assembly**. In the **Choose a strong name key file** field, select **<New\>**. In the **Create Strong Name Key** window, in the **Key file name** field, type **key.snk**. Uncheck the **Protect my key file with a password** field.  
+2.  In the **Project Properties** window, select the **Signing** tab. in the **Signing** tab, check **Sign the assembly**. In the **Choose a strong name key file** field, select **\<New>**. In the **Create Strong Name Key** window, in the **Key file name** field, type **key.snk**. Uncheck the **Protect my key file with a password** field.  
   
 3.  In the **Solution Explorer**, select the VSIX project and find the **Properties** window.  
   
@@ -214,9 +214,9 @@ Visual Studio provides the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard*>
   
 5.  Rebuild the solution.  
   
-6.  You can now find the key.snk file in the MyProjectWizard project directory (**<your disk location\>\MyProjectTemplate\MyProjectWizard\key.snk**). Copy the key.snk file.  
+6.  You can now find the key.snk file in the MyProjectWizard project directory (**\<your disk location>\MyProjectTemplate\MyProjectWizard\key.snk**). Copy the key.snk file.  
   
-7.  Go to the output directory and find the assembly (**<your disk location\>\MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Paste the key.snk file here. (This isn't absolutely necessary, but it will make the following steps easier.)  
+7.  Go to the output directory and find the assembly (**\<your disk location>\MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Paste the key.snk file here. (This isn't absolutely necessary, but it will make the following steps easier.)  
   
 8.  Open a command window, and change to the directory in which the assembly has been created.  
   
@@ -242,7 +242,7 @@ Visual Studio provides the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard*>
   
      Make a note of this value.  
   
-12. Add the reference to the custom wizard to the .vstemplate file of the project template. In the Solution Explorer, find the file named MyProjectTemplate.vstemplate, and open it. After the end of the <TemplateContent\> section, add the following section:  
+12. Add the reference to the custom wizard to the .vstemplate file of the project template. In the Solution Explorer, find the file named MyProjectTemplate.vstemplate, and open it. After the end of the \<TemplateContent> section, add the following section:  
   
     ```xml  
     <WizardExtension>  

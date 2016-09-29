@@ -52,7 +52,7 @@ public:
   
 -   For all values `_Key` of type **Key**, the call **hash_comp**( `_Key`) serves as a hash function, which yields a distribution of values of type **size_t**. The function supplied by hash_compare returns `_Key`.  
   
--   For any value `_Key1` of type **Key** that precedes `_Key2` in the sequence and has the same hash value (value returned by the hash function), **hash_comp**( `_Key2`, `_Key1`) is false. The function must impose a total ordering on values of type **Key**. The function supplied by hash_compare returns                         *comp*( `_Key2`, `_Key1`) `,` where                         *comp* is a stored object of type **Traits** that you can specify when you construct the object hash_comp. For the default **Traits** parameter type **less<Key\>**, sort keys never decrease in value.  
+-   For any value `_Key1` of type **Key** that precedes `_Key2` in the sequence and has the same hash value (value returned by the hash function), **hash_comp**( `_Key2`, `_Key1`) is false. The function must impose a total ordering on values of type **Key**. The function supplied by hash_compare returns                         *comp*( `_Key2`, `_Key1`) `,` where                         *comp* is a stored object of type **Traits** that you can specify when you construct the object hash_comp. For the default **Traits** parameter type **less\<Key>**, sort keys never decrease in value.  
   
 -   The integer constant **bucket_size** specifies the mean number of elements per "bucket" (hash-table entry) that the container should try not to exceed. It must be greater than zero. The value supplied by hash_compare is 4.  
   

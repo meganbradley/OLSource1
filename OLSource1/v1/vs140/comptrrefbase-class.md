@@ -35,7 +35,7 @@ class ComPtrRefBase;
   
 #### Parameters  
  `T`  
- A [ComPtr<T\>](../vs140/comptr-class.md) type or a type derived from it, not merely the interface represented by the ComPtr.  
+ A [ComPtr\<T>](../vs140/comptr-class.md) type or a type derived from it, not merely the interface represented by the ComPtr.  
   
 ## Remarks  
  Represents the base class for the [ComPtrRef](../vs140/comptrref-class.md) class.  

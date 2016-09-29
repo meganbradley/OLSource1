@@ -31,7 +31,7 @@ To make sharing of profiling data easier, you can use the [VSPerfReport](../vs14
   
 -   At a command prompt window, type the following command:  
   
-     <Path\>**VSPerfReport <**VSP File> **/PackSymbols**  
+     \<Path>**VSPerfReport <**VSP File> **/PackSymbols**  
   
      By default, the .vsps file is named with the base name of the .vsp file. You can specify an alternative name by using the **Output** option.  
   
@@ -39,6 +39,6 @@ To make sharing of profiling data easier, you can use the [VSPerfReport](../vs14
   
 -   At a command prompt window, type the following command:  
   
-     <Path\>**VSPerfReport <**VSP File> **/SummaryFile** [**/Output:**<File Name\>]  
+     \<Path>**VSPerfReport <**VSP File> **/SummaryFile** [**/Output:**\<File Name>]  
   
      By default, the .vsps file is named with the base name of the .vsp file. You can specify an alternative name by using the **Output** option.

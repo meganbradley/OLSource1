@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3157
-**MSB3157: Could not match culture '<culture\>' for item '<package\>'. Using culture '<culture\>' instead.**  
+**MSB3157: Could not match culture '\<culture>' for item '\<package>'. Using culture '\<culture>' instead.**  
   
  This warning is generated when the specified product cannot find a package manifest file (package.xml) that uses the specified culture.  
   
@@ -30,4 +30,4 @@ translation.priority.ht:
 -   Provide the appropriate package manifest file.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

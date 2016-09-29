@@ -53,7 +53,7 @@ class completion_future;
   
 |Name|Description|  
 |----------|-----------------|  
-|[completion_future::operator std::shared_future<void\> Operator](../vs140/completion_future--operator-std--shared_future-void--operator.md)|Implicitly converts the `completion_future` object to an `std::shared_future` object.|  
+|[completion_future::operator std::shared_future\<void> Operator](../vs140/completion_future--operator-std--shared_future-void--operator.md)|Implicitly converts the `completion_future` object to an `std::shared_future` object.|  
 |[completion_future::operator= Operator](../vs140/completion_future--operator=-operator.md)|Copies the contents of the specified `completion_future` object into this one.|  
   
 ## Inheritance Hierarchy  

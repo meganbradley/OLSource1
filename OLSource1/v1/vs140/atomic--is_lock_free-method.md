@@ -40,6 +40,6 @@ bool is_lock_free() const volatile _NOEXCEPT;
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic Structure](../vs140/atomic-structure.md)   
  [atomic_is_lock_free](../vs140/atomic_is_lock_free-function.md)

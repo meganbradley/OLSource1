@@ -191,7 +191,7 @@ Vector of partial sums of element-wise products is:
 ```  
   
 ## Requirements  
- **Header:** <numeric\>  
+ **Header:** \<numeric>  
   
  **Namespace:** std  
   

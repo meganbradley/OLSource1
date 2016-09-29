@@ -209,7 +209,7 @@ int main( )
 **The index of the 1st non occurrence of an element of '12' in str4 after**  
  **the 0th position is: 2**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

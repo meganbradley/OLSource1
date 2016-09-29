@@ -70,7 +70,7 @@ Type: class std::logic_error
 ```  
   
 ## Requirements  
- **Header:** <stdexcept\>  
+ **Header:** \<stdexcept>  
   
  **Namespace:** std  
   

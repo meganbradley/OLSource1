@@ -49,12 +49,12 @@ basic_streambuf& operator=(
  The protected member operator copies from `_Right` the pointers that control the input buffer and the output buffer. It also stores `_Right``.`[getloc()](../vs140/basic_streambuf--getloc.md) in the `locale object`. It returns `*this`.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_streambuf Class](../vs140/basic_streambuf-class.md)   
- [<streambuf\>](../vs140/-streambuf-.md)   
+ [\<streambuf>](../vs140/-streambuf-.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

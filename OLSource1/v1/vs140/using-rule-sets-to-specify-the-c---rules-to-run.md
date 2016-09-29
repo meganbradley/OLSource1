@@ -60,7 +60,7 @@ In [!INCLUDE[vsPreShort](../vs140/includes/vspreshort_md.md)] and [!INCLUDE[vsUl
   
 -   To collapse the rules in all groups, choose **Collapse All**.  
   
--   To change the field that rules are grouped by, choose the field from the **Group By** list. To display the rules ungrouped, choose **<None\>**.  
+-   To change the field that rules are grouped by, choose the field from the **Group By** list. To display the rules ungrouped, choose **\<None>**.  
   
 -   To add or remove fields in rule columns, choose **Column Options**.  
   

@@ -63,12 +63,12 @@ template<class RandomAccessIterator, class BinaryPredicate>
  The second template function behaves the same as the first, except that it uses the predicate `compare` instead of `std::less<>` as the heap ordering condition.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
  [Is_heap](../vs140/is_heap.md)   
  [less Struct](../vs140/less-struct.md)   
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

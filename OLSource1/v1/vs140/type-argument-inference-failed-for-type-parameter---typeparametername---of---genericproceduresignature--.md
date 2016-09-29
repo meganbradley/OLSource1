@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Type argument inference failed for type parameter &#39;&lt;typeparametername&gt;&#39; of &#39;&lt;genericproceduresignature&gt;&#39;
-Type argument inference failed for type parameter '<typeparametername\>' of '<genericproceduresignature\>'. Type argument could not be inferred from the argument passed to parameter '<parametername\>'.  
+Type argument inference failed for type parameter '\<typeparametername>' of '\<genericproceduresignature>'. Type argument could not be inferred from the argument passed to parameter '\<parametername>'.  
   
  A generic procedure is called without supplying any type arguments, and the compiler cannot infer the type to pass to one of the parameters.  
   

@@ -58,10 +58,10 @@ explicit uniform_real_distribution(const param_type& parm);
  The second constructor constructs an object whose stored parameters are initialized from `parm`. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [uniform_real_distribution Class](../vs140/uniform_real_distribution-class.md)

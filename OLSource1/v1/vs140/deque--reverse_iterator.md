@@ -43,7 +43,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
  See the example for [rbegin](../vs140/vector--rbegin.md).  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

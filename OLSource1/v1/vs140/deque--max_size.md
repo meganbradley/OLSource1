@@ -66,7 +66,7 @@ The maximum possible length of the deque is 1073741823.
 ```  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

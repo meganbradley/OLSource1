@@ -71,9 +71,9 @@ int main()
   
 ```  
   
-  **is_void<trivial\> == false**  
+  **is_void\<trivial> == false**  
 **is_void<void()> == false**  
-**is_void<void\> == true**    
+**is_void\<void> == true**    
 ## Requirements  
  **Header:** <type_traits>  
   

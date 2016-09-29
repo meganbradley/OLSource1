@@ -59,7 +59,7 @@ public:
   
  `random_device` is not guaranteed to result in a non-blocking call.  
   
- Generally, `random_device` is used to seed other generators created with engines or engine adaptors. For more information, see [<random\>](../vs140/-random-.md).  
+ Generally, `random_device` is used to seed other generators created with engines or engine adaptors. For more information, see [\<random>](../vs140/-random-.md).  
   
 ## Example  
  The following code demonstrates basic functionality of this class and example results. Because of the non-deterministic nature of `random_device`, the random values shown in the                     **Output** section will not match your results. This is normal and expected.  
@@ -87,10 +87,10 @@ int main()
   
   **Output:**  
   
- **entropy == 32min == 0max == 429496729510 random values:418382918114543916081176278697246883009639593472221803123400133959054513048968776040884902293276253** This example is simplistic and not representative of the general use-case for this generator. For a more representative code example, see [<random\>](../vs140/-random-.md).  
+ **entropy == 32min == 0max == 429496729510 random values:418382918114543916081176278697246883009639593472221803123400133959054513048968776040884902293276253** This example is simplistic and not representative of the general use-case for this generator. For a more representative code example, see [\<random>](../vs140/-random-.md).  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
@@ -131,4 +131,4 @@ result_type operator()();
  For example code, see [random_device](../vs140/random_device-class.md).  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

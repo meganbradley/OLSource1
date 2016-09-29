@@ -94,7 +94,7 @@ The `Commands` element implements tests described by the elements underneath the
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`Property`|Required. The name of the property to test. The property must previously have been defined by a child of the `InstallChecks` element. For more information, see [<InstallChecks\> Element (ClickOnce BootStrapper)](../vs140/-installchecks--element--bootstrapper-.md).|  
+|`Property`|Required. The name of the property to test. The property must previously have been defined by a child of the `InstallChecks` element. For more information, see [\<InstallChecks> Element (ClickOnce BootStrapper)](../vs140/-installchecks--element--bootstrapper-.md).|  
 |`Compare`|Required. The type of comparison to perform. The following list shows the valid values:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
 |`Value`|Required. The value to compare with the property.|  
 |`Schedule`|Optional. The name of a `Schedule` tag that defines when this rule should be evaluated.|  
@@ -106,7 +106,7 @@ The `Commands` element implements tests described by the elements underneath the
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`Property`|Required. The name of the property to test. The property must previously have been defined by a child of the `InstallChecks` element. For more information, see [<InstallChecks\> Element (ClickOnce BootStrapper)](../vs140/-installchecks--element--bootstrapper-.md).|  
+|`Property`|Required. The name of the property to test. The property must previously have been defined by a child of the `InstallChecks` element. For more information, see [\<InstallChecks> Element (ClickOnce BootStrapper)](../vs140/-installchecks--element--bootstrapper-.md).|  
 |`Compare`|Required. The type of comparison to perform. The following list shows the valid values:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
 |`Value`|Required. The value to compare with the property.|  
 |`String`|Optional. The text to display to the user upon failure.|  
@@ -205,4 +205,4 @@ The `Commands` element implements tests described by the elements underneath the
   
 ## See Also  
  [Product and Package Schema Reference](../vs140/product-and-package-schema-reference.md)   
- [<InstallChecks\> Element (ClickOnce BootStrapper)](../vs140/-installchecks--element--bootstrapper-.md)
+ [\<InstallChecks> Element (ClickOnce BootStrapper)](../vs140/-installchecks--element--bootstrapper-.md)

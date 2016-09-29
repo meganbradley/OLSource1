@@ -71,7 +71,7 @@ template <class  Statetype >    class fpos
 |[operator streamoff](#fpos__operator_streamoff)|Casts object of type `fpos` to object of type `streamoff`.|  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

@@ -80,7 +80,7 @@ int main( )
 **The number '20' is in c1 collection 2 times.**  
 **The number '30' is in c1 collection 3 times.**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

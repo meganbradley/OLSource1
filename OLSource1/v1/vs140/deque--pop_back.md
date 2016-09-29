@@ -69,7 +69,7 @@ int main( )
 **The last element is: 2**  
 **After deleting the element at the end of the deque, the last element is: 1**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

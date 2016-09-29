@@ -21,7 +21,7 @@ translation.priority.ht:
 # How to: Create a Nullable Type (Class Designer)
 Certain value types do not always have (or need) a defined value. This is common practice in databases, where some fields might not be assigned any value. For example, you might assign a null value to a database field to signify that it has not yet been assigned a value.  
   
- A *nullable type* is a value type that you extend so that it takes the typical range of values for that type and also a null value. For example, a nullable of `Int32`, also denoted as Nullable<Int32\>, can be assigned any value from -2147483648 to 2147483647, or it can be assigned a null value. A Nullable<bool\> can be assigned the values `True`, `False`, or null (no value at all).  
+ A *nullable type* is a value type that you extend so that it takes the typical range of values for that type and also a null value. For example, a nullable of `Int32`, also denoted as Nullable\<Int32>, can be assigned any value from -2147483648 to 2147483647, or it can be assigned a null value. A Nullable\<bool> can be assigned the values `True`, `False`, or null (no value at all).  
   
  Nullable types are instances of the <xref:System.Nullable`1*> structure. Each instance of a nullable type has two public read-only properties, `HasValue` and `Value`:  
   
@@ -51,21 +51,8 @@ Certain value types do not always have (or need) a defined value. This is common
   
 6.  In the **Type** column of the **Class Details** window, declare the type as a nullable type, as shown in the following code:  
   
-    ```c#  
-    // Declare a nullable type in Visual C#:  
-    class Test  
-    {  
-       int? building_number = 5;  
-    }  
-    ```  
-  
-    ```vb#  
-    ' Declare a nullable type in Visual Basic:  
-    Class Test  
-       Dim buildingNumber As Nullable(Of Integer) = 5  
-    End Class  
-    ```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
 ### To add a nullable type by using the Code Editor  
   
 1.  Add a class to the project. Select the project node in **Solution Explorer**, and, on the **Project** menu, click **Add Class**.  

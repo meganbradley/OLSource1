@@ -55,28 +55,28 @@ You can customize your application by writing code that runs when certain events
   
 |**Button Methods**|Description|  
 |------------------------|-----------------|  
-|<MyMethodName\>_Execute|Called when the button associated with the method is clicked.|  
+|\<MyMethodName>_Execute|Called when the button associated with the method is clicked.|  
   
 |**General Methods**|Description|  
 |-------------------------|-----------------|  
-|<ScreenName\>_Activated|Called just after a screen is activated.|  
-|<ScreenName\>_Closing|Called just before the screen closes.|  
-|<ScreenName\>_Created|Called just after the screen appears.|  
-|<ScreenName\>_InitializeDataWorkspace|Called just before the screen data is retrieved.|  
-|<ScreenName\>_Run|Called when a request is made to display the screen.|  
-|<ScreenName\>_SaveError|Called when attempting to save the screen results in an error.|  
-|<ScreenName\>_Saved|Called just after the screen is saved.|  
-|<ScreenName\>_Saving|Called just before the screen is saved.|  
+|\<ScreenName>_Activated|Called just after a screen is activated.|  
+|\<ScreenName>_Closing|Called just before the screen closes.|  
+|\<ScreenName>_Created|Called just after the screen appears.|  
+|\<ScreenName>_InitializeDataWorkspace|Called just before the screen data is retrieved.|  
+|\<ScreenName>_Run|Called when a request is made to display the screen.|  
+|\<ScreenName>_SaveError|Called when attempting to save the screen results in an error.|  
+|\<ScreenName>_Saved|Called just after the screen is saved.|  
+|\<ScreenName>_Saving|Called just before the screen is saved.|  
   
 |**Access Control Methods**|Description|  
 |--------------------------------|-----------------|  
 |CanRun<ScreenNam|Called before a screen appears. [!INCLUDE[smb_current_short](../vs140/includes/smb_current_short_md.md)] calls this method to check permissions for the current user.|  
-|<MyMethodName\>_CanExecute|Called before a method is runs. [!INCLUDE[smb_current_short](../vs140/includes/smb_current_short_md.md)] calls this method to check permissions for the current user.|  
+|\<MyMethodName>_CanExecute|Called before a method is runs. [!INCLUDE[smb_current_short](../vs140/includes/smb_current_short_md.md)] calls this method to check permissions for the current user.|  
   
 |**Collection Methods**|Description|  
 |----------------------------|-----------------|  
-|<CollectionName\>_Changed|Called just after the collection has changed.|  
-|<CollectionName\>_SelectionChanged|Called just after the currently selected item in the collection is selected.|  
+|\<CollectionName>_Changed|Called just after the collection has changed.|  
+|\<CollectionName>_SelectionChanged|Called just after the currently selected item in the collection is selected.|  
   
 ## See Also  
  [Screens: What the User Sees](../vs140/screens--the-user-interface-of-your-lightswitch-application.md)   

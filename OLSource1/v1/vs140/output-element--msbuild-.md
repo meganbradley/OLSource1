@@ -28,10 +28,10 @@ translation.priority.ht:
 # Output Element (MSBuild)
 Stores task output values in items and properties.  
   
- <Project\>  
- <Target\>  
- <Task\>  
- <Output\>  
+ \<Project>  
+ \<Target>  
+ \<Task>  
+ \<Output>  
   
 ## Syntax  
   

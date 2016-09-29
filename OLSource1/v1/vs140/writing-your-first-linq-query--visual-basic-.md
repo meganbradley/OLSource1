@@ -59,12 +59,7 @@ A *query* is an expression that retrieves data from a data source. Queries are e
   
  With [!INCLUDE[vbtecdlinq](../vs140/includes/vbtecdlinq_md.md)], you first create an object-relational mapping at design time, either manually or by using the [Object Relational Designer (O/R Designer)](assetId:///45e477c0-5c6b-41f9-b2d0-2808fb4f6537) in Visual Studio. You write your queries against the objects, and at run-time [!INCLUDE[vbtecdlinq](../vs140/includes/vbtecdlinq_md.md)] handles the communication with the database. In the following example, `customers` represents a specific table in the database, and <xref:System.Data.Linq.Table`1*> supports generic <xref:System.Linq.IQueryable`1*>.  
   
-```vb#  
-' Create a data source from a SQL table.  
-Dim db As New DataContext("C:\Northwind\Northwnd.mdf")  
-Dim customers As Table(Of Customer) = db.GetTable(Of Customer)  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
  For more information about how to create specific types of data sources, see the documentation for the various [!INCLUDE[vbteclinq](../vs140/includes/vbteclinq_md.md)] providers. (For a list of these providers, see [Language-Integrated Query (LINQ)](../vs140/linq--language-integrated-query-.md).) The basic rule is simple: a [!INCLUDE[vbteclinq](../vs140/includes/vbteclinq_md.md)] data source is any object that supports the generic <xref:System.Collections.Generic.IEnumerable`1*> interface, or an interface that inherits from it.  
   
 > [!NOTE]

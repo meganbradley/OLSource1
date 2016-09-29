@@ -137,7 +137,7 @@ int main( )
 **Partially resorted (UDgreater) vector:**  
  **v1 = ( 11 10 9 8 7 6 5 4 0 1 2 3 )**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

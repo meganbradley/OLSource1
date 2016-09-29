@@ -33,7 +33,7 @@ An MSBuild Toolset contains references to tasks, targets, and tools that you can
   
  The `ToolsVersion` value determines which Toolset is used by a project that Visual Studio generates. In [!INCLUDE[vs_dev12](../vs140/includes/vs_dev12_md.md)] the default value is "12.0" (no matter what the version specified in the project file), but you can override that attribute by using the **/toolsversion** switch at a command prompt. For information about this attribute and other ways to specify the `ToolsVersion`, see [Overriding ToolsVersion Settings](../vs140/overriding-toolsversion-settings.md).  
   
- If the `ToolsVersion` isn't specified, the registry key **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\<Version Number\>\DefaultToolsVersion** defines the `ToolsVersion`, which is always 2.0.  
+ If the `ToolsVersion` isn't specified, the registry key **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\\<Version Number>\DefaultToolsVersion** defines the `ToolsVersion`, which is always 2.0.  
   
  The following registry keys specify the installation path of MSBuild.exe.  
   

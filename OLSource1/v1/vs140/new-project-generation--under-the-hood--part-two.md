@@ -76,9 +76,9 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- We looked at the <TemplateData\> section in the [first part of this article](../vs140/new-project-generation--under-the-hood--part-one.md). The tags in this section are used to control the appearance of the **New Project** dialog box.  
+ We looked at the \<TemplateData> section in the [first part of this article](../vs140/new-project-generation--under-the-hood--part-one.md). The tags in this section are used to control the appearance of the **New Project** dialog box.  
   
- The tags in the <TemplateContent\> section control the generation of new projects and project items. Here's the <TemplateContent\> section from the cswindowsapplication.vstemplate file in the \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip folder.  
+ The tags in the \<TemplateContent> section control the generation of new projects and project items. Here's the \<TemplateContent> section from the cswindowsapplication.vstemplate file in the \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip folder.  
   
 ```  
 <TemplateContent>  
@@ -112,7 +112,7 @@ namespace Simple
 </TemplateContent>  
 ```  
   
- The <Project\> tag controls the generation of a project, and the <ProjectItem\> tag controls the generation of a project item. If the parameter ReplaceParameters is true, the template will customize all template parameters in the project file or item. In this case, all project items are customized, except for Settings.settings.  
+ The \<Project> tag controls the generation of a project, and the \<ProjectItem> tag controls the generation of a project item. If the parameter ReplaceParameters is true, the template will customize all template parameters in the project file or item. In this case, all project items are customized, except for Settings.settings.  
   
  The TargetFileName parameter specifies the name and relative path of the resulting project file or item. This lets you create a folder structure for your project. If you don't specify this argument, the project item will have the same name as the project item template.  
   
@@ -120,7 +120,7 @@ namespace Simple
   
  ![SimpleSolution](../vs140/media/simplesolution.png "SimpleSolution")  
   
- The first and only <Project\> tag in the template reads:  
+ The first and only \<Project> tag in the template reads:  
   
 ```  
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">  
@@ -131,7 +131,7 @@ namespace Simple
 ### Designers and References  
  You can see in the Solution Explorer that the Properties folder is present and contains the expected files. But what about project references and designer file dependencies, such as Resources.Designer.cs to Resources.resx, and Form1.Designer.cs to Form1.cs?  These are set up in the Simple.csproj file when it is generated.  
   
- Here's the <ItemGroup\> from Simple.csproj that creates the project references:  
+ Here's the \<ItemGroup> from Simple.csproj that creates the project references:  
   
 ```  
 <ItemGroup>  
@@ -144,7 +144,7 @@ namespace Simple
 </ItemGroup>  
 ```  
   
- You can see that these are the six project references that appear in the Solution Explorer. Here's a section from another <ItemGroup\>. Many lines of code have been deleted for clarity. This section makes Settings.Designer.cs dependent on Settings.settings:  
+ You can see that these are the six project references that appear in the Solution Explorer. Here's a section from another \<ItemGroup>. Many lines of code have been deleted for clarity. This section makes Settings.Designer.cs dependent on Settings.settings:  
   
 ```  
 <ItemGroup>  

@@ -106,6 +106,6 @@ int main( )
 **The pairs p1 and p2 are not equal.**  
 **The pairs p1 and p3 are equal.**   
 ## Requirements  
- **Header:** <utility\>  
+ **Header:** \<utility>  
   
  **Namespace:** std

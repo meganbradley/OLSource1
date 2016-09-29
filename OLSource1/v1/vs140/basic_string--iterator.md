@@ -43,7 +43,7 @@ typedef implementation-defined iterator;
  See the example for [begin](../vs140/basic_string--begin.md) for an example of how to declare and use **iterator**.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

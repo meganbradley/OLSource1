@@ -29,9 +29,9 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # discard_block_engine::discard_block_engine
-Topic deprecated. See [<random\>](../vs140/-random-.md).  
+Topic deprecated. See [\<random>](../vs140/-random-.md).  
   
 ## Syntax  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

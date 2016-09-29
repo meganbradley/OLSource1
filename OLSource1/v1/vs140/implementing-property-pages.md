@@ -50,7 +50,7 @@ Property pages are COM objects that implement the `IPropertyPage` or **IProperty
  For an example property page implementation, see [Example: Implementing a Property Page](../vs140/example--implementing-a-property-page.md).  
   
 > [!NOTE]
->  If you want to host ActiveX controls in your property page, you will need to change the derivation of your wizard-generated class. Replace **CDialogImpl<CYourClass\>** with **CAxDialogImpl<CYourClass\>** in the list of base classes.  
+>  If you want to host ActiveX controls in your property page, you will need to change the derivation of your wizard-generated class. Replace **CDialogImpl\<CYourClass>** with **CAxDialogImpl\<CYourClass>** in the list of base classes.  
   
 ## See Also  
  [Property Pages](../vs140/atl-com-property-pages.md)   

@@ -43,10 +43,10 @@ static int max_digits10 = 0;
  The member stores the number of decimal digits required to make sure that two distinct values of the type have distinct decimal representations.  
   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   
 ## See Also  
  [numeric_limits Class](../vs140/numeric_limits-class.md)   
- [<limits\>](../vs140/-limits-.md)
+ [\<limits>](../vs140/-limits-.md)

@@ -68,7 +68,7 @@ template<
 |[get](#money_get__get)|Extracts a numerical value from a character sequence that represents a monetary value.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
@@ -276,6 +276,6 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
  The type describes a specialization of template class [basic_string](../vs140/basic_string-class.md).  
   
 ## See Also  
- [<locale\>](../vs140/-locale-.md)   
+ [\<locale>](../vs140/-locale-.md)   
  [facet Class](../vs140/locale-class.md#facet_class)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

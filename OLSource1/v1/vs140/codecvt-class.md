@@ -107,7 +107,7 @@ template<class CharType, class Byte, class StateType>
 |[unshift](#codecvt__unshift)|Provides the external `Byte`s needed in a state-dependent conversion to complete the last character in the sequence of `Byte`s.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
@@ -793,7 +793,7 @@ result unshift(
  The member function returns [do_unshift](#codecvt__do_unshift)( `_State`, `_First2`, `_Last2`, `_Next2` ).  
   
 ## See Also  
- [<locale\>](../vs140/-locale-.md)   
+ [\<locale>](../vs140/-locale-.md)   
  [Code Pages](../vs140/code-pages.md)   
  [Locale Names, Languages, and Country/Region Strings](../vs140/locale-names--languages--and-country-region-strings.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

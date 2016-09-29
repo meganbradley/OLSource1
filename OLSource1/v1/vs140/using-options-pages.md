@@ -52,7 +52,7 @@ pServiceProvider->QueryService(SID_SDTE, IID__DTE, (LPVOID*)pDTE);
  For example, the text editor settings for handling Basic code are on the navigation pane as the **Basic** member of the **Text Editor** folder. The identifier for the category is `TextEditor` and its subcategory is `Basic`, and the **Options** page itself is referred to as the `TextEditor.Basic` page.  
   
 > [!NOTE]
->  For localization and other reasons, the names displayed on **Options** pages may differ from the strings used as category and subcategory identifiers. You may have to use automation to query the IDE to obtain the correct identifiers, if they are not documented elsewhere. The registry location is HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<VS Version\>*\AutomationProperties, where *<VS Version\>* is the version number of the release of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)]. For more information, see [Registering Custom Tools Options Pages](../vs140/registering-custom-options-pages.md).  
+>  For localization and other reasons, the names displayed on **Options** pages may differ from the strings used as category and subcategory identifiers. You may have to use automation to query the IDE to obtain the correct identifiers, if they are not documented elsewhere. The registry location is HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<VS Version>*\AutomationProperties, where *\<VS Version>* is the version number of the release of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)]. For more information, see [Registering Custom Tools Options Pages](../vs140/registering-custom-options-pages.md).  
   
  You can obtain the properties for the `TextEditor.Basic` page through the automation model by using the following example.  
   
@@ -96,7 +96,7 @@ hr= srpProperty.set_Value(4);
   
  Settings on pages that are included in the IDE are automatically saved (or retrieved) when a user clicks the **Import/Export Settings** command on the **Tools** menu.  
   
- You can enable your custom **Options** page to use this automatic persistence support by adding the `ProfileSave` flag to the custom **Options** page registry entry under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<VS Version\>*\AutomationProperties, where *<VS Version\>* is the version number of the release of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)]. For more information, see [Registering Custom Tools Options Pages](../vs140/registering-custom-options-pages.md).  
+ You can enable your custom **Options** page to use this automatic persistence support by adding the `ProfileSave` flag to the custom **Options** page registry entry under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<VS Version>*\AutomationProperties, where *\<VS Version>* is the version number of the release of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)]. For more information, see [Registering Custom Tools Options Pages](../vs140/registering-custom-options-pages.md).  
   
 ## See Also  
  [Creating Tools Options Pages with Interop Assemblies](../vs140/creating-options-pages-by-using-interop-assemblies.md)   

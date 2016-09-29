@@ -56,7 +56,7 @@ The assignment operator for ios_base objects.
  This operator is only used by classes derived from `ios_base`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

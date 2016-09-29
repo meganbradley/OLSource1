@@ -73,11 +73,11 @@ string to_string(long double Val);
  The function returns `string(Buf)`.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
 ## See Also  
  [string](../vs140/string--c---stl--string--.md)   
  [wstring](../vs140/wstring.md)   
- [<string\>](../vs140/-string-.md)
+ [\<string>](../vs140/-string-.md)

@@ -110,6 +110,6 @@ int main( )
  **arg ( c2 ) = 0.523599 radians, which is 30 degrees.**  
 **The complex numbers c2 & c3 have the same principal arguments.**   
 ## Requirements  
- **Header:** <complex\>  
+ **Header:** \<complex>  
   
  **Namespace:** std

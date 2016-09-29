@@ -68,7 +68,7 @@ int main()
   
 ```  
   
-  **remove_const_t<const int\> == int**    
+  **remove_const_t\<const int> == int**    
 ## Requirements  
  **Header:** <type_traits>  
   

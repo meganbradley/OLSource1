@@ -51,7 +51,7 @@ protected:
  Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [moneypunct](../vs140/moneypunct-class.md#moneypunct__moneypunct)<CharType, Intl>( `_Refs`).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

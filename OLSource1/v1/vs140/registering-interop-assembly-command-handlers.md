@@ -29,10 +29,10 @@ A VSPackage must register with [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)
  [Command Table Format Reference](assetId:///09e9c6ef-9863-48de-9483-d45b7b7c798f) resources are located in unmanaged satellite UI dlls.  
   
 ## Command Handler Registration of a VSPackage  
- A VSPackage acting as a handler for user interface (UI)-based commands requires a registry entry named after the VSPackage `GUID`. This registry entry specifies the location of the VSPackage's UI resource file and the menu resource within that file. The registry entry itself is located under HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*<Version\>*\Menus, where *<Version\>* is the version of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], for example 9.0.  
+ A VSPackage acting as a handler for user interface (UI)-based commands requires a registry entry named after the VSPackage `GUID`. This registry entry specifies the location of the VSPackage's UI resource file and the menu resource within that file. The registry entry itself is located under HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version>*\Menus, where *\<Version>* is the version of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], for example 9.0.  
   
 > [!NOTE]
->  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>* can be overridden with an alternate root when the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] shell is initialized. For more information about the root path, see [Installing VSPackages With Windows Installer](../vs140/installing-vspackages-with-windows-installer.md).  
+>  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] shell is initialized. For more information about the root path, see [Installing VSPackages With Windows Installer](../vs140/installing-vspackages-with-windows-installer.md).  
   
 ### The CTMENU Resource Registry Entry  
  The structure of the registry entry is:  
@@ -45,7 +45,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
   
  <*GUID*> is the `GUID` of the VSPackage in the form {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}.  
   
- *<Resource Information\>* consists of three elements separated by commas. These elements are, in order:  
+ *\<Resource Information>* consists of three elements separated by commas. These elements are, in order:  
   
  <*Path to Resource DLL*>, <*Menu Resource ID*>, <*Menu Version*>  
   

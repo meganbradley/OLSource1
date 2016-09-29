@@ -35,12 +35,12 @@ translation.priority.ht:
  The text of the paragraph.  
   
 ## Remarks  
- The <para\> tag is for use inside a tag, such as [<summary\>](../vs140/-summary---csharp-programming-guide-.md), [<remarks\>](../vs140/-remarks---csharp-programming-guide-.md), or [<returns\>](../vs140/-returns---csharp-programming-guide-.md), and lets you add structure to the text.  
+ The \<para> tag is for use inside a tag, such as [\<summary>](../vs140/-summary---csharp-programming-guide-.md), [\<remarks>](../vs140/-remarks---csharp-programming-guide-.md), or [\<returns>](../vs140/-returns---csharp-programming-guide-.md), and lets you add structure to the text.  
   
  Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file.  
   
 ## Example  
- See [<summary\>](../vs140/-summary---csharp-programming-guide-.md) for an example of using <para\>.  
+ See [\<summary>](../vs140/-summary---csharp-programming-guide-.md) for an example of using \<para>.  
   
 ## See Also  
  [C# Programming Guide](../vs140/csharp-programming-guide.md)   

@@ -22,9 +22,9 @@ translation.priority.ht:
 # RequiredFrameworkVersion Element (Visual Studio Templates)
 Specifies the minimum .NET Framework version that is required by the template.Schema Hierarchy.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <RequiredFrameworkVersion\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<RequiredFrameworkVersion>  
   
 ## Syntax  
   

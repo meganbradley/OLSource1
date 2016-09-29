@@ -53,10 +53,10 @@ protected:
  An initial reference count.  
   
 ## Remarks  
- The template class describes an object that can serve as a [locale facet](../vs140/locale-class.md#facet_class) of type [collate](../vs140/collate-class.md#collate__collate)<CharType\>. Its behavior is determined by the [named](../vs140/locale-class.md#locale__name) locale `_Locname`. Each constructor initializes its base object with [collate](../vs140/collate-class.md#collate__collate)<CharType\>( `_Refs`).  
+ The template class describes an object that can serve as a [locale facet](../vs140/locale-class.md#facet_class) of type [collate](../vs140/collate-class.md#collate__collate)\<CharType>. Its behavior is determined by the [named](../vs140/locale-class.md#locale__name) locale `_Locname`. Each constructor initializes its base object with [collate](../vs140/collate-class.md#collate__collate)\<CharType>( `_Refs`).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

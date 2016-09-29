@@ -97,7 +97,7 @@ Moved last element: 4
 ```  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

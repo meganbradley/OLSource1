@@ -58,9 +58,9 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 -   **C++ overloads of math library functions**  
   
-     In previous versions, <math.h> defined some, but not all, of the C++ overloads for the math library functions. <cmath\> defined the remaining overloads, so to get all of the overloads, one needed to include the <cmath\> header. This led to problems with function overload resolution in code that only included <math.h>. Now, all C++ overloads have been removed from <math.h> and are now present only in <cmath\>.  
+     In previous versions, <math.h> defined some, but not all, of the C++ overloads for the math library functions. \<cmath> defined the remaining overloads, so to get all of the overloads, one needed to include the \<cmath> header. This led to problems with function overload resolution in code that only included <math.h>. Now, all C++ overloads have been removed from <math.h> and are now present only in \<cmath>.  
   
-     To resolve errors, include <cmath\> to get the declarations of the functions that were removed from <math.h>. The following table lists the functions that were moved.  
+     To resolve errors, include \<cmath> to get the declarations of the functions that were removed from <math.h>. The following table lists the functions that were moved.  
   
      Functions that were moved:  
   
@@ -84,7 +84,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
      In Visual Studio 2013, the FLT_ROUNDS macro expanded to a constant expression, which was incorrect because the rounding mode is configurable at runtime, for example, by calling fesetround. The FLT_ROUNDS macro is now dynamic and correctly reflects the current rounding mode.  
   
-### <new\> and <new.h>  
+### \<new> and <new.h>  
   
 -   **new and delete**  
   
@@ -299,11 +299,11 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 -   **STL include files**  
   
-     Some changes have been made to the include structure in the STL headers. STL headers are allowed to include each other in unspecified ways. In general, you should write your code so that it carefully includes all of the headers that it needs according to the C++ standard and doesn't rely on which STL headers include which other STL headers. This makes code portable across versions and platforms. At least two header changes in [!INCLUDE[vs_dev14](../vs140/includes/vs_dev14_md.md)] affect user code. First, <string\> no longer includes <iterator\>. Second, <tuple\> now declares std::array without including all of <array\>, which can break code through the following combination of code constructs: your code has a variable named "array", and you have a using-directive "using namespace std;", and you include an STL header (such as <functional\>) that includes <tuple\>, which now declares std::array.  
+     Some changes have been made to the include structure in the STL headers. STL headers are allowed to include each other in unspecified ways. In general, you should write your code so that it carefully includes all of the headers that it needs according to the C++ standard and doesn't rely on which STL headers include which other STL headers. This makes code portable across versions and platforms. At least two header changes in [!INCLUDE[vs_dev14](../vs140/includes/vs_dev14_md.md)] affect user code. First, \<string> no longer includes \<iterator>. Second, \<tuple> now declares std::array without including all of \<array>, which can break code through the following combination of code constructs: your code has a variable named "array", and you have a using-directive "using namespace std;", and you include an STL header (such as \<functional>) that includes \<tuple>, which now declares std::array.  
   
 -   **steady_clock**  
   
-     The <chrono\> implementation of [steady_clock](../vs140/steady_clock-struct.md) has changed to meet the C++ Standard requirements for steadiness and monotonicity. steady_clock is now based on [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) and high_resolution_clock is now a typedef for steady_clock. As a result, in Visual C++ steady_clock::time_point is now a typedef for chrono::time_point<steady_clock>; however, this is not necessarily the case for other implementations.  
+     The \<chrono> implementation of [steady_clock](../vs140/steady_clock-struct.md) has changed to meet the C++ Standard requirements for steadiness and monotonicity. steady_clock is now based on [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) and high_resolution_clock is now a typedef for steady_clock. As a result, in Visual C++ steady_clock::time_point is now a typedef for chrono::time_point<steady_clock>; however, this is not necessarily the case for other implementations.  
   
 -   **allocators and const**  
   
@@ -321,7 +321,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 -   **const elements**  
   
-     The C++ standard has always forbidden containers of const elements (such as vector<const T\> or set<const T\>). Visual C++ 2013 and earlier accepted such containers. In the current version, such containers fail to compile.  
+     The C++ standard has always forbidden containers of const elements (such as vector\<const T> or set\<const T>). Visual C++ 2013 and earlier accepted such containers. In the current version, such containers fail to compile.  
   
 -   **std::allocator::deallocate**  
   
@@ -333,7 +333,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 -   **comparators and operator()**  
   
-     Associative containers (the <map\> family) now require their comparators to have const-callable function call operators. The following code in a comparator class declaration now fails to compile:  
+     Associative containers (the \<map> family) now require their comparators to have const-callable function call operators. The following code in a comparator class declaration now fails to compile:  
   
     ```  
     bool operator()(const X& a, const X& b)  

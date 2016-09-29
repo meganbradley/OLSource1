@@ -50,4 +50,4 @@ bool operator<(
  Returns `lexicographical_compare`(_*Left*. [begin](../vs140/container-class--begin.md), \_*Left*. [end](../vs140/container-class--end.md), \_*Right***.begin**, \_*Right*.**end**).  
   
 ## See Also  
- [<sample container\>](../vs140/-sample-container-.md)
+ [\<sample container>](../vs140/-sample-container-.md)

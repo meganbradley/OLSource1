@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3123
-**MSB3123: The number of file associations exceeds the limit of <limit\>.**  
+**MSB3123: The number of file associations exceeds the limit of \<limit>.**  
   
  Each file is allowed only a fixed number of associated file name extensions. This error occurs when you try to associate more file name extensions than the number allowed for the target operating system.  
   

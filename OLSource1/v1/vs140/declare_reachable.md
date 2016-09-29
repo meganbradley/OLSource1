@@ -44,9 +44,9 @@ void declare_reachable(
  If `_Ptr` is not null, the function informs any garbage collector that `_Ptr` is hereafter reachable (points to valid allocated storage).  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

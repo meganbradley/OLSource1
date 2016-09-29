@@ -41,7 +41,7 @@ HKEY_LOCAL_MACHINE\
 |Name|REG_SZ|"Short name goes here"|A short name that describes the tool window. Used only for reference in the registry.|  
 |Float|REG_SZ|"X1,Y1,X2,Y2"|Four comma separated values. X1, Y1 is the coordinate of the upper-left corner of the tool window. X2, Y2 is the coordinate of the lower-right corner. All values are in screen coordinates.|  
 |Style|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Linked"<br /><br /> "Tabbed"<br /><br /> "AlwaysFloat"|A keyword specifying the initial display state of the tool window.<br /><br /> "MDI" = docked with MDI window.<br /><br /> "Float" = floating.<br /><br /> "Linked" = linked with another window (specified in the Window entry).<br /><br /> "Tabbed" = combined with another tool window.<br /><br /> "AlwaysFloat" = cannot be docked.<br /><br /> For more information, see the Comments section below.|  
-|Window|REG_SZ|*<GUID\>*|The GUID of a window to which the tool window can be linked or tabbed. The GUID may belong to one of your own windows or one of the windows in the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] IDE.|  
+|Window|REG_SZ|*\<GUID>*|The GUID of a window to which the tool window can be linked or tabbed. The GUID may belong to one of your own windows or one of the windows in the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] IDE.|  
 |Orientation|REG_SZ|"Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Bottom"|See the Comments section below.|  
 |DontForceCreate|REG_DWORD|0 or 1|When this entry is present and its value is not zero, the window is loaded, but not immediately displayed.|  
   
@@ -88,7 +88,7 @@ HKEY_LOCAL_MACHINE\
 |Name|Type|Data|Description|  
 |----------|----------|----------|-----------------|  
 |(Default)|REG_SZ|None|Leave empty.|  
-|*<GUID\>*|REG_DWORD or REG_SZ|0 or a descriptive string.|Optional. The entry's name must be the GUID of a command requiring visibility. The value just holds an informative string. Typically, the value is a `reg_dword` set to 0.|  
+|*\<GUID>*|REG_DWORD or REG_SZ|0 or a descriptive string.|Optional. The entry's name must be the GUID of a command requiring visibility. The value just holds an informative string. Typically, the value is a `reg_dword` set to 0.|  
   
 ### Example  
   

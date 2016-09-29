@@ -172,7 +172,7 @@ cout.imbue(loc);
 |[id](#id_class)|The member class provides a unique facet identification used as an index for looking up facets in a locale.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
@@ -701,7 +701,7 @@ int main( )
 **locales loc1 (German_Germany.1252)**  
  **and loc3 (English_United States.1252) are not equal.**    
 ## See Also  
- [<locale\>](../vs140/-locale-.md)   
+ [\<locale>](../vs140/-locale-.md)   
  [Code Pages](../vs140/code-pages.md)   
  [Locale Names, Languages, and Country/Region Strings](../vs140/locale-names--languages--and-country-region-strings.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

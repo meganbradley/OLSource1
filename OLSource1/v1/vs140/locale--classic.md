@@ -78,7 +78,7 @@ int main( )
 **The previous locale was classic.**  
 **The current locale is not classic.**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

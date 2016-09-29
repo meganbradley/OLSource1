@@ -39,7 +39,7 @@ typedef streamoff off_type;
  The type is a signed integer that describes an object that can store a byte offset involved in various stream positioning operations. It is typically a synonym for [streamoff](../vs140/streamoff.md), but it has essentially the same properties as that type.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

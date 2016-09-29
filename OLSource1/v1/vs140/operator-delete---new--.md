@@ -65,6 +65,6 @@ void operator delete(
  See [operator new](../vs140/operator-new---new--.md) for an example that use `operator delete`.  
   
 ## Requirements  
- **Header:** <new\>  
+ **Header:** \<new>  
   
  **Namespace:** std

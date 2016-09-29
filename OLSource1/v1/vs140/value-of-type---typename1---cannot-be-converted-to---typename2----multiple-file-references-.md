@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Value of type &#39;&lt;typename1&gt;&#39; cannot be converted to &#39;&lt;typename2&gt;&#39; (Multiple file references)
-Value of type '<typename1\>' cannot be converted to '<typename2\>'. Type mismatch could be due to mixing a file reference to '<filepath1\>' in project '<projectname1\>' with a file reference to '<filepath2\>' in project '<projectname2\>'. If both assemblies are identical, try replacing these references so both references are from the same location.  
+Value of type '\<typename1>' cannot be converted to '\<typename2>'. Type mismatch could be due to mixing a file reference to '\<filepath1>' in project '\<projectname1>' with a file reference to '\<filepath2>' in project '\<projectname2>'. If both assemblies are identical, try replacing these references so both references are from the same location.  
   
  In a situation where a project makes more than one file reference to an assembly, the compiler cannot guarantee that one type can be converted to another.  
   

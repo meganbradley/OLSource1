@@ -69,7 +69,7 @@ virtual iter_type do_put(
  See the example for [put](../vs140/time_put--put.md), which calls `do_put`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

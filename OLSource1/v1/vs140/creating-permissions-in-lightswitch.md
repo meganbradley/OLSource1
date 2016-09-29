@@ -29,7 +29,7 @@ In this lesson, you’ll learn how to create permissions for your LightSwitch ap
   
 2.  In the **My First Application Properties** window, choose the **Access Control** tab.  
   
-3.  In the **Permissions** grid, choose the **<Add New Permission\>** placeholder, and then enter `Can_View_Products`.  
+3.  In the **Permissions** grid, choose the **\<Add New Permission>** placeholder, and then enter `Can_View_Products`.  
   
 4.  In the **Display Name** column, enter `View Products`.  
   

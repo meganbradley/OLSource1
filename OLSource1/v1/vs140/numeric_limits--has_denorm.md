@@ -72,7 +72,7 @@ int main( )
 **Whether double objects allow denormalized values: 1**  
 **Whether long int objects allow denormalized values: 0**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

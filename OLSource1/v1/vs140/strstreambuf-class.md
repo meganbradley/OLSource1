@@ -73,7 +73,7 @@ class strstreambuf : public streambuf
 |[underflow](#strstreambuf__underflow)|A protected virtual function to extract the current element from the input stream.|  
   
 ## Requirements  
- **Header:** <strstream\>  
+ **Header:** \<strstream>  
   
  **Namespace:** std  
   

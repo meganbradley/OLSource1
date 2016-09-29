@@ -24,7 +24,7 @@ translation.priority.ht:
 # Compiler Warning (level 3) C4633
 XML document comment target: error:  reason  
   
- A name passed to the [<param\>](../vs140/-param---visual-c---.md) tag was not found by the compiler.  
+ A name passed to the [\<param>](../vs140/-param---visual-c---.md) tag was not found by the compiler.  
   
  The following sample generates C4633:  
   

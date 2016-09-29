@@ -60,7 +60,7 @@ Tries to alter the current positions for the controlled streams.
  For a wide stream, if any insertions have occurred since the stream was opened, or since the last call to `streampos`, the function calls [overflow](../vs140/basic_filebuf--overflow.md). It also inserts any sequence needed to restore the initial conversion state, by using the file conversion facet **fac** to call **fac**`.``unshift` as needed. Each element **byte** of type `char` thus produced is written to the associated stream designated by the file pointer **fp** as if by successive calls of the form `fputc`(**byte**, **fp**). If the call to **fac.unshift** or any write fails, the function does not succeed.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

@@ -58,7 +58,7 @@ Called when a new character is inserted into a full buffer.
 -   It can convert any pending output in the output buffer, followed by **ch**, by using the file conversion facet **fac** to call **fac.out** as needed. Each element `ch` of type *char* thus produced is written to the associated stream designated by the file pointer **fp** as if by successive calls of the form `fputc`(**ch**, **fp**). If any conversion or write fails, the function does not succeed.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

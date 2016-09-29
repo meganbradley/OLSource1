@@ -60,7 +60,7 @@ In the Microsoft Foundation Class Library (MFC), class [CFile](../vs140/cfile-cl
   
 -   [Create a CArchive object](../vs140/two-ways-to-create-a-carchive-object.md)  
   
--   [Use CArchive << and >> operators](../vs140/using-the-carchive----and----operators.md)  
+-   [Use CArchive <\< and >> operators](../vs140/using-the-carchive----and----operators.md)  
   
 -   [Store and load CObjects and CObject-derived objects via an archive](../vs140/storing-and-loading-cobjects-via-an-archive.md)  
   

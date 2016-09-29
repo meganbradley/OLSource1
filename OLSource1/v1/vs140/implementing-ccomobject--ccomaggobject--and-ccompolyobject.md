@@ -36,7 +36,7 @@ The template classes [CComObject](../vs140/ccomobject-class.md), [CComAggObject]
 |`DECLARE_NOT_AGGREGATABLE`|Always uses `CComObject`.|  
 |`DECLARE_AGGREGATABLE`|Uses `CComAggObject` if the object is aggregated and `CComObject` if it is not. `CComCoClass` contains this macro so if none of the **DECLARE_\*_AGGREGATABLE** macros are declared in your class, this will be the default.|  
 |`DECLARE_ONLY_AGGREGATABLE`|Always uses `CComAggObject`. Returns an error if the object is not aggregated.|  
-|`DECLARE_POLY_AGGREGATABLE`|ATL creates an instance of **CComPolyObject<CYourClass\>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**, **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**, **IUnknown** is implemented for an aggregated object.|  
+|`DECLARE_POLY_AGGREGATABLE`|ATL creates an instance of **CComPolyObject\<CYourClass>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**, **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**, **IUnknown** is implemented for an aggregated object.|  
   
  The advantage of using `CComAggObject` and `CComObject` is that the implementation of **IUnknown** is optimized for the kind of object being created. For instance, a nonaggregated object only needs a reference count, while an aggregated object needs both a reference count for the inner unknown and a pointer to the outer unknown.  
   

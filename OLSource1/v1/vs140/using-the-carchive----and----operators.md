@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Using the CArchive &lt;&lt; and &gt;&gt; Operators
-`CArchive` provides << and >> operators for writing and reading simple data types as well as `CObject`s to and from a file.  
+`CArchive` provides <\< and >> operators for writing and reading simple data types as well as `CObject`s to and from a file.  
   
 #### To store an object in a file via an archive  
   

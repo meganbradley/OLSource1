@@ -56,7 +56,7 @@ The protected virtual member function tries to put back an element into the inpu
 -   If a putback position is available, and if the stringbuf mode permits the sequence to be altered (**mode & ios_base::out** is nonzero), it can store byte into the putback position and decrement the next pointer for the input buffer.  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

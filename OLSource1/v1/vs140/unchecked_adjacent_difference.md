@@ -70,7 +70,7 @@ template<class InputIterator, class OutputIterator, class BinaryOperation>
  For more information on checked iterators, see [Checked Iterators](../vs140/checked-iterators.md).  
   
 ## Requirements  
- **Header:** <numeric\>  
+ **Header:** \<numeric>  
   
  **Namespace:** stdext  
   

@@ -79,7 +79,7 @@ A code analysis check-in policy specifies a set of rules that members of a team 
   
 3.  In the **Check-in Policy** list, double-click **Code Analysis**, and make sure that the **Enforce Code Analysis for Managed Code** check box is selected.  
   
-4.  In the **Run this rule set** list, click **<Select Rule Set from Source Control\>**.  
+4.  In the **Run this rule set** list, click **\<Select Rule Set from Source Control>**.  
   
 5.  Type the path of the check-in policy rule set file in version control.  
   

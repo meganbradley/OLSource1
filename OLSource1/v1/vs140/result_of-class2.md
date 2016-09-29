@@ -93,6 +93,6 @@ int main()
   
  **val == 9**   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std

@@ -59,7 +59,7 @@ protected:
  Its behavior is determined by the [named](../vs140/locale-class.md#locale__name) locale `_Locname`. Each constructor initializes its base object with [time_put](../vs140/time_put-class.md#time_put__time_put)<CharType, OutputIterator>( `_Refs`).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

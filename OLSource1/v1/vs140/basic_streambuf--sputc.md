@@ -70,7 +70,7 @@ int main( )
  **a**  
 **a**   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

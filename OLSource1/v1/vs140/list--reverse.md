@@ -71,7 +71,7 @@ int main( )
  **c1 = 10 20 30**  
 **Reversed c1 = 30 20 10**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

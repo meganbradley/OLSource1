@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &#39;&lt;procedure1&gt;&#39; and &#39;&lt;procedure2&gt;&#39; cannot overload each other because they differ only by parameters declared &#39;ByRef&#39; or &#39;ByVal&#39;
-'<procedure1\>' and '<procedure2\>' cannot overload each other because they differ only by parameters declared ByRef or ByVal. Shadows assumed.  
+'\<procedure1>' and '\<procedure2>' cannot overload each other because they differ only by parameters declared ByRef or ByVal. Shadows assumed.  
   
  Two procedure declarations specify the same name and argument list, and the only difference is in the specification of `ByRef` or `ByVal` for one or more of the arguments. Overloaded versions of a procedure must differ from each other in the number, order, or data types of the arguments.  
   

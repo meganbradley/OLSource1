@@ -24,9 +24,9 @@ translation.priority.ht:
 # SupportsLanguageDropDown Element (Visual Studio Templates)
 Specifies whether the Web item template is identical for multiple languages, and whether the **Language** option is enabled on the **Add New Item** dialog box.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <SupportsLanguageDropDown\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<SupportsLanguageDropDown>  
   
 ## Syntax  
   

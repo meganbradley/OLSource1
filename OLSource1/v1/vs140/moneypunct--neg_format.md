@@ -81,7 +81,7 @@ German_Germany.1252 domestic negative number format: +v $
 ```  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

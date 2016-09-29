@@ -168,7 +168,7 @@ There is an element with a value equivalent to -3 under mod_lesser.
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

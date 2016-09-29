@@ -79,7 +79,7 @@ int main( )
  **The operand valarray is: ( 0 1 8 3 7 5 6 13 2 9 ).**  
 **The largest element in the valarray is: 13.**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

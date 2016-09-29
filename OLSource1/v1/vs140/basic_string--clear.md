@@ -76,7 +76,7 @@ int main( )
 **The modified string str1 is:**   
 **Nothing printed above because the string str1 is empty.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

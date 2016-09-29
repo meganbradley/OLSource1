@@ -70,7 +70,7 @@ int main( )
   
   **`qw`q**   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   

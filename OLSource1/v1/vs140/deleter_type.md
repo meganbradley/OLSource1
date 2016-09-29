@@ -39,10 +39,10 @@ typedef Del deleter_type;
  The type is a synonym for the template parameter `Del`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
  [unique_ptr](../vs140/unique_ptr-class.md)   
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

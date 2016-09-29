@@ -184,8 +184,8 @@ To use a custom directive processor in [!INCLUDE[vsprvs](../vs140/includes/vsprv
 |Name|Type|Data|  
 |----------|----------|----------|  
 |(Default)|REG_SZ|(value not set)|  
-|Class|REG_SZ|**<Namespace Name\>.<Class Name\>**|  
-|CodeBase|REG_SZ|**<Your Path\>\\<Your Assembly Name\>**|  
+|Class|REG_SZ|**\<Namespace Name>.\<Class Name>**|  
+|CodeBase|REG_SZ|**\<Your Path>\\\<Your Assembly Name>**|  
   
  If the assembly is in the GAC, the registry subkeys should look like the following table:  
   

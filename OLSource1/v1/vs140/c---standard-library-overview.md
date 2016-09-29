@@ -29,9 +29,9 @@ All C++ library entities are declared or defined in one or more standard headers
   
 |||  
 |-|-|  
-|[<cstddef\>](../vs140/-cstddef-.md)|[<cstdlib\>](../vs140/-cstdlib-.md) (declaring at least the functions `abort`, `atexit`, and `exit`)|  
-|[<exception\>](../vs140/-exception-.md)|[<limits\>](../vs140/-limits-.md)|  
-|[<new\>](../vs140/-new-.md)|[<cstdarg\>](../vs140/-cstdarg-.md)|  
+|[\<cstddef>](../vs140/-cstddef-.md)|[\<cstdlib>](../vs140/-cstdlib-.md) (declaring at least the functions `abort`, `atexit`, and `exit`)|  
+|[\<exception>](../vs140/-exception-.md)|[\<limits>](../vs140/-limits-.md)|  
+|[\<new>](../vs140/-new-.md)|[\<cstdarg>](../vs140/-cstdarg-.md)|  
   
  The C++ library headers have two broader subdivisions:  
   

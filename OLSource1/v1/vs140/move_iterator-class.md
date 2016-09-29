@@ -113,7 +113,7 @@ public:
 |[move_iterator::operator-=](#move_iterator__operator-_eq)|Subtracts the right-hand value from the stored iterator, and returns `*this`.|  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   
@@ -329,7 +329,7 @@ typedef typename iterator_traits<RandomIterator>::value_type
  The type is a synonym for the iterator trait `typename iterator_traits<RandomIterator>::value_type`.  
   
 ## See Also  
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)   
  [How to: Write a Move Constructor](../vs140/move-constructors-and-move-assignment-operators--c---.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

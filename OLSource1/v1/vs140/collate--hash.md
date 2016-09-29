@@ -81,7 +81,7 @@ int main( )
   
  **541187293 551279837**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

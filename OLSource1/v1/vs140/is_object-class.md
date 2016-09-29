@@ -80,11 +80,11 @@ int main()
   
 ```  
   
-  **is_object<trivial\> == true**  
-**is_object<functional\> == true**  
+  **is_object\<trivial> == true**  
+**is_object\<functional> == true**  
 **is_object<trivial&> == false**  
 **is_object<float()> == false**  
-**is_object<void\> == false**    
+**is_object\<void> == false**    
 ## Requirements  
  **Header:** <type_traits>  
   

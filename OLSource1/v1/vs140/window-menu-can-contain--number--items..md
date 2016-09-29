@@ -19,7 +19,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Window menu can contain &lt;number&gt; items.
-The Windows List in the Window menu can only display up to twenty-four window names. This error generally occurs when a number less than one or greater than twenty-four has been entered in the **<number\> items shown in Window menu** box on the General pane of Environment options in the Options dialog box.  
+The Windows List in the Window menu can only display up to twenty-four window names. This error generally occurs when a number less than one or greater than twenty-four has been entered in the **\<number> items shown in Window menu** box on the General pane of Environment options in the Options dialog box.  
   
 ### To correct this error  
   

@@ -136,13 +136,13 @@ int main()
  **3 chars, value == aaa**  
 **next submatch: matched == false**  
  **0 chars, value ==**   
-**<caaa\>**  
+**\<caaa>**  
 **empty == false**   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [match_results](../vs140/match_results-class.md)

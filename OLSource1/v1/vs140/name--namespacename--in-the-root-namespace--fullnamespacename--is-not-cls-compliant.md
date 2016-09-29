@@ -48,4 +48,4 @@ An assembly is marked as `<CLSCompliant(True)>`, but an element of the root name
  [Application Page, Project Designer (Visual Basic)](../vs140/application-page--project-designer--visual-basic-.md)   
  [Declared Element Names](../vs140/declared-element-names--visual-basic-.md)   
  [Visual Basic Naming Conventions](../vs140/visual-basic-naming-conventions.md)   
- [<PAVE OVER\> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)
+ [\<PAVE OVER> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)

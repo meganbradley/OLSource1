@@ -93,7 +93,7 @@ After shifting the bits 1 position to the right,
 ```  
   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

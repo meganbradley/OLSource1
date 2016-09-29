@@ -83,7 +83,7 @@ int main( )
 **English_Canada.1252 international thousands separator: ,**  
 **English_Canada.1252 domestic thousands separator: ,**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

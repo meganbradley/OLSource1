@@ -67,7 +67,7 @@ template <    class  Elem ,     class  Tr  = char _ traits< Elem >,     class  A
 |[str](#basic_ostringstream__str)|Sets or gets the text in a string buffer without changing the write position.|  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

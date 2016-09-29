@@ -18,7 +18,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # An error has been encountered that prevents reference &#39;reference&#39; from loading. &lt;reason&gt;
-A fatal error has been encountered when removing a reference from the project file. The causes for this error are identified in <reason\>, and could be:  
+A fatal error has been encountered when removing a reference from the project file. The causes for this error are identified in \<reason>, and could be:  
   
 -   Malformed GUID for a reference. This is applicable for COM references only.  
   

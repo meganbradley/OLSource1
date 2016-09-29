@@ -56,6 +56,6 @@ inline _Ty atomic_exchange(
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic Structure](../vs140/atomic-structure.md)   
  [atomic_exchange_explicit](../vs140/atomic_exchange_explicit-function.md)

@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Type &#39;&lt;typename&gt;&#39; in assembly &#39;&lt;assemblyname1&gt;&#39; has been forwarded to assembly &#39;&lt;assemblyname2&gt;&#39;
-Type '<typename\>' in assembly '<assemblyname1\>' has been forwarded to assembly '<assemblyname2\>'. Either a reference to '<assemblyname2\>' is missing from your project or the type '<typename\>' is missing from assembly '<assemblyname2\>'.  
+Type '\<typename>' in assembly '\<assemblyname1>' has been forwarded to assembly '\<assemblyname2>'. Either a reference to '\<assemblyname2>' is missing from your project or the type '\<typename>' is missing from assembly '\<assemblyname2>'.  
   
  An expression in the source code for an assembly refers to a type that has been forwarded to another assembly, but the type cannot be found in the destination assembly.  
   

@@ -79,6 +79,6 @@ Localization is the process of making your application appropriate for a specifi
 -   You can set the <xref:System.Threading.Thread.CurrentUICulture*> property programmatically in your application. (This property must be set before you call the <xref:System.Windows.Forms.Application.Run*> method.)  
   
 ## See Also  
- [<assemblyIdentity\> Element](../vs140/-assemblyidentity--element--clickonce-deployment-.md)   
+ [\<assemblyIdentity> Element](../vs140/-assemblyidentity--element--clickonce-deployment-.md)   
  [ClickOnce Security and Deployment](../vs140/clickonce-security-and-deployment.md)   
  [Globalizing Windows Forms](assetId:///72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)

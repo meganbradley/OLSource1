@@ -47,13 +47,13 @@ void swap(
  The protected member function exchanges with `_Right` all the pointers controlling the `input buffer` and the `output buffer`. It also exchanges `_Right``.`[getloc()](../vs140/basic_streambuf--getloc.md) with the `locale` object.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_streambuf Class](../vs140/basic_streambuf-class.md)   
- [<streambuf\>](../vs140/-streambuf-.md)   
+ [\<streambuf>](../vs140/-streambuf-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

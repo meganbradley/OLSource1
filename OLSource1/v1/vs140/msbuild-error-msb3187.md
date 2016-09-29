@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3187
-**MSB3187: Referenced assembly '<assembly\>' targets a different processor than the application.**  
+**MSB3187: Referenced assembly '\<assembly>' targets a different processor than the application.**  
   
  This warning is generated when the application's target platform (processor architecture) is set to neutral (MSIL) and the referenced assembly is not neutral, or if the application's architecture is not neutral and the dependency is neutral. Also, if both are not platform-neutral, then their architecture must match. In addition, application architecture and entry point assembly architecture must always match.  
   

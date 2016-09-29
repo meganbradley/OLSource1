@@ -121,10 +121,10 @@ int main() {
 **Playing Yesterday by The Beatles, use count: 3**  
 **Playing Blackbird by The Beatles, use count: 3**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)   
+ [\<memory>](../vs140/-memory-.md)   
  [shared_ptr Class](../vs140/shared_ptr-class.md)

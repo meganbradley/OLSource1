@@ -46,7 +46,7 @@ When you create a classic Windows desktop project in [!INCLUDE[vs_dev14](../vs14
   
      ![Target Platform Version](../vs140/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")  
   
-     This action changes the values of project macros that include paths to header files and library files. To see what changed, in the Visual C++ Directories section of the Project Properties dialog, choose one of the properties such as the Include Directories, choose to open the dropdown list, and choose <Edit\>. The **Include Directories** dialog appears.  
+     This action changes the values of project macros that include paths to header files and library files. To see what changed, in the Visual C++ Directories section of the Project Properties dialog, choose one of the properties such as the Include Directories, choose to open the dropdown list, and choose \<Edit>. The **Include Directories** dialog appears.  
   
      ![Include Directories dialog box](../vs140/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")  
   

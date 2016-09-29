@@ -41,14 +41,14 @@ The following map entries correspond to the function prototype.
   
 |Map entry|Function prototype|  
 |---------------|------------------------|  
-|ON_EN_CHANGE( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_EN_ERRSPACE( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_EN_HSCROLL( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_EN_KILLFOCUS( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_EN_MAXTEXT( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_EN_SETFOCUS( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_EN_UPDATE( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
-|ON_EN_VSCROLL( <id\>, <memberFxn\> )|afx_msg void memberFxn( );|  
+|ON_EN_CHANGE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_EN_ERRSPACE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_EN_HSCROLL( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_EN_KILLFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_EN_MAXTEXT( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_EN_SETFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_EN_UPDATE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
+|ON_EN_VSCROLL( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|  
   
 ## See Also  
  [Message Maps](../vs140/message-maps--mfc-.md)

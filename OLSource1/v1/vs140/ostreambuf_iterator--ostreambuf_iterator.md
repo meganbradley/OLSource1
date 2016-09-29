@@ -86,7 +86,7 @@ int main( )
  **OUT are characters output individually.**  
 **These characters are being written to the output stream.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

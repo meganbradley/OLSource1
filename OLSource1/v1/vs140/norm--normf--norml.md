@@ -75,7 +75,7 @@ long double norml(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`norm`,               `normf`, `norml`|<complex.h>|<ccomplex\>|  
+|`norm`,               `normf`, `norml`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

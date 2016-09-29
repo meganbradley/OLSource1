@@ -59,7 +59,7 @@ virtual const CharType *do_scan_not(
  See the example for [scan_not](../vs140/ctype--scan_not.md), which calls `do_scan_not`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

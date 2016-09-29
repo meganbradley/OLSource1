@@ -91,7 +91,7 @@ int main( )
  **The sets s1 and s2 are not equal.**  
 **The sets s1 and s3 are equal.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

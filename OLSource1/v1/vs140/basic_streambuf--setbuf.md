@@ -52,7 +52,7 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
  See [basic_filebuf](../vs140/basic_filebuf-class.md). `setbuf` provides an area of memory for the `streambuf` object to use. How the buffer is used in defined in the derived classes.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

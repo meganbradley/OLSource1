@@ -118,7 +118,7 @@ int main( )
 **The string str3c is: World.**  
 **The string str1 reassigned with string str3c is: World.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

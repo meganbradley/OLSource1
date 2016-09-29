@@ -168,7 +168,7 @@ This page includes detailed information to help you with installing Visual Studi
   
 2.  Enter the following parameters:  
   
-     *DVDRoot* \\<Installation File\> </quiet&#124;/passive> [/norestart]/Repair  
+     *DVDRoot* \\\<Installation File> </quiet&#124;/passive> [/norestart]/Repair  
   
 ##  <a name="troubleshooting"></a> Troubleshooting an installation  
  Use these resources to get help for setup and installation issues:  

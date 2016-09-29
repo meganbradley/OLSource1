@@ -41,10 +41,10 @@ void swap(basic_filebuf& _Right);
  An `lvalue` reference to another `basic_filebuf`.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_filebuf Class](../vs140/basic_filebuf-class.md)   
- [<fstream\>](../vs140/-fstream-.md)
+ [\<fstream>](../vs140/-fstream-.md)

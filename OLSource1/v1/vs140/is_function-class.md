@@ -76,8 +76,8 @@ int main()
   
 ```  
   
-  **is_function<trivial\> == false**  
-**is_function<functional\> == false**  
+  **is_function\<trivial> == false**  
+**is_function\<functional> == false**  
 **is_function<float()> == true**    
 ## Requirements  
  **Header:** <type_traits>  

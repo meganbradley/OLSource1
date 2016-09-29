@@ -35,7 +35,7 @@ translation.priority.ht:
  The name of the parameter to refer to. Enclose the name in double quotation marks (" ").  
   
 ## Remarks  
- The <paramref\> tag gives you a way to indicate that a word in the code comments, for example in a <summary\> or <remarks\> block refers to a parameter. The XML file can be processed to format this word in some distinct way, such as with a bold or italic font.  
+ The \<paramref> tag gives you a way to indicate that a word in the code comments, for example in a \<summary> or \<remarks> block refers to a parameter. The XML file can be processed to format this word in some distinct way, such as with a bold or italic font.  
   
  Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file.  
   

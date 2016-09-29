@@ -76,7 +76,7 @@ template<class Ty, class... Rest>
 |[pointer_traits_pointer_to](#pointer_traits__pointer_to_method)|Converts an arbitrary reference to an object of class `Ptr`.|  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
@@ -88,5 +88,5 @@ static pointer pointer_to(element_type& obj);
 ```  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)   
+ [\<memory>](../vs140/-memory-.md)   
  [allocator_traits Class](../vs140/allocator_traits-class.md)

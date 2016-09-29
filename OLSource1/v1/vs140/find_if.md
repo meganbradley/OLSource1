@@ -141,12 +141,12 @@ int main()
 ## Output  
  **array x[] contents: (1) (2) (3) (4) (5) (6) (7) (8) (9) (10)Test std::find() with array...value 10 found.value 42 not found.Test std::find_if() with array...first odd integer found: 1first even integer found: 2vector v contents: (10) (20) (30) (40) (50) (60) (70) (80) (90) (100)Test std::find() with vector...value 20 found.value 12 not found.Test std::find_if() with vector...odd integer not found.first even integer found: 10**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [adjacent_find](../vs140/adjacent_find.md)   
  [find](../vs140/find--stl-.md)   
  [find_if_not](../vs140/find_if_not.md)   

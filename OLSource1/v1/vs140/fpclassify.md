@@ -67,7 +67,7 @@ int fpclassify(
   
 |Function/Macro|Required header (C)|Required header (C++)|  
 |---------------------|---------------------------|-------------------------------|  
-|`fpclassify`|<math.h>|<math.h> or <cmath\>|  
+|`fpclassify`|<math.h>|<math.h> or \<cmath>|  
   
  The `fpclassify` macro and `fpclassify` functions conform to the C99 and C++11 specifications. For more compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

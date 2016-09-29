@@ -128,7 +128,7 @@ The articles in this part of the documentation contain information about a subse
 |Compiler warning C4900|Il mismatch between 'tool1' version 'version1' and 'tool2' version 'version2'|  
 |[Compiler Warning (level 1) C4905](../vs140/compiler-warning--level-1--c4905.md)|wide string literal cast to 'LPSTR'|  
 |[Compiler Warning (level 1) C4906](../vs140/compiler-warning--level-1--c4906.md)|string literal cast to 'LPWSTR'|  
-|Compiler warning (level 1) C4910|'<identifier\>: '__declspec(dllexport)' and 'extern' are incompatible on an explicit instantiation|  
+|Compiler warning (level 1) C4910|'\<identifier>: '__declspec(dllexport)' and 'extern' are incompatible on an explicit instantiation|  
 |Compiler warning (level 1) C4912|'attribute': attribute has undefined behavior on a nested UDT|  
 |Compiler warning (level 4) C4913|user defined binary operator ',' exists but no overload could convert all operands, default built-in binary operator ',' used|  
 |Compiler warning (level 1) C4916|in order to have a dispid, '%$S': must be introduced by an interface|  
@@ -174,7 +174,7 @@ The articles in this part of the documentation contain information about a subse
 |[Compiler Warning (level 1) C4965](../vs140/compiler-warning--level-1--c4965.md)|implicit box of integer 0; use nullptr or explicit cast|  
 |Compiler warning C4966|'%s' has __code_seg annotation with unsupported segment name, annotation ignored|  
 |Compiler warning C4970|delegate constructor: target object ignored since '%$pS' is static|  
-|Compiler warning (level 1) C4971|Argument order: <target object\>, <target function\> for delegate constructor is deprecated, use <target function\>, <target object=""\>|  
+|Compiler warning (level 1) C4971|Argument order: \<target object>, \<target function> for delegate constructor is deprecated, use \<target function>, <target object=""\>|  
 |Compiler warning (level 1) C4972|Directly modifying or treating the result of an unbox operation as an lvalue is unverifiable|  
 |Compiler warning C4973|'%$S': marked as deprecated|  
 |Compiler warning C4974|'%$S': marked as deprecated|  

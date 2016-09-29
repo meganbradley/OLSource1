@@ -95,8 +95,8 @@ int main()
   
 ```  
   
-  **is_copy_constructible<Copyable\> == true**  
-**is_copy_constructible<NotCopyable \> == false**    
+  **is_copy_constructible\<Copyable> == true**  
+**is_copy_constructible\<NotCopyable > == false**    
 ##  <a name="is_default_constructible"></a>  is_default_constructible  
  Tests if a type has a default constructor.  
   
@@ -143,8 +143,8 @@ int main()
   
 ```  
   
-  **is_default_constructible<Simple\> == true**  
-**is_default_constructible<Simple2\> == false**    
+  **is_default_constructible\<Simple> == true**  
+**is_default_constructible\<Simple2> == false**    
 ##  <a name="is_move_assignable"></a>  is_move_assignable  
  Tests if the type can be move assigned.  
   

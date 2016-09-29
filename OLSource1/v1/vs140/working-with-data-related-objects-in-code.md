@@ -63,11 +63,11 @@ LightSwitch generates objects and members that describe your data. The names of 
   
  By default, LightSwitch generates the following query methods for each entity in the data source.  
   
-1.  *<Entity Name\>*_Single.  
+1.  *\<Entity Name>*_Single.  
   
-2.  *<Entity Name\>*_SingleOrDefault.  
+2.  *\<Entity Name>*_SingleOrDefault.  
   
- Both of these methods accept a primary key segment and return a single entity object. If no entities are returned, the *<Entity Name\>*_Single method throws an exception whereas the *<Entity Name\>*_SingleOrDefault method returns a `Null` value (`Nothing` in Visual Basic).  
+ Both of these methods accept a primary key segment and return a single entity object. If no entities are returned, the *\<Entity Name>*_Single method throws an exception whereas the *\<Entity Name>*_SingleOrDefault method returns a `Null` value (`Nothing` in Visual Basic).  
   
 ##  <a name="EntityObjects"></a> Entities  
  LightSwitch generates an `EntityObject` for each entity in an entity collection. For example, if your code retrieved a collection of orders, the collection would contain an `EntityObject` that represents each order. An `EntityObject` contains members that you can use to delete an entity, read or update the value of entity properties, or get related entities. You can get an `EntityObject` from an entity collection object such as an `EntitySet` or by calling a query method that returns an entity. For more information, see [Performing Data-Related Tasks by Using the Object Model](../vs140/performing-data-related-tasks-by-using-code.md).  

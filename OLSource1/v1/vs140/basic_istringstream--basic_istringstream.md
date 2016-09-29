@@ -64,7 +64,7 @@ basic_istringstream(
  The third constructor initializes the object with the contents of `_Right`, treated as an rvalue reference.  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

@@ -36,12 +36,12 @@ typedef regex_iterator<string::const_iterator> sregex_iterator;
  The type describes a specialization of template class [regex_iterator](../vs140/regex_iterator-class.md) for iterators of type `string::const_iterator`.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_iterator](../vs140/regex_iterator-class.md)   
  [cregex_iterator](../vs140/cregex_iterator-typedef.md)   
  [wcregex_iterator](../vs140/wcregex_iterator-typedef.md)   

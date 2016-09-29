@@ -91,7 +91,7 @@ int main( )
  **( 4 7 10 13 16 19 ).**  
 **The size of slice vaSlice is: 6.**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

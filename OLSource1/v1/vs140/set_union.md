@@ -237,7 +237,7 @@ Union of source ranges with binary predicate mod_lesser specified,
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

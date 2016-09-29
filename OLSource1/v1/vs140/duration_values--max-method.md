@@ -42,5 +42,5 @@ static constexpr Rep max();
   
 ## See Also  
  [duration_values Structure](../vs140/duration_values-structure.md)   
- [<chrono\>](../vs140/-chrono-.md)   
+ [\<chrono>](../vs140/-chrono-.md)   
  [numeric_limits Class](../vs140/numeric_limits-class.md)

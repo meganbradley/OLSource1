@@ -44,4 +44,4 @@ Ty kill_dependency(
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)
+ [\<atomic>](../vs140/-atomic-.md)

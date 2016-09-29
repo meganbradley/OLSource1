@@ -116,7 +116,7 @@ long double scalblnl(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`scalbn`, `scalbnf`, `scalbnl`, `scalbln`, `scalblnf`, `scalblnl`|<math.h>|<cmath\>|  
+|`scalbn`, `scalbnf`, `scalbnl`, `scalbln`, `scalblnf`, `scalblnl`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

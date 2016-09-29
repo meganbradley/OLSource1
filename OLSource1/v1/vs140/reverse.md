@@ -89,7 +89,7 @@ int main( ) {
 **The modified vector v1 with values reversed is:**  
  **( 9 8 7 6 5 4 3 2 1 0 ).**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

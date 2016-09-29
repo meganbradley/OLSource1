@@ -84,7 +84,7 @@ class Program
  [!code[csrefKeywordsNamespace#8](../vs140/codesnippet/CSharp/using-directive--csharp-reference-_1.cs)]  
   
 ### Comments  
- A using alias directive cannot have an open generic type on the right hand side. For example, you cannot create a using alias for a List<T\>, but you can create one for a List<int\>.  
+ A using alias directive cannot have an open generic type on the right hand side. For example, you cannot create a using alias for a List\<T>, but you can create one for a List\<int>.  
   
 ## Example 2  
   

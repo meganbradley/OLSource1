@@ -76,7 +76,7 @@ int main( )
  **The key of first element in the map is 1.**  
 **The data value of first element in the map is 10.**   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

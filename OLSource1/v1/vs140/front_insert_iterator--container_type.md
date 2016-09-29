@@ -69,7 +69,7 @@ int main( )
   
  **The list L2 is: ( 40 10 20 ).**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

@@ -54,6 +54,6 @@ Ty atomic<Ty>::fetch_and (
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic Structure](../vs140/atomic-structure.md)   
  [atomic_fetch_and_explicit](../vs140/atomic_fetch_and_explicit-function.md)

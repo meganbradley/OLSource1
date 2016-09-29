@@ -85,7 +85,7 @@ int main( )
 **Reading the real part: 3**  
 **Reading the imaginary part: 4**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

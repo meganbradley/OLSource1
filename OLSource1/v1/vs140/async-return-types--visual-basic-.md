@@ -115,16 +115,7 @@ Await Task_MethodAsync()
   
  The following code separates calling `Task_MethodAsync` from awaiting the task that `Task_MethodAsync` returns.  
   
-```vb  
-' Call and await in separate statements.  
-Dim simpleTask As Task = Task_MethodAsync()  
-  
-' You can do other work that does not rely on simpleTask before awaiting.  
-textBox1.Text &= String.Format(vbCrLf & "Application can continue working while the Task runs. . . ." & vbCrLf)  
-  
-Await simpleTask  
-```  
-  
+<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
 ##  <a name="BKMK_VoidReturnType"></a> Void Return Type  
  The primary use of `Sub` procedures is in event handlers, where there is no return type (referred to as a void return type in other languages). A void return also can be used to override void-returning methods or for methods that perform activities that can be categorized as "fire and forget." However, you should return a `Task` wherever possible, because a void-returning async method can't be awaited. Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.  
   
@@ -134,21 +125,7 @@ Await simpleTask
   
  The following code defines an async event handler.  
   
-```vb  
-' SUB EXAMPLE  
-Async Sub button1_Click(sender As Object, e As RoutedEventArgs) Handles button1.Click  
-  
-    textBox1.Clear()  
-  
-    ' Start the process and await its completion. DriverAsync is a   
-    ' Task-returning async method.  
-    Await DriverAsync()  
-  
-    ' Say goodbye.  
-    textBox1.Text &= vbCrLf & "All done, exiting button-click event handler."  
-End Sub  
-```  
-  
+<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
 ##  <a name="BKMK_Example"></a> Complete Example  
  The following Windows Presentation Foundation (WPF) project contains the code examples from this topic.  
   

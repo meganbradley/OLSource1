@@ -39,7 +39,7 @@ translation.priority.ht:
   
      –or–  
   
-     Select the blank button at the right end of the toolbar (in the Toolbar View pane) and begin drawing. A default button command ID is assigned (ID_BUTTON<n\>).  
+     Select the blank button at the right end of the toolbar (in the Toolbar View pane) and begin drawing. A default button command ID is assigned (ID_BUTTON\<n>).  
   
  You can also copy and paste an image onto a toolbar as a new button.  
   

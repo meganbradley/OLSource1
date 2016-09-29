@@ -117,7 +117,7 @@ d2 = 10 20 30 40 50
 ```  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

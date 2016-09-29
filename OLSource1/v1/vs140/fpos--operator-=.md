@@ -55,7 +55,7 @@ fpos<Statetype>& operator+=(
  See [operator!=](../vs140/fpos--operator!=.md) for a sample of using `operator+=`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

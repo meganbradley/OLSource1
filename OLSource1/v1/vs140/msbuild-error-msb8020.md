@@ -15,4 +15,4 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB8020
-The build tools for *<platform\>* (Platform Toolset = '*<version\>*') cannot be found. To build using the *<version\>* build tools, please install *<platform\>* build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".
+The build tools for *\<platform>* (Platform Toolset = '*\<version>*') cannot be found. To build using the *\<version>* build tools, please install *\<platform>* build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".

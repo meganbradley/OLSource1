@@ -50,9 +50,9 @@ The Visual Studio integrated development environment (IDE) has a scheme of fonts
   
 1.  Construct a special type of category registry entry in the following location:  
   
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*<Visual Studio version\>*\FontAndColors\\*<Category\>*]  
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>*\FontAndColors\\*\<Category>*]  
   
-     *<Category\>* is the non-localized name of the category.  
+     *\<Category>* is the non-localized name of the category.  
   
 2.  Populate the registry to use the stock fonts and color scheme with four values:  
   

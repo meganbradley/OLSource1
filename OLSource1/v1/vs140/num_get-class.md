@@ -67,7 +67,7 @@ template<
 |[get](#num_get__get)|Extracts a numerical or Boolean value from a character sequence.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
@@ -614,6 +614,6 @@ explicit num_get(
  The constructor initializes its base object with **locale::**[facet](../vs140/locale-class.md#facet_class)( `_Refs`).  
   
 ## See Also  
- [<locale\>](../vs140/-locale-.md)   
+ [\<locale>](../vs140/-locale-.md)   
  [facet Class](../vs140/locale-class.md#facet_class)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

@@ -94,7 +94,7 @@ int main( )
 **The iterator rpos points to:**  
 **( 1, 2 )**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

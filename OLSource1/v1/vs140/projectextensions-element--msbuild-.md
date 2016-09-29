@@ -28,8 +28,8 @@ translation.priority.ht:
 # ProjectExtensions Element (MSBuild)
 Allows [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] project files to contain non-[!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] information. Anything inside of a `ProjectExtensions` element will be ignored by [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)].  
   
- <Project\>  
- <ProjectExtensions\>  
+ \<Project>  
+ \<ProjectExtensions>  
   
 ## Syntax  
   

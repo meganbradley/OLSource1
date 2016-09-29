@@ -37,7 +37,7 @@ When you choose the application type and deployment topology for your three-tier
   
 1.  In **Solution Explorer**, choose the *ProjectName* node, where *ProjectName* is the name of your project.  
   
-2.  On the menu bar, choose **Build**, **Publish <Application Name\>**.  
+2.  On the menu bar, choose **Build**, **Publish \<Application Name>**.  
   
      The **LightSwitch Publish Application Wizard** appears.  
   
@@ -95,7 +95,7 @@ When you choose the application type and deployment topology for your three-tier
   
 17. Choose the **Publish** button to publish the application.  
   
-     When the application is published, users can install it from the website specified by the **Site/Application** name. For a desktop application, the user will be prompted to choose the **Install <ApplicationName\>** link, where *ApplicationName* is the display name of your application. The application will be installed on the end-user's computer and will be available on the **Start** menu. For a web application, the application will open in the browser when they navigate to the URL.  
+     When the application is published, users can install it from the website specified by the **Site/Application** name. For a desktop application, the user will be prompted to choose the **Install \<ApplicationName>** link, where *ApplicationName* is the display name of your application. The application will be installed on the end-user's computer and will be available on the **Start** menu. For a web application, the application will open in the browser when they navigate to the URL.  
   
     > [!NOTE]
     >  If you have enabled authentication for your application, the application administrator will have to authorize users before they can run the application. For more information, see [How to: Create a Role-based Application](../vs140/how-to--enable-authentication-in-a-silverlight-client-app.md).  

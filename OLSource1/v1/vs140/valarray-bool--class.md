@@ -25,7 +25,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # valarray&lt;bool&gt; Class
-A specialized version of the template class **valarray<Type\>** to elements of type `bool`.  
+A specialized version of the template class **valarray\<Type>** to elements of type `bool`.  
   
 ## Syntax  
   
@@ -82,7 +82,7 @@ The result of the less-than comparison test is the
 ```  
   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

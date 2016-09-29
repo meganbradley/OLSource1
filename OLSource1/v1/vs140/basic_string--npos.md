@@ -43,7 +43,7 @@ static const size_type npos = -1;
  See the example for [find](../vs140/basic_string--find.md) for an example of how to declare and use `npos`.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

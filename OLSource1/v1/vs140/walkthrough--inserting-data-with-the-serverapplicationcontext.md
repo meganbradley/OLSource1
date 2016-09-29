@@ -47,7 +47,7 @@ The ServerApplicationContext API lets you access the middle tier (a.k.a. the ser
   
 2.  In the **Specify Name for Item** dialog box, enter `AddBirthday.aspx`, and then choose the **OK** button.  
   
-3.  In the **AddBirthday.aspx** designer, add the following between the <div\> and </div\> tags:  
+3.  In the **AddBirthday.aspx** designer, add the following between the \<div> and </div\> tags:  
   
     ```html  
     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>  

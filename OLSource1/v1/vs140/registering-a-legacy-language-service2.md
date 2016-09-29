@@ -31,9 +31,9 @@ The following sections provide lists of registry entries for the various languag
   
 |Name|Type|Range|Description|  
 |----------|----------|-----------|-----------------|  
-|(Default)|REG_SZ|*<GUID\>*|GUID of the language service.|  
+|(Default)|REG_SZ|*\<GUID>*|GUID of the language service.|  
 |LangResID|REG_DWORD|0x0-0xffff|String resource identifier (ResID) for the localized text name of the language.|  
-|Package|REG_SZ|*<GUID\>*|GUID of the VSPackage.|  
+|Package|REG_SZ|*\<GUID>*|GUID of the VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Specifies whether the **Statement completion** options in the **Options** dialog box are enabled.|  
 |ShowSmartIndent|REG_DWORD|0-1|Specifies whether the option to select **Smart** indenting in the **Options** dialog box is enabled.|  
 |RequestStockColors|REG_DWORD|0-1|Specifies whether custom or default colors are used to color keywords.|  
@@ -68,7 +68,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |Name|Type|Range|Description|  
 |----------|----------|-----------|-----------------|  
-|(Default)|REG_SZ|text|The default value can be used to document the name of the language. The name of this key is a GUID of an expression evaluator that has a corresponding entry in *<VS Reg Root\>*\AD7Metrics\Expression Evaluator.|  
+|(Default)|REG_SZ|text|The default value can be used to document the name of the language. The name of this key is a GUID of an expression evaluator that has a corresponding entry in *\<VS Reg Root>*\AD7Metrics\Expression Evaluator.|  
   
 ### Example  
   
@@ -142,8 +142,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|Name of the toolbox tab to make default when the editor is active.|  
 |DisplayName|REG_SZ|ResID|Name to display in the **Open With** dialog box. The name is the string resource ID or a name in standard format.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Used for the **Open With** menu command. If you do not want to list the default text editor in the list of available editors for a specific file type, set this value to 1.|  
-|LinkedEditorGUID|REG_SZ|*<GUID\>*|Used for any language service that can open a file with codepage support. For example, when you open a .txt file by using the **Open With** command, options are provided for using the source code editor with and without encoding.<br /><br /> The GUID specified in the name of the subkey is for the codepage editor factory; the linked GUID specified in this specific registry entry is for the regular editor factory. The purpose of this entry is that if the IDE does not open a file by using the default editor, the IDE will try to use the next editor in the list. This next editor should not be the codepage editor factory because this editor factory is basically the same as the editor factory that failed.|  
-|Package|REG_SZ|*<GUID\>*|VSPackage GUID for the display name's ResID.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|Used for any language service that can open a file with codepage support. For example, when you open a .txt file by using the **Open With** command, options are provided for using the source code editor with and without encoding.<br /><br /> The GUID specified in the name of the subkey is for the codepage editor factory; the linked GUID specified in this specific registry entry is for the regular editor factory. The purpose of this entry is that if the IDE does not open a file by using the default editor, the IDE will try to use the next editor in the list. This next editor should not be the codepage editor factory because this editor factory is basically the same as the editor factory that failed.|  
+|Package|REG_SZ|*\<GUID>*|VSPackage GUID for the display name's ResID.|  
   
 ### Example  
   
@@ -164,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Name|Type|Range|Description|  
 |----------|----------|-----------|-----------------|  
 |(Default)|REG_SZ||Unused.|  
-|*<GUID\>*|REG_SZ|""|Key to the logical views supported. You can have as many of these as you need. The name of the registry entry is what is important, not the value, which is always an empty string.|  
+|*\<GUID>*|REG_SZ|""|Key to the logical views supported. You can have as many of these as you need. The name of the registry entry is what is important, not the value, which is always an empty string.|  
   
 ### Example  
   
@@ -186,7 +186,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Name|Type|Range|Description|  
 |----------|----------|-----------|-----------------|  
 |(Default)|REG_SZ||Unused.|  
-|*<ext\>*|REG_DWORD|0-0xffffffff|Relative priority of extensions. If two or more languages share the same extension, the higher-priority language is chosen.|  
+|*\<ext>*|REG_DWORD|0-0xffffffff|Relative priority of extensions. If two or more languages share the same extension, the higher-priority language is chosen.|  
   
  Additionally, the current user's default selection for an editor is stored in HKEY_Current_User\Software\Microsoft\VisualStudio\\*X.Y*\Default Editors\\*ext*. The GUID of the selected language service is in the Custom entry. This takes precedence for the current user.  
   

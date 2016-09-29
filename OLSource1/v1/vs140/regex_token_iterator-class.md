@@ -81,7 +81,7 @@ private:
  An index value of -1 designates the character sequence beginning immediately after the end of the previous regular expression match, or beginning at the start of the character sequence if there was no previous regular expression match, and extending to but not including the first character of the current regular expression match, or to the end of the character sequence if there is no current match. Any other index value `idx` designates the contents of the capture group held in `it.match[idx]`.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
@@ -1349,6 +1349,6 @@ int main()
 **match == aa**  
 **match == z**    
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_token_iterator](../vs140/regex_token_iterator-class.md)   
  [regex_iterator](../vs140/regex_iterator-class.md)

@@ -86,7 +86,7 @@ int main()
  **0**  
 **7**   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   

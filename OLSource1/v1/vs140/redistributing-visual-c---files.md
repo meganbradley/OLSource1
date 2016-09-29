@@ -35,7 +35,7 @@ When you deploy an application, you must also deploy the files that are required
  If you use a merge module that contains a Visual C++ DLL, you must include it in the Windows Installer package (or similar installation package) that you are using to deploy the application. For more information, see [Redistributing Using Merge Modules](../vs140/redistributing-components-by-using-merge-modules.md). For an example, see [Walkthrough: Deploying a Visual C++ Application by using a Setup Project](../vs140/walkthrough--deploying-a-visual-c---application-by-using-a-setup-project.md), which also shows how to use InstallShield Limited Edition to create an installation package.  
   
 ## Potential Run-Time Errors  
- If a Visual C++ library DLL is not reachable and Windows cannot load it for your application, this message may be displayed: **This application has failed to start because MSVCR<version number\>.dll was not found. Re-installing the application may fix this problem.**  
+ If a Visual C++ library DLL is not reachable and Windows cannot load it for your application, this message may be displayed: **This application has failed to start because MSVCR\<version number>.dll was not found. Re-installing the application may fix this problem.**  
   
  To resolve this kind of error, make sure that your application builds correctly and that Visual C++ libraries are correctly deployed on the target system. For more information, see [Understanding Dependencies of a Visual C++ Application](../vs140/understanding-the-dependencies-of-a-visual-c---application.md).  
   

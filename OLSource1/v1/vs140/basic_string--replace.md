@@ -315,7 +315,7 @@ int main( )
 **The result of s7o.replace (IterF3 ,IterL3 ,IterF4 ,IterL4)**  
  **is the string: OPPOOOO.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

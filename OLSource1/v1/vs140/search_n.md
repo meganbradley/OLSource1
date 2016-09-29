@@ -155,7 +155,7 @@ int main( )
 **There is a match of a sequence ( 5 5 5 ) under the equivalence**  
  **predicate one_half in v1 and the first one begins at position 15.**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

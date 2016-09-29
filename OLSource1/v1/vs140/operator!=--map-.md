@@ -92,7 +92,7 @@ int main( )
  **The maps m1 and m2 are not equal.**  
 **The maps m1 and m3 are equal.**   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

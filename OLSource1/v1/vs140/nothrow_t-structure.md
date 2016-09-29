@@ -39,7 +39,7 @@ struct std::nothrow_t {};
  See [operator new](../vs140/-new--operators.md#operator_new) and [operator new&#91;&#93;](../vs140/-new--operators.md#operator_new_at) for examples of how `std::nothrow_t` is used as a function parameter.  
   
 ## Requirements  
- **Header:** <new\>  
+ **Header:** \<new>  
   
  **Namespace:** std  
   

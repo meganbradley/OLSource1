@@ -86,9 +86,9 @@ int main( )
   
  **The source string is: abcd-1234-abcd**  
 **The destination string is: ABCD-1234**  
-**The result1 = _Copy_s(s1, char_traits<char\>::length(s1), s2, 4) is: ABCD-1234-abcd**   
+**The result1 = _Copy_s(s1, char_traits\<char>::length(s1), s2, 4) is: ABCD-1234-abcd**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

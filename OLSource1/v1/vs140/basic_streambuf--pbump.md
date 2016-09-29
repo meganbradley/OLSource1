@@ -43,7 +43,7 @@ A protected function that adds `_Count` to the next pointer for the output buffe
  The number of characters by which to move the write position forward.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

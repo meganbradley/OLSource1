@@ -24,7 +24,7 @@ translation.priority.ht:
 # Compiler Error CS1640
 foreach statement cannot operate on variables of type 'type' because it implements multiple instantiations of 'interface', try casting to a specific interface instantiation  
   
- The type inherits from two or more instances of IEnumerator<T\>, which means there is not a unique enumeration of the type that `foreach` could use. Specify the type of IEnumerator<T\> or use another looping construct.  
+ The type inherits from two or more instances of IEnumerator\<T>, which means there is not a unique enumeration of the type that `foreach` could use. Specify the type of IEnumerator\<T> or use another looping construct.  
   
 ## Example  
  The following sample generates CS1640:  

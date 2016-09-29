@@ -60,7 +60,7 @@ public:
   
 #### Parameters  
  `IntType`  
- The integer result type, defaults to `int`. For possible types, see [<random\>](../vs140/-random-.md).  
+ The integer result type, defaults to `int`. For possible types, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  The template class describes a distribution that produces values of a user-specified integral type with a Poisson distribution. The following table links to articles about individual members.  
@@ -72,7 +72,7 @@ public:
   
  The property function `mean()` returns the value for stored distribution parameter `mean`.  
   
- For more information about distribution classes and their members, see [<random\>](../vs140/-random-.md).  
+ For more information about distribution classes and their members, see [\<random>](../vs140/-random-.md).  
   
  For detailed information about the Poisson distribution, see the Wolfram MathWorld article                 [Poisson Distribution](http://go.microsoft.com/fwlink/?LinkId=401112).  
   
@@ -137,7 +137,7 @@ int main()
   
  **Use CTRL-Z to bypass data entry and run using default values.Enter a floating point value for the 'mean' distribution parameter (must be greater than zero): 10Enter an integer value for the sample count: 100min() == 0max() == 2147483647p() == 10.0000000000Distribution for 100 samples:    3 :    4 ::    5 ::    6 ::::::::    7 ::::    8 ::::::::    9 ::::::::::::::   10 ::::::::::::   11 ::::::::::::::::   12 :::::::::::::::   13 ::::::::   14 ::::::   15 :   16 ::   17 :**   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
@@ -187,4 +187,4 @@ struct param_type {
  This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

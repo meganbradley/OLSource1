@@ -79,7 +79,7 @@ int main( )
   
  **The lists are equal.**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

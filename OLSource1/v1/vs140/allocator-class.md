@@ -98,7 +98,7 @@ template <class  Type > class allocator
 |[operator=](#allocator__operator_eq)|Assigns one `allocator` object to another `allocator` object.|  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

@@ -59,7 +59,7 @@ Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;  
 ```  
   
- If you are recording actions on a non-empty cell, then recording gets a little more complicated, because the moment you add text to a cell, a new <div\> control is added as a child of the cell. The new <div\> control contains the text that you just entered. The recorder needs to record actions on the new <div\> control; however, it can’t because the new <div\> control does not exist until after the test is entered. You must manually make the following code changes to accommodate this issue.  
+ If you are recording actions on a non-empty cell, then recording gets a little more complicated, because the moment you add text to a cell, a new \<div> control is added as a child of the cell. The new \<div> control contains the text that you just entered. The recorder needs to record actions on the new \<div> control; however, it can’t because the new \<div> control does not exist until after the test is entered. You must manually make the following code changes to accommodate this issue.  
   
 1.  Go to cell initialization and make `RowIndex` and `ColumnIndex` primary properties:  
   

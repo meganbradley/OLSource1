@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Function &#39;&lt;procedurename&gt;&#39; doesn&#39;t return a value on all code paths
-Function '<procedurename\>' doesn't return a value on all code paths. Are you missing a 'Return' statement?  
+Function '\<procedurename>' doesn't return a value on all code paths. Are you missing a 'Return' statement?  
   
  A `Function` procedure has at least one possible path through its code that does not return a value.  
   

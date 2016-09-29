@@ -54,74 +54,20 @@ For many applications, you want to create and manage groups of related objects. 
   
  The following example creates a list of strings and then iterates through the strings by using a or [foreach](../vs140/foreach--in--csharp-reference-.md) statement.  
   
-```c#  
-// Create a list of strings.  
-var salmons = new List<string>();  
-salmons.Add("chinook");  
-salmons.Add("coho");  
-salmons.Add("pink");  
-salmons.Add("sockeye");  
-  
-// Iterate through the list.  
-foreach (var salmon in salmons)  
-{  
-    Console.Write(salmon + " ");  
-}  
-// Output: chinook coho pink sockeye  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
  If the contents of a collection are known in advance, you can use a *collection initializer* to initialize the collection. For more information, see [Object and Collection Initializers (C# Programming Guide)](../vs140/object-and-collection-initializers--csharp-programming-guide-.md).  
   
  The following example is the same as the previous example, except a collection initializer is used to add elements to the collection.  
   
-```c#  
-// Create a list of strings by using a  
-// collection initializer.  
-var salmons = new List<string> { "chinook", "coho", "pink", "sockeye" };  
-  
-// Iterate through the list.  
-foreach (var salmon in salmons)  
-{  
-    Console.Write(salmon + " ");  
-}  
-// Output: chinook coho pink sockeye  
-```  
-  
+<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
  You can use a [for](../vs140/for--csharp-reference-.md) statement instead of a `foreach` statement to iterate through a collection. You accomplish this by accessing the collection elements by the index position. The index of the elements starts at 0 and ends at the element count minus 1.  
   
  The following example iterates through the elements of a collection by using `for` instead of `foreach`.  
   
-```c#  
-// Create a list of strings by using a  
-// collection initializer.  
-var salmons = new List<string> { "chinook", "coho", "pink", "sockeye" };  
-  
-for (var index = 0; index < salmons.Count; index++)  
-{  
-    Console.Write(salmons[index] + " ");  
-}  
-// Output: chinook coho pink sockeye  
-```  
-  
+<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
  The following example removes an element from the collection by specifying the object to remove.  
   
-```c#  
-// Create a list of strings by using a  
-// collection initializer.  
-var salmons = new List<string> { "chinook", "coho", "pink", "sockeye" };  
-  
-// Remove an element from the list by specifying  
-// the object.  
-salmons.Remove("coho");  
-  
-// Iterate through the list.  
-foreach (var salmon in salmons)  
-{  
-    Console.Write(salmon + " ");  
-}  
-// Output: chinook pink sockeye  
-```  
-  
+<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
  The following example removes elements from a generic list. Instead of a `foreach` statement, a [for](../vs140/for--csharp-reference-.md) statement that iterates in descending order is used. This is because the <xref:System.Collections.Generic.List`1.RemoveAt*> method causes elements after a removed element to have a lower index value.  
   
 ```c#  
@@ -234,91 +180,13 @@ public class Galaxy
   
  The following example creates a `Dictionary` collection and iterates through the dictionary by using a `foreach` statement.  
   
-```c#  
-private static void IterateThruDictionary()  
-{  
-    Dictionary<string, Element> elements = BuildDictionary();  
-  
-    foreach (KeyValuePair<string, Element> kvp in elements)  
-    {  
-        Element theElement = kvp.Value;  
-  
-        Console.WriteLine("key: " + kvp.Key);  
-        Console.WriteLine("values: " + theElement.Symbol + " " +  
-            theElement.Name + " " + theElement.AtomicNumber);  
-    }  
-}  
-  
-private static Dictionary<string, Element> BuildDictionary()  
-{  
-    var elements = new Dictionary<string, Element>();  
-  
-    AddToDictionary(elements, "K", "Potassium", 19);  
-    AddToDictionary(elements, "Ca", "Calcium", 20);  
-    AddToDictionary(elements, "Sc", "Scandium", 21);  
-    AddToDictionary(elements, "Ti", "Titanium", 22);  
-  
-    return elements;  
-}  
-  
-private static void AddToDictionary(Dictionary<string, Element> elements,  
-    string symbol, string name, int atomicNumber)  
-{  
-    Element theElement = new Element();  
-  
-    theElement.Symbol = symbol;  
-    theElement.Name = name;  
-    theElement.AtomicNumber = atomicNumber;  
-  
-    elements.Add(key: theElement.Symbol, value: theElement);  
-}  
-  
-public class Element  
-{  
-    public string Symbol { get; set; }  
-    public string Name { get; set; }  
-    public int AtomicNumber { get; set; }  
-}  
-```  
-  
+<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
  To instead use a collection initializer to build the `Dictionary` collection, you can replace the `BuildDictionary` and `AddToDictionary` methods with the following method.  
   
-```c#  
-private static Dictionary<string, Element> BuildDictionary2()  
-{  
-    return new Dictionary<string, Element>  
-    {  
-        {"K",  
-            new Element() { Symbol="K", Name="Potassium", AtomicNumber=19}},  
-        {"Ca",  
-            new Element() { Symbol="Ca", Name="Calcium", AtomicNumber=20}},  
-        {"Sc",  
-            new Element() { Symbol="Sc", Name="Scandium", AtomicNumber=21}},  
-        {"Ti",  
-            new Element() { Symbol="Ti", Name="Titanium", AtomicNumber=22}}  
-    };  
-}  
-```  
-  
+<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
  The following example uses the <xref:System.Collections.Generic.Dictionary`2.ContainsKey*> method and the <xref:System.Collections.Generic.Dictionary`2.Item*> property of `Dictionary` to quickly find an item by key. The `Item` property enables you to access an item in the `elements` collection by using the `elements[symbol]` in C#.  
   
-```c#  
-private static void FindInDictionary(string symbol)  
-{  
-    Dictionary<string, Element> elements = BuildDictionary();  
-  
-    if (elements.ContainsKey(symbol) == false)  
-    {  
-        Console.WriteLine(symbol + " not found");  
-    }  
-    else  
-    {  
-        Element theElement = elements[symbol];  
-        Console.WriteLine("found: " + theElement.Name);  
-    }  
-}  
-```  
-  
+<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
  The following example instead uses the <xref:System.Collections.Generic.Dictionary`2.TryGetValue*> method quickly find an item by key.  
   
 ```c#  
@@ -466,77 +334,7 @@ public class Car : IComparable<Car>
   
  The `GetEnumerator` method returns an instance of the `ColorEnumerator` class. `ColorEnumerator` implements the <xref:System.Collections.IEnumerator*> interface, which requires that the <xref:System.Collections.IEnumerator.Current*> property, <xref:System.Collections.IEnumerator.MoveNext*> method, and <xref:System.Collections.IEnumerator.Reset*> method be implemented.  
   
-```c#  
-private static void ListColors()  
-{  
-    var colors = new AllColors();  
-  
-    foreach (Color theColor in colors)  
-    {  
-        Console.Write(theColor.Name + " ");  
-    }  
-    Console.WriteLine();  
-    // Output: red blue green  
-}  
-  
-// Collection class.  
-public class AllColors : System.Collections.IEnumerable  
-{  
-    Color[] _colors =  
-    {  
-        new Color() { Name = "red" },  
-        new Color() { Name = "blue" },  
-        new Color() { Name = "green" }  
-    };  
-  
-    public System.Collections.IEnumerator GetEnumerator()  
-    {  
-        return new ColorEnumerator(_colors);  
-  
-        // Instead of creating a custom enumerator, you could  
-        // use the GetEnumerator of the array.  
-        //return _colors.GetEnumerator();  
-    }  
-  
-    // Custom enumerator.  
-    private class ColorEnumerator : System.Collections.IEnumerator  
-    {  
-        private Color[] _colors;  
-        private int _position = -1;  
-  
-        public ColorEnumerator(Color[] colors)  
-        {  
-            _colors = colors;  
-        }  
-  
-        object System.Collections.IEnumerator.Current  
-        {  
-            get  
-            {  
-                return _colors[_position];  
-            }  
-        }  
-  
-        bool System.Collections.IEnumerator.MoveNext()  
-        {  
-            _position++;  
-            return (_position < _colors.Length);  
-        }  
-  
-        void System.Collections.IEnumerator.Reset()  
-        {  
-            _position = -1;  
-        }  
-    }  
-}  
-  
-// Element class.  
-public class Color  
-{  
-    public string Name { get; set; }  
-}  
-```  
-  
+<CodeContentPlaceHolder>12</CodeContentPlaceHolder>  
 ##  <a name="BKMK_Iterators"></a> Iterators  
  An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [yield return](../vs140/yield--csharp-reference-.md) statement to return each element of the collection one at a time.  
   

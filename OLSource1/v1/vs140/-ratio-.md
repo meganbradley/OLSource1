@@ -47,7 +47,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;ratio&gt;
-Include the standard header <ratio\> to define constants and templates that are used to store and manipulate rational numbers at compile time.  
+Include the standard header \<ratio> to define constants and templates that are used to store and manipulate rational numbers at compile time.  
   
 ## Syntax  
   
@@ -70,7 +70,7 @@ struct ratio
  The [ratio Structure](assetId:///3f7961f4-802b-4251-b3c3-090ef91c0dba) defines the static constants `num` and `den` such that `num` / `den` == N / D and `num` and `den` have no common factors. `num` / `den` is the `value` that is represented by the template class. Therefore, `type` designates the instantiation `ratio<N0, D0>` for which `num` == N0 and `den` == D0.  
   
 ### Specializations  
- <ratio\> also defines specializations of `ratio` that have the following form.  
+ \<ratio> also defines specializations of `ratio` that have the following form.  
   
  `template <class R1, class R2> struct ratio_specialization`  
   

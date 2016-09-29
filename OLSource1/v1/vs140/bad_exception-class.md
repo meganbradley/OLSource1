@@ -44,7 +44,7 @@ class bad_exception    : public exception {};
  See [set_unexpected](../vs140/-exception--functions.md#set_unexpected) for an example of the use of [unexpected](../vs140/-exception--functions.md#unexpected) throwing a `bad_exception`.  
   
 ## Requirements  
- **Header:** <exception\>  
+ **Header:** \<exception>  
   
  **Namespace:** std  
   

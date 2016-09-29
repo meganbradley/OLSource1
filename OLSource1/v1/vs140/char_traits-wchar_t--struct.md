@@ -25,7 +25,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # char_traits&lt;wchar_t&gt; Struct
-A class that is a specialization of the template struct **char_traits<CharType\>** to an element of type `wchar_t`.  
+A class that is a specialization of the template struct **char_traits\<CharType>** to an element of type `wchar_t`.  
   
 ## Syntax  
   
@@ -37,7 +37,7 @@ template<> struct char_traits<wchar_t>;
  Specialization allows the struct to take advantage of library functions that manipulate objects of this type `wchar_t`.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

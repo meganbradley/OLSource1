@@ -35,7 +35,7 @@ translation.priority.ht:
  A description of the member.  
   
 ## Remarks  
- The <remarks\> tag is used to add information about a type, supplementing the information specified with [<summary\>](../vs140/-summary---csharp-programming-guide-.md). This information is displayed in the Object Browser window.  
+ The \<remarks> tag is used to add information about a type, supplementing the information specified with [\<summary>](../vs140/-summary---csharp-programming-guide-.md). This information is displayed in the Object Browser window.  
   
  Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file.  
   

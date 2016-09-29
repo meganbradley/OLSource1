@@ -81,7 +81,7 @@ int main()
 **rwi = 1**  
 **i = -1**   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

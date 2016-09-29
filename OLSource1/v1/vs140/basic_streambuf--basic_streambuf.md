@@ -47,7 +47,7 @@ basic_streambuf(const basic_streambuf& _Right);
  The second protected constructor copies the pointers and locale from `_Right`.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

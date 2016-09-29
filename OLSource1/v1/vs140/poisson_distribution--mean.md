@@ -42,10 +42,10 @@ RealType mean() const;
  The member function returns the stored value `mean`.  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [poisson_distribution](../vs140/poisson_distribution-class.md)

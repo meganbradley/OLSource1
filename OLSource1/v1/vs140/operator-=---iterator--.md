@@ -124,7 +124,7 @@ int main( )
  **in the reversed sequence: 8.**  
 **The iterator rVPOS1 is greater than or equal to the iterator rVPOS2.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

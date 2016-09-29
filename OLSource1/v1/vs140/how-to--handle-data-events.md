@@ -59,30 +59,30 @@ You can customize your application by writing code that runs when certain data e
   
 |**General Methods**|Description|  
 |-------------------------|-----------------|  
-|<TableName\>_AllowSaveWithErrors|Indicates whether the item should be saved if the item has validation errors. Save will abort by default if the item has validation errors. Runs on the calling tier.|  
-|<TableName\>_Created|Called after the item is created. Runs on the tier where the item was created.|  
-|<TableSetName\>_Deleted|Called just after the item has been deleted from the data store. Runs on the server.|  
-|<TableSetName\>_Deleting|Called just before the item is deleted from the data store. Runs on the server.|  
-|<TableSetName\>_Inserted|Called just after the item has been inserted into the data store. Runs on the server.|  
-|<TableSetName\>_Inserting|Called just before the item is inserted into the data store. Runs on the server.|  
-|<TableSetName\>_Updated|Called just after the item has been updated in the data store. Runs on the server.|  
-|<TableSetName\>_Updating|Called just before the item is updated in the data store. Runs on the server.|  
-|<TableSetName\>_Validate|Called when an item is validated on the server.|  
+|\<TableName>_AllowSaveWithErrors|Indicates whether the item should be saved if the item has validation errors. Save will abort by default if the item has validation errors. Runs on the calling tier.|  
+|\<TableName>_Created|Called after the item is created. Runs on the tier where the item was created.|  
+|\<TableSetName>_Deleted|Called just after the item has been deleted from the data store. Runs on the server.|  
+|\<TableSetName>_Deleting|Called just before the item is deleted from the data store. Runs on the server.|  
+|\<TableSetName>_Inserted|Called just after the item has been inserted into the data store. Runs on the server.|  
+|\<TableSetName>_Inserting|Called just before the item is inserted into the data store. Runs on the server.|  
+|\<TableSetName>_Updated|Called just after the item has been updated in the data store. Runs on the server.|  
+|\<TableSetName>_Updating|Called just before the item is updated in the data store. Runs on the server.|  
+|\<TableSetName>_Validate|Called when an item is validated on the server.|  
   
 |**Access Control Methods**|Description|  
 |--------------------------------|-----------------|  
 |SaveChanges_CanExecute|Called prior to saving changes in the data source to check the permission level of the current user.  Runs on the server.|  
-|<TableSetName\>_CanDelete|Called prior to deleting an item to check permission level of the current user. Runs on the server.|  
-|<TableSetName\>_CanInsert|Called prior to inserting an item to check the permission level of the current user. Runs on the server.|  
-|<TableSetName\>_CanRead|Called prior to reading an item to check the permission level of the current user. Runs on the server.|  
-|<TableSetName\>_CanUpdate|Called prior to updating an item to check the permission level of the current user. Runs on the server.|  
+|\<TableSetName>_CanDelete|Called prior to deleting an item to check permission level of the current user. Runs on the server.|  
+|\<TableSetName>_CanInsert|Called prior to inserting an item to check the permission level of the current user. Runs on the server.|  
+|\<TableSetName>_CanRead|Called prior to reading an item to check the permission level of the current user. Runs on the server.|  
+|\<TableSetName>_CanUpdate|Called prior to updating an item to check the permission level of the current user. Runs on the server.|  
   
 |**Query Methods**|Description|  
 |-----------------------|-----------------|  
 |Query_ExecuteFailed|Called after the query fails to execute. Runs on the server.|  
 |Query_Executed|Called just after executing the query. This method is not called if the query fails to execute. Runs on the server.|  
 |Query_Executing|Called just before executing the query. Runs on the server.|  
-|<TableSetName\>_Filter|Called before the query runs, allowing for additional query customization. Runs on the server.|  
+|\<TableSetName>_Filter|Called before the query runs, allowing for additional query customization. Runs on the server.|  
   
 |**Data Source Methods**|Description|  
 |-----------------------------|-----------------|  
@@ -92,9 +92,9 @@ You can customize your application by writing code that runs when certain data e
   
 |**Property Methods**||  
 |--------------------------|-|  
-|<PropertyName\>_Changed|Called just after the property value for an item has changed. Runs on the tier where the property was changed.|  
-|<PropertyName\>_IsReadOnly|Returns whether the property is read-only. Runs on the tier where the property is accessed.|  
-|<PropertyName\>_Validate|Called when the property is validated. Runs on the tier where the property is validated.|  
+|\<PropertyName>_Changed|Called just after the property value for an item has changed. Runs on the tier where the property was changed.|  
+|\<PropertyName>_IsReadOnly|Returns whether the property is read-only. Runs on the tier where the property is accessed.|  
+|\<PropertyName>_Validate|Called when the property is validated. Runs on the tier where the property is validated.|  
   
 ## See Also  
  [Data and Entities: The Information Behind Your Application](../vs140/data--the-information-behind-your-application.md)   

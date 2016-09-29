@@ -64,7 +64,7 @@ Specifies documentation information for the result of a function or method call.
  Optional. If `type` is `Array`, specifies whether the elements in the array can be set to null. Set to `true` to indicate that the elements in the array can be set to null; otherwise, set to `false`. The default value is `false`. This attribute is not used by Visual Studio to provide IntelliSense information.  
   
  `locid`  
- Optional. The identifier for localization information about the return value. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [<loc\>](../vs140/-loc---javascript-.md) tag.  
+ Optional. The identifier for localization information about the return value. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [\<loc>](../vs140/-loc---javascript-.md) tag.  
   
  `value`  
  Optional. Specifies code that should be evaluated for use by IntelliSense instead of the function code itself. For example, you can use this attribute to provide IntelliSense for asynchronous callbacks, such as a `Promise`. Using the `value` attribute with the `<returns>` element can improve IntelliSense performance by bypassing lengthy code execution.  

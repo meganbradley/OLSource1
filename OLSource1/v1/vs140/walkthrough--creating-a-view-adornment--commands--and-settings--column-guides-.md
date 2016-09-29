@@ -329,7 +329,7 @@ namespace ColumnGuides
   
 ```  
   
- Most of this code just creates and parses the settings format: "RGB(<int\>,<int\>,<int\>) <int\>, <int\>, …".  The integers at the end are the one-based columns where you want column guides.  The column guides extension captures all its settings in a single setting value string.  
+ Most of this code just creates and parses the settings format: "RGB(\<int>,\<int>,\<int>) \<int>, \<int>, …".  The integers at the end are the one-based columns where you want column guides.  The column guides extension captures all its settings in a single setting value string.  
   
  There are some parts of the code worth highlighting.  The following line of code gets the Visual Studio managed wrapper for the settings storage.  For the most part, this abstracts over the Windows registry, but this API is independent of the storage mechanism.  
   

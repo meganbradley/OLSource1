@@ -43,10 +43,10 @@ static Type lowest() throw();
  Returns the most negative finite value for the type (which is typically `min` `()` for integer types and `-``max` `()` for floating-point types). The return value is meaningful if `is_bounded` is `true`.  
   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   
 ## See Also  
  [numeric_limits Class](../vs140/numeric_limits-class.md)   
- [<limits\>](../vs140/-limits-.md)
+ [\<limits>](../vs140/-limits-.md)

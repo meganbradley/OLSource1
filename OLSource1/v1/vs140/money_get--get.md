@@ -143,7 +143,7 @@ money_get(-100056EUR, intl = 0) = -1000.56
 ```  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

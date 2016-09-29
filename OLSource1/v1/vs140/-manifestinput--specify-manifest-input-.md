@@ -34,7 +34,7 @@ Specifies a manifest input file to include in the manifest that's embedded in th
 ## Remarks  
  The **/MANIFESTINPUT** option specifies the path of an input file to use to create the embedded manifest in an executable image. If you have multiple manifest input files, use the switch multiple times—once for each input file. The manifest input files are merged to create the embedded manifest. This option requires the **/MANIFEST:EMBED** option.  
   
- This option can’t be set directly in [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)]. Instead, use the **Additional Manifest Files** property of the project to specify additional manifest files to include. For more information, see [Input and Output, Manifest Tool, Configuration Properties, <Projectname\> Property Pages Dialog Box](../vs140/input-and-output--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md).  
+ This option can’t be set directly in [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)]. Instead, use the **Additional Manifest Files** property of the project to specify additional manifest files to include. For more information, see [Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../vs140/input-and-output--manifest-tool--configuration-properties---projectname--property-pages-dialog-box.md).  
   
 ## See Also  
  [Setting Linker Options](../vs140/setting-linker-options.md)   

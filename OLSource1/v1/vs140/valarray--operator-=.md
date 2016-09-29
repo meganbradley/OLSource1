@@ -107,7 +107,7 @@ int main( )
  **operator&#124;= is the valarray:**  
  **( 1 0 1 3 3 4 7 6 7 9 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

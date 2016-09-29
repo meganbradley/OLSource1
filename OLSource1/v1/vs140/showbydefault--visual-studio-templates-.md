@@ -24,9 +24,9 @@ translation.priority.ht:
 # ShowByDefault (Visual Studio Templates)
 If `false`, specifies that the template will only be displayed under the specified [TemplateGroupID](../vs140/templategroupid-element--visual-studio-templates-.md).  
   
- <VSTemplate\>  
- <TemplateData\>  
- <ShowByDefault\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ShowByDefault>  
   
 ## Syntax  
   

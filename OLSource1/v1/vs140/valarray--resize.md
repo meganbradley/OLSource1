@@ -99,7 +99,7 @@ int main()
 **The valarray contains ( 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 ).**  
 **The number of elements in the resized valarray is: 15.**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

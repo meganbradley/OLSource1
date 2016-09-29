@@ -77,9 +77,9 @@ int main()
   
 ```  
   
-  **is_union<trivial\> == false**  
-**is_union<int\> == false**  
-**is_union<ints\> == true**    
+  **is_union\<trivial> == false**  
+**is_union\<int> == false**  
+**is_union\<ints> == true**    
 ## Requirements  
  **Header:** <type_traits>  
   

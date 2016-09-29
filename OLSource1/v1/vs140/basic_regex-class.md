@@ -113,7 +113,7 @@ private:
  These member functions also take an argument `flags` that specifies various options for the interpretation of the regular expression in addition to those described by the `RXtraits` type.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
@@ -1264,7 +1264,7 @@ int main()
 **"(abc)" mark_count == 1**  
 **getloc == imbued == true**    
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_match](../vs140/-regex--functions.md#regex_match_function)   
  [regex_search](../vs140/-regex--functions.md#regex_search_function)   
  [regex_replace](../vs140/-regex--functions.md#regex_replace_function)   

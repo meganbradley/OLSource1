@@ -23,7 +23,7 @@ translation.priority.mt:
 # Adding Icons to Menu Commands
 Commands can appear on both menus and toolbars. On toolbars, it is common for a command to be displayed with just an icon (to save space) while on menus a command typically appears with both an icon and text.  
   
- Icons are 16 pixels wide by 16 pixels high and can be either 8-bit color depth (256 colors) or 32-bit color depth (true color). 32-bit color icons are preferred. Icons are typically arranged in a single horizontal row in a single bitmap, although multiple bitmaps are allowed. This bitmap is declared in the .vsct file along with the individual icons available in the bitmap. See the reference for the [<Bitmaps\> Section](../vs140/bitmaps-element.md) for more details.  
+ Icons are 16 pixels wide by 16 pixels high and can be either 8-bit color depth (256 colors) or 32-bit color depth (true color). 32-bit color icons are preferred. Icons are typically arranged in a single horizontal row in a single bitmap, although multiple bitmaps are allowed. This bitmap is declared in the .vsct file along with the individual icons available in the bitmap. See the reference for the [\<Bitmaps> Section](../vs140/bitmaps-element.md) for more details.  
   
 ## Adding an Icon to a Command  
  The following procedure assumes that you have an existing VSPackage project with a menu command. To find out how to do this, see [Creating a VSPackage with a Menu Command](../vs140/creating-an-extension-with-a-menu-command.md).  
@@ -58,7 +58,7 @@ Commands can appear on both menus and toolbars. On toolbars, it is common for a 
   
     -   Set the `guid` value to the name of the `<GuidSymbol>` element you created in the previous step.  
   
-    -   Set the `href` value to the relative path of the bitmap file (in this case **Resources\\<icon file name\>**.  
+    -   Set the `href` value to the relative path of the bitmap file (in this case **Resources\\\<icon file name>**.  
   
     -   Set the `usedList` value to the IDSymbol you created earlier. This attribute specifies a comma-delimited list of the icons to be used in the VSPackage. Icons not on the list are excluded form compilation.  
   

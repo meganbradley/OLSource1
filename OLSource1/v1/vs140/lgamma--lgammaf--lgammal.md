@@ -99,7 +99,7 @@ long double lgammal(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`lgamma`,                `lgammaf`,  `lgammal`|<math.h>|<cmath\>|  
+|`lgamma`,                `lgammaf`,  `lgammal`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

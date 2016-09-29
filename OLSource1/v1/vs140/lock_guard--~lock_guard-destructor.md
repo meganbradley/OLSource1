@@ -38,4 +38,4 @@ Unlocks the `mutex` that was passed to the constructor.
   
 ## See Also  
  [lock_guard Class](../vs140/lock_guard-class.md)   
- [<mutex\>](../vs140/-mutex-.md)
+ [\<mutex>](../vs140/-mutex-.md)

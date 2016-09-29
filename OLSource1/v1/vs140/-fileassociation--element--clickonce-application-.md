@@ -45,15 +45,15 @@ Identifies a file extension to be associated with the application.
 |`extension`|Required. The file extension to be associated with the application.|  
 |`description`|Required. A description of the file type for use by the shell.|  
 |`progid`|Required. A name uniquely identifying the file type.|  
-|`defaultIcon`|Required. Specifies the icon to use for files with this extension. The icon file must be specified by using the [<file\> element](../vs140/-file--element--clickonce-application-.md) within the [<assembly\> element](../vs140/-assembly--element--clickonce-application-.md) that contains this element.|  
+|`defaultIcon`|Required. Specifies the icon to use for files with this extension. The icon file must be specified by using the [\<file> element](../vs140/-file--element--clickonce-application-.md) within the [\<assembly> element](../vs140/-assembly--element--clickonce-application-.md) that contains this element.|  
   
 ## Remarks  
- This element must include an XML namespace reference to "urn:schemas-microsoft-com:clickonce.v1". If the `<fileAssociation>` element is used, it must come after the `<application>` element in its parent [<assembly\> element](../vs140/-assembly--element--clickonce-application-.md).  
+ This element must include an XML namespace reference to "urn:schemas-microsoft-com:clickonce.v1". If the `<fileAssociation>` element is used, it must come after the `<application>` element in its parent [\<assembly> element](../vs140/-assembly--element--clickonce-application-.md).  
   
  [!INCLUDE[ndptecclick](../vs140/includes/ndptecclick_md.md)] will not overwrite existing file associations. However, a ClickOnce application can override the file extension for the current user only. After that ClickOnce application is uninstalled, ClickOnce deletes the file association for the user, and the per-machine association is active again.  
   
 ## Example  
- The following code example illustrates `fileAssociation` elements in an application manifest for a text editor application deployed using [!INCLUDE[ndptecclick](../vs140/includes/ndptecclick_md.md)]. This code example also includes the [<file\> element](../vs140/-file--element--clickonce-application-.md) required by the `defaultIcon` attribute.  
+ The following code example illustrates `fileAssociation` elements in an application manifest for a text editor application deployed using [!INCLUDE[ndptecclick](../vs140/includes/ndptecclick_md.md)]. This code example also includes the [\<file> element](../vs140/-file--element--clickonce-application-.md) required by the `defaultIcon` attribute.  
   
 ```  
 <file name="text.ico" size="4286">  

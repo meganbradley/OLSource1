@@ -24,12 +24,7 @@ translation.priority.ht:
 # Boxing Nullable Types (C# Programming Guide)
 Objects based on nullable types are only boxed if the object is non-null. If <xref:System.Nullable`1.HasValue*> is `false`, the object reference is assigned to `null` instead of boxing. For example:  
   
-```  
-bool? b = null;  
-object o = b;  
-// Now o is null.  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
  If the object is non-null -- if <xref:System.Nullable`1.HasValue*> is `true` -- then boxing occurs, but only the underlying type that the nullable object is based on is boxed. Boxing a non-null nullable value type boxes the value type itself, not the <xref:System.Nullable`1*?displayProperty=fullName> that wraps the value type. For example:  
   
 ```  

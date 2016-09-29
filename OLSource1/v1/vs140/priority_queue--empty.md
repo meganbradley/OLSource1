@@ -72,7 +72,7 @@ int main( )
  **The priority_queue q1 is not empty.**  
 **The priority_queue s2 is empty.**   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

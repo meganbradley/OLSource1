@@ -106,7 +106,7 @@ int main( )
 **matching the 2nd element of the pair returned by equal_range( 20 ).**  
 **The set s1 doesn't have an element with a key less than 40.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

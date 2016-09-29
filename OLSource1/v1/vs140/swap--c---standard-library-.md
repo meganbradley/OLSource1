@@ -102,7 +102,7 @@ int main()
 **\*wp1 == 10**  
 **\*wp1 == 5**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

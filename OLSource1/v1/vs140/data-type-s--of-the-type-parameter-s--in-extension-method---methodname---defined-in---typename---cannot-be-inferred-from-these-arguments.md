@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Data type(s) of the type parameter(s) in extension method &#39;&lt;methodname&gt;&#39; defined in &#39;&lt;typename&gt;&#39; cannot be inferred from these arguments
-Data type(s) of the type parameter(s) in extension method '<methodname\>' defined in '<typename\>' cannot be inferred from these arguments. Specifying the data type(s) explicitly might correct this error.  
+Data type(s) of the type parameter(s) in extension method '\<methodname>' defined in '\<typename>' cannot be inferred from these arguments. Specifying the data type(s) explicitly might correct this error.  
   
  An attempt has been made to use type inference to determine the data type (or types) of the type parameter (or parameters) when evaluating a call to a generic extension method. However, the compiler is not able to find a data type for the type parameters in this method, and it reports the error.  
   

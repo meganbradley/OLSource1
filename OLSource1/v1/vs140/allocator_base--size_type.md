@@ -44,6 +44,6 @@ typedef std::size_t size_type;
  The unsigned integer type implements  as a typedef for `std::size_t`.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext

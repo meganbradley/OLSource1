@@ -70,7 +70,7 @@ int main( )
  **The first element is 10**  
 **The second element is 20**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

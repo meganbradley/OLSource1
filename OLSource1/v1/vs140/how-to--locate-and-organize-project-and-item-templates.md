@@ -48,7 +48,7 @@ Template files must be placed in a location that Visual Studio recognizes so tha
   
  For example, the following directory contains custom [!INCLUDE[csprcs](../vs140/includes/csprcs_md.md)] project templates:  
   
- C:\Documents and Settings\UserName\My Documents\\<Visual Studio version\>\Templates\ProjectTemplates\Visual C#\  
+ C:\Documents and Settings\UserName\My Documents\\\<Visual Studio version>\Templates\ProjectTemplates\Visual C#\  
   
  Custom templates do not include a subdirectory for localized templates. You can change the default directory for custom templates in the **Options** dialog box, under **Environment\Projects and Solutions**.  
   
@@ -114,7 +114,7 @@ Template files must be placed in a location that Visual Studio recognizes so tha
   
 1.  Create a folder in the language folder in the custom project template directory. For example, to create a HelloWorld category for [!INCLUDE[csprcs](../vs140/includes/csprcs_md.md)] templates, you would create the following directory:  
   
-     \My Documents\\<Visual Studio version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+     \My Documents\\\<Visual Studio version>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2.  Place all the templates for this category in the new folder.  
   
@@ -128,7 +128,7 @@ Template files must be placed in a location that Visual Studio recognizes so tha
   
 1.  Create a folder in the language folder in the custom item template directory. For example, to create a HelloWorld category for [!INCLUDE[csprcs](../vs140/includes/csprcs_md.md)] templates you would create the following directory:  
   
-     \My Documents\\<Visual Studio version\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \My Documents\\\<Visual Studio version>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  Place all the templates for this category in the new folder.  
   

@@ -34,13 +34,13 @@ translation.priority.ht:
  cref = " `member`"  
  A reference to an exception that is available from the current compilation environment. The compiler checks that the given exception exists and translates `member` to the canonical element name in the output XML. `member` must appear within double quotation marks (" ").  
   
- For more information on how to create a cref reference to a generic type, see [<see\> (C# Programmer's Reference)](../vs140/-see---csharp-programming-guide-.md).  
+ For more information on how to create a cref reference to a generic type, see [\<see> (C# Programmer's Reference)](../vs140/-see---csharp-programming-guide-.md).  
   
  `description`  
  A description of the exception.  
   
 ## Remarks  
- The <exception\> tag lets you specify which exceptions can be thrown. This tag can be applied to definitions for methods, properties, events, and indexers.  
+ The \<exception> tag lets you specify which exceptions can be thrown. This tag can be applied to definitions for methods, properties, events, and indexers.  
   
  Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file.  
   

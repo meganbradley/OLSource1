@@ -72,7 +72,7 @@ int main( )
 **The quiet NaN for type int is:  0**  
 **The quiet NaN for type long double is:  1.#QNAN**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

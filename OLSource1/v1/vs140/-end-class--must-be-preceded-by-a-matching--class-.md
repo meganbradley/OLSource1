@@ -32,4 +32,4 @@ translation.priority.ht:
 -   Move the `End Class` statement to the appropriate location in your code.  
   
 ## See Also  
- [End <keyword\> Statement](../vs140/end--keyword--statement--visual-basic-.md)
+ [End \<keyword> Statement](../vs140/end--keyword--statement--visual-basic-.md)

@@ -136,7 +136,7 @@ int main( )
  **The thousands separator is: .**  
 **num_put( ) = 1.000,67**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

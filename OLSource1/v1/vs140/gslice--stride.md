@@ -92,7 +92,7 @@ int main( )
 **The strides of vaResult are:**  
  **vaGSlice.stride ( ) = ( 7 4 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

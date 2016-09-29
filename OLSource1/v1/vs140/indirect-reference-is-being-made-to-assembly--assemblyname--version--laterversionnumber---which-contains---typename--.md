@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Indirect reference is being made to assembly &lt;assemblyname&gt; version &lt;laterversionnumber&gt;, which contains &#39;&lt;typename&gt;&#39;
-Indirect reference is being made to assembly <assemblyname\> version <laterversionnumber\>, which contains '<typename\>'. This Project references a prior version of <assemblyname\> version <earlierversionnumber\>. To use '<typename\>', you must replace the reference to <assemblyname\> with version <laterversionnumber\> or higher.  
+Indirect reference is being made to assembly \<assemblyname> version \<laterversionnumber>, which contains '\<typename>'. This Project references a prior version of \<assemblyname> version \<earlierversionnumber>. To use '\<typename>', you must replace the reference to \<assemblyname> with version \<laterversionnumber> or higher.  
   
  An expression makes an indirect reference to another project, which has a reference to an earlier version of the same assembly.  
   

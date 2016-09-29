@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3182
-**MSB3182: File name '<file\>' exceeds '<length\>' characters.**  
+**MSB3182: File name '\<file>' exceeds '\<length>' characters.**  
   
  This warning is generated when the value of the `TargetPath` property is too long. It can apply both to the application and deployment manifest.  
   
@@ -29,4 +29,4 @@ translation.priority.ht:
 -   Edit the value of the `TargetPath` property to make it shorter.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

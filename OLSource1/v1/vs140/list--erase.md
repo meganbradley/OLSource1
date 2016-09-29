@@ -104,7 +104,7 @@ int main( )
 **After erasing the first element, the list becomes: 20 30 40 50**  
 **After erasing all elements but the first, the list becomes:  20**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

@@ -301,7 +301,7 @@ Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe
   
     |Value|Command-line option|  
     |-----------|--------------------------|  
-    |**NotSet**|*<none\>*|  
+    |**NotSet**|*\<none>*|  
     |**1**|**/Zp1**|  
     |**2**|**/Zp2**|  
     |**4**|**/Zp4**|  
@@ -335,7 +335,7 @@ Wraps the Microsoft Interface Definition Language (MIDL) compiler tool, midl.exe
   
     |Value|Command-line option|  
     |-----------|--------------------------|  
-    |**NotSet**|*<none\>*|  
+    |**NotSet**|*\<none>*|  
     |**Win32**|**/env win32**|  
     |**Itanium**|**/env ia64**|  
     |**X64**|**/env x64**|  

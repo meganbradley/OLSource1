@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Expression of type &lt;type&gt; is not queryable
-Expression of type <type\> is not queryable. Make sure you are not missing an assembly reference and/or namespace import for the LINQ provider.  
+Expression of type \<type> is not queryable. Make sure you are not missing an assembly reference and/or namespace import for the LINQ provider.  
   
  Queryable types are defined in the <xref:System.Linq*>, <xref:System.Data.Linq*>, and <xref:System.Xml.Linq*> namespaces. You must import one or more of these namespaces to perform LINQ queries.  
   

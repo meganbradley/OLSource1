@@ -43,7 +43,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
  See the example for [rbegin](../vs140/deque--rbegin.md) for an example of how to declare and use an iterator.  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

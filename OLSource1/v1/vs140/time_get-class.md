@@ -79,7 +79,7 @@ template <
 |[get_year](#time_get__get_year)|Parses a string as the name of the year.|  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   
@@ -926,6 +926,6 @@ explicit time _ get(    size _ t  _Refs = 0 );
  The constructor initializes its base object with **locale::**[facet](../vs140/locale-class.md#facet_class)( `_Refs`).  
   
 ## See Also  
- [<locale\>](../vs140/-locale-.md)   
+ [\<locale>](../vs140/-locale-.md)   
  [time_base Class](../vs140/time_base-class.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

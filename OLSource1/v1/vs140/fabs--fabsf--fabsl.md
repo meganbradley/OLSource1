@@ -80,13 +80,13 @@ long double fabsl(
 |± QNAN,IND|none|_DOMAIN|  
   
 ## Remarks  
- C++ allows overloading, so you can call overloads of `fabs` if you include the <cmath\> header. In a C program, `fabs` always takes and returns a double.  
+ C++ allows overloading, so you can call overloads of `fabs` if you include the \<cmath> header. In a C program, `fabs` always takes and returns a double.  
   
 ## Requirements  
   
 |Function|Required C header|Required C++ header|  
 |--------------|-----------------------|---------------------------|  
-|`fabs`, `fabsf`, `fabsl`|<math.h>|<cmath\> or <math.h>|  
+|`fabs`, `fabsf`, `fabsl`|<math.h>|\<cmath> or <math.h>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

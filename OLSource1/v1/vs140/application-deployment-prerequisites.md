@@ -40,7 +40,7 @@ To ensure that your application will install and run successfully, you must firs
   
 -   The minimum required version of the common language runtime, which is specified as an assembly dependency in the application manifest.  
   
--   The minimum required version of the Windows operating system required by the application, as specified in the application manifest using the `<osVersionInfo>` element. (See [<dependency\> Element (ClickOnce Reference)](../vs140/-dependency--element--clickonce-application-.md))  
+-   The minimum required version of the Windows operating system required by the application, as specified in the application manifest using the `<osVersionInfo>` element. (See [\<dependency> Element (ClickOnce Reference)](../vs140/-dependency--element--clickonce-application-.md))  
   
 -   The minimum version of any and all assemblies that must be preinstalled in the global assembly cache (GAC), as specified by assembly dependency declarations in the assembly manifest.  
   

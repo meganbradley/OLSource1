@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Member &#39;&lt;membername&gt;&#39; cannot be found in class &#39;&lt;classname&gt;&#39;
-Member '<membername\>' cannot be found in class '<classname\>'. This condition is usually the result of a mismatched 'Microsoft.VisualBasic.dll'.  
+Member '\<membername>' cannot be found in class '\<classname>'. This condition is usually the result of a mismatched 'Microsoft.VisualBasic.dll'.  
   
  A defined member could not be located.  
   

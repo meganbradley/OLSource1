@@ -45,7 +45,7 @@ typedef Compare key_compare;
  See the example for [key_comp](../vs140/multiset--key_comp.md) for an example of how to declare and use `key_compare`.  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

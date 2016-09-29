@@ -42,4 +42,4 @@ public ref class Test {};
   
  Notice that the output for this sample says: **End tag 'member' does not match the start tag 'summary'.**  
   
- The problem with this sample is that the end tag for <summary\> is poorly formed, and the compiler does not recognize it as the <summary\> end tag.  The <member\> tag is embedded in the .xdc file by the compiler in every /doc compilation.  So, the problem here is that the end tag </member\>, does not match the previous start tag that the compiler processed (<summary\>.
+ The problem with this sample is that the end tag for \<summary> is poorly formed, and the compiler does not recognize it as the \<summary> end tag.  The \<member> tag is embedded in the .xdc file by the compiler in every /doc compilation.  So, the problem here is that the end tag </member\>, does not match the previous start tag that the compiler processed (\<summary>.

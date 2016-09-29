@@ -130,10 +130,10 @@ int main()
  The type is a synonym for `sub_match<BidIt>*`, where `BidIt` is the template parameter.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_token_iterator](../vs140/regex_token_iterator-class.md)

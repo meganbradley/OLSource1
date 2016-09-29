@@ -58,7 +58,7 @@ template <std::size_t Sz, size_t Nelts = 20> class cache_suballoc
 |[deallocate](#cache_suballoc__deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
@@ -106,4 +106,4 @@ void deallocate(void* _Ptr, std::size_t _Count);
 ### Remarks  
   
 ## See Also  
- [<allocators\>](../vs140/-allocators-.md)
+ [\<allocators>](../vs140/-allocators-.md)

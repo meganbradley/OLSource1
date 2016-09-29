@@ -48,10 +48,10 @@ protected:
 ```  
   
 ## Remarks  
- Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [ctype](../vs140/ctype-class.md)<CharType\>( `_Refs`) or the equivalent for base class `ctype<char>`.  
+ Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [ctype](../vs140/ctype-class.md)\<CharType>( `_Refs`) or the equivalent for base class `ctype<char>`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

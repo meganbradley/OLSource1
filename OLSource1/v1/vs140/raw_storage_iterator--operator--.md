@@ -82,7 +82,7 @@ int main( void )
 **array 3 = 6**  
 **array 4 = 8**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

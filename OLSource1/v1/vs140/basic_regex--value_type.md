@@ -118,10 +118,10 @@ int main()
 **"(abc)" mark_count == 1**  
 **getloc == imbued == true**   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [basic_regex](../vs140/basic_regex-class.md)

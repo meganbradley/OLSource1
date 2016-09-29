@@ -94,7 +94,7 @@ int main(int argc, char **argv)
 |[swap](#basic_fstream__swap)|Exchanges the content of this object with the content of another `basic_fstream` object.|  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

@@ -42,7 +42,7 @@ typedef long int_type;
  See the example for [eq_int_type](../vs140/char_traits--eq_int_type.md) for an example of how to declare and use `int_type`.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

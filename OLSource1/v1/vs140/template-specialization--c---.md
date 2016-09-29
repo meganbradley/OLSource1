@@ -69,7 +69,7 @@ int main() {
 }  
 ```  
   
- **PTS<S\>::IsPointer == 0 PTS<S\>::IsPointerToDataMember == 0**  
+ **PTS\<S>::IsPointer == 0 PTS\<S>::IsPointerToDataMember == 0**  
 **PTS<S\*>::IsPointer == 1 PTS<S\*>::IsPointerToDataMember ==0**  
 **PTS<int S::\*>::IsPointer == 0 PTS<int S::\*>::IsPointerToDataMember == 1**   
 ## Example  

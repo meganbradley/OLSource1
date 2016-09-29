@@ -45,7 +45,7 @@ You can choose to hide some code from view by collapsing a region of code so tha
 |Stop Outlining|(CTRL + M, CTRL + P) - Removes all outlining information for the entire document.|  
 |Stop Hiding Current|(CTRL + M, CTRL + U)  - Removes the outlining information for the currently selected user-defined region. Not available in Visual Basic.|  
 |Collapse to Definitions|(CTRL + M, CTRL + O) - Collapses the members of all types.|  
-|Collapse Block:<logical boundary\>|(Visual C++) Collapses a region in the function containing the insertion point. For example, if the insertion point lies inside a loop, the loop is hidden.|  
-|Collapse All in: <logical structures\>|(Visual C++) Collapses all the structures inside the function.|  
+|Collapse Block:\<logical boundary>|(Visual C++) Collapses a region in the function containing the insertion point. For example, if the insertion point lies inside a loop, the loop is hidden.|  
+|Collapse All in: \<logical structures>|(Visual C++) Collapses all the structures inside the function.|  
   
  You can also use the Visual Studio SDK to define the text regions you want to expand or collapse. See [Walkthrough: Outlining](../vs140/walkthrough--outlining.md).

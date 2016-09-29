@@ -44,7 +44,7 @@ traits<char> > istream;
  The type is a synonym for template class [basic_istream](../vs140/basic_istream-class.md), specialized for elements of type `char` with default character traits.  
   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   

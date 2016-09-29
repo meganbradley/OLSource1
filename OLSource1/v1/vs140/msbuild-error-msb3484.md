@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3484
-**MSB3484: Signing target '<file\>' could not be found.**  
+**MSB3484: Signing target '\<file>' could not be found.**  
   
  This error is generated when the file that you attempted to sign was not found.  
   
@@ -29,4 +29,4 @@ translation.priority.ht:
 -   Make sure that you specify a valid file for signing.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

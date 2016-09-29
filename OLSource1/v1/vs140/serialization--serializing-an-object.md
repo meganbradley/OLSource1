@@ -28,11 +28,11 @@ The article [Serialization: Making a Serializable Class](../vs140/serialization-
   
 -   [Two ways to create a CArchive](../vs140/two-ways-to-create-a-carchive-object.md).  
   
--   [How to use the CArchive << and >> operators](../vs140/using-the-carchive----and----operators.md).  
+-   [How to use the CArchive <\< and >> operators](../vs140/using-the-carchive----and----operators.md).  
   
 -   [Storing and loading CObjects via an archive](../vs140/storing-and-loading-cobjects-via-an-archive.md).  
   
- You can let the framework create the archive for your serializable document or explicitly create the `CArchive` object yourself. You can transfer data between a file and your serializable object by using the << and >> operators for `CArchive` or, in some cases, by calling the `Serialize` function of a `CObject`-derived class.  
+ You can let the framework create the archive for your serializable document or explicitly create the `CArchive` object yourself. You can transfer data between a file and your serializable object by using the <\< and >> operators for `CArchive` or, in some cases, by calling the `Serialize` function of a `CObject`-derived class.  
   
 ## See Also  
  [Serialization](../vs140/serialization-in-mfc.md)

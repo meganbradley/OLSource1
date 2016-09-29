@@ -24,9 +24,9 @@ translation.priority.ht:
 # Project Element (Visual Studio Templates)
 Specifies the files or directories to add to the project.  
   
- <VSTemplate\>  
- <TemplateContent\>  
- <Project\>  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<Project>  
   
 ## Syntax  
   

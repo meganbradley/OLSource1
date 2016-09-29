@@ -117,7 +117,7 @@ The greater-than heaped version of v1 is ( 0 1 5 2 6 8 7 3 4 9 ).
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

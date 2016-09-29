@@ -67,7 +67,7 @@ virtual int do_length(
  See the example for [length](../vs140/codecvt--length.md), which calls **do_length**.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

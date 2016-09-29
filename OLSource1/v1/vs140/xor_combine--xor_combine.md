@@ -30,6 +30,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # xor_combine::xor_combine
-This topic is deprecated. See [<random\>](../vs140/-random-.md).  
+This topic is deprecated. See [\<random>](../vs140/-random-.md).  
   
 ## Syntax

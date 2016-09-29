@@ -118,7 +118,7 @@ int main( )
 **The strings s1 & s3 are equal.**  
 **The strings s3 & s2 are not equal.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

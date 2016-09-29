@@ -24,7 +24,7 @@ translation.priority.ht:
 # Compiler Warning (level 1) CS1589
 Unable to include XML fragment 'fragment' of file 'file' -- reason  
   
- The syntax (*fragment*) of a [<include\>](../vs140/-include---csharp-programming-guide-.md) tag, which referenced a file (`file`), was incorrect for the specified ***reason***.  
+ The syntax (*fragment*) of a [\<include>](../vs140/-include---csharp-programming-guide-.md) tag, which referenced a file (`file`), was incorrect for the specified ***reason***.  
   
  A malformed line will be placed in the generated XML file.  
   

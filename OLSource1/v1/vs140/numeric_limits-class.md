@@ -80,7 +80,7 @@ template<class  Type> class numeric_limits
 |[traps](#numeric_limits__traps)|Tests whether trapping that reports on arithmetic exceptions is implemented for a type.|  
   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

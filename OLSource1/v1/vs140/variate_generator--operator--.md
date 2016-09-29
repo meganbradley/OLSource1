@@ -35,4 +35,4 @@ This class has been removed from Visual Studio and is no longer supported.
 ## Syntax  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

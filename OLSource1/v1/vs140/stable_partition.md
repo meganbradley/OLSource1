@@ -114,7 +114,7 @@ The first element in v1 to fail to satisfy the
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

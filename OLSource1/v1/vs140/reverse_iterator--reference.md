@@ -44,7 +44,7 @@ typedef typename iterator_traits<RandomIterator>::reference reference;
  See [reverse_iterator::operator&#91;&#93;](../vs140/reverse_iterator--operator.md) or [reverse_iterator::operator*](../vs140/reverse_iterator--operator-.md) for examples of how to declare and use **reference**.  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

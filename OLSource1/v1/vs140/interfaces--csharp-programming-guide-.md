@@ -41,7 +41,7 @@ An interface contains definitions for a group of related functionalities that a 
   
  When a class or struct implements an interface, the class or struct must provide an implementation for all of the members that the interface defines. The interface itself provides no functionality that a class or struct can inherit in the way that it can inherit base class functionality. However, if a base class implements an interface, any class that's derived from the base class inherits that implementation.  
   
- The following example shows an implementation of the IEquatable<T\> interface. The implementing class, `Car`, must provide an implementation of the <xref:System.IEquatable`1.Equals*> method.  
+ The following example shows an implementation of the IEquatable\<T> interface. The implementing class, `Car`, must provide an implementation of the <xref:System.IEquatable`1.Equals*> method.  
   
  [!code[csProgGuideInheritance#48](../vs140/codesnippet/CSharp/interfaces--csharp-programming-guide-_2.cs)]  
   

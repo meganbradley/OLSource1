@@ -99,6 +99,6 @@ int main( )
  **1.31019  radians, which is      75.0686  degrees**  
  **1.5608  radians, which is      89.4271  degrees**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std

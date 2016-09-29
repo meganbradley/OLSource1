@@ -198,7 +198,7 @@ int main( )
 **The index of the last occurrence of an element of 'a2' in str4 before**  
  **the 0th position is: 9**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

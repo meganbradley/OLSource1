@@ -40,6 +40,6 @@ extern const std::nothrow_t nothrow;
  See [operator new](../vs140/operator-new---new--.md) and [operator new&#91;&#93;](../vs140/operator-new--new--.md) for examples of how `std::nothrow_t` is used as a function parameter.  
   
 ## Requirements  
- **Header:** <new\>  
+ **Header:** \<new>  
   
  **Namespace:** std

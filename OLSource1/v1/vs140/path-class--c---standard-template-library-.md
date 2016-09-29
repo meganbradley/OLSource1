@@ -366,7 +366,7 @@ template<class Elem>
   
 5.  concat(source);  
   
-6.  concat(path(basic_string<Elem\>(1, elem)));  
+6.  concat(path(basic_string\<Elem>(1, elem)));  
   
 ## path::operator/=  
   
@@ -425,13 +425,13 @@ template<class InIt>
   
  For path(path&& right) it is myname(right.myname).  
   
- For template<class Source\> path(const Source& source) it is myname(source).  
+ For template\<class Source> path(const Source& source) it is myname(source).  
   
- For template<class Source\> path(const Source& source, const locale& loc) it is myname(source), obtaining any needed codecvt facets from loc.  
+ For template\<class Source> path(const Source& source, const locale& loc) it is myname(source), obtaining any needed codecvt facets from loc.  
   
- For template<class InIt\> path(InIt first, InIt last) it is myname(first, last).  
+ For template\<class InIt> path(InIt first, InIt last) it is myname(first, last).  
   
- For template<class InIt\> path(InIt first, InIt last, const locale& loc) it is myname(first, last), obtaining any needed codecvt facets from loc.  
+ For template\<class InIt> path(InIt first, InIt last, const locale& loc) it is myname(first, last), obtaining any needed codecvt facets from loc.  
   
 ## path::preferred_separator  
   

@@ -47,4 +47,4 @@ template<class Ty, class... ArgTypes>
   
 ## See Also  
  [promise Class](../vs140/promise-class.md)   
- [<future\>](../vs140/-future-.md)
+ [\<future>](../vs140/-future-.md)

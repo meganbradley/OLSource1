@@ -97,11 +97,11 @@ int main()
  **4 5 6 7**  
  **0 1 2 3**   
 ## Requirements  
- **Header:** <array\>  
+ **Header:** \<array>  
   
  **Namespace:** std  
   
 ## See Also  
  [swap](../vs140/array--swap.md)   
- [<array\>](../vs140/-array-.md)   
+ [\<array>](../vs140/-array-.md)   
  [array::swap](../vs140/array--swap.md)

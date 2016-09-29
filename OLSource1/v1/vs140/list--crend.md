@@ -80,7 +80,7 @@ int main( )
   
  **The first element in the list is: 10**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

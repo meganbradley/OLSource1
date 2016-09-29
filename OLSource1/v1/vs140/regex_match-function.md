@@ -177,11 +177,11 @@ int _tmain(int argc, _TCHAR* argv[])
 ```  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_replace](../vs140/regex_replace-function.md)   
  [regex_search](../vs140/regex_search-function.md)

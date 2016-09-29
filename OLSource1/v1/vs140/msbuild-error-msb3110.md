@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3110
-**MSB3110: Assembly '<assembly\>' has mismatched identity '<AssemblyIdentity\>', expected filename: '<file\>'.**  
+**MSB3110: Assembly '\<assembly>' has mismatched identity '\<AssemblyIdentity>', expected filename: '\<file>'.**  
   
  This error is generated when the assembly file name obtained from the assembly identity does not match the actual file name.  
   
@@ -29,4 +29,4 @@ translation.priority.ht:
 -   Correct the assembly file name so that it matches the assembly identity.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

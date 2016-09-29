@@ -431,7 +431,7 @@ By using LightSwitch, you can create an app for SharePoint in which mobile users
   
      This string will appear on the splash screen.  
   
-3.  In the <title\> element, replace `SurveyApp` with `Contoso Product Surveys`.  
+3.  In the \<title> element, replace `SurveyApp` with `Contoso Product Surveys`.  
   
 #### To test the changes  
   

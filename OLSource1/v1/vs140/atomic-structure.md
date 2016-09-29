@@ -90,5 +90,5 @@ struct atomic;
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [Header Files](../vs140/c---standard-library-header-files.md)

@@ -54,7 +54,7 @@ Specifies that integer variables appear in base 8 notation.
  See [dec](../vs140/dec.md) for an example of how to use **oct**.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

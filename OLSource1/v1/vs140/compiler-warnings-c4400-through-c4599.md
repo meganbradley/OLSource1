@@ -237,8 +237,8 @@ The articles in this part of the documentation contain information about a subse
 |Compiler warning (level 1) C4586|'%$S': A public type cannot be declared in a top-level namespace called 'Windows'|  
 |Compiler warning (level 1) C4587|'anonymous_structure': behavior change: constructor is no longer implicitly called|  
 |Compiler warning (level 1) C4588|'anonymous_structure': behavior change: destructor is no longer implicitly called|  
-|Compiler warning (level 1) C4591|'constexpr' call-depth limit of %d exceeded (/constexpr:depth<NUMBER\>)|  
+|Compiler warning (level 1) C4591|'constexpr' call-depth limit of %d exceeded (/constexpr:depth\<NUMBER>)|  
 |Compiler warning (level 3) C4592|'function': 'constexpr' call evaluation failed; function will be called at run-time|  
-|Compiler warning (level 1) C4593|'function': 'constexpr' call evaluation step limit of 'limit' exceeded; use /constexpr:steps<NUMBER\> to increase the limit|  
+|Compiler warning (level 1) C4593|'function': 'constexpr' call evaluation step limit of 'limit' exceeded; use /constexpr:steps\<NUMBER> to increase the limit|  
 |Compiler warning (level 3) C4594|'%$S': destructor will not be implicitly called if an exception is thrown|  
 |Compiler warning (level 1) C4595|'%$S': behavior change: destructor will no longer be implicitly called if an exception is thrown|

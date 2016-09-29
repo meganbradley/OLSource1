@@ -33,7 +33,7 @@ template<class _InIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the STL function `find`. For more information, see [find (<algorithm\>)](../vs140/find--stl-.md).  
+ This function behaves the same as the STL function `find`. For more information, see [find (\<algorithm>)](../vs140/find--stl-.md).  
   
 ## Requirements  
  **Header:** <cliext/algorithm>  

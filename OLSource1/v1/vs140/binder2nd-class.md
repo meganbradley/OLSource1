@@ -124,7 +124,7 @@ The number of elements in v1 less than 10 is: 2.
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3168
-**MSB3168: Duplicate item '<package\>' will be ignored.**  
+**MSB3168: Duplicate item '\<package>' will be ignored.**  
   
  This warning occurs if you have specified that the bootstrapper should install two identical bootstrapper packages. In this case, the bootstrapper will install only one instance.  
   

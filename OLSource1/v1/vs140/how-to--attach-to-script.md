@@ -61,12 +61,12 @@ This topic explains how to manually attach the Visual Studio debugger to a scrip
  All **Debug** menu execution commands affect the active program. You can break any debugged program from the Processes dialog box.See [Breakpoints: Use Hit Counts, Call Stack Functions, and Conditions to Break When and Where You Want in the Visual Studio Debugger](../vs140/using-breakpoints.md).  
   
 > [!NOTE]
->  If you try to attach to a process that is owned by an untrusted user account, a security warning dialog confirmation will appear. For more information, see [Security Warning: Attaching to an Untrusted Process Can Be Dangerous](../vs140/security-warning--attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous.-if-the-following-information-looks-suspicious-or-you-are-unsure--do-not-attach-to-this-process.md).  
+>  If you try to attach to a process that is owned by an untrusted user account, a security warning dialog confirmation will appear. For more information, see [Security Warning: Attaching to an Untrusted Process Can Be Dangerous](../vs140/52246c1e-a371-40a0-b756-a435cc51876f.md).  
   
  In some cases, when you are debugging in a Terminal Services (Remote Desktop) session, the Available Processes list will not display all available processes. On [!INCLUDE[WinXPSvr](../vs140/includes/winxpsvr_md.md)] or later versions, if you are running Visual Studio as a limited user, the Available Processes list will not show processes running in Session 0, which is used for services and other server processes, including w3wp.exe. You can solve the problem by running Visual Studio under an administrator account or by running Visual Studio from the server console rather than a Terminal Services session. If neither of those workarounds is possible, a third option is to attach to the process by typing vsjitdebugger.exe -p ProcessId at the Windows command line. You can determine the process id by using tlist.exe. To obtain tlist.exe, download and install Debugging Tools for Windows, available at [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/?linkid=1651).  
   
 ## See Also  
  [Client-Side Script Debugging](../vs140/client-side-script-debugging.md)   
  [Attach to Running Processes](../vs140/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Security Warning: Attaching to an Unknown Process Can Be Dangerous](../vs140/security-warning--attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous.-if-the-following-information-looks-suspicious-or-you-are-unsure--do-not-attach-to-this-process.md)   
+ [Security Warning: Attaching to an Unknown Process Can Be Dangerous](../vs140/52246c1e-a371-40a0-b756-a435cc51876f.md)   
  [Debugger Security](../vs140/debugger-security.md)

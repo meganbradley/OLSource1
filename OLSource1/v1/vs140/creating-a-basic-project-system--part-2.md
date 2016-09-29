@@ -88,20 +88,20 @@ The first walkthrough in this series, [Tutorial 1: How to Create a Basic Project
   
  ![](../vs140/media/simpproj2.png "SimpProj2")  
   
- The <TemplateData\> section determines the location and appearance of the SimpleProject project type in the **New Project** dialog box, as follows:  
+ The \<TemplateData> section determines the location and appearance of the SimpleProject project type in the **New Project** dialog box, as follows:  
   
--   The <Name\> element names the project template to be SimpleProject Application.  
+-   The \<Name> element names the project template to be SimpleProject Application.  
   
--   The <Description\> element contains the description that appears in the **New Project** dialog box when the project template is selected.  
+-   The \<Description> element contains the description that appears in the **New Project** dialog box when the project template is selected.  
   
--   The <Icon\> element specifies the icon that appears together with the SimpleProject project type.  
+-   The \<Icon> element specifies the icon that appears together with the SimpleProject project type.  
   
--   The <ProjectType\> element names the Project type in the **New Project** dialog box. This name replaces the project name parameter of the ProvideProjectFactory attribute.  
+-   The \<ProjectType> element names the Project type in the **New Project** dialog box. This name replaces the project name parameter of the ProvideProjectFactory attribute.  
   
     > [!NOTE]
-    >  The <ProjectType\> element must match the `LanguageVsTemplate` argument of the `ProvideProjectFactory` attribute in the SimpleProjectPackage.cs file.  
+    >  The \<ProjectType> element must match the `LanguageVsTemplate` argument of the `ProvideProjectFactory` attribute in the SimpleProjectPackage.cs file.  
   
- The <TemplateContent\> section describes these files that are generated when a new project is created:  
+ The \<TemplateContent> section describes these files that are generated when a new project is created:  
   
 -   SimpleProject.myproj  
   
@@ -187,7 +187,7 @@ ZipProjects:
   
      On [!INCLUDE[win7](../vs140/includes/win7_md.md)]: On the Start menu, find the **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** folder, and then select **Reset the Microsoft Visual Studio Experimental instance**.  
   
-     On later versions of Windows: On the Start screen, type **Reset the Microsoft Visual Studio <version\> Experimental Instance**.  
+     On later versions of Windows: On the Start screen, type **Reset the Microsoft Visual Studio \<version> Experimental Instance**.  
   
 2.  A command prompt window appears. When you see the words `Press any key to continue`, click ENTER. After the window closes, open Visual Studio.  
   
@@ -204,7 +204,7 @@ ZipProjects:
 ## Creating a Project Type Child Node  
  You can add a child node to a project type node in the **New Project** dialog box.  For example, for the SimpleProject project type, you could have child nodes for console applications, window applications, web applications, and so on.  
   
- Child nodes are created by altering the project file and adding <OutputSubPath\> children to the <ZipProject\> elements. When a template is copied during build or deployment, every child node becomes a subfolder of the project templates folder.  
+ Child nodes are created by altering the project file and adding \<OutputSubPath> children to the \<ZipProject> elements. When a template is copied during build or deployment, every child node becomes a subfolder of the project templates folder.  
   
  This section shows how to create a Console child node for the SimpleProject project type.  
   
@@ -212,7 +212,7 @@ ZipProjects:
   
 2.  In the **Properties** window, select all five files in the \Templates\Projects\ConsoleApp\ folder and make sure the **Build Action** is set to **ZipProject**.  
   
-3.  In the SimpleProject.vstemplate file, add the following line at the end of the <TemplateData\> section, just before the closing tag.  
+3.  In the SimpleProject.vstemplate file, add the following line at the end of the \<TemplateData> section, just before the closing tag.  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
@@ -222,9 +222,9 @@ ZipProjects:
   
 4.  Save the SimpleProject.vstemplate file.  
   
-5.  In the .csproj file, add <OutputSubPath\> to each of the ZipProject elements. Unload the project, as before, and edit the project file.  
+5.  In the .csproj file, add \<OutputSubPath> to each of the ZipProject elements. Unload the project, as before, and edit the project file.  
   
-6.  Locate the <ZipProject\> elements. To each <ZipProject\> element, add an <OutputSubPath\> element and give it the value Console. The ZipProject  
+6.  Locate the \<ZipProject> elements. To each \<ZipProject> element, add an \<OutputSubPath> element and give it the value Console. The ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -244,7 +244,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7.  Add this <PropertyGroup\> to the project file:  
+7.  Add this \<PropertyGroup> to the project file:  
   
     ```  
     <PropertyGroup>  
@@ -286,7 +286,7 @@ ZipProjects:
   
 1.  In the SimpleProjectNode.cs file, remove the `AddFileFromTemplate` method.  
   
-2.  In the \Templates\Projects\ConsoleApp\SimpleProject.myproj file, locate the <RootNamespace\> property and change its value to $safeprojectname$.  
+2.  In the \Templates\Projects\ConsoleApp\SimpleProject.myproj file, locate the \<RootNamespace> property and change its value to $safeprojectname$.  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  

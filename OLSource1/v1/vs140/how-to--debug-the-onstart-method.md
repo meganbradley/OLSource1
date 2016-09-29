@@ -44,7 +44,7 @@ You can debug a Windows service by starting the service and attaching the debugg
   
      ![OnStartDebug](../vs140/media/onstartdebug.png "OnStartDebug")  
   
-3.  Select **Yes, debug <service name\>.**  
+3.  Select **Yes, debug \<service name>.**  
   
 4.  In the Just-In-Time Debugger window, select the version of Visual Studio you want to use for debugging.  
   

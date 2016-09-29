@@ -52,7 +52,7 @@ valarray<Type> apply(
  A valarray whose elements have had `_Func` applied element-wise to the elements of the operand valarray.  
   
 ## Remarks  
- The member function returns an object of class [valarray](../vs140/valarray-class.md)**<Type\>**, of length [size](../vs140/valarray--size.md), each of whose elements `I` is **func**((**\*this**)[`I`]).  
+ The member function returns an object of class [valarray](../vs140/valarray-class.md)**\<Type>**, of length [size](../vs140/valarray--size.md), each of whose elements `I` is **func**((**\*this**)[`I`]).  
   
 ## Example  
   
@@ -102,7 +102,7 @@ int main( int argc, char* argv[] )
 **The element-by-element result of applying MyApplyFunc to vaR is the**  
 **valarray: (  0 0 -4 6 0 -10 12 0 -16 18 )**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

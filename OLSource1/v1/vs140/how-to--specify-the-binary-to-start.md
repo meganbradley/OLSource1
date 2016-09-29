@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # How to: Specify the Binary to Start
-To profile binaries, such as DLLs, you must enter information in the **<Target\> Property Pages** dialog box. This information indicates where the DLL project can find the calling application.  
+To profile binaries, such as DLLs, you must enter information in the **\<Target> Property Pages** dialog box. This information indicates where the DLL project can find the calling application.  
   
  **Requirements**  
   

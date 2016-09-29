@@ -101,6 +101,6 @@ The character '3' in the locale is a numeric character.
 ```  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std

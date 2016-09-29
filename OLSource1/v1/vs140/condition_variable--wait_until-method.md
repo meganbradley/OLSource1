@@ -60,7 +60,7 @@ bool wait_until(
   
 #### Parameters  
  `Lck`  
- A [unique_lock<mutex\>](unique_lock<mutex>) object.  
+ A [unique_lock\<mutex>](unique_lock<mutex>) object.  
   
  `Abs_time`  
  A [chrono::time_point](../vs140/time_point-class.md) object.  

@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3169
-**MSB3169: An error occurred generating a bootstrapper: '<error\>'**  
+**MSB3169: An error occurred generating a bootstrapper: '\<error>'**  
   
  This message displays errors that the bootstrapper build does not catch.  
   

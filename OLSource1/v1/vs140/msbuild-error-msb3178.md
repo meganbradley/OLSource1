@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3178
-**MSB3178: Assembly '<assembly\>' is incorrectly specified as a file.**  
+**MSB3178: Assembly '\<assembly>' is incorrectly specified as a file.**  
   
  This warning is generated during application manifest generation when the build process detects that a file reference is actually a (managed or native) assembly.  
   
@@ -29,4 +29,4 @@ translation.priority.ht:
 -   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](../vs140/additional-msbuild-resources.md).  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

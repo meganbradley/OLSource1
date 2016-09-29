@@ -38,7 +38,7 @@ class subtract_with_carry_engine;
   
 #### Parameters  
  `UIntType`  
- The unsigned integer result type. For possible types, see [<random\>](../vs140/-random-.md).  
+ The unsigned integer result type. For possible types, see [\<random>](../vs140/-random-.md).  
   
  `W`  
  **Word size**. Size of each word, in bits, of the state sequence.                         **Precondition**: `0 < W ≤ numeric_limits<UIntType>::digits`  
@@ -57,7 +57,7 @@ class subtract_with_carry_engine;
 |`subtract_with_carry_engine::operator()`|`subtract_with_carry_engine::max`|`subtract_with_carry_engine::seed`|  
 |`default_seed` is a member constant, defined as `19780503u`, used as the default parameter value for `subtract_with_carry_engine::seed` and the single value constructor.|||  
   
- For more information about engine members, see [<random\>](../vs140/-random-.md).  
+ For more information about engine members, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  The `substract_with_carry_engine` template class is an improvement over the [linear_congruential_engine](../vs140/linear_congruential_engine-class.md). Neither for these engines is as fast or with as high quality results as the [mersenne_twister_engine](../vs140/mersenne_twister_engine-class.md).  
@@ -77,9 +77,9 @@ class subtract_with_carry_engine;
  For detailed information about the subract with carry engine algorithm, see the Wikipedia article                 [Lagged Fibonacci generator](http://go.microsoft.com/fwlink/?LinkId=402445).  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)
+ [\<random>](../vs140/-random-.md)

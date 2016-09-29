@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;c&gt; (Visual C++)
-The <c\> tag indicates that text within a description should be marked as code. Use [<code\>](../vs140/-code---visual-c---.md) to indicate multiple lines as code.  
+The \<c> tag indicates that text within a description should be marked as code. Use [\<code>](../vs140/-code---visual-c---.md) to indicate multiple lines as code.  
   
 ## Syntax  
   

@@ -48,9 +48,9 @@ XML IntelliSense
 |||  
 |-|-|  
 |Option|Description|  
-|**< >**|Select this option to show a list of possible child elements. For more information, see [XML Element Literal](../vs140/xml-element-literal--visual-basic-.md) and the <xref:System.Xml.Linq.XContainer.Elements*> method.|  
+|**\< >**|Select this option to show a list of possible child elements. For more information, see [XML Element Literal](../vs140/xml-element-literal--visual-basic-.md) and the <xref:System.Xml.Linq.XContainer.Elements*> method.|  
 |**@**|Select this option to show a list of possible attributes. For more information, see [XML Axis Properties](../vs140/xml-axis-properties--visual-basic-.md).This option is available only for objects of type <xref:System.Xml.Linq.XElement*>.|  
-|**…< >**|Select this option to show a list of possible descendant elements. For more information, see [How to: Access XML Descendant Elements (Visual Basic)](../vs140/how-to--access-xml-descendant-elements--visual-basic-.md) and the <xref:System.Xml.Linq.XContainer.Elements*> method.|  
+|**…\< >**|Select this option to show a list of possible descendant elements. For more information, see [How to: Access XML Descendant Elements (Visual Basic)](../vs140/how-to--access-xml-descendant-elements--visual-basic-.md) and the <xref:System.Xml.Linq.XContainer.Elements*> method.|  
   
  Select or begin typing any of the XML options from the list. The member list will then display potential members from the XML schema that are specific to the selected option. If you have XML namespaces imported that are associated with a specific XML namespace prefix, a list of potential XML namespace prefixes is included in the member list.  
   

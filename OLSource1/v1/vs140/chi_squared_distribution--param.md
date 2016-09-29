@@ -29,11 +29,11 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # chi_squared_distribution::param
-Topic deprecated, see [<random\>](../vs140/-random-.md).  
+Topic deprecated, see [\<random>](../vs140/-random-.md).  
   
 ## Syntax  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std

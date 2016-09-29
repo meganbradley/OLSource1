@@ -43,7 +43,7 @@ type;
  The type is a synonym for the raw_storage_iterator class template parameter **Type**.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

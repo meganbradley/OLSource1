@@ -73,10 +73,10 @@ int main()
   
 ```  
   
-  **is_fundamental<trivial\> == false**  
-**is_fundamental<int\> == true**  
-**is_fundamental<const float\> == true**  
-**is_fundamental<void\> == true**    
+  **is_fundamental\<trivial> == false**  
+**is_fundamental\<int> == true**  
+**is_fundamental\<const float> == true**  
+**is_fundamental\<void> == true**    
 ## Requirements  
  **Header:** <type_traits>  
   

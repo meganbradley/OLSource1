@@ -112,7 +112,7 @@ virtual iter_type do_get(
  See the example for [get](../vs140/money_get--get.md), which calls `do_get`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

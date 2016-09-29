@@ -19,7 +19,7 @@ The Manifest to Code tool is a console application that takes an .imagemanifest 
 ## How to use the tool  
  **Syntax**  
   
- ManifestToCode /manifest:<Image Manifest file\> /language:<Code Language\> <Optional Args\>  
+ ManifestToCode /manifest:\<Image Manifest file> /language:\<Code Language> \<Optional Args>  
   
  **Arguments**  
   
@@ -28,8 +28,8 @@ The Manifest to Code tool is a console application that takes an .imagemanifest 
 |**Switch name**|**Notes**|**Required or Optional**|  
 |/manifest|The path to the image manifest to use to create or update the code wrapper.|Required|  
 |/language|The language in which to generate the code wrapper.<br /><br /> Valid values: CPP, C++, CS, CSharp, C#, VB, or VSCT The values are case-insensitive.<br /><br /> For the VSCT language option, the /monikerClass, /classAccess, and /namespace options are ignored.|Required|  
-|/imageIdClass|The name of the imageIdClass and the associated file created by the tool. For the C++ language option, only .h files are generated.<br /><br /> Default: <Manifest Path\>\MyImageIds.<Lang Ext\>|Optional|  
-|/monikerClass|The name of the monikerClass and the associated file created by the tool. For the C++ language option, only .h files are generated. This is ignored for the VSCT language.<br /><br /> Default: <Manifest Path\>\MyMonikers.<Lang Ext\>|Optional|  
+|/imageIdClass|The name of the imageIdClass and the associated file created by the tool. For the C++ language option, only .h files are generated.<br /><br /> Default: \<Manifest Path>\MyImageIds.\<Lang Ext>|Optional|  
+|/monikerClass|The name of the monikerClass and the associated file created by the tool. For the C++ language option, only .h files are generated. This is ignored for the VSCT language.<br /><br /> Default: \<Manifest Path>\MyMonikers.\<Lang Ext>|Optional|  
 |/classAccess|The access modifier for the imageIdClass and the monikerClass. Make sure the access modifier is valid for the given language. This is ignored for the VSCT language option.<br /><br /> Default: Public|Optional|  
 |/namespace|The namespace defined in the code wrapper. This is ignored for the VSCT language option. Either ‘.’ or ‘::’ are valid namespace separators, regardless of the chosen language option.<br /><br /> Default: MyImages|Optional|  
 |/noLogo|Setting this flag stops product and copyright information from printing.|Optional|  

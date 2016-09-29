@@ -33,7 +33,7 @@ An <xref:System.InvalidOperationException*?displayProperty=fullName> is thrown w
   
  [A statement in a foreach (For Each in Visual Basic) block changes the collection it is iterating](#BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating)  
   
- [A Nullable<T\> that is null is cast to T](#BKMK_A_Nullable_T_that_is_null_is_cast_to_T)  
+ [A Nullable\<T> that is null is cast to T](#BKMK_A_Nullable_T_that_is_null_is_cast_to_T)  
   
  [A System.Linq.Enumerable method is called on an empty collection](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
   
@@ -246,28 +246,7 @@ private void DoSomeWork(int msOfWork)
   
 -   Additional information: Collection was modified; enumeration operation may not execute.  
   
-```  
-private void AddElementsToAList()  
-{  
-    var numList = new List<int>() { 1, 2, 3, 4 };  
-  
-    foreach (var num in numList)  
-    {  
-        if (num == 2)  
-        {  
-            numList.Add(5);  
-        }  
-    }  
-  
-    // Display list elements  
-    foreach (var num in numList)  
-    {  
-        Console.Write("{0} ", num);  
-    }  
-}  
-  
-```  
-  
+<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
  ![Back to top](../vs140/media/pcs_backtotop.png "PCS_BackToTop") [In this article](#BKMK_In_this_article) ![In this section](../vs140/media/pcs_backtotopmid.png "PCS_BackToTopMid") [In this section](#BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating)  
   
 ###  <a name="BKMK_Avoiding_InvalidOperationExceptions_in_loops"></a> Avoiding InvalidOperationExceptions in loops  
@@ -275,56 +254,10 @@ private void AddElementsToAList()
 > [!IMPORTANT]
 >  Adding or removing elements to a list while you are interating over the collection can have unintended and hard to predict side effects. If possible, you should move the operation outside of the iteration.  
   
-```  
-private void AddElementsToAList ()  
-{  
-    var numList = new List<int>() { 1, 2, 3, 4 };  
-  
-    var numberOf2s = 0;  
-  
-    foreach (var num in numList)  
-    {  
-        if (num == 2)  
-        {  
-            numberOf2s++;  
-        }  
-    }  
-  
-    for (var i = 0; i < numberOf2s; i++ ){numList.Add(5);}  
-  
-    // Display list elements  
-    foreach (var num in numList)  
-    {  
-        Console.Write("{0} ", num);  
-    }  
-}  
-  
-```  
-  
+<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
  If your situation requires you to add or remove elements to a list as you iterate a collection, use a [for](../vs140/for--csharp-reference-.md) ([For](../vs140/for...next-statement--visual-basic-.md) in Visual Basic) loop:  
   
-```  
-private void AddElementsToAList ()  
-{  
-    var numList = new List<int>() { 1, 2, 3, 4 };  
-  
-    for (var i = 0; i < numList.Count; i++)   
-    {  
-        if (numList[i] == 2)  
-        {  
-            numList.Add(5);  
-        }  
-    }  
-  
-    // Display list elements  
-    foreach (var num in numList)  
-    {  
-        Console.Write("{0} ", num);  
-    }  
-}  
-  
-```  
-  
+<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
  ![Back to top](../vs140/media/pcs_backtotop.png "PCS_BackToTop") [In this article](#BKMK_In_this_article) ![In this section](../vs140/media/pcs_backtotopmid.png "PCS_BackToTopMid") [In this section](#BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating)  
   
 ##  <a name="BKMK_A_Nullable_T_that_is_null_is_cast_to_T"></a> A Nullable<T\> that is null is cast to T  
@@ -365,7 +298,7 @@ private void MapQueryResults()
   
 -   Use one of the overloaded <xref:System.Nullable`1.GetValueOrDefault*?displayProperty=fullName> methods to provide a default value for a null item.  
   
- **Nullable<T\>.HasValue example**  
+ **Nullable\<T>.HasValue example**  
   
 ```c#  
 private void MapQueryResults()  
@@ -389,7 +322,7 @@ private void MapQueryResults()
 }  
 ```  
   
- **Nullable<T\>.GetValueOrDefault example**  
+ **Nullable\<T>.GetValueOrDefault example**  
   
  In this example, we use <xref:System.Nullable`1.GetValueOrDefault(`0)> to specify a default that is outside of the expected values returned by `dbQueryResults`.  
   

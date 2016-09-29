@@ -116,7 +116,7 @@ int main( )
  **It worked! The converted string is:**  
  **[This is the string to be converted!]**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

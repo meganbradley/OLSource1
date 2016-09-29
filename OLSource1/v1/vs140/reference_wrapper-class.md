@@ -101,7 +101,7 @@ private:
 |[reference_wrapper::operator()](#reference_wrapper__operator__)|Calls the wrapped reference.|  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

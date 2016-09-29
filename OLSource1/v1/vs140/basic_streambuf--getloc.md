@@ -59,7 +59,7 @@ int main( )
   
  **C**   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

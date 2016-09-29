@@ -79,7 +79,7 @@ long double cbrtl(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`cbrt`, `cbrtf`, `cbrtl`|<math.h>|<cmath\>|  
+|`cbrt`, `cbrtf`, `cbrtl`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

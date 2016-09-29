@@ -60,7 +60,7 @@ A literal representing an <xref:System.Xml.Linq.XCData*> object.
  The [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] compiler converts the XML CDATA literal to a call to the <xref:System.Xml.Linq.XCData.#ctor*> constructor.  
   
 ## Example  
- The following example creates a CDATA section that contains the text "Can contain literal <XML\> tags".  
+ The following example creates a CDATA section that contains the text "Can contain literal \<XML> tags".  
   
  [!code[VbXMLSamples#23](../vs140/codesnippet/VisualBasic/xml-cdata-literal--visual-basic-_1.vb)]  
   

@@ -56,7 +56,7 @@ virtual pattern do_neg_format( ) const;
  See the example for [neg_format](../vs140/moneypunct--neg_format.md), where the virtual member function is called by `neg_format`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

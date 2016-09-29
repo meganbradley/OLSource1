@@ -46,7 +46,7 @@ A protected virtual function called by [pubimbue](../vs140/basic_streambuf--pubi
  The default behavior is to do nothing.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

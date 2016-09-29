@@ -52,11 +52,11 @@ template<class Elem>
  The manipulator returns an object that, when inserted into the stream `str`, behaves as a `formatted output function`. The output function calls the member function `put` for the locale facet `time_put` associated with `str`. The output function uses `_Tptr` to indicate the time structure and `_Fmt` to indicate the beginning of a NUL-terminated format string. If successful, the call inserts literal text from the format string and converted values from the time structure. The manipulator then returns `str`.  
   
 ## Requirements  
- **Header:** <iomanip\>  
+ **Header:** \<iomanip>  
   
  **Namespace:** std  
   
 ## See Also  
- [<iomanip\>](../vs140/-iomanip-.md)   
+ [\<iomanip>](../vs140/-iomanip-.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

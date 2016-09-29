@@ -40,7 +40,7 @@ class bad_alloc : public exception {
  The value returned by **what** is an implementation-defined C string. None of the member functions throw any exceptions.  
   
 ## Requirements  
- **Header:** <new\>  
+ **Header:** \<new>  
   
  **Namespace:** std  
   
@@ -72,7 +72,7 @@ bad allocation
 ```  
   
 ## Requirements  
- **Header:** <new\>  
+ **Header:** \<new>  
   
 ## See Also  
  [exception Class](../vs140/exception-class.md)   

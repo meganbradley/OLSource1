@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3486
-**MSB3486: Cannot get certificate from store '<certificate store\>'.**  
+**MSB3486: Cannot get certificate from store '\<certificate store>'.**  
   
  The `ResolveKeySource` MSBuild task generates this error when the certificate matching the thumbprint of your project's .pfx file is not found in your personal certificate store.  
   
@@ -29,4 +29,4 @@ translation.priority.ht:
 -   Make sure that the thumbprint of your project's .pfx file matches that of the certificate in your personal certificate store.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

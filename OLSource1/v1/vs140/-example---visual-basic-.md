@@ -34,7 +34,7 @@ Specifies an example for the member.
  A description of the code sample.  
   
 ## Remarks  
- The `<example>` tag lets you specify an example of how to use a method or other library member. This commonly involves using the [<code\> (Visual Basic)](../vs140/-code---visual-basic-.md) tag.  
+ The `<example>` tag lets you specify an example of how to use a method or other library member. This commonly involves using the [\<code> (Visual Basic)](../vs140/-code---visual-basic-.md) tag.  
   
  Compile with [/doc](../vs140/-doc.md) to process documentation comments to a file.  
   

@@ -38,5 +38,5 @@ Releases any resources that are used by the `mutex` object.
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<mutex\>](../vs140/-mutex-.md)   
+ [\<mutex>](../vs140/-mutex-.md)   
  [mutex Class (STL)](../vs140/mutex-class--stl-.md)

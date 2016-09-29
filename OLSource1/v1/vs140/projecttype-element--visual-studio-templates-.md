@@ -26,9 +26,9 @@ Categorizes the project template so that it appears under the specified group in
 > [!WARNING]
 >  Project templates are supported for C++ starting in Visual Studio 2012. They are not supported for C++ in Visual Studio 2010 and earlier versions.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <ProjectType\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ProjectType>  
   
 ## Syntax  
   

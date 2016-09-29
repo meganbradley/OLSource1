@@ -67,7 +67,7 @@ int main( )
  **The queue length is 1.**  
 **The queue length is now 2.**   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

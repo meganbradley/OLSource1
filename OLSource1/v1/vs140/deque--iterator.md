@@ -43,7 +43,7 @@ typedef implementation-defined iterator;
  See the example for [begin](../vs140/deque--begin.md).  
   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

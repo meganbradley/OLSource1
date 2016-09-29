@@ -38,4 +38,4 @@ native_handle_type native_handle();
   
 ## See Also  
  [mutex Class](../vs140/mutex-class--stl-.md)   
- [<mutex\>](../vs140/-mutex-.md)
+ [\<mutex>](../vs140/-mutex-.md)

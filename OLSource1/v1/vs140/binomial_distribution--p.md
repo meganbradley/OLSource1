@@ -45,11 +45,11 @@ double p() const;
  For a code example, see [binomial_distribution Class](../vs140/binomial_distribution-class.md).  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [binomial_distribution Class](../vs140/binomial_distribution-class.md)   
  [binomial_distribution::t](../vs140/binomial_distribution--t.md)

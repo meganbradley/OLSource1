@@ -73,7 +73,7 @@ int main( )
  **2**  
 **1**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

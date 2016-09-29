@@ -98,7 +98,7 @@ array<int, 4> ai = { 1, 2, 3 };
  creates the object `ai` that holds four integer values, initializes the first three elements to the values 1, 2, and 3, respectively, and initializes the fourth element to 0.  
   
 ## Requirements  
- **Header:** <array\>  
+ **Header:** \<array>  
   
  **Namespace:** std  
   
@@ -1470,4 +1470,4 @@ int main()
    **0 1 2 3**  
  **0 1 2 3**    
 ## See Also  
- [<array\>](../vs140/-array-.md)
+ [\<array>](../vs140/-array-.md)

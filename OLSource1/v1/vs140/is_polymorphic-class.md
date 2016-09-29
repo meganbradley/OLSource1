@@ -90,8 +90,8 @@ int main()
   
 ```  
   
-  **is_polymorphic<trivial\> == false**  
-**is_polymorphic<throws\> == true**    
+  **is_polymorphic\<trivial> == false**  
+**is_polymorphic\<throws> == true**    
 ## Requirements  
  **Header:** <type_traits>  
   

@@ -66,7 +66,7 @@ typedef void (__cdecl* _invalid_parameter_handler)(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`_get_invalid_parameter_handler`, `_get_thread_local_invalid_parameter_handler`|C: <stdlib.h><br /><br /> C++: <cstdlib\> or <stdlib.h>|  
+|`_get_invalid_parameter_handler`, `_get_thread_local_invalid_parameter_handler`|C: <stdlib.h><br /><br /> C++: \<cstdlib> or <stdlib.h>|  
   
  The `_get_invalid_parameter_handler` and `_get_thread_local_invalid_parameter_handler` functions are Microsoft specific. For compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

@@ -170,7 +170,7 @@ int main( )
 **Vector v1 is lexicographically_less than L1.**  
 **Vector v1 is not lexicographically_less than v2 under twice.**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

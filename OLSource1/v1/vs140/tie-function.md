@@ -83,10 +83,10 @@ int main()
   **0 1 2 3**  
  **0 1 2 3**   
 ## Requirements  
- **Header:** <tuple\>  
+ **Header:** \<tuple>  
   
  **Namespace:** std  
   
 ## See Also  
- [<tuple\>](../vs140/-tuple-.md)   
+ [\<tuple>](../vs140/-tuple-.md)   
  [make_tuple](../vs140/make_tuple-function.md)

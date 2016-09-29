@@ -87,7 +87,7 @@ int main( )
  **The character ch1 is less than the character ch2.**  
 **The character ch3 is not less than the character ch2.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

@@ -45,7 +45,7 @@ void deallocate(void* _Ptr, std::size_t _Count);
  The member function calls `cache.deallocate(_Ptr, _Count)`, where `cache` represents the cache object.  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

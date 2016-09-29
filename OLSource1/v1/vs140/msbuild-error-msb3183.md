@@ -20,9 +20,9 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3183
-**MSB3183: Reference '<assembly\>' is an interop assembly requiring full trust.**  
+**MSB3183: Reference '\<assembly>' is an interop assembly requiring full trust.**  
   
  This warning is generated when an interoperability assembly is encountered among the references when generating manifest for a partially trusted application.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

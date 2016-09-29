@@ -133,7 +133,7 @@ Enhanced security features in Windows 8 and Windows Server 2012 required signifi
   
  **Collecting TIP data on a remote machine**  
   
- To collect tier interaction data on a remote machine, you must copy the **vs_profiler_***<Platform\>***_***<Language\>***.exe** file from the *%VSInstallDir%***\Team Tools\Performance Tools\Setups** folder of a Visual Studio machine to the remote computer and install it. You cannot use the profiling tools in the [Visual Studio Remote Tools](../vs140/set-up-the-remote-tools-on-the-device.md) download package.  
+ To collect tier interaction data on a remote machine, you must copy the **vs_profiler_***\<Platform>***_***\<Language>***.exe** file from the *%VSInstallDir%***\Team Tools\Performance Tools\Setups** folder of a Visual Studio machine to the remote computer and install it. You cannot use the profiling tools in the [Visual Studio Remote Tools](../vs140/set-up-the-remote-tools-on-the-device.md) download package.  
   
  You can use [VSPerfCmd](../vs140/vsperfcmd.md) or [VSPerfASPNetCmd](../vs140/vsperfaspnetcmd.md) to collect the profiling data.  
   

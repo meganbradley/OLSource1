@@ -73,11 +73,11 @@ int main()
   **0 1 2 3**  
  **-4**   
 ## Requirements  
- **Header:** <array\>  
+ **Header:** \<array>  
   
  **Namespace:** std  
   
 ## See Also  
- [<array\>](../vs140/-array-.md)   
+ [\<array>](../vs140/-array-.md)   
  [array](../vs140/array-class--stl-.md)   
  [size_type](../vs140/array--size_type.md)

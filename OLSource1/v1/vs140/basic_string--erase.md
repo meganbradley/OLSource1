@@ -125,7 +125,7 @@ int main( )
 **The original string object str3 is: Hello computer.**  
 **The modified string object str3m is: Hello .**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

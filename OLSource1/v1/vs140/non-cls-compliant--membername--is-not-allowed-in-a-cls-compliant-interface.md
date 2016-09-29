@@ -45,4 +45,4 @@ A property, procedure, or event in an interface is marked as `<CLSCompliant(True
   
 ## See Also  
  [Interface Statement (Visual Basic)](../vs140/interface-statement--visual-basic-.md)   
- [<PAVE OVER\> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)
+ [\<PAVE OVER> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)

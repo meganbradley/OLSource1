@@ -72,7 +72,7 @@ int main()
  **test**  
 **4**   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

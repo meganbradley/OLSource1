@@ -103,7 +103,7 @@ int main(void)
  `8 1 9 2 0 5 7 3 4 6`  
   
 ## Requirements  
- **Header:** <numeric\>  
+ **Header:** \<numeric>  
   
  **Namespace:** std  
   

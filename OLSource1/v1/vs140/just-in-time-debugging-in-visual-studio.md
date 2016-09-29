@@ -107,7 +107,7 @@ static void Main(string[] args)
   
      To enable Just-In-Time debugging of a Windows Forms application, you must perform the following additional steps:  
   
-2.  Set the `jitDebugging` value to `true` in the `system.windows.form` section of the machine.config or *<application name\>*.exe.config file:  
+2.  Set the `jitDebugging` value to `true` in the `system.windows.form` section of the machine.config or *\<application name>*.exe.config file:  
   
     ```  
     <configuration>  
@@ -172,4 +172,4 @@ static void Main(string[] args)
  [Debugger Security](../vs140/debugger-security.md)   
  [Debugger Basics](../vs140/debugger-basics.md)   
  [Just-In-Time, Debugging, Options Dialog Box](../vs140/just-in-time--debugging--options-dialog-box.md)   
- [Security Warning: Attaching to an Untrusted Process Can Be Dangerous](../vs140/security-warning--attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous.-if-the-following-information-looks-suspicious-or-you-are-unsure--do-not-attach-to-this-process.md)
+ [Security Warning: Attaching to an Untrusted Process Can Be Dangerous](../vs140/52246c1e-a371-40a0-b756-a435cc51876f.md)

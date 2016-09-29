@@ -75,7 +75,7 @@ _Lcomplex csinhl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`csinh`,               `csinhf`, `csinhl`|<complex.h>|<ccomplex\>|  
+|`csinh`,               `csinhf`, `csinhl`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

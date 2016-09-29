@@ -42,10 +42,10 @@ bool all() const;
  Returns true if all bits in this set are true. Returns **false** if one or more bits are false.  
   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   
 ## See Also  
  [bitset Class](../vs140/bitset-class.md)   
- [<bitset\>](../vs140/-bitset-.md)
+ [\<bitset>](../vs140/-bitset-.md)

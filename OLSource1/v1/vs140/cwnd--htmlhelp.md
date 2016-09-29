@@ -53,4 +53,4 @@ Call this member function to invoke the HTMLHelp application.
  [CWnd Class](../vs140/cwnd-class.md)   
  [Hierarchy Chart](../vs140/hierarchy-chart.md)   
  [CWnd::WinHelp](../vs140/cwnd--winhelp.md)   
- [<PAVE OVER\> Displaying F1 Help for a Dialog Box or Menu Option_deleted](../Topic/%3CPAVE%20OVER%3E%20Displaying%20F1%20Help%20for%20a%20Dialog%20Box%20or%20Menu%20Option_deleted.md)
+ [\<PAVE OVER> Displaying F1 Help for a Dialog Box or Menu Option_deleted](../Topic/%3CPAVE%20OVER%3E%20Displaying%20F1%20Help%20for%20a%20Dialog%20Box%20or%20Menu%20Option_deleted.md)

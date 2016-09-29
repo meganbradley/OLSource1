@@ -85,10 +85,7 @@ A *sequence* is a logical series of elements all of one type. Sequences are part
   
  The output is  
   
-```  
-0 10 20 30 40  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
  By using [Seq.ofArray](../vs140/seq.ofarray--t--function--fsharp-.md) and [Seq.ofList](../vs140/seq.oflist--t--function--fsharp-.md), you can create sequences from arrays and lists. However, you can also convert arrays and lists to sequences by using a cast operator. Both techniques are shown in the following code.  
   
  [!code[FsSequences#11](../vs140/codesnippet/FSharp/sequences--fsharp-_11.fs)]  

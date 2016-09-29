@@ -102,7 +102,7 @@ translation.priority.ht:
   
      This view provides some useful information about the element:  
   
-    -   Colors correspond to the box highlighting that appears in the Simulator when hovering over elements. The blue color represents the <img\> element dimensions. The tan color represents margin values.  
+    -   Colors correspond to the box highlighting that appears in the Simulator when hovering over elements. The blue color represents the \<img> element dimensions. The tan color represents margin values.  
   
     -   The left margin (margin-left) is set, which hints at the cause of the problem because it matches the symptom (black on the left side of images).  
   
@@ -119,7 +119,7 @@ translation.priority.ht:
   
 13. Type `0` and press Enter. (You can also use the Up Arrow and Down Arrow keys to change the value.)  
   
-14. Select the other <img\> elements in DOM Explorer and change their margin-left values to 0.  
+14. Select the other \<img> elements in DOM Explorer and change their margin-left values to 0.  
   
 15. Switch to the Phone Emulator or the Simulator. The updated margin-left values have been applied to the Section 4 images. These values are also updated in the **Computed** tab under the margin-left rule.  
   

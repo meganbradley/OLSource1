@@ -85,7 +85,7 @@ int main( )
 **French_France.1252 international negative sign: -**  
 **French_France.1252 domestic negative sign: -**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

@@ -71,9 +71,9 @@ int main()
   
 ```  
   
-  **is_arithmetic<trivial\> == false**  
-**is_arithmetic<int\> == true**  
-**is_arithmetic<float\> == true**    
+  **is_arithmetic\<trivial> == false**  
+**is_arithmetic\<int> == true**  
+**is_arithmetic\<float> == true**    
 ## Requirements  
  **Header:** <type_traits>  
   

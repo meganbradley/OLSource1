@@ -78,10 +78,10 @@ int main()
 **match == a**  
 **match == a**   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_iterator](../vs140/regex_iterator-class.md)

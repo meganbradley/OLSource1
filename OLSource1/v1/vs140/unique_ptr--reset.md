@@ -48,10 +48,10 @@ void reset(nullptr_t ptr);
  Because `reset` first stores the new pointer `ptr`, and then deletes the original stored pointer, it's possible for `reset` to immediately delete `ptr` if it is the same as the original stored pointer.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
  [unique_ptr](../vs140/unique_ptr-class.md)   
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

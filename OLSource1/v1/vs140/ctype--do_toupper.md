@@ -61,7 +61,7 @@ virtual const CharType *do_toupper(
  See the example for [toupper](../vs140/ctype--toupper.md), which calls `do_toupper`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

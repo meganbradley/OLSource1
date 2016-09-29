@@ -58,6 +58,6 @@ inline T atomic_fetch_xor_explicit(
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic Structure](../vs140/atomic-structure.md)   
  [atomic_fetch_xor](../vs140/atomic_fetch_xor-function.md)

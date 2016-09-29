@@ -35,7 +35,7 @@ translation.priority.ht:
  A description of the return value.  
   
 ## Remarks  
- The <returns\> tag should be used in the comment for a method declaration to describe the return value.  
+ The \<returns> tag should be used in the comment for a method declaration to describe the return value.  
   
  Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file.  
   

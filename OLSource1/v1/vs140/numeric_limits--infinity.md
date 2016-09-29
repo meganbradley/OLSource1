@@ -81,7 +81,7 @@ int main( )
 **The representation of infinity for type double is: 1.#INF**  
 **The representation of infinity for type long double is: 1.#INF**   
 ## Requirements  
- **Header:** <limits\>  
+ **Header:** \<limits>  
   
  **Namespace:** std  
   

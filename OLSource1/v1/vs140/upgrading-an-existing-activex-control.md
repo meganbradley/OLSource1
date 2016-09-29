@@ -95,7 +95,7 @@ file-win32-x86=http://activex.microsoft.com/controls/vc/mfc42.cab
 [Msvcrt.dll] - FileVersion=6,0,8168,0  
 ```  
   
-### The <OBJECT\> Tag  
+### The \<OBJECT> Tag  
  The following example illustrates using the `<OBJECT>` tag to package the MFC Spindial sample control.  
   
 ```  
@@ -172,7 +172,7 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
   
 #### To embed a licensed control on an HTML page  
   
-1.  Edit your HTML page. In the HTML page, insert an <OBJECT\> tag for the License Manager object before any other <OBJECT\> tags. The License Manager is an ActiveX control that is installed with Internet Explorer. Its class ID is shown below. Set the LPKPath property of the License Manager object to the path and name of the LPK file. You can have only one LPK file per HTML page.  
+1.  Edit your HTML page. In the HTML page, insert an \<OBJECT> tag for the License Manager object before any other \<OBJECT> tags. The License Manager is an ActiveX control that is installed with Internet Explorer. Its class ID is shown below. Set the LPKPath property of the License Manager object to the path and name of the LPK file. You can have only one LPK file per HTML page.  
   
     ```  
     <OBJECT CLASSID = "clsid:5220cb21-c88d-11cf-b347-00aa00a28331">  
@@ -180,13 +180,13 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
     </OBJECT>  
     ```  
   
-2.  Insert the <OBJECT\> tag for your licensed control after the License Manager tag.  
+2.  Insert the \<OBJECT> tag for your licensed control after the License Manager tag.  
   
      For example, an HTML page that displays the Microsoft Masked Edit control is shown below. The first class ID is for the License Manager control, the second class ID is for the Masked Edit control. Change the tags to point to the relative path of the .lpk file you created earlier, and add an object tag including the class ID for your control.  
   
-3.  Insert the <EMBED\> attribute for your LPK file, if using the NCompass ActiveX plug-in.  
+3.  Insert the \<EMBED> attribute for your LPK file, if using the NCompass ActiveX plug-in.  
   
-     If your control may be viewed on other Active enabled browsers — for example, Netscape using the NCompass ActiveX plug-in — you must add the <EMBED\> syntax as shown below.  
+     If your control may be viewed on other Active enabled browsers — for example, Netscape using the NCompass ActiveX plug-in — you must add the \<EMBED> syntax as shown below.  
   
     ```  
     <OBJECT CLASSID="clsid:5220cb21-c88d-11cf-b347-00aa00a28331">  

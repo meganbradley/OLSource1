@@ -99,7 +99,7 @@ int main( )
 **The reversed set is: 30 20 10**  
 **After the erasure, the first element in the reversed set is 20.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

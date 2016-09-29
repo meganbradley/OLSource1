@@ -25,7 +25,7 @@ Custom attributes are special attributes that can be added to domain elements, s
   
      The **Edit Attributes** dialog box opens.  
   
-3.  In the **Name** column, click **<add attribute\>** and type the name of your attribute. Press ENTER.  
+3.  In the **Name** column, click **\<add attribute>** and type the name of your attribute. Press ENTER.  
   
 4.  The line under the attribute name shows parentheses. On this line type a parameter type for the attribute (for example, `string`), and then press ENTER.  
   

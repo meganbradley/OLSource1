@@ -40,7 +40,7 @@ The Visual Studio Extension Color Compiler tool is a console application that ta
   
  **Theme**  
   
- The <Theme\> element defines an entire theme. A theme must contain at least one <Category\> element. Theme elements are defined like this:  
+ The \<Theme> element defines an entire theme. A theme must contain at least one \<Category> element. Theme elements are defined like this:  
   
 ```xml  
 <Theme Name="name" GUID="guid">  
@@ -66,7 +66,7 @@ The Visual Studio Extension Color Compiler tool is a console application that ta
   
  **Category**  
   
- The <Category\> element defines a collection of colors in a theme. Category names provide logical groupings, and should be defined as narrowly as possible. A category must contain at least one <Color\> element. Category elements are defined like this:  
+ The \<Category> element defines a collection of colors in a theme. Category names provide logical groupings, and should be defined as narrowly as possible. A category must contain at least one \<Color> element. Category elements are defined like this:  
   
 ```xml  
 <Category Name="name" GUID="guid">  
@@ -82,7 +82,7 @@ The Visual Studio Extension Color Compiler tool is a console application that ta
   
  **Color**  
   
- The <Color\> element defines a color for a component or state of UI. The preferred naming scheme for a color is [UI type] [State]. Do not use the word “color,” as it is redundant. A color should clearly indicate the element type and the situations, or “state,” for which the color will be applied. A color must not be empty, and must contain either one or both of a <Background\> and <Foreground\> element. Color elements are defined like this:  
+ The \<Color> element defines a color for a component or state of UI. The preferred naming scheme for a color is [UI type] [State]. Do not use the word “color,” as it is redundant. A color should clearly indicate the element type and the situations, or “state,” for which the color will be applied. A color must not be empty, and must contain either one or both of a \<Background> and \<Foreground> element. Color elements are defined like this:  
   
 ```xml  
 <Color Name="name">  
@@ -98,7 +98,7 @@ The Visual Studio Extension Color Compiler tool is a console application that ta
   
  **Background and/or Foreground**  
   
- The <Background\> and <Foreground\> elements define a color’s value and type for either the background or foreground of a UI element. These elements have no children.  
+ The \<Background> and \<Foreground> elements define a color’s value and type for either the background or foreground of a UI element. These elements have no children.  
   
 ```xml  
 <Background Type="type" Source="int" />  
@@ -132,7 +132,7 @@ The Visual Studio Extension Color Compiler tool is a console application that ta
 ## How to use the tool  
  **Syntax**  
   
- VsixColorCompiler <XML file\> <PkgDef file\> <Optional Args\>  
+ VsixColorCompiler \<XML file> \<PkgDef file> \<Optional Args>  
   
  **Arguments**  
   
@@ -140,7 +140,7 @@ The Visual Studio Extension Color Compiler tool is a console application that ta
 |-|-|-|  
 |**Switch name**|**Notes**|**Required or Optional**|  
 |Unnamed (.xml file)|This is the first unnamed parameter and is the path to the XML file to convert.|Required|  
-|Unnamed (.pkgdef file)|This is the second unnamed parameter and is the output path for the generated .pkgdef file.<br /><br /> Default: <XML Filename\>.pkgdef|Optional|  
+|Unnamed (.pkgdef file)|This is the second unnamed parameter and is the output path for the generated .pkgdef file.<br /><br /> Default: \<XML Filename>.pkgdef|Optional|  
 |/noLogo|Setting this flag stops product and copyright information from printing.|Optional|  
 |/?|Print out Help information.|Optional|  
 |/help|Print out Help information.|Optional|  

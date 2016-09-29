@@ -83,7 +83,7 @@ virtual result do_out(
  See the example for [out](../vs140/codecvt--out.md), which calls `do_out`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

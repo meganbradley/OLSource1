@@ -61,10 +61,10 @@ explicit binomial_distribution(const param_type& parm);
  For more information and a code example, see [binomial_distribution Class](../vs140/binomial_distribution-class.md).  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [binomial_distribution Class](../vs140/binomial_distribution-class.md)

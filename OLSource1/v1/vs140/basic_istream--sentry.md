@@ -53,7 +53,7 @@ public:
  If, after any such preparation, `_Istr`.**good** is false, the constructor calls `_Istr`.[setstate](../vs140/basic_ios--setstate.md)(**failbit**). In any case, the constructor stores the value returned by `_Istr`.**good** in **status**. A later call to **operator bool** delivers this stored value.  
   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   

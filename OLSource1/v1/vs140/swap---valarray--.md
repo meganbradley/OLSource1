@@ -48,10 +48,10 @@ template<class Type>
  The template function executes `_Left.swap(_Right)`.  
   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   
 ## See Also  
- [<valarray\>](../vs140/-valarray-.md)   
+ [\<valarray>](../vs140/-valarray-.md)   
  [Header Files Reference](../vs140/c---standard-library-header-files.md)

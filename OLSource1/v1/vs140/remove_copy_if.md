@@ -137,7 +137,7 @@ Vector v2 is a copy of v1 with values greater than 6 removed:
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

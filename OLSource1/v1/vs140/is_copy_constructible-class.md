@@ -71,8 +71,8 @@ int main()
   
 ```  
   
- **is_copy_constructible<Copyable\> == true**  
-**is_copy_constructible<NotCopyable \> == false**   
+ **is_copy_constructible\<Copyable> == true**  
+**is_copy_constructible\<NotCopyable > == false**   
 ## Requirements  
  **Header:** <type_traits>  
   

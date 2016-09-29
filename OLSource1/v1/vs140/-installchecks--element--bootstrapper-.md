@@ -74,7 +74,7 @@ The `InstallChecks` element supports starting a variety of tests against the loc
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`Property`|Required. The name of the property to store the result. This property can be referenced from a test underneath the `InstallConditions` element, which is a child of the `Command` element. For more information, see [<Commands\> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
+|`Property`|Required. The name of the property to store the result. This property can be referenced from a test underneath the `InstallConditions` element, which is a child of the `Command` element. For more information, see [\<Commands> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
 |`Name`|Required. The fully qualified name of the assembly to check.|  
 |`PublicKeyToken`|Required. The abbreviated form of the public key associated with this strongly named assembly. All assemblies stored in the GAC must have a name, a version, and a public key.|  
 |`Version`|Required. The version of the assembly.<br /><br /> The version number has the format <*major version*>.<*minor version*>.<*build version*>.<*revision version*>.|  
@@ -88,7 +88,7 @@ The `InstallChecks` element supports starting a variety of tests against the loc
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`Property`|Required. The name of the property to store the result. This property can be referenced from a test underneath the `InstallConditions` element, which is a child of the `Command` element. For more information, see [<Commands\> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
+|`Property`|Required. The name of the property to store the result. This property can be referenced from a test underneath the `InstallConditions` element, which is a child of the `Command` element. For more information, see [\<Commands> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
 |`PackageFile`|Required. The external program to execute. The program must be part of the setup distribution package.|  
 |`Arguments`|Optional. Supplies command-line arguments to the executable named by `PackageFile`.|  
   
@@ -99,7 +99,7 @@ The `InstallChecks` element supports starting a variety of tests against the loc
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`Property`|Required. The name of the property to store the result. This property can be referenced from a test underneath the `InstallConditions` element, which is a child of the `Command` element. For more information, see [<Commands\> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
+|`Property`|Required. The name of the property to store the result. This property can be referenced from a test underneath the `InstallConditions` element, which is a child of the `Command` element. For more information, see [\<Commands> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
 |`FileName`|Required. The name of the file to find.|  
 |`SearchPath`|Required. The disk or folder in which to look for the file. This must be a relative path if `SpecialFolder` is assigned; otherwise, it must be an absolute path.|  
 |`SpecialFolder`|Optional. A folder that has special significance either to Windows or to [!INCLUDE[ndptecclick](../vs140/includes/ndptecclick_md.md)]. The default is to interpret `SearchPath` as an absolute path. Valid values include the following:<br /><br /> `AppDataFolder`. The application data folder for this [!INCLUDE[ndptecclick](../vs140/includes/ndptecclick_md.md)] application; specific to the current user.<br /><br /> `CommonAppDataFolder`. The application data folder used by all users.<br /><br /> `CommonFilesFolder`. The Common Files folder for the current user.<br /><br /> `LocalDataAppFolder`. The data folder for non-roaming applications.<br /><br /> `ProgramFilesFolder`. The standard Program Files folder for 32-bit applications.<br /><br /> `StartUpFolder`. The folder that contains all applications launched at system startup.<br /><br /> `SystemFolder`. The folder that contains 32-bit system DLLs.<br /><br /> `WindowsFolder`. The folder that contains the Windows system installation.<br /><br /> `WindowsVolume`. The drive or partition that contains the Windows system installation.|  
@@ -112,7 +112,7 @@ The `InstallChecks` element supports starting a variety of tests against the loc
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`Property`|Required. The name of the property to store the result. This property can be referenced from a test underneath the `InstallConditions` element, which is a child of the `Command` element. For more information, see [<Commands\> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
+|`Property`|Required. The name of the property to store the result. This property can be referenced from a test underneath the `InstallConditions` element, which is a child of the `Command` element. For more information, see [\<Commands> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
 |`Product`|Required. The GUID for the installed product.|  
 |`Feature`|Optional. The GUID for a specific feature of the installed application.|  
   
@@ -123,7 +123,7 @@ The `InstallChecks` element supports starting a variety of tests against the loc
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`Property`|Required. The name of the property to store the result. This property can be referenced from a test underneath the `InstallConditions` element, which is a child of the `Command` element. For more information, see [<Commands\> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
+|`Property`|Required. The name of the property to store the result. This property can be referenced from a test underneath the `InstallConditions` element, which is a child of the `Command` element. For more information, see [\<Commands> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
 |`Key`|Required. The name of the registry key.|  
 |`Value`|Optional. The name of the registry value to retrieve. The default is to return the text of the default value. `Value` must be either a String or a DWORD.|  
   
@@ -134,7 +134,7 @@ The `InstallChecks` element supports starting a variety of tests against the loc
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`Property`|Required. The name of the property to store the result. This property can be referenced from a test underneath the `InstallConditions` element, which is a child of the `Command` element. For more information, see [<Commands\> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
+|`Property`|Required. The name of the property to store the result. This property can be referenced from a test underneath the `InstallConditions` element, which is a child of the `Command` element. For more information, see [\<Commands> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md).|  
 |`Key`|Required. The name of the registry key. Its value is interpreted as the path to a file, unless the `File` attribute is set. If this key does not exist, `Property` is not set.|  
 |`Value`|Optional. The name of the registry value to retrieve. The default is to return the text of the default value. `Value` must be a String.|  
 |`FileName`|Optional. The name of a file. If specified, the value obtained from the registry key is assumed to be a directory path, and this name is appended to it. If not specified, the value returned from the registry is assumed to be the full path to a file.|  
@@ -180,5 +180,5 @@ The `InstallChecks` element supports starting a variety of tests against the loc
 ```  
   
 ## See Also  
- [<Commands\> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md)   
+ [\<Commands> Element (ClickOnce Bootstrapper)](../vs140/-commands--element--bootstrapper-.md)   
  [Product and Package Schema Reference](../vs140/product-and-package-schema-reference.md)

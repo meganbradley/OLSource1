@@ -51,7 +51,7 @@ void swap(
  See the code example for member function [map::swap](../vs140/map--swap.md) for an example that uses the template version of `swap`.  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

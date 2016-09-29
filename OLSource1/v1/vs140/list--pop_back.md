@@ -70,7 +70,7 @@ int main( )
 **The last element is: 2**  
 **After deleting the element at the end of the list, the last element is: 1**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

@@ -47,7 +47,7 @@ streamsize pcount( ) const;
  See [strstreambuf::pcount](../vs140/strstreambuf--pcount.md) for a sample of using pcount.  
   
 ## Requirements  
- **Header:** <strstream\>  
+ **Header:** \<strstream>  
   
  **Namespace:** std  
   

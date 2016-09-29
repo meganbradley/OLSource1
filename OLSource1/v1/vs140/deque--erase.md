@@ -103,7 +103,7 @@ int main( )
 **After erasing the first element, the deque becomes:  20 30 40 50**   
 **After erasing all elements but the first, deque becomes: 20**    
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

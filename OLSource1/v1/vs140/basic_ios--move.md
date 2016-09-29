@@ -49,7 +49,7 @@ void move(
  The protected member function moves all the values stored in `_Right` to `*this` except the stored `stream buffer pointer`, which is unchanged in `_Right` and set to a null pointer in `*this`. The stored `tie pointer` is set to a null pointer in `_Right`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

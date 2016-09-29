@@ -86,7 +86,7 @@ int main( )
 **After the insertions, the list L is:**  
  **( 10 20 30 0 2 4 6 ).**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

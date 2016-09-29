@@ -68,4 +68,4 @@ Identifies the primary assembly of the [!INCLUDE[ndptecclick](../vs140/includes/
   
 ## See Also  
  [ClickOnce Deployment Manifest](../vs140/clickonce-deployment-manifest.md)   
- [<assemblyIdentity\> Element (ClickOnce Application)](../vs140/-assemblyidentity--element--clickonce-application-.md)
+ [\<assemblyIdentity> Element (ClickOnce Application)](../vs140/-assemblyidentity--element--clickonce-application-.md)

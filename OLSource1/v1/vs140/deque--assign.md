@@ -120,7 +120,7 @@ int main()
   
  **d1 = 5678c1 =102030c1 =5060c1 =4444444**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

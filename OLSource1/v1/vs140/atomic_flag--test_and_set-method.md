@@ -48,5 +48,5 @@ bool atomic_flag::test_and_set(
   
 ## See Also  
  [atomic_flag Structure](../vs140/atomic_flag-structure.md)   
- [<atomic\>](../vs140/-atomic-.md)   
+ [\<atomic>](../vs140/-atomic-.md)   
  [atomic_flag_test_and_set_explicit](../vs140/atomic_flag_test_and_set_explicit-function.md)

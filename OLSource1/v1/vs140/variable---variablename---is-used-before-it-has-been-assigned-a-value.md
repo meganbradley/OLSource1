@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Variable &#39;&lt;variablename&gt;&#39; is used before it has been assigned a value
-Variable '<variablename\>' is used before it has been assigned a value. A null reference exception could result at run time.  
+Variable '\<variablename>' is used before it has been assigned a value. A null reference exception could result at run time.  
   
  An application has at least one possible path through its code that reads a variable before any value is assigned to it.  
   

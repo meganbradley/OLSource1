@@ -69,7 +69,7 @@ Specifies documentation information for a parameter in a function or method.
  Optional. If `type` is `Array`, specifies whether the elements in the array can be set to null. Set to `true` to indicate that the elements in the array can be set to null; otherwise, set to `false`. The default value is `false`. This attribute is not used by Visual Studio to provide IntelliSense information.  
   
  `locid`  
- Optional. The identifier for localization information about the parameter. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [<loc\>](../vs140/-loc---javascript-.md) element.  
+ Optional. The identifier for localization information about the parameter. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [\<loc>](../vs140/-loc---javascript-.md) element.  
   
  `parameterArray`  
  Optional. Specifies whether the documented parameter can be repeated in the function call, similar to repeating parameters supported in the `String.format` function. Set to `true` to indicate that the parameter can be repeated; otherwise, set to `false`. This attribute is not used by Visual Studio to provide IntelliSense information.  
@@ -86,7 +86,7 @@ Specifies documentation information for a parameter in a function or method.
 ## Remarks  
  The only required attribute is `name`. All other attributes are optional.  
   
- Elements used to annotate functions, such as [<summary\>](../vs140/-summary---javascript-.md), [<param\>](../vs140/-param---javascript-.md), and [<returns\>](../vs140/-returns---javascript-.md), must be placed in the function body before any statements.  
+ Elements used to annotate functions, such as [\<summary>](../vs140/-summary---javascript-.md), [\<param>](../vs140/-param---javascript-.md), and [\<returns>](../vs140/-returns---javascript-.md), must be placed in the function body before any statements.  
   
  If there are multiple `<param>` elements that have the same name, one of the `<param>` elements is used and the redundant elements are ignored. The behavior that determines which element is used is not defined. If `name` refers to a nonexistent parameter, the element is ignored.  
   

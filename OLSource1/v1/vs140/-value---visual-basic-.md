@@ -34,7 +34,7 @@ Specifies the description of a property.
  A description for the property.  
   
 ## Remarks  
- Use the `<value>` tag to describe a property. Note that when you add a property using the code wizard in the Visual Studio development environment, it will add a [<summary\> (Visual Basic)](../vs140/-summary---visual-basic-.md) tag for the new property. You should then manually add a `<value>` tag to describe the value that the property represents.  
+ Use the `<value>` tag to describe a property. Note that when you add a property using the code wizard in the Visual Studio development environment, it will add a [\<summary> (Visual Basic)](../vs140/-summary---visual-basic-.md) tag for the new property. You should then manually add a `<value>` tag to describe the value that the property represents.  
   
  Compile with [/doc](../vs140/-doc.md) to process documentation comments to a file.  
   

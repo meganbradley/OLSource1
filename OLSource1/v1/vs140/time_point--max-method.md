@@ -40,4 +40,4 @@ static constexpr time_point max();
 ## See Also  
  [time_point Class](../vs140/time_point-class.md)   
  [duration::max](../vs140/duration--max-method.md)   
- [<chrono\>](../vs140/-chrono-.md)
+ [\<chrono>](../vs140/-chrono-.md)

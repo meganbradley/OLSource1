@@ -82,7 +82,7 @@ translation.priority.ht:
 ## Try pattern methods  
   
 ### Description  
- Methods that implement the **Try<Something\>** pattern, such as <xref:System.Int32.TryParse*?displayProperty=fullName>, do not raise this violation. The following example shows a structure (value type) that implements the <xref:System.Int32.TryParse*?displayProperty=fullName> method.  
+ Methods that implement the **Try\<Something>** pattern, such as <xref:System.Int32.TryParse*?displayProperty=fullName>, do not raise this violation. The following example shows a structure (value type) that implements the <xref:System.Int32.TryParse*?displayProperty=fullName> method.  
   
 ### Code  
  [!code[FxCop.Design.TryPattern#1](../vs140/codesnippet/CSharp/ca1021--avoid-out-parameters_5.cs)]  

@@ -316,7 +316,7 @@ virtual iter_type do_get(
  See the example for [get](../vs140/num_get--get.md), where the virtual member function is called by `do_get`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

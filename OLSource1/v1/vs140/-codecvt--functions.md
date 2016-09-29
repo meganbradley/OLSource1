@@ -27,7 +27,7 @@ enum codecvt_mode {
 ```  
   
 ### Remarks  
- The enumeration defines three constants that supply configuration information to the locale facets declared in [<codecvt\>](../vs140/-codecvt-.md). The distinct values are:  
+ The enumeration defines three constants that supply configuration information to the locale facets declared in [\<codecvt>](../vs140/-codecvt-.md). The distinct values are:  
   
 -   `consume_header`, to consume an initial header sequence when reading a multibyte sequence and determine the endianness of the subsequent multibyte sequence to be read  
   

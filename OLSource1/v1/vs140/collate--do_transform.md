@@ -60,7 +60,7 @@ A virtual function called to convert a character sequence from a locale to a str
  See the example for [transform](../vs140/collate--transform.md), which calls `do_transform`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

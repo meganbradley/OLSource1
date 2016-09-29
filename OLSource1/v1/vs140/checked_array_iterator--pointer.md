@@ -41,7 +41,7 @@ typedef typename iterator_traits<_Iterator>::pointer pointer;
  For more information, see [Checked Iterators](../vs140/checked-iterators.md).  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

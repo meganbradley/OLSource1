@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # -InstallVSTemplates (devenv.exe)
-Registers project or item templates that are located in *<Visual Studio installation path\>*\Common7\IDE\ProjectTemplates\ or *<Visual Studio installation path\>*\Common7\IDE\ItemTemplates\ so that they can be accessed through the **New Project** and **Add New Item** dialog boxes.  
+Registers project or item templates that are located in *\<Visual Studio installation path>*\Common7\IDE\ProjectTemplates\ or *\<Visual Studio installation path>*\Common7\IDE\ItemTemplates\ so that they can be accessed through the **New Project** and **Add New Item** dialog boxes.  
   
 > [!WARNING]
 >  This switch is supported only for Visual Studio partner development, and is not available in Express editions. You must run devenv as an administrator in order to use the [/setup (devenv.exe)](../vs140/-setup--devenv.exe-.md) and [/InstallVSTemplates (devenv.exe)](../vs140/-installvstemplates--devenv.exe-.md) switches. For more information, see [User Permissions and Visual Studio](../vs140/user-permissions-and-visual-studio.md).  

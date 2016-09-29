@@ -36,14 +36,7 @@ Convert a value of type <xref:System.Converter`2*> to a F# first class function 
   
 ## Syntax  
   
-```  
-// Signature:  
-static member FromConverter : Converter<'T,'U> -> 'T -> 'U  
-  
-// Usage:  
-FSharpFunc.FromConverter (converter)  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
 #### Parameters  
  `converter`  
  Type: <xref:System.Converter`2*>`<'T,'U>`  

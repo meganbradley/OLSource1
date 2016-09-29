@@ -47,12 +47,12 @@ Coded UI tests include support for some of the HTML5 controls that are included 
   
 |Action|Recording|Generated Code|  
 |------------|---------------|--------------------|  
-|**Play audio**<br /><br /> Directly from control, or from controls context menu.|Play <name\> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|  
-|**Seek to a specific time in the audio**|Seek <name\> Audio to 00:01:48|HtmlAudio.Seek(TimeSpan)|  
-|**Pause audio**<br /><br /> Directly from control, or from controls context menu.|Pause <name\> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|  
-|**Mute audio**<br /><br /> Directly from control, or from controls context menu.|Mute <name\> Audio|HtmlAudio.Mute()|  
-|**Unmute audio**<br /><br /> Directly from control, or from controls context menu.|Unmute <name\> Audio|HtmlAudio.Unmute()|  
-|**Change volume of audio**|Set volume of <name\> Audio to 79%|HtmlAudio.SetVolume(float)|  
+|**Play audio**<br /><br /> Directly from control, or from controls context menu.|Play \<name> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|  
+|**Seek to a specific time in the audio**|Seek \<name> Audio to 00:01:48|HtmlAudio.Seek(TimeSpan)|  
+|**Pause audio**<br /><br /> Directly from control, or from controls context menu.|Pause \<name> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|  
+|**Mute audio**<br /><br /> Directly from control, or from controls context menu.|Mute \<name> Audio|HtmlAudio.Mute()|  
+|**Unmute audio**<br /><br /> Directly from control, or from controls context menu.|Unmute \<name> Audio|HtmlAudio.Unmute()|  
+|**Change volume of audio**|Set volume of \<name> Audio to 79%|HtmlAudio.SetVolume(float)|  
   
  The following properties are available for HtmlAudio and you can add an assertion on all of them:  
   
@@ -90,12 +90,12 @@ string Volume
   
 |Action|Recording|Generated Code|  
 |------------|---------------|--------------------|  
-|**Play video**<br /><br /> Directly from control, or from controls context menu.|Play <name\> Video  from 00:00:00|HtmlVideo.Play(TimeSpan)|  
-|**Seek to a specific time in the video**|Seek <name\> Video to 00:01:48|HtmlVideo.Seek(TimeSpan)|  
-|**Pause video**<br /><br /> Directly from control, or from controls context menu.|Pause <name\> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|  
-|**Mute video**<br /><br /> Directly from control, or from controls context menu.|Mute <name\> Video|HtmlVideo.Mute()|  
-|**Unmute video**<br /><br /> Directly from control, or from controls context menu.|Unmute <name\> Video|HtmlVideo.Unmute()|  
-|**Change volume of video**|Set volume of <name\> Video to 79%||  
+|**Play video**<br /><br /> Directly from control, or from controls context menu.|Play \<name> Video  from 00:00:00|HtmlVideo.Play(TimeSpan)|  
+|**Seek to a specific time in the video**|Seek \<name> Video to 00:01:48|HtmlVideo.Seek(TimeSpan)|  
+|**Pause video**<br /><br /> Directly from control, or from controls context menu.|Pause \<name> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|  
+|**Mute video**<br /><br /> Directly from control, or from controls context menu.|Mute \<name> Video|HtmlVideo.Mute()|  
+|**Unmute video**<br /><br /> Directly from control, or from controls context menu.|Unmute \<name> Video|HtmlVideo.Unmute()|  
+|**Change volume of video**|Set volume of \<name> Video to 79%||  
   
  All the properties of HtmlAudio are available for HtmlVideo. In addition, the following three properties are also available. Assertion can be added on all of them.  
   
@@ -120,7 +120,7 @@ string VideoWidth
   
 |Action|Recording|Generated Code|  
 |------------|---------------|--------------------|  
-|**Set a position in the slider**|Set position to <x\> in <name\> slider|HtmlSlider.ValueAsNumber=<x\>|  
+|**Set a position in the slider**|Set position to \<x> in \<name> slider|HtmlSlider.ValueAsNumber=\<x>|  
   
  The following properties are available for HtmlSlider and assertion can be added on all of them:  
   

@@ -28,7 +28,7 @@ translation.priority.ht:
 A utility class to valarray that is used to define multidimensional subsets of a valarray. If a valarray is regarded as a multidimensional matrix with all elements in an array, then the slice extracts a vector out of the multidimensional array.  
   
 ## Remarks  
- The class stores the parameters that characterize an object of type [gslice_array](../vs140/gslice_array-class.md). The subset of a valarray is indirectly constructed when an object of class gslice appears as an argument for an object of class [valarray](../vs140/valarray-class.md#valarray__operator_at)**<Type\>**. The stored values that specify the subset selected from the parent valarray include:  
+ The class stores the parameters that characterize an object of type [gslice_array](../vs140/gslice_array-class.md). The subset of a valarray is indirectly constructed when an object of class gslice appears as an argument for an object of class [valarray](../vs140/valarray-class.md#valarray__operator_at)**\<Type>**. The stored values that specify the subset selected from the parent valarray include:  
   
 -   A starting index.  
   
@@ -57,7 +57,7 @@ A utility class to valarray that is used to define multidimensional subsets of a
 |[stride](#gslice__stride)|Finds the distance between elements in a general slice of a `valarray`.|  
   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

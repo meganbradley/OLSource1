@@ -54,7 +54,7 @@ An output stream object is a destination for bytes. The three most important out
  [Writing Your Own Manipulators Without Arguments](../vs140/writing-your-own-manipulators-without-arguments.md)  
   
 ## See Also  
- [<ostream\> Members](assetId:///a5afd034-0e3c-41ee-bbd7-468d9188da1d)   
+ [\<ostream> Members](assetId:///a5afd034-0e3c-41ee-bbd7-468d9188da1d)   
  [ofstream](../vs140/ofstream.md)   
  [ostringstream](../vs140/ostringstream.md)   
  [basic_ostream Members](assetId:///82e5cc91-7c0c-4950-a8ce-ac779cfbbd93)   

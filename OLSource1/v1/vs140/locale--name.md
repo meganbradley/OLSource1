@@ -63,7 +63,7 @@ int main( )
  **The name of the previous locale is: C.**  
 **The name of the current locale is: German_Germany.1252.**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

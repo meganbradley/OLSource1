@@ -30,7 +30,7 @@ Individual OLE DB services can be enabled or disabled by default for all applica
 |All except Client Cursor|0xfffffffb|  
 |All except Pooling, AutoEnlistment, and Client Cursor|0xfffffff0|  
 |No services|0x00000000|  
-|No aggregation, all services disabled|<missing key\>|  
+|No aggregation, all services disabled|\<missing key>|  
   
 ## See Also  
  [Enabling and Disabling OLE DB Services](../vs140/enabling-and-disabling-ole-db-services.md)

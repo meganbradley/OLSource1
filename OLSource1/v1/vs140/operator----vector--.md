@@ -82,7 +82,7 @@ int main( )
   
  **Vector v1 is less than vector v2.**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

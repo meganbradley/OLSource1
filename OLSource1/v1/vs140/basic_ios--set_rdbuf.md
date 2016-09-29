@@ -47,7 +47,7 @@ void set_rdbuf(
  The protected member function stores `_Strbuf` in the `stream buffer pointer`.It does not call `clear`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

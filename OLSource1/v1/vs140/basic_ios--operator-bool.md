@@ -39,7 +39,7 @@ explicit operator bool() const;
  The operator returns a value convertible to `false` only if `fail``()`. The return type is convertible only to `bool`, not to `void *` or other known scalar type.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

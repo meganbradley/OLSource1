@@ -26,8 +26,8 @@ translation.priority.ht:
 # ImportGroup Element
 Contains a collection of `Import` elements that are grouped under an optional condition. For more information, see [Import](../vs140/import-element--msbuild-.md).  
   
- <Project\>  
- <ImportGroup\>  
+ \<Project>  
+ \<ImportGroup>  
   
 ## Syntax  
   

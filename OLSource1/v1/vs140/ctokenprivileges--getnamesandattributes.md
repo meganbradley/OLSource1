@@ -41,10 +41,10 @@ Retrieves the name and attribute flags from the `CTokenPrivileges` object.
   
 #### Parameters  
  *pNames*  
- Pointer to an array of `CString` objects. **CNames** is a typedef defined as **CAtlArray <CString\> CNames**.  
+ Pointer to an array of `CString` objects. **CNames** is a typedef defined as **CAtlArray \<CString> CNames**.  
   
  `pAttributes`  
- Pointer to an array of DWORD objects. If this parameter is omitted or NULL, the attributes are not retrieved. **CAttributes** is a typedef defined as **CAtlArray <DWORD\> CAttributes**.  
+ Pointer to an array of DWORD objects. If this parameter is omitted or NULL, the attributes are not retrieved. **CAttributes** is a typedef defined as **CAtlArray \<DWORD> CAttributes**.  
   
 ## Remarks  
  This method will enumerate all of the privileges contained in the `CTokenPrivileges` object, placing the name and (optionally) the attribute flags into array objects.  

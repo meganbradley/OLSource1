@@ -36,12 +36,12 @@ typedef sub_match<const char*> csub_match;
  The type describes a specialization of template class [sub_match](../vs140/sub_match-class.md) for iterators of type `const char*`.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [sub_match](../vs140/sub_match-class.md)   
  [ssub_match](../vs140/ssub_match-typedef.md)   
  [wcsub_match](../vs140/wcsub_match-typedef.md)   

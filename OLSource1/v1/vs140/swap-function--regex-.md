@@ -81,11 +81,11 @@ int main()
 **length == 3**  
 **string == aaa**   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [basic_regex](../vs140/basic_regex-class.md)   
  [match_results](../vs140/match_results-class.md)

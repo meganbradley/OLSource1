@@ -63,7 +63,7 @@ __declspec(
   
  The type of the returned task is inferred from the first parameter to the function. If `_Param` is a `task_completion_event<T>`, a `task<T>`, or a functor that returns either type `T` or `task<T>`, the type of the created task is `task<T>`.  
   
- In a Windows Store app, if `_Param` is of type Windows::Foundation::IAsyncOperation<T\>^ or Windows::Foundation::IAsyncOperationWithProgress<T,P>^, or a functor that returns either of those types, the created task will be of type `task<T>`. If `_Param` is of type Windows::Foundation::IAsyncAction^ or Windows::Foundation::IAsyncActionWithProgress<P\>^, or a functor that returns either of those types, the created task will have type `task<void>`.  
+ In a Windows Store app, if `_Param` is of type Windows::Foundation::IAsyncOperation\<T>^ or Windows::Foundation::IAsyncOperationWithProgress<T,P>^, or a functor that returns either of those types, the created task will be of type `task<T>`. If `_Param` is of type Windows::Foundation::IAsyncAction^ or Windows::Foundation::IAsyncActionWithProgress\<P>^, or a functor that returns either of those types, the created task will have type `task<void>`.  
   
 ## Requirements  
  **Header:** ppltasks.h  

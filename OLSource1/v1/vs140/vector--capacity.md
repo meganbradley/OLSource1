@@ -68,7 +68,7 @@ int main( )
  **The length of storage allocated is 1.**  
 **The length of storage allocated is now 2.**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

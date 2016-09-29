@@ -19,7 +19,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Miscellaneous Files projects can contain &lt;number&gt; items.
-The Miscellaneous Files project can save up to 256 items. This error generally occurs when a number less than one or greater than 256 has been entered in the **Miscellaneous files project saves last <number\> items** box on the Documents pane of Environment options in the Options dialog box.  
+The Miscellaneous Files project can save up to 256 items. This error generally occurs when a number less than one or greater than 256 has been entered in the **Miscellaneous files project saves last \<number> items** box on the Documents pane of Environment options in the Options dialog box.  
   
 ### To correct this error  
   

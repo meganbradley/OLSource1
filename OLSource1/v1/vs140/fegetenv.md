@@ -64,7 +64,7 @@ int fegetenv(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`fegetenv`|<fenv.h>|<cfenv\>|  
+|`fegetenv`|<fenv.h>|\<cfenv>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

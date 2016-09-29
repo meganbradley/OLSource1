@@ -22,7 +22,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Compiler Error CS0761
-Partial method declarations of 'method<T\>' have inconsistent type parameter constraints.  
+Partial method declarations of 'method\<T>' have inconsistent type parameter constraints.  
   
  If a partial method has an implementation, the generic type constraint must be identical to the constraint defined on the method signature.  
   

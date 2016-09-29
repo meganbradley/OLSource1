@@ -116,7 +116,7 @@ int main( )
 **The int_type representation of character ch1**  
  **is equal to the int_type representation of ch3.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

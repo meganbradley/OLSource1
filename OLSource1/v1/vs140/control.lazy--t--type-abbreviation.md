@@ -35,10 +35,7 @@ This type is an abbreviation for <xref:System.Lazy`1*>.
   
 ## Syntax  
   
-```  
-type lazy<'T> = Lazy<'T>  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
 ## Remarks  
   
 ## Platforms  

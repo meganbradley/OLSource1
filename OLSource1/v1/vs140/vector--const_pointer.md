@@ -42,7 +42,7 @@ typedef typename Allocator::const_pointer const_pointer;
  An [iterator](../vs140/vector--iterator.md) is more commonly used to access a vector element.  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

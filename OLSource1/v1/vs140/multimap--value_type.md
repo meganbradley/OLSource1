@@ -94,7 +94,7 @@ int main( )
 **The keys of the mapped elements are: 1 2.**  
 **The values of the mapped elements are: 10 20.**   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

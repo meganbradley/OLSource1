@@ -152,7 +152,7 @@ class Tester
   
      `csc /reference:C:\\CS1705.dll /reference:CS1705.dll /reference:CS1705c.dll CS1705d.cs`  
   
-     Although the program compiles when you use this command, it still does not run. To enable the program to run, you can provide an application configuration file that includes a [<dependentAssembly\> element](assetId:///14e95627-dd79-4b82-ac85-e682aa3a31d8) that uses [<assemblyIdentity\>](assetId:///cea4d187-6398-4da4-af09-c1abc6a349c1) and [<codeBase\>](assetId:///d48a3983-2297-43ff-a14d-1f29d3995822) child elements to specify the location of version 1.0 of the DLL. For more information about configuration files, see [Configuration Files](assetId:///86bd26d3-737e-4484-9782-19b17f34cd1f).  
+     Although the program compiles when you use this command, it still does not run. To enable the program to run, you can provide an application configuration file that includes a [\<dependentAssembly> element](assetId:///14e95627-dd79-4b82-ac85-e682aa3a31d8) that uses [\<assemblyIdentity>](assetId:///cea4d187-6398-4da4-af09-c1abc6a349c1) and [\<codeBase>](assetId:///d48a3983-2297-43ff-a14d-1f29d3995822) child elements to specify the location of version 1.0 of the DLL. For more information about configuration files, see [Configuration Files](assetId:///86bd26d3-737e-4484-9782-19b17f34cd1f).  
   
 ## See Also  
  [extern alias (C# Reference)](../vs140/extern-alias--csharp-reference-.md)   

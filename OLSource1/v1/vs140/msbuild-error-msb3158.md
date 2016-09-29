@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3158
-**MSB3158: Could not find resources for culture '<culture\>'. Using culture '<culture\>' instead.**  
+**MSB3158: Could not find resources for culture '\<culture>'. Using culture '\<culture>' instead.**  
   
  This warning is generated when the specified product cannot find a package manifest file (package.xml) that uses the specified culture.  
   
@@ -29,4 +29,4 @@ translation.priority.ht:
 -   Provide the appropriate package manifest file.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

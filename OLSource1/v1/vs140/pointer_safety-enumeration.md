@@ -54,9 +54,9 @@ enum class pointer_safety {
  `strict` -- pointers not safely derived might be treated differently than those safely derived.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
- [<memory\>](../vs140/-memory-.md)
+ [\<memory>](../vs140/-memory-.md)

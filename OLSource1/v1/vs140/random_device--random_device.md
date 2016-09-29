@@ -45,10 +45,10 @@ random_device(const std::string& = "");
  For example code, see [random_device](../vs140/random_device-class.md).  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [random_device](../vs140/random_device-class.md)

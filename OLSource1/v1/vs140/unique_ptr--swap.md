@@ -43,11 +43,11 @@ void swap(unique_ptr& _Right);
  The member function swaps `stored_ptr` with `right.stored_ptr` and `stored_deleter` with `right.stored_deleter`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
  [unique_ptr Class](../vs140/unique_ptr-class.md)   
- [<memory\>](../vs140/-memory-.md)   
+ [\<memory>](../vs140/-memory-.md)   
  [Thread Safety in the C++ Standard Library](../vs140/thread-safety-in-the-c---standard-library.md)

@@ -80,7 +80,7 @@ _Lcomplex csqrtl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`csqrt`,               `csqrtf`, `csqrtl`|<complex.h>|<ccomplex\>|  
+|`csqrt`,               `csqrtf`, `csqrtl`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

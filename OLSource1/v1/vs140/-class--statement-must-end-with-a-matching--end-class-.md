@@ -34,5 +34,5 @@ translation.priority.ht:
 -   Conclude the `Class` block with a matching `End Class`.  
   
 ## See Also  
- [End <keyword\> Statement (Visual Basic)](../vs140/end--keyword--statement--visual-basic-.md)   
+ [End \<keyword> Statement (Visual Basic)](../vs140/end--keyword--statement--visual-basic-.md)   
  [Class Statement (Visual Basic)](../vs140/class-statement--visual-basic-.md)

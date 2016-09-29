@@ -116,7 +116,7 @@ Resorted vector v1 = ( 3739828298 3715465425 2621500314 2233879413 580942933 626
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  std  
   

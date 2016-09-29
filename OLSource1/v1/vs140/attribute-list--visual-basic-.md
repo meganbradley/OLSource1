@@ -68,6 +68,6 @@ Specifies the attributes to be applied to a declared programming element. Multip
   
 ## See Also  
  [Assembly](../vs140/assembly--visual-basic-.md)   
- [Module <keyword\>](../vs140/module--keyword---visual-basic-.md)   
+ [Module \<keyword>](../vs140/module--keyword---visual-basic-.md)   
  [Attributes (C# and Visual Basic)](../vs140/attributes--csharp-and-visual-basic-.md)   
  [How to: Break and Combine Statements in Code](../vs140/how-to--break-and-combine-statements-in-code--visual-basic-.md)

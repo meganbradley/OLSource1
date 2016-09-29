@@ -164,7 +164,7 @@ ExtraDDX?=<keys>;<vb-keys>; <prompt>; <type>; <initValue>; <DDX_Proc>
   
  Each field is delimited by a ';' character. The fields and their purpose are described below.  
   
- <keys\>  
+ \<keys>  
  = list of single characters indicating for which dialog controls this variable type is allowed.  
   
  E = edit  
@@ -190,36 +190,36 @@ ExtraDDX?=<keys>;<vb-keys>; <prompt>; <type>; <initValue>; <DDX_Proc>
  <vb-keys>  
  This field is used only in the 16-bit product for VBX controls (VBX controls are not supported in the 32-bit product)  
   
- <prompt\>  
+ \<prompt>  
  String to place in the Property combo box (no quotes)  
   
- <type\>  
+ \<type>  
  Single identifier for type to emit in the header file. In our example above with DDX_Time, this would be set to CTime.  
   
  <vb-keys>  
  Not used in this version and should always be empty  
   
- <initValue\>  
+ \<initValue>  
  Initial value — 0 or blank. If it is blank, then no initialization line will be written in the //{{AFX_DATA_INIT section of the implementation file. A blank entry should be used for C++ objects (such as `CString`, `CTime`, and so on) that have constructors that guarantee correct initialization.  
   
  <DDX_Proc>  
  Single identifier for the DDX_ procedure. The C++ function name must start with "DDX_," but don't include "DDX_" in the <DDX_Proc> identifier. In the example above, the <DDX_Proc> identifier would be Time. When ClassWizard writes the function call to the implementation file in the {{AFX_DATA_MAP section, it appends this name to DDX_, thus arriving at DDX_Time.  
   
- <comment\>  
+ \<comment>  
  Comment to show in dialog for variable with this DDX. Place any text you would like here, and usually provide something that describes the operation performed by the DDX/DDV pair.  
   
  <DDV_Proc>  
  The DDV portion of the entry is optional. Not all DDX routines have corresponding DDV routines. Often, it is more convenient to include the validation phase as an integral part of the transfer. This is often the case when your DDV routine doesn't require any parameters, because ClassWizard does not support DDV routines without any parameters.  
   
- <arg\>  
+ \<arg>  
  Single identifier for the DDV_ procedure. The C++ function name must start with "DDV_", but do not include "DDX_" in the <DDX_Proc> identifier.  
   
  followed by 1 or 2 DDV args:  
   
- <promptX\>  
+ \<promptX>  
  string to place above the edit item (with & for accelerator)  
   
- <fmtX\>  
+ \<fmtX>  
  format character for the arg type, one of  
   
  d = int  

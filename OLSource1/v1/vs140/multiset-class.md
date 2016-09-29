@@ -39,12 +39,12 @@ template <    class  Key ,     class  Compare =less <Key>,    class  Allocator =
  The element data type to be stored in the multiset.  
   
  *Compare*  
- The type that provides a function object that can compare two element values as sort keys to determine their relative order in the multiset. The binary predicate **less**<Key\> is the default value.  
+ The type that provides a function object that can compare two element values as sort keys to determine their relative order in the multiset. The binary predicate **less**\<Key> is the default value.  
   
  In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../vs140/stl-containers.md#sequence_containers)  
   
  `Allocator`  
- The type that represents the stored allocator object that encapsulates details about the multiset's allocation and deallocation of memory. The default value is **allocator***<Key\>.*  
+ The type that represents the stored allocator object that encapsulates details about the multiset's allocation and deallocation of memory. The default value is **allocator***\<Key>.*  
   
 ## Remarks  
  The STL multiset class is:  
@@ -134,7 +134,7 @@ template <    class  Key ,     class  Compare =less <Key>,    class  Allocator =
 |[operator=](#multiset__operator_eq)|Replaces the elements of a `multiset` with a copy of another `multiset`.|  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   
@@ -2084,7 +2084,7 @@ int main( )
   
   **The multiset has elements: 10 20.**    
 ## See Also  
- [<set\> Members](assetId:///0c2d57c0-173f-4204-b579-c5f06aad8b95)   
+ [\<set> Members](assetId:///0c2d57c0-173f-4204-b579-c5f06aad8b95)   
  [Containers](../vs140/containers--modern-c---.md)   
  [Thread Safety in the Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

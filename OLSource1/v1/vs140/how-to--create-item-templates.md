@@ -49,10 +49,10 @@ The steps in the [first procedure](../vs140/how-to--create-item-templates.md#exp
   
 8.  Type the icon file name, preview image, template name, and template description, and click **Finish**.  
   
-     The files for the template are added to a .zip file and copied whatever directory you specify in the dialog. The default location is **..\Users\\<username\>\Documents\Visual Studio <Version\>\My Exported Templates\\** folder.  
+     The files for the template are added to a .zip file and copied whatever directory you specify in the dialog. The default location is **..\Users\\\<username>\Documents\Visual Studio \<Version>\My Exported Templates\\** folder.  
   
     > [!WARNING]
-    >  In earlier versions of Visual Studio, the default location is **..\Users\\<username\>\Documents\Visual Studio <Version\>\Templates\ItemTemplates**.  
+    >  In earlier versions of Visual Studio, the default location is **..\Users\\\<username>\Documents\Visual Studio \<Version>\Templates\ItemTemplates**.  
   
 ### To enable the item template to be used in a store project  
   
@@ -154,7 +154,7 @@ The steps in the [first procedure](../vs140/how-to--create-item-templates.md#exp
   
 7.  In Windows Explorer, select the files you want to include in your template, right-click the selection, click Send To, and then click Compressed (zipped) Folder. The files that you selected are compressed into a .zip file.  
   
-8.  Copy the .zip file and paste it in the user item template location. In Visual Studio 2015, the default directory is ..\Users\\<username\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. For more information, see How to: Locate and Organize Project and Item Templates.  
+8.  Copy the .zip file and paste it in the user item template location. In Visual Studio 2015, the default directory is ..\Users\\\<username>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. For more information, see How to: Locate and Organize Project and Item Templates.  
   
 ## See Also  
  [Introduction to Visual Studio Templates](../vs140/creating-project-and-item-templates.md)   

@@ -93,7 +93,7 @@ int main( )
  **The element at the front of queue q5 is 1.**  
 **The element at the back of queue q5 is 2.**   
 ## Requirements  
- **Header:** <queue\>  
+ **Header:** \<queue>  
   
  **Namespace:** std  
   

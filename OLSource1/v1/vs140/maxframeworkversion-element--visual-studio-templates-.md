@@ -22,8 +22,8 @@ translation.priority.ht:
 # MaxFrameworkVersion Element (Visual Studio Templates)
 Specifies the maximum version of the .NET Framework that is required by the template. It determines whether the template is displayed in the **Templates** section of the **Add New Project** dialog box, based on the value that is selected in the **Target Framework Version** box of the **Add New Project** dialog box.  
   
- <VSTemplate\>  
- <MaxFrameworkVersion\>  
+ \<VSTemplate>  
+ \<MaxFrameworkVersion>  
   
 ## Syntax  
   

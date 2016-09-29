@@ -85,7 +85,7 @@ int main()
 **wp.expired() == true**  
 **(bool)wp.lock() == false**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # The type for variable &#39;&lt;variablename&gt;&#39; will not be inferred because it is bound to a field in an enclosing scope
-The type for variable '<variablename\>' will not be inferred because it is bound to a field in an enclosing scope. Either change the name of '<variablename\>', or use the fully qualified name (for example, 'Me.variablename' or 'MyBase.variablename').  
+The type for variable '\<variablename>' will not be inferred because it is bound to a field in an enclosing scope. Either change the name of '\<variablename>', or use the fully qualified name (for example, 'Me.variablename' or 'MyBase.variablename').  
   
  A loop control variable in your code has the same name as a field of the class or other enclosing scope. Because the control variable is used without an `As` clause, it is bound to the field in the enclosing scope, and the compiler does not create a new variable for it or infer its type.  
   

@@ -41,11 +41,11 @@ RealType mean() const;
 ## Remarks  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [normal_distribution](../vs140/normal_distribution-class.md)   
  [normal_distribution::sigma](../vs140/normal_distribution--stddev.md)

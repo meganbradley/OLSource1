@@ -44,7 +44,7 @@ where type-parameter: constraint list
   
  The list can also include a class. For the type argument to satisfy a base class constraint, it must be the same class as the constraint or derive from the constraint.  
   
- You can also specify `gcnew()` to indicate the type argument must have a public parameterless constructor; or `ref class` to indicate the type argument must be a reference type, including any class, interface, delegate, or array type; or `value class` to indicate the type argument must be a value type. Any value type except Nullable<T\> can be specified.  
+ You can also specify `gcnew()` to indicate the type argument must have a public parameterless constructor; or `ref class` to indicate the type argument must be a reference type, including any class, interface, delegate, or array type; or `value class` to indicate the type argument must be a value type. Any value type except Nullable\<T> can be specified.  
   
  You can also specify a generic parameter as a constraint. The type argument supplied for the type you are constraining must be or derive from the type of the constraint. This is called a naked type constraint.  
   
@@ -55,7 +55,7 @@ where type-parameter: constraint list
   
  Class and interface constraints specify that the argument types must be or inherit from a specified class or implement a specified interface.  
   
- The application of constraints to a generic type or method allows code in that type or method to take advantage of the known features of the constrained types. For example, you can declare a generic class such that the type parameter implements the **IComparable<T\>** interface:  
+ The application of constraints to a generic type or method allows code in that type or method to take advantage of the known features of the constrained types. For example, you can declare a generic class such that the type parameter implements the **IComparable\<T>** interface:  
   
 ```  
 // generics_constraints_1.cpp  

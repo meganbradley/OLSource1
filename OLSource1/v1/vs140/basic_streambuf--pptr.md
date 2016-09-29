@@ -43,7 +43,7 @@ type *pptr( ) const;
  A pointer to the next element of the output buffer.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

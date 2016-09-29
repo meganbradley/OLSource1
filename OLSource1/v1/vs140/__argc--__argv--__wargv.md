@@ -58,7 +58,7 @@ extern wchar_t ** __wargv;
   
 |Global variable|Required header|  
 |---------------------|---------------------|  
-|`__argc`, `__argv`, `__wargv`|<stdlib.h>, <cstdlib\> (C++)|  
+|`__argc`, `__argv`, `__wargv`|<stdlib.h>, \<cstdlib> (C++)|  
   
  `__argc`, `__argv`, and `__wargv` are Microsoft extensions. For compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

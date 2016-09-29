@@ -58,7 +58,7 @@ template<class InputIterator, class UnaryPredicate>
  `[0,`  `_Last`  `-`  `_First` `)`, the predicate `_Comp``(*(``_First` `+ N))` is true.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

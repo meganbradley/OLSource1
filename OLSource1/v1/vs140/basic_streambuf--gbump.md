@@ -43,7 +43,7 @@ A protected function that adds `_Count` to the next pointer for the input buffer
  The amount by which to advance the pointer.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

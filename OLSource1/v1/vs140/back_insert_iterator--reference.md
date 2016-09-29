@@ -76,7 +76,7 @@ int main( )
  **The vector vec is: ( 1 2 3 ).**  
 **The last element in the vector vec is: 3.**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   

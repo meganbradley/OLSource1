@@ -102,7 +102,7 @@ int main( ) {
 **The eofTest1 returns: 120, which is the character: x.**  
 **The eofTest2 indicates int2 is an EOF character.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

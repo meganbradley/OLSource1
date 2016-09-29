@@ -24,8 +24,8 @@ translation.priority.ht:
 # WizardData Element (Visual Studio Templates)
 Specifies custom XML  
   
- <VSTemplate\>  
- <WizardData\>  
+ \<VSTemplate>  
+ \<WizardData>  
   
 ## Syntax  
   

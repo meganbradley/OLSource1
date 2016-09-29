@@ -57,7 +57,7 @@ Seq.empty
   
  **F# Interactive Output**  
   
- **val emptySeq1 : seq<'a>val emptySeq2 : seq<string\>**   
+ **val emptySeq1 : seq<'a>val emptySeq2 : seq\<string>**   
 ## Platforms  
  Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2  
   

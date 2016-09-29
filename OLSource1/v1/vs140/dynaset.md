@@ -66,7 +66,7 @@ This topic describes dynasets and discusses their [availability](#_core_availabi
   
  If you want updateable dynasets (or snapshots, for that matter), your ODBC driver must also support either the **::SQLSetPos** ODBC API function or positioned updates. The **::SQLSetPos** function allows MFC to update the data source without sending SQL statements. If this support is available, MFC uses it in preference to making updates using SQL. To determine whether your driver supports **::SQLSetPos**, call **::SQLGetInfo** with the **SQL_POS_OPERATIONS** parameter.  
   
- Positioned updates use SQL syntax (of the form **WHERE CURRENT OF** <cursorname\>) to identify a particular row in the table on the data source. To determine whether your driver supports positioned updates, call **::SQLGetInfo** with the **SQL_POSITIONED_STATEMENTS** parameter.  
+ Positioned updates use SQL syntax (of the form **WHERE CURRENT OF** \<cursorname>) to identify a particular row in the table on the data source. To determine whether your driver supports positioned updates, call **::SQLGetInfo** with the **SQL_POSITIONED_STATEMENTS** parameter.  
   
  Generally, MFC dynasets (but not forward-only recordsets) require an ODBC driver with level 2 API conformance. If the driver for your data source conforms to the level 1 API set, you can still use both updateable and read-only snapshots and forward-only recordsets, but not dynasets. However, a level 1 driver can support dynasets if it supports extended fetching and keyset-driven cursors. For more information about ODBC conformance levels, see [ODBC](../vs140/odbc-basics.md).  
   

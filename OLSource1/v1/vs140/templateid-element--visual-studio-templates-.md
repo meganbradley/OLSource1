@@ -24,9 +24,9 @@ translation.priority.ht:
 # TemplateID Element (Visual Studio Templates)
 Specifies an identifier for an item template that is categorized into a group of item templates by the [TemplateGroupID](../vs140/templategroupid-element--visual-studio-templates-.md) element.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <TemplateID\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<TemplateID>  
   
 ## Syntax  
   

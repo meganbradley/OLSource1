@@ -47,7 +47,7 @@ concurrency::parallel_for_each(av0.extent, [=](concurrency::index<1> idx) restri
 ## Marshaling Windows Runtime types  
  When you work with Windows Runtime APIs, you might want to use C++ AMP on data that's stored in a Windows Runtime container such as a `Platform::Array<T>^` or in complex data types such as classes or structs that are declared by using the `ref` keyword or the `value` keyword. In these situations, you have to do some extra work to make the data available to C++ AMP.  
   
-### Platform::Array<T\>^, where T is a POD type  
+### Platform::Array\<T>^, where T is a POD type  
  When you encounter a `Platform::Array<T>^` and T is a POD type, you can access its underlying storage just by using the `get` member function:  
   
 ```cpp  

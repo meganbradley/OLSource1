@@ -24,7 +24,7 @@ translation.priority.mt:
 The [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] integrated development environment (IDE) stores modified settings for fonts and colors in the registry. You can use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage*> interface to access these settings.  
   
 ## To Initiate State Persistence of Fonts and Colors  
- Font and color information is stored by category in the following registry location: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*<Visual Studio version\>*\FontAndColors\\*<CategoryGUID\>*], where *<CategoryGUID\>* is the category GUID.  
+ Font and color information is stored by category in the following registry location: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>*\FontAndColors\\*\<CategoryGUID>*], where *\<CategoryGUID>* is the category GUID.  
   
  Therefore, to initiate persistence, a VSPackage must:  
   

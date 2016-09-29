@@ -470,7 +470,7 @@ int main( )
 **Vector v4 = min ( v1,v2 ) is ( 0 1 2 ).**  
 **Vector v5 = min ( v1,v3 ) is ( 0 1 2 ).**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

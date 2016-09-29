@@ -21,23 +21,10 @@ When you call one of the methods that return <xref:System.Collections.Generic.IE
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../vs140/sample-xml-file--typical-purchase-order--linq-to-xml-2.md).  
   
-```vb  
-Dim po As XElement = XElement.Load("PurchaseOrder.xml")  
-Dim items As IEnumerable(Of XElement) = _  
-    From el In po...<ProductName> _  
-    Select el  
-For Each prdName As XElement In items  
-    Console.WriteLine(prdName.Name.ToString & ":" & prdName.Value)  
-Next  
-```  
-  
+<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
  This code produces the following output:  
   
-```  
-ProductName:Lawnmower  
-ProductName:Baby Monitor  
-```  
-  
+<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
  The other methods that return <xref:System.Collections.Generic.IEnumerable`1*> of <xref:System.Xml.Linq.XElement*> collections follow the same pattern. Their signatures are similar to <xref:System.Xml.Linq.XContainer.Elements*> and <xref:System.Xml.Linq.XContainer.Descendants*>. The following is the complete list of methods that have similar method signatures:  
   
 -   <xref:System.Xml.Linq.XNode.Ancestors*>  

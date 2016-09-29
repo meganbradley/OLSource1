@@ -96,7 +96,7 @@ int main( )
  **kc1( 2,3 ) returns value of true, where kc1 is the function object of m1.**  
 **kc2( 2,3 ) returns value of false, where kc2 is the function object of m2.**   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

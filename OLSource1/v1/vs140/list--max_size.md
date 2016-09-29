@@ -71,7 +71,7 @@ Maximum possible length of the list is 1073741823.
 ```  
   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

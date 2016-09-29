@@ -39,7 +39,7 @@ This walkthrough leads you through the process of identifying and fixing a perfo
   
 4.  In the **Name** box, specify a name such as `JS_Perf_Tester`, and then choose **OK**.  
   
-5.  In **Solution Explorer**, open default.html and paste the following code between the <body\> tags:  
+5.  In **Solution Explorer**, open default.html and paste the following code between the \<body> tags:  
   
     ```html  
     <div class="wrapper">  

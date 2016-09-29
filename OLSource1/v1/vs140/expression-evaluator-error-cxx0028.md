@@ -25,7 +25,7 @@ translation.priority.ht:
 # Expression Evaluator Error CXX0028
 not struct/union element  
   
- An expression of the form 'Struct.Member' or 'pStruct->Member' was specified, but <member\> is not an element of the structure.  
+ An expression of the form 'Struct.Member' or 'pStruct->Member' was specified, but \<member> is not an element of the structure.  
   
  The expression may not be parenthesized correctly.  
   

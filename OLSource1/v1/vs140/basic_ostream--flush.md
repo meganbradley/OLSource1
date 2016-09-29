@@ -60,7 +60,7 @@ int main( )
   
  **test**   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   

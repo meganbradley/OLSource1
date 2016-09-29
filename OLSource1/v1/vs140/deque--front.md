@@ -73,7 +73,7 @@ int main( )
  **The first integer of c1 is 10**  
 **The second integer of c1 is 11**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

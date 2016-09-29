@@ -34,7 +34,7 @@ void basic_stringbuf<T>::swap(basic_stringbuf& other)
 ## Remarks  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

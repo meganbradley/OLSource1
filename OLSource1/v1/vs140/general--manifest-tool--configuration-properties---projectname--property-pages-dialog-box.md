@@ -37,7 +37,7 @@ Use this dialog box to specify general options for [Mt.exe](http://msdn.microsof
  **Yes (/verbose)** specifies that additional build information will be displayed during manifest generation.  
   
  **Assembly Identity**  
- Uses the /identity option to specify an identity string, which comprises the attributes for the [<assemblyIdentity\> Element (ClickOnce Reference)](../vs140/-assemblyidentity--element--clickonce-application-.md). An identity string begins with the value for the `name` attribute, and is followed by *attribute* = *value* pairs. The attributes in an identity string are delimited by a comma.  
+ Uses the /identity option to specify an identity string, which comprises the attributes for the [\<assemblyIdentity> Element (ClickOnce Reference)](../vs140/-assemblyidentity--element--clickonce-application-.md). An identity string begins with the value for the `name` attribute, and is followed by *attribute* = *value* pairs. The attributes in an identity string are delimited by a comma.  
   
  The following is an example identity string:  
   

@@ -121,7 +121,7 @@ The element-wise differences between v1 and v2 are: ( 2 3 4 5 6 7 )
 ```  
   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

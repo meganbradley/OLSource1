@@ -36,12 +36,12 @@ typedef regex_token_iterator<wstring::const_iterator> wsregex_token_iterator;
  The type describes a specialization of template class [regex_token_iterator](../vs140/regex_token_iterator-class.md) for iterators of type `wstring::const_iterator`.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_token_iterator](../vs140/regex_token_iterator-class.md)   
  [cregex_token_iterator](../vs140/cregex_token_iterator-typedef.md)   
  [sregex_token_iterator](../vs140/sregex_token_iterator-typedef.md)   

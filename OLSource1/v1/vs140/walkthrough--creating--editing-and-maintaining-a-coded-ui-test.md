@@ -48,11 +48,11 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
 9. Under the **All WPF Controls** section, drag a **Button**, **CheckBox** and **ProgressBar** control onto the MainWindow in the design surface.  
   
-10. Select the Button control. In the Properties window, change the value for the **Name** property from <No Name\> to button1. Then change the value for the **Content** property from Button to Start.  
+10. Select the Button control. In the Properties window, change the value for the **Name** property from \<No Name> to button1. Then change the value for the **Content** property from Button to Start.  
   
-11. Select the ProgressBar control. In the Properties window, change the value for the value for the **Name** property from <No Name\> to progressBar1. Then change the value for the **Maximum** property from **100** to **10000**.  
+11. Select the ProgressBar control. In the Properties window, change the value for the value for the **Name** property from \<No Name> to progressBar1. Then change the value for the **Maximum** property from **100** to **10000**.  
   
-12. Select the Checkbox control. In the Properties window, change the value for the **Name** property from <No Name\> to checkBox1 and clear the **IsEnabled** property.  
+12. Select the Checkbox control. In the Properties window, change the value for the **Name** property from \<No Name> to checkBox1 and clear the **IsEnabled** property.  
   
      ![Simple WPF Application](../vs140/media/codedui_wpfapp.png "CodedUI_WPFApp")  
   
@@ -117,7 +117,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
 ### Create and Run a Coded UI Test for SimpleWPFApp  
   
-1.  Locate the SimpleWPFApp application that you created earlier. By default, the application will be located at C:\Users\\<username\>\Documents\Visual Studio <version\>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe  
+1.  Locate the SimpleWPFApp application that you created earlier. By default, the application will be located at C:\Users\\\<username>\Documents\Visual Studio \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe  
   
 2.  Create a desktop shortcut to the SimpleWPFApp application. Right-click SimpleWPFApp.exe and choose **Copy**. On your desktop, right-click and choose **Paste shortcut**.  
   

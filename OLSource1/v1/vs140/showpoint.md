@@ -60,7 +60,7 @@ Displays the whole-number part of a floating-point number and digits to the righ
  See [noshowpoint](../vs140/noshowpoint.md) for an example of using `showpoint`.  
   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

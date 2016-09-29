@@ -81,6 +81,6 @@ int main( )
 **The number of elements that the allocated memory**  
  **could store is given by: resultPair.second = 7.**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std

@@ -71,7 +71,7 @@ int main( )
  **The stack s1 is not empty.**  
 **The stack s2 is empty.**   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

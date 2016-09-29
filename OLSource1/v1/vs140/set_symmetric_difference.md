@@ -237,7 +237,7 @@ Set_symmetric_difference of source ranges with binary predicate mod_lesser speci
 ```  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

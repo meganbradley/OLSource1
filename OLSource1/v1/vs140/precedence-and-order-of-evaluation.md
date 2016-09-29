@@ -37,8 +37,8 @@ The precedence and associativity of C operators affect the grouping and evaluati
 |*typecasts*|Unary|Right to left|  
 |**\* / %**|Multiplicative|Left to right|  
 |**+ –**|Additive|Left to right|  
-|**<< >>**|Bitwise shift|Left to right|  
-|**< > <= >=**|Relational|Left to right|  
+|**<\< >>**|Bitwise shift|Left to right|  
+|**\< > <= >=**|Relational|Left to right|  
 |**== !=**|Equality|Left to right|  
 |**&**|Bitwise-AND|Left to right|  
 |**^**|Bitwise-exclusive-OR|Left to right|  

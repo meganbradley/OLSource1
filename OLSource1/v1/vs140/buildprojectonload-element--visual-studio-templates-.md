@@ -19,9 +19,9 @@ translation.priority.ht:
 # BuildProjectOnload Element (Visual Studio Templates)
 Builds only new projects as you create and add them to a solution. The entire solution isn’t built.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <BuildProjectOnLoad\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<BuildProjectOnLoad>  
   
 ## Syntax  
   

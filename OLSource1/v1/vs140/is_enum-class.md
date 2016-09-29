@@ -74,9 +74,9 @@ int main()
   
 ```  
   
-  **is_enum<trivial\> == false**  
-**is_enum<color\> == true**  
-**is_enum<int\> == false**    
+  **is_enum\<trivial> == false**  
+**is_enum\<color> == true**  
+**is_enum\<int> == false**    
 ## Requirements  
  **Header:** <type_traits>  
   

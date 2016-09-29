@@ -401,10 +401,10 @@ translation.priority.ht:
   
 5.  Set up a search path for the files containing the assemblies hosting Toolbox control objects.  
   
-     <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource*>, searches only directories specified in the registry entry HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\\*<version\>*\AssemblyFolders, where *<version\>* is the version number of the release of Visual Studio (for example, 8.0).  
+     <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource*>, searches only directories specified in the registry entry HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\\*\<version>*\AssemblyFolders, where *\<version>* is the version number of the release of Visual Studio (for example, 8.0).  
   
     > [!NOTE]
-    >  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*<Version\>* can be overridden with an alternate root when the Visual Studio shell is initialized, or use of <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute*>. For more information see, [Command-Line Switches (VS SDK)](../vs140/command-line-switches--visual-studio-sdk-.md).  
+    >  The root path of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* can be overridden with an alternate root when the Visual Studio shell is initialized, or use of <xref:Microsoft.VisualStudio.Shell.DefaultRegistryRootAttribute*>. For more information see, [Command-Line Switches (VS SDK)](../vs140/command-line-switches--visual-studio-sdk-.md).  
   
      For details on the correct format of the AssemblyFolder registry entries, see the <xref:Microsoft.VisualStudio.Shell.Package.ParseToolboxResource*> reference page.  
   

@@ -103,7 +103,7 @@ int main( )
 **The reversed map is: 3 2 1 .**  
 **After the erasure, the first element in the reversed map is 2.**   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

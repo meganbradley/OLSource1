@@ -135,7 +135,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## Loading models dynamically  
  If you want to determine at runtime which models to load, you can load a model file dynamically in your program code, instead of using the DSL-specific directive.  
   
- However, one of the functions of the DSL-specific directive is to import the DSL namespace, so that the template code can use the domain classes defined in that DSL. Because you are not using the directive, you must add **<assembly\>** and **<import\>** directives for all the models that you might load. This is easy if the different models that you might load are all instances of the same DSL.  
+ However, one of the functions of the DSL-specific directive is to import the DSL namespace, so that the template code can use the domain classes defined in that DSL. Because you are not using the directive, you must add **\<assembly>** and **\<import>** directives for all the models that you might load. This is easy if the different models that you might load are all instances of the same DSL.  
   
  To load the file, the most effective method is by using [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] ModelBus. In a typical scenario, your text template will use a DSL-specific directive to load the first model in the usual way. That model would contain ModelBus References to another model. You can use ModelBus to open the referenced model and access a particular element. For more information, see [Using Visual Studio ModelBus in a Text Template](../vs140/using-visual-studio-modelbus-in-a-text-template.md).  
   

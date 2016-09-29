@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3159
-**MSB3159: Xml Validation error in file '<file\>': '<error\>'**  
+**MSB3159: Xml Validation error in file '\<file>': '\<error>'**  
   
  This error is generated when the product or package.xml file does not conform to the XML schema. The latter part of this error is a specific error message.  
   

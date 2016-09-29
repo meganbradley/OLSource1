@@ -41,4 +41,4 @@ mutex_type *release() _NOEXCEPT;
   
 ## See Also  
  [unique_lock Class](../vs140/unique_lock-class.md)   
- [<mutex\>](../vs140/-mutex-.md)
+ [\<mutex>](../vs140/-mutex-.md)

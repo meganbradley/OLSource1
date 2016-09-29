@@ -71,10 +71,10 @@ int main()
 ```  
   
  **char_type ch1 is 'x' and corresponds to int_type 120.**  
-**The eof marker for char_traits<char\> is: -1**  
+**The eof marker for char_traits\<char> is: -1**  
 **The eof marker for char_traits<wchar_t> is: 65535**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

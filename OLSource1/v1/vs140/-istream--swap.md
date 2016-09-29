@@ -51,11 +51,11 @@ template<class Elem, class Tr>
  A stream.  
   
 ## Requirements  
- **Header:** <istream\>  
+ **Header:** \<istream>  
   
  **Namespace:** std  
   
 ## See Also  
- [<istream\>](../vs140/-istream-.md)   
+ [\<istream>](../vs140/-istream-.md)   
  [iostream Programming](../vs140/iostream-programming.md)   
  [iostreams Conventions](../vs140/iostreams-conventions.md)

@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Value of type &#39;type1&#39; cannot be converted to &#39;type2&#39;
-Value of type 'type1' cannot be converted to 'type2'. You can use the 'Value' property to get the string value of the first element of '<parentElement\>'.  
+Value of type 'type1' cannot be converted to 'type2'. You can use the 'Value' property to get the string value of the first element of '\<parentElement>'.  
   
  An attempt has been made to implicitly cast an XML literal to a specific type. The XML literal cannot be implicitly cast to the specified type.  
   

@@ -158,7 +158,7 @@ int main()
 ### Output  
  **The first even number in the list is 42.**   
 ### Remarks  
- For more information about the `find_if` function, see [find_if](../vs140/find_if.md). For more information about the STL functions that perform common algorithms, see [<algorithm\>](../vs140/-algorithm-.md).  
+ For more information about the `find_if` function, see [find_if](../vs140/find_if.md). For more information about the STL functions that perform common algorithms, see [\<algorithm>](../vs140/-algorithm-.md).  
   
  [[go to top](#top)]  
   
@@ -421,7 +421,7 @@ int main()
 ```  
   
 ### Output  
- **Caught 'invalid vector<T\> subscript'.**   
+ **Caught 'invalid vector\<T> subscript'.**   
 ### Remarks  
  For more information about exception handling, see [Exception Handling in Visual C++](../vs140/exception-handling-in-visual-c--.md).  
   
@@ -468,7 +468,7 @@ int main()
  [auto Keyword (Type Deduction)](../vs140/auto--c---.md)   
  [function Class](../vs140/function-class.md)   
  [find_if](../vs140/find_if.md)   
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [Function Call (C++)](../vs140/function-call--c---.md)   
  [Templates](../vs140/templates--c---.md)   
  [Exception Handling in Visual C++](../vs140/exception-handling-in-visual-c--.md)   

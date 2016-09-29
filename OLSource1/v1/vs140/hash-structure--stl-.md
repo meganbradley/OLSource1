@@ -40,5 +40,5 @@ struct hash<thread::id> :
   
 ## See Also  
  [Header Files](../vs140/c---standard-library-header-files.md)   
- [<thread\>](../vs140/-thread-.md)   
+ [\<thread>](../vs140/-thread-.md)   
  [unary_function Struct](../vs140/unary_function-struct.md)

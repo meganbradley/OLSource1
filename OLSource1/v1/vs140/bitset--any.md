@@ -90,7 +90,7 @@ int main( )
 **The reset bitset is: ( 00000 )**  
 **None of the bits in bitset b1 are set to 1.**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

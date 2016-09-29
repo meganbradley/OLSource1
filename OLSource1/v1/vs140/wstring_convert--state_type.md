@@ -41,7 +41,7 @@ typedef typename Codecvt::state_type state_type;
  The type describes an object that can represent a conversion state. The type is a synonym for `Codecvt::state_type`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

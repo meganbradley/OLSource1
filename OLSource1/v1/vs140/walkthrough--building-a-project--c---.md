@@ -54,7 +54,7 @@ In this walkthrough, you deliberately introduce a Visual C++ syntax error in you
   
  **1>------ Build started: Project: Game, Configuration: Debug Win32 ------**  
 **1>  TestGames.cpp**  
-**1>  Game.vcxproj -> C:\Users\\<username\>\Documents\Visual Studio *<version\>*\Projects\Game\Debug\Game.exe**  
+**1>  Game.vcxproj -> C:\Users\\\<username>\Documents\Visual Studio *\<version>*\Projects\Game\Debug\Game.exe**  
 **========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========**  
   
 ## Next Steps  

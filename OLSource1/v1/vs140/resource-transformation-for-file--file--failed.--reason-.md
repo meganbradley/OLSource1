@@ -22,7 +22,7 @@ The resources processor used to transform .resx files into binary .resources fil
   
  This error is most likely caused by a bad .resx file. For example, the file may have been opened and modified in a text editor.  
   
- If you receive a <reason\> of "Item has already been added. Key in dictionary: 'NewControlName.<Property Name\>' Key being added: 'ControlName.<Property Name\>'," read the following steps to reproduce and correct the error.  
+ If you receive a \<reason> of "Item has already been added. Key in dictionary: 'NewControlName.\<Property Name>' Key being added: 'ControlName.\<Property Name>'," read the following steps to reproduce and correct the error.  
   
 ### To reproduce this error  
   

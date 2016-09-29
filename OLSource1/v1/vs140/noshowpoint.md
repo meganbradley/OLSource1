@@ -73,7 +73,7 @@ int main( )
 **5.000**  
 **5**   
 ## Requirements  
- **Header:** <ios\>  
+ **Header:** \<ios>  
   
  **Namespace:** std  
   

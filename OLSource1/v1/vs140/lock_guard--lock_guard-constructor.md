@@ -45,4 +45,4 @@ lock_guard(mutex_type& Mtx, adopt_lock_t);
   
 ## See Also  
  [lock_guard Class](../vs140/lock_guard-class.md)   
- [<mutex\>](../vs140/-mutex-.md)
+ [\<mutex>](../vs140/-mutex-.md)

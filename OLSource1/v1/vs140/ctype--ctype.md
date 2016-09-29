@@ -58,7 +58,7 @@ explicit ctype(
  The constructor initializes its `locale::facet` base object with **locale::**[facet](../vs140/facet-class.md)(`_Refs`).  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

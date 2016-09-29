@@ -25,4 +25,4 @@ translation.priority.ht:
  This error is generated when the build process cannot infer an assembly name for the application or deployment manifest. The assembly name is not given explicitly; there is no identity in the base manifest, and the entry point identity is not specified either.  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

@@ -72,7 +72,7 @@ int main()
 **empty == true**  
 **type == void**   
 ## Requirements  
- **Header:** <functional\>  
+ **Header:** \<functional>  
   
  **Namespace:** std  
   

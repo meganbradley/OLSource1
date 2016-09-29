@@ -102,7 +102,7 @@ int main( )
 **The element-by-element result of the bitwise XOR operator^= is the**  
  **valarray: ( 1 0 0 3 2 4 7 6 6 9 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

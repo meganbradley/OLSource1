@@ -40,10 +40,10 @@ const_reverse_iterator crbegin() const;
  A reverse iterator that points just beyond the end of the string. The position designates the beginning of the reverse string.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_string Class](../vs140/basic_string-class.md)   
- [<string\>](../vs140/-string-.md)
+ [\<string>](../vs140/-string-.md)

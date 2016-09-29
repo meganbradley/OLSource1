@@ -145,7 +145,7 @@ template<class Elem, class Tr = char_traits<Elem> >
 |[operator=](#basic_streambuf__operator_eq)|Assigns the values of this object from another `basic_streambuf` object.|  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

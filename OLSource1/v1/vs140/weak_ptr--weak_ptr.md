@@ -88,7 +88,7 @@ int main()
 **\*wp1.lock() == 5**  
 **\*wp2.lock() == 5**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

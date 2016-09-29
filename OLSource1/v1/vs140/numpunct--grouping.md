@@ -69,7 +69,7 @@ int main( )
  **German_Germany.1252 international grouping:**  
  **the 0th group to the left of the radix character is of size 3**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

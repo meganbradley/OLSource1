@@ -24,7 +24,7 @@ translation.priority.ht:
 # Compiler Warning (level 1) CS1574
 XML comment on 'construct' has syntactically incorrect cref attribute 'name'  
   
- A string passed to a cref tag, for example, within an <exception\> tag, referred to a member that is not available within the current build environment. The string that you pass to a cref tag must be the syntactically correct name of a member or field.  
+ A string passed to a cref tag, for example, within an \<exception> tag, referred to a member that is not available within the current build environment. The string that you pass to a cref tag must be the syntactically correct name of a member or field.  
   
  For more information, see [Recommended Tags for Documentation Comments](../vs140/recommended-tags-for-documentation-comments--csharp-programming-guide-.md).  
   

@@ -67,7 +67,7 @@ template<class Elem>
  Each `regex_traits` object holds an object of type `regex_traits::locale` which is used by some of its member functions. The default locale is a copy of `regex_traits::locale()`. The member function `imbue` replaces the locale object, and the member function `getloc` returns a copy of the locale object.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
@@ -1466,7 +1466,7 @@ int main()
 **'3' is digit == true**  
 **hex C == 12**    
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_traits](../vs140/regex_traits-class.md)   
- [regex_traits<char\>](../vs140/regex_traits-char--class.md)   
+ [regex_traits\<char>](../vs140/regex_traits-char--class.md)   
  [regex_traits<wchar_t>](../vs140/regex_traits-wchar_t--class.md)

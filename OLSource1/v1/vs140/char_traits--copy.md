@@ -89,7 +89,7 @@ int main( )
 **The destination string is: ABCD-1234**  
 **The result1 = copy ( s1 , s2 , 4 ) is: ABCD-1234-abcd**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

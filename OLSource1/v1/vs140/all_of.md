@@ -56,7 +56,7 @@ template<class InputIterator, class Predicate>
  The template function returns `true` only if, for each `N` in the range `[0, _Last - _First)`, the predicate `_Comp(*(_First + N))` is `true`.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

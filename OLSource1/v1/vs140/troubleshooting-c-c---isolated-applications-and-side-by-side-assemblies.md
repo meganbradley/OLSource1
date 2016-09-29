@@ -41,7 +41,7 @@ Loading a C/C++ application can fail if dependent libraries cannot be found. Thi
   
 1.  Follow the steps that are described in [Understanding Dependencies of a Visual C++ Application](../vs140/understanding-the-dependencies-of-a-visual-c---application.md). The dependency walker can show most dependencies for an application or DLL. If you observe that some DLLs are missing, install them on the computer on which you are trying to run your application.  
   
-2.  The operating system loader uses the application manifest to load assemblies that the application depends on. The manifest can either be embedded in the binary as a resource, or installed as a separate file in the application folder. To check whether the manifest is embedded in the binary, open the binary in [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] and look for RT_MANIFEST in its list of resources. If you can't find an embedded manifest, look in the application folder for a file that's named something like <binary_name>.<extension\>.manifest.  
+2.  The operating system loader uses the application manifest to load assemblies that the application depends on. The manifest can either be embedded in the binary as a resource, or installed as a separate file in the application folder. To check whether the manifest is embedded in the binary, open the binary in [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] and look for RT_MANIFEST in its list of resources. If you can't find an embedded manifest, look in the application folder for a file that's named something like <binary_name>.\<extension>.manifest.  
   
 3.  If your application depends on side-by-side assemblies and a manifest is not present, you have to ensure that the linker generates a manifest for your project. Check the linker option **Generate manifest** in the **Project Properties** dialog box for the project.  
   
@@ -101,9 +101,9 @@ Loading a C/C++ application can fail if dependent libraries cannot be found. Thi
   
  However, the assembly can also be installed as a private side-by-side assembly in the installed application folder. If the operating system fails to find the assembly as a shared assembly, it looks for it as a private assembly, in the following order:  
   
-1.  Check the application folder for a manifest file that has the name <assemblyName\>.manifest. In this example, the loader tries to find Fabrikam.SxS.Library.manifest in the folder that contains appl.exe. If it finds the manifest, the loader loads the assembly from the application folder. If the assembly is not found, load fails.  
+1.  Check the application folder for a manifest file that has the name \<assemblyName>.manifest. In this example, the loader tries to find Fabrikam.SxS.Library.manifest in the folder that contains appl.exe. If it finds the manifest, the loader loads the assembly from the application folder. If the assembly is not found, load fails.  
   
-2.  Try to open the \\<assemblyName\>\ folder in the folder that contains appl.exe, and if \\<assemblyName\>\ exists, try to load a manifest file that has the name <assemblyName\>.manifest from this folder. If the manifest is found, the loader loads the assembly from the \\<assemblyName\>\ folder. If the assembly is not found, load fails.  
+2.  Try to open the \\\<assemblyName>\ folder in the folder that contains appl.exe, and if \\\<assemblyName>\ exists, try to load a manifest file that has the name \<assemblyName>.manifest from this folder. If the manifest is found, the loader loads the assembly from the \\\<assemblyName>\ folder. If the assembly is not found, load fails.  
   
  For more information about how the loader searches for dependent assemblies, see [Assembly Searching Sequence](http://msdn.microsoft.com/library/aa374224). If the loader fails to find a dependent assembly as a private assembly, load fails and the message "The system cannot execute the specified program" is displayed. To resolve this error, make sure that dependent assemblies—and DLLs that are part of them—are installed on the computer as either private or shared assemblies.  
   

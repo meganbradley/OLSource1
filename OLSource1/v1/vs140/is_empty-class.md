@@ -75,9 +75,9 @@ int main()
   
 ```  
   
-  **is_empty<trivial\> == false**  
-**is_empty<empty\> == true**  
-**is_empty<int\> == false**    
+  **is_empty\<trivial> == false**  
+**is_empty\<empty> == true**  
+**is_empty\<int> == false**    
 ## Requirements  
  **Header:** <type_traits>  
   

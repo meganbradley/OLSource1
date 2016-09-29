@@ -88,8 +88,8 @@ Visual C++ includes a C compiler that you can use to create everything from basi
  **Volume in drive C has no label.**  
  **Volume Serial Number is CC62-6545**  
  **Directory of C:\simple**  
-**10/02/2015  03:46 PM    <DIR\>          .**  
-**10/02/2015  03:46 PM    <DIR\>          ..**  
+**10/02/2015  03:46 PM    \<DIR>          .**  
+**10/02/2015  03:46 PM    \<DIR>          ..**  
 **10/02/2015  03:36 PM               143 simple.c**  
  **1 File(s)            143 bytes**  
  **2 Dir(s)  514,900,566,016 bytes free**     The dates and other details will differ on your computer. If you don't see your source code file, simple.c, make sure you've changed to the c:\simple directory you created, and in Notepad, make sure that you saved your source file in this directory. Also make sure that you saved the source code with a .c file name extension, not a .txt extension.  

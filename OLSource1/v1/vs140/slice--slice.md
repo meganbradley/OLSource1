@@ -95,7 +95,7 @@ int main( )
 **The slice of valarray va is vaResult:**  
 **va[slice( 1, 7, 3)] = ( 4 10 16 22 28 34 40 ).**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

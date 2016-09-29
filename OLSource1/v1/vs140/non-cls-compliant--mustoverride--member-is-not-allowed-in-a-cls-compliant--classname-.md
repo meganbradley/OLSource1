@@ -43,4 +43,4 @@ A class is marked as `<CLSCompliant(True)>`, but it contains a `MustOverride` pr
   
 ## See Also  
  [MustOverride](../vs140/mustoverride--visual-basic-.md)   
- [<PAVE OVER\> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)
+ [\<PAVE OVER> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)

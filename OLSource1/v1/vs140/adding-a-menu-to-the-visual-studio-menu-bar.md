@@ -43,13 +43,13 @@ This walkthrough shows how to add a menu to the menu bar of the Visual Studio in
   
 1.  In **Solution Explorer**, open TestCommandPackage.vsct.  
   
-     At the end of the file, there is a <Symbols\> node that contains several <GuidSymbol\> nodes. In the node named guidTestCommandPackageCmdSet, add a new symbol, as follows:  
+     At the end of the file, there is a \<Symbols> node that contains several \<GuidSymbol> nodes. In the node named guidTestCommandPackageCmdSet, add a new symbol, as follows:  
   
     ```xml  
     <IDSymbol name="TopLevelMenu" value="0x1021"/>  
     ```  
   
-2.  Create an empty <Menus\> node in the <Commands\> node, just before <Groups\>. In the <Menus\> node, add a <Menu\> node , as follows:  
+2.  Create an empty \<Menus> node in the \<Commands> node, just before \<Groups>. In the \<Menus> node, add a \<Menu> node , as follows:  
   
     ```xml  
     <Menus>  
@@ -70,7 +70,7 @@ This walkthrough shows how to add a menu to the menu bar of the Visual Studio in
   
      The value of the `CommandName` string specifies that the text should appear in the menu item.  
   
-3.  In the <Groups\> section, find the <Group\> and change the <Parent\> element to point to the menu we just added:  
+3.  In the \<Groups> section, find the \<Group> and change the \<Parent> element to point to the menu we just added:  
   
     ```c#  
     <Groups>  

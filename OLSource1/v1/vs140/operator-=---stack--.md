@@ -97,7 +97,7 @@ int main( )
  **The stack s1 is greater than the stack s2.**  
 **The stack s1 is less than or equal to the stack s3.**   
 ## Requirements  
- **Header:** <stack\>  
+ **Header:** \<stack>  
   
  **Namespace:** std  
   

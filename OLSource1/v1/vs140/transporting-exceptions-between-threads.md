@@ -245,7 +245,7 @@ DWORD WINAPI ThrowExceptions( LPVOID lpParam )
  **exception_ptr 0: Caught an invalid_argument exception.**  
 **exception_ptr 1: Caught a  myException exception.**   
 ## Requirements  
- **Header:** <exception\>  
+ **Header:** \<exception>  
   
 ## See Also  
  [Exception Handling in Visual C++](../vs140/exception-handling-in-visual-c--.md)   

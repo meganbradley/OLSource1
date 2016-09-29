@@ -51,10 +51,10 @@ struct param_type {
  This parameter package can be passed to [operator()](../vs140/discrete_distribution--operator--.md) to generate the return value.  
   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [discrete_distribution Class](../vs140/discrete_distribution-class.md)

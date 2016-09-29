@@ -40,7 +40,7 @@ namespace regex_constants {
  The namespace `regex_constants` encapsulates several flag types and their associated flag values.  
   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
@@ -164,5 +164,5 @@ static const syntax_option_type awk, basic, collate, ECMAScript,
  `collate` -- make matches locale-sensitive  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_constants](../vs140/regex_constants-class.md)

@@ -41,7 +41,7 @@ allocator_type;
 ```  
   
 ## Requirements  
- **Header:** <sstream\>  
+ **Header:** \<sstream>  
   
  **Namespace:** std  
   

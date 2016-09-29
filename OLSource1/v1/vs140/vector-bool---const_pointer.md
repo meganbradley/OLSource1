@@ -32,7 +32,7 @@ typedef const_iterator const_pointer;
 ```  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

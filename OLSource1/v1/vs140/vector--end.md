@@ -66,7 +66,7 @@ int main( )
  **1**  
 **2**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

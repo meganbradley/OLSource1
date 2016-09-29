@@ -213,7 +213,7 @@ virtual iter_type do_put(iter_type next, ios_base& iosbase,
  See the example for [put](../vs140/num_put--put.md), which calls `do_put`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

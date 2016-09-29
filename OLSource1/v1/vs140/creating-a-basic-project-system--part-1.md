@@ -257,7 +257,7 @@ In Visual Studio, projects are the containers that developers use to organize so
   
     1.  Unload the SimpleProject project (in **Solution Explorer**, select the project node and on the context menu click **Unload Project**.) and open the project file in the XML editor.  
   
-    2.  Add the following blocks to the project file (just above the <Import\> blocks). Set ProjectBasePath to the location of the ProjectBase.files file in the Managed Package Framework code you just downloaded. You might have to add a backslash to the pathname. If you do not, the project might fail to find the Managed Package Framework code.  
+    2.  Add the following blocks to the project file (just above the \<Import> blocks). Set ProjectBasePath to the location of the ProjectBase.files file in the Managed Package Framework code you just downloaded. You might have to add a backslash to the pathname. If you do not, the project might fail to find the Managed Package Framework code.  
   
         ```  
         <PropertyGroup>  
@@ -616,7 +616,7 @@ In Visual Studio, projects are the containers that developers use to organize so
   
 3.  Examine the values for the `nameSpace` and `className` parameters.  
   
-    -   `nameSpace` is given the value of the <RootNamespace\> element in the \Templates\Projects\SimpleProject\SimpleProject.myproj project template file. In this case, the value is "MyRootNamespace".  
+    -   `nameSpace` is given the value of the \<RootNamespace> element in the \Templates\Projects\SimpleProject\SimpleProject.myproj project template file. In this case, the value is "MyRootNamespace".  
   
     -   `className` is given the value of the class source file name, without the file name extension. In this case, the first file to be copied to the destination folder is AssemblyInfo.cs; therefore, the value of className is "AssemblyInfo".  
   

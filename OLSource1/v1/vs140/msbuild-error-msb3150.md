@@ -26,4 +26,4 @@ translation.priority.ht:
   
 ### To correct this error  
   
--   Go to **Control Panel**, select **Add or Remove Programs**, and repair the Visual Studio SDK, or copy the files to the appropriate directory (<SDK install path\>\bootstrapper\engine\\<culture\>\setup.xml).
+-   Go to **Control Panel**, select **Add or Remove Programs**, and repair the Visual Studio SDK, or copy the files to the appropriate directory (\<SDK install path>\bootstrapper\engine\\\<culture>\setup.xml).

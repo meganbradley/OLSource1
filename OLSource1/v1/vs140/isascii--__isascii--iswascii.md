@@ -85,8 +85,8 @@ int iswascii(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`isascii`, `__isascii`|C: <ctype.h><br /><br /> C++: <cctype\> or <ctype.h>|  
-|`iswascii`|C: <wctype.h>, <ctype.h>, or <wchar.h><br /><br /> C++: <cwctype\>, <cctype\>, <wctype.h>, <ctype.h>, or <wchar.h>|  
+|`isascii`, `__isascii`|C: <ctype.h><br /><br /> C++: \<cctype> or <ctype.h>|  
+|`iswascii`|C: <wctype.h>, <ctype.h>, or <wchar.h><br /><br /> C++: \<cwctype>, \<cctype>, <wctype.h>, <ctype.h>, or <wchar.h>|  
   
  The `isascii`, `__isascii` and `iswascii` functions are Microsoft specific. For additional compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

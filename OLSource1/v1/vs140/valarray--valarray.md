@@ -105,7 +105,7 @@ valarray(
   
 -   For `valarray(const Type* Ptr, Count)`, the element at position `I` is initialized with `Ptr`[`I`].  
   
- Each remaining constructor initializes the object to a valarray<Type\> object determined by the subset specified in the argument.  
+ Each remaining constructor initializes the object to a valarray\<Type> object determined by the subset specified in the argument.  
   
  The last constructor is the same as the next to last, but with an [rvalue reference](../vs140/rvalue-reference-declarator----.md).  
   
@@ -157,7 +157,7 @@ int main()
   
  **The operand valarray va is:( 0 2 2 2 2 2 2 2 2 2 )The new valarray initialized from the slice is vaSlice =va[slice( 2, 4, 3)] = ( 0 0 0 )1 2 3 4**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

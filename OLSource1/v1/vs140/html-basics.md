@@ -46,7 +46,7 @@ Most browsers have the capability of examining the HTML source of the pages you 
   
      Notice the tags are paired and are included in angle brackets. Tags are not case-sensitive, but capitalization is often used to make tags stand out.  
   
-     The tag <HTML\> starts the document, and the tag </HTML\> ends it. Ending tags (not always required) are the same as the starting tag, but have a forward slash (/) in front of the tag. There should be no spaces between the angle bracket (<) and the start of your tag.  
+     The tag \<HTML> starts the document, and the tag </HTML\> ends it. Ending tags (not always required) are the same as the starting tag, but have a forward slash (/) in front of the tag. There should be no spaces between the angle bracket (<) and the start of your tag.  
   
 6.  Switch back to Notepad, and after the </HEAD\> line, type:  
   
@@ -63,7 +63,7 @@ Most browsers have the capability of examining the HTML source of the pages you 
   
      The words will appear in the client area of your browser's window. Notice that your carriage return is ignored. If you want to have a line break, you must include a `<BR>` tag after the first line.  
   
-     For all the steps that follow, insert the text anywhere between <BODY\> and </BODY\> to add to the body of your document.  
+     For all the steps that follow, insert the text anywhere between \<BODY> and </BODY\> to add to the body of your document.  
   
 9. Add a header:  
   
@@ -87,7 +87,7 @@ Most browsers have the capability of examining the HTML source of the pages you 
     </UL>  
     ```  
   
-12. To number the list instead, use paired <OL\> and </OL\> tags in place of the <UL\> and </UL\> tags.  
+12. To number the list instead, use paired \<OL> and </OL\> tags in place of the \<UL> and </UL\> tags.  
   
  That should get you started. If you see a great feature on a Web page, you can find out how it was created by examining the HTML source. HTML editors such as Microsoft Front Page can be used to create both simple and advanced pages.  
   

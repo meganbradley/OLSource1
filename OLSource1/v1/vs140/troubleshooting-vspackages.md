@@ -67,7 +67,7 @@ Following are common problems that you might have with your VSPackage and tips t
   
     1.  Find the CLSID of the VSPackage in the Packages section of the registry:  
   
-         HKLM\Software\Microsoft\Visual Studio\\*<version\>*\Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<version>*\Packages  
   
     2.  Verify that the path given by the SatelliteDll subkey is correct.  
   
@@ -120,7 +120,7 @@ Following are common problems that you might have with your VSPackage and tips t
   
 2.  For unmanaged code, find the CLSID of the VSPackage in the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] CLSID registry node:  
   
-     HKLM\Software\Microsoft\Visual Studio\\*<version\>*\CLSID  
+     HKLM\Software\Microsoft\Visual Studio\\*\<version>*\CLSID  
   
  Make sure that the InprocServer32 entry has the correct path of the VSPackage dll.  
   

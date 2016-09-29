@@ -46,7 +46,7 @@ Once you have created a new MFC control class, you can define message handlers f
   
 6.  Select the reflected message for which you want to define a handler. Reflected messages are marked with an equal sign (=).  
   
-7.  Click the cell in the right column in the Properties window to display the suggested name of the handler as <add\>*HandlerName*. (For example, the **=WM_CTLCOLOR** message handler suggests <add\>**CtlColor**).  
+7.  Click the cell in the right column in the Properties window to display the suggested name of the handler as \<add>*HandlerName*. (For example, the **=WM_CTLCOLOR** message handler suggests \<add>**CtlColor**).  
   
 8.  Click the suggested name to accept. The handler is added to your project.  
   

@@ -59,7 +59,7 @@ Calls [seekoff](../vs140/basic_streambuf--seekoff.md), a protected virtual funct
  Moves the pointer relative to `_Way`.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

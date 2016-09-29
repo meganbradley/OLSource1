@@ -55,10 +55,10 @@ template<class InputIterator, class OutputIterator>
  The template function evaluates `*(``_Dest` `+ N) =` [move](assetId:///bfa07080-5187-4aa7-87b5-d2d2a3fc65ab)`(*(``_First` `+ N)))` once for each `N` in the range `[0,` `_Last` `-` `_First``)`, for strictly increasing values of `N` starting with the lowest value. It then returns `_Dest` `+ N`. If `_Dest`and `_First` designate regions of storage, `_Dest` must not be in the range `[``_First``,` `_Last``)`.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
 ## See Also  
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

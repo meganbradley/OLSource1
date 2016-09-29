@@ -47,7 +47,7 @@ typedef key_compare value_compare;
  See the example for [value_comp](../vs140/set--value_comp.md) for an example of how to declare and use `value_compare`.  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

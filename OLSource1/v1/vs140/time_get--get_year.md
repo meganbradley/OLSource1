@@ -107,7 +107,7 @@ int main( )
  **time_get::get_year(1928) =**  
 **tm_year: 28**   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

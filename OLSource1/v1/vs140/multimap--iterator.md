@@ -49,7 +49,7 @@ typedef implementation-defined iterator;
  See the example for [begin](../vs140/multimap--begin.md) for an example of how to declare and use **iterator**.  
   
 ## Requirements  
- **Header:** <map\>  
+ **Header:** \<map>  
   
  **Namespace:** std  
   

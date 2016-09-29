@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # vector&lt;bool&gt;::reference::flip
-Inverts the Boolean value of a referenced [vector<bool\>](../vs140/vector-bool--class.md) element.  
+Inverts the Boolean value of a referenced [vector\<bool>](../vs140/vector-bool--class.md) element.  
   
 ## Syntax  
   
@@ -74,10 +74,10 @@ The vector with first element flipped is:
 ```  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   
 ## See Also  
- [vector<bool\>::reference Class](../vs140/vector-bool---reference-class.md)   
+ [vector\<bool>::reference Class](../vs140/vector-bool---reference-class.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

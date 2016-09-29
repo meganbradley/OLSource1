@@ -85,7 +85,7 @@ int main() {
  **checked_array_iterators are equal**  
 **checked_array_iterators are not equal**   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** stdext  
   

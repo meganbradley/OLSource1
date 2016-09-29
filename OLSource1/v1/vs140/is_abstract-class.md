@@ -74,8 +74,8 @@ int main()
   
 ```  
   
-  **is_abstract<trivial\> == false**  
-**is_abstract<abstract\> == true**    
+  **is_abstract\<trivial> == false**  
+**is_abstract\<abstract> == true**    
 ## Requirements  
  **Header:** <type_traits>  
   

@@ -56,7 +56,7 @@ int main( )
   
  **44**   
 ## Requirements  
- **Header:** <deque\>  
+ **Header:** \<deque>  
   
  **Namespace:** std  
   

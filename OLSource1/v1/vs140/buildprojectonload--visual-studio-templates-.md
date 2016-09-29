@@ -24,9 +24,9 @@ translation.priority.ht:
 # BuildProjectOnLoad (Visual Studio Templates)
 Specifies whether to build the project immediately after it's created.  
   
- <VSTemplate\>  
- <TemplateData\>  
- <BuildProjectOnLoad\>  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<BuildProjectOnLoad>  
   
 ## Syntax  
   

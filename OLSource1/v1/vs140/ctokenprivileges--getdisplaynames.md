@@ -41,7 +41,7 @@ Retrieves display names for the privileges contained in the `CTokenPrivileges` a
   
 #### Parameters  
  `pDisplayNames`  
- A pointer to an array of `CString` objects. **CNames** is defined as a typedef: **CTokenPrivileges::CAtlArray<CString\>**.  
+ A pointer to an array of `CString` objects. **CNames** is defined as a typedef: **CTokenPrivileges::CAtlArray\<CString>**.  
   
 ## Remarks  
  The parameter `pDisplayNames` is a pointer to an array of `CString` objects which will receive the display names corresponding to the privileges contained in the `CTokenPrivileges` object. This method retrieves display names only for the privileges specified in the Defined Privileges section of WINNT.H.  

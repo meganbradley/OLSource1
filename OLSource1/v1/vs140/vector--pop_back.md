@@ -40,7 +40,7 @@ void pop_back( );
  For a code example, see [vector::push_back()](../vs140/vector--push_back.md).  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

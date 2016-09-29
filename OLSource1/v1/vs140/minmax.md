@@ -81,7 +81,7 @@ template<class Type, class BinaryPredicate>
  The function performs exactly one comparison.  
   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   
@@ -91,5 +91,5 @@ template<class Type, class BinaryPredicate>
  [min_element](../vs140/min_element.md)   
  [max](../vs140/max.md)   
  [max_element](../vs140/max_element.md)   
- [<algorithm\>](../vs140/-algorithm-.md)   
+ [\<algorithm>](../vs140/-algorithm-.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

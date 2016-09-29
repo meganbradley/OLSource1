@@ -71,7 +71,7 @@ int main( )
  **The first element of vector is 1.**  
 **The first element of the reversed vector is 2.**   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

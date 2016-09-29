@@ -48,4 +48,4 @@ inline void atomic_flag_clear_explicit(
  **Namespace:** std  
   
 ## See Also  
- [<atomic\>](../vs140/-atomic-.md)
+ [\<atomic>](../vs140/-atomic-.md)

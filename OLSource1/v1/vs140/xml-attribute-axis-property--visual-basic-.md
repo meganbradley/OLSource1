@@ -66,7 +66,7 @@ object.@<attribute>
   
  When you refer to an XML attribute using the @ identifier, the attribute value is returned as a string and you do not need to explicitly specify the <xref:System.Xml.Linq.XAttribute.Value*> property.  
   
- The naming rules for XML attributes differ from the naming rules for [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] identifiers. To access an XML attribute that has a name that is not a valid Visual Basic identifier, enclose the name in angle brackets (< and >).  
+ The naming rules for XML attributes differ from the naming rules for [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] identifiers. To access an XML attribute that has a name that is not a valid Visual Basic identifier, enclose the name in angle brackets (\< and >).  
   
 ## XML Namespaces  
  The name in an attribute axis property can use only XML namespace prefixes declared globally by using the `Imports` statement. It cannot use XML namespace prefixes declared locally within XML element literals. For more information, see [Imports Statement (XML Namespace Prefix)](../vs140/imports-statement--xml-namespace-.md).  

@@ -54,7 +54,7 @@ type uflow( );
  If the function cannot succeed, it returns **traits_type::**[eof](../vs140/char_traits--eof.md), or throws an exception. Otherwise, it returns the current element `ch` in the input stream, converted as described above, and advances the next pointer for the input buffer. The default behavior is to call [underflow](../vs140/basic_streambuf--underflow.md) and, if that function returns **traits_type::eof**, to return **traits_type::eof**. Otherwise, the function returns the current element **ch** in the input stream, converted as previously described, and advances the next pointer for the input buffer.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

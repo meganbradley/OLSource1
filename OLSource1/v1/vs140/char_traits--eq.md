@@ -88,7 +88,7 @@ int main( )
  **The character ch1 is not equal to the character ch2.**  
 **The character ch1 is equal to the character ch3.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

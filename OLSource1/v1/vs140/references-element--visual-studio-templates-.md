@@ -24,9 +24,9 @@ translation.priority.ht:
 # References Element (Visual Studio Templates)
 Groups the assembly references that the template adds to projects.  
   
- <VSTemplate\>  
- <TemplateContent\>  
- <References\>  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<References>  
   
 ## Syntax  
   

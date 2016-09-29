@@ -89,7 +89,7 @@ int main( )
 **1.95424**  
 **2**   
 ## Requirements  
- **Header:** <valarray\>  
+ **Header:** \<valarray>  
   
  **Namespace:** std  
   

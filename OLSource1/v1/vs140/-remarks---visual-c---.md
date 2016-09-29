@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;remarks&gt; (Visual C++)
-The <remarks\> tag is used to add information about a type, supplementing the information specified with [<summary\>](../vs140/-summary---visual-c---.md). This information is displayed in the [Object Browser](assetId:///f89acfc5-1152-413d-9f56-3dc16e3f0470) and in the Code Comment Web Report.  
+The \<remarks> tag is used to add information about a type, supplementing the information specified with [\<summary>](../vs140/-summary---visual-c---.md). This information is displayed in the [Object Browser](assetId:///f89acfc5-1152-413d-9f56-3dc16e3f0470) and in the Code Comment Web Report.  
   
 ## Syntax  
   

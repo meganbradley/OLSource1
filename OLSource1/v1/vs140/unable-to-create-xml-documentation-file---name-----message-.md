@@ -31,13 +31,13 @@ The XML documentation file cannot be created due to an error.
   
 -   [XML comment tag 'returns' is not permitted on a 'WriteOnly' Property](../vs140/xml-comment-tag--returns--is-not-permitted-on-a--writeonly--property.md).  
   
--   [XML comment cannot be applied more than once on a partial <type\>](../vs140/xml-comment-cannot-be-applied-more-than-once-on-a-partial--type-.md).  
+-   [XML comment cannot be applied more than once on a partial \<type>](../vs140/xml-comment-cannot-be-applied-more-than-once-on-a-partial--type-.md).  
   
 -   [XML comment tag 'returns' is not permitted on a 'declare sub' language element](../vs140/xml-comment-tag--returns--is-not-permitted-on-a--declare-sub--language-element.md).  
   
--   [XML documentation parse error: Start tag '<tag\>' doesn't have a matching end tag](../vs140/xml-documentation-parse-error--start-tag---tag---doesn-t-have-a-matching-end-tag.md).  
+-   [XML documentation parse error: Start tag '\<tag>' doesn't have a matching end tag](../vs140/xml-documentation-parse-error--start-tag---tag---doesn-t-have-a-matching-end-tag.md).  
   
--   [XML comment type parameter <parameter\> does not match a type parameter on the corresponding <keyword\> statement](../vs140/xml-comment-type-parameter--parameter--does-not-match-a-type-parameter-on-the-corresponding--keyword--statement.md).  
+-   [XML comment type parameter \<parameter> does not match a type parameter on the corresponding \<keyword> statement](../vs140/xml-comment-type-parameter--parameter--does-not-match-a-type-parameter-on-the-corresponding--keyword--statement.md).  
   
 -   [XML comment type parameter must have a 'name' attribute](../vs140/xml-comment-type-parameter-must-have-a--name--attribute.md).  
   

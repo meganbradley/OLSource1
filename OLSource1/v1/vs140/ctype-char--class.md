@@ -129,7 +129,7 @@ protected:
  The member functions [do_narrow](../vs140/ctype-class.md#ctype__do_narrow) and [do_widen](../vs140/ctype-class.md#ctype__do_widen) copy elements unaltered.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

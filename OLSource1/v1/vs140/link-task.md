@@ -137,7 +137,7 @@ Wraps the Visual C++ linker tool, link.exe. The linker tool links Common Object 
   
      Specify one of the following values, each of which corresponds to a linker option.  
   
-    -   **Default** - *<none\>*  
+    -   **Default** - *\<none>*  
   
     -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
   
@@ -237,7 +237,7 @@ Wraps the Visual C++ linker tool, link.exe. The linker tool links Common Object 
   
      Specify one of the following values, each of which corresponds to a linker option.  
   
-    -   **NotSet** - *<none\>*  
+    -   **NotSet** - *\<none>*  
   
     -   **Driver** - **/Driver**  
   
@@ -487,7 +487,7 @@ Wraps the Visual C++ linker tool, link.exe. The linker tool links Common Object 
   
      Specify one of the following values, each of which corresponds to a command-line option.  
   
-    -   **Default** - *<none\>*  
+    -   **Default** - *\<none>*  
   
     -   **UseLinkTimeCodeGeneration** - **/LTCG**  
   
@@ -681,7 +681,7 @@ Wraps the Visual C++ linker tool, link.exe. The linker tool links Common Object 
   
      Specify one of the following values, each of which corresponds to a command-line option.  
   
-    -   **NotSet** - *<none\>*  
+    -   **NotSet** - *\<none>*  
   
     -   **LinkVerbose** - **/VERBOSE**  
   
@@ -743,7 +743,7 @@ Wraps the Visual C++ linker tool, link.exe. The linker tool links Common Object 
   
      Specify one of the following values, each of which corresponds to a command-line option.  
   
-    -   **NotSet** - *<none\>*  
+    -   **NotSet** - *\<none>*  
   
     -   **Console** - **/SUBSYSTEM:CONSOLE**  
   
@@ -813,7 +813,7 @@ Wraps the Visual C++ linker tool, link.exe. The linker tool links Common Object 
   
      Specify one of the following values, each of which corresponds to a command-line option.  
   
-    -   **NotSet** - *<none\>*  
+    -   **NotSet** - *\<none>*  
   
     -   **MachineARM** - **/MACHINE:ARM**  
   

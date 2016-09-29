@@ -46,7 +46,7 @@ typedef Allocator allocator_type;
  See the example for [get_allocator](../vs140/set--get_allocator.md) for an example that uses `allocator_type`.  
   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

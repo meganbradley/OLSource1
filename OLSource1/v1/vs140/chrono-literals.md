@@ -18,7 +18,7 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # chrono literals
-(C++14) The <chrono\> header defines 12 [user-defined literals](../vs140/user-defined-literals---c---.md) to facilitate using literals that represent hours, minutes, seconds, milliseconds, microseconds, and nanoseconds. Each user-defined literal has an integral and a floating-point overload. The literals are defined in the literals::chrono_literals inline namespace which is brought into scope automatically when std::chrono is in scope.  
+(C++14) The \<chrono> header defines 12 [user-defined literals](../vs140/user-defined-literals---c---.md) to facilitate using literals that represent hours, minutes, seconds, milliseconds, microseconds, and nanoseconds. Each user-defined literal has an integral and a floating-point overload. The literals are defined in the literals::chrono_literals inline namespace which is brought into scope automatically when std::chrono is in scope.  
   
 ## Syntax  
   
@@ -84,9 +84,9 @@ constexpr auto my_duration_unit = 108ms;
 ```  
   
 ## Requirements  
- **Header**: <chrono\>  
+ **Header**: \<chrono>  
   
  **Namespace**: std::literals::chrono_literals  
   
 ## See Also  
- [<chrono\>](../vs140/-chrono-.md)
+ [\<chrono>](../vs140/-chrono-.md)

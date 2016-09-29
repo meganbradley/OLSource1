@@ -90,7 +90,7 @@ int main( )
 **After sorting c1 = 10 20 30**  
 **After sorting with 'greater than' operation, c1 = 30 20 10**   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

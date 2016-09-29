@@ -155,10 +155,7 @@ IMyInterface iface = new MyClass();
 ## Generic Types  
  A type can be declared with one or more *type parameters* that serve as a placeholder for the actual type (the *concrete type*) that client code will provide when it creates an instance of the type. Such types are called *generic types*. For example, the .NET Framework type <xref:System.Collections.Generic.List`1*?displayProperty=fullName> has one type parameter that by convention is given the name *T*. When you create an instance of the type, you specify the type of the objects that the list will contain, for example, string:  
   
-```c#  
-List<string> strings = new List<string>();  
-```  
-  
+<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
  The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](../vs140/object--csharp-reference-.md). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `strings` object in the previous example. For more information, see [Generics (C# Programming Guide)](../vs140/generics--csharp-programming-guide-.md).  
   
 ## Implicit Types, Anonymous Types, and Nullable Types  

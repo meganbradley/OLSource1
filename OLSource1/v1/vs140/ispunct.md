@@ -101,6 +101,6 @@ The character '*' in the locale is a punctuation character.
 ```  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std

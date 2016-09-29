@@ -100,7 +100,7 @@ int main( )
  **vc1( 2,3 ) returns value of true, where vc1 is the function object of ms1.**  
 **vc2( 2,3 ) returns value of false, where vc2 is the function object of ms2.**   
 ## Requirements  
- **Header:** <set\>  
+ **Header:** \<set>  
   
  **Namespace:** std  
   

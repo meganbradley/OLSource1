@@ -51,7 +51,7 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
 3.  Select the **Sign the assembly** box.  
   
-4.  Select **<New\>** from the **Choose a strong name key file** drop-down list.  
+4.  Select **\<New>** from the **Choose a strong name key file** drop-down list.  
   
      The **Create Strong Name Key** dialog box opens.  
   
@@ -68,7 +68,7 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
  The format of a strongly named type is as follows.  
   
- <type name\>, <assembly name\>, <version number\>, <culture\>, <strong name\>  
+ \<type name>, \<assembly name>, \<version number>, \<culture>, \<strong name>  
   
 #### To determine the strong name of the listener  
   

@@ -41,4 +41,4 @@ A custom event declares an `AddHandler` or `RemoveHandler` procedure and marks i
  [How to: Declare Events That Avoid Blocking](../vs140/how-to--declare-custom-events-to-avoid-blocking--visual-basic-.md)   
  [How to: Declare Events That Conserve Memory Use](../vs140/how-to--declare-custom-events-to-conserve-memory--visual-basic-.md)   
  [NOT IN BUILD:AddHandler and RemoveHandler](assetId:///a7a24bd2-519a-46fe-8a2c-2b9df2ca28ef)   
- [<PAVE OVER\> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)
+ [\<PAVE OVER> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)

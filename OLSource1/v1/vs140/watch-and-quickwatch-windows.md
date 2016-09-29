@@ -215,7 +215,7 @@ public class Program
 >  If you want to see the object’s properties, such as `Person.Name` in the example above, you must have enabled property evaluation .  
   
 ## Using registers in the Watch window (C++ only)  
- If you are debugging native code, you can add register names as well as variable names using **$<register name\>** or **@<register name\>**.  For more information, see [Pseudovariables](../vs140/pseudovariables.md).  
+ If you are debugging native code, you can add register names as well as variable names using **$\<register name>** or **@\<register name>**.  For more information, see [Pseudovariables](../vs140/pseudovariables.md).  
   
 ## DynamicView and the Watch window  
  Some scripting languages (e.g. JavaScript or Python) use dynamic or [duck typing](https://en.wikipedia.org/wiki/Duck_typing), and .NET languages (in version 4.0 and later) support objects that are difficult to observe using the normal debugging windows, because they may have runtime properties and methods that cannot be displayed.  

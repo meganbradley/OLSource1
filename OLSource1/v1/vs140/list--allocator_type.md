@@ -42,7 +42,7 @@ typedef Allocator allocator_type;
  See the example for [get_allocator](../vs140/list--get_allocator.md).  
   
 ## Requirements  
- **Header:** <list\>  
+ **Header:** \<list>  
   
  **Namespace:** std  
   

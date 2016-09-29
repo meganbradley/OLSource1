@@ -43,7 +43,7 @@ type;
  The type is a synonym for the template parameter **InputIterator**.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

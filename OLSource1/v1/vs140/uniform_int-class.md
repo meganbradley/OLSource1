@@ -28,6 +28,6 @@ translation.priority.mt:
   - "ja-jp"
 ---
 # uniform_int Class
-This class is deprecated. See [<random\>](../vs140/-random-.md).  
+This class is deprecated. See [\<random>](../vs140/-random-.md).  
   
 ## Syntax

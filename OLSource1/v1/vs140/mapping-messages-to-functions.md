@@ -41,13 +41,13 @@ The Properties window enables you to bind message handlers (member functions of 
   
      If your project has a handler for a message, then the name of the handler appears in the right column next to the message.  
   
-3.  If the message has no handler, then click the cell in the right column in the Properties window to display the suggested name of the handler as <add\>*HandlerName*. (For example, the `WM_TIMER` message handler suggests <add\>`OnTimer`).  
+3.  If the message has no handler, then click the cell in the right column in the Properties window to display the suggested name of the handler as \<add>*HandlerName*. (For example, the `WM_TIMER` message handler suggests \<add>`OnTimer`).  
   
 4.  Click the suggested name to add stub code for the function.  
   
 5.  To edit a message handler, double-click the message in Class View and edit the code in the source window.  
   
- To remove a message handler, double-click the handler in the right column and select <delete\>*HandlerName*. The function's code is commented out.  
+ To remove a message handler, double-click the handler in the right column and select \<delete>*HandlerName*. The function's code is commented out.  
   
 ## See Also  
  [MFC Message Handler](../vs140/adding-an-mfc-message-handler.md)   

@@ -69,7 +69,7 @@ int main()
   
 ```  
   
-  **remove_extent_t<int\> == int**  
+  **remove_extent_t\<int> == int**  
 **remove_extent_t<int[5]> == int**  
 **remove_extent_t<int[5][10]> == int [10]**    
 ## Requirements  

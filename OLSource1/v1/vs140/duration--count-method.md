@@ -39,4 +39,4 @@ constexpr Rep count() const;
   
 ## See Also  
  [duration Class](../vs140/duration-class.md)   
- [<chrono\>](../vs140/duration--count-method.md)
+ [\<chrono>](../vs140/duration--count-method.md)

@@ -59,7 +59,7 @@ protected:
 -   **noconv** if the function performs no conversion.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

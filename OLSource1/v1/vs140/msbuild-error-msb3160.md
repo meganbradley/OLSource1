@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3160
-**MSB3160: Xml Validation warning in file '<file\>': '<error\>'**  
+**MSB3160: Xml Validation warning in file '\<file>': '\<error>'**  
   
  This warning is generated when the product or package.xml file does not conform to the XML schema. The latter part of this warning is a specific warning message.  
   

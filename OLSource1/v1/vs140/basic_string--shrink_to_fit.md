@@ -39,10 +39,10 @@ void shrink_to_fit();
  This member function eliminates any unneeded storage in the container.  
   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   
 ## See Also  
  [basic_string Class](../vs140/basic_string-class.md)   
- [<string\>](../vs140/-string-.md)
+ [\<string>](../vs140/-string-.md)

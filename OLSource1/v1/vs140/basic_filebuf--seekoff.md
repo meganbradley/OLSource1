@@ -64,7 +64,7 @@ Tries to alter the current positions for the controlled streams.
  If the file pointer **fp** is a null pointer, the function fails. Otherwise, it endeavors to alter the stream position by calling `fseek`(**fp**, `_Off`, `_Way`). If that function succeeds and the resulting position **fposn** can be determined by calling `fgetpos`(**fp**, **&fposn**), the function succeeds. If the function succeeds, it returns a value of type **pos_type** containing **fposn**. Otherwise, it returns an invalid stream position.  
   
 ## Requirements  
- **Header:** <fstream\>  
+ **Header:** \<fstream>  
   
  **Namespace:** std  
   

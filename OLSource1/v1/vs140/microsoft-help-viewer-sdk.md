@@ -311,13 +311,13 @@ some F# code
   
     -   For 32-bit operating systems:  
   
-         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner*\\<namespace\>*  
+         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner*\\\<namespace>*  
   
          "location"=”offline”  
   
     -   For 64-bit operating systems:  
   
-         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner*\\<namespace\>*  
+         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner*\\\<namespace>*  
   
          "location"=”offline”  
   
@@ -353,7 +353,7 @@ some F# code
 |--------------------------------------|-----------------|  
 |< meta name="Microsoft.Help.Locale" content="[language-code]" />|Sets a locale for this topic. If this tag is used in a topic, it must be used just once and it must be inserted above any other Microsoft Help tags. If this tag is not used, the body text of the topic is indexed by using word breaker that is associated with the product locale, if it is specified; otherwise, the en-us word breaker is used. This tag conforms to ISOC RFC 4646. To ensure that Microsoft Help works correctly, use this property instead of the general Language attribute.|  
 |< meta name="Microsoft.Help.TopicLocale" content="[language-code]" />|Sets a locale for this topic when other locales are also used. If this tag is used in a topic, it must be used just once. Use this tag when the catalog contains content in more than one language. Multiple topics in a catalog can have the same ID, but each must specify a unique TopicLocale. The topic that specifies a TopicLocale that matches the locale of the catalog is the the topic that is displayed in the table of contents. However, all language versions of the topic are displayed in Search results.|  
-|< title>[Title]</title\>|Specifies the title of this topic. This tag is required, and must be used just once in a topic. If the body of the topic does not contain a title <div\> section, this Title is displayed in the topic and in the table of contents.|  
+|\< title>[Title]</title\>|Specifies the title of this topic. This tag is required, and must be used just once in a topic. If the body of the topic does not contain a title \<div> section, this Title is displayed in the topic and in the table of contents.|  
 |< meta name=" Microsoft.Help.Keywords" content="[aKeywordPhrase]"/>|Specifies the text of a link that is displayed in the index pane of the Help Viewer. When the link is clicked, the topic is displayed.You can specify multiple index keywords for a topic, or you can omit this tag if you do not want links to this topic to appear in the index. "K" keywords from earlier versions of Help can be converted to this property.|  
 |< meta name="Microsoft.Help.Id" content="[TopicID]"/>|Sets the identifier for this topic. This tag is required, and must be used just once in a topic. The ID must be unique among topics in the catalog that have the same locale setting. In another topic, you can create a link to this topic by using this ID.|  
 |< meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/>|Specifies the F1 keyword for this topic. You can specify multiple F1 keywords for a topic, or you can omit this tag if you do not want this topic to be displayed when an application user presses F1. Typically, just one F1 keyword is specified for a topic. "F" keywords from earlier versions of Help can be converted to this property.|  
@@ -371,7 +371,7 @@ some F# code
   
  Branding packages are installed by the product containing the Help Viewer.  For Visual Studio products:  
   
--   A fallback branding package (Branding_<locale\>.mshc) is installed in the Help Viewer 2.1 app root (example: C:\Program Files (x86)\Microsoft Help Viewer\v2.1) by the Help Viewer language pack.  This is used for cases where either the product branding package is not installed (no content has been installed) or where the installed branding package is corrupted.  Note that the Visual Studio elements (logo and Feedback) are ignored when the app root fallback branding package is used.  
+-   A fallback branding package (Branding_\<locale>.mshc) is installed in the Help Viewer 2.1 app root (example: C:\Program Files (x86)\Microsoft Help Viewer\v2.1) by the Help Viewer language pack.  This is used for cases where either the product branding package is not installed (no content has been installed) or where the installed branding package is corrupted.  Note that the Visual Studio elements (logo and Feedback) are ignored when the app root fallback branding package is used.  
   
 -   When Visual Studio content is installed from the content package service, a branding package is also installed (for the first time content installation scenario).  If there is an update to the branding package, the update is installed when the next content update or additional package install action happens.  
   
@@ -381,7 +381,7 @@ some F# code
   
 -   Where topic metadata defines self branded = false, use the branding package associated with TopicVendor metadata value.  
   
--   Where topic metadata defines name="Microsoft.Help.TopicVendor” content=< branding package name in vendor MSHA>, use the branding package defined in the content value.  
+-   Where topic metadata defines name="Microsoft.Help.TopicVendor” content=\< branding package name in vendor MSHA>, use the branding package defined in the content value.  
   
 -   Note that within the Visual Studio catalog, there is a priority application of Branding Packages.  First Visual Studio default branding is applied, and then, if defined in the topic metadata and supported with the associated branding package (as defined in the installation msha), the vendor defined branding is applied as an override.  
   
@@ -409,7 +409,7 @@ some F# code
   
 -   Branding.js – script files supporting content behaviors  
   
--   Branding.xml – strings that are consistently used across catalog content.  Note: for Visual Studio localization text elements in the branding.xml, include _locID="<unique value\>"  
+-   Branding.xml – strings that are consistently used across catalog content.  Note: for Visual Studio localization text elements in the branding.xml, include _locID="\<unique value>"  
   
 -   Branding.css – style definitions for presentation consistency  
   
@@ -421,7 +421,7 @@ some F# code
   
 -   Or when SelfBranded = false and there is a unique Branding Package defined in the MSHA and available when the content is installed  
   
- For VSPs implementing custom branding packages (VSP content, SelfBranded=True), one way to proceed is to start with the fallback branding package (installed with the Help Viewer), and change the name of the file as appropriate.  The Branding_<locale\>.mshc file is a zip file with the file extension changed to .mshc, so simply change the extension from .mshc to .zip and extract the contents.  See below for branding package elements and modify as appropriate (for example, change the logo to the VSP logo and the reference to the logo in the Branding.xml file, update Branding.xml per VSP specifics, etc.).  
+ For VSPs implementing custom branding packages (VSP content, SelfBranded=True), one way to proceed is to start with the fallback branding package (installed with the Help Viewer), and change the name of the file as appropriate.  The Branding_\<locale>.mshc file is a zip file with the file extension changed to .mshc, so simply change the extension from .mshc to .zip and extract the contents.  See below for branding package elements and modify as appropriate (for example, change the logo to the VSP logo and the reference to the logo in the Branding.xml file, update Branding.xml per VSP specifics, etc.).  
   
  When all modifications are done, create a zip file containing the desired branding elements and change the extension to .mshc.  
   
@@ -479,36 +479,36 @@ some F# code
 |MultiMediaNotSupported|Internet Explorer 9 or greater must be installed to support {0} content.|  
 |VideoText|displaying video|  
 |AudioText|streaming audio|  
-|OnlineVideoLinkText|<p\>To view the video associated with this topic, click {0}<a href="{1}"\>{2}here</a\>.</p\>|  
-|OnlineAudioLinkText|<p\>To listen to the audio associated with this topic, click {0}<a href="{1}"\>{2}here</a\>.</p\>|  
+|OnlineVideoLinkText|\<p>To view the video associated with this topic, click {0}<a href="{1}"\>{2}here</a\>.</p\>|  
+|OnlineAudioLinkText|\<p>To listen to the audio associated with this topic, click {0}<a href="{1}"\>{2}here</a\>.</p\>|  
 |Feature:|**Content Not Installed control**|  
 |Use:|Text elements (strings) used for the rendering of contentnotinstalled.htm|  
 |**Element**|**Value**|  
 |ContentNotInstalledTitle|No content was found on your computer.|  
-|ContentNotInstalledDownloadContentText|<p\>To download content to your computer, <a href="{0}" {1}>click the Manage tab</a\>.</p\>|  
-|ContentNotInstalledText|<p\>No content is installed on your computer. Please see your Administrator for local Help content installation.</p\>|  
+|ContentNotInstalledDownloadContentText|\<p>To download content to your computer, <a href="{0}" {1}>click the Manage tab</a\>.</p\>|  
+|ContentNotInstalledText|\<p>No content is installed on your computer. Please see your Administrator for local Help content installation.</p\>|  
 |Feature:|**Topic Not Found control**|  
 |Use:|Text elements (strings) used for the rendering of topicnotfound.htm|  
 |**Element**|**Value**|  
 |TopicNotFoundTitle|Cannot find requested topic on your computer.|  
-|TopicNotFoundViewOnlineText|<p\>The topic you requested was not found on your computer, but you can <a href="{0}" {1}>view the topic online</a\>.</p\>|  
-|TopicNotFoundDownloadContentText|<p\>See the navigation pane for links to similar topics, or <a href="{0}" {1}>click the Manage tab</a\> to download content to your computer.</p\>|  
-|TopicNotFoundText|<p\>The topic you requested was not found on your computer.</p\>|  
+|TopicNotFoundViewOnlineText|\<p>The topic you requested was not found on your computer, but you can <a href="{0}" {1}>view the topic online</a\>.</p\>|  
+|TopicNotFoundDownloadContentText|\<p>See the navigation pane for links to similar topics, or <a href="{0}" {1}>click the Manage tab</a\> to download content to your computer.</p\>|  
+|TopicNotFoundText|\<p>The topic you requested was not found on your computer.</p\>|  
 |Feature:|**Topic Corrupted Control**|  
 |Use:|Text elements (strings) used for the rendering of topiccorrupted.htm|  
 |**Element**|**Value**|  
 |TopicCorruptedTitle|Unable to display the requested topic.|  
-|TopicCorruptedViewOnlineText|<p\>Help Viewer is unable to display the requested topic. There may be an error in the topic's content or an underlying system dependency.</p\>|  
+|TopicCorruptedViewOnlineText|\<p>Help Viewer is unable to display the requested topic. There may be an error in the topic's content or an underlying system dependency.</p\>|  
 |Feature:|**Home Page control**|  
 |Use:|Text supporting the display of the Help Viewer top level node content.|  
 |**Element**|**Value**|  
 |HomePageTitle|Help Viewer Home|  
-|HomePageIntroduction|<p\>Welcome to the Microsoft Help Viewer, an essential source of information for everyone who uses Microsoft tools, products, technologies, and services. The Help Viewer gives you access to how-to and reference information, sample code, technical articles, and more. To find the content you need, browse the table of contents, use full-text search, or navigate through content using the keyword index.</p\>|  
-|HomePageContentInstallText|<p\><br /\>Use the <a href="{0}" {1}>Manage Content</a\> tab to do the following:<ul\><li\>Add content to your computer.</li\><li\>Check for updates to your local content.</li\><li\>Remove content from your computer.</li\></ul\></p\>|  
+|HomePageIntroduction|\<p>Welcome to the Microsoft Help Viewer, an essential source of information for everyone who uses Microsoft tools, products, technologies, and services. The Help Viewer gives you access to how-to and reference information, sample code, technical articles, and more. To find the content you need, browse the table of contents, use full-text search, or navigate through content using the keyword index.</p\>|  
+|HomePageContentInstallText|\<p><br /\>Use the <a href="{0}" {1}>Manage Content</a\> tab to do the following:\<ul>\<li>Add content to your computer.</li\>\<li>Check for updates to your local content.</li\>\<li>Remove content from your computer.</li\></ul\></p\>|  
 |HomePageInstalledBooks|Installed Books|  
 |HomePageNoBooksInstalled|No content was found on your computer.|  
 |HomePageHelpSettings|Help Content Settings|  
-|HomePageHelpSettingsText|<p\>Your current setting is local help. The Help Viewer displays content that you have installed on your computer.<br /\>To change your source of Help content, on the Visual Studio menu bar, choose <span style="{0}"\>Help, Set Help Preference</span\>.<br /\></p\>|  
+|HomePageHelpSettingsText|\<p>Your current setting is local help. The Help Viewer displays content that you have installed on your computer.<br /\>To change your source of Help content, on the Visual Studio menu bar, choose <span style="{0}"\>Help, Set Help Preference</span\>.<br /\></p\>|  
 |MegaByte|MB|  
   
  **branding.js**  
@@ -556,22 +556,22 @@ some F# code
 |-|-|-|  
 |**File**|**Use**|**Displayed Content Source**|  
 |homepage.htm|This is a page that displays currently installed content, and any other message appropriate to present to the user about their content.  This file has the additional meta data attribute "Microsoft.Help.Id" content="-1"  which places this content at the top of the local content TOC.||  
-||<META_HOME_PAGE_TITLE_ADD />|Branding.xml, tag <HomePageTitle\>|  
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding.xml, tag <HomePageIntroduction\>|  
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.xml, tag <HomePageContentInstallText\>|  
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|Heading section Branding.xml tag<HomePageInstalledBooks\>, the data generated from application,  <HomePageNoBooksInstalled\> when no books are installed.|  
-||<HOME_PAGE_SETTINGS_SECTION_ADD />|Heading section Branding.xml tag <HomePageHelpSettings\>, section text <HomePageHelpSettingsText\>.|  
+||<META_HOME_PAGE_TITLE_ADD />|Branding.xml, tag \<HomePageTitle>|  
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding.xml, tag \<HomePageIntroduction>|  
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.xml, tag \<HomePageContentInstallText>|  
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|Heading section Branding.xml tag\<HomePageInstalledBooks>, the data generated from application,  \<HomePageNoBooksInstalled> when no books are installed.|  
+||<HOME_PAGE_SETTINGS_SECTION_ADD />|Heading section Branding.xml tag \<HomePageHelpSettings>, section text \<HomePageHelpSettingsText>.|  
 |topiccorrupted.htm|When a topic exists in the local set, but for some reason cannot be displayed (corrupted content).||  
-||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.xml, tag <TopicCorruptedTitle\>|  
-||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.xml, tag <TopicCorruptedViewOnlineText\>|  
+||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.xml, tag \<TopicCorruptedTitle>|  
+||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.xml, tag \<TopicCorruptedViewOnlineText>|  
 |topicnotfound.htm|When a topic is not found in the local content set, nor available online||  
-||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.xml, tag <TopicNotFoundTitle\>|  
-||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.xml, tag <TopicNotFoundViewOnlineText\> + <TopicNotFoundDownloadContentText\>|  
-||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.xml, tag <TopicNotFoundText\>|  
+||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.xml, tag \<TopicNotFoundTitle>|  
+||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|  
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.xml, tag \<TopicNotFoundText>|  
 |contentnotinstalled.htm|When there is no local content installed for the product.||  
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.xml, tag <ContentNotInstalledTitle\>|  
-||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.xml, tag <ContentNotInstalledDownloadContentText\>|  
-||<CONTENT_NOT_INSTALLED_SECTION_ADD />|Branding.xml, tag <ContentNotInstalledText\>|  
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.xml, tag \<ContentNotInstalledTitle>|  
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.xml, tag \<ContentNotInstalledDownloadContentText>|  
+||<CONTENT_NOT_INSTALLED_SECTION_ADD />|Branding.xml, tag \<ContentNotInstalledText>|  
   
  **CSS Files**  
   
@@ -581,7 +581,7 @@ some F# code
   
 -   Printer.css – contains css elements for rendering where SelfBranded=false  
   
- Branding.css files includes definitions for Visual Studio topic presentation (caveat is that the branding.css contained in the Branding_<locale\>.mshc from the package service may change).  
+ Branding.css files includes definitions for Visual Studio topic presentation (caveat is that the branding.css contained in the Branding_\<locale>.mshc from the package service may change).  
   
  **Graphic Files**  
   
@@ -596,8 +596,8 @@ some F# code
 |online_icon.gif|This icon is to be associated with online links||  
 |tabLeftBD.gif|Used to render the code snippet container||  
 |tabRightBD.gif|Used to render the code snippet container||  
-|vs_logo_bk.gif|Used for normal contrast logo references as defined in Branding.xml tag <LogoFileName\>.  For Visual Studio products, logo name is vs_logo_bk.gif.||  
-|vs_logo_wh.gif|Used for normal high logo references as defined in Branding.xml tag <LogoFileNameHC\>.  For Visual Studio products, logo name is vs_logo_wh.gif.||  
+|vs_logo_bk.gif|Used for normal contrast logo references as defined in Branding.xml tag \<LogoFileName>.  For Visual Studio products, logo name is vs_logo_bk.gif.||  
+|vs_logo_wh.gif|Used for normal high logo references as defined in Branding.xml tag \<LogoFileNameHC>.  For Visual Studio products, logo name is vs_logo_wh.gif.||  
 |ccOff.png|Captioning graphic||  
 |ccOn.png|Captioning graphic||  
 |ImageSprite.png|Used to render Collapsible Area|expanded or collapse graphic|  

@@ -60,7 +60,7 @@ basic_ostream(
  See the example for [basic_ofstream::basic_ofstream](../vs140/basic_ofstream--basic_ofstream.md) to learn more about output streams.  
   
 ## Requirements  
- **Header:** <ostream\>  
+ **Header:** \<ostream>  
   
  **Namespace:** std  
   

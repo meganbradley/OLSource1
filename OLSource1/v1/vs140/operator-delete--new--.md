@@ -57,6 +57,6 @@ void operator delete[](void* _Ptr,
  See [operator new&#91;&#93;](../vs140/operator-new--new--.md) for examples of the use of `operator delete[]`.  
   
 ## Requirements  
- **Header:** <new\>  
+ **Header:** \<new>  
   
  **Namespace:** std

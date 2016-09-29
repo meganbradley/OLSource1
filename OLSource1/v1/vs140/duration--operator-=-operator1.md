@@ -44,4 +44,4 @@ duration& operator/=(const rep& Div);
   
 ## See Also  
  [duration Class](../vs140/duration-class.md)   
- [<chrono\>](../vs140/-chrono-.md)
+ [\<chrono>](../vs140/-chrono-.md)

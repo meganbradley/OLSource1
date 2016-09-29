@@ -72,7 +72,7 @@ virtual const CharType* do_narrow(
  See the example for [narrow](../vs140/ctype--narrow.md), which calls `do_narrow`.  
   
 ## Requirements  
- **Header:** <locale\>  
+ **Header:** \<locale>  
   
  **Namespace:** std  
   

@@ -96,7 +96,7 @@ long double nearbyintl(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`nearbyint`,                `nearbyintf`,  `nearbyintl`|<math.h>|<cmath\>|  
+|`nearbyint`,                `nearbyintf`,  `nearbyintl`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

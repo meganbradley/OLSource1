@@ -32,7 +32,7 @@ The process of deploying a LightSwitch application differs depending on the appl
   
  The application type can be set in the Application Designer. For more information, see [How to: Change the Deployment Topology and Application Type](../vs140/how-to--change-the-type-of-a-lightswitch-application.md)  
   
- You can deploy a LightSwitch 3-tier application by either publishing or packaging it. In either case, the **LightSwitch Publish Application Wizard** guides you through the deployment process. You can start that wizard by, on the menu bar, choosing **Build**, **Publish <application name\>** or by opening the Application Designer, going to the **General Properties** page, and then choosing the **Publish** button.  
+ You can deploy a LightSwitch 3-tier application by either publishing or packaging it. In either case, the **LightSwitch Publish Application Wizard** guides you through the deployment process. You can start that wizard by, on the menu bar, choosing **Build**, **Publish \<application name>** or by opening the Application Designer, going to the **General Properties** page, and then choosing the **Publish** button.  
   
 -   A published application can be run on client computers immediately after the wizard has been completed. The application is ready to install and the installation automatically deploys the database schema to SQL Server. You must have administrative access to the computer in order to deploy the database schema.  
   

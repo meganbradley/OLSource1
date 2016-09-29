@@ -44,7 +44,7 @@ virtual int underflow( );
  The protected virtual member function endeavors to extract the current element **ch** from the input buffer, then advance the current stream position, and return the element as (`int`)(`unsigned` `char`)**ch**. It can do so in only one way: if a read position is available, it takes **ch** as the element stored in the read position and advances the next pointer for the input buffer.  
   
 ## Requirements  
- **Header:** <strstream\>  
+ **Header:** \<strstream>  
   
  **Namespace:** std  
   

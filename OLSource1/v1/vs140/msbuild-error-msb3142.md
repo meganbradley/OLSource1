@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3142
-**MSB3142: An error occurred trying to copy '<file\>' to '<folder\>': '<error\>'**  
+**MSB3142: An error occurred trying to copy '\<file>' to '\<folder>': '\<error>'**  
   
  This error is generated when copying setup.bin to the build output directory. Possible causes for this error could be:  
   

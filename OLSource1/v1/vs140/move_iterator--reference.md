@@ -40,13 +40,13 @@ typedef value_type&&
  The type is a synonym for `value_type&&`, which is an .  
   
 ## Requirements  
- **Header:** <iterator\>  
+ **Header:** \<iterator>  
   
  **Namespace:** std  
   
 ## See Also  
  [reference typedef](../vs140/move_iterator--reference.md)   
  [move_iterator Class](../vs140/move_iterator-class.md)   
- [<iterator\>](../vs140/-iterator-.md)   
+ [\<iterator>](../vs140/-iterator-.md)   
  [lvalues and rvalues](../vs140/lvalues-and-rvalues--visual-c---.md)   
  [Standard Template Library](../vs140/standard-template-library.md)

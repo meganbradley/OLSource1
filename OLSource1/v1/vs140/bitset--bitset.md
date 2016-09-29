@@ -167,16 +167,16 @@ int main( )
 }  
 ```  
   
- **The set of bits in bitset<2> b0 is: ( 00 ).**  
-**The set of bits in bitset<5> b1( 6 ) is: ( 00110 ).**  
+ **The set of bits in bitset\<2> b0 is: ( 00 ).**  
+**The set of bits in bitset\<5> b1( 6 ) is: ( 00110 ).**  
 **The set of bits in bitset<2 \* sizeof ( int ) > b2 is: ( 00000000 ).**  
-**The set of bits in bitset<3> b3( 6 ) is ( 110 ).**  
-**The set of bits in bitset<5> b4( bitval4 ) is ( 10011 ).**  
-**The set of bits in bitset<11> b5( bitval, 3, 6 ) is ( 100110 ).**  
-**The set of bits in bitset<11> b6( bitval5, 3, 5 ) is ( 00000010011 ).**  
-**The set of bits in bitset<9> b7( bitval, 2 ) is ( 110011011 ).**   
+**The set of bits in bitset\<3> b3( 6 ) is ( 110 ).**  
+**The set of bits in bitset\<5> b4( bitval4 ) is ( 10011 ).**  
+**The set of bits in bitset\<11> b5( bitval, 3, 6 ) is ( 100110 ).**  
+**The set of bits in bitset\<11> b6( bitval5, 3, 5 ) is ( 00000010011 ).**  
+**The set of bits in bitset\<9> b7( bitval, 2 ) is ( 110011011 ).**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

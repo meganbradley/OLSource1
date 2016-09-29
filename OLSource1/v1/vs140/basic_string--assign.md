@@ -181,7 +181,7 @@ int main( )
 **The string str2f is: Wide World**   
 **The string str1 assigned a range of string str2f is: World.**   
 ## Requirements  
- **Header:** <string\>  
+ **Header:** \<string>  
   
  **Namespace:** std  
   

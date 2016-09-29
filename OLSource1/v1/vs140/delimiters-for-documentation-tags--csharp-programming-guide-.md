@@ -28,7 +28,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
  Single-line delimiter. This is the form that is shown in documentation examples and used by the Visual C# project templates. If there is a white space character following the delimiter, that character is not included in the XML output.  
   
 > [!NOTE]
->  The Visual Studio IDE has a feature called Smart Comment Editing that automatically inserts the <summary\> and </summary\> tags and moves your cursor within these tags after you type the `///` delimiter in the Code Editor. Access this feature from the [Formatting, C#/J#, Text Editor, Options Dialog Box](../vs140/options--text-editor--csharp--formatting.md) in your project property pages.  
+>  The Visual Studio IDE has a feature called Smart Comment Editing that automatically inserts the \<summary> and </summary\> tags and moves your cursor within these tags after you type the `///` delimiter in the Code Editor. Access this feature from the [Formatting, C#/J#, Text Editor, Options Dialog Box](../vs140/options--text-editor--csharp--formatting.md) in your project property pages.  
   
  `/** */`  
  Multiline delimiters.  

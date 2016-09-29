@@ -147,7 +147,7 @@ int main()
 **\*sp4 == 10**  
 **\*sp5 == 15**   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

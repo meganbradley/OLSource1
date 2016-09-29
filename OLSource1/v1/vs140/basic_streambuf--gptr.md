@@ -43,7 +43,7 @@ type *gptr( ) const;
  A pointer to the next element of the input buffer.  
   
 ## Requirements  
- **Header:** <streambuf\>  
+ **Header:** \<streambuf>  
   
  **Namespace:** std  
   

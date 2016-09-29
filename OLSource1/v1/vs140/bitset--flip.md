@@ -97,7 +97,7 @@ int main( )
 **01111  The bit flipped is in position 3.**  
 **11111  The bit flipped is in position 4.**   
 ## Requirements  
- **Header:** <bitset\>  
+ **Header:** \<bitset>  
   
  **Namespace:** std  
   

@@ -85,7 +85,7 @@ The articles in this part of the documentation contain information about a subse
 |-------------|-------------|  
 |[Compiler Warning (level 1) C4600](../vs140/compiler-warning--level-1--c4600.md)|#pragma 'macro name': expected a valid non-empty string|  
 |Compiler warning (level 1) C4602|#pragma pop_macro: 'macro name' no previous #pragma push_macro for this identifier|  
-|Compiler warning (level 1) C4603|'<identifier\>': macro is not defined or definition is different after precompiled header use|  
+|Compiler warning (level 1) C4603|'\<identifier>': macro is not defined or definition is different after precompiled header use|  
 |[Compiler Warning (level 1) C4606](../vs140/compiler-warning--level-1--c4606.md)|#pragma warning: 'warning number' ignored; Code Analysis warnings are not associated with warning levels|  
 |[Compiler Warning (level 3) C4608](../vs140/compiler-warning--level-3--c4608.md)|'union_member' has already been initialized by another union member in the initializer list, 'union_member'|  
 |Compiler warning (level 3) C4609|'%$S' derives from default interface '%$S' on type '%$S'. Use a different default interface for '%$S', or break the base/derived relationship.|  
@@ -104,7 +104,7 @@ The articles in this part of the documentation contain information about a subse
 |[Compiler Warning (level 1 and level 4) C4624](../vs140/compiler-warning--level-1--c4624.md)|'derived class': destructor was implicitly defined as deleted because a base class destructor is inaccessible or deleted|  
 |[Compiler Warning (level 1 and level 4) C4625](../vs140/compiler-warning--level-4--c4625.md)|'derived class': copy constructor was implicitly defined as deleted because a base class copy constructor is inaccessible or deleted|  
 |[Compiler Warning (level 1 and level 4) C4626](../vs140/compiler-warning--level-4--c4626.md)|'derived class': assignment operator was implicitly defined as deleted because a base class assignment operator is inaccessible or deleted|  
-|[Compiler warning (level 1) C4627](../vs140/compiler-warning--level-1--c4627.md)|'<identifier\>': skipped when looking for precompiled header use|  
+|[Compiler warning (level 1) C4627](../vs140/compiler-warning--level-1--c4627.md)|'\<identifier>': skipped when looking for precompiled header use|  
 |[Compiler Warning (level 1) C4628](../vs140/compiler-warning--level-1--c4628.md)|digraphs not supported with -Ze. Character sequence 'digraph' not interpreted as alternate token for '%s'|  
 |Compiler warning (level 4) C4629|digraph used, character sequence 'digraph' interpreted as token 'char' (insert a space between the two characters if this is not what you intended)|  
 |[Compiler Warning (level 1) C4630](../vs140/compiler-warning--level-1--c4630.md)|'symbol': 'extern' storage-class specifier illegal on member definition|  
@@ -114,7 +114,7 @@ The articles in this part of the documentation contain information about a subse
 |Compiler warning (level 4) C4634|XML document comment target: cannot be applied: reason|  
 |Compiler warning (level 3) C4635|XML document comment target: badly-formed XML: reason|  
 |Compiler warning (level 3) C4636|XML document comment applied to construct: tag requires non-empty 'attribute' attribute.|  
-|Compiler warning (level 3 and level 4) C4637|XML document comment target: <include\> tag discarded. Reason|  
+|Compiler warning (level 3 and level 4) C4637|XML document comment target: \<include> tag discarded. Reason|  
 |Compiler warning (level 3) C4638|XML document comment target: reference to unknown symbol 'symbol'.|  
 |[Compiler Warning (level 4) C4639](../vs140/compiler-warning--level-4--c4639.md)|MSXML error, XML document comments will not be processed. Reason|  
 |[Compiler Warning (level 3) C4640](../vs140/compiler-warning--level-3--c4640.md)|'instance': construction of local static object is not thread-safe|  

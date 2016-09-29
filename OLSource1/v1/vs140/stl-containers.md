@@ -163,7 +163,7 @@ int main()
 >  You can also use [range-based for loops](../vs140/range-based-for-statement--c---.md) to iterate over STL collections.  
   
 ## Comparing containers  
- All containers overload the operator== for comparing two containers of the same type that have the same element type. You can use == to compare a vector<string\> to another vector<string\>, but you cannot use it to compare a vector<string\> to a list<string\> or a vector<string\> to a vector<char*>.  In C++98/03 you can use [std::equal](../vs140/equal.md) or [std::mismatch](../vs140/mismatch.md) to compare dissimilar container types and/or element types. In C++11 you can also use [std::is_permutation](../vs140/is_permutation.md). But in all these cases the functions assume that the containers are the same length. If the second range is shorter than the first, then undefined behavior results. If the second range is longer, results can still be incorrect because the comparison never continues past the end of the first range.  
+ All containers overload the operator== for comparing two containers of the same type that have the same element type. You can use == to compare a vector\<string> to another vector\<string>, but you cannot use it to compare a vector\<string> to a list\<string> or a vector\<string> to a vector<char*>.  In C++98/03 you can use [std::equal](../vs140/equal.md) or [std::mismatch](../vs140/mismatch.md) to compare dissimilar container types and/or element types. In C++11 you can also use [std::is_permutation](../vs140/is_permutation.md). But in all these cases the functions assume that the containers are the same length. If the second range is shorter than the first, then undefined behavior results. If the second range is longer, results can still be incorrect because the comparison never continues past the end of the first range.  
   
 ### Comparing dissimilar containers (C++14)  
  In C++14 and later, you can compare dissimilar containers and/or dissimilar elements types by using one of the [std::equal](../vs140/equal.md), [std::mismatch](../vs140/mismatch.md), or [std::is_permutation](../vs140/is_permutation.md) function overloads that take two complete ranges. These overloads enable you to compare containers with different lengths. These overloads are much less susceptible to user error, and are optimized to return false in constant time when containers of dissimilar lengths are compared. Therefore, we recommend you use these overloads unless (1) you have a very clear reason not to, or (2) you are using a [std::list](../vs140/list-class.md) container, which does not benefit from the dual-range optimizations.  
@@ -171,5 +171,5 @@ int main()
 ## See Also  
  [Containers (Modern C++)](../vs140/containers--modern-c---.md)   
  [Standard Template Library](../vs140/standard-template-library.md)   
- [<sample container\>](../vs140/-sample-container-.md)   
+ [\<sample container>](../vs140/-sample-container-.md)   
  [Thread Safety In The Standard C++ Library](../vs140/thread-safety-in-the-c---standard-library.md)

@@ -125,11 +125,11 @@ int main()
 **replacement == AdAeAf**  
 **replacement == Adaeaf**   
 ## Requirements  
- **Header:** <regex\>  
+ **Header:** \<regex>  
   
  **Namespace:** std  
   
 ## See Also  
- [<regex\>](../vs140/-regex-.md)   
+ [\<regex>](../vs140/-regex-.md)   
  [regex_match](../vs140/regex_match-function.md)   
  [regex_search](../vs140/regex_search-function.md)

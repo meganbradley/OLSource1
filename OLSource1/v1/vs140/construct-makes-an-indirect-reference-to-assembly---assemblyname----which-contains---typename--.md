@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Construct makes an indirect reference to assembly &#39;&lt;assemblyname&gt;&#39;, which contains &#39;&lt;typename&gt;&#39;
-Construct makes an indirect reference to assembly '<assemblyname\>', which contains <typename\>. Add a file reference to <filename\> to your project.  
+Construct makes an indirect reference to assembly '\<assemblyname>', which contains \<typename>. Add a file reference to \<filename> to your project.  
   
  An expression uses a type, such as a class, structure, interface, enumeration, or delegate, but your assembly does not have a project reference to the assembly that defines the type.  
   

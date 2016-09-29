@@ -116,7 +116,7 @@ The number of doubles that can be allocated before
 ```  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   

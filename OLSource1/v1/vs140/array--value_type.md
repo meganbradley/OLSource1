@@ -77,11 +77,11 @@ int main()
   **0 1 2 3**  
  **0 1 2 3**   
 ## Requirements  
- **Header:** <array\>  
+ **Header:** \<array>  
   
  **Namespace:** std  
   
 ## See Also  
- [<array\>](../vs140/-array-.md)   
+ [\<array>](../vs140/-array-.md)   
  [array](../vs140/array-class--stl-.md)   
  [reference](../vs140/array--reference.md)

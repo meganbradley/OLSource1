@@ -94,7 +94,7 @@ int ilogbl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`ilogb`,                `ilogbf`,  `ilogbl`|<math.h>|<cmath\>|  
+|`ilogb`,                `ilogbf`,  `ilogbl`|<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

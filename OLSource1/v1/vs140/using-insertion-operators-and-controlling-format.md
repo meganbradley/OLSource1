@@ -103,7 +103,7 @@ int main( )
 ```  
   
 ### Output  
- The **width** member function is declared in <iostream\>. If you use `setw` or any other manipulator with arguments, you must include <iomanip\>. In the output, strings are printed in a field of width 6 and integers in a field of width 10:  
+ The **width** member function is declared in \<iostream>. If you use `setw` or any other manipulator with arguments, you must include \<iomanip>. In the output, strings are printed in a field of width 6 and integers in a field of width 10:  
   
 ```  
  Zoot      1.23  

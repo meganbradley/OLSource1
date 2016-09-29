@@ -160,7 +160,7 @@ int main() {
 }  
 ```  
   
- **<word\>persnickety</word\>**   
+ **\<word>persnickety</word\>**   
 ## Requirements  
  **Header file** <msclr\com\ptr.h>  
   

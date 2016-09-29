@@ -34,7 +34,7 @@ Defines several templates that help allocate and free memory blocks for node-bas
 ```  
   
 ## Remarks  
- The <allocators\> header provides six allocator templates that can be used to select memory-management strategies for node-based containers. For use with these templates, it also provides several different synchronization filters to tailor the memory-management strategy to a variety of different multithreading schemes (including none). Matching a memory management strategy to the known memory usage patterns, and synchronization requirements, of a particular application can often increase the speed or reduce the overall memory requirements of an application.  
+ The \<allocators> header provides six allocator templates that can be used to select memory-management strategies for node-based containers. For use with these templates, it also provides several different synchronization filters to tailor the memory-management strategy to a variety of different multithreading schemes (including none). Matching a memory management strategy to the known memory usage patterns, and synchronization requirements, of a particular application can often increase the speed or reduce the overall memory requirements of an application.  
   
  The allocator templates are implemented with reusable components that can be customized or replaced to provide additional memory-management strategies.  
   
@@ -50,7 +50,7 @@ Defines several templates that help allocate and free memory blocks for node-bas
   
  `class allocator;`  
   
- where the template argument `Type` is the type managed by the allocator instance. The Standard C++ library provides a default allocator, template class [allocator](../vs140/allocator-class.md), which is defined in [<memory\>](../vs140/-memory-.md). The <allocators\> header provides the following allocators:  
+ where the template argument `Type` is the type managed by the allocator instance. The Standard C++ library provides a default allocator, template class [allocator](../vs140/allocator-class.md), which is defined in [\<memory>](../vs140/-memory-.md). The \<allocators> header provides the following allocators:  
   
 -   [allocator_newdel](../vs140/allocator_newdel-class.md)  
   
@@ -90,7 +90,7 @@ Defines several templates that help allocate and free memory blocks for node-bas
   
  With a compiler that cannot compile rebind the value of the std::size_t argument used when the template was instantiated is not necessarily the value of the argument _Sz passed to a cache's member functions allocate and deallocate.  
   
- <allocators\> provides the following cache templates:  
+ \<allocators> provides the following cache templates:  
   
 -   [cache_freelist](../vs140/cache_freelist-class.md)  
   
@@ -98,7 +98,7 @@ Defines several templates that help allocate and free memory blocks for node-bas
   
 -   [cache_chunklist](../vs140/cache_chunklist-class.md)  
   
- A filter is a block allocator that implements its member functions using another block allocator which is passed to it as a template argument. The most common form of filter is a synchronization filter, which applies a synchronization policy to control access to the member functions of an instance of another block allocator. <allocators\> provides the following synchronization filters:  
+ A filter is a block allocator that implements its member functions using another block allocator which is passed to it as a template argument. The most common form of filter is a synchronization filter, which applies a synchronization policy to control access to the member functions of an instance of another block allocator. \<allocators> provides the following synchronization filters:  
   
 -   [sync_none](../vs140/sync_none-class.md)  
   
@@ -108,7 +108,7 @@ Defines several templates that help allocate and free memory blocks for node-bas
   
 -   [sync_shared](../vs140/sync_shared-class.md)  
   
- <allocators\> also provides the filter [rts_alloc](../vs140/rts_alloc-class.md), which holds multiple block allocator instances and determines which instance to use for allocation or deallocation at runtime instead of at compile time. It is used with compilers that cannot compile rebind.  
+ \<allocators> also provides the filter [rts_alloc](../vs140/rts_alloc-class.md), which holds multiple block allocator instances and determines which instance to use for allocation or deallocation at runtime instead of at compile time. It is used with compilers that cannot compile rebind.  
   
  A synchronization policy determines how an allocator instance handles simultaneous allocation and deallocation requests from multiple threads. The simplest policy is to pass all requests directly through to the underlying cache object, leaving synchronization management to the user. A more complex policy could be to use a mutex to serialize access to the underlying cache object.  
   
@@ -116,7 +116,7 @@ Defines several templates that help allocate and free memory blocks for node-bas
   
  The cache template `cache_freelist` takes a max class argument which determines the maximum number of elements to be stored in the free list.  
   
- <allocators\> provides the following max classes:  
+ \<allocators> provides the following max classes:  
   
 -   [max_none](../vs140/max_none-class.md)  
   
@@ -140,8 +140,8 @@ Defines several templates that help allocate and free memory blocks for node-bas
   
 |||  
 |-|-|  
-|[operator!= (<allocators\>)](../vs140/-allocators--operators.md#operator_neq)|Tests for inequality between allocator objects of a specified class.|  
-|[operator== (<allocators\>)](../vs140/-allocators--operators.md#operator_eq_eq)|Tests for equality between allocator objects of a specified class.|  
+|[operator!= (\<allocators>)](../vs140/-allocators--operators.md#operator_neq)|Tests for inequality between allocator objects of a specified class.|  
+|[operator== (\<allocators>)](../vs140/-allocators--operators.md#operator_eq_eq)|Tests for equality between allocator objects of a specified class.|  
   
 ### Classes  
   
@@ -169,7 +169,7 @@ Defines several templates that help allocate and free memory blocks for node-bas
 |[sync_shared](../vs140/sync_shared-class.md)|Describes a synchronization filter that uses a mutex to control access to a cache object that is shared by all allocators.|  
   
 ## Requirements  
- **Header:** <allocators\>  
+ **Header:** \<allocators>  
   
  **Namespace:** stdext  
   

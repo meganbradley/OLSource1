@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3151
-**MSB3151: Item '<package\>' already includes '<package\>'.**  
+**MSB3151: Item '\<package>' already includes '\<package>'.**  
   
  This warning occurs when you have selected two bootstrapper packages, and one package is included in the other (for example, selecting the included package is redundant).  
   

@@ -41,7 +41,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
  See [rbegin](../vs140/vector--rbegin.md) for an example of how to declare and use an iterator.  
   
 ## Requirements  
- **Header:** <vector\>  
+ **Header:** \<vector>  
   
  **Namespace:** std  
   

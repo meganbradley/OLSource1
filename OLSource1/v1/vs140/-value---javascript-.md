@@ -64,13 +64,13 @@ Specifies documentation information for `get` and `set` functions for ECMAScript
  Optional. If `type` is `Array`, specifies whether the elements in the array can be set to null. Set to `true` to indicate that the elements in the array can be set to null; otherwise, set to `false`. The default value is `false`. This attribute is not used by Visual Studio to provide IntelliSense information.  
   
  `locid`  
- Optional. The identifier for localization information about the property. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [<loc\>](../vs140/-loc---javascript-.md) element.  
+ Optional. The identifier for localization information about the property. The identifier is either a member ID or it corresponds to the `name` attribute value in a message bundle defined by OpenAjax metadata. The identifier type depends on the format specified in the [\<loc>](../vs140/-loc---javascript-.md) element.  
   
  `description`  
  Optional. A description of the property.  
   
 ## Remarks  
- ECMAScript 5 properties use the [<summary\>](../vs140/-summary---javascript-.md) element.  
+ ECMAScript 5 properties use the [\<summary>](../vs140/-summary---javascript-.md) element.  
   
  Use the `<value>` element immediately before the `get` or `set` function.  
   

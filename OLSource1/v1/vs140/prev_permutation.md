@@ -195,7 +195,7 @@ int main() {
 **After another prev_permutation of vector v1,**  
  **v1 =   ( -3 -2 0 2 -1 1 3 ).**   
 ## Requirements  
- **Header:** <algorithm\>  
+ **Header:** \<algorithm>  
   
  **Namespace:** std  
   

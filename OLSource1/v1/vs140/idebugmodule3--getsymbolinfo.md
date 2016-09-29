@@ -57,7 +57,7 @@ int GetSymbolInfo(
 ## Remarks  
  If the `bstrVerboseSearchInfo` field of the `MODULE_SYMBOL_SEARCH_INFO` structure is not empty, then it contains a list of paths searched and the results of that search. The list is formatted with a path, followed by ellipses ("..."), followed by the result. If there is more than one path result pair, then each pair is separated by a "\r\n" (carriage-return/linefeed) pair. The pattern looks like this:  
   
- <path\>...<result\>\r\n<path\>...<result\>\r\n<path\>...<result\>  
+ \<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>  
   
  Note that the last entry does not have a \r\n sequence.  
   

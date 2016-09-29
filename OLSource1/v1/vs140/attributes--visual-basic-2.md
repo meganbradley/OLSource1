@@ -28,7 +28,7 @@ Attributes provide a powerful method of associating metadata, or declarative inf
 -   Your program can examine its own metadata or the metadata in other programs by using reflection. For more information, see [Accessing Attributes by Using Reflection (Visual Basic)](../vs140/accessing-attributes-by-using-reflection--visual-basic-.md).  
   
 ## Using Attributes  
- Attributes can be placed on most any declaration, though a specific attribute might restrict the types of declarations on which it is valid. In Visual Basic, an attribute is enclosed in angle brackets (< >). It must appear immediately before the element to which it is applied, on the same line.  
+ Attributes can be placed on most any declaration, though a specific attribute might restrict the types of declarations on which it is valid. In Visual Basic, an attribute is enclosed in angle brackets (\< >). It must appear immediately before the element to which it is applied, on the same line.  
   
  In this example, the <xref:System.SerializableAttribute*> attribute is used to apply a specific characteristic to a class:  
   

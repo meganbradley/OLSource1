@@ -76,7 +76,7 @@ _Lcomplex cprojl(
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`cproj`,               `cprojf`, `cprojl`|<complex.h>|<ccomplex\>|  
+|`cproj`,               `cprojf`, `cprojl`|<complex.h>|\<ccomplex>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
   

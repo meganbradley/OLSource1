@@ -71,8 +71,8 @@ int _finitef(
   
 |Function|Required header (C)|Required header (C++)|  
 |--------------|---------------------------|-------------------------------|  
-|`_finite`|<float.h> or <math.h>|<float.h>, <math.h>, <cfloat\>, or <cmath\>|  
-|`_finitef`|<math.h>|<math.h> or <cmath\>|  
+|`_finite`|<float.h> or <math.h>|<float.h>, <math.h>, \<cfloat>, or \<cmath>|  
+|`_finitef`|<math.h>|<math.h> or \<cmath>|  
   
  For more compatibility information, see [Compatibility](../vs140/compatibility.md).  
   

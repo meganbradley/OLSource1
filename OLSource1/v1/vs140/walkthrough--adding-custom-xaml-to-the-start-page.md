@@ -26,9 +26,9 @@ This walkthrough shows how to create a custom Visual Studio Start Page that cont
   
 1.  Create a Start Page by following the instructions in [Creating a Custom Start Page](../vs140/creating-a-custom-start-page.md).  
   
-2.  In the MainWindow.xaml file, find the <Grid\> section.  
+2.  In the MainWindow.xaml file, find the \<Grid> section.  
   
-3.  Add a <TabControl\> element and a <TabItem\> inside the < Grid> element, as shown in the following example.  
+3.  Add a \<TabControl> element and a \<TabItem> inside the \< Grid> element, as shown in the following example.  
   
     ```xml  
     <Grid>  
@@ -40,7 +40,7 @@ This walkthrough shows how to create a custom Visual Studio Start Page that cont
     </Grid>  
     ```  
   
-4.  Add a second <TabItem\>, with a <Button\> element that opens a new project:  
+4.  Add a second \<TabItem>, with a \<Button> element that opens a new project:  
   
     ```xml  
     <Grid>  

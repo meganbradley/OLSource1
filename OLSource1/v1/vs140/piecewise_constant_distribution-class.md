@@ -66,7 +66,7 @@ public:
   
 #### Parameters  
  `RealType`  
- The floating point result type, defaults to `double`. For possible types, see [<random\>](../vs140/-random-.md).  
+ The floating point result type, defaults to `double`. For possible types, see [\<random>](../vs140/-random-.md).  
   
 ## Remarks  
  This sampling distribution has varying-width intervals with uniform probability in each interval. For information about other sampling distributions, see [piecewise_linear_distribution](../vs140/piecewise_linear_distribution-class.md) and [discrete_distribution](../vs140/discrete_distribution-class.md).  
@@ -82,7 +82,7 @@ public:
   
  The property function `densities()` returns a `vector<RealType>` with the stored densities for each interval set, which are calculated according to the weights provided in the constructor parameters.  
   
- For more information about distribution classes and their members, see [<random\>](../vs140/-random-.md).  
+ For more information about distribution classes and their members, see [\<random>](../vs140/-random-.md).  
   
 ## Example  
   
@@ -160,7 +160,7 @@ int main()
 ## Output  
  **Use CTRL-Z to bypass data entry and run using default values.Enter an integer value for the sample count: 100min() == 0max() == 15intervals (index: interval):          0:   0.0000000000          1:   1.0000000000          2:   6.0000000000          3:  15.0000000000densities (index: density):          0:   0.0625000000          1:   0.0625000000          2:   0.0694444444Distribution for 100 samples:    0-1 :::::::    1-2 ::::::    2-3 :::::    3-4 ::::::    4-5 :::::::    5-6 ::::::    6-7 :::    7-8 ::::::::::    8-9 ::::::    9-10 ::::::::::::   10-11 :::::   11-12 ::::::   12-13 :::::::::   13-14 ::::   14-15 ::::::::**   
 ## Requirements  
- **Header:** <random\>  
+ **Header:** \<random>  
   
  **Namespace:** std  
   
@@ -290,5 +290,5 @@ struct param_type {
  This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.  
   
 ## See Also  
- [<random\>](../vs140/-random-.md)   
+ [\<random>](../vs140/-random-.md)   
  [piecewise_linear_distribution](../vs140/piecewise_linear_distribution-class.md)

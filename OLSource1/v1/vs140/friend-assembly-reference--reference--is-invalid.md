@@ -23,7 +23,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Friend assembly reference &lt;reference&gt; is invalid
-Friend assembly reference <reference\> is invalid. Strong-name signed assemblies must specify a public key in their InternalsVisibleTo declarations.  
+Friend assembly reference \<reference> is invalid. Strong-name signed assemblies must specify a public key in their InternalsVisibleTo declarations.  
   
  The assembly name passed to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute*> attribute constructor identifies a strong-named assembly, but it does not include a `PublicKey` attribute.  
   

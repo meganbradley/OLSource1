@@ -20,7 +20,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # MSBuild Error MSB3173
-**MSB3173: Unable to write manifest '<file\>'. '<error\>'**  
+**MSB3173: Unable to write manifest '\<file>'. '\<error>'**  
   
  This error is generated when the build process encounters a general problem writing a manifest file.  
   
@@ -29,4 +29,4 @@ translation.priority.ht:
 -   For more information about the cause and possible resolutions of an MSBuild error, see [Additional Resources](../vs140/additional-msbuild-resources.md).  
   
 ## See Also  
- [<PackageFiles\> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)
+ [\<PackageFiles> Element (ClickOnce Bootstrapper)](../vs140/-packagefiles--element--bootstrapper-.md)

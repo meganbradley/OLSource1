@@ -39,7 +39,7 @@ Visual Basic settings are designed to optimize the user experience and to maximi
 |`Solution Explorer`|Yes||  
 |[Server Explorer/Database Explorer](assetId:///4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)|No|Displays data connections and available system services.|  
 |[Start Page](../vs140/customizing-the-start-page-for-visual-studio.md)|Yes|Appears the first time you start the IDE. You can customize it.|  
-|[<Pave Over\> Task List (Visual Studio)](assetId:///ce97c0e2-5011-499a-b60a-dc5b9cc22654)|Yes, when compile errors or warnings exist.||  
+|[\<Pave Over> Task List (Visual Studio)](assetId:///ce97c0e2-5011-499a-b60a-dc5b9cc22654)|Yes, when compile errors or warnings exist.||  
 |[Team Explorer](assetId:///1372e56c-b34f-42c2-b72c-94b57620c75c)|Yes|You can use Team Explorer to access your team projects and use the application lifecycle management features of Team Foundation. These include version control, builds, project management, integrated reports, and dashboards.|  
 |[Toolbox](../vs140/toolbox.md)|Yes|Displays controls and components in alphabetical order.|  
   
@@ -72,5 +72,5 @@ Visual Basic settings are designed to optimize the user experience and to maximi
 ## See Also  
  [How to: Change Select Settings](assetId:///ec70b520-a3e3-43c9-929b-bdc732cd2147)   
  [How to: Specify Settings for a Team](assetId:///89eeee3d-dd5e-4815-a45b-c48add63a8aa)   
- [<PAVE OVER\> Import and Export Settings, Environment, Options Dialog Box](assetId:///536fb39a-83a4-4b5b-afd6-8e6c42f980fe)   
+ [\<PAVE OVER> Import and Export Settings, Environment, Options Dialog Box](assetId:///536fb39a-83a4-4b5b-afd6-8e6c42f980fe)   
  [How to: Share Settings Between Computers or Visual Studio Versions](assetId:///1131fb10-35c1-42da-9cd8-91aa3235b882)

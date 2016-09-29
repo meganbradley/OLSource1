@@ -31,10 +31,10 @@ Use this page of the Options dialog box to specify whether or not files are auto
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose Import and Export Settings on the Tools menu. For more information, see [Customizing Development Settings in Visual Studio](assetId:///22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- **Save AutoRecover information every <n\> minutes**  
+ **Save AutoRecover information every \<n> minutes**  
  Use this option to customize how often a file is automatically saved in the editor. For previously saved files, a copy of the file is saved in \\...\My Documents\Visual Studio <*version*>\Backup Files\\<*projectname*>. If the file is new and has not been manually saved, the file is auto-saved using a randomly generated file name.  
   
- **Keep AutoRecover information for <n\> days**  
+ **Keep AutoRecover information for \<n> days**  
  Use this option to specify how long Visual Studio keeps files created for autorecovery.  
   
 ## See Also  

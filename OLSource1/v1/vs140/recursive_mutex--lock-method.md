@@ -38,4 +38,4 @@ void lock();
   
 ## See Also  
  [recursive_mutex Class](../vs140/recursive_mutex-class.md)   
- [<mutex\>](../vs140/-mutex-.md)
+ [\<mutex>](../vs140/-mutex-.md)

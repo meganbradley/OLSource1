@@ -52,11 +52,11 @@ unique_ptr& operator=(
  The member functions call `reset(``_Right``.release())` and move `_Right``.stored_deleter` to `stored_deleter`, then return `*this`.  
   
 ## Requirements  
- **Header:** <memory\>  
+ **Header:** \<memory>  
   
  **Namespace:** std  
   
 ## See Also  
  [unique_ptr Class](../vs140/unique_ptr-class.md)   
- [<memory\>](../vs140/-memory-.md)   
+ [\<memory>](../vs140/-memory-.md)   
  [Thread Safety in the C++ Standard Library](../vs140/thread-safety-in-the-c---standard-library.md)

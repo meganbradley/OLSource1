@@ -24,7 +24,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # &lt;paramref&gt; (Visual C++)
-The <paramref\> tag gives you a way to indicate that a word is a parameter. The .xml file can be processed to format this parameter in some distinct way.  
+The \<paramref> tag gives you a way to indicate that a word is a parameter. The .xml file can be processed to format this parameter in some distinct way.  
   
 ## Syntax  
   

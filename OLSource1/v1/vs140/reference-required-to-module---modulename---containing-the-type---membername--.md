@@ -21,7 +21,7 @@ translation.priority.ht:
   - "ja-jp"
 ---
 # Reference required to module &#39;&lt;modulename&gt;&#39; containing the type &#39;&lt;membername&gt;&#39;
-Reference required to module '<modulename\>' containing the type '<membername\>'. Add one to your project.  
+Reference required to module '\<modulename>' containing the type '\<membername>'. Add one to your project.  
   
  The project contains a type that depends on another type from an assembly that is not included in the project references.  
   
