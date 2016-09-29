@@ -1,0 +1,66 @@
+---
+title: "Core.StructuralComparisonAttribute Class (F#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-fsharp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+apiname: 
+  - "Core.StructuralComparisonAttribute"
+apilocation: 
+  - "FSharp.Core.dll"
+apitype: "Assembly"
+f1_keywords: 
+  - "Microsoft.FSharp.Core.StructuralComparisonAttribute"
+dev_langs: 
+  - "FSharp"
+helpviewer_keywords: 
+  - "StructuralComparison attribute [F#]"
+  - "StructuralComparisonAttribute class [F#]"
+ms.assetid: 92bc1c1e-8b77-494f-900b-0fd394abb565
+caps.latest.revision: 24
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Core.StructuralComparisonAttribute Class (F#)
+Adding this attribute to a record, union, exception, or structure type confirms the automatic generation of implementations for <xref:System.IComparable*> for the type.  
+  
+ **Namespace/Module Path:** Microsoft.FSharp.Core  
+  
+ **Assembly:** FSharp.Core (in FSharp.Core.dll)  
+  
+## Syntax  
+  
+```  
+[<AttributeUsage(AttributeTargets.Class, AllowMultiple = false)>]  
+[<Sealed>]  
+type StructuralComparisonAttribute =  
+ class  
+  new StructuralComparisonAttribute : unit -> StructuralComparisonAttribute  
+ end  
+```  
+  
+## Remarks  
+ You can also use the short form of the name, `StructuralComparison`.  
+  
+## Constructors  
+  
+|Member|Description|  
+|------------|-----------------|  
+|[new](../vs140/core.structuralcomparisonattribute-constructor--fsharp-.md)|Creates an instance of the attribute|  
+  
+## Platforms  
+ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2  
+  
+## Version Information  
+ **F# Core Library Versions**  
+  
+ Supported in: 2.0, 4.0, Portable  
+  
+## See Also  
+ [Microsoft.FSharp.Core Namespace (F#)](../vs140/microsoft.fsharp.core-namespace--fsharp-.md)

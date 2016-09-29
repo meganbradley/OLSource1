@@ -1,0 +1,68 @@
+---
+title: "GeneratedSequenceBase.GenerateNext&lt;&#39;T&gt; Method (F#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-fsharp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+apiname: 
+  - "GeneratedSequenceBase.GenerateNext<'T>"
+apilocation: 
+  - "FSharp.Core.dll"
+apitype: "Assembly"
+f1_keywords: 
+  - "Microsoft.FSharp.Core.CompilerServices.GeneratedSequenceBase`1.GenerateNext"
+dev_langs: 
+  - "FSharp"
+helpviewer_keywords: 
+  - "GenerateNext method [F#]"
+  - "GeneratedSequenceBase.GenerateNext method [F#]"
+ms.assetid: 9c6e1da1-a6ad-4fc3-887f-e6ea063d9864
+caps.latest.revision: 23
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# GeneratedSequenceBase.GenerateNext&lt;&#39;T&gt; Method (F#)
+The F# compiler emits implementations of this type for compiled sequence expressions.  
+  
+ **Namespace/Module Path:** Microsoft.FSharp.Core.CompilerServices  
+  
+ **Assembly:** FSharp.Core (in FSharp.Core.dll)  
+  
+## Syntax  
+  
+```  
+// Signature:  
+abstract this.GenerateNext : byref<IEnumerable<'T>> -> int  
+  
+// Usage:  
+generatedSequenceBase.GenerateNext (result)  
+```  
+  
+#### Parameters  
+ `result`  
+ Type: [byref](../vs140/core.byref--t--type--fsharp-.md)`<`<xref:System.Collections.Generic.IEnumerable`1*>`<'T>>`  
+  
+ A reference to the sequence.  
+  
+## Return Value  
+ A 0, 1, and 2 respectively indicate Stop, Yield, and Goto conditions for the sequence generator.  
+  
+## Remarks  
+  
+## Platforms  
+ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2  
+  
+## Version Information  
+ **F# Core Library Versions**  
+  
+ Supported in: 2.0, 4.0, Portable  
+  
+## See Also  
+ [CompilerServices.GeneratedSequenceBase<'T> Class (F#)](../vs140/compilerservices.generatedsequencebase--t--class--fsharp-.md)   
+ [Microsoft.FSharp.Core.CompilerServices Namespace (F#)](../vs140/microsoft.fsharp.core.compilerservices-namespace--fsharp-.md)
