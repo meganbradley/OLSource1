@@ -3,7 +3,8 @@
     "docsets_to_publish": [
         {
             "docset_name": "OLSource1",
-            "build_output_subfolder": "OLSource1/v1",
+            "build_output_subfolder": "1",
+            "build_source_folder": "OLSource1/v1"
             "locale": "en-us",
             "version": 0,
             "open_to_public_contributors": "false",
@@ -13,7 +14,8 @@
         },
         {
             "docset_name": "OLSource11",
-            "build_output_subfolder": "OLSource1/v2",
+            "build_output_subfolder": "2",
+            "build_source_folder": "OLSource1/v2"
             "locale": "en-us",
             "version": 0,
             "open_to_public_contributors": "false",
