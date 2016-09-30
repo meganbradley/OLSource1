@@ -1,0 +1,52 @@
+---
+title: "CMFCVisualManagerOffice2007::OnFillOutlookBarCaption"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CMFCVisualManagerOffice2007::OnFillOutlookBarCaption"
+  - "OnFillOutlookBarCaption"
+  - "CMFCVisualManagerOffice2007.OnFillOutlookBarCaption"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "OnFillOutlookBarCaption method"
+ms.assetid: 91271b84-0b6a-447f-a809-5731bbd606fe
+caps.latest.revision: 12
+robots: noindex,nofollow
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CMFCVisualManagerOffice2007::OnFillOutlookBarCaption
+[!INCLUDE[cpp_fp_under_construction](../vs140/includes/cpp_fp_under_construction_md.md)]  
+  
+## Syntax  
+  
+```  
+virtual void OnFillOutlookBarCaption(  
+   CDC* pDC,  
+   CRect rectCaption,  
+   COLORREF& clrText  
+);  
+```  
+  
+#### Parameters  
+ [in] `pDC`  
+  [in] `rectCaption`  
+  [in] `clrText`  
+  
+## Remarks  
+  
+## Requirements  
+ **Header:** afxvisualmanageroffice2007.h  
+  
+## See Also  
+ [CMFCVisualManagerOffice2007 Class](../vs140/cmfcvisualmanageroffice2007-class.md)   
+ [Hierarchy Chart (MFC Feature Pack)](../vs140/hierarchy-chart.md)
