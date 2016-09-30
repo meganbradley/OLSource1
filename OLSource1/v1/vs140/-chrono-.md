@@ -103,12 +103,12 @@ Include the standard header \<chrono> to define classes and functions that repre
 ### Literals  
  **(C++11)**The \<chrono> header defines the following [user-defined literals](../vs140/user-defined-literals---c---.md) that you can use for greater convenience, type-safety and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when std::chrono is in scope.  
   
-|Literal|Description|  
+|Literal|Description1|  
 |-------------|-----------------|  
 |chrono::hours operator "" h(unsigned long long Val)|Specifies hours as an integral value.|  
-|chrono::duration<double, ratio\<3600> > operator "" h(long double Val)|Specifies hours as a floating-point value.|  
+|chrono::duration\<double, ratio<3600> > operator "" h(long double Val)|Specifies hours as a floating-point value.|  
 |chrono::minutes (operator "" min)(unsigned long long Val)|Specifies minutes as an integral value.|  
-|chrono::duration<double, ratio\<60> > (operator "" min)( long double Val)|Specifies minutes as a floating-point value.|  
+|chrono::duration\<double, ratio<60> > (operator "" min)( long double Val)|Specifies minutes as a floating-point value.|  
 |chrono::seconds operator "" s(unsigned long long Val)|Specifies minutes as an integral value.|  
 |chrono::duration\<double> operator "" s(long double Val)|Specifies seconds as a floating-point value.|  
 |chrono::milliseconds operator "" ms(unsigned long long Val)|Specifies milliseconds as an integral value.|  
