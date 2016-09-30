@@ -1,0 +1,53 @@
+---
+title: "operator &lt; (ATL)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "operator<"
+  - "ATLSECURITY/operator<"
+  - "<"
+  - "ATLSECURITY/<"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operator<, security identifiers"
+  - "< operator, with specific ATL objects"
+  - "operator <, security identifiers"
+ms.assetid: 895f64fa-5792-4b86-a2a4-c8180de18e70
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# operator &lt; (ATL)
+Tests if the <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> object or <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> structure on the left side of the operator is less than the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> object or <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> structure on the right side (for STL compatibility).  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+ The first <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> object or <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> structure to compare.  
+  
+ <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>  
+ The second <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> object or <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> structure to compare.  
+  
+## Return Value  
+ Returns **true** if the address of the <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> object is less than the address of the <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> object, **false** otherwise.  
+  
+## Remarks  
+ This operator acts on the address of the <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> object or <CodeContentPlaceHolder>14\</CodeContentPlaceHolder> structure, and is implemented to provide compatibility with STL collection classes.  
+  
+## Requirements  
+ **Header:** atlsecurity.h  
+  
+## See Also  
+ [Operators Alphabetical Reference](../vs140/atl-operators-alphabetical-reference.md)   
+ [operator >](../vs140/operator----atl-.md)

@@ -1,0 +1,57 @@
+---
+title: "Unary Arithmetic Operators"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "operators [C], unary"
+  - "tilde (~) one's complement operator"
+  - "bitwise-complement operator"
+  - "arithmetic operators [C++], unary"
+  - "+ operator, unary operators"
+  - "unary operators"
+  - "exclamation points"
+  - "~ operator, one's complement operator"
+  - "logical negation"
+  - "! operator, unary arithmetic operators"
+ms.assetid: 78c91415-d469-499e-9dfe-4435350fd333
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Unary Arithmetic Operators
+The C unary plus, arithmetic-negation, complement, and logical-negation operators are discussed in the following list:  
+  
+|Operator|Description|  
+|--------------|-----------------|  
+|**+**|The unary plus operator preceding an expression in parentheses forces the grouping of the enclosed operations. It is used with expressions involving more than one associative or commutative binary operator. The operand must have arithmetic type. The result is the value of the operand. An integral operand undergoes integral promotion. The type of the result is the type of the promoted operand.|  
+|**–**|The arithmetic-negation operator produces the negative (two's complement) of its operand. The operand must be an integral or floating value. This operator performs the usual arithmetic conversions.|  
+|<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>|The bitwise-complement (or bitwise-NOT) operator produces the bitwise complement of its operand. The operand must be of integral type. This operator performs usual arithmetic conversions; the result has the type of the operand after conversion.|  
+|**!**|The logical-negation (logical-NOT) operator produces the value 0 if its operand is true (nonzero) and the value 1 if its operand is false (0). The result has <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> type. The operand must be an integral, floating, or pointer value.|  
+  
+ Unary arithmetic operations on pointers are illegal.  
+  
+## Examples  
+ The following examples illustrate the unary arithmetic operators:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ In the example above, the new value of <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> is the negative of 987, or –987.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ In this example, the new value assigned to <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> is the one's complement of the unsigned value 0xAAAA, or 0x5555.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ If <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> is greater than or equal to <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>, the result of the expression is 1 (true). If <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> is less than <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>, the result is 0 (false).  
+  
+## See Also  
+ [Expressions with Unary Operators](../vs140/expressions-with-unary-operators.md)

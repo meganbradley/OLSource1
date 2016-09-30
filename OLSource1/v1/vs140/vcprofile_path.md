@@ -1,0 +1,41 @@
+---
+title: "VCPROFILE_PATH"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "VCPROFILE_PATH"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "VCPROFILE_PATH environment variable"
+ms.assetid: 25217aa4-7e86-4eba-854d-10b3c457e4df
+caps.latest.revision: 8
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# VCPROFILE_PATH
+Specify the directory to create .pgc files.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ The directory path in which .pgc files will be added.  
+  
+## Remarks  
+ By default, .pgc files are created in the same directory as the binary being profiled.  However, if the absolute path of the binary does not exist, as may be the case when you run profile scenarios on a different machine from where the binary was built, you can set <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> to a path that exists.  
+  
+## Example  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## See Also  
+ [Environment Variables for Profile-Guided Optimizations](../vs140/environment-variables-for-profile-guided-optimizations.md)

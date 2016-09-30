@@ -1,0 +1,35 @@
+---
+title: "Compiler Warning (level 1) C4033"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "C4033"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C4033"
+ms.assetid: 189a9ec3-ff6d-49dd-b9b2-530b28bbb7c9
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 1) C4033
+'function' must return a value  
+  
+ The function does not return a value. An undefined value is returned.  
+  
+ Functions that use <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> without a return value must be declared as type <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>.  
+  
+ This error is for C language code.  
+  
+ The following sample generates C4033:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

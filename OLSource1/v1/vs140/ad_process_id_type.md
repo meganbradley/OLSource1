@@ -1,0 +1,49 @@
+---
+title: "AD_PROCESS_ID_TYPE"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "AD_PROCESS_ID_TYPE"
+helpviewer_keywords: 
+  - "AD_PROCESS_ID_TYPE enumeration"
+ms.assetid: 0aab80e9-285a-4697-94ac-c864d42a6aaa
+caps.latest.revision: 10
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# AD_PROCESS_ID_TYPE
+Specifies how to interpret a process ID in the [AD_PROCESS_ID](../vs140/ad_process_id.md) structure.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## Members  
+ AD_PROCESS_ID_SYSTEM  
+ Process ID is a system identifier. Use the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> field of the [AD_PROCESS_ID](../vs140/ad_process_id.md) structure.  
+  
+ AD_PROCESS_ID_GUID  
+ Process ID is a GUID. Use the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> field of the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> structure.  
+  
+## Remarks  
+ Used for the <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> member of the [AD_PROCESS_ID](../vs140/ad_process_id.md) structure to identify the type of process ID that is contained in the structure. Determines how to interpret the <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> union in the structure.  
+  
+## Requirements  
+ Header: msdbg.h  
+  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+  
+## See Also  
+ [Enumerations (Visual Studio Debugging SDK)](../vs140/enumerations--visual-studio-debugging-.md)   
+ [AD_PROCESS_ID](../vs140/ad_process_id.md)

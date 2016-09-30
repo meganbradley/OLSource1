@@ -1,0 +1,34 @@
+---
+title: "Compiler Error C3836"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C3836"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3836"
+ms.assetid: 254f851b-7b7d-4c34-a740-fcf72f6a636a
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3836
+static constructor is not allowed to have a member initializer list  
+  
+ A managed class cannot have a static constructor that also has a member initialization list. Static class constructors are called by the common language runtime to do class initialization, initializing static data members.  
+  
+ The following sample generates C3836:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ The following sample generates C3836:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>

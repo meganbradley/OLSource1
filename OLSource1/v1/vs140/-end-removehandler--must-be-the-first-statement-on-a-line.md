@@ -1,0 +1,35 @@
+---
+title: "&#39;End RemoveHandler&#39; must be the first statement on a line"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "bc31119"
+  - "vbc31119"
+helpviewer_keywords: 
+  - "BC31119"
+ms.assetid: 4a7e2a71-02d1-41fe-a126-3674288e6efc
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# &#39;End RemoveHandler&#39; must be the first statement on a line
+An <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> statement follows a colon (:) statement separator. <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> must be the only statement on its source line.  
+  
+ **Error ID:** BC31119  
+  
+### To correct this error  
+  
+-   Separate the multiple statements onto different lines.  
+  
+## See Also  
+ [How to: Break and Combine Statements in Code](../vs140/how-to--break-and-combine-statements-in-code--visual-basic-.md)   
+ [RemoveHandler Statement](../vs140/removehandler-statement.md)   
+ [Event Statement](../vs140/event-statement.md)

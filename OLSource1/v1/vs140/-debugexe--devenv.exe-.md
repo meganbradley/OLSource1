@@ -1,0 +1,43 @@
+---
+title: "-DebugExe (devenv.exe)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+H1: "/DebugExe (devenv.exe)"
+helpviewer_keywords: 
+  - "Devenv, /DebugExe switch"
+  - "DebugExe switch"
+  - "/DebugExe [devenv.exe]"
+ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
+caps.latest.revision: 8
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# -DebugExe (devenv.exe)
+Opens the specified executable file to be debugged.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Arguments  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ Required. The path and file name of an .exe file.  
+  
+ If the .exe file is not found or does not exist, no warning or error is displayed and [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] starts normally.  
+  
+## Remarks  
+ Any strings following the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> parameter are passed to that file as arguments.  
+  
+## Example  
+ The following example opens the file <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> for debugging.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## See Also  
+ [Devenv Command Line Switches](../vs140/devenv-command-line-switches.md)

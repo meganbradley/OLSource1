@@ -1,0 +1,71 @@
+---
+title: "IRowsetNotifyCP Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "IRowsetNotifyCP"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IRowsetNotifyCP class"
+ms.assetid: ccef402b-94a0-4c2e-9a13-7e854ef82390
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IRowsetNotifyCP Class
+Implements the provider site for the connection point interface [IRowsetNotify](https://msdn.microsoft.com/en-us/library/ms712959.aspx).  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ A class derived from <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>.  
+  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ A mutex class that supports reentrancy (the default is **CComSharedMutex**). A mutex is a synchronization object that allows one thread mutually exclusive access to a resource.  
+  
+ <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+ A interface ID pointer (**IID\***) for an **IRowsetNotify** connection point interface. The default value is **&__uuidof(IRowsetNotify)**.  
+  
+ <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+ An array of type [CComDynamicUnkArray](../vs140/ccomdynamicunkarray-class.md), which is a dynamically allocated array of **IUnknown** pointers to the client sink interfaces.  
+  
+## Members  
+  
+### Methods  
+  
+|||  
+|-|-|  
+|[Fire_OnFieldChange](../vs140/irowsetnotifycp--fire_onfieldchange.md)|Notifies the consumer of a change to the value of a column.|  
+|[Fire_OnRowChange](../vs140/irowsetnotifycp--fire_onrowchange.md)|Notifies the consumer of a change affecting the rows.|  
+|[Fire_OnRowsetChange](../vs140/irowsetnotifycp--fire_onrowsetchange.md)|Notifies the consumer of a change affecting the entire rowset.|  
+  
+## Remarks  
+ <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> implements broadcast functions to advise listeners on the connection point **IID_IRowsetNotify** of changes to the contents of the rowset.  
+  
+ Note that you must also implement and register <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> on the consumer (also known as the "sink") using [IRowsetNotifyImpl](../vs140/irowsetnotifyimpl-class.md) so that the consumer can handle notifications. See [Receiving Notifications](../vs140/receiving-notifications.md) about implementing the connection point interface on the consumer.  
+  
+ For detailed information on implementing notifications, see "Supporting Notifications" in [Creating an Updatable Provider](../vs140/creating-an-updatable-provider.md).  
+  
+## Requirements  
+ **Header:** atldb.h  
+  
+## See Also  
+ [OLE DB Provider Templates](../vs140/ole-db-provider-templates--c---.md)   
+ [OLE DB Provider Template Architecture](../vs140/ole-db-provider-template-architecture.md)   
+ [Notifications (COM)](http://msdn.microsoft.com/library/windows/desktop/ms678433)   
+ [Overview of Notifications (OLE DB)](https://msdn.microsoft.com/en-us/library/ms725406.aspx)   
+ [BEGIN_CONNECTION_POINT_MAP](../vs140/begin_connection_point_map.md)   
+ [END_CONNECTION_POINT_MAP](../vs140/end_connection_point_map.md)   
+ [CONNECTION_POINT_ENTRY](../vs140/connection_point_entry.md)   
+ [Creating an Updatable Provider](../vs140/creating-an-updatable-provider.md)

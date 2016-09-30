@@ -1,0 +1,41 @@
+---
+title: "Type int"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "int data type"
+  - "type int"
+  - "portability [C++], type int"
+  - "signed integers"
+ms.assetid: 0067ce9a-281e-491a-ae63-632952981e13
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Type int
+The size of a signed or unsigned <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> item is the standard size of an integer on a particular machine. For example, in 16-bit operating systems, the <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> type is usually 16 bits, or 2 bytes. In 32-bit operating systems, the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> type is usually 32 bits, or 4 bytes. Thus, the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> type is equivalent to either the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> or the **long int** type, and the <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> type is equivalent to either the **unsigned short** or the <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> type, depending on the target environment. The <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> types all represent signed values unless specified otherwise.  
+  
+ The type specifiers <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> (or simply <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>) define certain features of the C language (for instance, the <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> type). In these cases, the definitions of <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> and unsigned int for a particular implementation determine the actual storage.  
+  
+ **Microsoft Specific**  
+  
+ Signed integers are represented in two's-complement form. The most-significant bit holds the sign: 1 for negative, 0 for positive and zero. The range of values is given in [C Integer Limits](../vs140/c---integer-limits.md), which is taken from the LIMITS.H header file.  
+  
+ **END Microsoft Specific**  
+  
+> [!NOTE]
+>  The int and unsigned int type specifiers are widely used in C programs because they allow a particular machine to handle integer values in the most efficient way for that machine. However, since the sizes of the int and unsigned int types vary, programs that depend on a specific int size may not be portable to other machines. To make programs more portable, you can use expressions with the sizeof operator (as discussed in [The sizeof Operator](../vs140/sizeof-operator--c-.md)) instead of hard-coded data sizes.  
+  
+## See Also  
+ [Storage of Basic Types](../vs140/storage-of-basic-types.md)

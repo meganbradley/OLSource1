@@ -1,0 +1,221 @@
+---
+title: "CTabbedPane Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CTabbedPane"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CTabbedPane class"
+ms.assetid: f4dc5215-b789-4f2d-8c62-477aceda3578
+caps.latest.revision: 26
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CTabbedPane Class
+Implements the functionality of a pane with detachable tabs.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|<CodeContentPlaceHolder>14\</CodeContentPlaceHolder>|Default constructor.|  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CTabbedPane::DetachPane](#ctabbedpane__detachpane)|(Overrides [CBaseTabbedPane::DetachPane](../vs140/cbasetabbedpane-class.md#cbasetabbedpane__detachpane).)|  
+|[CTabbedPane::EnableTabAutoColor](#ctabbedpane__enabletabautocolor)|Enables or disables automatic coloring of tabs.|  
+|[CTabbedPane::FloatTab](#ctabbedpane__floattab)|Floats a pane, but only if the pane currently resides in a detachable tab. (Overrides [CBaseTabbedPane::FloatTab](../vs140/cbasetabbedpane-class.md#cbasetabbedpane__floattab).)|  
+|[CTabbedPane::GetTabArea](#ctabbedpane__gettabarea)|Returns the size and position of the tab area within the tabbed window.|  
+|[CTabbedPane::GetTabWnd](#ctabbedpane__gettabwnd)||  
+|[CTabbedPane::HasAutoHideMode](#ctabbedpane__hasautohidemode)|Determines whether the tabbed pane can be switched to autohide mode. (Overrides [CBaseTabbedPane::HasAutoHideMode](../vs140/cbasetabbedpane-class.md#cbasetabbedpane__hasautohidemode).)|  
+|[CTabbedPane::IsTabLocationBottom](#ctabbedpane__istablocationbottom)|Determines whether the tabs are located at the bottom of the window.|  
+|[CTabbedPane::ResetTabs](#ctabbedpane__resettabs)|Resets all tabbed panes to the default state.|  
+|[CTabbedPane::SetTabAutoColors](#ctabbedpane__settabautocolors)|Sets a list of custom colors that can be used when the auto color feature is enabled.|  
+  
+### Data Members  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CTabbedPane::m_bTabsAlwaysTop](#ctabbedpane__m_btabsalwaystop)|The default location for tabs in the application.|  
+|[CTabbedPane::m_pTabWndRTC](#ctabbedpane__m_ptabwndrtc)|Runtime class information for a custom <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>-derived object.|  
+  
+## Remarks  
+ The framework automatically creates an instance of this class when a user attaches one pane to another by pointing to the caption of the second pane. All of the tabbed panes that are created by the framework have an ID of -1.  
+  
+ To specify regular tabs instead of Outlook-style tabs, pass the <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> style to the [CDockablePane::CreateEx](../vs140/cdockablepane-class.md#cdockablepane__createex) method.  
+  
+ If you create a tabbed pane with detachable tabs, the pane may be destroyed automatically by the framework, so you should not store the pointer. To get a pointer to the tabbed pane, call the <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> method.  
+  
+## Example  
+ In this example we create a <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> object. Next, we use [CBaseTabbedPane::AddTab](../vs140/cbasetabbedpane-class.md#cbasetabbedpane__addtab) to attach additional tabs.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## Example  
+ Another way to create a tabbed control bar object is to use [CDockablePane::AttachToTabWnd](../vs140/cdockablepane-class.md#cdockablepane__attachtotabwnd). The <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> method dynamically creates a tabbed pane object using runtime class information set by [CDockablePane::SetTabbedPaneRTC](../vs140/cdockablepane-class.md#cdockablepane__settabbedpanertc).  
+  
+ In this example we create a tabbed pane dynamically, attach two tabs, and make the second tab non-detachable.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ [CCmdTarget](../vs140/ccmdtarget-class.md)  
+  
+ [CWnd](../vs140/cwnd-class.md)  
+  
+ [CBasePane](../vs140/cbasepane-class.md)  
+  
+ [CPane](../vs140/cpane-class.md)  
+  
+ [CDockablePane](../vs140/cdockablepane-class.md)  
+  
+ [CBaseTabbedPane](../vs140/cbasetabbedpane-class.md)  
+  
+ [CTabbedPane](../vs140/ctabbedpane-class.md)  
+  
+## Requirements  
+ **Header:** afxTabbedPane.h  
+  
+##  \<a name="ctabbedpane__detachpane">\</a>  CTabbedPane::DetachPane  
+ [!INCLUDE[cpp_fp_under_construction](../vs140/includes/cpp_fp_under_construction_md.md)]  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+### Parameters  
+ [in] <CodeContentPlaceHolder>20\</CodeContentPlaceHolder>  
+  [in] <CodeContentPlaceHolder>21\</CodeContentPlaceHolder>  
+  
+### Return Value  
+  
+### Remarks  
+  
+##  \<a name="ctabbedpane__enabletabautocolor">\</a>  CTabbedPane::EnableTabAutoColor  
+ Enables or disables automatic coloring of tabs.  
+  
+<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+### Parameters  
+ [in] <CodeContentPlaceHolder>22\</CodeContentPlaceHolder>  
+ <CodeContentPlaceHolder>23\</CodeContentPlaceHolder> to enable auto coloring of tabs; otherwise, <CodeContentPlaceHolder>24\</CodeContentPlaceHolder>.  
+  
+### Remarks  
+ Use this static method to enable or disable automatic coloring of tabs in all tabbed panes in the application. When this feature is enabled, each tab is filled by its own color. You can find the list of colors that are used to color the tabs by calling the [CMFCBaseTabCtrl::GetAutoColors](../vs140/cmfcbasetabctrl-class.md#cmfcbasetabctrl__getautocolors) method.  
+  
+ You can specify the list of colors that will be used for tabs by calling [CTabbedPane::SetTabAutoColors](#ctabbedpane__settabautocolors).  
+  
+ By default, this option is disabled.  
+  
+##  \<a name="ctabbedpane__floattab">\</a>  CTabbedPane::FloatTab  
+ [!INCLUDE[cpp_fp_under_construction](../vs140/includes/cpp_fp_under_construction_md.md)]  
+  
+<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+### Parameters  
+ [in] <CodeContentPlaceHolder>25\</CodeContentPlaceHolder>  
+  [in] <CodeContentPlaceHolder>26\</CodeContentPlaceHolder>  
+  [in] <CodeContentPlaceHolder>27\</CodeContentPlaceHolder>  
+  [in] <CodeContentPlaceHolder>28\</CodeContentPlaceHolder>  
+  
+### Return Value  
+  
+### Remarks  
+  
+##  \<a name="ctabbedpane__gettabarea">\</a>  CTabbedPane::GetTabArea  
+ Returns the size and position of the tab area in the tabbed window.  
+  
+<CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+### Parameters  
+ [out] <CodeContentPlaceHolder>29\</CodeContentPlaceHolder>  
+ Contains the size and position, in screen coordinates, of the top tab area.  
+  
+ [out] <CodeContentPlaceHolder>30\</CodeContentPlaceHolder>  
+ Contains the size and position, in screen coordinates, of the bottom tab area.  
+  
+### Remarks  
+ The framework calls this method to determine how to dock a pane that a user is dragging. When the user drags a pane over the tab area of the target pane, the framework tries to add it as a new tab of the target pane. Otherwise, it tries to dock the pane to the side of the target pane, which involves creating a new pane container with a pane divider that separates the two panes.  
+  
+ Override this method in a <CodeContentPlaceHolder>31\</CodeContentPlaceHolder>-derived class to change this behavior.  
+  
+##  \<a name="ctabbedpane__gettabwnd">\</a>  CTabbedPane::GetTabWnd  
+ [!INCLUDE[cpp_fp_under_construction](../vs140/includes/cpp_fp_under_construction_md.md)]  
+  
+<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+### Return Value  
+  
+### Remarks  
+  
+##  \<a name="ctabbedpane__hasautohidemode">\</a>  CTabbedPane::HasAutoHideMode  
+ [!INCLUDE[cpp_fp_under_construction](../vs140/includes/cpp_fp_under_construction_md.md)]  
+  
+<CodeContentPlaceHolder>8\</CodeContentPlaceHolder>  
+### Return Value  
+  
+### Remarks  
+  
+##  \<a name="ctabbedpane__istablocationbottom">\</a>  CTabbedPane::IsTabLocationBottom  
+ Determines whether the tabs are located at the bottom of the window.  
+  
+<CodeContentPlaceHolder>9\</CodeContentPlaceHolder>  
+### Return Value  
+ <CodeContentPlaceHolder>32\</CodeContentPlaceHolder> if the tab area is located at the bottom of the tabbed window; otherwise, <CodeContentPlaceHolder>33\</CodeContentPlaceHolder>.  
+  
+### Remarks  
+  
+##  \<a name="ctabbedpane__m_btabsalwaystop">\</a>  CTabbedPane::m_bTabsAlwaysTop  
+ The default location for tabs in the application.  
+  
+<CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+### Remarks  
+ Set this static member to <CodeContentPlaceHolder>34\</CodeContentPlaceHolder> to force all tabs in the application to be displayed at the top of the tabbed pane.  
+  
+ You must set this value before a tabbed pane has been created.  
+  
+ The default value is <CodeContentPlaceHolder>35\</CodeContentPlaceHolder>.  
+  
+##  \<a name="ctabbedpane__m_ptabwndrtc">\</a>  CTabbedPane::m_pTabWndRTC  
+ Runtime class information for a custom <CodeContentPlaceHolder>36\</CodeContentPlaceHolder>-derived object.  
+  
+<CodeContentPlaceHolder>11\</CodeContentPlaceHolder>  
+### Remarks  
+ Set this static member variable to a pointer to the runtime class information of a <CodeContentPlaceHolder>37\</CodeContentPlaceHolder>-derived object if you are using a custom tabbed window inside a tabbed pane.  
+  
+##  \<a name="ctabbedpane__resettabs">\</a>  CTabbedPane::ResetTabs  
+ Resets all tabbed panes to the default state.  
+  
+<CodeContentPlaceHolder>12\</CodeContentPlaceHolder>  
+### Remarks  
+ Call this method to revert all tabbed panes to their default state. When called, this method resets the border sizes and auto color state of all tabbed panes.  
+  
+##  \<a name="ctabbedpane__settabautocolors">\</a>  CTabbedPane::SetTabAutoColors  
+ Sets a list of custom colors that are used when the auto color feature is enabled.  
+  
+<CodeContentPlaceHolder>13\</CodeContentPlaceHolder>  
+### Parameters  
+ [in] <CodeContentPlaceHolder>38\</CodeContentPlaceHolder>  
+ Contains the array of colors to set.  
+  
+### Remarks  
+ Use this method to customize the list of colors that are used when the auto color feature is enabled. This is a static function and affects all tabbed panes in your application.  
+  
+ Use [CTabbedPane::EnableTabAutoColor](#ctabbedpane__enabletabautocolor) to enable or disable the auto color feature.  
+  
+## See Also  
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [Classes](../vs140/mfc-classes.md)   
+ [CDockablePane Class](../vs140/cdockablepane-class.md)   
+ [CBaseTabbedPane Class](../vs140/cbasetabbedpane-class.md)   
+ [CMFCOutlookBar](../vs140/cmfcoutlookbar-class.md)

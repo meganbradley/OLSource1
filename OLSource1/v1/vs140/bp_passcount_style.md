@@ -1,0 +1,57 @@
+---
+title: "BP_PASSCOUNT_STYLE"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "BP_PASSCOUNT_STYLE"
+helpviewer_keywords: 
+  - "BP_PASSCOUNT_STYLE structure"
+ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
+caps.latest.revision: 14
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# BP_PASSCOUNT_STYLE
+Specifies the condition associated with the breakpoint pass count that causes the breakpoint to fire.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## Members  
+ BP_PASSCOUNT_NONE  
+ Specifies no breakpoint pass count style.  
+  
+ BP_PASSCOUNT_EQUAL  
+ Sets the breakpoint pass count style to equal. The breakpoint fires when the number of times the breakpoint is hit equals the pass count.  
+  
+ BP_PASSCOUNT_EQUAL_OR_GREATER  
+ Sets the breakpoint pass count style to equal or greater. The breakpoint fires when the number of times the breakpoint is hit is equal to or greater than the pass count.  
+  
+ BP_PASSCOUNT_MOD  
+ Specifies a modulo pass count. For example, if the pass count is of the type <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> and the pass count value is 4, the breakpoint fires every time the hit count is a multiple of 4.  
+  
+## Remarks  
+ Used for the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> member of the [BP_PASSCOUNT](../vs140/bp_passcount.md) structure that is in turn a member of the [BP_REQUEST_INFO](../vs140/bp_request_info.md) and [BP_REQUEST_INFO2](../vs140/bp_request_info2.md) structures.  
+  
+## Requirements  
+ Header: msdbg.h  
+  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+  
+## See Also  
+ [Enumerations (Visual Studio Debugging SDK)](../vs140/enumerations--visual-studio-debugging-.md)   
+ [BP_PASSCOUNT](../vs140/bp_passcount.md)   
+ [BP_REQUEST_INFO](../vs140/bp_request_info.md)   
+ [BP_REQUEST_INFO2](../vs140/bp_request_info2.md)

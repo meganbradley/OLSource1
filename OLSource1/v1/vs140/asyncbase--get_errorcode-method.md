@@ -1,0 +1,43 @@
+---
+title: "AsyncBase::get_ErrorCode Method"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "async/Microsoft::WRL::AsyncBase::get_ErrorCode"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "get_ErrorCode method"
+ms.assetid: 50b4f8a2-9a21-4ea0-bb5d-7ff524d62aea
+caps.latest.revision: 7
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# AsyncBase::get_ErrorCode Method
+Retrieves the error code for the current asynchronous operation.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ The location where the current error code is stored.  
+  
+## Return Value  
+ S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL if the current asynchronous operation is closed.  
+  
+## Requirements  
+ **Header:** async.h  
+  
+ **Namespace:** Microsoft::WRL  
+  
+## See Also  
+ [AsyncBase Class](../vs140/asyncbase-class.md)

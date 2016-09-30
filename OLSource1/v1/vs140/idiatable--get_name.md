@@ -1,0 +1,36 @@
+---
+title: "IDiaTable::get_name"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaTable::get_name method"
+ms.assetid: f6e9cd07-63cd-48a6-9835-e69c2d0859c5
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaTable::get_name
+Retrieves the name of the table.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ [out] Returns the name of the table.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>; otherwise, returns an error code.  
+  
+## See Also  
+ [IDiaTable](../vs140/idiatable.md)

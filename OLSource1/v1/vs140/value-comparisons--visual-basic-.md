@@ -1,0 +1,60 @@
+---
+title: "Value Comparisons (Visual Basic)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "variables [Visual Basic], comparing values"
+  - "Visual Basic code, operators"
+  - "Visual Basic code, expressions"
+  - "comparison operators, comparing expressions"
+  - "numeric expressions"
+  - "operators [Visual Basic], comparison"
+  - "expressions [Visual Basic], comparing"
+ms.assetid: 60da0c76-9458-4afc-97e9-44a7939c064c
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Value Comparisons (Visual Basic)
+Comparison operators can be used to construct expressions that compare the values of numeric variables. These expressions return a <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> value based on whether the comparison is true or false. Examples of such an expression are as follows.  
+  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+  
+ The first expression evaluates to <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>, because 45 is greater than 26. The second example evaluates to <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>, because 26 is not greater than 45.  
+  
+ You can also compare numeric expressions in this fashion. The expressions you compare can themselves be complex expressions, as in the following example.  
+  
+ <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+  
+ The preceding complex expression includes literals, variables, and function calls. The expressions on both sides of the comparison operator are evaluated, and the resulting values are then compared using the <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> comparison operator. If the value of the expression on the left side is greater than or equal to the value of the expression on the right, the entire expression evaluates to <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>; otherwise, it evaluates to <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>.  
+  
+ Expressions that compare values are most commonly used in <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> constructions, as in the following example.  
+  
+ [!code[VbVbalrOperators#84](../vs140/codesnippet/VisualBasic/value-comparisons--visual-basic-_1.vb)]  
+  
+ The <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> sign is a comparison operator as well as an assignment operator. When used as a comparison operator, it evaluates whether the value on the left is equal to the value on the right, as shown in the following example.  
+  
+ [!code[VbVbalrOperators#85](../vs140/codesnippet/VisualBasic/value-comparisons--visual-basic-_2.vb)]  
+  
+ You can also use a comparison expression anywhere a <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> value is needed, such as in an <CodeContentPlaceHolder>12\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> statement, or when assigning to or passing a value to a <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> variable. In the following example, the value returned by the comparison expression is assigned to a <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> variable.  
+  
+ [!code[VbVbalrOperators#86](../vs140/codesnippet/VisualBasic/value-comparisons--visual-basic-_3.vb)]  
+  
+## See Also  
+ [Boolean Expressions](../vs140/boolean-expressions--visual-basic-.md)   
+ [Operators and Expressions in Visual Basic](../vs140/operators-and-expressions-in-visual-basic.md)   
+ [Comparison Operators in Visual Basic](../vs140/comparison-operators-in-visual-basic.md)   
+ [How to: Calculate Numeric Values](../vs140/how-to--calculate-numeric-values--visual-basic-.md)   
+ [Operator Precedence in Visual Basic](../vs140/operator-precedence-in-visual-basic.md)

@@ -1,0 +1,54 @@
+---
+title: "__pctype_func"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+apiname: 
+  - "__pctype_func"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr120.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr80.dll"
+apitype: "DLLExport"
+f1_keywords: 
+  - "__pctype_func"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "__pctype_func"
+ms.assetid: d52b8add-d07d-4516-a22f-e836cde0c57f
+caps.latest.revision: 6
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# __pctype_func
+Retrieves a pointer to an array of character classification information.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Return Value  
+ A pointer to an array of character classification information.  
+  
+## Remarks  
+ The information in the character classification table is for internal use only, and is used by various functions that classify characters of type <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>. For more information, see the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> section of [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../vs140/_pctype--_pwctype--_wctype--_mbctype--_mbcasemap.md).  
+  
+## Requirements  
+  
+|Routine|Required header|  
+|-------------|---------------------|  
+|__pctype_func|ctype.h|  
+  
+## See Also  
+ [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../vs140/_pctype--_pwctype--_wctype--_mbctype--_mbcasemap.md)

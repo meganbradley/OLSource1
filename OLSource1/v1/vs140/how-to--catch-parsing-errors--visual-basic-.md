@@ -1,0 +1,33 @@
+---
+title: "How to: Catch Parsing Errors (Visual Basic)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+ms.assetid: 22e9068e-ea58-447b-816e-cd1852c11787
+caps.latest.revision: 5
+---
+# How to: Catch Parsing Errors (Visual Basic)
+This topic shows how to detect badly formed or invalid XML.  
+  
+ [!INCLUDE[sqltecxlinq](../vs140/includes/sqltecxlinq_md.md)] is implemented using \<xref:System.Xml.XmlReader*>. If badly formed or invalid XML is passed to [!INCLUDE[sqltecxlinq](../vs140/includes/sqltecxlinq_md.md)], the underlying \<xref:System.Xml.XmlReader*> class will throw an exception. The various methods that parse XML, such as \<xref:System.Xml.Linq.XElement.Parse*?displayProperty=fullName>, do not catch the exception; the exception can then be caught by your application.  
+  
+ Note that you cannot get parse errors if you use XML literals. The Visual Basic compiler will catch errors of badly formed or invalid XML.  
+  
+## Example  
+ The following code tries to parse invalid XML:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ When you run this code, it throws the following exception:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ For information about the exceptions that you can expect the \<xref:System.Xml.Linq.XElement.Parse*?displayProperty=fullName>, \<xref:System.Xml.Linq.XDocument.Parse*?displayProperty=fullName>, \<xref:System.Xml.Linq.XElement.Load*?displayProperty=fullName>, and \<xref:System.Xml.Linq.XDocument.Load*?displayProperty=fullName> methods to throw, see the \<xref:System.Xml.XmlReader*> documentation.  
+  
+## See Also  
+ [Parsing XML (Visual Basic)](../vs140/parsing-xml--visual-basic-.md)

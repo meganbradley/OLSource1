@@ -1,0 +1,36 @@
+---
+title: "&#39;Class&#39; constraint cannot be specified multiple times for the same type parameter"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "bc32101"
+  - "vbc32101"
+helpviewer_keywords: 
+  - "BC32101"
+ms.assetid: fac2330a-e397-4bd9-8166-934407575f9e
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# &#39;Class&#39; constraint cannot be specified multiple times for the same type parameter
+A constraint list includes the [Class (Visual Basic)](assetId:///0777c6e6-46bc-451b-ad70-57b49d4ef4f7) constraint more than once.  
+  
+ A constraint list on a type parameter can specify that the type argument passed to that type parameter must be a value type (with the [Structure (Visual Basic)](assetId:///263ce115-ac36-4c05-8cb7-0e0eead5c6d0) constraint) or must be a reference type (with the <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> constraint). You cannot specify both constraints on the same type parameter, and you cannot specify either one more than once.  
+  
+ Error ID: BC32101  
+  
+### To correct this error  
+  
+-   Remove any redundant <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> keywords. You should have only one in the constraint list.  
+  
+## See Also  
+ [Generic Types in Visual Basic](../vs140/generic-types-in-visual-basic--visual-basic-.md)   
+ [Value Types and Reference Types](../vs140/value-types-and-reference-types.md)

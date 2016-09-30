@@ -1,0 +1,142 @@
+---
+title: "Define and install a modeling extension"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-tfs-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "UML - extending"
+  - "UML model, extending"
+ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
+caps.latest.revision: 41
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Define and install a modeling extension
+In Visual Studio, you can define extensions to modeling diagrams. In this manner, you can adapt the diagrams and models to your own needs. For example, you can define menu commands, UML profiles, validation constraints and toolbox items. You can define several components in a single extension. You can also distribute these extensions to other Visual Studio users in the form of a [Visual Studio Integration Extension (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780). You can create a VSIX using a VSIX project in Visual Studio.  
+  
+## Requirements  
+ See [Extend UML models and diagrams](../vs140/extend-uml-models-and-diagrams.md#Requirements).  
+  
+ To see which versions of Visual Studio support this feature, see [Version support for architecture and modeling tools](../vs140/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  
+## Creating a Modeling Extension Solution  
+ To define a modeling extension, you must create a solution containing these projects:  
+  
+-   A [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] Integration Extension (VSIX) project. This generates a file that acts as an installer for the components of your extension.  
+  
+-   A class library project, required for components that include program code.  
+  
+ If you want to make an extension that has several components, you can develop them in a single solution. You need only one VSIX project.  
+  
+ Components that do not require code, such as custom toolbox items and custom UML profiles, can be added directly to the VSIX project without using separate class library projects. Components that require program code are more easily defined in a separate class library project. Components that require code include gesture handlers, menu commands, and validation code.  
+  
+#### To create a class library project for menu commands, gesture handlers, or validation  
+  
+1.  On the **File** menu, choose **New**, **Project**.  
+  
+2.  Under **Installed Templates**, select **Visual C#** or **Visual Basic**, then choose **Class Library**.  
+  
+#### To create a VSIX project  
+  
+1.  If you are creating a component with code, it is easiest to create the class library project first. You will add your code to that project.  
+  
+2.  Create a VSIX project.  
+  
+    1.  In **Solution Explorer**, in the shortcut menu of the solution, choose **Add**, **New Project**.  
+  
+    2.  Under **Installed Templates**, expand **Visual C#** or **Visual Basic**, then select **Extensibility**. In the middle column, choose **VSIX Project**.  
+  
+3.  Set the VSIX project as the startup project of the solution.  
+  
+    -   In Solution Explorer, on the shortcut menu of the VSIX project choose **Set as StartUp project**.  
+  
+4.  Open **source.extension.vsixmanifest**. The file opens in the manifest editor.  
+  
+5.  On the **MetaData** tab, set the name and descriptive fields of the VSIX.  
+  
+6.  On the **Install Targets** tab, choose **New** and set the Visual Studio versions as the targets.  
+  
+7.  On the **Assets** tab, add your components to the Visual Studio extension.  
+  
+    1.  Choose **New**.  
+  
+    2.  For a component with code, set these fields in the **Add New Asset** dialog box:  
+  
+        |||  
+        |-|-|  
+        |**Type** =|**Microsoft.VisualStudio.MefComponent**|  
+        |**Source** =|**A project in current solution**|  
+        |**Project** =|*Your class library project*|  
+        |**Embed in this folder** =|*(empty)*|  
+  
+         For other component types, see the links in the next section.  
+  
+## Developing the Component  
+ For each component such as a menu command or gesture handler, you must define a separate handler. You can put several handlers in the same class library project. The following table summarizes the different kinds of handler.  
+  
+|Extension type|Topic|How each component is typically declared|  
+|--------------------|-----------|----------------------------------------------|  
+|Menu Command|[How to: Define Menu Commands on a UML Diagram](../vs140/define-a-menu-command-on-a-modeling-diagram.md)|<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>|  
+|Drag-and-drop or double-click|[How to Define a Gesture Handler on a UML Diagram](../vs140/define-a-gesture-handler-on-a-modeling-diagram.md)|<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>9\</CodeContentPlaceHolder>|  
+|Validation Constraint|[How to: Define Validation Constraints on UML Models](../vs140/define-validation-constraints-for-uml-models.md)|<CodeContentPlaceHolder>10\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>11\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>12\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>|  
+|Work Item link event handler|[How to: Link Work Items and Other References to Model Elements](../vs140/define-a-work-item-link-handler.md)|<CodeContentPlaceHolder>16\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>17\</CodeContentPlaceHolder>\<br />\<br /> <CodeContentPlaceHolder>18\</CodeContentPlaceHolder>|  
+|UML Profile|[How to: Define a Profile to Extend UML](../vs140/define-a-profile-to-extend-uml.md)|(To be defined)|  
+|Toolbox Item|[How to: Define a Custom Modeling Toolbox Item](../vs140/define-a-custom-modeling-toolbox-item.md)|(To be defined)|  
+  
+## Running an Extension During its Development  
+  
+#### To run an extension during its development  
+  
+1.  In the [!INCLUDE[vs_current_short](../vs140/includes/vs_current_short_md.md)] **Debug** menu, choose **Start Debugging**.  
+  
+     The project builds, and a new instance of [!INCLUDE[vs_current_short](../vs140/includes/vs_current_short_md.md)] starts in Experimental mode.  
+  
+    -   Alternatively you can choose **Start Without Debugging**. This reduces the time taken to start the program.  
+  
+2.  Create or open a modeling project in the experimental instance of Visual Studio, and create or open a diagram.  
+  
+     Your extension will load and run.  
+  
+3.  If you used **Start Without Debugging** but you want to use the debugger, go back to the main instance of Visual Studio. On the **Debug** menu, click **Attach to Process**. In the dialog box, select the experimental instance of Visual Studio, which has the program name **devenv**.  
+  
+##  \<a name="Installing">\</a> Installing and uninstalling an extension  
+ Perform the following steps to run your extension in the main instance of Visual Studio either on your own computer or on other computers.  
+  
+1.  In your computer, find the **.vsix** file that was built by your extension project.  
+  
+    1.  In **Solution Explorer**, on the shortcut menu of your project, and then choose **Open Folder in Windows Explorer**.  
+  
+    2.  Locate the file **bin\\\*\\***YourProject***.vsix**  
+  
+2.  Copy the **.vsix** file to the target computer on which you want to install the extension. This can be your own computer or another one.  
+  
+    -   The target computer must have one of the editions of Visual Studio that you specified on the **Installation Targets** tab of **source.extension.vsixmanifest**.  
+  
+3.  On the target computer, open the **.vsix** file, for example by double-clicking it.  
+  
+     **Visual Studio Extension Installer** opens and installs the extension.  
+  
+4.  Start or restart Visual Studio.  
+  
+#### To uninstall an extension  
+  
+1.  On the **Tools** menu, click **Extensions and Updates**.  
+  
+2.  Expand **Installed Extensions**.  
+  
+3.  Select the extension, and then click **Uninstall**.  
+  
+ Rarely, a faulty extension fails to load and creates a report in the error window, but does not appear in Extension Manager. In that case, you can remove the extension by deleting the file from the following location where *%LocalAppData%* is typically *DriveName*:\Users\\*UserName*\AppData\Local:  
+  
+ *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
+  
+## See Also  
+ [How to: Define a Profile to Extend UML](../vs140/define-a-profile-to-extend-uml.md)   
+ [How to: Define a Custom Modeling Toolbox Item](../vs140/define-a-custom-modeling-toolbox-item.md)   
+ [How to: Define Validation Constraints on UML Models](../vs140/define-validation-constraints-for-uml-models.md)   
+ [How to: Add Commands and Gestures to a Modeling Diagram](../vs140/define-a-menu-command-on-a-modeling-diagram.md)

@@ -1,0 +1,32 @@
+---
+title: "Compiler Error CS0692"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0692"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0692"
+ms.assetid: d2fd650b-1f84-44b1-8c7e-471cad92a85e
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS0692
+Duplicate type parameter 'identifier'  
+  
+ The same name may not be used more than once in a type parameter list. Rename or remove the duplicate type parameter(s).  
+  
+## Example  
+ The following sample generates CS0692:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

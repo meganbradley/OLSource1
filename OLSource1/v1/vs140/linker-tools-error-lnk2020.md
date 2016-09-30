@@ -1,0 +1,44 @@
+---
+title: "Linker Tools Error LNK2020"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "LNK2020"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "LNK2020"
+ms.assetid: 4dd017d0-5e83-471b-ac8a-538ac1ed6870
+caps.latest.revision: 20
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Linker Tools Error LNK2020
+unresolved token 'token'  
+  
+ Similar to an undefined external error, except that the reference is via metadata. In metadata, all functions and data must be defined.  
+  
+ To resolve:  
+  
+-   Define the missing function or data, or  
+  
+-   Include the object file or library in which the missing function or data is already defined.  
+  
+## Example  
+ The following sample generates LNK2020.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Example  
+ LNK2020 will also occur if you create a variable of a managed template type, but do not also instantiate the type.  
+  
+ The following sample generates LNK2020.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>

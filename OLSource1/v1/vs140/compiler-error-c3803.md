@@ -1,0 +1,31 @@
+---
+title: "Compiler Error C3803"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C3803"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3803"
+ms.assetid: bad5fb9a-ed9a-4c15-96e7-cf06e200a50d
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3803
+'property': property has a type that is incompatible with one of its accessors 'accessor'  
+  
+ The type of a property defined with [property](../vs140/property--c---.md) does not match the return type for one of its accessor functions.  
+  
+ The following sample generates C3803:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

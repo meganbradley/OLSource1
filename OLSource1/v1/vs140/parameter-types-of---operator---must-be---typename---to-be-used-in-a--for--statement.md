@@ -1,0 +1,43 @@
+---
+title: "Parameter types of &#39;&lt;operator&gt;&#39; must be &#39;&lt;typename&gt;&#39; to be used in a &#39;For&#39; statement"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "BC33040"
+  - "vbc33040"
+helpviewer_keywords: 
+  - "BC33040"
+ms.assetid: bffbb812-0d69-47e4-96c5-01882722ccdb
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Parameter types of &#39;&lt;operator&gt;&#39; must be &#39;&lt;typename&gt;&#39; to be used in a &#39;For&#39; statement
+A <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> loop specifies a counter variable of a type that does not define the <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> operator with parameters of its own type.  
+  
+ The counter variable must be of a type that supports greater-than-or-equal (<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>) and less-than-or-equal (<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>) operators that compare their containing type. This means both of the operands must be of the type of the counter variable.  
+  
+ If you use a numeric data type for the counter variable, the <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> operators are supported on the containing type. If you use a user-defined class or structure, you must define both operators with operands of the type of your class or structure.  
+  
+ **Error ID:** BC33040  
+  
+### To correct this error  
+  
+1.  Make sure the spelling of the counter-variable data type is correct.  
+  
+2.  If you are using a user-defined class or structure for the counter variable, define <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> operators that compare that class or structure.  
+  
+## See Also  
+ [For...Next Statement (Visual Basic)](../vs140/for...next-statement--visual-basic-.md)   
+ [Operator Procedures](../vs140/operator-procedures--visual-basic-.md)   
+ [Operator Statement](../vs140/operator-statement.md)   
+ [How to: Define an Operator](../vs140/how-to--define-an-operator--visual-basic-.md)   
+ [How to: Define a Conversion Operator](../vs140/how-to--define-a-conversion-operator--visual-basic-.md)

@@ -1,0 +1,62 @@
+---
+title: "MSBuild Batching"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "batching [MSBuild]"
+  - "MSBuild, batching"
+ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# MSBuild Batching
+[!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] has the ability to divide item lists into different categories, or batches, based on item metadata, and run a target or task one time with each batch.  
+  
+## Task Batching  
+ Task batching allows you to simplify your project files by providing a way to divide item lists into different batches and pass each of those batches into a task separately. This means that a project file only needs to have the task and its attributes declared once, even though it can be run several times.  
+  
+ You specify that you want [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] to perform batching with a task by using the %(*ItemMetaDataName*) notation in one of the task attributes. The following example splits the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> item list into batches based on the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> item metadata value, and passes each of the batches to the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> task separately.  
+  
+> [!NOTE]
+>  If you do not reference the item list elsewhere in the task attributes, or the metadata name may be ambiguous, you can use the %(*ItemCollection.ItemMetaDataName*) notation to fully qualify the item metadata value to use for batching.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ For more specific batching examples, see [How To: Batch Tasks with Item Metadata](../vs140/item-metadata-in-task-batching.md).  
+  
+## Target Batching  
+ [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] checks if the inputs and outputs of a target are up-to-date before it runs the target. If both inputs and outputs are up-to-date, the target is skipped. If a task inside of a target uses batching, [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] needs to determine if the inputs and outputs for each batch of items is up-to-date. Otherwise, the target is executed every time it is hit.  
+  
+ The following example shows a <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> element that contains an <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> attribute with the %(*ItemMetaDataName*) notation. [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] will divide the <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> item list into batches based on the <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> item metadata, and analyze the timestamps of the output files for each batch. If the outputs from a batch are not up-to-date, the target is run. Otherwise, the target is skipped.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ For another example of target batching, see [How To: Batch Targets with Item Metadata](../vs140/item-metadata-in-target-batching.md).  
+  
+## Property Functions Using Metadata  
+ Batching can be controlled by property functions that include metadata. For example,  
+  
+ <CodeContentPlaceHolder>9\</CodeContentPlaceHolder>  
+  
+ uses \<xref:System.IO.Path.Combine*> to combine a root folder path with a Compile item path.  
+  
+ Property functions may not appear within metadata values.  For example,  
+  
+ <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+  
+ is not allowed.  
+  
+ For more information about property functions, see [Property Functions](../vs140/property-functions.md).  
+  
+## See Also  
+ [ItemMetaData Element (MSBuild)](../vs140/itemmetadata-element--msbuild-.md)   
+ [MSBuild Concepts](../vs140/msbuild-concepts.md)   
+ [MSBuild Reference](../vs140/msbuild-reference.md)   
+ [MSBuild Advanced Concepts](../vs140/msbuild-advanced-concepts.md)

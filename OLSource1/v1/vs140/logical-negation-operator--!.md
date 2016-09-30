@@ -1,0 +1,46 @@
+---
+title: "Logical Negation Operator: !"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "language-reference"
+f1_keywords: 
+  - "!"
+  - "Not"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "! operator"
+  - "NOT operator"
+  - "logical negation"
+ms.assetid: 650add9f-a7bc-426c-b01d-5fc6a81c8b62
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Logical Negation Operator: !
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ The logical negation operator (**!**) reverses the meaning of its operand. The operand must be of arithmetic or pointer type (or an expression that evaluates to arithmetic or pointer type). The operand is implicitly converted to type <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>. The result is **true** if the converted operand is **false**; the result is **false** if the converted operand is **true**. The result is of type <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>.  
+  
+ For an expression *e*, the unary expression **!***e* is equivalent to the expression **(***e* <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> 0), except where overloaded operators are involved.  
+  
+## Operator Keyword for !  
+ The **not** operator is the text equivalent of **!**. There are two ways to access the **not** operator in your programs: include the header file <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>, or compile with the [/Za](../vs140/-za---ze--disable-language-extensions-.md) (Disable language extensions) compiler option.  
+  
+## Example  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## See Also  
+ [Expressions with Unary Operators](../vs140/expressions-with-unary-operators.md)   
+ [C++ Operators](../vs140/c---operators.md)   
+ [C++ Built-in Operators, Precedence and Associativity](../vs140/c---built-in-operators--precedence-and-associativity.md)   
+ [Unary Arithmetic Operators](../vs140/unary-arithmetic-operators.md)

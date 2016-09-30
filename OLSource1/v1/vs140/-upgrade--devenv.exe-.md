@@ -1,0 +1,49 @@
+---
+title: "-Upgrade (devenv.exe)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+H1: "/Upgrade (devenv.exe)"
+helpviewer_keywords: 
+  - "/upgrade Devenv switch"
+  - "Devenv, /upgrade switch"
+  - "upgrade Devenv switch"
+ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
+caps.latest.revision: 22
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# -Upgrade (devenv.exe)
+Updates the solution file and all of its project files, or the project file specified, to the current [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] formats for these files.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Arguments  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ Required if you are upgrading an entire solution and its projects. The path and name of a solution file. You can enter just the name of the solution file, or a full path and the name of the solution file. If the folder or file named does not yet exist, it will be created.  
+  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ Required if you are upgrading a single project. The path and name of a project file within the solution. You can enter just the name of the project file, or a full path and the name of the project file. If the folder or file named does not yet exist, it will be created.  
+  
+## Remarks  
+ Backups are automatically created and copied to a directory named Backup that is created in the current directory.  
+  
+ Source-controlled solutions or projects must be checked out before they can be upgraded.  
+  
+ Using the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> switch does not start [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)]. Results of the upgrade can be seen in the Upgrade Report for the development language of the solution or project. No error or usage info is returned. For more information on upgrading projects in [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], see [How to: Upgrade Projects Created in Earlier Versions of Visual Studio](../vs140/how-to--troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
+  
+## Example  
+ This example upgrades a solution file named "MyProject.sln" in your default folder for [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] solutions.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## See Also  
+ [How to: Upgrade Projects Created in Earlier Versions of Visual Studio](../vs140/how-to--troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
+ [Devenv Command Line Switches](../vs140/devenv-command-line-switches.md)

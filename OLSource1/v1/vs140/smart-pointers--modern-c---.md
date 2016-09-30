@@ -1,0 +1,122 @@
+---
+title: "Smart Pointers (Modern C++)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+ms.assetid: 909ef870-904c-49b6-b8cd-e9d0b7dc9435
+caps.latest.revision: 30
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Smart Pointers (Modern C++)
+In modern C++ programming, the Standard Library includes *smart pointers*, which are used to help ensure that programs are free of memory and resource leaks and are exception-safe.  
+  
+## Uses for smart pointers  
+ Smart pointers are defined in the <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> namespace in the [\<memory>](../vs140/-memory-.md) header file. They are crucial to the [RAII](../vs140/objects-own-resources--raii-.md) or *Resource Acquisition Is Initialialization* programming idiom. The main goal of this idiom is to ensure that resource acquisition occurs at the same time that the object is initialized, so that all resources for the object are created and made ready in one line of code. In practical terms, the main principle of RAII is to give ownership of any heap-allocated resource—for example, dynamically-allocated memory or system object handles—to a stack-allocated object whose destructor contains the code to delete or free the resource and also any associated cleanup code.  
+  
+ In most cases, when you initialize a raw pointer or resource handle to point to an actual resource, pass the pointer to a smart pointer immediately. In modern C++, raw pointers are only used in small code blocks of limited scope, loops, or helper functions where performance is critical and there is no chance of confusion about ownership.  
+  
+ The following example compares a raw pointer declaration to a smart pointer declaration.  
+  
+ [!code[smart_pointers_intro#1](../vs140/codesnippet/CPP/smart-pointers--modern-c---_1.cpp)]  
+  
+ As shown in the example, a smart pointer is a class template that you declare on the stack, and initialize by using a raw pointer that points to a heap-allocated object. After the smart pointer is initialized, it owns the raw pointer. This means that the smart pointer is responsible for deleting the memory that the raw pointer specifies. The smart pointer destructor contains the call to delete, and because the smart pointer is declared on the stack, its destructor is invoked when the smart pointer goes out of scope, even if an exception is thrown somewhere further up the stack.  
+  
+ Access the encapsulated pointer by using the familiar pointer operators, <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>, which the smart pointer class overloads to return the encapsulated raw pointer.  
+  
+ The C++ smart pointer idiom resembles object creation in languages such as C#: you create the object and then let the system take care of deleting it at the correct time. The difference is that no separate garbage collector runs in the background; memory is managed through the standard C++ scoping rules so that the runtime environment is faster and more efficient.  
+  
+> [!IMPORTANT]
+>  Always create smart pointers on a separate line of code, never in a parameter list, so that a subtle resource leak won't occur due to certain parameter list allocation rules.  
+  
+ The following example shows how a <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> smart pointer type from the Standard Template Library could be used to encapsulate a pointer to a large object.  
+  
+ [!code[smart_pointers_intro#2](../vs140/codesnippet/CPP/smart-pointers--modern-c---_2.cpp)]  
+  
+ The example demonstrates the following essential steps for using smart pointers.  
+  
+1.  Declare the smart pointer as an automatic (local) variable. (Do not use the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> expression on the smart pointer itself.)  
+  
+2.  In the type parameter, specify the pointed-to type of the encapsulated pointer.  
+  
+3.  Pass a raw pointer to a <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>-ed object in the smart pointer constructor. (Some utility functions or smart pointer constructors do this for you.)  
+  
+4.  Use the overloaded <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> operators to access the object.  
+  
+5.  Let the smart pointer delete the object.  
+  
+ Smart pointers are designed to be as efficient as possible both in terms of memory and performance. For example, the only data member in <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> is the encapsulated pointer. This means that <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> is exactly the same size as that pointer, either four bytes or eight bytes. Accessing the encapsulated pointer by using the smart pointer overloaded * and -> operators is not significantly slower than accessing the raw pointers directly.  
+  
+ Smart pointers have their own member functions, which are accessed by using “dot” notation. For example, some STL smart pointers have a reset member function that releases ownership of the pointer. This is useful when you want to free the memory owned by the smart pointer before the smart pointer goes out of scope, as shown in the following example.  
+  
+ [!code[smart_pointers_intro#3](../vs140/codesnippet/CPP/smart-pointers--modern-c---_3.cpp)]  
+  
+ Smart pointers usually provide a way to access their  raw pointer directly. STL smart pointers have a <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> member function for this purpose, and <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> has a public <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> class member. By providing direct access to the underlying pointer, you can use the smart pointer to manage memory in your own code and still pass the raw pointer to code that does not support smart pointers.  
+  
+ [!code[smart_pointers_intro#4](../vs140/codesnippet/CPP/smart-pointers--modern-c---_4.cpp)]  
+  
+## Kinds of Smart Pointers  
+ The following section summarizes the different kinds of smart pointers that are available in the Windows programming environment and describes when to use them.  
+  
+ **C++ Standard Library Smart Pointers**  
+ Use these smart pointers as a first choice for encapsulating pointers to plain old C++ objects (POCO).  
+  
+-   <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>   
+     Allows exactly one owner of the underlying pointer. Use as the default choice for POCO unless you know for certain that you require a <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>. Can be moved to a new owner, but not copied or shared. Replaces <CodeContentPlaceHolder>16\</CodeContentPlaceHolder>, which is deprecated. Compare to <CodeContentPlaceHolder>17\</CodeContentPlaceHolder>. <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> is small and efficient; the size is one pointer and it supports rvalue references for fast insertion and retrieval from STL collections. Header file: <CodeContentPlaceHolder>19\</CodeContentPlaceHolder>. For more information, see [How to: Create and use unique_ptr instances](../vs140/how-to--create-and-use-unique_ptr-instances.md) and [unique_ptr Class](../vs140/unique_ptr-class.md).  
+  
+-   <CodeContentPlaceHolder>20\</CodeContentPlaceHolder>   
+     Reference-counted smart pointer. Use when you want to assign one raw pointer to multiple owners, for example, when you return a copy of a pointer from a container but want to keep the original. The raw pointer is not deleted until all <CodeContentPlaceHolder>21\</CodeContentPlaceHolder> owners have gone out of scope or have otherwise given up ownership. The size is two pointers; one for the object and one for the shared control block that contains the reference count. Header file: <CodeContentPlaceHolder>22\</CodeContentPlaceHolder>. For more information, see [How to: Create and Use shared_ptr Instances](../vs140/how-to--create-and-use-shared_ptr-instances.md) and [shared_ptr Class](../vs140/shared_ptr-class.md).  
+  
+-   <CodeContentPlaceHolder>23\</CodeContentPlaceHolder>   
+    Special-case smart pointer for use in conjunction with <CodeContentPlaceHolder>24\</CodeContentPlaceHolder>. A <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> provides access to an object that is owned by one or more <CodeContentPlaceHolder>26\</CodeContentPlaceHolder> instances, but does not participate in reference counting. Use when you want to observe an object, but do not require it to remain alive. Required in some cases to break circular references between <CodeContentPlaceHolder>27\</CodeContentPlaceHolder> instances. Header file: <CodeContentPlaceHolder>28\</CodeContentPlaceHolder>. For more information, see [How to: Create and Use weak_ptr Instances](../vs140/how-to--create-and-use-weak_ptr-instances.md) and [weak_ptr Class](../vs140/weak_ptr-class.md).  
+  
+ **Smart Pointers for COM Objects (Classic Windows Programming)**  
+ When you work with COM objects, wrap the interface pointers in an appropriate smart pointer type. The Active Template Library (ATL) defines several smart pointers for various purposes. You can also use the <CodeContentPlaceHolder>29\</CodeContentPlaceHolder> smart pointer type, which the compiler uses when it creates wrapper classes from .tlb files. It's the best choice when you do not want to include the ATL header files.  
+  
+ [CComPtr Class](../vs140/ccomptr-class.md)  
+ Use this unless you cannot use ATL. Performs reference counting by using the <CodeContentPlaceHolder>30\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>31\</CodeContentPlaceHolder> methods. For more information, see [How to: Create and Use CComPtr and CComQIPtr Instances](../vs140/how-to--create-and-use-ccomptr-and-ccomqiptr-instances.md).  
+  
+ [CComQIPtr Class](../vs140/ccomqiptr-class.md)  
+ Resembles <CodeContentPlaceHolder>32\</CodeContentPlaceHolder> but also provides simplified syntax for calling <CodeContentPlaceHolder>33\</CodeContentPlaceHolder> on COM objects. For more information, see [How to: Create and Use CComPtr and CComQIPtr Instances](../vs140/how-to--create-and-use-ccomptr-and-ccomqiptr-instances.md).  
+  
+ [CComHeapPtr Class](../vs140/ccomheapptr-class.md)  
+ Smart pointer to objects that use <CodeContentPlaceHolder>34\</CodeContentPlaceHolder> to free memory.  
+  
+ [CComGITPtr Class](../vs140/ccomgitptr-class.md)  
+ Smart pointer for interfaces that are obtained from the global interface table (GIT).  
+  
+ [_com_ptr_t Class](../vs140/_com_ptr_t-class.md)  
+ Resembles <CodeContentPlaceHolder>35\</CodeContentPlaceHolder> in functionality but does not depend on ATL headers.  
+  
+ **ATL Smart Pointers for POCO Objects**  
+ In addition to smart pointers for COM objects, ATL also defines smart pointers, and collections of smart pointers, for plain old C++ objects. In classic Windows programming, these types are useful alternatives to the STL collections, especially when code portability is not required or when you do not want to mix the programming models of STL and ATL.  
+  
+ [CAutoPtr Class](../vs140/cautoptr-class.md)  
+ Smart pointer that enforces unique ownership by transferring ownership on copy. Comparable to the deprecated <CodeContentPlaceHolder>36\</CodeContentPlaceHolder> Class.  
+  
+ [CHeapPtr Class](../vs140/cheapptr-class.md)  
+ Smart pointer for objects that are allocated by using the C [malloc](../vs140/malloc.md) function.  
+  
+ [CAutoVectorPtr Class](../vs140/cautovectorptr-class.md)  
+ Smart pointer for arrays that are allocated by using <CodeContentPlaceHolder>37\</CodeContentPlaceHolder>.  
+  
+ [CAutoPtrArray Class](../vs140/cautoptrarray-class.md)  
+ Class that encapsulates an array of <CodeContentPlaceHolder>38\</CodeContentPlaceHolder> elements.  
+  
+ [CAutoPtrList Class](../vs140/cautoptrlist-class.md)  
+ Class that encapsulates methods for manipulating a list of <CodeContentPlaceHolder>39\</CodeContentPlaceHolder> nodes.  
+  
+## See Also  
+ [Welcome Back to C++](../vs140/welcome-back-to-c----modern-c---.md)   
+ [C++ Language Reference](../vs140/c---language-reference.md)   
+ [Standard C++ Library](../vs140/c---standard-library-reference.md)   
+ [(NOTINBUILD)Overview: Memory Management in C++](assetId:///2201885d-3d91-4a6e-aaa6-7a554e0362a8)

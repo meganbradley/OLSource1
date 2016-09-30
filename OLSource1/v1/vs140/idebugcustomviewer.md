@@ -1,0 +1,66 @@
+---
+title: "IDebugCustomViewer"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugCustomViewer"
+helpviewer_keywords: 
+  - "IDebugCustomViewer interface"
+ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
+caps.latest.revision: 18
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDebugCustomViewer
+This interface enables an expression evaluator (EE) to display a property's value in whatever format is necessary.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Notes for Implementers  
+ An EE implements this interface to display a property's value in a custom format.  
+  
+## Notes for Callers  
+ A call to COM's <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> function instantiates this interface. The <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> passed to <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> is obtained from the registry. A call to [IDebugProperty3::GetCustomViewerList](../vs140/idebugproperty3--getcustomviewerlist.md) obtains the location in the registry. See Remarks for details as well as the Example.  
+  
+## Methods in Vtable Order  
+ This interface implements the following method:  
+  
+|Method|Description|  
+|------------|-----------------|  
+|[IDebugCustomViewer::DisplayValue](../vs140/idebugcustomviewer--displayvalue.md)|Does whatever is necessary to display a given value.|  
+  
+## Remarks  
+ This interface is used when a property's value cannot be displayed by normal means—for example, with a data table or another complex property type. A custom viewer, as represented by the <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> interface, is different from a type visualizer, which is an external program for displaying data of a specific type regardless of the EE. The EE implements a custom viewer that is specific to that EE. A user selects which type of visualizer to use, be it a type visualizer or a custom viewer. See [Visualizing and Viewing Data](../vs140/visualizing-and-viewing-data.md) for details on this process.  
+  
+ A custom viewer is registered in the same way as an EE and, therefore, requires a language GUID and a vendor GUID. The exact metric (or registry entry name) is known only to the EE. This metric is returned in the [DEBUG_CUSTOM_VIEWER](../vs140/debug_custom_viewer.md) structure, which in turn is returned by a call to [IDebugProperty3::GetCustomViewerList](../vs140/idebugproperty3--getcustomviewerlist.md). The value stored in the metric is the <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> that is passed to COM's <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> function (see the Example).  
+  
+ The [Debugging SDK Helpers](../vs140/sdk-helpers-for-debugging.md) function, <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>, can be used to register a custom viewer. See the "Expression Evaluators" registry section of <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> for the specific registry keys that a custom viewer needs. Note that a custom viewer needs only one metric (which is defined by the EE's implementer) whereas an expression evaluator requires several predefined metrics.  
+  
+ Normally, a custom viewer provides a read-only view of the data, since the [IDebugProperty3](../vs140/idebugproperty3.md) interface supplied to [IDebugCustomViewer::DisplayValue](../vs140/idebugcustomviewer--displayvalue.md) has no methods for changing the property's value except as a string. In order to support changing arbitrary blocks of data, the EE implements a custom interface on the same object that implements the <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> interface. This custom interface would then provide the methods needed to change an arbitrary block of data.  
+  
+## Requirements  
+ Header: msdbg.h  
+  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+  
+## Example  
+ This example shows how to get the first custom viewer from a property if that property has any custom viewers.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## See Also  
+ [Core Interfaces](../vs140/core-interfaces.md)   
+ [IDebugProperty3::GetCustomViewerList](../vs140/idebugproperty3--getcustomviewerlist.md)   
+ [Debugging SDK Helpers](../vs140/sdk-helpers-for-debugging.md)   
+ [IDebugProperty3](../vs140/idebugproperty3.md)

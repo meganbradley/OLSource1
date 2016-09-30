@@ -1,0 +1,32 @@
+---
+title: "Compiler Error CS1677"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS1677"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1677"
+ms.assetid: 8c974669-15c6-4010-8b02-21021bed5af9
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS1677
+Parameter 'number' should not be declared with the 'keyword' keyword  
+  
+ This error occurs when the parameter type modifier in an anonymous method does not match that used in the declaration of the delegate, to which you are casting the method.  
+  
+## Example  
+ The following sample generates CS1677:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

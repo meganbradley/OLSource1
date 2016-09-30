@@ -1,0 +1,32 @@
+---
+title: "Compiler Error CS0272"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0272"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0272"
+ms.assetid: 16a9aab6-922a-45a3-a0ef-f32e99f3950f
+caps.latest.revision: 15
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS0272
+The property or indexer 'property/indexer' cannot be used in this context because the set accessor is inaccessible  
+  
+ This error occurs when the <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> accessor is not accessible to the program code. To resolve this error, increase the accessibility of the accessor, or change the calling location. For more information, see [Restricting Accessor Accessibility](../vs140/restricting-accessor-accessibility--csharp-programming-guide-.md).  
+  
+## Example  
+ The following example generates CS0272:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

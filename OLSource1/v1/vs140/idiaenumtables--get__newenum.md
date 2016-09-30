@@ -1,0 +1,36 @@
+---
+title: "IDiaEnumTables::get__NewEnum"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaEnumTables::get__NewEnum method"
+ms.assetid: 7b1159c7-a5f0-4baa-861a-dc11437d8b93
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaEnumTables::get__NewEnum
+Retrieves the \<xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT*> version of this enumerator.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ [out] Returns the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> interface that represents the \<xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT*> version of this enumerator.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>; otherwise, returns an error code.  
+  
+## See Also  
+ [IDiaEnumTables](../vs140/idiaenumtables.md)

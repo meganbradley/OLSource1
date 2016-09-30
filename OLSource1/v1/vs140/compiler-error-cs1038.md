@@ -1,0 +1,31 @@
+---
+title: "Compiler Error CS1038"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS1038"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1038"
+ms.assetid: 05c53ae9-2819-4771-aee8-3f2ff6bcf0b0
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS1038
+\#endregion directive expected  
+  
+ A [#region](../vs140/sharpregion--csharp-reference-.md) directive did not have a matching [#endregion](../vs140/sharpendregion--csharp-reference-.md) directive.  
+  
+ The following sample generates CS1038:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

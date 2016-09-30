@@ -1,0 +1,119 @@
+---
+title: "CBitmapRenderTarget Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "afxrendertarget/CBitmapRenderTarget"
+  - "CBitmapRenderTarget"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CBitmapRenderTarget class"
+ms.assetid: c89a4437-812e-4943-acb2-b429a04cc4d2
+caps.latest.revision: 16
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CBitmapRenderTarget Class
+A wrapper for ID2D1BitmapRenderTarget.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CBitmapRenderTarget::CBitmapRenderTarget](#cbitmaprendertarget__cbitmaprendertarget)|Constructs a CBitmapRenderTarget object.|  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CBitmapRenderTarget::Attach](#cbitmaprendertarget__attach)|Attaches existing render target interface to the object|  
+|[CBitmapRenderTarget::Detach](#cbitmaprendertarget__detach)|Detaches render target interface from the object|  
+|[CBitmapRenderTarget::GetBitmap](#cbitmaprendertarget__getbitmap)|Retrieves the bitmap for this render target. The returned bitmap can be used for drawing operations.|  
+|[CBitmapRenderTarget::GetBitmapRenderTarget](#cbitmaprendertarget__getbitmaprendertarget)|Returns ID2D1BitmapRenderTarget interface|  
+  
+### Public Operators  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CBitmapRenderTarget::operator ID2D1BitmapRenderTarget*](#cbitmaprendertarget__operator_id2d1bitmaprendertarget_star)|Returns ID2D1BitmapRenderTarget interface|  
+  
+### Protected Data Members  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CBitmapRenderTarget::m_pBitmapRenderTarget](#cbitmaprendertarget__m_pbitmaprendertarget)|A pointer to an ID2D1BitmapRenderTarget object.|  
+  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ [CRenderTarget](../vs140/crendertarget-class.md)  
+  
+ [CBitmapRenderTarget](../vs140/cbitmaprendertarget-class.md)  
+  
+## Requirements  
+ **Header:** afxrendertarget.h  
+  
+##  \<a name="cbitmaprendertarget__attach">\</a>  CBitmapRenderTarget::Attach  
+ Attaches existing render target interface to the object  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>  
+ Existing render target interface. Cannot be NULL  
+  
+##  \<a name="cbitmaprendertarget__cbitmaprendertarget">\</a>  CBitmapRenderTarget::CBitmapRenderTarget  
+ Constructs a CBitmapRenderTarget object.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+##  \<a name="cbitmaprendertarget__detach">\</a>  CBitmapRenderTarget::Detach  
+ Detaches render target interface from the object  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+### Return Value  
+ Pointer to detached render target interface.  
+  
+##  \<a name="cbitmaprendertarget__getbitmap">\</a>  CBitmapRenderTarget::GetBitmap  
+ Retrieves the bitmap for this render target. The returned bitmap can be used for drawing operations.  
+  
+<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>9\</CodeContentPlaceHolder>  
+ When this method returns, contains the valid bitmap for this render target. This bitmap can be used for drawing operations.  
+  
+### Return Value  
+ If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.  
+  
+##  \<a name="cbitmaprendertarget__getbitmaprendertarget">\</a>  CBitmapRenderTarget::GetBitmapRenderTarget  
+ Returns ID2D1BitmapRenderTarget interface  
+  
+<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+### Return Value  
+ Pointer to an ID2D1BitmapRenderTarget interface or NULL if object is not initialized yet.  
+  
+##  \<a name="cbitmaprendertarget__m_pbitmaprendertarget">\</a>  CBitmapRenderTarget::m_pBitmapRenderTarget  
+ A pointer to an ID2D1BitmapRenderTarget object.  
+  
+<CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+##  \<a name="cbitmaprendertarget__operator_id2d1bitmaprendertarget_star">\</a>  CBitmapRenderTarget::operator ID2D1BitmapRenderTarget*  
+ Returns ID2D1BitmapRenderTarget interface  
+  
+<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+### Return Value  
+ Pointer to an ID2D1BitmapRenderTarget interface or NULL if object is not initialized yet.  
+  
+## See Also  
+ [MFC Classes](../vs140/mfc-classes.md)

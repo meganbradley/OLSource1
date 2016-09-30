@@ -1,0 +1,32 @@
+---
+title: "Compiler Warning (level 1) CS1696"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS1696"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1696"
+ms.assetid: 69a45988-1aba-4a01-a84e-7ca59f8dde28
+caps.latest.revision: 15
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 1) CS1696
+Single-line comment or end-of-line expected  
+  
+ The compiler requires a preprocessor directive to be followed by an end-of-line terminator or by a single-line comment. The compiler has finished processing a valid preprocessor directive, and has encountered something that violates this syntax constraint.  
+  
+## Example  
+ The following sample generates CS1696.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

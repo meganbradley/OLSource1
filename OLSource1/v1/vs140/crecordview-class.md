@@ -1,0 +1,187 @@
+---
+title: "CRecordView Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CRecordView"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CRecordView class"
+  - "ODBC recordsets, viewing records"
+  - "records, viewing ODBC"
+  - "views, ODBC"
+ms.assetid: 9b4b0897-bd50-4d48-a0b4-f3323f5ccc55
+caps.latest.revision: 24
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CRecordView Class
+A view that displays database records in controls.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Protected Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CRecordView::CRecordView](#crecordview__crecordview)|Constructs a <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> object.|  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CRecordView::IsOnFirstRecord](#crecordview__isonfirstrecord)|Returns nonzero if the current record is the first record in the associated recordset.|  
+|[CRecordView::IsOnLastRecord](#crecordview__isonlastrecord)|Returns nonzero if the current record is the last record in the associated recordset.|  
+|[CRecordView::OnGetRecordset](#crecordview__ongetrecordset)|Returns a pointer to an object of a class derived from <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>. ClassWizard overrides this function for you and creates the recordset if necessary.|  
+|[CRecordView::OnMove](#crecordview__onmove)||  
+  
+### Protected Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CRecordView::OnMove](#crecordview__onmove)|If the current record has changed, updates it on the data source, then moves to the specified record (next, previous, first, or last).|  
+  
+## Remarks  
+ The view is a form view directly connected to a <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> object. The view is created from a dialog template resource and displays the fields of the <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> object in the dialog template's controls. The <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> object uses dialog data exchange (DDX) and record field exchange (RFX) to automate the movement of data between the controls on the form and the fields of the recordset. <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> also supplies a default implementation for moving to the first, next, previous, or last record and an interface for updating the record currently on view.  
+  
+> [!NOTE]
+>  If you are working with the Data Access Objects (DAO) classes rather than the Open Database Connectivity (ODBC) classes, use class [CDaoRecordView](../vs140/cdaorecordview-class.md) instead. For more information, see the article [Overview: Database Programming](../vs140/data-access-programming--mfc-atl-.md).  
+  
+ The most common way to create your record view is with the Application Wizard. Tge Application Wizard creates both the record view class and its associated recordset class as part of your skeleton starter application. If you don't create the record view class with the Application Wizard, you can create it later with ClassWizard. If you simply need a single form, the Application Wizard approach is easier. ClassWizard lets you decide to use a record view later in the development process. Using ClassWizard to create a record view and a recordset separately and then connect them is the most flexible approach because it gives you more control in naming the recordset class and its .H/.CPP files. This approach also lets you have multiple record views on the same recordset class.  
+  
+ To make it easy for end-users to move from record to record in the record view, the Application Wizard creates menu (and optionally toolbar) resources for moving to the first, next, previous, or last record. If you create a record view class with ClassWizard, you need to create these resources yourself with the menu and bitmap editors.  
+  
+ For information about the default implementation for moving from record to record, see <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> and the article [Using a Record View](../vs140/using-a-record-view---mfc-data-access-.md).  
+  
+ <CodeContentPlaceHolder>14\</CodeContentPlaceHolder> keeps track of the user's position in the recordset so that the record view can update the user interface. When the user moves to either end of the recordset, the record view disables user interface objects — such as menu items or toolbar buttons — for moving further in the same direction.  
+  
+ For more information about declaring and using your record view and recordset classes, see "Designing and Creating a Record View" in the article [Record Views](../vs140/record-views---mfc-data-access-.md). For more information about how record views work and how to use them, see the article [Using a Record View](../vs140/using-a-record-view---mfc-data-access-.md).  
+  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ [CCmdTarget](../vs140/ccmdtarget-class.md)  
+  
+ [CWnd](../vs140/cwnd-class.md)  
+  
+ [CView](../vs140/cview-class.md)  
+  
+ [CScrollView](../vs140/cscrollview-class.md)  
+  
+ [CFormView](../vs140/cformview-class.md)  
+  
+ <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>  
+  
+## Requirements  
+ **Header:** afxdb.h  
+  
+##  \<a name="crecordview__crecordview">\</a>  CRecordView::CRecordView  
+ When you create an object of a type derived from <CodeContentPlaceHolder>16\</CodeContentPlaceHolder>, call either form of the constructor to initialize the view object and identify the dialog resource on which the view is based.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>17\</CodeContentPlaceHolder>  
+ Contains a null-terminated string that is the name of a dialog template resource.  
+  
+ <CodeContentPlaceHolder>18\</CodeContentPlaceHolder>  
+ Contains the ID number of a dialog template resource.  
+  
+### Remarks  
+ You can either identify the resource by name (pass a string as the argument to the constructor) or by its ID (pass an unsigned integer as the argument). Using a resource ID is recommended.  
+  
+> [!NOTE]
+>  Your derived class                             *must* supply its own constructor. In the constructor of your derived class, call the constructor <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> with the resource name or ID as an argument, as shown in the example below.  
+  
+ **CRecordView::OnInitialUpdate** calls <CodeContentPlaceHolder>20\</CodeContentPlaceHolder>, which calls <CodeContentPlaceHolder>21\</CodeContentPlaceHolder>. This initial call to <CodeContentPlaceHolder>22\</CodeContentPlaceHolder> connects <CodeContentPlaceHolder>23\</CodeContentPlaceHolder> controls (indirectly) to <CodeContentPlaceHolder>24\</CodeContentPlaceHolder> field data members created by ClassWizard. These data members cannot be used until after you call the base class **CFormView::OnInitialUpdate** member function.  
+  
+> [!NOTE]
+>  If you use ClassWizard, the wizard defines an <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> value <CodeContentPlaceHolder>26\</CodeContentPlaceHolder>, specifies it in the class declaration, and uses it in the member initialization list for the constructor.  
+  
+### Example  
+ [!code[NVC_MFCDatabase#32](../vs140/codesnippet/CPP/crecordview-class_1.cpp)]  
+  
+##  \<a name="crecordview__isonfirstrecord">\</a>  CRecordView::IsOnFirstRecord  
+ Call this member function to determine whether the current record is the first record in the recordset object associated with this record view.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+### Return Value  
+ Nonzero if the current record is the first record in the recordset; otherwise 0.  
+  
+### Remarks  
+ This function is useful for writing your own implementations of default command update handlers written by ClassWizard.  
+  
+ If the user moves to the first record, the framework disables any user interface objects you have for moving to the first or the previous record.  
+  
+##  \<a name="crecordview__isonlastrecord">\</a>  CRecordView::IsOnLastRecord  
+ Call this member function to determine whether the current record is the last record in the recordset object associated with this record view.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+### Return Value  
+ Nonzero if the current record is the last record in the recordset; otherwise 0.  
+  
+### Remarks  
+ This function is useful for writing your own implementations of the default command update handlers that ClassWizard writes to support a user interface for moving from record to record.  
+  
+> [!CAUTION]
+>  The result of this function is reliable except that the view cannot detect the end of the recordset until the user has moved past it. The user must move beyond the last record before the record view can tell that it must disable any user interface objects for moving to the next or last record. If the user moves past the last record and then moves back to the last record (or before it), the record view can track the user's position in the recordset and disable user interface objects correctly. <CodeContentPlaceHolder>27\</CodeContentPlaceHolder> is also unreliable after a call to the implementation function **OnRecordLast**, which handles the <CodeContentPlaceHolder>28\</CodeContentPlaceHolder> command, or <CodeContentPlaceHolder>29\</CodeContentPlaceHolder>.  
+  
+##  \<a name="crecordview__ongetrecordset">\</a>  CRecordView::OnGetRecordset  
+ Returns a pointer to the <CodeContentPlaceHolder>30\</CodeContentPlaceHolder>-derived object associated with the record view.  
+  
+<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+### Return Value  
+ A pointer to a <CodeContentPlaceHolder>31\</CodeContentPlaceHolder>-derived object if the object was successfully created; otherwise a **NULL** pointer.  
+  
+### Remarks  
+ You must override this member function to construct or obtain a recordset object and return a pointer to it. If you declare your record view class with ClassWizard, the wizard writes a default override for you. ClassWizard's default implementation returns the recordset pointer stored in the record view if one exists. If not, it constructs a recordset object of the type you specified with ClassWizard and calls its **Open** member function to open the table or run the query, and then returns a pointer to the object.  
+  
+ For more information and examples, see the article [Record Views: Using a Record View](../vs140/using-a-record-view---mfc-data-access-.md).  
+  
+##  \<a name="crecordview__onmove">\</a>  CRecordView::OnMove  
+ Call this member function to move to a different record in the recordset and display its fields in the controls of the record view.  
+  
+<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>32\</CodeContentPlaceHolder>  
+ One of the following standard command ID values:  
+  
+-   <CodeContentPlaceHolder>33\</CodeContentPlaceHolder> Move to the first record in the recordset.  
+  
+-   <CodeContentPlaceHolder>34\</CodeContentPlaceHolder> Move to the last record in the recordset.  
+  
+-   <CodeContentPlaceHolder>35\</CodeContentPlaceHolder> Move to the next record in the recordset.  
+  
+-   <CodeContentPlaceHolder>36\</CodeContentPlaceHolder> Move to the previous record in the recordset.  
+  
+### Return Value  
+ Nonzero if the move was successful; otherwise 0 if the move request was denied.  
+  
+### Remarks  
+ The default implementation calls the appropriate **Move** member function of the <CodeContentPlaceHolder>37\</CodeContentPlaceHolder> object associated with the record view.  
+  
+ By default, <CodeContentPlaceHolder>38\</CodeContentPlaceHolder> updates the current record on the data source if the user has changed it in the record view.  
+  
+ The Application Wizard creates a menu resource with First Record, Last Record, Next Record, and Previous Record menu items. If you select the Dockable Toolbar option, the Application Wizard also creates a toolbar with buttons corresponding to these commands.  
+  
+ If you move past the last record in the recordset, the record view continues to display the last record. If you move backward past the first record, the record view continues to display the first record.  
+  
+> [!CAUTION]
+>  Calling <CodeContentPlaceHolder>39\</CodeContentPlaceHolder> throws an exception if the recordset has no records. Call the appropriate user interface update handler function — **OnUpdateRecordFirst**, **OnUpdateRecordLast**, **OnUpdateRecordNext**, or **OnUpdateRecordPrev** — before the corresponding move operation to determine whether the recordset has any records.  
+  
+## See Also  
+ [Base Class](../vs140/cformview-class.md)   
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [CRecordset](../vs140/crecordset-class.md)   
+ [CFormView](../vs140/cformview-class.md)

@@ -1,0 +1,95 @@
+---
+title: "CMFCRibbonApplicationButton Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CMFCRibbonApplicationButton"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CMFCRibbonApplicationButton class"
+ms.assetid: beb81757-fabd-4641-9130-876ba8505b78
+caps.latest.revision: 24
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CMFCRibbonApplicationButton Class
+Implements a special button located in the top-left corner of the application window. When clicked, the button opens a menu that usually contains common **File** commands like **Open**, **Save**, and **Exit**.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CMFCRibbonApplicationButton::CMFCRibbonApplicationButton](#cmfcribbonapplicationbutton__cmfcribbonapplicationbutton)|Constructs and initializes a <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> object.|  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>|Used by the framework to create a dynamic instance of this class type.|  
+|<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>|Used by the framework to obtain a pointer to the [CRuntimeClass](../vs140/cruntimeclass-structure.md) object that is associated with this class type.|  
+|[CMFCRibbonApplicationButton::SetImage](#cmfcribbonapplicationbutton__setimage)|Assigns an image to the ribbon application button.|  
+  
+## Example  
+ The following example demonstrates how to use various methods in the <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> class. The example shows how to assign an image to the application button, and how to set its tooltip. This code snippet is part of the [Draw Client sample](../vs140/visual-c---samples.md).  
+  
+ [!code[NVC_MFC_DrawClient#4](../vs140/codesnippet/CPP/cmfcribbonapplicationbutton-class_1.h)]  
+[!code[NVC_MFC_DrawClient#5](../vs140/codesnippet/CPP/cmfcribbonapplicationbutton-class_2.cpp)]  
+  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ [CMFCRibbonBaseElement](../vs140/cmfcribbonbaseelement-class.md)  
+  
+ [CMFCRibbonButton](../vs140/cmfcribbonbutton-class.md)  
+  
+ [CMFCRibbonApplicationButton](../vs140/cmfcribbonapplicationbutton-class.md)  
+  
+## Requirements  
+ **Header:** afxRibbonBar.h  
+  
+##  \<a name="cmfcribbonapplicationbutton__cmfcribbonapplicationbutton">\</a>  CMFCRibbonApplicationButton::CMFCRibbonApplicationButton  
+ Constructs and initializes a [CMFCRibbonApplicationButton](../vs140/cmfcribbonapplicationbutton-class.md) object.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+ The resource ID of the image to display on the application button.  
+  
+ <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>  
+ A handle to a bitmap to display on the application button.  
+  
+### Remarks  
+ The ribbon application button is a special button that is located in the upper-left corner of the application window. When a user clicks this button, the application opens a menu that usually contains common **File** commands, such as **Open**, **Save**, and **Exit**.  
+  
+##  \<a name="cmfcribbonapplicationbutton__setimage">\</a>  CMFCRibbonApplicationButton::SetImage  
+ Assigns an image to the application button.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+### Parameters  
+ [in] <CodeContentPlaceHolder>9\</CodeContentPlaceHolder>  
+ The resource ID of the image to display on the application button.  
+  
+ [in] <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+ A handle to a bitmap to display on the application button.  
+  
+### Remarks  
+ Use this method to assign a new image to the ribbon application button after you create the button. The application button is located in the upper-left corner of the application window.  
+  
+## See Also  
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [Classes](../vs140/mfc-classes.md)   
+ [CMFCRibbonButton Class](../vs140/cmfcribbonbutton-class.md)

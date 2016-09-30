@@ -1,0 +1,218 @@
+---
+title: "Define a menu command on a modeling diagram"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-tfs-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "UML - extending, menu commands"
+ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
+caps.latest.revision: 65
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Define a menu command on a modeling diagram
+In Visual Studio, you can define additional menu items on the shortcut menus of a UML diagram. You can control whether the menu command appears and is enabled on the shortcut menu of any element on the diagram, and you can write code that runs when the user chooses the menu item. You can package these extensions into a Visual Studio Integration Extension ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) and distribute it to other Visual Studio users.  
+  
+## Requirements  
+ See [Extend UML models and diagrams](../vs140/extend-uml-models-and-diagrams.md#Requirements).  
+  
+ To see which versions of Visual Studio support this feature, see [Version support for architecture and modeling tools](../vs140/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  
+## Defining the menu command  
+ To create a menu command for a UML designer, you must create a class that defines the behavior of the command, and embed the class in a Visual Studio Integration Extension (VSIX). The VSIX acts as a container that can install the command. There are two alternative methods of defining a menu command:  
+  
+-   **Create a menu command in its own VSIX using a project template.** This is the quicker method. Use it if you do not want to combine your menu commands with other types of extension such as validation extensions, custom toolbox items, or gesture handlers.  
+  
+-   **Create separate menu command and VSIX projects.** Use this method if you want to combine several types of extension into the same VSIX. For example, if your menu command expects the model to observe specific constraints, you could embed it into the same VSIX as a validation method.  
+  
+#### To create a menu command in its own VSIX  
+  
+1.  In the **New Project** dialog box, under **Modeling Projects**, select **Command Extension**.  
+  
+2.  Open the **.cs** file in the new project and modify the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> class to implement your command.  
+  
+     For more information, see [Implementing the Menu Command](#Implementing).  
+  
+3.  You can add additional commands to this project by defining new classes.  
+  
+4.  Test the menu command by pressing F5. For more information, see [Executing the Menu Command](#Executing).  
+  
+5.  Install the menu command on another computer by copying the file **bin\\\*\\\*.vsix** that is built by your project. For more information, see [Installing and uninstalling an extension](#Installing).  
+  
+ Here is the alternative procedure:  
+  
+#### To create a menu command in a separate class library (DLL) project  
+  
+1.  Create a Class Library project, either in a new Visual Studio solution, or in an existing solution.  
+  
+    1.  On the **File** menu, choose **New**, **Project**.  
+  
+    2.  Under **Installed Templates**, select **Visual C#** or **Visual Basic**. In the middle column, choose **Class Library**.  
+  
+    3.  Set **Solution** to indicate whether you want to create a new solution or to add a component to a VSIX solution that you have already opened.  
+  
+    4.  Set the project Name and Location and click OK.  
+  
+2.  Add the following references to your project.  
+  
+    |Reference|What this allows you to do|  
+    |---------------|--------------------------------|  
+    |System.ComponentModel.Composition|Define components by using [Managed Extensibility Framework (MEF)](assetId:///6c61b4ec-c6df-4651-80f1-4854f8b14dde).|  
+    |Microsoft.VisualStudio.Uml.Interfaces|Read and change properties of model elements.|  
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Create model elements, modify shapes on diagrams.|  
+    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Define model event handlers.\<br />\<br /> Encapsulate series of changes to your model. For more information, see [How to Link Model Updates using Transactions](../vs140/link-uml-model-updates-by-using-transactions.md).|  
+    |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]\<br />\<br /> (not always required)|Access additional diagram elements for gesture handlers.|  
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer\<br />\<br /> Required only for commands on layer diagrams. For more information, see [Creating extensions for Layer diagrams](../vs140/extend-layer-diagrams.md).|Define commands on a Layer diagram.|  
+  
+3.  Add a class file to the project and set its content to the following code.  
+  
+    > [!NOTE]
+    >  Change the namespace, class name, and the value returned by <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> to your preference.  
+    >   
+    >  If you define multiple commands, they appear on the menu in alphabetical order of the class names.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+     For more information about what to put in the methods, see [Implementing the Menu Command](#Implementing).  
+  
+ You must add your menu command to a VSIX project, which acts as a container for installing the command. If you want, you can include other components in the same VSIX.  
+  
+#### To add a menu command to a VSIX project  
+  
+1.  You do not need this procedure if you have created the menu command with its own VSIX.  
+  
+2.  Create a VSIX project, unless your solution already has one.  
+  
+    1.  In **Solution Explorer**, on the shortcut menu of the solution, choose **Add**, **New Project**.  
+  
+    2.  Under **Installed Templates**, expand **Visual C#** or **Visual Basic**, then choose **Extensibility**. In the middle column, choose **VSIX Project**.  
+  
+3.  In Solution Explorer, on the shortcut menu of the VSIX project, choose **Set as StartUp project**.  
+  
+4.  Open **source.extension.vsixmanifest**.  
+  
+    1.  On the **MetaData** tab, set a name for the VSIX.  
+  
+    2.  On the **Install Targets** tab, set the Visual Studio versions as the targets.  
+  
+    3.  On the **Assets** tab, choose a **New**, and in the dialog box, set:  
+  
+         **Type** = **MEF Component**  
+  
+         **Source** = **A project in current solution**  
+  
+         **Project** = *Your class library project*  
+  
+##  \<a name="Implementing">\</a> Implementing the Menu Command  
+ The menu command class implements the required methods for \<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension*>.  
+  
+|||  
+|-|-|  
+|<CodeContentPlaceHolder>6\</CodeContentPlaceHolder>|Return the label of your menu item.|  
+|<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>|Called when the user right-clicks in the diagram.\<br />\<br /> This method should not change the model.\<br />\<br /> Use <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> to determine whether you want the command to appear and be enabled.\<br />\<br /> Set:\<br />\<br /> -   <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> to <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> if the command must appear in the menu when the user right-clicks in the diagram\<br />-   <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> to <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> if the user can click the command in the menu\<br />-   <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> to set the menu label dynamically|  
+|<CodeContentPlaceHolder>14\</CodeContentPlaceHolder>|Called when the user clicks your menu item, if it is visible and enabled.|  
+  
+### Accessing the Model in Code  
+ Including the following declaration in your menu command class:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ ...  
+  
+ The declaration of <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> allows you to write code in your methods that accesses the diagram, current selection, and model:  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+### Navigating and Updating the Model  
+ The elements of the UML model are all available through the API. From the current selection or from the root of the model, you can access all the other elements. For more information, see [How to: Navigate the UML Model](../vs140/navigate-the-uml-model.md) and [Programming with the UML API](../vs140/programming-with-the-uml-api.md).  
+  
+ If you are dealing with a sequence diagram, see also [Programming Interactions](../vs140/edit-uml-sequence-diagrams-by-using-the-uml-api.md).  
+  
+ The API also allows you to change the properties of elements, delete elements and relationships, and create new elements and relationships.  
+  
+ By default, each change that you make in your Execute method will be performed in a separate transaction. The user will be able to undo each change separately. If you want to group the changes into a single transaction, use a \<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoTransaction*> as described in [How to: Link Model Updates using Transactions](../vs140/link-uml-model-updates-by-using-transactions.md).  
+  
+### Use the UI Thread for Updates  
+ In some cases it can be useful to make updates to the model from a background thread. For example, if your command loads data from a slow resource, you can perform the loading in a brackground thread so that the user can see the changes while they are in progress, and cancel the operation if it is necessary.  
+  
+ However, you should be aware that the model store is not thread safe. You should always use the user interface (UI) thread to make updates, and if it is possible, prevent the user from making edits while the background operation is in progress. For an example, see [How to Update a Model in a Background Thread](../vs140/update-a-uml-model-from-a-background-thread.md).  
+  
+##  \<a name="Executing">\</a> Executing the Menu Command  
+ For test purposes, execute your command in debug mode.  
+  
+#### To test the menu command  
+  
+1.  Press **F5**, or on the **Debug** menu, choose **Start Debugging**.  
+  
+     An experimental instance of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] starts.  
+  
+     **Troubleshooting**: If a new [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] does not start:  
+  
+    -   If you have more than one project, make sure that the VSIX project is set as the Startup project of the solution.  
+  
+    -   In Solution Explorer, on the shortcut menu of the startup or only project, choose **Properties**. In the project properties editor, select the **Debug** tab. Make sure that the string in the **Start external program** field is the full pathname of [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], typically:  
+  
+         <CodeContentPlaceHolder>16\</CodeContentPlaceHolder>  
+  
+2.  In the experimental [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)], open or create a modeling project, and open or create a modeling diagram. Use a diagram that belongs to one of the types that are listed in the attributes of your menu command class.  
+  
+3.  Open the shortcut menu anywhere on the diagram. Your command should appear in the menu.  
+  
+     **Troubleshooting**: If the command does not appear on the menu, make sure that:  
+  
+    -   The menu command project is listed as a MEF component in the **Assets** tab in **source.extensions.manifest** in the VSIX project.  
+  
+    -   The parameters of the <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> attributes are valid.  
+  
+    -   The <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> method is not setting the <CodeContentPlaceHolder>20\</CodeContentPlaceHolder>.<CodeContentPlaceHolder>21\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>22\</CodeContentPlaceHolder> fields to <CodeContentPlaceHolder>23\</CodeContentPlaceHolder>.  
+  
+    -   The type of model diagram that you are using (UML class, sequence, and so on) is listed as one of the menu command class attributes <CodeContentPlaceHolder>24\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> and so on.  
+  
+##  \<a name="Installing">\</a> Installing and uninstalling an extension  
+ You can install a [!INCLUDE[vs_current_short](../vs140/includes/vs_current_short_md.md)] extension both on your own computer and on other computers.  
+  
+#### To install an extension  
+  
+1.  In your computer, find the **.vsix** file that was built by your VSIX project.  
+  
+    1.  In **Solution Explorer**, on the shortcut menu of the VSIX project, choose **Open Folder in Windows Explorer**.  
+  
+    2.  Locate the file **bin\\\*\\***YourProject***.vsix**  
+  
+2.  Copy the **.vsix** file to the target computer on which you want to install the extension. This can be your own computer or another one.  
+  
+     The target computer must have one of the editions of [!INCLUDE[vs_current_short](../vs140/includes/vs_current_short_md.md)] that you specified in **source.extension.vsixmanifest**.  
+  
+3.  On the target computer, open the **.vsix** file, for example by double-clicking it.  
+  
+     **Visual Studio Extension Installer** opens and installs the extension.  
+  
+4.  Start or restart [!INCLUDE[vs_current_short](../vs140/includes/vs_current_short_md.md)].  
+  
+#### To uninstall an extension  
+  
+1.  On the **Tools** menu, choose **Extensions and Updates**.  
+  
+2.  Expand **Installed Extensions**.  
+  
+3.  Select the extension, and then choose **Uninstall**.  
+  
+ Rarely, a faulty extension fails to load and creates a report in the error window, but does not appear in Extension Manager. In that case, you can remove the extension by deleting the file from:  
+  
+ *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
+  
+##  \<a name="MenuExample">\</a> Example  
+ The following example shows the code for a menu command that will interchange the names of two elements on a class diagram. This code must be built in a [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] Extension project and installed as described in the previous sections.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+## See Also  
+ [How to: Define and Install a Modeling Extension](../vs140/define-and-install-a-modeling-extension.md)   
+ [Extending Models and Diagrams](../vs140/extend-uml-models-and-diagrams.md)   
+ [How to Define a Gesture Handler on a UML Diagram](../vs140/define-a-gesture-handler-on-a-modeling-diagram.md)   
+ [How to Define a Toolbox Item](../vs140/define-a-custom-modeling-toolbox-item.md)   
+ [How to use validation constraints](../vs140/define-validation-constraints-for-uml-models.md)   
+ [How to Edit Interactions using the UML API](../vs140/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
+ [Programming with the UML API](../vs140/programming-with-the-uml-api.md)   
+ [Sample: Command to Align Shapes on a UML Diagram](http://go.microsoft.com/fwlink/?LinkID=213809)

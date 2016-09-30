@@ -1,0 +1,57 @@
+---
+title: "__svm_vmrun"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "__svm_vmrun"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "__svm_vmrun intrinsic"
+  - "VMRUN instruction"
+ms.assetid: ae98a781-fc17-47b2-b40f-86fcebf1867b
+caps.latest.revision: 9
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# __svm_vmrun
+**Microsoft Specific**  
+  
+ Starts execution of the virtual machine guest code that corresponds to the specified virtual machine control block (VMCB).  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+  
+|Parameter|Description|  
+|---------------|-----------------|  
+|[in] <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>|The physical address of the VMCB.|  
+  
+## Remarks  
+ The <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> function uses a minimal amount of information in the VMCB to begin executing the virtual machine guest code. Use the [__svm_vmsave](../vs140/__svm_vmsave.md) or [__svm_vmload](../vs140/__svm_vmload.md) function if you require more information to handle a complex interrupt or to switch to another guest.  
+  
+ The <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> function is equivalent to the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "AMD64 Architecture Programmer's Manual Volume 2: System Programming," document number 24593, revision 3.11 or later, at the [AMD corporation](http://go.microsoft.com/fwlink/?LinkId=23746) site.  
+  
+## Requirements  
+  
+|Intrinsic|Architecture|  
+|---------------|------------------|  
+|<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>|x86, [!INCLUDE[vcprx64](../vs140/includes/vcprx64_md.md)]|  
+  
+ **Header file** \<intrin.h>  
+  
+## END Microsoft Specific  
+  
+## See Also  
+ [Compiler Intrinsics](../vs140/compiler-intrinsics.md)   
+ [__svm_vmsave](../vs140/__svm_vmsave.md)   
+ [__svm_vmload](../vs140/__svm_vmload.md)

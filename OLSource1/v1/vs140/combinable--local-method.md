@@ -1,0 +1,44 @@
+---
+title: "combinable::local Method"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "ppl/concurrency::combinable::local"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "local method"
+ms.assetid: 496c298e-f159-44f3-8c25-ebf8f5b175be
+caps.latest.revision: 20
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# combinable::local Method
+Returns a reference to the thread-private sub-computation.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ A reference to a boolean. The boolean value referenced by this argument will be set to <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> if the sub-computation already existed on this thread, and set to <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> if this was the first sub-computation on this thread.  
+  
+## Return Value  
+ A reference to the thread-private sub-computation.  
+  
+## Requirements  
+ **Header:** ppl.h  
+  
+ **Namespace:** concurrency  
+  
+## See Also  
+ [combinable Class](../vs140/combinable-class.md)   
+ [Parallel Containers and Objects](../vs140/parallel-containers-and-objects.md)

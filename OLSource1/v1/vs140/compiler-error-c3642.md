@@ -1,0 +1,35 @@
+---
+title: "Compiler Error C3642"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C3642"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3642"
+ms.assetid: 429790c2-9614-4d85-b31c-687c8d8f83ff
+caps.latest.revision: 17
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3642
+'return_type/args' : cannot call a function with __clrcall calling convention from native code  
+  
+ A function that is marked with the [__clrcall](../vs140/__clrcall.md) calling convention cannot be called from native (unmanaged) code.  
+  
+ *return_type/args* is either the name of the function or the type of the <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> function you are trying to call.  A type is used when you're calling through a function-pointer.  
+  
+ To call a managed function from a native context, you can add a "wrapper" function that will call the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> function. Or, you can use the CLR marshalling mechanism; see [How to: Marshal Function Pointers using PInvoke](../vs140/how-to--marshal-function-pointers-using-pinvoke.md) for more information.  
+  
+ The following sample generates C3642:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

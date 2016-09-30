@@ -1,0 +1,29 @@
+---
+title: "Compiler Error C2292"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2292"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2292"
+ms.assetid: 256b392f-2b8f-4162-b578-e7633984e162
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C2292
+'identifier': best case inheritance representation: 'representation1' declared but 'representation2' required  
+  
+ Compiling the following code with [/vmb](../vs140/-vmb---vmg--representation-method-.md) ("Best-case always" representation) causes C2292.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

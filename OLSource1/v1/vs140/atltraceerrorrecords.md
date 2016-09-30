@@ -1,0 +1,44 @@
+---
+title: "AtlTraceErrorRecords"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "ATL.AtlTraceErrorRecords"
+  - "ATL::AtlTraceErrorRecords"
+  - "AtlTraceErrorRecords"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "AtlTraceErrorRecords function"
+ms.assetid: b83970b3-dc2a-445c-9142-f52218719905
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# AtlTraceErrorRecords
+Dumps OLE DB Error Record information to the dump device if an error is returned.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ [in] An <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> returned by an OLE DB Consumer Template member function.  
+  
+## Remarks  
+ If <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> is not <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> dumps OLE DB Error Record information to the dump device (the **Debug** tab of the Output window or a file). The Error Record information, which is obtained from the provider, includes row number, source, description, help file, context, and GUID for each error record entry. <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> dumps this information only in debug builds. In release builds, it is an empty stub that is optimized out.  
+  
+## Requirements  
+ **Header:** atldbcli.h  
+  
+## See Also  
+ [Macros and Global Functions for OLE DB Consumer Templates](../vs140/macros-and-global-functions-for-ole-db-consumer-templates.md)   
+ [CDBErrorInfo Class](../vs140/cdberrorinfo-class.md)

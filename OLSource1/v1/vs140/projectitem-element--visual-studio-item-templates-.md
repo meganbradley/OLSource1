@@ -1,0 +1,80 @@
+---
+title: "ProjectItem Element (Visual Studio Item Templates)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem"
+helpviewer_keywords: 
+  - "<ProjectItem> element [Visual Studio item templates]"
+  - "ProjectItem element [Visual Studio item templates]"
+ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
+caps.latest.revision: 17
+ms.author: "gregvanl"
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# ProjectItem Element (Visual Studio Item Templates)
+Specifies a file that is included in the item template.  
+  
+> [!NOTE]
+>  The <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> element accepts different attributes depending on whether the template is for a project or an item. This topic explains the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> element for item. For an explanation of the <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> element for project templates, see [ProjectItem Element (Visual Studio Project Templates)](../vs140/projectitem-element--visual-studio-project-templates-.md).  
+  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectItem>  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Attributes and Elements  
+ The following sections describe attribute, child elements, and parent elements.  
+  
+### Attributes  
+  
+|Attribute|Description|  
+|---------------|-----------------|  
+|<CodeContentPlaceHolder>6\</CodeContentPlaceHolder>|Optional attribute.\<br />\<br /> Specifies the subtype of an item in a multi-file item template. This value is used to determine the editor that [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] will use to open the item.|  
+|<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>|Optional attribute.\<br />\<br /> Sets the CustomTool for the item in the Project file.|  
+|<CodeContentPlaceHolder>8\</CodeContentPlaceHolder>|Optional attribute.\<br />\<br /> Sets the ItemType for the item in the Project file.|  
+|<CodeContentPlaceHolder>9\</CodeContentPlaceHolder>|Optional attribute.\<br />\<br /> A Boolean value that specifies whether the item has parameter values that must be replaced when a project is created from the template. Default value is <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>.|  
+|<CodeContentPlaceHolder>11\</CodeContentPlaceHolder>|Optional attribute.\<br />\<br /> Specifies the name of the item that is created from the template. This attribute is useful for using parameter replacement to create an item name.|  
+  
+### Child Elements  
+ None.  
+  
+### Parent Elements  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|[TemplateContent](../vs140/templatecontent-element--visual-studio-templates-.md)|Specifies the contents of the template.|  
+  
+## Text Value  
+ A text value is required.  
+  
+ A <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> that represents the name of a file in the template .zip file.  
+  
+## Remarks  
+ <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> is an optional child of <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>.  
+  
+ The <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> attribute can be used to rename files with parameters. For example, if the file <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> exists in the root directory of the template .zip file, but you want the file to be named based on the file name provided by the user in the **Add New Item** dialog box, you would use the following XML:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ When an item is created from this template, the file name will be based on the name the user entered in the **Add New Item** dialog box. This is useful when creating multi-file item templates. For more information, see [How to: Create Multi-file Item Templates](../vs140/how-to--create-multi-file-item-templates.md) and [Template Parameters](../vs140/template-parameters.md).  
+  
+## Example  
+ The following example illustrates the metadata for the standard item template for a [!INCLUDE[csprcs](../vs140/includes/csprcs_md.md)] class.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+## See Also  
+ [Visual Studio Template Schema Reference](../vs140/visual-studio-template-schema-reference.md)   
+ [Introduction to Visual Studio Templates](../vs140/creating-project-and-item-templates.md)   
+ [How to: Create Multi-file Item Templates](../vs140/how-to--create-multi-file-item-templates.md)   
+ [Template Parameters](../vs140/template-parameters.md)

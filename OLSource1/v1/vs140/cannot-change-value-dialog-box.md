@@ -1,0 +1,38 @@
+---
+title: "Cannot Change Value Dialog Box"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vs.debug.variables.failededit"
+dev_langs: 
+  - "FSharp"
+  - "VB"
+  - "CSharp"
+  - "C++"
+helpviewer_keywords: 
+  - "Cannot Change Value dialog box"
+  - "variables [debugger], editing"
+ms.assetid: 19e930c2-5fbf-4c83-aae8-a1dc3f8fcae8
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Cannot Change Value Dialog Box
+## Error  
+ <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> &#124; <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> *name* <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> &#124; *various other messages*  
+  
+ This message box appears when you try to change the contents of a variable to an illegal value in a debugger window (Autos, Watch, or Locals windows) or in the QuickWatch dialog box. For example, if you try to set the value of an integer variable to a character string, this message box appears.  
+  
+## Solution  
+ Make sure the input you type into the debugger window or QuickWatch dialog box represents a legal value for the variable you are trying to set.  
+  
+## See Also  
+ [Expressions in the Debugger](../vs140/expressions-in-the-debugger.md)

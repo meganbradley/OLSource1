@@ -1,0 +1,38 @@
+---
+title: "Compiler Error C2015"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2015"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2015"
+ms.assetid: 8f40af0a-3a5a-4d6a-8ed7-125966e6bfed
+caps.latest.revision: 15
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C2015
+too many characters in constant  
+  
+ A character constant contains more than two characters. The limit is one character for standard character constants and two characters for long character constants.  
+  
+ An escape sequence, such as \t, is converted to a single character.  
+  
+## Example  
+ The following sample generates C2015:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Example  
+ C2015 can also occur when using a Microsoft extension, character constants converted to integers.  The following sample generates C2015:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>

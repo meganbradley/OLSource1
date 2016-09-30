@@ -1,0 +1,36 @@
+---
+title: "Adding Web Services to Project Systems"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "project systems, adding Web services"
+  - "Web services, adding to VSPackage project systems"
+ms.assetid: 8efa078b-68b2-45a2-9be2-44f807bc0d7f
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Adding Web Services to Project Systems
+XML Web services are, in general, URL-addressable resources that return programmatic information to the project system using the SOAP (Simple Object Access Protocol) protocol. You can integrate Web services to your VSPackage project system by using the \<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2*> interface.  
+  
+### To add a Web service to your project system  
+  
+1.  Call <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> for \<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2*> interface through \<xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg*> service.  
+  
+2.  Call the \<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg*> method. If you pass in <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> parameter as <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>, a discovery session is created for you, and the session is cached so that it is available for subsequent use by the \<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2*> interface. \<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg*> method returns a pointer to \<xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult2*>.  
+  
+3.  Call the \<xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult.AddWebReference*> method. Pass in the automation object for the Web service references folder as the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> parameter. The Visual Studio environment then checks if the Web service is already present. If the Web service is not present, the environment downloads and adds the Web service to a folder and any additional files (such as .wsdl files) to the child nodes of the folder.  
+  
+## See Also  
+ \<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2*>   
+ \<xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult*>   
+ \<xref:Microsoft.VisualStudio.Shell.Interop.IDiscoverySession*>   
+ \<xref:Microsoft.VisualStudio.Shell.Interop.IVsDiscoveryService*>

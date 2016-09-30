@@ -1,0 +1,186 @@
+---
+title: "CSmartDockingInfo Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CSmartDockingInfo"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CSmartDockingInfo class"
+ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
+caps.latest.revision: 26
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CSmartDockingInfo Class
+Defines the appearance of smart docking markers.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|<CodeContentPlaceHolder>11\</CodeContentPlaceHolder>|Default constructor.|  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CSmartDockingInfo::CopyTo](#csmartdockinginfo__copyto)|Copies the current smart docking info parameters into the provided [CSmartDockingInfo](../vs140/csmartdockinginfo-class.md) object.|  
+  
+### Data Members  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CSmartDockingInfo::m_bUseThemeColorInShading](#csmartdockinginfo__m_busethemecolorinshading)|Specifies whether to use the current theme color when the framework displays smart docking markers.|  
+|[CSmartDockingInfo::m_clrBaseBackground](#csmartdockinginfo__m_clrbasebackground)|Specifies the base background color of smart docking markers.|  
+|[CSmartDockingInfo::m_clrToneDest](#csmartdockinginfo__m_clrtonedest)|Specifies the color that replaces <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> in smart docking marker bitmaps.|  
+|[CSmartDockingInfo::m_clrToneSrc](#csmartdockinginfo__m_clrtonesrc)|Specifies the color of smart docking marker bitmaps.|  
+|[CSmartDockingInfo::m_clrTransparent](#csmartdockinginfo__m_clrtransparent)|Specifies the color of smart docking marker bitmaps when they are transparent.|  
+|[CSmartDockingInfo::m_nCentralGroupOffset](#csmartdockinginfo__m_ncentralgroupoffset)|Specifies the offset of the central group of smart docking markers from the boundaries of the central group rectangle.|  
+|[CSmartDockingInfo::m_sizeTotal](#csmartdockinginfo__m_sizetotal)|Specifies the total size of all smart docking markers in a group.|  
+|[CSmartDockingInfo::m_uiMarkerBmpResID](#csmartdockinginfo__m_uimarkerbmpresid)|Defines the resource IDs of the bitmaps that the framework uses for smart docking markers that are not highlighted.|  
+|[CSmartDockingInfo::m_uiMarkerLightBmpResID](#csmartdockinginfo__m_uimarkerlightbmpresid)|Defines the resource IDs of the bitmaps that the framework uses for smart docking markers that are highlighted.|  
+  
+## Remarks  
+ The framework handles smart docking markers internally. The following illustration shows the standard smart docking markers:  
+  
+ ![Standard markers for smart docking](../vs140/media/nextsdmarkers.png "nextSDmarkers")  
+  
+ In this figure, the image on the left shows a central group smart docking marker that does not have docking to a tab enabled. The image in the middle shows a right edge smart docking marker. The image on the right shows a central group smart docking marker that does have docking to a tab enabled. The central group smart docking marker has a main bitmap and five smart docking marker bitmaps.  
+  
+ You can customize the following parameters of smart docking markers:  
+  
+-   Color. For example, you can replace the blue color of the markers in the figure with any user-defined color.  
+  
+-   Transparency color.  
+  
+-   Offset of a smart docking marker in the central group from the border of the bounding rectangle.  
+  
+-   The main bitmap that represents the central group.  
+  
+-   The bitmaps that represents the regular and highlighted smart docking markers.  
+  
+ The following illustration shows an example of smart docking markers that have been customized:  
+  
+ ![Custom markers for smart docking](../vs140/media/nextsdmarkerscustom.png "nextSDmarkersCustom")  
+  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ [CSmartDockingInfo](../vs140/csmartdockinginfo-class.md)  
+  
+## Requirements  
+ **Header:** afxDockingManager.h  
+  
+##  \<a name="csmartdockinginfo__copyto">\</a>  CSmartDockingInfo::CopyTo  
+ Copies the current smart docking parameters into the provided [CSmartDockingInfo](../vs140/csmartdockinginfo-class.md) object.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Parameters  
+ [out] <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>  
+ An object of type <CodeContentPlaceHolder>14\</CodeContentPlaceHolder> that is populated with the current smart docking parameters.  
+  
+##  \<a name="csmartdockinginfo__m_busethemecolorinshading">\</a>  CSmartDockingInfo::m_bUseThemeColorInShading  
+ Specifies whether to use the current theme color when the framework displays smart docking markers.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+### Remarks  
+ If <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>, the markers are drawn using the current theme color; otherwise the markers are drawn with a light blue color.  
+  
+ The default value is <CodeContentPlaceHolder>16\</CodeContentPlaceHolder>.  
+  
+##  \<a name="csmartdockinginfo__m_clrbasebackground">\</a>  CSmartDockingInfo::m_clrBaseBackground  
+ Specifies the base background color of smart docking markers.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+##  \<a name="csmartdockinginfo__m_clrtonedest">\</a>  CSmartDockingInfo::m_clrToneDest  
+ Specifies the color that will replace <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> in smart docking marker bitmaps.  
+  
+<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+### Remarks  
+ Set this value to change the color of marker bitmaps programmatically. For example, if you want to change the color of the standard markers provided with the framework, set this value to the desired color. By default, [CSmartDockingInfo::m_clrToneSrc](#csmartdockinginfo__m_clrtonesrc) is set to RGB (61, 123, 241) (a bluish color).  
+  
+ To change the color of custom markers, you must specify both <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>19\</CodeContentPlaceHolder>.  
+  
+##  \<a name="csmartdockinginfo__m_clrtonesrc">\</a>  CSmartDockingInfo::m_clrToneSrc  
+ Specifies the color of smart docking marker bitmaps.  
+  
+<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+### Remarks  
+ Set this value only when you want to replace the color of a custom bitmap with another color. You do not have to set this value if you are changing the color of a standard (framework provided) marker.  
+  
+ Use <CodeContentPlaceHolder>20\</CodeContentPlaceHolder> to leave a member of the smart docking group empty.  
+  
+##  \<a name="csmartdockinginfo__m_clrtransparent">\</a>  CSmartDockingInfo::m_clrTransparent  
+ Specifies the color of smart docking marker bitmaps when they are transparent.  
+  
+<CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+### Remarks  
+ You must set this value when you display custom markers and custom bitmaps in the docking group.  
+  
+##  \<a name="csmartdockinginfo__m_ncentralgroupoffset">\</a>  CSmartDockingInfo::m_nCentralGroupOffset  
+ Specifies the offset between the central group of smart docking markers and the boundaries of the central group rectangle.  
+  
+<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+### Remarks  
+ Specify this value if you want to change the default offset between custom markers and the bounds of the central group of smart docking markers. The default offset is 5 pixels.  
+  
+##  \<a name="csmartdockinginfo__m_sizetotal">\</a>  CSmartDockingInfo::m_sizeTotal  
+ Specifies the total size of a bounding rectangle that encloses all smart docking markers in the central group.  
+  
+<CodeContentPlaceHolder>8\</CodeContentPlaceHolder>  
+### Remarks  
+ Set <CodeContentPlaceHolder>21\</CodeContentPlaceHolder> to the size of the bounding rectangle of the central group marker. You are required to specify this value if you are using custom bitmaps for markers.  
+  
+##  \<a name="csmartdockinginfo__m_uimarkerbmpresid">\</a>  CSmartDockingInfo::m_uiMarkerBmpResID  
+ Defines the resource IDs of the bitmaps that are used for non-highlighted custom smart docking markers.  
+  
+<CodeContentPlaceHolder>9\</CodeContentPlaceHolder>  
+### Remarks  
+ Fill this array with the resource IDs of the bitmaps representing the smart docking markers. <CodeContentPlaceHolder>22\</CodeContentPlaceHolder> is currently defined as 5. You fill the array as follows:  
+  
+ <CodeContentPlaceHolder>23\</CodeContentPlaceHolder>  
+  
+ <CodeContentPlaceHolder>24\</CodeContentPlaceHolder>  
+  
+ <CodeContentPlaceHolder>25\</CodeContentPlaceHolder>  
+  
+ <CodeContentPlaceHolder>26\</CodeContentPlaceHolder>  
+  
+ <CodeContentPlaceHolder>27\</CodeContentPlaceHolder>  
+  
+##  \<a name="csmartdockinginfo__m_uimarkerlightbmpresid">\</a>  CSmartDockingInfo::m_uiMarkerLightBmpResID  
+ Defines the resource IDs of the bitmaps that are used for highlighted custom smart docking markers.  
+  
+<CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+### Remarks  
+ Fill this array with the resource IDs of the bitmaps representing the highlighted smart docking markers. <CodeContentPlaceHolder>28\</CodeContentPlaceHolder> is currently defined as 5. You fill the array as follows:  
+  
+ <CodeContentPlaceHolder>29\</CodeContentPlaceHolder>  
+  
+ <CodeContentPlaceHolder>30\</CodeContentPlaceHolder>  
+  
+ <CodeContentPlaceHolder>31\</CodeContentPlaceHolder>  
+  
+ <CodeContentPlaceHolder>32\</CodeContentPlaceHolder>  
+  
+ <CodeContentPlaceHolder>33\</CodeContentPlaceHolder>  
+  
+## See Also  
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [Classes](../vs140/mfc-classes.md)   
+ [CObject Class](../vs140/cobject-class.md)

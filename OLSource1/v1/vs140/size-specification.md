@@ -1,0 +1,68 @@
+---
+title: "Size Specification"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+apilocation: 
+  - "msvcr120.dll"
+  - "msvcr80.dll"
+  - "msvcr110.dll"
+  - "msvcr90.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr100.dll"
+apitype: "DLLExport"
+f1_keywords: 
+  - "size"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "printf function, format specification fields"
+ms.assetid: 525dc5d8-e70a-4797-a6a0-ec504a27355c
+caps.latest.revision: 18
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Size Specification
+In a format specification, the fourth field is an argument length modifier for the conversion specifier. The <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> field prefixes to the <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> field—<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>, and <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>—specify the "size" of the corresponding argument—long or short, 32-bit or 64-bit, single-byte character or wide character—depending on the conversion specifier that they modify. These size prefixes are used with <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> characters in the <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> families of functions to specify the interpretation of argument lengths, as shown in the following table. The <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> field is optional for some argument types. When no size prefix is specified, the formatter consumes integer arguments—for example, signed or unsigned <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>16\</CodeContentPlaceHolder>, and enumeration types—as 32-bit <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> types, and floating-point arguments are consumed as 64-bit <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> types. This matches the default argument promotion rules for variable argument lists. For more information about argument promotion, see [Ellipses and Default Arguments](../vs140/ellipses-and-default-arguments.md). On both 32-bit and 64-bit systems, the format specification of a 64-bit integer argument must include a size prefix of <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>20\</CodeContentPlaceHolder>. Otherwise, the behavior of the formatter is undefined.  
+  
+ Some types are different sizes in 32-bit and 64-bit code. For example, <CodeContentPlaceHolder>21\</CodeContentPlaceHolder> is 32 bits long in code compiled for x86, and 64 bits in code compiled for x64. To create platform-agnostic formatting code for variable-width types, you can use a variable-width argument length modifier. Alternatively, use a 64-bit argument length modifier and explicitly promote the variable-width argument type to 64 bits. The Microsoft-specific <CodeContentPlaceHolder>22\</CodeContentPlaceHolder> argument length modifier handles variable-width integer arguments.  
+  
+> [!NOTE]
+>  The <CodeContentPlaceHolder>23\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>24\</CodeContentPlaceHolder>, and <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> length modifier prefixes are Microsoft extensions and are not ANSI-compatible. The <CodeContentPlaceHolder>26\</CodeContentPlaceHolder> prefix when it's used with data of type <CodeContentPlaceHolder>27\</CodeContentPlaceHolder>, the <CodeContentPlaceHolder>28\</CodeContentPlaceHolder> prefix when it's used with data of type <CodeContentPlaceHolder>29\</CodeContentPlaceHolder>, and the <CodeContentPlaceHolder>30\</CodeContentPlaceHolder> prefix when it's used with data of type <CodeContentPlaceHolder>31\</CodeContentPlaceHolder> are Microsoft extensions. The <CodeContentPlaceHolder>32\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>33\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>34\</CodeContentPlaceHolder>, and <CodeContentPlaceHolder>35\</CodeContentPlaceHolder> length prefixes are not supported.  
+  
+### Size Prefixes for printf and wprintf Format-Type Specifiers  
+  
+|To specify|Use prefix|With type specifier|  
+|----------------|----------------|-------------------------|  
+|<CodeContentPlaceHolder>36\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>37\</CodeContentPlaceHolder> (lowercase L)|<CodeContentPlaceHolder>38\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>39\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>40\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>41\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>42\</CodeContentPlaceHolder>|  
+|<CodeContentPlaceHolder>43\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>44\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>45\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>46\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>47\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>48\</CodeContentPlaceHolder>|  
+|<CodeContentPlaceHolder>49\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>50\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>51\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>52\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>53\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>54\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>55\</CodeContentPlaceHolder>|  
+|<CodeContentPlaceHolder>56\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>57\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>58\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>59\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>60\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>61\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>62\</CodeContentPlaceHolder>|  
+|<CodeContentPlaceHolder>63\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>64\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>65\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>66\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>67\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>68\</CodeContentPlaceHolder>|  
+|<CodeContentPlaceHolder>69\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>70\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>71\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>72\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>73\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>74\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>75\</CodeContentPlaceHolder>|  
+|<CodeContentPlaceHolder>76\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>77\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>78\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>79\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>80\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>81\</CodeContentPlaceHolder>|  
+|<CodeContentPlaceHolder>82\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>83\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>84\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>85\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>86\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>87\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>88\</CodeContentPlaceHolder>|  
+|<CodeContentPlaceHolder>89\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>90\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>91\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>92\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>93\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>94\</CodeContentPlaceHolder>|  
+|<CodeContentPlaceHolder>95\</CodeContentPlaceHolder> (that is, <CodeContentPlaceHolder>96\</CodeContentPlaceHolder> on 32-bit platforms, <CodeContentPlaceHolder>97\</CodeContentPlaceHolder> on 64-bit platforms)|<CodeContentPlaceHolder>98\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>99\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>100\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>101\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>102\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>103\</CodeContentPlaceHolder>|  
+|<CodeContentPlaceHolder>104\</CodeContentPlaceHolder> (that is, <CodeContentPlaceHolder>105\</CodeContentPlaceHolder> on 32-bit platforms, <CodeContentPlaceHolder>106\</CodeContentPlaceHolder> on 64-bit platforms)|<CodeContentPlaceHolder>107\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>108\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>109\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>110\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>111\</CodeContentPlaceHolder>|  
+|<CodeContentPlaceHolder>112\</CodeContentPlaceHolder> (In [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)], although <CodeContentPlaceHolder>113\</CodeContentPlaceHolder> is a distinct type, it has the same internal representation as <CodeContentPlaceHolder>114\</CodeContentPlaceHolder>.)|<CodeContentPlaceHolder>115\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>116\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>117\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>118\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>119\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>120\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>121\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>122\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>123\</CodeContentPlaceHolder>|  
+|Single-byte character with <CodeContentPlaceHolder>124\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>125\</CodeContentPlaceHolder> functions. (An <CodeContentPlaceHolder>126\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>127\</CodeContentPlaceHolder> type specifier is synonymous with <CodeContentPlaceHolder>128\</CodeContentPlaceHolder> in <CodeContentPlaceHolder>129\</CodeContentPlaceHolder> functions and with <CodeContentPlaceHolder>130\</CodeContentPlaceHolder> in <CodeContentPlaceHolder>131\</CodeContentPlaceHolder> functions.)|<CodeContentPlaceHolder>132\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>133\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>134\</CodeContentPlaceHolder>|  
+|Wide character with <CodeContentPlaceHolder>135\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>136\</CodeContentPlaceHolder> functions. (An <CodeContentPlaceHolder>137\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>138\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>139\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>140\</CodeContentPlaceHolder> type specifier is synonymous with <CodeContentPlaceHolder>141\</CodeContentPlaceHolder> in <CodeContentPlaceHolder>142\</CodeContentPlaceHolder> functions and with <CodeContentPlaceHolder>143\</CodeContentPlaceHolder> in <CodeContentPlaceHolder>144\</CodeContentPlaceHolder> functions.)|<CodeContentPlaceHolder>145\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>146\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>147\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>148\</CodeContentPlaceHolder>|  
+|Single-byte character string with <CodeContentPlaceHolder>149\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>150\</CodeContentPlaceHolder> functions. (An <CodeContentPlaceHolder>151\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>152\</CodeContentPlaceHolder> type specifier is synonymous with <CodeContentPlaceHolder>153\</CodeContentPlaceHolder> in <CodeContentPlaceHolder>154\</CodeContentPlaceHolder> functions and with <CodeContentPlaceHolder>155\</CodeContentPlaceHolder> in <CodeContentPlaceHolder>156\</CodeContentPlaceHolder> functions.)|<CodeContentPlaceHolder>157\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>158\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>159\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>160\</CodeContentPlaceHolder>|  
+|Wide-character string with <CodeContentPlaceHolder>161\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>162\</CodeContentPlaceHolder> functions. (An <CodeContentPlaceHolder>163\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>164\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>165\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>166\</CodeContentPlaceHolder> type specifier is synonymous with <CodeContentPlaceHolder>167\</CodeContentPlaceHolder> in <CodeContentPlaceHolder>168\</CodeContentPlaceHolder> functions and with <CodeContentPlaceHolder>169\</CodeContentPlaceHolder> in <CodeContentPlaceHolder>170\</CodeContentPlaceHolder> functions.)|<CodeContentPlaceHolder>171\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>172\</CodeContentPlaceHolder>|<CodeContentPlaceHolder>173\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>174\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>175\</CodeContentPlaceHolder>|  
+  
+## See Also  
+ [printf, _printf_l, wprintf, _wprintf_l](../vs140/printf--_printf_l--wprintf--_wprintf_l.md)   
+ [Format Specification Fields: printf and wprintf Functions](../vs140/format-specification-syntax--printf-and-wprintf-functions.md)   
+ [Flag Directives](../vs140/flag-directives.md)   
+ [Width Specification](../vs140/printf-width-specification.md)   
+ [Precision Specification](../vs140/precision-specification.md)   
+ [printf Type Field Characters](../vs140/printf-type-field-characters.md)

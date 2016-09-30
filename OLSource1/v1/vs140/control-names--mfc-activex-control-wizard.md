@@ -1,0 +1,84 @@
+---
+title: "Control Names, MFC ActiveX Control Wizard"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vc.appwiz.mfc.ctl.names"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "MFC ActiveX Control Wizard, control names"
+ms.assetid: 9b8b81d2-36df-48ed-b58a-a771a0e269ee
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Control Names, MFC ActiveX Control Wizard
+Specify the names for the control class and property page class, the type names, and type identifiers for your control. With the exception of **Short name**, all other fields can be edited independently. If you change the text for **Short name**, the change is reflected in the names of all other fields in this page. This naming behavior is designed to make all the names easily identifiable for you as you develop your control.  
+  
+ **Short name**  
+ Provide an abbreviated name for the control. By default, this name is based on the project name you provided in the **New Project** dialog box. The name you provide determines the class names, the type names, and the type identifiers, unless you change those fields individually.  
+  
+ **Control class name**  
+ By default, the name of the control class is based on the short name, with <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> as a prefix and <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> as a suffix. For example, if your control's short name is <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>, the control class name is <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>.  
+  
+ **Control .h file**  
+ By default, the name of the header file is based on the short name, with <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> as a suffix and <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> as the file extension. For example, if your control's short name is <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>, the header file name is <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>. The name in this field should match the control class name.  
+  
+ **Control .cpp file**  
+ By default, the name of the header file is based on the short name, with <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> as a suffix and <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> as the file extension. For example, if your control's short name is <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>, the header file name is <CodeContentPlaceHolder>11\</CodeContentPlaceHolder>. The name in this field should match the header name.  
+  
+ **Control type name**  
+ By default, the name of the control type is based on the short name, followed by <CodeContentPlaceHolder>12\</CodeContentPlaceHolder>. For example, if your control's short name is <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>, the control class type name is <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>. If you change the value in this field, make sure the name indicates an inheritance.  
+  
+ **Control type ID**  
+ Sets the control type ID of the control class. The control writes this string to the registry when it is added to a project. Container applications use this string to create an instance of the control.  
+  
+ By default, the control type ID is based on the project name, which you indicated in the **New Project** dialog box, and the short name. This name should match the type name.  
+  
+ By default, the control type ID appears as follows:  
+  
+ *ProjectName*.*ShortName*Ctrl.1  
+  
+ If you change the short name in this dialog box, the control type ID appears as follows:  
+  
+ *ProjectName*.*NewShortName*Ctrl.1  
+  
+ **PropPage class name**  
+ By default, the name of the property page class is based on the short name, with <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> as a prefix and <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> as a suffix. For example, if your control's short name is <CodeContentPlaceHolder>17\</CodeContentPlaceHolder>, the property page class name is <CodeContentPlaceHolder>18\</CodeContentPlaceHolder>. This name should match the control class name, appended with <CodeContentPlaceHolder>19\</CodeContentPlaceHolder>.  
+  
+ **PropPage .h file**  
+ By default, the name of the property page header file is based on the short name, with as a <CodeContentPlaceHolder>20\</CodeContentPlaceHolder> as a suffix and <CodeContentPlaceHolder>21\</CodeContentPlaceHolder> as the file extension. For example, if your control's short name is <CodeContentPlaceHolder>22\</CodeContentPlaceHolder>, the property page header file name is <CodeContentPlaceHolder>23\</CodeContentPlaceHolder>. This name should match the class name.  
+  
+ **PropPage .cpp file**  
+ By default, the name of the property page implementation file is based on the short name, with as a <CodeContentPlaceHolder>24\</CodeContentPlaceHolder> as a suffix and <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> as the file extension. For example, if your control's short name is <CodeContentPlaceHolder>26\</CodeContentPlaceHolder>, the property page header file name is <CodeContentPlaceHolder>27\</CodeContentPlaceHolder>. This name should match the header file name.  
+  
+ **PropPage type name**  
+ By default, the property page type name is based on the short name, followed by <CodeContentPlaceHolder>28\</CodeContentPlaceHolder>. For example, if your control's short name is <CodeContentPlaceHolder>29\</CodeContentPlaceHolder>, the property page type name is <CodeContentPlaceHolder>30\</CodeContentPlaceHolder>. If you change the value in this field, make sure the name indicates the control class.  
+  
+ **PropPage type ID**  
+ Sets the ID of the property page class. The control writes this string in the registry when it is applied to a project. A container application uses this string to create an instance of the control's property page.  
+  
+ By default, the property page type ID is based on the project name, which you indicated in the **New Project** dialog box, and the short name. This name should match the type name.  
+  
+ By default, the property page type ID appears as follows:  
+  
+ *ProjectName*.*ShortName*PropPage.1  
+  
+ If you change the short name in this dialog box, the property page type ID appears as follows:  
+  
+ *ProjectName*.*NewShortName*PropPage.1  
+  
+## See Also  
+ [MFC ActiveX Control Wizard](../vs140/mfc-activex-control-wizard.md)   
+ [Application Settings, MFC ActiveX Control Wizard](../vs140/application-settings--mfc-activex-control-wizard.md)   
+ [Control Settings, MFC ActiveX Control Wizard](../vs140/control-settings--mfc-activex-control-wizard.md)   
+ [File Types Created for Visual C++ Projects](../vs140/file-types-created-for-visual-c---projects.md)

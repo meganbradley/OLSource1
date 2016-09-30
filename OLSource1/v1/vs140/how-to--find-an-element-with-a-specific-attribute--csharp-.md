@@ -1,0 +1,42 @@
+---
+title: "How to: Find an Element with a Specific Attribute (C#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+ms.assetid: b92591aa-3cfb-490e-99f6-da8de335e362
+caps.latest.revision: 7
+---
+# How to: Find an Element with a Specific Attribute (C#)
+This topic shows how to find an element that has an attribute that has a specific value.  
+  
+## Example  
+ The example shows how to find the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> element that has a <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> attribute with a value of "Billing".  
+  
+ This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../vs140/sample-xml-file--typical-purchase-order--linq-to-xml-1.md).  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ This code produces the following output:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## Example  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../vs140/working-with-xml-namespaces--csharp-.md).  
+  
+ This example uses the following XML document: [Sample XML File: Typical Purchase Order in a Namespace](../vs140/sample-xml-file--typical-purchase-order-in-a-namespace1.md).  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ This code produces the following output:  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+## See Also  
+ \<xref:System.Xml.Linq.XElement.Attribute*>   
+ \<xref:System.Xml.Linq.XContainer.Elements*>   
+ [Basic Queries (LINQ to XML) (C#)](../vs140/basic-queries--linq-to-xml---csharp-.md)   
+ [Standard Query Operators Overview (C#)](../vs140/standard-query-operators-overview--csharp-.md)   
+ [Projection Operations (C#)](../vs140/projection-operations--csharp-.md)

@@ -1,0 +1,42 @@
+---
+title: "IDebugPortSupplier2::RemovePort"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugPortSupplier2::RemovePort"
+helpviewer_keywords: 
+  - "IDebugPortSupplier2::RemovePort"
+ms.assetid: f5c1fbf2-9084-46f2-a682-7db963928df2
+caps.latest.revision: 13
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDebugPortSupplier2::RemovePort
+Removes a port.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ [in] An [IDebugPort2](../vs140/idebugport2.md) object that represents the port to be removed.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>; otherwise, returns an error code.  
+  
+## Remarks  
+ This method removes the port from the port supplier's internal list of active ports.  
+  
+## See Also  
+ [IDebugPortSupplier2](../vs140/idebugportsupplier2.md)   
+ [IDebugPort2](../vs140/idebugport2.md)

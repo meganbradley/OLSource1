@@ -1,0 +1,37 @@
+---
+title: "Identifier expected, preceded with a period"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "bc36576"
+  - "vbc36576"
+helpviewer_keywords: 
+  - "BC36576"
+ms.assetid: 02217cc4-8972-4a6d-97a6-4ecbb7399af2
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Identifier expected, preceded with a period
+A value from which a property name cannot be inferred has been included in the initializer list of an anonymous type declaration without being assigned to a property name.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ **Error ID:** BC36576  
+  
+### To correct this error  
+  
+-   Provide a property name for each value in the initializer list, as shown in the following code:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## See Also  
+ [Object Initializers: Named and Anonymous Types](../vs140/object-initializers--named-and-anonymous-types--visual-basic-.md)   
+ [How to: Declare an Instance of an Anonymous Type (Visual Basic)](assetId:///119f616c-9bcd-4731-ac00-4285be5959f7)   
+ [How to: Infer Property Names and Types in Anonymous Type Declarations](../vs140/how-to--infer-property-names-and-types-in-anonymous-type-declarations--visual-basic-.md)

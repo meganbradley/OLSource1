@@ -1,0 +1,40 @@
+---
+title: "IDiaEnumSymbols::Item"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaEnumSymbols::Item method"
+ms.assetid: 2bd1ec04-e677-4e32-8e32-33334f1eed77
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaEnumSymbols::Item
+Retrieves a symbol by means of an index.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ index  
+ [in] Index of the [IDiaSymbol](../vs140/idiasymbol.md) object to be retrieved. The index is in the range 0 to <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>-1, where <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> is returned by the [IDiaEnumSymbols::get_Count](../vs140/idiaenumsymbols--get_count.md) method.  
+  
+ symbol  
+ [out] Returns an [IDiaSymbol](../vs140/idiasymbol.md) object representing the desired symbol.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>; otherwise, returns an error code.  
+  
+## See Also  
+ [IDiaEnumSymbols](../vs140/idiaenumsymbols.md)   
+ [IDiaSymbol](../vs140/idiasymbol.md)

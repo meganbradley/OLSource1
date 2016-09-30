@@ -1,0 +1,33 @@
+---
+title: "Compiler Error C3865"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C3865"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3865"
+ms.assetid: 9bc62bb0-4fb8-4856-a5cf-c7cb4029a596
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3865
+'calling_convention' : can only be used on native member functions  
+  
+ A calling convention was used on a function that was either a global function or on a managed member function. The calling convention can only be used on a native (not managed) member function.  
+  
+ For more information, see [Calling Conventions](../vs140/calling-conventions.md).  
+  
+ The following sample generates C3865:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

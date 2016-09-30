@@ -1,0 +1,31 @@
+---
+title: "Compiler Error CS0619"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0619"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0619"
+ms.assetid: a2060eb1-cda5-493c-b049-9b1792f88207
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS0619
+'member' is obsolete: 'text'  
+  
+ A class member was marked with the [Obsolete](assetId:///05e99cd0-bda6-4f79-a890-1ca093b4b488) attribute, such that an error will be issued when the class member is referenced.  
+  
+ The following sample generates CS0619:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

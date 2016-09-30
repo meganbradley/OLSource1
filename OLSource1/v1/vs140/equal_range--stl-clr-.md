@@ -1,0 +1,40 @@
+---
+title: "equal_range (STL-CLR)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+H1: "equal_range (STL/CLR)"
+f1_keywords: 
+  - "cliext::equal_range"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "equal_range function [STL/CLR]"
+ms.assetid: 1b2e76c3-6b52-486d-9785-2639b54277fd
+caps.latest.revision: 8
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# equal_range (STL-CLR)
+Finds a pair of positions in an ordered range, the first less than or equivalent to the position of a specified element and the second greater than the element's position, where the sense of equivalence or ordering used to establish the positions in the sequence may be specified by a binary predicate.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ This function behaves the same as the STL function <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>. For more information, see [equal_range](../vs140/equal_range.md).  
+  
+## Requirements  
+ **Header:** \<cliext/algorithm>  
+  
+ **Namespace:** cliext  
+  
+## See Also  
+ [algorithm (STL/CLR)](../vs140/algorithm--stl-clr-.md)

@@ -1,0 +1,167 @@
+---
+title: "Walkthrough: Using MSBuild to Create a Visual C++ Project"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "msbuild.cpp.walkthrough.createproject"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "msbuild (c++), walkthrough: create a project"
+ms.assetid: 52350d1c-c373-4868-923c-5e8be6f67adb
+caps.latest.revision: 31
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Walkthrough: Using MSBuild to Create a Visual C++ Project
+This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] to build a [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] project at a command prompt. You will learn how to create the C++ source files and an XML-based project file for a [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] console application. After building the project, you will learn how to customize the build process.  
+  
+ This walkthrough illustrates the following tasks:  
+  
+-   Creating the C++ source files for your project.  
+  
+-   Creating the XML [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] project file.  
+  
+-   Using [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] to build your project.  
+  
+-   Using [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] to customize your project.  
+  
+## Prerequisites  
+ You need the following to complete this walkthrough:  
+  
+-   [!INCLUDE[vs_dev12](../vs140/includes/vs_dev12_md.md)]  
+  
+-   A general understanding of the [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] system.  
+  
+## Creating the C++ Source Files  
+ In this walkthrough you will create a project that has a source file and a header file. The source file main.cpp contains the main function for the console application. The header file main.h contains code to include the iostream header file. You can create these C++ files by using [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] or a text editor.  
+  
+#### To create the C++ source files for your project  
+  
+1.  Create a directory for your project.  
+  
+2.  Create a file that is named main.cpp and add the following code to this file:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+3.  Create a file that is named main.h and add the following code to this file:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## Creating the XML MSBuild Project File  
+ An [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] project file is an XML file that contains a project root element (\<Project>). In the following example project, the \<Project> element contains seven child elements:  
+  
+-   Three item group tags (\<ItemGroup>) that specify project configuration and platform, source file name, and header file name.  
+  
+-   Three import tags (\<Import>) that specify the location of Microsoft [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] settings.  
+  
+-   A property group tag (\<PropertyGroup>) that specifies project settings.  
+  
+#### To create the MSBuild project file  
+  
+1.  Use a text editor to create a project file that is named <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>, and then add the following root \<Project> element. Insert the elements in the following procedure steps between the root \<Project> tags:  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+2.  Add the following two \<ProjectConfiguration> child elements in an \<ItemGroup> element. The child element specifies debug and release configurations for a 32-bit Windows operating system:  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+3.  Add the following \<Import/> element that specifies the path of the default C++ settings for this project:  
+  
+<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+4.  Add the following property group element (\<PropertyGroup>) that specifies two project properties:  
+  
+<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+5.  Add the following \<Import/> element that specifies the path of the current C++ settings for this project:  
+  
+<CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+6.  Add the following \<ClCompile> child element in an \<ItemGroup> element. The child element specifies the name of the C/C++ source file to compile:  
+  
+<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+7.  Add the following \<ClInclude> child element in an \<ItemGroup> element. The child element specifies the name of the header file for the C/C++ source file:  
+  
+<CodeContentPlaceHolder>8\</CodeContentPlaceHolder>  
+8.  Add the following \<Import> element that specifies the path of the file that defines the target for this project:  
+  
+<CodeContentPlaceHolder>9\</CodeContentPlaceHolder>  
+### Complete Project File  
+ The following code shows the complete project file that you created in the previous procedure.  
+  
+<CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+## Using MSBuild to Build Your Project  
+ Type the following command at the command prompt to build your console application:  
+  
+<CodeContentPlaceHolder>11\</CodeContentPlaceHolder>  
+ [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] creates a directory for the output files, and then compiles and links your project to generate the Myproject.exe program. After the build process finishes, use the following command to run the application:  
+  
+<CodeContentPlaceHolder>12\</CodeContentPlaceHolder>  
+ The application should display "Hello, from MSBuild!" in the console window.  
+  
+## Customizing Your Project  
+ [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] enables you to execute predefined build targets, apply user-defined properties, and use custom tools, events, and build steps. This section illustrates the following tasks:  
+  
+-   Using [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] with build targets.  
+  
+-   Using [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] with build properties.  
+  
+-   Using [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] with the 64-bit compiler and tools.  
+  
+-   Using [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] with different toolsets.  
+  
+-   Adding [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] customizations.  
+  
+### Using MSBuild with Build Targets  
+ A *build target* is a named set of predefined or user-defined commands that can be executed during the build. Use the target command-line option (**/t**) to specify a build target. In the case of the <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> example project, the predefined **clean** target deletes all files in the debug folder and creates a new log file.  
+  
+ At the command prompt, type the following command to clean <CodeContentPlaceHolder>17\</CodeContentPlaceHolder>.  
+  
+ <CodeContentPlaceHolder>18\</CodeContentPlaceHolder>  
+  
+### Using MSBuild with Build Properties  
+ The property command-line option (**/p**) enables you to override a property in your project build file. In the <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> example project, the release or debug build configuration is specified by the <CodeContentPlaceHolder>20\</CodeContentPlaceHolder> property. And the operating system that is intended to run the built application is specified by the <CodeContentPlaceHolder>21\</CodeContentPlaceHolder> property.  
+  
+ At the command prompt, type the following command to create a debug build of the <CodeContentPlaceHolder>22\</CodeContentPlaceHolder> application that is intended to run on 32-bit Windows.  
+  
+ <CodeContentPlaceHolder>23\</CodeContentPlaceHolder>  
+  
+ Assume that the <CodeContentPlaceHolder>24\</CodeContentPlaceHolder> example project also defines a configuration for 64-bit Windows, and another configuration for a custom operating system named <CodeContentPlaceHolder>25\</CodeContentPlaceHolder>.  
+  
+ At the command prompt, type the following command to create a release build that runs on 64-bit Windows.  
+  
+ <CodeContentPlaceHolder>26\</CodeContentPlaceHolder>  
+  
+ At the command prompt, type the following command to create a release build for <CodeContentPlaceHolder>27\</CodeContentPlaceHolder>.  
+  
+ <CodeContentPlaceHolder>28\</CodeContentPlaceHolder>  
+  
+### Using MSBuild with the 64-bit Compiler and Tools  
+ If you have installed [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] on 64-bit Windows, by default, the 64-bit x64 native and cross tools are installed. You can configure [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] to use the 64-bit compiler and tools to build your application by setting the <CodeContentPlaceHolder>29\</CodeContentPlaceHolder> property. This property does not affect the project configuration or platform properties. By default, the 32-bit version of the tools is used. To specify the 64-bit version of the compiler and tools, add the following property group element to the Myproject.vcxproj project file after the <CodeContentPlaceHolder>30\</CodeContentPlaceHolder> \<Import /> element:  
+  
+<CodeContentPlaceHolder>13\</CodeContentPlaceHolder>  
+ At the command prompt, type the following command to use the 64-bit tools to build your application.  
+  
+ <CodeContentPlaceHolder>31\</CodeContentPlaceHolder>  
+  
+### Using MSBuild with a Different Toolset  
+ If you have the toolsets and libraries for other versions of [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] installed, [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] can build applications for either the current [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] version or for the other installed versions. For example, if you have installed [!INCLUDE[cpp_dev11_long](../vs140/includes/cpp_dev11_long_md.md)], to specify the [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] 11.0 toolset for Windows XP, add the following property group element to the Myproject.vcxproj project file after the Microsoft.Cpp.props <CodeContentPlaceHolder>32\</CodeContentPlaceHolder> element:  
+  
+<CodeContentPlaceHolder>14\</CodeContentPlaceHolder>  
+ To rebuild your project with the [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] 11.0 Windows XP toolset, type either of the following commands:  
+  
+ <CodeContentPlaceHolder>33\</CodeContentPlaceHolder>  
+  
+ <CodeContentPlaceHolder>34\</CodeContentPlaceHolder>  
+  
+### Adding MSBuild Customizations  
+ [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] provides various ways to customize your build process. The following topics show how to add custom build steps, tools, and events to your [!INCLUDE[vstecmsbuild](../vs140/includes/vstecmsbuild_md.md)] project:  
+  
+-   [How to: Add a Custom Build Step to an MSBuild Project](../vs140/how-to--add-a-custom-build-step-to-msbuild-projects.md)  
+  
+-   [How to: Add a Custom Build Tool to an MSBuild Project](../vs140/how-to--add-custom-build-tools-to-msbuild-projects.md)  
+  
+-   [How to: Add a Custom Build Event to an MSBuild Project](../vs140/how-to--use-build-events-in-msbuild-projects.md)

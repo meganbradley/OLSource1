@@ -1,0 +1,40 @@
+---
+title: "IDiaEnumSectionContribs::Item"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaEnumSectionContribs::Item method"
+ms.assetid: 63a28f23-0ca0-44a7-b11b-ca0206d642a0
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaEnumSectionContribs::Item
+Retrieves section contributions by means of an index.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ index  
+ [in] Index of the [IDiaSectionContrib](../vs140/idiasectioncontrib.md) object to be retrieved. The index is in the range 0 to <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>-1, where <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> is returned by the [IDiaEnumSectionContribs::get_Count](../vs140/idiaenumsectioncontribs--get_count.md) method.  
+  
+ section  
+ [out] Returns an [IDiaSectionContrib](../vs140/idiasectioncontrib.md) object representing the desired section contribution.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>; otherwise, returns an error code.  
+  
+## See Also  
+ [IDiaEnumSectionContribs::get_Count](../vs140/idiaenumsectioncontribs--get_count.md)   
+ [IDiaSectionContrib](../vs140/idiasectioncontrib.md)

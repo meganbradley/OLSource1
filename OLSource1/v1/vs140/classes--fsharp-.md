@@ -1,0 +1,125 @@
+---
+title: "Classes (F#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-fsharp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+dev_langs: 
+  - "FSharp"
+helpviewer_keywords: 
+  - "inherit keyword [F#]"
+  - "explicit constructor [F#]"
+  - "implicit constructor [F#]"
+  - "base keyword [F#]"
+  - "new keyword [F#]"
+  - "classes [F#]"
+  - "class keyword [F#]"
+  - "as keyword [F#]"
+  - "classes, F#"
+  - "constructors [F#]"
+ms.assetid: 63559771-a075-4388-ba9e-41a23097e2a4
+caps.latest.revision: 35
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Classes (F#)
+*Classes* are types that represent objects that can have properties, methods, and events.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ Classes represent the fundamental description of .NET object types; the class is the primary type concept that supports object-oriented programming in F#.  
+  
+ In the preceding syntax, the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> is any valid identifier. The <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> describes optional generic type parameters. It consists of type parameter names and constraints enclosed in angle brackets (\< and >). For more information, see [Generics](../vs140/generics--fsharp-.md) and [Constraints](../vs140/constraints--fsharp-.md). The <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> describes constructor parameters. The first access modifier pertains to the type; the second pertains to the primary constructor. In both cases, the default is <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>.  
+  
+ You specify the base class for a class by using the <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> keyword. You must supply arguments, in parentheses, for the base class constructor.  
+  
+ You declare fields or function values that are local to the class by using <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> bindings, and you must follow the general rules for <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> bindings. The <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> section includes code to be executed upon object construction.  
+  
+ The <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> consists of additional constructors, instance and static method declarations, interface declarations, abstract bindings, and property and event declarations. These are described in [Members (F#)](../vs140/members--fsharp-.md).  
+  
+ The <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> that is used with the optional <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> keyword gives a name to the instance variable, or self identifier, which can be used in the type definition to refer to the instance of the type. For more information, see the section Self Identifiers later in this topic.  
+  
+ The keywords <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>14\</CodeContentPlaceHolder> that mark the start and end of the definition are optional.  
+  
+ Mutually recursive types, which are types that reference each other, are joined together with the <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> keyword just as mutually recursive functions are. For an example, see the section Mutually Recursive Types.  
+  
+## Constructors  
+ The constructor is code that creates an instance of the class type. Constructors for classes work somewhat differently in F# than they do in other .NET languages. In an F# class, there is always a primary constructor whose arguments are described in the <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> that follows the type name, and whose body consists of the <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> (and <CodeContentPlaceHolder>18\</CodeContentPlaceHolder>) bindings at the start of the class declaration and the <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> bindings that follow. The arguments of the primary constructor are in scope throughout the class declaration.  
+  
+ You can add additional constructors by using the <CodeContentPlaceHolder>20\</CodeContentPlaceHolder> keyword to add a member, as follows:  
+  
+ <CodeContentPlaceHolder>21\</CodeContentPlaceHolder>(<CodeContentPlaceHolder>22\</CodeContentPlaceHolder>) = <CodeContentPlaceHolder>23\</CodeContentPlaceHolder>  
+  
+ The body of the new constructor must invoke the primary constructor that is specified at the top of the class declaration.  
+  
+ The following example illustrates this concept. In the following code, <CodeContentPlaceHolder>24\</CodeContentPlaceHolder> has two constructors, a primary constructor that takes two arguments and another constructor that takes no arguments.  
+  
+ [!code[FsLangRef1#2401](../vs140/codesnippet/FSharp/classes--fsharp-_1.fs)]  
+  
+## let and do Bindings  
+ The <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>26\</CodeContentPlaceHolder> bindings in a class definition form the body of the primary class constructor, and therefore they run whenever a class instance is created. If a <CodeContentPlaceHolder>27\</CodeContentPlaceHolder> binding is a function, then it is compiled into a member. If the <CodeContentPlaceHolder>28\</CodeContentPlaceHolder> binding is a value that is not used in any function or member, then it is compiled into a variable that is local to the constructor. Otherwise, it is compiled into a field of the class. The <CodeContentPlaceHolder>29\</CodeContentPlaceHolder> expressions that follow are compiled into the primary constructor and execute initialization code for every instance. Because any additional constructors always call the primary constructor, the <CodeContentPlaceHolder>30\</CodeContentPlaceHolder> bindings and <CodeContentPlaceHolder>31\</CodeContentPlaceHolder> bindings always execute regardless of which constructor is called.  
+  
+ Fields that are created by <CodeContentPlaceHolder>32\</CodeContentPlaceHolder> bindings can be accessed throughout the methods and properties of the class; however, they cannot be accessed from static methods, even if the static methods take an instance variable as a parameter. They cannot be accessed by using the self identifier, if one exists.  
+  
+## Self Identifiers  
+ A *self identifier* is a name that represents the current instance. Self identifiers resemble the <CodeContentPlaceHolder>33\</CodeContentPlaceHolder> keyword in C# or C++ or <CodeContentPlaceHolder>34\</CodeContentPlaceHolder> in Visual Basic. You can define a self identifier in two different ways, depending on whether you want the self identifier to be in scope for the whole class definition or just for an individual method.  
+  
+ To define a self identifier for the whole class, use the <CodeContentPlaceHolder>35\</CodeContentPlaceHolder> keyword after the closing parentheses of the constructor parameter list, and specify the identifier name.  
+  
+ To define a self identifier for just one method, provide the self identifier in the member declaration, just before the method name and a period (.) as a separator.  
+  
+ The following code example illustrates the two ways to create a self identifier. In the first line, the <CodeContentPlaceHolder>36\</CodeContentPlaceHolder> keyword is used to define the self identifier. In the fifth line, the identifier <CodeContentPlaceHolder>37\</CodeContentPlaceHolder> is used to define a self identifier whose scope is restricted to the method <CodeContentPlaceHolder>38\</CodeContentPlaceHolder>.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ Unlike in other .NET languages, you can name the self identifier however you want; you are not restricted to names such as <CodeContentPlaceHolder>39\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>40\</CodeContentPlaceHolder>, or <CodeContentPlaceHolder>41\</CodeContentPlaceHolder>.  
+  
+ The self identifier that is declared with the <CodeContentPlaceHolder>42\</CodeContentPlaceHolder> keyword is not initialized until after the <CodeContentPlaceHolder>43\</CodeContentPlaceHolder> bindings are executed. Therefore, it cannot be used in the <CodeContentPlaceHolder>44\</CodeContentPlaceHolder> bindings. You can use the self identifier in the <CodeContentPlaceHolder>45\</CodeContentPlaceHolder> bindings section.  
+  
+## Generic Type Parameters  
+ Generic type parameters are specified in angle brackets (\< and >), in the form of a single quotation mark followed by an identifier. Multiple generic type parameters are separated by commas. The generic type parameter is in scope throughout the declaration. The following code example shows how to specify generic type parameters.  
+  
+ [!code[FsLangRef1#2403](../vs140/codesnippet/FSharp/classes--fsharp-_2.fs)]  
+  
+ Type arguments are inferred when the type is used. In the following code, the inferred type is a sequence of tuples.  
+  
+ [!code[FsLangRef1#24031](../vs140/codesnippet/FSharp/classes--fsharp-_3.fs)]  
+  
+## Specifying Inheritance  
+ The <CodeContentPlaceHolder>46\</CodeContentPlaceHolder> clause identifies the direct base class, if there is one. In F#, only one direct base class is allowed. Interfaces that a class implements are not considered base classes. Interfaces are discussed in the [Interfaces (F#)](../vs140/interfaces--fsharp-.md) topic.  
+  
+ You can access the methods and properties of the base class from the derived class by using the language keyword <CodeContentPlaceHolder>47\</CodeContentPlaceHolder> as an identifier, followed by a period (.) and the name of the member.  
+  
+ For more information, see [Inheritance (F#)](../vs140/inheritance--fsharp-.md).  
+  
+## Members Section  
+ You can define static or instance methods, properties, interface implementations, abstract members, event declarations, and additional constructors in this section. Let and do bindings cannot appear in this section. Because members can be added to a variety of F# types in addition to classes, they are discussed in a separate topic, [Members (F#)](../vs140/members--fsharp-.md).  
+  
+## Mutually Recursive Types  
+ When you define types that reference each other in a circular way, you string together the type definitions by using the <CodeContentPlaceHolder>48\</CodeContentPlaceHolder> keyword. The <CodeContentPlaceHolder>49\</CodeContentPlaceHolder> keyword replaces the <CodeContentPlaceHolder>50\</CodeContentPlaceHolder> keyword on all except the first definition, as follows.  
+  
+ [!code[FsLangRef1#2404](../vs140/codesnippet/FSharp/classes--fsharp-_4.fs)]  
+  
+ The output is a list of all the files in the current directory.  
+  
+## When to Use Classes, Unions, Records, and Structures  
+ Given the variety of types to choose from, you need to have a good understanding of what each type is designed for to select the appropriate type for a particular situation. Classes are designed for use in object-oriented programming contexts. Object-oriented programming is the dominant paradigm used in applications that are written for the .NET Framework. If your F# code has to work closely with the .NET Framework or another object-oriented library, and especially if you have to extend from an object-oriented type system such as a UI library, classes are probably appropriate.  
+  
+ If you are not interoperating closely with object-oriented code, or if you are writing code that is self-contained and therefore protected from frequent interaction with object-oriented code, you should consider using records and discriminated unions. A single, well thought–out discriminated union, together with appropriate pattern matching code, can often be used as a simpler alternative to an object hierarchy. For more information about discriminated unions, see [Discriminated Unions (F#)](../vs140/discriminated-unions--fsharp-.md).  
+  
+ Records have the advantage of being simpler than classes, but records are not appropriate when the demands of a type exceed what can be accomplished with their simplicity. Records are basically simple aggregates of values, without separate constructors that can perform custom actions, without hidden fields, and without inheritance or interface implementations. Although members such as properties and methods can be added to records to make their behavior more complex, the fields stored in a record are still a simple aggregate of values. For more information about records, see [Records (F#)](../vs140/records--fsharp-.md).  
+  
+ Structures are also useful for small aggregates of data, but they differ from classes and records in that they are .NET value types. Classes and records are .NET reference types. The semantics of value types and reference types are different in that value types are passed by value. This means that they are copied bit for bit when they are passed as a parameter or returned from a function. They are also stored on the stack or, if they are used as a field, embedded inside the parent object instead of stored in their own separate location on the heap. Therefore, structures are appropriate for frequently accessed data when the overhead of accessing the heap is a problem. For more information about structures, see [Structures (F#)](../vs140/structures--fsharp-.md).  
+  
+## See Also  
+ [F# Language Reference](../vs140/fsharp-language-reference.md)   
+ [Members (F#)](../vs140/members--fsharp-.md)   
+ [Inheritance (F#)](../vs140/inheritance--fsharp-.md)   
+ [Interfaces (F#)](../vs140/interfaces--fsharp-.md)

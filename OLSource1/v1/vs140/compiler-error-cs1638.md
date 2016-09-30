@@ -1,0 +1,34 @@
+---
+title: "Compiler Error CS1638"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS1638"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1638"
+ms.assetid: 5279c060-5be3-4c29-80cc-21326d4cffdb
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS1638
+'identifier' is a reserved identifier and cannot be used when ISO language version mode is used  
+  
+ When the ISO language compatibility option is specified by the **/langversion** compiler switch, any identifier with double underscores anywhere in the identifier will produce this error. To avoid this error, eliminate any identifiers with double underscores, or do not use the ISO-1 language version option.  
+  
+## Example  
+ The following sample generates CS1638:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## See Also  
+ [/langversion (Specify Language Version) (C# Compiler Options)](../vs140/-langversion--csharp-compiler-options-.md)

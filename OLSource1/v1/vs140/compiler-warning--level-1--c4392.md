@@ -1,0 +1,33 @@
+---
+title: "Compiler Warning (level 1) C4392"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C4392"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C4392"
+ms.assetid: 817806ad-06a6-4b9e-8355-e25687c782dc
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 1) C4392
+'signature' : incorrect number of arguments for intrinsic function, expected 'number' arguments  
+  
+ A function declaration for a compiler intrinsic had the wrong number of arguments. The resulting image may not run correctly.  
+  
+ To fix this warning, either correct the declaration or delete the declaration and simply #include the appropriate header file.  
+  
+ The following sample generates C4392:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

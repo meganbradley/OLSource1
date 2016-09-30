@@ -1,0 +1,80 @@
+---
+title: "How to: Create a Property (Visual Basic)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "procedures, defining"
+  - "Visual Basic code, procedures"
+  - "Visual Basic code, properties"
+  - "properties [Visual Basic]"
+ms.assetid: 4d229712-6be8-4c5c-bac5-06995ce9185a
+caps.latest.revision: 19
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# How to: Create a Property (Visual Basic)
+You enclose a property definition between a <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> statement and an <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> statement. Within this definition you define a <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> procedure, a <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> procedure, or both. All the property's code lies within these procedures.  
+  
+ The <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> procedure retrieves the property's value, and the <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> procedure stores a value. If you want the property to have read/write access, you must define both procedures. For a read-only property, you define only <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>, and for a write-only property, you define only <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>.  
+  
+### To create a property  
+  
+1.  Outside any property or procedure, use a [Property Statement](../vs140/property-statement.md), followed by an <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> statement.  
+  
+2.  If the property takes parameters, follow the <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> keyword with the name of the procedure, then the parameter list in parentheses.  
+  
+3.  Follow the parentheses with an <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> clause to specify the data type of the property's value. You must specify the data type even for a write-only property.  
+  
+4.  Add <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> procedures, as appropriate. See the following directions.  
+  
+### To create a Get procedure that retrieves a property value  
+  
+1.  Between the <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>14\</CodeContentPlaceHolder> statements, write a [Get Statement](../vs140/get-statement.md), followed by an <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> statement. You do not need to define any parameters for the <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> procedure.  
+  
+2.  Place the code statements to retrieve the property's value between the <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> statements. This code can include other calculations and data manipulations in addition to generating and returning the property's value.  
+  
+3.  Use a <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> statement to return the property's value to the calling code.  
+  
+ You must write a <CodeContentPlaceHolder>20\</CodeContentPlaceHolder> procedure for a read-write property and for a read-only property. You must not define a <CodeContentPlaceHolder>21\</CodeContentPlaceHolder> procedure for a write-only property.  
+  
+### To create a Set procedure that writes a property's value  
+  
+1.  Between the <CodeContentPlaceHolder>22\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>23\</CodeContentPlaceHolder> statements, write a [Set Statement (Visual Basic)](../vs140/set-statement--visual-basic-.md), followed by an <CodeContentPlaceHolder>24\</CodeContentPlaceHolder> statement.  
+  
+2.  In the <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> statement, follow the <CodeContentPlaceHolder>26\</CodeContentPlaceHolder> keyword with a parameter list in parentheses. This parameter list must include at least a value parameter for the value passed by the calling code. The default name for this value parameter is <CodeContentPlaceHolder>27\</CodeContentPlaceHolder>, but you can use a different name if appropriate. The value parameter must have the same data type as the property itself.  
+  
+3.  Place the code statements to store a value in the property between the <CodeContentPlaceHolder>28\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>29\</CodeContentPlaceHolder> statements. This code can include other calculations and data manipulations in addition to validating and storing the property's value.  
+  
+4.  Use the value parameter to accept the value supplied by the calling code. You can either store this value directly in an assignment statement, or use it in an expression to calculate the internal value to be stored.  
+  
+ You must write a <CodeContentPlaceHolder>30\</CodeContentPlaceHolder> procedure for a read-write property and for a write-only property. You must not define a <CodeContentPlaceHolder>31\</CodeContentPlaceHolder> procedure for a read-only property.  
+  
+## Example  
+ The following example creates a read/write property that stores a full name as two constituent names, the first name and the last name. When the calling code reads <CodeContentPlaceHolder>32\</CodeContentPlaceHolder>, the <CodeContentPlaceHolder>33\</CodeContentPlaceHolder> procedure combines the two constituent names and returns the full name. When the calling code assigns a new full name, the <CodeContentPlaceHolder>34\</CodeContentPlaceHolder> procedure attempts to break it into two constituent names. If it does not find a space, it stores it all as the first name.  
+  
+ [!code[VbVbcnProcedures#8](../vs140/codesnippet/VisualBasic/how-to--create-a-property--visual-basic-_1.vb)]  
+  
+ The following example shows typical calls to the property procedures of <CodeContentPlaceHolder>35\</CodeContentPlaceHolder>. The first call sets the property value and the second call retrieves it.  
+  
+ [!code[VbVbcnProcedures#9](../vs140/codesnippet/VisualBasic/how-to--create-a-property--visual-basic-_2.vb)]  
+  
+## See Also  
+ [Procedures in Visual Basic](../vs140/procedures-in-visual-basic.md)   
+ [Property Procedures](../vs140/property-procedures--visual-basic-.md)   
+ [Procedure Parameters and Arguments](../vs140/procedure-parameters-and-arguments--visual-basic-.md)   
+ [Differences Between Properties and Variables in Visual Basic](../vs140/differences-between-properties-and-variables-in-visual-basic.md)   
+ [How to: Declare a Property with Mixed Access Levels](../vs140/how-to--declare-a-property-with-mixed-access-levels--visual-basic-.md)   
+ [How to: Call a Property Procedure](../vs140/how-to--call-a-property-procedure--visual-basic-.md)   
+ [How to: Declare and Call a Default Property in Visual Basic](../vs140/how-to--declare-and-call-a-default-property-in-visual-basic.md)   
+ [How to: Put a Value in a Property](../vs140/how-to--put-a-value-in-a-property--visual-basic-.md)   
+ [How to: Get a Value from a Property](../vs140/how-to--get-a-value-from-a-property--visual-basic-.md)

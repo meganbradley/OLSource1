@@ -1,0 +1,56 @@
+---
+title: "Compiler Warning (level 2) C4412"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C4412"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C4412"
+ms.assetid: f28dc531-1a98-497b-a366-0a13e1bc81c7
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 2) C4412
+'function' : function signature contains type 'type'; C++ objects are unsafe to pass between pure code and mixed or native.  
+  
+ The compiler detected a potentially unsafe situation that could result in a runtime error: a call is being made from a **/clr:pure** compiland to a function that was imported via dllimport and the function signature contains an unsafe type. A type is unsafe if it contains a member function or has a data member that is an unsafe type or an indirection to an unsafe type.  
+  
+ This is unsafe because of the difference in the default calling conventions between pure and native code (or mixed native and managed). When importing (via <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>) a function into a **/clr:pure** compiland, ensure that the declarations of each type in the signature are identical to those in the compiland that exports the function (being especially careful about differences in implicit calling conventions).  
+  
+ A virtual member function is especially prone to give unexpected results.  However, even a non-virtual function should be tested to ensure that you get the correct results. If you are sure that you are getting the correct results, you can ignore this warning.  
+  
+ For more information on **/clr:pure**, see [How to: Migrate to /clr:pure](../vs140/how-to--migrate-to--clr-pure--c---cli-.md).  
+  
+ C4412 is off by default. See [Compiler Warnings That Are Off by Default](../vs140/compiler-warnings-that-are-off-by-default.md) and [dllexport, dllimport](../vs140/dllexport--dllimport.md) for more information.  
+  
+ To resolve this warning, remove all functions from the type.  
+  
+## Example  
+ The following sample generates C4412.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Example  
+ The following sample is a header file that declares two types. The <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> type is unsafe because it has a member function.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## Example  
+ This sample exports functions with the types defined in the header file.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+## Example  
+ The default calling convention in a **/clr:pure** compilation is different from a native compilation.  When C4412.h is included, <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> will be default to <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>. If you compile and run this program (do not use **/c**), the program will throw an exception.  
+  
+ The following sample generates C4412.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>

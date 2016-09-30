@@ -1,0 +1,105 @@
+---
+title: "Recommendations for Choosing a Collection Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "type safety of collection classes [C++]"
+  - "collection classes, serialization"
+  - "collection classes, speed"
+  - "collection classes, type safety"
+  - "collection classes, choosing"
+  - "collection classes, functionality"
+  - "shapes, collection"
+  - "collection classes, template-based"
+  - "MFC collection classes, characteristics"
+  - "collection classes, about collection classes"
+  - "serialization [C++], collection classes"
+  - "collection classes, duplicates allowed"
+  - "collection classes, shapes"
+ms.assetid: a82188cd-443f-40d8-a244-edf292a53db4
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Recommendations for Choosing a Collection Class
+This article contains detailed information designed to help you choose a collection class for your particular application needs.  
+  
+ Your choice of a collection class depends on a number of factors, including:  
+  
+-   The features of the class shape: order, indexing, and performance, as shown in the [Collection Shape Features](#_core_collection_shape_features) table later in this topic  
+  
+-   Whether the class uses C++ templates  
+  
+-   Whether the elements stored in the collection can be serialized  
+  
+-   Whether the elements stored in the collection can be dumped for diagnostics  
+  
+-   Whether the collection is type-safe  
+  
+ The following table, [Collection Shape Features](#_core_collection_shape_features), summarizes the characteristics of the available collection shapes.  
+  
+-   Columns 2 and 3 describe each shape's ordering and access characteristics. In the table, the term "ordered" means that the order in which items are inserted and deleted determines their order in the collection; it does not mean the items are sorted on their contents. The term "indexed" means that the items in the collection can be retrieved by an integer index, much like items in a typical array.  
+  
+-   Columns 4 and 5 describe each shape's performance. In applications that require many insertions into the collection, insertion speed might be especially important; for other applications, lookup speed may be more important.  
+  
+-   Column 6 describes whether each shape allows duplicate elements.  
+  
+### Collection Shape Features  
+  
+|Shape|Ordered?|Indexed?|Insert an element|Search for specified element|Duplicate elements?|  
+|-----------|--------------|--------------|-----------------------|----------------------------------|-------------------------|  
+|List|Yes|No|Fast|Slow|Yes|  
+|Array|Yes|By int|Slow|Slow|Yes|  
+|Map|No|By key|Fast|Fast|No (keys) Yes (values)|  
+  
+ The following table, [Characteristics of MFC Collection Classes](#_core_characteristics_of_mfc_collection_classes), summarizes other important characteristics of specific MFC collection classes as a guide to selection. Your choice may depend on whether the class is based on C++ templates, whether its elements can be serialized via MFC's document [serialization](../vs140/serialization-in-mfc.md) mechanism, whether its elements can be dumped via MFC's diagnostic dumping mechanism, or whether the class is type-safe — that is, whether you can guarantee the type of elements stored in and retrieved from a collection based on the class.  
+  
+### Characteristics of MFC Collection Classes  
+  
+|Class|Uses C++\<br />\<br /> templates|Can be\<br />\<br /> serialized|Can be\<br />\<br /> dumped|Is\<br />\<br /> type-safe|  
+|-----------|------------------------------|---------------------------|-----------------------|-----------------------|  
+|<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>|Yes|Yes 1|Yes 1|No|  
+|<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>|No|Yes|Yes|Yes 3|  
+|<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>|No|Yes|Yes|Yes 3|  
+|<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>|Yes|Yes 1|Yes 1|No|  
+|<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>|Yes|Yes 1|Yes 1|No|  
+|<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>|No|No|Yes|No|  
+|<CodeContentPlaceHolder>6\</CodeContentPlaceHolder>|No|No|Yes|No|  
+|<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>|No|Yes|Yes|No|  
+|<CodeContentPlaceHolder>8\</CodeContentPlaceHolder>|No|No|Yes|No|  
+|<CodeContentPlaceHolder>9\</CodeContentPlaceHolder>|No|Yes|Yes|Yes 3|  
+|<CodeContentPlaceHolder>10\</CodeContentPlaceHolder>|No|Yes|Yes|No|  
+|<CodeContentPlaceHolder>11\</CodeContentPlaceHolder>|No|No|Yes|No|  
+|<CodeContentPlaceHolder>12\</CodeContentPlaceHolder>|No|Yes|Yes|No|  
+|<CodeContentPlaceHolder>13\</CodeContentPlaceHolder>|No|Yes|Yes|No|  
+|<CodeContentPlaceHolder>14\</CodeContentPlaceHolder>|No|No|Yes|No|  
+|<CodeContentPlaceHolder>15\</CodeContentPlaceHolder>|No|No|Yes|No|  
+|<CodeContentPlaceHolder>16\</CodeContentPlaceHolder>|No|Yes|Yes|Yes 3|  
+|<CodeContentPlaceHolder>17\</CodeContentPlaceHolder>|No|Yes|Yes|Yes 3|  
+|<CodeContentPlaceHolder>18\</CodeContentPlaceHolder>|Yes|Depends 2|Yes|Yes|  
+|<CodeContentPlaceHolder>19\</CodeContentPlaceHolder>|Yes|Depends 2|Yes|Yes|  
+|<CodeContentPlaceHolder>20\</CodeContentPlaceHolder>|Yes|Depends 2|Yes|Yes|  
+|<CodeContentPlaceHolder>21\</CodeContentPlaceHolder>|No|No|Yes|Yes 3|  
+|<CodeContentPlaceHolder>22\</CodeContentPlaceHolder>|No|Yes|Yes|Yes 3|  
+  
+ 1. To serialize, you must explicitly call the collection object's <CodeContentPlaceHolder>23\</CodeContentPlaceHolder> function; to dump, you must explicitly call its <CodeContentPlaceHolder>24\</CodeContentPlaceHolder> function. You cannot use the form <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> to serialize or the form <CodeContentPlaceHolder>26\</CodeContentPlaceHolder> <CodeContentPlaceHolder>27\</CodeContentPlaceHolder> to dump.  
+  
+ 2. Serializability depends on the underlying collection type. For example, if a typed pointer array is based on <CodeContentPlaceHolder>28\</CodeContentPlaceHolder>, it is serializable; if based on <CodeContentPlaceHolder>29\</CodeContentPlaceHolder>, it is not serializable. In general, the "Ptr" classes cannot be serialized.  
+  
+ 3. If marked Yes in this column, a nontemplate collection class is type-safe provided you use it as intended. For example, if you store bytes in a <CodeContentPlaceHolder>30\</CodeContentPlaceHolder>, the array is type-safe. But if you use it to store characters, its type safety is less certain.  
+  
+## See Also  
+ [Collections](../vs140/collections.md)   
+ [Template-Based Classes](../vs140/template-based-classes.md)   
+ [How to: Make a Type-Safe Collection](../vs140/how-to--make-a-type-safe-collection.md)   
+ [Accessing All Members of a Collection](../vs140/accessing-all-members-of-a-collection.md)

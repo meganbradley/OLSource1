@@ -1,0 +1,45 @@
+---
+title: "Why Floating-Point Numbers May Lose Precision"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "DBL_EPSILON constant"
+  - "FLT_EPSILON constant"
+  - "floating-point numbers, precision"
+ms.assetid: 1acb1add-ac06-4134-a2fd-aff13d8c4c15
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Why Floating-Point Numbers May Lose Precision
+Floating-point decimal values generally do not have an exact binary representation. This is a side effect of how the CPU represents floating point data. For this reason, you may experience some loss of precision, and some floating-point operations may produce unexpected results.  
+  
+ This behavior is the result of one of the following:  
+  
+-   The binary representation of the decimal number may not be exact.  
+  
+-   There is a type mismatch between the numbers used (for example, mixing float and double).  
+  
+ To resolve the behavior, most programmers either ensure that the value is greater or less than what is needed, or they get and use a Binary Coded Decimal (BCD) library that will maintain the precision.  
+  
+ Binary representation of floating-point values affects the precision and accuracy of floating-point calculations. Microsoft Visual C++ uses [IEEE floating-point format](../vs140/ieee-floating-point-representation.md).  
+  
+## Example  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ **They are not equal! The value of c is  2.4679999352 or 2.468000**   
+## Comments  
+ For EPSILON, you can use the constants FLT_EPSILON, which is defined for float as 1.192092896e-07F, or DBL_EPSILON, which is defined for double as 2.2204460492503131e-016. You need to include float.h for these constants. These constants are defined as the smallest positive number x, such that x+1.0 is not equal to 1.0. Because this is a very small number, you should employ user-defined tolerance for calculations involving very large numbers.  
+  
+## See Also  
+ [Optimizing Your Code](../vs140/optimizing-your-code.md)

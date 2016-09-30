@@ -1,0 +1,36 @@
+---
+title: "Compiler Error C3634"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C3634"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3634"
+ms.assetid: fd09f10c-f863-483b-9756-71c16b760b02
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3634
+'function' : cannot define an abstract method of a managed or WinRTclass  
+  
+ An abstract method can be declared in a managed or WinRT class, but it cannot be defined.  
+  
+ The following sample generates C3634:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ **Managed Extensions for C++**  
+  
+ The following sample generates C3634:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>

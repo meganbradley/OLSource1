@@ -1,0 +1,44 @@
+---
+title: "Cleaning up Resources"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "language-reference"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "termination handlers, cleaning up resources"
+  - "exception handling, cleaning up resources"
+  - "C++ exception handling, termination handlers"
+  - "resources [C++], cleaning up"
+  - "exception handling, cleanup code"
+  - "try-catch keyword [C++], termination handlers"
+ms.assetid: 65753efe-6a27-4750-b90c-50635775c1b6
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Cleaning up Resources
+During termination-handler execution, you may not know which resources are actually allocated before the termination handler was called. It is possible that the <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> statement block was interrupted before all resources were allocated, so that not all resources were opened.  
+  
+ Therefore, to be safe, you should check to see which resources are actually open before proceeding with termination-handling cleanup. A recommended procedure is to:  
+  
+1.  Initialize handles to NULL.  
+  
+2.  In the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> statement block, allocate resources. Handles are set to positive values as the resource is allocated.  
+  
+3.  In the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> statement block, release each resource whose corresponding handle or flag variable is nonzero or not NULL.  
+  
+## Example  
+ For example, the following code uses a termination handler to close three files and a memory block that were allocated in the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> statement block. Before cleaning up a resource, the code first checks to see if the resource was allocated.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## See Also  
+ [Writing a Termination Handler](../vs140/writing-a-termination-handler.md)   
+ [Structured Exception Handling (C/C++)](../vs140/structured-exception-handling--c-c---.md)

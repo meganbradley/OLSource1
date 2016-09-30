@@ -1,0 +1,34 @@
+---
+title: "Compiler Error C3005"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "C3005"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3005"
+ms.assetid: 30bad565-e79f-4c3f-82cb-a74bd0baab8f
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3005
+'error_text' : unexpected token encountered on OpenMP 'directive' directive  
+  
+ An OpenMP directive was ill formed.  
+  
+ The following sample generates C3005:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ C3005 can also occur if you put an open brace on the same line as the pragma.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>

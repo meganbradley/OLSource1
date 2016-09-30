@@ -1,0 +1,36 @@
+---
+title: "IDiaEnumSourceFiles::Skip"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaEnumSourceFiles::Skip method"
+ms.assetid: 4821e6dd-d33f-403d-857d-e3ae81e4a9e3
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaEnumSourceFiles::Skip
+Skips a specified number of source files in an enumeration sequence.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ celt  
+ [in] The number of source files in the enumeration sequence to skip.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>; otherwise, returns <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> if there are no more source files to skip.  
+  
+## See Also  
+ [IDiaEnumSourceFiles](../vs140/idiaenumsourcefiles.md)

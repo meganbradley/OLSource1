@@ -1,0 +1,35 @@
+---
+title: "Search Paths in Rules"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "search paths in NMAKE inference rules"
+  - "inference rules in NMAKE"
+  - "rules, inference"
+ms.assetid: 38feded6-536d-425d-bf40-fff3173a5506
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Search Paths in Rules
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ An inference rule applies to a dependency only if paths specified in the dependency exactly match the inference-rule paths. Specify the dependent's directory in *frompath* and the target's directory in *topath*; no spaces are allowed. Specify only one path for each extension. A path on one extension requires a path on the other. To specify the current directory, use either a period (.) or empty braces ({ }). Macros can represent *frompath* and *topath*; they are invoked during preprocessing.  
+  
+## Example  
+  
+### Code  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## See Also  
+ [Defining a Rule](../vs140/defining-a-rule.md)

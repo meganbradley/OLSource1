@@ -1,0 +1,48 @@
+---
+title: "AfxGetThread"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "AfxGetThread"
+  - "AFXWIN/AfxGetThread"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "AfxGetThread function"
+ms.assetid: 75e7a519-c7e2-4ab0-ae05-20bb53e5df08
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# AfxGetThread
+Call this function to get a pointer to the [CWinThread](../vs140/cwinthread-class.md) object representing the currently executing thread.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Return Value  
+ Pointer to the currently executing thread; otherwise **NULL**.  
+  
+## Remarks  
+ Must be called from within the desired thread.  
+  
+> [!NOTE]
+>  If you are porting an MFC project calling <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> from Visual C++ versions 4.2, 5.0, or 6.0, <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> calls [AfxGetApp](../vs140/afxgetapp.md) if no thread is found. In Visual C+ .NET and later, <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> returns **NULL** if no thread was found. If you want the application thread, you must call <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>.  
+  
+## Example  
+ [!code[NVC_MFCWindowing#132](../vs140/codesnippet/CPP/afxgetthread_1.cpp)]  
+  
+## Requirements  
+ **Header:** afxwin.h  
+  
+## See Also  
+ [Macros and Globals](../vs140/mfc-macros-and-globals.md)   
+ [AfxBeginThread](../vs140/afxbeginthread.md)

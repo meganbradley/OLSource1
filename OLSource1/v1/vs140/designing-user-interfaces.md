@@ -1,0 +1,30 @@
+---
+title: "Designing User Interfaces"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+ms.assetid: 880da508-7573-4434-b3a0-d48cf003c0a9
+caps.latest.revision: 15
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Designing User Interfaces
+You can create and design the user interface for your application by using a variety of tools in Visual Studio.  
+  
+|To learn more about|See|  
+|-------------------------|---------|  
+|Designing any XAML-based app or application using Visual Studio or Blend for Visual Studio.   .|[Designing XAML in Visual Studio](../vs140/designing-xaml-in-visual-studio.md)|  
+|Designing desktop applications that use the WPF flavor of XAML.|[Create Modern Desktop Applications with Windows Presentation Foundation](../vs140/create-modern-desktop-applications-with-windows-presentation-foundation.md)|  
+|Developing a DirectX application in Visual Studio.|[Working with 3-D Assets for Games and Apps](../vs140/working-with-3-d-assets-for-games-and-apps.md)|  
+|Standard icons available for your programs.|[The Visual Studio Image Library](../vs140/the-visual-studio-image-library.md)|  
+  
+## See Also  
+ [Walkthrough: Explore the Visual Studio IDE](../vs140/walkthrough--create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
+ [The Visual Studio Image Library](../vs140/the-visual-studio-image-library.md)

@@ -1,0 +1,31 @@
+---
+title: "Compiler Warning (level 3) CS0660"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0660"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0660"
+ms.assetid: 2f77b45b-c5c6-46af-abe9-002e67887896
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 3) CS0660
+'class' defines operator == or operator != but does not override Object.Equals(object o)  
+  
+ The compiler detected the user-defined equality or inequality operator, but no override for the **Equals** function. A user-defined equality or inequality operator implies that you also want to override the **Equals** function. For more information, see [NIB - Guidelines for Overriding Equals() and Operator == (C# Programming Guide)](assetId:///7e4c24c5-7693-4c45-88fb-ba5204fbcb20).  
+  
+ The following sample generates CS0660:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

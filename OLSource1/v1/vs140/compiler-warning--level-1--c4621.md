@@ -1,0 +1,31 @@
+---
+title: "Compiler Warning (level 1) C4621"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C4621"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C4621"
+ms.assetid: 40931bd9-cb89-497e-86f0-cec9f016c63c
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 1) C4621
+no postfix form of 'operator --' found for type 'type', using prefix form  
+  
+ There was no postfix decrement operator defined for the given type. The compiler used the overloaded prefix operator.  
+  
+ This warning can be avoided by defining a postfix <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> operator. Create a two-argument version of the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> operator as shown below:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

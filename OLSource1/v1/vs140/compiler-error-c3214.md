@@ -1,0 +1,31 @@
+---
+title: "Compiler Error C3214"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "C3214"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3214"
+ms.assetid: 49ee4a9a-2549-4adb-9d3a-38e154303c2e
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3214
+'type' : invalid type argument for generic parameter 'param' of generic 'generic_type', does not meet constraint 'constraint'  
+  
+ The type was specified for an instantiation of a generic class that does not meet the generic class's constraint.  
+  
+ The following sample generates C3214:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

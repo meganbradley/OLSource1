@@ -1,0 +1,44 @@
+---
+title: "IDiaSession::findFileById"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaSession::findFileById method"
+ms.assetid: 710efe04-78b5-4f3e-a1d8-f9b069063503
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaSession::findFileById
+Retrieves a source file by source file identifier.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ [in] Specifies the source file identifier.  
+  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ [out] Returns an [IDiaSourceFile](../vs140/idiasourcefile.md) object that represents the source file retrieved.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>; otherwise, returns an error code.  
+  
+## Remarks  
+ The source file identifier is a unique value used internally to the DIA SDK to make all source files unique. This method is typically used internally to the DIA SDK.  
+  
+## See Also  
+ [IDiaSession](../vs140/idiasession.md)   
+ [IDiaSession::findFile](../vs140/idiasession--findfile.md)   
+ [IDiaSourceFile](../vs140/idiasourcefile.md)

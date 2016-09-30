@@ -1,0 +1,34 @@
+---
+title: "Compiler Error C2041"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2041"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2041"
+ms.assetid: c9a33bb1-f9cf-47d6-bd21-7d867a8c37d5
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C2041
+illegal digit 'character' for base 'number'  
+  
+ The specified character is not a valid digit for the base (such as octal or hex).  
+  
+ The following sample generates C2041:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ Possible resolution:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>

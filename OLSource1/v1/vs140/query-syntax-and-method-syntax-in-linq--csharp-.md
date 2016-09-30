@@ -1,0 +1,49 @@
+---
+title: "Query Syntax and Method Syntax in LINQ (C#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "LINQ [C#], query syntax vs. method syntax"
+  - "queries [LINQ in C#], syntax comparisons"
+ms.assetid: eedd6dd9-fec2-428c-9581-5b8783810ded
+caps.latest.revision: 34
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Query Syntax and Method Syntax in LINQ (C#)
+Most queries in the introductory Language Integrated Query ([!INCLUDE[vbteclinq](../vs140/includes/vbteclinq_md.md)]) documentation are written by using the LINQ declarative query syntax. However, the query syntax must be translated into method calls for the .NET common language runtime (CLR) when the code is compiled. These method calls invoke the standard query operators, which have names such as <CodeContentPlaceHolder>0\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>, and <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>. You can call them directly by using method syntax instead of query syntax.  
+  
+ Query syntax and method syntax are semantically identical, but many people find query syntax simpler and easier to read. Some queries must be expressed as method calls. For example, you must use a method call to express a query that retrieves the number of elements that match a specified condition. You also must use a method call for a query that retrieves the element that has the maximum value in a source sequence. The reference documentation for the standard query operators in the \<xref:System.Linq*> namespace generally uses method syntax. Therefore, even when getting started writing [!INCLUDE[vbteclinq](../vs140/includes/vbteclinq_md.md)] queries, it is useful to be familiar with how to use method syntax in queries and in query expressions themselves.  
+  
+## Standard Query Operator Extension Methods  
+ The following example shows a simple *query expression* and the semantically equivalent query written as a *method-based query*.  
+  
+ [!code[csLINQGettingStarted#22](../vs140/codesnippet/CSharp/query-syntax-and-method-syntax-in-linq--csharp-_1.cs)]  
+  
+ The output from the two examples is identical. You can see that the type of the query variable is the same in both forms: <xref:System.Collections.Generic.IEnumerable<CodeContentPlaceHolder>6\</CodeContentPlaceHolder>where<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>numbers<CodeContentPlaceHolder>8\</CodeContentPlaceHolder>IEnumerable<int><CodeContentPlaceHolder>9\</CodeContentPlaceHolder>1*> interface, you know that it does not have a <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> method. However, if you invoke the IntelliSense completion list in the Visual Studio IDE, you will see not only a <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> method, but many other methods such as <CodeContentPlaceHolder>12\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>, and <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>. These are all the standard query operators.  
+  
+ ![Standard Query Operators in Intellisense](../vs140/media/standardqueryops.png "StandardQueryOps")  
+  
+ Although it looks as if <xref:System.Collections.Generic.IEnumerable<CodeContentPlaceHolder>16\</CodeContentPlaceHolder>1*> and that is why you can write <CodeContentPlaceHolder>17\</CodeContentPlaceHolder>.  
+  
+ To get started using [!INCLUDE[vbteclinq](../vs140/includes/vbteclinq_md.md)], all that you really have to know about extension methods is how to bring them into scope in your application by using the correct <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> directives. This is explained additionally in [How To: Create a LINQ Project](../Topic/How%20to:%20Create%20a%20LINQ%20Project_deleted.md). From your application's point of view, an extension method and a regular instance method are the same.  
+  
+ For more information about extension methods, see [Extension Methods (C# Programming Guide)](../vs140/extension-methods--csharp-programming-guide-.md). For more information about standard query operators, see [Standard Query Operators Overview (C#)](../vs140/standard-query-operators-overview--csharp-.md). Some [!INCLUDE[vbteclinq](../vs140/includes/vbteclinq_md.md)] providers, such as [!INCLUDE[vbtecdlinq](../vs140/includes/vbtecdlinq_md.md)] and [!INCLUDE[sqltecxlinq](../vs140/includes/sqltecxlinq_md.md)], implement their own standard query operators and additional extension methods for other types besides <xref:System.Collections.Generic.IEnumerable<CodeContentPlaceHolder>19\</CodeContentPlaceHolder>num % 2 == 0<CodeContentPlaceHolder>20\</CodeContentPlaceHolder>Where<CodeContentPlaceHolder>21\</CodeContentPlaceHolder>Where(num => num % 2 == 0).<CodeContentPlaceHolder>22\</CodeContentPlaceHolder>=><CodeContentPlaceHolder>23\</CodeContentPlaceHolder>num<CodeContentPlaceHolder>24\</CodeContentPlaceHolder>num<CodeContentPlaceHolder>25\</CodeContentPlaceHolder>num<CodeContentPlaceHolder>26\</CodeContentPlaceHolder>numbers<CodeContentPlaceHolder>27\</CodeContentPlaceHolder>1*> type. The body of the lambda is just the same as the expression in query syntax or in any other C# expression or statement; it can include method calls and other complex logic. The "return value" is just the expression result.  
+  
+ To get started using [!INCLUDE[vbteclinq](../vs140/includes/vbteclinq_md.md)], you do not have to use lambdas extensively. However, certain queries can only be expressed in method syntax and some of those require lambda expressions. After you become more familiar with lambdas, you will find that they are a powerful and flexible tool in your [!INCLUDE[vbteclinq](../vs140/includes/vbteclinq_md.md)] toolbox. For more information, see [Lambdas (C# Programming Guide)](../vs140/lambda-expressions--csharp-programming-guide-.md).  
+  
+## Composability of Queries  
+ In the previous code example, note that the <CodeContentPlaceHolder>28\</CodeContentPlaceHolder> method is invoked by using the dot operator on the call to <CodeContentPlaceHolder>29\</CodeContentPlaceHolder>. <CodeContentPlaceHolder>30\</CodeContentPlaceHolder> produces a filtered sequence, and then <CodeContentPlaceHolder>31\</CodeContentPlaceHolder> operates on that sequence by sorting it. Because queries return an <CodeContentPlaceHolder>32\</CodeContentPlaceHolder>, you compose them in method syntax by chaining the method calls together. This is what the compiler does behind the scenes when you write queries by using query syntax. And because a query variable does not store the results of the query, you can modify it or use it as the basis for a new query at any time, even after it has been executed.  
+  
+## See Also  
+ [Getting Started with LINQ in C#](../vs140/getting-started-with-linq-in-csharp.md)

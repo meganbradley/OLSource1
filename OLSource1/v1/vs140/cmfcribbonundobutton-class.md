@@ -1,0 +1,121 @@
+---
+title: "CMFCRibbonUndoButton Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CMFCRibbonUndoButton"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CMFCRibbonUndoButton class"
+ms.assetid: 5c42adf7-871d-4239-901e-47ae7fb816fc
+caps.latest.revision: 34
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CMFCRibbonUndoButton Class
+The <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> class implements a drop-down list button that contains the most recent user commands. Users can select one or more of the most recent commands from the drop-down list to either redo or undo them.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CMFCRibbonUndoButton::CMFCRibbonUndoButton](#cmfcribbonundobutton__cmfcribbonundobutton)|Constructs a new <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> object by using the command ID that you specify, text label and images from the image list of the parent object.|  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CMFCRibbonUndoButton::AddUndoAction](#cmfcribbonundobutton__addundoaction)|Adds a new action to the list of actions.|  
+|[CMFCRibbonUndoButton::CleanUpUndoList](#cmfcribbonundobutton__cleanupundolist)|Clears the action list, which is the drop-down list.|  
+|[CMFCRibbonUndoButton::GetActionNumber](#cmfcribbonundobutton__getactionnumber)|Determines the number of items that a user selected from the drop-down list.|  
+|[CMFCRibbonUndoButton::HasMenu](#cmfcribbonundobutton__hasmenu)|Indicates whether the object contains a menu.|  
+  
+## Remarks  
+ The <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> class uses a stack to represent the drop-down list.  
+  
+## Example  
+ The following example demonstrates how to construct an object of the <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> class, and add a new action to the list of actions. This code snippet is part of the [Ribbon Gadgets sample](../vs140/visual-c---samples.md).  
+  
+ [!code[NVC_MFC_RibbonGadgets#2](../vs140/codesnippet/CPP/cmfcribbonundobutton-class_1.cpp)]  
+  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ [CMFCRibbonBaseElement](../vs140/cmfcribbonbaseelement-class.md)  
+  
+ [CMFCRibbonButton](../vs140/cmfcribbonbutton-class.md)  
+  
+ [CMFCRibbonGallery](../vs140/cmfcribbongallery-class.md)  
+  
+ [CMFCRibbonUndoButton](../vs140/cmfcribbonundobutton-class.md)  
+  
+## Requirements  
+ **Header:** afxribbonundobutton.h  
+  
+##  \<a name="cmfcribbonundobutton__addundoaction">\</a>  CMFCRibbonUndoButton::AddUndoAction  
+ Adds a new action to the list of actions.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Parameters  
+ [in] <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+ The action label that will be displayed in the drop-down list.  
+  
+##  \<a name="cmfcribbonundobutton__cleanupundolist">\</a>  CMFCRibbonUndoButton::CleanUpUndoList  
+ Clears the action list, which is the drop-down list.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+##  \<a name="cmfcribbonundobutton__cmfcribbonundobutton">\</a>  CMFCRibbonUndoButton::CMFCRibbonUndoButton  
+ Constructs a new <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> object by using the command ID that you specify, text label and images from the image list of the parent object.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+### Parameters  
+ [in] <CodeContentPlaceHolder>12\</CodeContentPlaceHolder>  
+ Specifies the command identifier.  
+  
+ [in] <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>  
+ Specifies the text label of the button.  
+  
+ [in] <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>  
+ Zero-based index in the image list of the parent object for the button's small image.  
+  
+ [in] <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>  
+ Zero-based index in the image list of the parent object for the of button's large image.  
+  
+ [in] <CodeContentPlaceHolder>16\</CodeContentPlaceHolder>  
+ A handle to an icon that you can use as a button's image.  
+  
+##  \<a name="cmfcribbonundobutton__getactionnumber">\</a>  CMFCRibbonUndoButton::GetActionNumber  
+ Determines the number of items that a user selected from the drop-down list.  
+  
+<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+### Return Value  
+ The number of items that a user selected.  
+  
+##  \<a name="cmfcribbonundobutton__hasmenu">\</a>  CMFCRibbonUndoButton::HasMenu  
+ Indicates whether the object contains a menu.  
+  
+<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+### Return Value  
+ Always returns <CodeContentPlaceHolder>17\</CodeContentPlaceHolder>.  
+  
+### Remarks  
+  
+## See Also  
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [Classes](../vs140/mfc-classes.md)   
+ [CMFCRibbonGallery](../vs140/cmfcribbongallery-class.md)   
+ [CMFCRibbonButton](../vs140/cmfcribbonbutton-class.md)

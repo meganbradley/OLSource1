@@ -1,0 +1,34 @@
+---
+title: "Compiler Error C2352"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2352"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2352"
+ms.assetid: 0efad8cb-659f-4b3e-8f6f-9f8ec44d345c
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C2352
+'class::function' : illegal call of non-static member function  
+  
+ A <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> member function called a nonstatic member function. Or, a nonstatic member function was called from outside the class as a static function.  
+  
+ The following sample generates C2352 and shows how to fix it:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ The following sample generates C2352 and shows how to fix it:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>

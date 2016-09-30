@@ -1,0 +1,34 @@
+---
+title: "com::ptr"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "ptr"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "com::ptr"
+ms.assetid: ee302e3c-8fed-4875-a372-2e55003718d3
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# com::ptr
+A wrapper for a COM object that can be used as a member of a CLR class. The wrapper also automates lifetime management of the COM object, releasing owned references on the object when its destructor is called. Analogous to [CComPtr](../vs140/ccomptr-class.md).  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ [com::ptr Class](../vs140/com--ptr-class.md) is defined in the \<msclr\com\ptr.h> file.  
+  
+## See Also  
+ [C++ Support Library](../vs140/c---support-library.md)

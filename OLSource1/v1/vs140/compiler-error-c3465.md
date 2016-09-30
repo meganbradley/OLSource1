@@ -1,0 +1,42 @@
+---
+title: "Compiler Error C3465"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "C3465"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3465"
+ms.assetid: aeb815e5-b3fc-4525-afe2-d738e9321df1
+caps.latest.revision: 9
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3465
+to use type 'type' you must reference the assembly 'assembly'  
+  
+ Type forwarding will work for a client application until you recompile the client. When you recompile, you will need a reference for every assembly containing the definition of a type used in your client application.  
+  
+ For more information, see [Type Forwarding](../vs140/type-forwarding--c---cli-.md).  
+  
+## Example  
+ The following sample builds an assembly that contains the new location of a type.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Example  
+ The following sample builds an assembly that used to contain the definition of the type, but now contains forwarding syntax for the type.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## Example  
+ The following sample generates C3465.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>

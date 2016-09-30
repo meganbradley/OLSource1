@@ -1,0 +1,50 @@
+---
+title: "auto_handle::get"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "auto_handle::get"
+  - "msclr::auto_handle::get"
+  - "auto_handle.get"
+  - "msclr.auto_handle.get"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "auto_handle::get"
+ms.assetid: 8c75727b-8f21-44b3-be3e-7eb8858da4f7
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# auto_handle::get
+Gets the contained object.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Return Value  
+ The contained object.  
+  
+## Example  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ **in ClassA constructor:first**  
+**Hello from first A!**  
+**Hello from first A!**  
+**Hello from first A!**  
+**in ClassA destructor:first**   
+## Requirements  
+ **Header file** \<msclr\auto_handle.h>  
+  
+ **Namespace** msclr  
+  
+## See Also  
+ [auto_handle Members](../vs140/auto_handle-members.md)

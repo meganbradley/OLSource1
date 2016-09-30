@@ -1,0 +1,51 @@
+---
+title: "DEVNAMES Structure"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "DEVNAMES"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "DEVNAMES"
+ms.assetid: aac97f60-2169-471a-ba5d-c0baed9eed9a
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# DEVNAMES Structure
+The <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> structure contains strings that identify the driver, device, and output-port names for a printer.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ *wDriverOffset*  
+ (Input/Output) Specifies the offset in characters to a null-terminated string that contains the filename (without the extension) of the device driver. On input, this string is used to determine the printer to display initially in the dialog box.  
+  
+ *wDeviceOffset*  
+ (Input/Output) Specifies the offset in characters to the null-terminated string (maximum of 32 bytes including the null) that contains the name of the device. This string must be identical to the **dmDeviceName** member of the [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure.  
+  
+ *wOutputOffset*  
+ (Input/Output) Specifies the offset in characters to the null-terminated string that contains the DOS device name for the physical output medium (output port).  
+  
+ *wDefault*  
+ Specifies whether the strings contained in the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> structure identify the default printer. This string is used to verify that the default printer has not changed since the last print operation. On input, if the **DN_DEFAULTPRN** flag is set, the other values in the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> structure are checked against the current default printer. If any of the strings do not match, a warning message is displayed informing the user that the document may need to be reformatted. On output, the **wDefault** member is changed only if the Print Setup dialog box was displayed and the user chose the OK button. The **DN_DEFAULTPRN** flag is set if the default printer was selected. If a specific printer is selected, the flag is not set. All other bits in this member are reserved for internal use by the Print Dialog box procedure.  
+  
+## Remarks  
+ The **PrintDlg** function uses these strings to initialize members in the system-defined Print dialog box. When the user closes the dialog box, information about the selected printer is returned in this structure.  
+  
+## Requirements  
+ **Header:** commdlg.h  
+  
+## See Also  
+ [Structures, Styles, Callbacks, and Message Maps](../vs140/structures--styles--callbacks--and-message-maps.md)   
+ [CPrintDialog::CreatePrinterDC](../vs140/cprintdialog--createprinterdc.md)

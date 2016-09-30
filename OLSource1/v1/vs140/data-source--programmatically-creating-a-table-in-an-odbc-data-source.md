@@ -1,0 +1,39 @@
+---
+title: "Data Source: Programmatically Creating a Table in an ODBC Data Source"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "programmatically creating ODBC tables [C++]"
+  - "tables [C++]"
+  - "ODBC data sources, creating tables in"
+  - "tables [C++], creating programmatically"
+ms.assetid: 9ca68fb5-c3df-424a-a75c-e3fb01cc1b18
+caps.latest.revision: 15
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Data Source: Programmatically Creating a Table in an ODBC Data Source
+This topic explains how to create a table for your data source, using the <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> member function of class <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>, passing the function a string that contains a **CREATE TABLE** SQL statement.  
+  
+ For general information about ODBC data sources in MFC, see [Data Source (ODBC)](../vs140/data-source--odbc-.md). The topic [Data Source: Programmatically Configuring an ODBC Data Source](../vs140/data-source--programmatically-configuring-an-odbc-data-source.md) describes creating data sources.  
+  
+ When you have the data source established, you can easily create tables using the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> member function and the **CREATE TABLE** SQL statement. For example, if you had a <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> object called <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>, you could use the following MFC code to create a table:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ This code example creates a table called "OFFICES" in the Microsoft Access data source connection maintained by <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>; the table contains two fields "OfficeID" and "OfficeName."  
+  
+> [!NOTE]
+>  The field types specified in the **CREATE TABLE** SQL statement might vary according to the ODBC driver that you are using. The Microsoft Query program (distributed with Visual C++ 1.5) is one way to discover what field types are available for a data source. In Microsoft Query, click **File**, click **Table_Definition**, select a table from a data source, and look at the type shown in the **Type** combo box. SQL syntax also exists to create indexes.  
+  
+## See Also  
+ [Data Source (ODBC)](../vs140/data-source--odbc-.md)

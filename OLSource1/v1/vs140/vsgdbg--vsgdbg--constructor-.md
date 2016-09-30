@@ -1,0 +1,37 @@
+---
+title: "VsgDbg::VsgDbg (Constructor)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
+caps.latest.revision: 8
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# VsgDbg::VsgDbg (Constructor)
+Constructs an instance of the <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> class with or without preparing the in-app component of graphics diagnostics to actively capture and record graphics information by default, based on the specified Boolean parameter.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> to specify that the in-app component of graphics diagnostics is to be prepared to actively capture and record graphics information; <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> to specify that the app should not be prepared to actively capture and record graphics information at this time.  
+  
+## Remarks  
+ When the constructor is called with <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> set to <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>, the file name of the graphics log file is determined by how the <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> preprocessor symbols are defined before <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> is included in your app.  
+  
+ When the constructor is called with <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> set to <CodeContentPlaceHolder>11\</CodeContentPlaceHolder>, the in-app component of graphics diagnostics can be prepared to actively capture and record graphics information at a later time by calling the <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> function.  
+  
+## See Also  
+ [~VsgDbg (Destructor)](../vs140/vsgdbg--~vsgdbg--destructor-.md)   
+ [Init](../vs140/init.md)   
+ [DONT_SAVE_VSGLOG_TO_TEMP](../vs140/dont_save_vsglog_to_temp.md)   
+ [VSG_DEFAULT_RUN_FILENAME](../vs140/vsg_default_run_filename.md)

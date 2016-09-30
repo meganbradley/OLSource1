@@ -1,0 +1,31 @@
+---
+title: "Compiler Warning (level 3) CS0661"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0661"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0661"
+ms.assetid: c218665e-5947-40bb-b633-d268483e6522
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 3) CS0661
+'class' defines operator == or operator != but does not override Object.GetHashCode()  
+  
+ The compiler detected the user-defined equality or inequality operator, but no override for the **GetHashCode** function. A user-defined equality or inequality operator implies that you also want to override the **GetHashCode** function.  
+  
+ The following sample generates CS0661:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

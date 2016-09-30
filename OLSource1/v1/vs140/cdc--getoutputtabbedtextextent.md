@@ -1,0 +1,75 @@
+---
+title: "CDC::GetOutputTabbedTextExtent"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "GetOutputTabbedTextExtent"
+  - "CDC.GetOutputTabbedTextExtent"
+  - "CDC::GetOutputTabbedTextExtent"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetOutputTabbedTextExtent method"
+  - "CDC class, text functions"
+ms.assetid: a29c05ed-fae4-4ec8-b360-2c79ac5fbd31
+caps.latest.revision: 14
+robots: noindex,nofollow
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CDC::GetOutputTabbedTextExtent
+Call this member function to compute the width and height of a character string using [m_hDC](../vs140/cdc--m_hdc.md), the output device context.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ Points to a character string to be measured. You can also pass a [CString](../vs140/cstringt-class.md) object for this parameter.  
+  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ Specifies the number of characters in the string. If <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> is –1, the length is calculated.  
+  
+ <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+ Specifies the number of tab-stop positions in the array pointed to by <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>.  
+  
+ <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+ Points to an array of integers containing the tab-stop positions in logical units. The tab stops must be sorted in increasing order; the smallest x-value should be the first item in the array. Back tabs are not allowed.  
+  
+ <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+ A <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> object that contains the specified characters to be measured.  
+  
+## Return Value  
+ The dimensions of the string (in logical units) in a [CSize](../vs140/csize-class.md) object.  
+  
+## Remarks  
+ If the string contains one or more tab characters, the width of the string is based upon the tab stops specified by <CodeContentPlaceHolder>9\</CodeContentPlaceHolder>. The function uses the currently selected font to compute the dimensions of the string.  
+  
+ The current clipping region does not offset the width and height returned by the <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> function.  
+  
+ Since some devices do not place characters in regular cell arrays (that is, they kern the characters), the sum of the extents of the characters in a string may not be equal to the extent of the string.  
+  
+ If <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> is 0 and <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> is **NULL**, tabs are expanded to eight average character widths. If <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> is 1, the tab stops will be separated by the distance specified by the first value in the array to which <CodeContentPlaceHolder>14\</CodeContentPlaceHolder> points. If <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> points to more than a single value, a tab stop is set for each value in the array, up to the number specified by <CodeContentPlaceHolder>16\</CodeContentPlaceHolder>.  
+  
+## Requirements  
+ **Header:** afxwin.h  
+  
+## See Also  
+ [CDC Class](../vs140/cdc-class.md)   
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [CDC::GetTextExtent](../vs140/cdc--gettextextent.md)   
+ [CDC::m_hAttribDC](../vs140/cdc--m_hattribdc.md)   
+ [CDC::m_hDC](../vs140/cdc--m_hdc.md)   
+ [CDC::GetTabbedTextExtent](../vs140/cdc--gettabbedtextextent.md)   
+ [CDC::GetOutputTextExtent](../vs140/cdc--getoutputtextextent.md)   
+ [CDC::TabbedTextOut](../vs140/cdc--tabbedtextout.md)   
+ [GetTabbedTextExtent](http://msdn.microsoft.com/library/windows/desktop/dd144930)   
+ [CSize Class](../vs140/csize-class.md)

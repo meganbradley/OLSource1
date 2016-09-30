@@ -1,0 +1,34 @@
+---
+title: "Compiler Error C3628"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C3628"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3628"
+ms.assetid: 0ff5a4a4-fcc9-47a0-a4d8-8af9cf2815f6
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3628
+'base class' : managed or WinRTclasses only support public inheritance  
+  
+ An attempt was made to use a managed or WinRT class as a [private](../vs140/private--c---.md) or [protected](../vs140/protected--c---.md) base class. A managed or WinRT class can only be used as a base class with [public](../vs140/public--c---.md) access.  
+  
+ The following sample generates C3628 and shows how to fix it:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ The following sample generates C3628 and shows how to fix it:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>

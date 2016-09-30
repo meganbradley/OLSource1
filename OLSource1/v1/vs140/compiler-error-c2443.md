@@ -1,0 +1,31 @@
+---
+title: "Compiler Error C2443"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2443"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2443"
+ms.assetid: 315330d5-24bc-4193-a531-0642095be58f
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C2443
+operand size conflict  
+  
+ The instruction requires operands to be the same size.  
+  
+ The following sample generates C2443:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

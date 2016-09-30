@@ -1,0 +1,45 @@
+---
+title: "IEnumDebugCodeContexts2::Next"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "IEnumDebugCodeContexts2::Next"
+helpviewer_keywords: 
+  - "IEnumDebugCodeContexts2::Next"
+ms.assetid: 0d8aa2db-0994-4166-b364-2e25d936fffc
+caps.latest.revision: 17
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# IEnumDebugCodeContexts2::Next
+Returns the next set of elements from the enumeration.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ [in] The number of elements to retrieve. Also specifies the maximum size of the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> array.  
+  
+ <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+ [in, out] Array of [IDebugCodeContext2](../vs140/idebugcodecontext2.md) elements to be filled in.  
+  
+ <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+ [out] Returns the number of elements actually returned in <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>. Returns <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> if fewer than the requested number of elements could be returned; otherwise, returns an error code.  
+  
+## See Also  
+ [IEnumDebugCodeContexts2](../vs140/ienumdebugcodecontexts2.md)   
+ [IDebugCodeContext2](../vs140/idebugcodecontext2.md)

@@ -1,0 +1,50 @@
+---
+title: "UidManager Task"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "jsharp"
+helpviewer_keywords: 
+  - "UidManager task [WPF MSBuild]"
+  - "UidManager task [WPF MSBuild], parameters"
+  - "managing UIDs when localizing XAML elements [WPF MSBuild]"
+  - "localizing XAML elements [WPF MSBuild], managing UIDs"
+  - "checking UIDs when localizing XAML elements [WPF MSBuild]"
+ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
+caps.latest.revision: 9
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# UidManager Task
+The \<xref:Microsoft.Build.Tasks.Windows.UidManager*> task checks, updates, or removes unique identifiers (UIDs), in order to localize all [!INCLUDE[TLA#tla_xaml](../vs140/includes/tlasharptla_xaml_md.md)] elements that are included in the source [!INCLUDE[TLA2#tla_xaml](../vs140/includes/tla2sharptla_xaml_md.md)] files.  
+  
+## Task Parameters  
+  
+|Parameter|Description|  
+|---------------|-----------------|  
+|<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>|Optional **String** parameter.\<br />\<br /> Specifies the directory that is used to back up the source [!INCLUDE[TLA2#tla_xaml](../vs140/includes/tla2sharptla_xaml_md.md)] files that are specified by the **MarkupFiles** parameter.|  
+|<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>|Required **ITaskItem[]** parameter.\<br />\<br /> Specifies the source [!INCLUDE[TLA2#tla_xaml](../vs140/includes/tla2sharptla_xaml_md.md)] files to include for UID checking, updating, or removing.|  
+|<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>|Required **String** parameter.\<br />\<br /> Specifies the UID management task that you want to perform. Valid options are **Check**, **Update**, or **Remove**.|  
+  
+## Example  
+ The following example uses the \<xref:Microsoft.Build.Tasks.Windows.UidManager*> task to check that the specified source [!INCLUDE[TLA2#tla_xaml](../vs140/includes/tla2sharptla_xaml_md.md)] files contain [!INCLUDE[TLA2#tla_xaml](../vs140/includes/tla2sharptla_xaml_md.md)] elements that have appropriate UIDs.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## See Also  
+ [WPF MSBuild Reference](../vs140/wpf-msbuild-reference.md)   
+ [WPF MSBuild Task Reference](../vs140/wpf-msbuild-task-reference.md)   
+ [MSBuild Reference](../vs140/msbuild-reference.md)   
+ [MSBuild Task Reference](../vs140/msbuild-task-reference.md)   
+ [Building a WPF Application (WPF)](assetId:///a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [How to: Localize an Application](assetId:///5001227e-9326-48a4-9dcd-ba1b89ee6653)

@@ -1,0 +1,78 @@
+---
+title: "Text Template Control Blocks"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-tfs-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "text templates, template code"
+ms.assetid: bad198b9-57a4-4777-bd5b-ab6336c825f3
+caps.latest.revision: 36
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Text Template Control Blocks
+Control blocks let you write code in your text template in order to vary the output. There are three kinds of control blocks, which are distinguished by their opening brackets:  
+  
+-   <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> can contain statements.  
+  
+-   <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> can contain expressions.  
+  
+-   <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> can contain methods, fields and properties.  
+  
+## Standard control block  
+ Standard control blocks contain statements. For example, the following standard block gets the names of all the attributes in the XML document:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ You can embed plain text inside a compound statement such as <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>. For example, this fragment generates an output line in each loop iteration:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+> [!WARNING]
+>  Always use {...} to delimit nested statements that contain embedded plain text. The following example might not work properly:  
+>   
+>  <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>  
+>   
+>  Instead, you should include {braces}, as follows:  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+## Expression control block  
+ Expression control blocks are used for code that provides strings to be written to the output file. For example, with the example above, you can print the names of the attributes to the output file by modifying the code block as follows:  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+## Class feature control block  
+ You can use class feature control blocks to add methods, properties, fields, or even nested classes to your text template. The most common use of class feature blocks is to provide helper functions for code in other parts of the text template. For example, the following class feature block capitalizes the first letter of the attribute name (or, if the name contains whitespace, it capitalizes the first letter of every word):  
+  
+<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+> [!NOTE]
+>  A class feature control block must not be followed by standard control blocks in the same template file. However, this restriction does not apply to the result of using <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> directives. Each included file can have standard blocks followed by class feature blocks.  
+  
+ You can create a function that generates output by embedding text and expression blocks inside a class feature control block. For example:  
+  
+<CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+ You could call this function from a standard block or from another class feature block:  
+  
+<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+## How to use control blocks  
+ All the code in all the standard and expression control blocks in a single template (including all the code in included templates) is combined to form the <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> method of the generated code. (For more information about including other text templates with the <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> directive, see [Text Template Directives](../vs140/t4-text-template-directives.md).)  
+  
+ You should keep in mind the following considerations when you use control blocks:  
+  
+-   **Language.** You can use either C# or Visual Basic code in a text template. The default language is C#, but you can specify Visual Basic with the <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> parameter of the <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> directive. (For more information about the <CodeContentPlaceHolder>20\</CodeContentPlaceHolder> directive, see [Text Template Directives](../vs140/t4-text-template-directives.md).)  
+  
+     The language you use in control blocks has nothing to do with the language or format of the text you generate in a text template. You can generate C# by using Visual Basic code or vice versa.  
+  
+     You can use only one language in a given text template, including all the text templates you include with the <CodeContentPlaceHolder>21\</CodeContentPlaceHolder> directive.  
+  
+-   **Local variables.** Since all the code in the standard and expression control blocks in a text template is generated as a single method, you should make certain that there are no conflicts with the names of local variables. If you are including other text templates, you must make sure that variable names are unique across all included templates. One way to ensure this is to add a string to each local variable name identifying the text template in which it was declared.  
+  
+     It is also a good idea to initialize your local variables to sensible values when you declare them, particularly when you are including multiple text templates.  
+  
+-   **Nesting of control blocks.** Control blocks may not be nested inside each other. You must always terminate a given control block before you open another one. For example, the following shows how to print some text in an expression block as part of a standard control block.  
+  
+<CodeContentPlaceHolder>8\</CodeContentPlaceHolder>  
+-   **Refactoring.** In order to keep your text templates short and easy to understand, it is strongly recommended that you avoid repetitive code either by factoring the reusable code into helper functions in class feature blocks or by creating your own text template class that inherits from the Microsoft.VisualStudio.TextTemplating.TextTransformation class.

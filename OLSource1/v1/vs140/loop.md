@@ -1,0 +1,48 @@
+---
+title: "loop"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "loop_CPP"
+  - "vc-pragma.loop"
+dev_langs: 
+  - "C++"
+ms.assetid: 6d5bb428-cead-47e7-941d-7513bbb162c7
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# loop
+Controls how loop code is to be considered by the auto-parallelizer, and/or excludes a loop from consideration by the auto-vectorizer.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+ Hints to the compiler that this loop should be parallelized across <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> threads, where <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> is a positive integer literal or zero. If <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> is zero, the maximum number of threads is used at run time. This is a hint to the compiler, not a command, and there is no guarantee that the loop will be parallelized. If the loop has data dependencies, or structural issues—for example, the loop stores to a scalar that's used beyond the loop body—then the loop will not be parallelized.  
+  
+ The compiler ignores this option unless the [/Qpar](../vs140/-qpar--auto-parallelizer-.md) compiler switch is specified.  
+  
+ <CodeContentPlaceHolder>9\</CodeContentPlaceHolder>  
+ By default, the auto-vectorizer is on and will attempt to vectorize all loops that it evaluates as benefitting from it. Specify this pragma to disable the auto-vectorizer for the loop that follows it.  
+  
+ <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+ Hints to the compiler to ignore vector dependencies for this loop. Use this in conjunction with <CodeContentPlaceHolder>11\</CodeContentPlaceHolder>.  
+  
+## Remarks  
+ To use the <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> pragma, place it immediately before—not in—a loop definition. The pragma takes effect for the scope of the loop that follows it. You can apply multiple pragmas to a loop, in any order, but you must state each one in a separate pragma statement.  
+  
+## See Also  
+ [Auto-Parallelization and Auto-Vectorization](../vs140/auto-parallelization-and-auto-vectorization.md)   
+ [Pragma Directives and the __Pragma Keyword](../vs140/pragma-directives-and-the-__pragma-keyword.md)

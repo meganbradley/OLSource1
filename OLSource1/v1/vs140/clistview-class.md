@@ -1,0 +1,96 @@
+---
+title: "CListView Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CListView"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "views, and common controls"
+  - "CListView class"
+ms.assetid: 7626bdb2-a1b8-4eab-b631-6743710a8432
+caps.latest.revision: 23
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CListView Class
+Simplifies use of the list control and of [CListCtrl](../vs140/clistctrl-class.md), the class that encapsulates list-control functionality, with MFC's document-view architecture.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CListView::CListView](#clistview__clistview)|Constructs a <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> object.|  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CListView::GetListCtrl](#clistview__getlistctrl)|Returns the list control associated with the view.|  
+  
+### Protected Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CListView::RemoveImageList](#clistview__removeimagelist)|Removes the specified image list from the list view.|  
+  
+## Remarks  
+ For more information on this architecture, see the overview for the [CView](../vs140/cview-class.md) class and the cross-references cited there.  
+  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ [CCmdTarget](../vs140/ccmdtarget-class.md)  
+  
+ [CWnd](../vs140/cwnd-class.md)  
+  
+ [CView](../vs140/cview-class.md)  
+  
+ [CCtrlView](../vs140/cctrlview-class.md)  
+  
+ <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+  
+## Requirements  
+ **Header:** afxcview.h  
+  
+##  \<a name="clistview__clistview">\</a>  CListView::CListView  
+ Constructs a <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> object.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+##  \<a name="clistview__getlistctrl">\</a>  CListView::GetListCtrl  
+ Call this member function to get a reference to the list control associated with the view.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+### Return Value  
+ A reference to the list control associated with the view.  
+  
+### Example  
+ [!code[NVC_MFCListView#7](../vs140/codesnippet/CPP/clistview-class_1.cpp)]  
+  
+##  \<a name="clistview__removeimagelist">\</a>  CListView::RemoveImageList  
+ Removes the specified image list from the list view.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+ The zero-based index of the image to remove.  
+  
+## See Also  
+ [MFC Sample ROWLIST](../vs140/visual-c---samples.md)   
+ [Base Class](../vs140/cctrlview-class.md)   
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [CCtrlView](../vs140/cctrlview-class.md)

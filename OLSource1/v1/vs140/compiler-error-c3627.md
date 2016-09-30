@@ -1,0 +1,31 @@
+---
+title: "Compiler Error C3627"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C3627"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3627"
+ms.assetid: 905ad0a0-8c49-4187-b66e-b375f5a1fae5
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3627
+Only a value type can be boxed  
+  
+ Only value classes can be boxed.  
+  
+ The following sample generates C3627:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

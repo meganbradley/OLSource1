@@ -1,0 +1,32 @@
+---
+title: "Compiler Warning (level 1) CS0688"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0688"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0688"
+ms.assetid: 8ce5af36-663e-46e8-87e9-bb32555796ae
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 1) CS0688
+'method1' has a link demand, but overrides or implements 'method2' which does not have a link demand. A security hole may exist.  
+  
+ The link demand set up on the derived class method can easily be circumvented by calling the base class method. To close the security hole, the base class method needs to also use the link demand. For more information, see [Demand vs. LinkDemand](assetId:///1ab877f2-70f4-4e0d-8116-943999dfe8f5).  
+  
+## Example  
+ The following sample generates CS0688. To resolve the warning without modifying the base class, remove the security attribute from the overriding method. This will not solve the security problem.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>
