@@ -1,0 +1,41 @@
+---
+title: "Elapsed Time: General-Purpose Classes"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "adding dates"
+  - "calculating dates and times"
+  - "dates, calculating intervals"
+  - "elapsed time, calculating"
+  - "elapsed time"
+  - "time, elapsed"
+  - "intervals, date and time"
+  - "calculations, date and time"
+ms.assetid: e5c5d3d2-ce1d-409e-875c-98848434e716
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Elapsed Time: General-Purpose Classes
+The following procedure shows how to calculate the difference between two <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> objects and get a <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> result.  
+  
+#### To calculate elapsed time  
+  
+1.  Use the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> objects to calculate the elapsed time, as follows:  
+  
+     [!code[NVC_ATLMFC_Utilities#174](../vs140/codesnippet/CPP/elapsed-time--general-purpose-classes_1.cpp)]  
+  
+     Once you have calculated <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>, you can use the member functions of <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> to extract the components of the elapsed-time value.  
+  
+## See Also  
+ [Date and Time: General-Purpose Classes](../vs140/date-and-time--general-purpose-classes.md)

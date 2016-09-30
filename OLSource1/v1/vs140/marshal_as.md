@@ -1,0 +1,57 @@
+---
+title: "marshal_as"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "marshal_as"
+  - "msclr.interop.marshal_as"
+  - "msclr::interop::marshal_as"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "marshal_as template [C++]"
+ms.assetid: 2ed717da-2b11-41e5-981d-47d251771989
+caps.latest.revision: 21
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# marshal_as
+This method converts data between native and managed environments.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ [in] <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ The value that you want to marshal to a <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> variable.  
+  
+## Return Value  
+ A variable of type <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> that is the converted value of <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>.  
+  
+## Remarks  
+ This method is a simplified way to convert data between native and managed types. To determine what data types are supported, see [Marshaling Overview in C++](../vs140/overview-of-marshaling-in-c--.md). Some data conversions require a context. You can convert those data types by using the [marshal_context Class](../vs140/marshal_context-class.md).  
+  
+ If you try to marshal a pair of data types that are not supported, <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> will generate an error [C4996](../vs140/compiler-warning--level-3--c4996.md) at compile time. Read the message supplied with this error for more information. The <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> error can be generated for more than just deprecated functions. One example of this is trying to marshal a pair of data types that are not supported.  
+  
+ The marshaling library consists of several header files. Any conversion requires only one file, but you can include additional files if you need to for other conversions. To see which conversions are associated with which files, look in the table in <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>. Regardless of what conversion you want to do, the namespace requirement is always in effect.  
+  
+## Example  
+ This example marshals from a <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> to a <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> variable type.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## Requirements  
+ **Header file:** \<msclr\marshal.h>, \<msclr\marshal_windows.h>, \<msclr\marshal_cppstd.h>, or \<msclr\marshal_atl.h>  
+  
+ **Namespace:** msclr::interop  
+  
+## See Also  
+ [Marshaling Overview in C++](../vs140/overview-of-marshaling-in-c--.md)   
+ [marshal_context Class](../vs140/marshal_context-class.md)

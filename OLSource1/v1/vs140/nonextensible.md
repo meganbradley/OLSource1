@@ -1,0 +1,55 @@
+---
+title: "nonextensible"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "language-reference"
+f1_keywords: 
+  - "vc-attr.nonextensible"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "nonextensible attribute"
+ms.assetid: c7ef1554-809f-4ea0-a7cd-dc7786d40c3e
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# nonextensible
+Specifies that the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> implementation includes only the properties and methods listed in the interface description and cannot be extended with additional members at run time.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ The **nonextensible** C++ attribute has the same functionality as the [nonextensible](http://msdn.microsoft.com/library/windows/desktop/aa367120) MIDL attribute.  
+  
+ Use of **nonextensible** also requires the [oleautomation](../vs140/oleautomation.md) attribute.  
+  
+## Example  
+ The following code shows one use of the **nonextensible** attribute:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## Requirements  
+  
+### Attribute Context  
+  
+|||  
+|-|-|  
+|**Applies to**|<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>|  
+|**Repeatable**|No|  
+|**Required attributes**|**dual** and **oleautomation**, or **dispinterface**|  
+|**Invalid attributes**|None|  
+  
+ For more information about the attribute contexts, see [Attribute Contexts](../vs140/attribute-contexts.md).  
+  
+## See Also  
+ [IDL Attributes](../vs140/idl-attributes.md)   
+ [Interface Attributes](../vs140/interface-attributes.md)   
+ [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

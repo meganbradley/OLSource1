@@ -1,0 +1,73 @@
+---
+title: "operator delete(CRT)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+apilocation: 
+  - "msvcr90.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr120.dll"
+  - "msvcr100.dll"
+  - "msvcr80.dll"
+apitype: "DLLExport"
+f1_keywords: 
+  - "delete[]"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "operator delete[]"
+  - "vector delete"
+ms.assetid: e91bd0df-3815-40ca-950a-67b470518aed
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# operator delete(CRT)
+Frees allocated block.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ *memory*  
+ The memory location being freed.  
+  
+ *object*  
+ A pointer to the object being deleted.  
+  
+## Remarks  
+ This form of **operator delete** is known as vector delete, in contrast to the scalar delete form ([operator delete](../vs140/operator-delete--crt-.md)).  
+  
+ **operator** <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> frees memory allocated by [operator new&#91;&#93;](../vs140/operator-new-crt-.md).  
+  
+ The first form of this operator is known as the nonplacement form. The second and third forms of this operator will commonly not be called from code but exist to give the compiler a matching delete to call when a placement new fails.  
+  
+ The first form of the operator is defined by the compiler and does not require new.h to be included in your program.  
+  
+ With the exception of throwing or no-throwing behavior, the CRT **operator** <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> behaves like [operator delete&#91;&#93;](../vs140/operator-delete--new--.md) in the Standard C++ Library.  
+  
+## Requirements  
+  
+|Routine|Required header|  
+|-------------|---------------------|  
+|<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>|\<new.h>|  
+  
+ For additional compatibility information, see [Compatibility](../vs140/compatibility.md) in the Introduction.  
+  
+## Libraries  
+ All versions of the [C run-time libraries](../vs140/crt-library-features.md).  
+  
+## Example  
+ See [operator new&#91;&#93;](../vs140/operator-new-crt-.md) for examples of using operator **delete**.  
+  
+## See Also  
+ [Memory Allocation](../vs140/memory-allocation.md)

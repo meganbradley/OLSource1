@@ -1,0 +1,79 @@
+---
+title: "basic_string::find_last_of"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "find_last_of"
+  - "std.basic_string.find_last_of"
+  - "basic_string::find_last_of"
+  - "xstring/std::basic_string::find_last_of"
+  - "basic_string.find_last_of"
+  - "std::basic_string::find_last_of"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "find_last_of method"
+ms.assetid: a642d9fe-c036-4fd2-b6ed-b593e7c238dd
+caps.latest.revision: 18
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# basic_string::find_last_of
+Searches through a string for the last character that matches any element of a specified string.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ The character value for which the member function is to search.  
+  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ Index of the position at which the search is to finish.  
+  
+ <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+ The C-string for which the member function is to search.  
+  
+ <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+ The number of characters, counting forward from the first character, in the C-string for which the member function is to search.  
+  
+ <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+ The string for which the member function is to search.  
+  
+## Return Value  
+ The index of the last character of the substring searched for when successful; otherwise <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>.  
+  
+## Example  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ **The original string str1 is: abcd-1234-abcd-1234**  
+**The index of the last 'd' found before the 14th position in str1 is: 13**  
+**The character 'x' was not found in str1.**  
+**The original string str2 is: ABCD-1234-ABCD-1234**  
+**The index of the last occurrence of an element of 'B1' in str2 before**  
+ **the 12th position is: 11**  
+**The index of the last element of 'D2' after**  
+ **the 0th position in str2 is: 16**  
+**The original string str3 is: 456-EFG-456-EFG**  
+**The index of the last occurrence of an element of '5E' in str3 before**  
+ **the 8th position is: 4**  
+**The original string str4 is: 12-ab-12-ab**  
+**The index of the last occurrence of an element of 'ba3' in str4 before**  
+ **the 8th position is: 4**  
+**The index of the last occurrence of an element of 'a2' in str4 before**  
+ **the 0th position is: 9**   
+## Requirements  
+ **Header:** \<string>  
+  
+ **Namespace:** std  
+  
+## See Also  
+ [basic_string Class](../vs140/basic_string-class.md)

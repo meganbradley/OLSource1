@@ -1,0 +1,46 @@
+---
+title: "execution_character_set"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "cpp"
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "execution_character_set"
+  - "vc-pragma.execution_character_set"
+dev_langs: 
+  - "C"
+  - "C++"
+helpviewer_keywords: 
+  - "pragma execution_character_set"
+ms.assetid: 32248cbc-7c92-4dca-8442-230c052b53ad
+caps.latest.revision: 7
+---
+# execution_character_set
+Specifies the execution character set used for string and character literals. This directive is not needed for literals marked with the u8 prefix.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ Specifies the target execution character set. Currently the only target execution set supported is "utf-8".  
+  
+## Remarks  
+ This compiler directive is obsolete in Visual Studio 2015 Update 2. We recommend that you use the **/execution-charset:utf-8** or **/utf-8** compiler options together with using the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> prefix on narrow character and string literals that contain extended characters. For more information about the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> prefix, see [String and Character Literals](../vs140/string-and-character-literals---c---.md). For more information about the compiler options, see [/execution-charset](../vs140/-execution-charset--set-execution-character-set-.md) and [/utf-8](../vs140/-utf-8--set-source-and-executable-character-sets-to-utf-8-.md).  
+  
+ The <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> directive tells the compiler to encode narrow character and narrow string literals in your source code as UTF-8 in the executable. This output encoding is independent of the source file encoding used.  
+  
+ By default, the compiler encodes narrow characters and narrow strings by using the current code page as the execution character set. This means that Unicode or DBCS characters in a literal that are outside the range of the current code page are converted to the default replacement character in the output. Unicode and DBCS characters are truncated to their low-order byte. This is almost certainly not what you intend. You can specify UTF-8 encoding for literals in the source file by using a <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> prefix. The compiler passes these UTF-8 encoded strings to the output unchanged. Narrow character literals prefixed by using u8 must fit in one byte, or they are truncated on output.  
+  
+ By default, Visual Studio uses the current code page as the source character set used to interpret your source code for output. When a file is read in, Visual Studio interprets it according to the current code page unless the file code page was set, or unless a byte-order mark (BOM) or UTF-16 characters are detected at the beginning of the file. Because UTF-8 can't be set as the current code page, when the automatic detection encounters source files encoded as UTF-8 without a BOM, Visual Studio assumes that they are encoded by using the current code page. Characters in the source file that are outside the range of the specified or automatically detected code page can cause compiler warnings and errors.  
+  
+## See Also  
+ [Pragma Directives and the __Pragma Keyword](../vs140/pragma-directives-and-the-__pragma-keyword.md)   
+ [/execution-charset](../vs140/-execution-charset--set-execution-character-set-.md)   
+ [/utf-8](../vs140/-utf-8--set-source-and-executable-character-sets-to-utf-8-.md)

@@ -1,0 +1,63 @@
+---
+title: "CManualAccessor::AddBindEntry"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "ATL::CManualAccessor::AddBindEntry"
+  - "ATL.CManualAccessor.AddBindEntry"
+  - "CManualAccessor::AddBindEntry"
+  - "AddBindEntry"
+  - "CManualAccessor.AddBindEntry"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "AddBindEntry method"
+ms.assetid: 8556dda9-dda1-4f67-96bc-6031e6c6a271
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CManualAccessor::AddBindEntry
+Adds a bind entry to the output columns.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ See [DBBINDING](https://msdn.microsoft.com/en-us/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ [in] Column number.  
+  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ [in] Data type.  
+  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ [in] Column size in bytes.  
+  
+ <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+ [in] A pointer to the column data stored in the buffer.  
+  
+ <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+ [in] A pointer to the field length, if required.  
+  
+ <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+ [in] A pointer to the variable to be bound to the column status, if required.  
+  
+## Remarks  
+ To use this function, you must first call [CreateAccessor](../vs140/cmanualaccessor--createaccessor.md). You cannot add more entries than the number of columns specified in <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>.  
+  
+## Requirements  
+ **Header:** atldbcli.h  
+  
+## See Also  
+ [CManualAccessor Class](../vs140/cmanualaccessor-class.md)   
+ [DBViewer sample](../vs140/visual-c---samples.md)

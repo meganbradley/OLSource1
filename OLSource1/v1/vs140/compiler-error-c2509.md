@@ -1,0 +1,32 @@
+---
+title: "Compiler Error C2509"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2509"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2509"
+ms.assetid: 339c1fcd-ec4a-456c-9f18-a9b24d9921af
+caps.latest.revision: 15
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C2509
+'identifier' : member function not declared in 'class'  
+  
+ The function is not declared in the specified class.  
+  
+## Example  
+ The following sample generates C2509.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

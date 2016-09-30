@@ -1,0 +1,52 @@
+---
+title: "Expression is a value and therefore cannot be the target of an assignment"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "bc30068"
+  - "vbc30068"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "BC30068"
+ms.assetid: d65141e1-f31e-4ac5-a3b8-0b2e02a71ebf
+caps.latest.revision: 19
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Expression is a value and therefore cannot be the target of an assignment
+A statement attempts to assign a value to an expression. You can assign a value only to a writable variable, property, or array element at run time. The following example illustrates how this error can occur.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ Similar examples could apply to properties and array elements.  
+  
+ **Indirect Access.** Indirect access through a value type can also generate this error. Consider the following code example, which attempts to set the value of \<xref:System.Drawing.Point*> by accessing it indirectly through \<xref:System.Windows.Forms.Control.Location*>.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ The last statement of the preceding example fails because it creates only a temporary allocation for the \<xref:System.Drawing.Point*> structure returned by the \<xref:System.Windows.Forms.Control.Location*> property. A structure is a value type, and the temporary structure is not retained after the statement runs. The problem is resolved by declaring and using a variable for \<xref:System.Windows.Forms.Control.Location*>, which creates a more permanent allocation for the \<xref:System.Drawing.Point*> structure. The following example shows code that can replace the last statement of the preceding example.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ **Error ID:** BC30068  
+  
+### To correct this error  
+  
+-   If the statement assigns a value to an expression, replace the expression with a single writable variable, property, or array element.  
+  
+-   If the statement makes indirect access through a value type (usually a structure), create a variable to hold the value type.  
+  
+-   Assign the appropriate structure (or other value type) to the variable.  
+  
+-   Use the variable to access the property to assign it a value.  
+  
+## See Also  
+ [Operators and Expressions in Visual Basic](../vs140/operators-and-expressions-in-visual-basic.md)   
+ [Statements in Visual Basic](../vs140/statements-in-visual-basic.md)   
+ [Troubleshooting Procedures](../vs140/troubleshooting-procedures--visual-basic-.md)

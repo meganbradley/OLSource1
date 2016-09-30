@@ -1,0 +1,36 @@
+---
+title: "IDiaEnumSymbols::Skip"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaEnumSymbols::Skip method"
+ms.assetid: e601fbc9-b10b-41c7-8180-959e57efabe8
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaEnumSymbols::Skip
+Skips a specified number of symbols in an enumeration sequence.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ celt  
+ [in] The number of symbols in the enumeration sequence to skip.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>; otherwise, returns <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> if there are no more symbols to skip.  
+  
+## See Also  
+ [IDiaEnumSymbols](../vs140/idiaenumsymbols.md)

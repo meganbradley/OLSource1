@@ -1,0 +1,45 @@
+---
+title: "IDebugEnumField::GetValueFromString"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugEnumField::GetValueFromString"
+helpviewer_keywords: 
+  - "IDebugEnumField::GetValueFromString method"
+ms.assetid: 1ef8ac5e-a3e0-4078-b876-7f5615aedcbb
+caps.latest.revision: 11
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDebugEnumField::GetValueFromString
+This method returns the value associated with the name of an enumeration constant.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ [in] A string specifying the name for which to get the value. Note that for C++, this is a wide character string.  
+  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ [out] Returns the associated numerical value.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>; otherwise, returns <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>, if the name is not part of the enumeration, or an error code.  
+  
+## Remarks  
+ This method is case-sensitive. If a case-insensitive search is needed (for example, in a language such as Visual Basic where names are not case sensitive), use [IDebugEnumField::GetValueFromStringCaseInsensitive](../vs140/idebugenumfield--getvaluefromstringcaseinsensitive.md).  
+  
+## See Also  
+ [IDebugEnumField](../vs140/idebugenumfield.md)   
+ [IDebugEnumField::GetValueFromStringCaseInsensitive](../vs140/idebugenumfield--getvaluefromstringcaseinsensitive.md)

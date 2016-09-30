@@ -1,0 +1,52 @@
+---
+title: "MixIn Structure"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "implements/Microsoft::WRL::MixIn"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "MixIn structure"
+ms.assetid: 47e2df9b-3a2e-4ae8-8ba3-b1fd3aa73566
+caps.latest.revision: 8
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# MixIn Structure
+Ensures that a runtime class derives from [!INCLUDE[wrt](../vs140/includes/wrt_md.md)] interfaces, if any, and then classic COM interfaces.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ A type derived from the [Implements](../vs140/implements-structure.md) structure.  
+  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ A base type.  
+  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> if <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> is derived from the current implementation the base type; <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> otherwise.  
+  
+## Remarks  
+ If a class is derived from both [!INCLUDE[wrt](../vs140/includes/wrt_md.md)] and class COM interfaces, the class declaration list must first list any [!INCLUDE[wrt](../vs140/includes/wrt_md.md)] interfaces and then any classic COM interfaces. MixIn ensures that the interfaces are specified in the correct order.  
+  
+## Inheritance Hierarchy  
+ <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+  
+## Requirements  
+ **Header:** implements.h  
+  
+ **Namespace:** Microsoft::WRL  
+  
+## See Also  
+ [WRL Namespace](../vs140/microsoft--wrl-namespace.md)

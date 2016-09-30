@@ -1,0 +1,31 @@
+---
+title: "Compiler Warning (level 1) CS0184"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0184"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0184"
+ms.assetid: 55e73f76-f502-4d15-88fc-bd5757b512a4
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 1) CS0184
+The given expression is never of the provided ('type') type  
+  
+ The expression can never be **true** because the variable you are testing is neither declared as ***type*** nor derived from ***type***.  
+  
+ The following sample generates CS0184:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

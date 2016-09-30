@@ -1,0 +1,28 @@
+---
+title: "Compiler Warning (level 1) C4165"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "C4165"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C4165"
+ms.assetid: f5bed515-2290-4f88-8dab-b45d95fe26ef
+caps.latest.revision: 11
+---
+# Compiler Warning (level 1) C4165
+'HRESULT' is being converted to 'bool'; are you sure this is what you want?  
+  
+ When using an [HRESULT](_com_hresults) in an [if](../vs140/if-else-statement--c---.md) statement, the HRESULT will be converted to a [bool](../vs140/bool--c---.md) unless you explicitly test for the variable as an HRESULT. This warning is off by default.  
+  
+ The following sample generates C4165  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

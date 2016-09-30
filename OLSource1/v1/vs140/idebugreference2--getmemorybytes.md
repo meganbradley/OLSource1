@@ -1,0 +1,39 @@
+---
+title: "IDebugReference2::GetMemoryBytes"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugReference2::GetMemoryBytes"
+helpviewer_keywords: 
+  - "IDebugReference2::GetMemoryBytes"
+ms.assetid: 2006cb2b-1dfa-4a2d-8e3e-db2ce0302e0d
+caps.latest.revision: 14
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDebugReference2::GetMemoryBytes
+Gets the memory bytes that physically contain the value of a reference. Reserved for future use.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ [out] Returns an [IDebugMemoryBytes2](../vs140/idebugmemorybytes2.md) object that can be used to retrieve the memory that contains the value of the reference.  
+  
+## Return Value  
+ Always returns <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>.  
+  
+## See Also  
+ [IDebugReference2](../vs140/idebugreference2.md)   
+ [IDebugMemoryBytes2](../vs140/idebugmemorybytes2.md)

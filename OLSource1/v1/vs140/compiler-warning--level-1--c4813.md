@@ -1,0 +1,31 @@
+---
+title: "Compiler Warning (level 1) C4813"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "C4813"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C4813"
+ms.assetid: c30bf877-ab04-4fe4-897e-8162092426f0
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 1) C4813
+'function' : a friend function of a local class must have been previously declared  
+  
+ A friend function in an inner class was not declared in the outer class.  
+  
+ The following sample generates C4813:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

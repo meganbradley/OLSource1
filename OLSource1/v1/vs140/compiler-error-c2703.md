@@ -1,0 +1,31 @@
+---
+title: "Compiler Error C2703"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2703"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2703"
+ms.assetid: 384295c3-643d-47ae-a9a6-865b3036aa84
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C2703
+illegal __leave statement  
+  
+ A <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> statement must be inside a <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> block.  
+  
+ The following sample generates C2703:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

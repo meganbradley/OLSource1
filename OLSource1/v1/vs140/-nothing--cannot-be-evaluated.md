@@ -1,0 +1,33 @@
+---
+title: "&#39;Nothing&#39; cannot be evaluated"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30701"
+  - "bc30701"
+helpviewer_keywords: 
+  - "BC30701"
+ms.assetid: 9c9a460b-5b0d-4ca7-ac9a-e224cec2f343
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# &#39;Nothing&#39; cannot be evaluated
+The <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> keyword was used in the debug window.  
+  
+ **Error ID:** BC30701  
+  
+### To correct this error  
+  
+-   Do not use <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> while debugging.  
+  
+## See Also  
+ [Nothing](../vs140/nothing--visual-basic-.md)

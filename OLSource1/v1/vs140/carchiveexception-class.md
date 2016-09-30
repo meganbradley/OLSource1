@@ -1,0 +1,118 @@
+---
+title: "CArchiveException Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CArchiveException"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "exceptions [C++], serialization"
+  - "serialization [C++], exceptions"
+  - "CArchiveException class"
+  - "exceptions [C++], archive"
+  - "archive exceptions [C++]"
+ms.assetid: da31a127-e86c-41d1-b0b6-bed0865b1b49
+caps.latest.revision: 21
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CArchiveException Class
+Represents a serialization exception condition  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CArchiveException::CArchiveException](#carchiveexception__carchiveexception)|Constructs a <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> object.|  
+  
+### Public Data Members  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CArchiveException::m_cause](#carchiveexception__m_cause)|Indicates the exception cause.|  
+|[CArchiveException::m_strFileName](#carchiveexception__m_strfilename)|Specifies the name of the file for this exception condition.|  
+  
+## Remarks  
+ The <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> class includes a public data member that indicates the cause of the exception.  
+  
+ <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> objects are constructed and thrown inside [CArchive](../vs140/carchive-class.md) member functions. You can access these objects within the scope of a **CATCH** expression. The cause code is independent of the operating system. For more information about exception processing, see [Exception Handling (MFC)](../vs140/exception-handling-in-mfc.md).  
+  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ [CException](../vs140/cexception-class.md)  
+  
+ <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+  
+## Requirements  
+ **Header:** afx.h  
+  
+##  \<a name="carchiveexception__carchiveexception">\</a>  CArchiveException::CArchiveException  
+ Constructs a <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> object, storing the value of <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> in the object.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+ An enumerated type variable that indicates the reason for the exception. For a list of the enumerators, see the [m_cause](#carchiveexception__m_cause) data member.  
+  
+ <CodeContentPlaceHolder>11\</CodeContentPlaceHolder>  
+ Points to a string containing the name of the <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> object causing the exception.  
+  
+### Remarks  
+ You can create a <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> object on the heap and throw it yourself or let the global function [AfxThrowArchiveException](../vs140/afxthrowarchiveexception.md) handle it for you.  
+  
+ Do not use this constructor directly; instead, call the global function <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>.  
+  
+##  \<a name="carchiveexception__m_cause">\</a>  CArchiveException::m_cause  
+ Specifies the cause of the exception.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+### Remarks  
+ This data member is a public variable of type <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>. Its values are defined by a <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> enumerated type. The enumerators and their meanings are as follows:  
+  
+-   **CArchiveException::none** No error occurred.  
+  
+-   **CArchiveException::genericException** Unspecified error.  
+  
+-   **CArchiveException::readOnly** Tried to write into an archive opened for loading.  
+  
+-   **CArchiveException::endOfFile** Reached end of file while reading an object.  
+  
+-   **CArchiveException::writeOnly** Tried to read from an archive opened for storing.  
+  
+-   **CArchiveException::badIndex** Invalid file format.  
+  
+-   **CArchiveException::badClass** Tried to read an object into an object of the wrong type.  
+  
+-   **CArchiveException::badSchema** Tried to read an object with a different version of the class.  
+  
+    > [!NOTE]
+    >  These <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> cause enumerators are distinct from the <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> cause enumerators.  
+  
+    > [!NOTE]
+    >  **CArchiveException::generic** is deprecated. Use **genericException** instead. If **generic** is used in an application and built with /clr, there will be syntax errors that are not easy to decipher.  
+  
+##  \<a name="carchiveexception__m_strfilename">\</a>  CArchiveException::m_strFileName  
+ Specifies the name of the file for this exception condition.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+## See Also  
+ [Base Class](../vs140/cexception-class.md)   
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [CArchive](../vs140/carchive-class.md)   
+ [AfxThrowArchiveException](../vs140/afxthrowarchiveexception.md)   
+ [Exception Processing](../vs140/exception-processing.md)

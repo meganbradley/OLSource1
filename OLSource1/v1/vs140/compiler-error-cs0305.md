@@ -1,0 +1,32 @@
+---
+title: "Compiler Error CS0305"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0305"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0305"
+ms.assetid: a862c484-01fe-4067-b0f4-15a618e7f8a1
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS0305
+Using the generic type 'generic type' requires 'number' type arguments  
+  
+ This error occurs when the expected number of type arguments was not found. To resolve C0305, use the required number of type arguments.  
+  
+## Example  
+ The following sample generates CS0305.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

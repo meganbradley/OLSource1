@@ -1,0 +1,44 @@
+---
+title: "PORT_SUPPLIER_DESCRIPTION_FLAGS"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "PORT_SUPPLIER_DESCRIPTION_FLAGS enumeration"
+ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
+caps.latest.revision: 11
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# PORT_SUPPLIER_DESCRIPTION_FLAGS
+Defines the metadata that can be retrieved about a port supplier.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## Terms  
+ PSDFLAG_SHOW_WARNING_ICON  
+ If selected, the warning icon will be displayed in the UI.  
+  
+## Remarks  
+ This enumeration is returned by the [IDebugPortSupplierDescription2::GetDescription](../vs140/idebugportsupplierdescription2--getdescription.md) method.  
+  
+## Requirements  
+ Header: Msdbg.h  
+  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+  
+## See Also  
+ [Enumerations (Visual Studio Debugging SDK)](../vs140/enumerations--visual-studio-debugging-.md)   
+ [IDebugPortSupplierDescription2::GetDescription](../vs140/idebugportsupplierdescription2--getdescription.md)

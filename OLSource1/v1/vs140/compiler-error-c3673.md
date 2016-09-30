@@ -1,0 +1,36 @@
+---
+title: "Compiler Error C3673"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C3673"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3673"
+ms.assetid: bb6d2079-05af-4e2c-be0e-75c892e6c590
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3673
+'type' : class does not have a copy-constructor  
+  
+ A user-defined constructor is needed to copy objects of CLR ref types. For more information, see [Automatic Storage for Reference Types](../vs140/c---stack-semantics-for-reference-types.md).  
+  
+## Example  
+ The following sample generates C3673.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Example  
+ The following sample generates C3673.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>

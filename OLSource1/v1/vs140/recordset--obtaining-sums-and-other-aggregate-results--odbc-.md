@@ -1,0 +1,85 @@
+---
+title: "Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "SQL, retrieving aggregate values from recordsets"
+  - "recordsets, retrieving SQL aggregate values"
+  - "retrieving SQL aggregate values from recordsets"
+  - "ODBC recordsets, retrieving SQL aggregate values"
+  - "SQL aggregate values"
+  - "SQL Server projects, retrieving aggregate values from recordsets"
+  - "SQL aggregate values, retrieving from recordsets"
+ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)
+This topic applies to the MFC ODBC classes.  
+  
+ This topic explains how to obtain aggregate results using the following [SQL](../vs140/sql.md) keywords:  
+  
+-   **SUM** Calculates the total of the values in a column with a numeric data type.  
+  
+-   **MIN** Extracts the smallest value in a column with a numeric data type.  
+  
+-   **MAX** Extracts the largest value in a column with a numeric data type.  
+  
+-   **AVG** Calculates an average value of all the values in a column with a numeric data type.  
+  
+-   **COUNT** Counts the number of records in a column of any data type.  
+  
+ You use these SQL functions to obtain statistical information about the records in a data source rather than to extract records from the data source. The recordset that is created usually consists of a single record (if all columns are aggregates) that contains a value. (There might be more than one record if you used a **GROUP BY** clause.) This value is the result of the calculation or extraction performed by the SQL function.  
+  
+> [!TIP]
+>  To add a SQL **GROUP BY** clause (and possibly a **HAVING** clause) to your SQL statement, append it to the end of **m_strFilter**. For example:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ You can limit the number of records you use to obtain aggregate results by filtering and sorting the columns.  
+  
+> [!CAUTION]
+>  Some aggregation operators return a different data type from the columns over which they are aggregating.  
+  
+-   **SUM** and **AVG** might return the next larger data type (for example, calling with <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> returns **LONG** or **double**).  
+  
+-   **COUNT** usually returns **LONG** regardless of target column type.  
+  
+-   **MAX** and **MIN** return the same data type as the columns they calculate.  
+  
+     For example, the **Add Class** wizard creates <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> to accommodate a Sales column, but you need to replace this with a <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> data member to accommodate the aggregate result. See the following example.  
+  
+#### To obtain an aggregate result for a recordset  
+  
+1.  Create a recordset as described in [Adding an MFC ODBC Consumer](../vs140/adding-an-mfc-odbc-consumer.md) containing the columns from which you want to obtain aggregate results.  
+  
+2.  Modify the [DoFieldExchange](../vs140/crecordset--dofieldexchange.md) function for the recordset. Replace the string representing the column name (the second argument of the [RFX](../vs140/record-field-exchange--using-rfx.md) function calls) with a string representing the aggregation function on the column. For example, replace:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+     with:  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+3.  Open the recordset. The result of the aggregation operation is left in <CodeContentPlaceHolder>9\</CodeContentPlaceHolder>.  
+  
+> [!NOTE]
+>  The wizard actually assigns data member names without Hungarian prefixes. For example, the wizard would produce <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> for a Sales column, rather than the <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> name used earlier for illustration.  
+  
+ If you are using a [CRecordView](../vs140/crecordview-class.md) class to view the data, you have to change the DDX function call to display the new data member value; in this case, changing it from:  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ To:  
+  
+<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+## See Also  
+ [Recordset (ODBC)](../vs140/recordset--odbc-.md)   
+ [Recordset: How Recordsets Select Records (ODBC)](../vs140/recordset--how-recordsets-select-records--odbc-.md)

@@ -1,0 +1,46 @@
+---
+title: "Converting Data Types (C#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+ms.assetid: 46e5682f-77a1-4302-8f93-a2b53c408808
+caps.latest.revision: 7
+---
+# Converting Data Types (C#)
+Conversion methods change the type of input objects.  
+  
+ Conversion operations in LINQ queries are useful in a variety of applications. Following are some examples:  
+  
+-   The \<xref:System.Linq.Enumerable.AsEnumerable*?displayProperty=fullName> method can be used to hide a type's custom implementation of a standard query operator.  
+  
+-   The \<xref:System.Linq.Enumerable.OfType*?displayProperty=fullName> method can be used to enable non-parameterized collections for LINQ querying.  
+  
+-   The \<xref:System.Linq.Enumerable.ToArray*?displayProperty=fullName>, \<xref:System.Linq.Enumerable.ToDictionary*?displayProperty=fullName>, \<xref:System.Linq.Enumerable.ToList*?displayProperty=fullName>, and \<xref:System.Linq.Enumerable.ToLookup*?displayProperty=fullName> methods can be used to force immediate query execution instead of deferring it until the query is enumerated.  
+  
+## Methods  
+ The following table lists the standard query operator methods that perform data-type conversions.  
+  
+ The conversion methods in this table whose names start with "As" change the static type of the source collection but do not enumerate it. The methods whose names start with "To" enumerate the source collection and put the items into the corresponding collection type.  
+  
+|Method Name|Description|C# Query Expression Syntax|More Information|  
+|-----------------|-----------------|---------------------------------|----------------------|  
+|AsEnumerable|Returns the input typed as <xref:System.Collections.Generic.IEnumerable<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>from string str in words<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>2*> based on a key selector function. This method forces query execution.|Not applicable.|\<xref:System.Linq.Enumerable.ToDictionary*?displayProperty=fullName>|  
+|ToList|Converts a collection to a <xref:System.Collections.Generic.List<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>2*> (a one-to-many dictionary) based on a key selector function. This method forces query execution.|Not applicable.|\<xref:System.Linq.Enumerable.ToLookup*?displayProperty=fullName>|  
+  
+## Query Expression Syntax Example  
+ The following code example uses an explicitly-typed range variable  to cast a type to a subtype before accessing a member that is available only on the subtype.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## See Also  
+ \<xref:System.Linq*>   
+ [Standard Query Operators Overview (C#)](../vs140/standard-query-operators-overview--csharp-.md)   
+ [from clause (C# Reference)](../vs140/from-clause--csharp-reference-.md)   
+ [LINQ Query Expressions (C# Programming Guide)](../vs140/linq-query-expressions--csharp-programming-guide-.md)   
+ [How to: Query an ArrayList with LINQ (C#)](../vs140/how-to--query-an-arraylist-with-linq--csharp-.md)

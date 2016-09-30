@@ -1,0 +1,50 @@
+---
+title: "priority_queue::assign (STL-CLR)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+H1: "priority_queue::assign (STL/CLR)"
+f1_keywords: 
+  - "cliext::priority_queue::assign"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "assign member [STL/CLR]"
+ms.assetid: 00cd3623-ecd0-4dde-ba5c-777c1c0bc0b5
+caps.latest.revision: 17
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# priority_queue::assign (STL-CLR)
+Replaces all elements.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ right  
+ Container adapter to insert.  
+  
+## Remarks  
+ The member function assigns <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> to the underlying container. You use it to change the entire contents of the queue.  
+  
+## Example  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+  **c a b**  
+ **c a b**   
+## Requirements  
+ **Header:** \<cliext/queue>  
+  
+ **Namespace:** cliext  
+  
+## See Also  
+ [priority_queue](../vs140/priority_queue--stl-clr-.md)   
+ [operator=](../vs140/priority_queue--operator=--stl-clr-.md)

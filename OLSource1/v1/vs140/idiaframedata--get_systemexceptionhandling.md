@@ -1,0 +1,42 @@
+---
+title: "IDiaFrameData::get_systemExceptionHandling"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaFrameData::get_systemExceptionHandling method"
+ms.assetid: e8df1972-913c-446c-9779-775575b0caa9
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaFrameData::get_systemExceptionHandling
+Retrieves a flag that indicates whether system exception handling is in effect.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ pRetVal  
+ [out] Returns <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> if system exception handling is in effect; otherwise, returns <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>. Returns <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> if this property is not supported. Otherwise, returns an error code.  
+  
+## Remarks  
+ System exception handling is more commonly known as structured exception handling.  
+  
+ To determine if C++ exception handling is in effect, call the [IDiaFrameData::get_cplusplusExceptionHandling](../vs140/idiaframedata--get_cplusplusexceptionhandling.md) method.  
+  
+## See Also  
+ [IDiaFrameData](../vs140/idiaframedata.md)   
+ [IDiaFrameData::get_cplusplusExceptionHandling](../vs140/idiaframedata--get_cplusplusexceptionhandling.md)

@@ -1,0 +1,76 @@
+---
+title: "_getdrive"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+apiname: 
+  - "_getdrive"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr110.dll"
+  - "msvcr120.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr80.dll"
+  - "msvcr110_clr0400.dll"
+apitype: "DLLExport"
+f1_keywords: 
+  - "_getdrive"
+  - "getdrive"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "current disk drive"
+  - "getdrive function"
+  - "disk drives"
+  - "_getdrive function"
+ms.assetid: e40631a0-8f1a-4897-90ac-e1037ff30bca
+caps.latest.revision: 21
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# _getdrive
+Gets the current disk drive.  
+  
+> [!IMPORTANT]
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Return Value  
+ Returns the current (default) drive (1=A, 2=B, and so on). There is no error return.  
+  
+## Requirements  
+  
+|Routine|Required header|  
+|-------------|---------------------|  
+|<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>|\<direct.h>|  
+  
+ For more compatibility information, see [Compatibility](../vs140/compatibility.md).  
+  
+## Example  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ **Available drives are:**  
+**A: (Current directory is A:\\)**  
+**C: (Current directory is C:\\)**  
+**E: (Current directory is E:\testdir\bin)**  
+**F: (Current directory is F:\\)**  
+**G: (Current directory is G:\\)**   
+## .NET Framework Equivalent  
+ [System::Environment::CurrentDirectory](https://msdn.microsoft.com/en-us/library/system.environment.currentdirectory.aspx)  
+  
+## See Also  
+ [Directory Control](../vs140/directory-control.md)   
+ [_chdrive](../vs140/_chdrive.md)   
+ [_getcwd, _wgetcwd](../vs140/_getcwd--_wgetcwd.md)   
+ [_getdcwd, _wgetdcwd](../vs140/_getdcwd--_wgetdcwd.md)

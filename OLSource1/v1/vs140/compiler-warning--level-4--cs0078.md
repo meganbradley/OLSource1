@@ -1,0 +1,31 @@
+---
+title: "Compiler Warning (level 4) CS0078"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0078"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0078"
+ms.assetid: 8d637be6-82bc-462c-bec5-217327bc8c40
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 4) CS0078
+The 'l' suffix is easily confused with the digit '1' -- use 'L' for clarity  
+  
+ The compiler warns when it detects a cast to long using a lowercase l instead of an uppercase L.  
+  
+ The following sample generates CS0078:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

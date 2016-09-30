@@ -1,0 +1,85 @@
+---
+title: "CMutex Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "Mutex"
+  - "CMutex"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CMutex class"
+  - "synchronization classes, CMutex class"
+  - "synchronization objects, mutex"
+  - "mutex"
+ms.assetid: 6330c050-4f01-4195-a099-2029b92f8cf1
+caps.latest.revision: 21
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CMutex Class
+Represents a "mutex" — a synchronization object that allows one thread mutually exclusive access to a resource.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CMutex::CMutex](#cmutex__cmutex)|Constructs a <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> object.|  
+  
+## Remarks  
+ Mutexes are useful when only one thread at a time can be allowed to modify data or some other controlled resource. For example, adding nodes to a linked list is a process that should only be allowed by one thread at a time. By using a <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> object to control the linked list, only one thread at a time can gain access to the list.  
+  
+ To use a <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> object, construct the <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> object when it is needed. Specify the name of the mutex you wish to wait on, and that your application should initially own it. You can then access the mutex when the constructor returns. Call [CSyncObject::Unlock](../vs140/csyncobject-class.md#csyncobject__unlock) when you are done accessing the controlled resource.  
+  
+ An alternative method for using <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> objects is to add a variable of type <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> as a data member to the class you wish to control. During construction of the controlled object, call the constructor of the <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> data member specifying if the mutex is initially owned, the name of the mutex (if it will be used across process boundaries), and desired security attributes.  
+  
+ To access resources controlled by <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> objects in this manner, first create a variable of either type [CSingleLock](../vs140/csinglelock-class.md) or type [CMultiLock](../vs140/cmultilock-class.md) in your resource's access member function. Then call the lock object's <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> member function (for example, [CSingleLock::Lock](../vs140/csinglelock-class.md#csinglelock__lock)). At this point, your thread will either gain access to the resource, wait for the resource to be released and gain access, or wait for the resource to be released and time out, failing to gain access to the resource. In any case, your resource has been accessed in a thread-safe manner. To release the resource, use the lock object's <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> member function (for example, [CSingleLock::Unlock](../vs140/csinglelock-class.md#csinglelock__unlock)), or allow the lock object to fall out of scope.  
+  
+ For more information on using <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> objects, see the article [Multithreading: How to Use the Synchronization Classes](../vs140/multithreading--how-to-use-the-synchronization-classes.md).  
+  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ [CSyncObject](../vs140/csyncobject-class.md)  
+  
+ <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>  
+  
+## Requirements  
+ **Header:** afxmt.h  
+  
+##  \<a name="cmutex__cmutex">\</a>  CMutex::CMutex  
+ Constructs a named or unnamed <CodeContentPlaceHolder>14\</CodeContentPlaceHolder> object.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>  
+ Specifies if the thread creating the <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> object initially has access to the resource controlled by the mutex.  
+  
+ <CodeContentPlaceHolder>17\</CodeContentPlaceHolder>  
+ Name of the <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> object. If another mutex with the same name exists, <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> must be supplied if the object will be used across process boundaries. If **NULL**, the mutex will be unnamed. If the name matches an existing mutex, the constructor builds a new <CodeContentPlaceHolder>20\</CodeContentPlaceHolder> object which references the mutex of that name. If the name matches an existing synchronization object that is not a mutex, the construction will fail.  
+  
+ <CodeContentPlaceHolder>21\</CodeContentPlaceHolder>  
+ Security attributes for the mutex object. For a full description of this structure, see                                 [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) in the [!INCLUDE[winSDK](../vs140/includes/winsdk_md.md)].  
+  
+### Remarks  
+ To access or release a <CodeContentPlaceHolder>22\</CodeContentPlaceHolder> object, create a [CMultiLock](../vs140/cmultilock-class.md) or [CSingleLock](../vs140/csinglelock-class.md) object and call its [Lock](../vs140/csinglelock-class.md#csinglelock__lock) and [Unlock](../vs140/csinglelock-class.md#csinglelock__unlock) member functions. If the <CodeContentPlaceHolder>23\</CodeContentPlaceHolder> object is being used stand-alone, call its <CodeContentPlaceHolder>24\</CodeContentPlaceHolder> member function to release it.  
+  
+> [!IMPORTANT]
+>  After creating the <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> object, use                             [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) to ensure that the mutex did not already exist. If the mutex did exist unexpectedly, it may indicate a rogue process is squatting and may be intending to use the mutex maliciously. In this case, the recommended security-conscious procedure is to close the handle and continue as if there was a failure in creating the object.  
+  
+## See Also  
+ [Base Class](../vs140/csyncobject-class.md)   
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)

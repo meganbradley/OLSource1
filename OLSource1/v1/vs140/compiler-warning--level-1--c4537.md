@@ -1,0 +1,31 @@
+---
+title: "Compiler Warning (level 1) C4537"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C4537"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C4537"
+ms.assetid: 9454493c-d419-475e-8f35-9c00233c9329
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 1) C4537
+'object' : 'operator' applied to non-UDT type  
+  
+ A reference was passed where an object (user-defined type) was expected. A reference is not an object, but inline assembler code is not able to make the distinction. The compiler generates code as though ***object*** were an instance.  
+  
+ The following sample generates C4537:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

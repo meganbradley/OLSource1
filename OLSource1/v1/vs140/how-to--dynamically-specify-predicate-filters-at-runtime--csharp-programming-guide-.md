@@ -1,0 +1,94 @@
+---
+title: "How to: Dynamically Specify Predicate Filters at Runtime (C# Programming Guide)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "queries [LINQ in C#], predicate filters"
+  - "dynamic queries [LINQ in C#]"
+  - "predicate filters [C#]"
+  - "predicates [C#]"
+  - "query expressions [LINQ in C#], predicate filters"
+ms.assetid: 52f2dc7a-8353-4c6e-98d3-eec99a907a5f
+caps.latest.revision: 26
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# How to: Dynamically Specify Predicate Filters at Runtime (C# Programming Guide)
+In some cases you do not know until run time how many predicates you have to apply to source elements in the <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> clause. One way to dynamically specify multiple predicate filters is to use the \<xref:System.Linq.Enumerable.Contains*> method, as shown in the following example. The example is constructed in two ways. First, the project is run by filtering on values that are provided in the program. Then the project is run again by using input provided at run time.  
+  
+### To filter by using the Contains method  
+  
+1.  Open a new console application in Visual Studio. Name it <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>.  
+  
+2.  Copy the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> class from [How to: Query a Collections of Objects](../vs140/how-to--query-a-collection-of-objects--csharp-programming-guide-.md) and paste it into namespace <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> underneath class <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>. <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> provides a list of <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> objects.  
+  
+3.  Comment out the <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> method in <CodeContentPlaceHolder>9\</CodeContentPlaceHolder>.  
+  
+4.  Replace class <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> with the following code.  
+  
+     [!code[csProgGuideLINQ#26](../vs140/codesnippet/CSharp/how-to--dynamically-specify-predicate-filters-at-runtime--csharp-programming-guide-_1.cs)]  
+  
+5.  Add the following line to the <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> method in class <CodeContentPlaceHolder>12\</CodeContentPlaceHolder>, under the declaration of <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+6.  Press F5 to run the project.  
+  
+7.  The following output is displayed in a Command Prompt window:  
+  
+     Garcia: 114  
+  
+     O'Donnell: 112  
+  
+     Omelchenko: 111  
+  
+8.  The next step is to run the project again, this time by using input entered at run time instead of array <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>. In **Solution Explorer**, right-click **PredicateFilters** and then click **Properties**.  
+  
+9. Click the **Debug** tab.  
+  
+10. In the **Command line arguments** window, type 122, 117, 120, and 115, separated by spaces: <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>. When the project is run, those values become elements of <CodeContentPlaceHolder>16\</CodeContentPlaceHolder>, the parameter of the <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> method.  
+  
+11. Change <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> to <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> in the <CodeContentPlaceHolder>20\</CodeContentPlaceHolder> method.  
+  
+12. Press F5 to run the project.  
+  
+13. The following output is displayed in a Command Prompt window:  
+  
+     Adams: 120  
+  
+     Feng: 117  
+  
+     Garcia: 115  
+  
+     Tucker: 122  
+  
+### To filter by using a switch statement  
+  
+1.  You can use a <CodeContentPlaceHolder>21\</CodeContentPlaceHolder> statement to select among predetermined alternative queries. In the following example, <CodeContentPlaceHolder>22\</CodeContentPlaceHolder> uses a different <CodeContentPlaceHolder>23\</CodeContentPlaceHolder> clause depending on which grade level, or year, is specified at run time.  
+  
+2.  Copy the following method and paste it into class <CodeContentPlaceHolder>24\</CodeContentPlaceHolder>.  
+  
+     [!code[csProgGuideLINQ#27](../vs140/codesnippet/CSharp/how-to--dynamically-specify-predicate-filters-at-runtime--csharp-programming-guide-_2.cs)]  
+  
+3.  In the **Command line arguments** window, replace the ID numbers from the previous procedure with an integer value between 1 and 4.  
+  
+4.  In the <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> method, replace the call to <CodeContentPlaceHolder>26\</CodeContentPlaceHolder> with the following call, which sends the first element from the <CodeContentPlaceHolder>27\</CodeContentPlaceHolder> array as its argument: <CodeContentPlaceHolder>28\</CodeContentPlaceHolder>.  
+  
+5.  Press F5 to run the project.  
+  
+### To use this method in your own applications  
+  
+-   When you adapt this method to your own application, remember that LINQ requires version 3.5 or 4 of the [!INCLUDE[dnprdnshort](../vs140/includes/dnprdnshort_md.md)], and that the project must contain a reference to System.Core.dll and a <CodeContentPlaceHolder>29\</CodeContentPlaceHolder> directive for <CodeContentPlaceHolder>30\</CodeContentPlaceHolder>. LINQ to SQL, LINQ to XML, and LINQ to DataSet types require additional <CodeContentPlaceHolder>31\</CodeContentPlaceHolder> directives and references. For more information, see [How To: Create a LINQ Project](../Topic/How%20to:%20Create%20a%20LINQ%20Project_deleted.md).  
+  
+## See Also  
+ [LINQ Query Expressions (C# Programming Guide)](../vs140/linq-query-expressions--csharp-programming-guide-.md)   
+ [where clause (C# Reference)](../vs140/where-clause--csharp-reference-.md)

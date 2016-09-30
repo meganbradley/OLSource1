@@ -1,0 +1,65 @@
+---
+title: "scheduler_worker_creation_error Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "concrt/concurrency::scheduler_worker_creation_error"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "scheduler_worker_creation_error class"
+ms.assetid: 4aec1c3e-c32a-41b2-899d-2d898f23b3c7
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# scheduler_worker_creation_error Class
+This class describes an exception thrown because of a failure to create a worker execution context in the Concurrency Runtime.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[scheduler_worker_creation_error::scheduler_worker_creation_error Constructor](#scheduler_worker_creation_error__scheduler_worker_creation_error_constructor)|Overloaded. Constructs a                                         <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> object.|  
+  
+## Remarks  
+ This exception is typically thrown when a call to the operating system to create execution contexts from within the Concurrency Runtime fails. Execution contexts are threads that execute tasks in the Concurrency Runtime. The error code which would normally be returned from a call to the Win32 method                 <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> is converted to a value of type                 <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> and can be retrieved using the base class method                 <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>.  
+  
+## Inheritance Hierarchy  
+ <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+  
+ [scheduler_resource_allocation_error](../vs140/scheduler_resource_allocation_error-class.md)  
+  
+ <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+  
+## Requirements  
+ **Header:** concrt.h  
+  
+ **Namespace:** concurrency  
+  
+##  \<a name="scheduler_worker_creation_error__scheduler_worker_creation_error_constructor">\</a>  scheduler_worker_creation_error::scheduler_worker_creation_error Constructor  
+ Constructs a                 <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> object.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>9\</CodeContentPlaceHolder>  
+ A descriptive message of the error.  
+  
+ <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+ The                                 <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> value of the error that caused the exception.  
+  
+## See Also  
+ [concurrency Namespace](../vs140/concurrency-namespace.md)

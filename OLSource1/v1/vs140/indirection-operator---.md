@@ -1,0 +1,52 @@
+---
+title: "Indirection Operator: *"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "language-reference"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "* operator"
+  - "indirection operator"
+  - "operators [C++], indirection"
+  - "indirection operator, syntax"
+ms.assetid: c50309e1-6c02-4184-9fcb-2e13c1f4ac03
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Indirection Operator: *
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ The unary indirection operator (**\***) dereferences a pointer; that is, it converts a pointer value to an l-value. The operand of the indirection operator must be a pointer to a type. The result of the indirection expression is the type from which the pointer type is derived. The use of the **\*** operator in this context is different from its meaning as a binary operator, which is multiplication.  
+  
+ If the operand points to a function, the result is a function designator. If it points to a storage location, the result is an l-value designating the storage location.  
+  
+ The indirection operator may be used cumulatively to dereference pointers to pointers. For example:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ If the pointer value is invalid, the result is undefined. The following list includes some of the most common conditions that invalidate a pointer value.  
+  
+-   The pointer is a null pointer.  
+  
+-   The pointer specifies the address of a local item that is not visible at the time of the reference.  
+  
+-   The pointer specifies an address that is inappropriately aligned for the type of the object pointed to.  
+  
+-   The pointer specifies an address not used by the executing program.  
+  
+## See Also  
+ [Expressions with Unary Operators](../vs140/expressions-with-unary-operators.md)   
+ [C++ Operators](../vs140/c---operators.md)   
+ [C++ Built-in Operators, Precedence and Associativity](../vs140/c---built-in-operators--precedence-and-associativity.md)   
+ [Address-of Operator: &](../vs140/address-of-operator---.md)   
+ [Indirection and Address-of Operators](../vs140/indirection-and-address-of-operators.md)

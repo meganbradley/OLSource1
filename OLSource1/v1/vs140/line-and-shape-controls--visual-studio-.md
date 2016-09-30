@@ -1,0 +1,44 @@
+---
+title: "Line and Shape Controls (Visual Studio)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "RectangleShape control, topic list"
+  - "OvalShape control, topic list"
+  - "Shape control"
+  - "Line control, topic list"
+ms.assetid: 29ee3a5f-920f-4677-85bc-bd7425ab57e8
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Line and Shape Controls (Visual Studio)
+The Visual Basic Power Packs Line and Shape controls are graphical controls that enable you to draw horizontal, vertical, and diagonal lines, rectangles, squares, ovals, circles, and rectangles and squares with rounded corners on a form or container.  
+  
+ The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](http://www.microsoft.com/en-us/download/details.aspx?id=25169).  
+  
+## In This Section  
+ [Introduction to the Line and Shape Controls (Visual Basic)](../vs140/introduction-to-the-line-and-shape-controls--visual-studio-.md)  
+ Introduces and discusses the Line and Shape controls and describes the object model.  
+  
+ [How to: Draw Lines with the LineShape Control (Visual Basic)](../vs140/how-to--draw-lines-with-the-lineshape-control--visual-studio-.md)  
+ Demonstrates how to use the \<xref:Microsoft.VisualBasic.PowerPacks.LineShape*> control to draw lines at design time and at run time.  
+  
+ [How to: Draw Shapes with the OvalShape and RectangleShape Controls (Visual Basic)](../vs140/how-to--draw-shapes-with-the-ovalshape-and-rectangleshape-controls--visual-studio-.md)  
+ Demonstrates how to use the \<xref:Microsoft.VisualBasic.PowerPacks.OvalShape*> and \<xref:Microsoft.VisualBasic.PowerPacks.RectangleShape*> controls to draw shapes at design time and at run time.  
+  
+ [How to: Enable Tabbing Between Shapes (Visual Basic)](../vs140/how-to--enable-tabbing-between-shapes--visual-studio-.md)  
+ Demonstrates how to enable users to move between shapes by using the keyboard.  
+  
+## Reference  
+ \<xref:Microsoft.VisualBasic.PowerPacks*>

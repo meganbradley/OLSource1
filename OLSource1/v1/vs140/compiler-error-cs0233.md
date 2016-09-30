@@ -1,0 +1,32 @@
+---
+title: "Compiler Error CS0233"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0233"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0233"
+ms.assetid: 75b0123f-2237-43dc-9234-a0f727eee482
+caps.latest.revision: 17
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS0233
+'identifier' does not have a predefined size, therefore sizeof can only be used in an unsafe context (consider using System.Runtime.InteropServices.Marshal.SizeOf)  
+  
+ The [sizeof](../vs140/sizeof--csharp-reference-.md) operator can only be used for types that are compile-time constants. If you are getting this error, make sure that the size of the identifier can be determined at compile time. If it cannot, then use \<xref:System.Runtime.InteropServices.Marshal.SizeOf*> instead of <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>.  
+  
+## Example  
+ The following example generates CS0233:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

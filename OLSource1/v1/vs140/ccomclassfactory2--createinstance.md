@@ -1,0 +1,58 @@
+---
+title: "CComClassFactory2::CreateInstance"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "ATL::CComClassFactory2::CreateInstance"
+  - "ATL::CComClassFactory2<license>::CreateInstance"
+  - "ATL.CComClassFactory2.CreateInstance"
+  - "CComClassFactory2::CreateInstance"
+  - "CComClassFactory2<license>::CreateInstance"
+  - "CComClassFactory2.CreateInstance"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CreateInstance method"
+ms.assetid: d56ef6ca-b508-43c7-8b10-5dc07854636c
+caps.latest.revision: 14
+robots: noindex,nofollow
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CComClassFactory2::CreateInstance
+Creates an object of the specified CLSID and retrieves an interface pointer to this object.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ [in] If the object is being created as part of an aggregate, then <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> must be the outer unknown. Otherwise, <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> must be **NULL**.  
+  
+ <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+ [in] The IID of the requested interface. If <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> is non-**NULL**, <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> must be **IID_IUnknown**.  
+  
+ <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+ [out] A pointer to the interface pointer identified by <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>. If the object does not support this interface, <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> is set to **NULL**.  
+  
+## Return Value  
+ A standard <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> value.  
+  
+## Remarks  
+ Requires the machine to be fully licensed. If a full machine license does not exist, call [CreateInstanceLic](../vs140/ccomclassfactory2--createinstancelic.md).  
+  
+## Requirements  
+ **Header:** atlcom.h  
+  
+## See Also  
+ [CComClassFactory2 Class](../vs140/ccomclassfactory2-class.md)   
+ [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615)   
+ [CoGetClassObject](http://msdn.microsoft.com/library/windows/desktop/ms684007)

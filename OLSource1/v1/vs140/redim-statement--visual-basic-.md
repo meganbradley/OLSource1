@@ -1,0 +1,114 @@
+---
+title: "ReDim Statement (Visual Basic)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vb.ReDim"
+  - "vb.Preserve"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "fixed-length strings, declaring"
+  - "ReDim statement, syntax"
+  - "dynamic arrays, ReDim statement"
+  - "arrays [Visual Basic], reallocating"
+  - "arrays [Visual Basic], reinitializing"
+  - "arrays [Visual Basic], dimensions"
+  - "scalars, and arrays"
+  - "scalars"
+  - "declarations, dynamic arrays"
+  - "variables [Visual Basic], scalar"
+  - "ReDim statement"
+  - "data types [Visual Basic], assigning"
+  - "As keyword, in ReDim statement"
+  - "To keyword, ReDim statement"
+  - "arrays [Visual Basic], declaring"
+  - "Preserve keyword, ReDim statement"
+  - "storage, allocating"
+  - "arrays [Visual Basic], and scalars"
+  - "declaration statements"
+  - "scalar variables"
+ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
+caps.latest.revision: 29
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# ReDim Statement (Visual Basic)
+Reallocates storage space for an array variable.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Parts  
+  
+|Term|Definition|  
+|----------|----------------|  
+|<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>|Optional. Modifier used to preserve the data in the existing array when you change the size of only the last dimension.|  
+|<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>|Required. Name of the array variable. See [Declared Element Names](../vs140/declared-element-names--visual-basic-.md).|  
+|<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>|Required. List of bounds of each dimension of the redefined array.|  
+  
+## Remarks  
+ You can use the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> statement to change the size of one or more dimensions of an array that has already been declared. If you have a large array and you no longer need some of its elements, <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> can free up memory by reducing the array size. On the other hand, if your array needs more elements, <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> can add them.  
+  
+ The <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> statement is intended only for arrays. It's not valid on scalars (variables that contain only a single value), collections, or structures. Note that if you declare a variable to be of type <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>, the <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> statement doesn't have sufficient type information to create the new array.  
+  
+ You can use <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> only at procedure level. Therefore, the declaration context for the variable must be a procedure; it can't be a source file, a namespace, an interface, a class, a structure, a module, or a block. For more information, see [Declaration Contexts and Default Access Levels](../vs140/declaration-contexts-and-default-access-levels--visual-basic-.md).  
+  
+## Rules  
+  
+-   **Multiple Variables.** You can resize several array variables in the same declaration statement and specify the <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> parts for each variable. Multiple variables are separated by commas.  
+  
+-   **Array Bounds.** Each entry in <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> can specify the lower and upper bounds of that dimension. The lower bound is always 0 (zero). The upper bound is the highest possible index value for that dimension, not the length of the dimension (which is the upper bound plus one). The index for each dimension can vary from 0 through its upper bound value.  
+  
+     The number of dimensions in <CodeContentPlaceHolder>14\</CodeContentPlaceHolder> must match the original number of dimensions (rank) of the array.  
+  
+-   **Data Types.** The <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> statement cannot change the data type of an array variable or its elements.  
+  
+-   **Initialization.** The <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> statement cannot provide new initialization values for the array elements.  
+  
+-   **Rank.** The <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> statement cannot change the rank (the number of dimensions) of the array.  
+  
+-   **Resizing with Preserve.** If you use <CodeContentPlaceHolder>18\</CodeContentPlaceHolder>, you can resize only the last dimension of the array. For every other dimension, you must specify the bound of the existing array.  
+  
+     For example, if your array has only one dimension, you can resize that dimension and still preserve all the contents of the array, because you are changing the last and only dimension. However, if your array has two or more dimensions, you can change the size of only the last dimension if you use <CodeContentPlaceHolder>19\</CodeContentPlaceHolder>.  
+  
+-   **Properties.** You can use <CodeContentPlaceHolder>20\</CodeContentPlaceHolder> on a property that holds an array of values.  
+  
+## Behavior  
+  
+-   **Array Replacement.** <CodeContentPlaceHolder>21\</CodeContentPlaceHolder> releases the existing array and creates a new array with the same rank. The new array replaces the released array in the array variable.  
+  
+-   **Initialization without Preserve.** If you do not specify <CodeContentPlaceHolder>22\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>23\</CodeContentPlaceHolder> initializes the elements of the new array by using the default value for their data type.  
+  
+-   **Initialization with Preserve.** If you specify <CodeContentPlaceHolder>24\</CodeContentPlaceHolder>, Visual Basic copies the elements from the existing array to the new array.  
+  
+## Example  
+ The following example increases the size of the last dimension of a dynamic array without losing any existing data in the array, and then decreases the size with partial data loss. Finally, it decreases the size back to its original value and reinitializes all the array elements.  
+  
+ [!code[VbVbalrStatements#52](../vs140/codesnippet/VisualBasic/redim-statement--visual-basic-_1.vb)]  
+  
+ The <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> statement creates a new array with three dimensions. Each dimension is declared with a bound of 10, so the array index for each dimension can range from 0 through 10. In the following discussion, the three dimensions are referred to as layer, row, and column.  
+  
+ The first <CodeContentPlaceHolder>26\</CodeContentPlaceHolder> creates a new array which replaces the existing array in variable <CodeContentPlaceHolder>27\</CodeContentPlaceHolder>. <CodeContentPlaceHolder>28\</CodeContentPlaceHolder> copies all the elements from the existing array into the new array. It also adds 10 more columns to the end of every row in every layer and initializes the elements in these new columns to 0 (the default value of <CodeContentPlaceHolder>29\</CodeContentPlaceHolder>, which is the element type of the array).  
+  
+ The second <CodeContentPlaceHolder>30\</CodeContentPlaceHolder> creates another new array and copies all the elements that fit. However, five columns are lost from the end of every row in every layer. This is not a problem if you have finished using these columns. Reducing the size of a large array can free up memory that you no longer need.  
+  
+ The third <CodeContentPlaceHolder>31\</CodeContentPlaceHolder> creates another new array and removes another five columns from the end of every row in every layer. This time it does not copy any existing elements. This statement reverts the array to its original size. Because the statement doesn't include the <CodeContentPlaceHolder>32\</CodeContentPlaceHolder> modifier, it sets all array elements to their original default values.  
+  
+ For additional examples, see [Arrays in Visual Basic](../vs140/arrays-in-visual-basic.md).  
+  
+## See Also  
+ \<xref:System.IndexOutOfRangeException*>   
+ [Const Statement](../vs140/const-statement--visual-basic-.md)   
+ [Dim Statement](../vs140/dim-statement--visual-basic-.md)   
+ [Erase Statement](../vs140/erase-statement--visual-basic-.md)   
+ [Nothing (Visual Basic)](../vs140/nothing--visual-basic-.md)   
+ [Arrays in Visual Basic](../vs140/arrays-in-visual-basic.md)

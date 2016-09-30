@@ -1,0 +1,62 @@
+---
+title: "__uuidof Operator"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "language-reference"
+f1_keywords: 
+  - "__LIBID_"
+  - "__LIBID_cpp"
+  - "__uuidof"
+  - "__uuidof_cpp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "__uuidof keyword [C++]"
+  - "__LIBID_ keyword [C++]"
+ms.assetid: badfe709-809b-4b66-ad48-ee35039d25c6
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# __uuidof Operator
+**Microsoft Specific**  
+  
+ Retrieves the GUID attached to the expression.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ The *expression* can be a type name, pointer, reference, or array of that type, a template specialized on these types, or a variable of these types. The argument is valid as long as the compiler can use it to find the attached GUID.  
+  
+ A special case of this intrinsic is when either **0** or **NULL** is supplied as the argument. In this case, <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> will return a GUID made up of zeros.  
+  
+ Use this keyword to extract the GUID attached to:  
+  
+-   An object by the [uuid](../vs140/uuid--c---.md) extended attribute.  
+  
+-   A library block created with the [module](../vs140/module--c---.md) attribute.  
+  
+> [!NOTE]
+>  In a debug build, <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> always initializes an object dynamically (at runtime). In a release build, <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> can statically (at compile time) initialize an object.  
+  
+## Example  
+ The following code (compiled with ole32.lib) will display the uuid of a library block created with the module attribute:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## Comments  
+ In cases where the library name is no longer in scope, you can use __LIBID\_ instead of <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>. For example:  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ **END Microsoft Specific**  
+  
+## See Also  
+ [Expressions with Unary Operators](../vs140/expressions-with-unary-operators.md)   
+ [Keywords](../vs140/keywords--c---.md)

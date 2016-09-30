@@ -1,0 +1,116 @@
+---
+title: "DRAWITEMSTRUCT Structure"
+ms.custom: na
+ms.date: "09/23/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "DRAWITEMSTRUCT"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "DRAWITEMSTRUCT structure"
+ms.assetid: ba9ef1d4-aebb-45e9-b956-4b81a02e50f7
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# DRAWITEMSTRUCT Structure
+The <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> structure provides information the owner window must have to determine how to paint an owner-drawn control or menu item.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ The control type. The values for control types are as follows:  
+  
+-   **ODT_BUTTON** Owner-drawn button  
+  
+-   **ODT_COMBOBOX** Owner-drawn combo box  
+  
+-   **ODT_LISTBOX** Owner-drawn list box  
+  
+-   **ODT_MENU** Owner-drawn menu  
+  
+-   **ODT_LISTVIEW** List view control  
+  
+-   **ODT_STATIC** Owner-drawn static control  
+  
+-   **ODT_TAB** Tab control  
+  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ The control ID for a combo box, list box, or button. This member is not used for a menu.  
+  
+ <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+ The menu-item ID for a menu or the index of the item in a list box or combo box. For an empty list box or combo box, this member is a negative value, which allows the application to draw only the focus rectangle at the coordinates specified by the **rcItem** member even though there are no items in the control. The user can thus be shown whether the list box or combo box has the input focus. The setting of the bits in the **itemAction** member determines whether the rectangle is to be drawn as though the list box or combo box has input focus.  
+  
+ <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+ Defines the drawing action required. This will be one or more of the following bits:  
+  
+-   **ODA_DRAWENTIRE** This bit is set when the entire control needs to be drawn.  
+  
+-   **ODA_FOCUS** This bit is set when the control gains or loses input focus. The **itemState** member should be checked to determine whether the control has focus.  
+  
+-   **ODA_SELECT** This bit is set when only the selection status has changed. The **itemState** member should be checked to determine the new selection state.  
+  
+ *itemState*  
+ Specifies the visual state of the item after the current drawing action takes place. That is, if a menu item is to be dimmed, the state flag **ODS_GRAYED** will be set. The state flags are as follows:  
+  
+-   **ODS_CHECKED** This bit is set if the menu item is to be checked. This bit is used only in a menu.  
+  
+-   **ODS_DISABLED** This bit is set if the item is to be drawn as disabled.  
+  
+-   **ODS_FOCUS** This bit is set if the item has input focus.  
+  
+-   **ODS_GRAYED** This bit is set if the item is to be dimmed. This bit is used only in a menu.  
+  
+-   **ODS_SELECTED** This bit is set if the item's status is selected.  
+  
+-   **ODS_COMBOBOXEDIT** The drawing takes place in the selection field (edit control) of an ownerdrawn combo box.  
+  
+-   **ODS_DEFAULT** The item is the default item.  
+  
+ <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+ Specifies the window handle of the control for combo boxes, list boxes, and buttons. Specifies the handle of the menu (<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>) that contains the item for menus.  
+  
+ <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>  
+ Identifies a device context. This device context must be used when performing drawing operations on the control.  
+  
+ *rcItem*  
+ A rectangle in the device context specified by the <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> member that defines the boundaries of the control to be drawn. Windows automatically clips anything the owner draws in the device context for combo boxes, list boxes, and buttons, but it does not clip menu items. When drawing menu items, the owner must not draw outside the boundaries of the rectangle defined by the **rcItem** member.  
+  
+ <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+ For a combo box or list box, this member contains the value that was passed to the list box by one of the following:  
+  
+-   [CComboBox::AddString](../vs140/ccombobox--addstring.md)  
+  
+-   [CComboBox::InsertString](../vs140/ccombobox--insertstring.md)  
+  
+-   [CListBox::AddString](../vs140/clistbox--addstring.md)  
+  
+-   [CListBox::InsertString](../vs140/clistbox--insertstring.md)  
+  
+ For a menu, this member contains the value that was passed to the menu by one of the following:  
+  
+-   [CMenu::AppendMenu](../vs140/cmenu--appendmenu.md)  
+  
+-   [CMenu::InsertMenu](../vs140/cmenu--insertmenu.md)  
+  
+-   [CMenu::ModifyMenu](../vs140/cmenu--modifymenu.md)  
+  
+## Remarks  
+ The owner window of the owner-drawn control or menu item receives a pointer to this structure as the <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> parameter of the <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> message.  
+  
+## Requirements  
+ **Header:** winuser.h  
+  
+## See Also  
+ [Structures, Styles, Callbacks, and Message Maps](../vs140/structures--styles--callbacks--and-message-maps.md)   
+ [CWnd::OnDrawItem](../vs140/cwnd--ondrawitem.md)

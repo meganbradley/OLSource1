@@ -1,0 +1,47 @@
+---
+title: "CvIsEnabled Function"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "cvmarkers/CvIsEnabledEx"
+  - "cvmarkers/CvIsEnabled"
+helpviewer_keywords: 
+  - "CvIsEnabled method"
+  - "CvIsEnabledEx method"
+ms.assetid: 2e4fea6d-758d-4150-8744-6102a1d58c1c
+caps.latest.revision: 7
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CvIsEnabled Function
+Determines whether any session has enabled the specified ETW provider.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ Category.  
+  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ Importance level.  
+  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ Valid provider object. Cannot be NULL.  
+  
+## Return Value  
+ S_OK if provider is currently enabled. S_FALSE if provider is currently disabled. Error code in case there were any errors. Use FAILED macro to check for error condition and then check for S_OK/S_FALSE.  
+  
+## Requirements  
+ **Header:** cvmarkers.h  
+  
+## See Also  
+ [Native Reference](../vs140/c---library-reference.md)

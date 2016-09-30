@@ -1,0 +1,60 @@
+---
+title: "How to: Manually Create Web Templates"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Visual Studio templates, Web"
+  - "templates [Visual Studio], Web"
+  - "Web templates [Visual Studio]"
+  - "project templates [Visual Studio], Web"
+ms.assetid: 731c4027-a152-48c5-bfc4-93490bf1949f
+caps.latest.revision: 21
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# How to: Manually Create Web Templates
+Creating a Web template is different than creating other kinds of templates. Because Web project templates appear in the **Add New Web Site** dialog box, and Web project items are categorized by programming language, the .vstemplate file must specify the template as a Web template and identify the programming language.  
+  
+> [!NOTE]
+>  Web templates must contain a empty .webproj file that is specified by using the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> attribute of the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> element. Although Web projects do not require project files, this file is required so that a Web template functions correctly.  
+  
+### To manually create a Web template  
+  
+1.  Create a Web project.  
+  
+2.  Modify or delete the files in the project, or add new files to the project.  
+  
+3.  Create an XML file and save it by using a .vstemplate file name extension, in the same directory as your project. Do not add it to the project in [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)].  
+  
+4.  Author the .vstemplate XML file to provide project template metadata. For more information, see the example in the following section.  
+  
+5.  Locate the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> element in the .vstemplate file, and set the text value to <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>.  
+  
+6.  Following the <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> element, add a <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> element and set the text value to the programming language of the template. The programming language can be one of the following values:  
+  
+    -   CSharp  
+  
+    -   VisualBasic  
+  
+     For example:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+7.  Select the files in your template (this includes the .vstemplate file), right-click the selection, click **Send To**, and then click **Compressed (zipped) Folder**. The files are compressed into a .zip file.  
+  
+8.  Put the .zip template file in the [!INCLUDE[vsprvs](../vs140/includes/vsprvs_md.md)] project template directory. By default, this directory is \My Documents\Visual Studio *Version*\My Exported Templates\\.  
+  
+## Example  
+ The following example shows a basic .vstemplate file for a Web project template.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## See Also  
+ [Introduction to Visual Studio Templates](../vs140/creating-project-and-item-templates.md)   
+ [Visual Studio Template Schema Reference](../vs140/visual-studio-template-schema-reference.md)

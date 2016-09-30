@@ -1,0 +1,176 @@
+---
+title: "Query Expression Basics (C# Programming Guide)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "query expressions [LINQ in C#], query execution"
+  - "query expressions [LINQ in C#], basics"
+  - "queries [LINQ in C#], basics"
+ms.assetid: d3e1f4e6-1cf0-4066-87e3-1a42387223a6
+caps.latest.revision: 36
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Query Expression Basics (C# Programming Guide)
+## What Is a Query and What Does It Do?  
+ A *query* is a set of instructions that describes what data to retrieve from a given data source (or sources) and what shape and organization the returned data should have. A query is distinct from the results that it produces.  
+  
+ Generally, the source data is organized logically as a sequence of elements of the same kind. A SQL database table contains a sequence of rows. Similarly, an [!INCLUDE[vstecado](../vs140/includes/vstecado_md.md)] \<xref:System.Data.DataTable*> contains a sequence of \<xref:System.Data.DataRow*> objects. In an XML file, there is a "sequence" of XML elements (although these are organized hierarchically in a tree structure). An in-memory collection contains a sequence of objects.  
+  
+ From an application's viewpoint, the specific type and structure of the original source data is not important. The application always sees the source data as an <xref:System.Collections.Generic.IEnumerable<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>1*> collection. In [!INCLUDE[sqltecxlinq](../vs140/includes/sqltecxlinq_md.md)], the source data is made visible as an <CodeContentPlaceHolder>1\</CodeContentPlaceHolder><\<xref:System.Xml.Linq.XElement*>>. In [!INCLUDE[linq_dataset](../vs140/includes/linq_dataset_md.md)], it is an <CodeContentPlaceHolder>2\</CodeContentPlaceHolder><\<xref:System.Data.DataRow*>>. In [!INCLUDE[vbtecdlinq](../vs140/includes/vbtecdlinq_md.md)], it is an <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> of whatever custom objects you have defined to represent the data in the SQL table.  
+  
+ Given this source sequence, a query may do one of three things:  
+  
+-   Retrieve a subset of the elements to produce a new sequence without modifying the individual elements. The query may then sort or group the returned sequence in various ways, as shown in the following example (assume <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> is an <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>):  
+  
+     [!code[csrefQueryExpBasics#45](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_1.cs)]  
+  
+-   Retrieve a sequence of elements as in the previous example but transform them to a new type of object. For example, a query may retrieve only the last names from certain customer records in a data source. Or it may retrieve the complete record and then use it to construct another in-memory object type or even XML data before generating the final result sequence. The following example shows a transform from an <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> to a <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>. Note the new type of <CodeContentPlaceHolder>9\</CodeContentPlaceHolder>.  
+  
+     [!code[csrefQueryExpBasics#46](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_2.cs)]  
+  
+-   Retrieve a singleton value about the source data, such as:  
+  
+    -   The number of elements that match a certain condition.  
+  
+    -   The element that has the greatest or least value.  
+  
+    -   The first element that matches a condition, or the sum of particular values in a specified set of elements. For example, the following query returns the number of scores greater than 80 from the <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> integer array:  
+  
+     [!code[csrefQueryExpBasics#47](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_3.cs)]  
+  
+     In the previous example, note the use of parentheses around the query expression before the call to the <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> method. You can also express this by using a new variable to store the concrete result. This technique is more readable because it keeps the variable that store the query separate from the query that stores a result.  
+  
+     [!code[csrefQueryExpBasics#48](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_4.cs)]  
+  
+ In the previous example, the query is executed in the call to <CodeContentPlaceHolder>12\</CodeContentPlaceHolder>, because <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> must iterate over the results in order to determine the number of elements returned by <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>.  
+  
+## What Is a Query Expression?  
+ A *query expression* is a query expressed in query syntax. A query expression is a first-class language construct. It is just like any other expression and can be used in any context in which a C# expression is valid. A query expression consists of a set of clauses written in a declarative syntax similar to SQL or XQuery. Each clause in turn contains one or more C# expressions, and these expressions may themselves be either a query expression or contain a query expression.  
+  
+ A query expression must begin with a [from](../vs140/from-clause--csharp-reference-.md) clause and must end with a [select](../vs140/select-clause--csharp-reference-.md) or [group](../vs140/group-clause--csharp-reference-.md) clause. Between the first <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> clause and the last <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> clause, it can contain one or more of these optional clauses: [where](../vs140/where-clause--csharp-reference-.md), [orderby](../vs140/orderby-clause--csharp-reference-.md), [join](../vs140/join-clause--csharp-reference-.md), [let](../vs140/let-clause--csharp-reference-.md) and even additional [from](../vs140/from-clause--csharp-reference-.md) clauses. You can also use the [into](../vs140/into--csharp-reference-.md) keyword to enable the result of a <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> clause to serve as the source for additional query clauses in the same query expression.  
+  
+### Query Variable  
+ In [!INCLUDE[vbteclinq](../vs140/includes/vbteclinq_md.md)], a query variable is any variable that stores a *query* instead of the *results* of a query. More specifically, a query variable is always an enumerable type that will produce a sequence of elements when it is iterated over in a <CodeContentPlaceHolder>20\</CodeContentPlaceHolder> statement or a direct call to its <CodeContentPlaceHolder>21\</CodeContentPlaceHolder> method.  
+  
+ The following code example shows a simple query expression with one data source, one filtering clause, one ordering clause, and no transformation of the source elements. The <CodeContentPlaceHolder>22\</CodeContentPlaceHolder> clause ends the query.  
+  
+ [!code[csrefQueryExpBasics#49](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_5.cs)]  
+  
+ In the previous example, <CodeContentPlaceHolder>23\</CodeContentPlaceHolder> is a *query variable,* which is sometimes referred to as just a *query*. The query variable stores no actual result data, which is produced in the <CodeContentPlaceHolder>24\</CodeContentPlaceHolder> loop. And when the <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> statement executes, the query results are not returned through the query variable <CodeContentPlaceHolder>26\</CodeContentPlaceHolder>. Rather, they are returned through the iteration variable <CodeContentPlaceHolder>27\</CodeContentPlaceHolder>. The <CodeContentPlaceHolder>28\</CodeContentPlaceHolder> variable can be iterated in a second <CodeContentPlaceHolder>29\</CodeContentPlaceHolder> loop. It will produce the same results as long as neither it nor the data source has been modified.  
+  
+ A query variable may store a query that is expressed in query syntax or method syntax, or a combination of the two. In the following examples, both <CodeContentPlaceHolder>30\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>31\</CodeContentPlaceHolder> are query variables:  
+  
+ [!code[csrefQueryExpBasics#50](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_6.cs)]  
+  
+ On the other hand, the following two examples show variables that are not query variables even through each is initialized with a query. They are not query variables because they store results:  
+  
+ [!code[csrefQueryExpBasics#51](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_7.cs)]  
+  
+> [!NOTE]
+>  In the [!INCLUDE[vbteclinq](../vs140/includes/vbteclinq_md.md)] documentation, variables that store a query have the word "query" as part of their names. Variables that store an actual result do not have "query" in their names.  
+  
+ For more information about the different ways to express queries, see [Query Syntax versus Method Syntax (LINQ)](../vs140/query-syntax-and-method-syntax-in-linq--csharp-.md).  
+  
+#### Explicit and Implicit Typing of Query Variables  
+ This documentation usually provides the explicit type of the query variable in order to show the type relationship between the query variable and the [select clause](../vs140/select-clause--csharp-reference-.md). However, you can also use the [var](../vs140/var--csharp-reference-.md) keyword to instruct the compiler to infer the type of a query variable (or any other local variable) at compile time. For example, the query example that was shown previously in this topic can also be expressed by using implicit typing:  
+  
+ [!code[csrefQueryExpBasics#52](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_8.cs)]  
+  
+ For more information, see [Implicitly Typed Local Variables (C# Programming Guide)](../vs140/implicitly-typed-local-variables--csharp-programming-guide-.md) and [Type Relationships in Query Operations (LINQ)](../vs140/type-relationships-in-linq-query-operations--csharp-.md).  
+  
+### Starting a Query Expression  
+ A query expression must begin with a <CodeContentPlaceHolder>32\</CodeContentPlaceHolder> clause. It specifies a data source together with a range variable. The range variable represents each successive element in the source sequence as the source sequence is being traversed. The range variable is strongly typed based on the type of elements in the data source. In the following example, because <CodeContentPlaceHolder>33\</CodeContentPlaceHolder> is an array of <CodeContentPlaceHolder>34\</CodeContentPlaceHolder> objects, the range variable is also typed as <CodeContentPlaceHolder>35\</CodeContentPlaceHolder>. Because the range variable is strongly typed, you can use the dot operator to access any available members of the type.  
+  
+ [!code[csrefQueryExpBasics#53](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_9.cs)]  
+  
+ The range variable is in scope until the query is exited either with a semicolon or with a *continuation* clause.  
+  
+ A query expression may contain multiple <CodeContentPlaceHolder>36\</CodeContentPlaceHolder> clauses. Use additional <CodeContentPlaceHolder>37\</CodeContentPlaceHolder> clauses when each element in the source sequence is itself a collection or contains a collection. For example, assume that you have a collection of <CodeContentPlaceHolder>38\</CodeContentPlaceHolder> objects, each of which contains a collection of <CodeContentPlaceHolder>39\</CodeContentPlaceHolder> objects named <CodeContentPlaceHolder>40\</CodeContentPlaceHolder>. To query the <CodeContentPlaceHolder>41\</CodeContentPlaceHolder> objects in each <CodeContentPlaceHolder>42\</CodeContentPlaceHolder>, use two <CodeContentPlaceHolder>43\</CodeContentPlaceHolder> clauses as shown here:  
+  
+ [!code[csrefQueryExpBasics#54](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_10.cs)]  
+  
+ For more information, see [from clause (C# Reference)](../vs140/from-clause--csharp-reference-.md).  
+  
+### Ending a Query Expression  
+ A query expression must end with either a <CodeContentPlaceHolder>44\</CodeContentPlaceHolder> clause or a <CodeContentPlaceHolder>45\</CodeContentPlaceHolder> clause.  
+  
+#### group Clause  
+ Use the <CodeContentPlaceHolder>46\</CodeContentPlaceHolder> clause to produce a sequence of groups organized by a key that you specify. The key can be any data type. For example, the following query creates a sequence of groups that contains one or more <CodeContentPlaceHolder>47\</CodeContentPlaceHolder> objects and whose key is a <CodeContentPlaceHolder>48\</CodeContentPlaceHolder> value.  
+  
+ [!code[csrefQueryExpBasics#55](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_11.cs)]  
+  
+ For more information about grouping, see [group clause (C# Reference)](../vs140/group-clause--csharp-reference-.md).  
+  
+#### select Clause  
+ Use the <CodeContentPlaceHolder>49\</CodeContentPlaceHolder> clause to produce all other types of sequences. A simple <CodeContentPlaceHolder>50\</CodeContentPlaceHolder> clause just produces a sequence of the same type of objects as the objects that are contained in the data source. In this example, the data source contains <CodeContentPlaceHolder>51\</CodeContentPlaceHolder> objects. The <CodeContentPlaceHolder>52\</CodeContentPlaceHolder> clause just sorts the elements into a new order and the <CodeContentPlaceHolder>53\</CodeContentPlaceHolder> clause produces a sequence of the reordered <CodeContentPlaceHolder>54\</CodeContentPlaceHolder> objects.  
+  
+ [!code[csrefQueryExpBasics#56](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_12.cs)]  
+  
+ The <CodeContentPlaceHolder>55\</CodeContentPlaceHolder> clause can be used to transform source data into sequences of new types. This transformation is also named a *projection*. In the following example, the <CodeContentPlaceHolder>56\</CodeContentPlaceHolder> clause *projects* a sequence of anonymous types which contains only a subset of the fields in the original element. Note that the new objects are initialized by using an object initializer.  
+  
+ [!code[csrefQueryExpBasics#57](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_13.cs)]  
+  
+ For more information about all the ways that a <CodeContentPlaceHolder>57\</CodeContentPlaceHolder> clause can be used to transform source data, see [select clause (C# Reference)](../vs140/select-clause--csharp-reference-.md).  
+  
+#### Continuations with "into"  
+ You can use the <CodeContentPlaceHolder>58\</CodeContentPlaceHolder> keyword in a <CodeContentPlaceHolder>59\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>60\</CodeContentPlaceHolder> clause to create a temporary identifier that stores a query. Do this when you must perform additional query operations on a query after a grouping or select operation. In the following example <CodeContentPlaceHolder>61\</CodeContentPlaceHolder> are grouped according to population in ranges of 10 million. After these groups are created, additional clauses filter out some groups, and then to sort the groups in ascending order. To perform those additional operations, the continuation represented by <CodeContentPlaceHolder>62\</CodeContentPlaceHolder> is required.  
+  
+ [!code[csrefQueryExpBasics#58](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_14.cs)]  
+  
+ For more information, see [into (C# Reference)](../vs140/into--csharp-reference-.md).  
+  
+### Filtering, Ordering, and Joining  
+ Between the starting <CodeContentPlaceHolder>63\</CodeContentPlaceHolder> clause, and the ending <CodeContentPlaceHolder>64\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>65\</CodeContentPlaceHolder> clause, all other clauses (<CodeContentPlaceHolder>66\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>67\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>68\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>69\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>70\</CodeContentPlaceHolder>) are optional. Any of the optional clauses may be used zero times or multiple times in a query body.  
+  
+#### where Clause  
+ Use the <CodeContentPlaceHolder>71\</CodeContentPlaceHolder> clause to filter out elements from the source data based on one or more predicate expressions. The <CodeContentPlaceHolder>72\</CodeContentPlaceHolder> clause in the following example has two predicates.  
+  
+ [!code[csrefQueryExpBasics#59](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_15.cs)]  
+  
+ For more information, see [where clause (C# Reference)](../vs140/where-clause--csharp-reference-.md).  
+  
+#### orderby Clause  
+ Use the <CodeContentPlaceHolder>73\</CodeContentPlaceHolder> clause to sort the results in either ascending or descending order. You can also specify secondary sort orders. The following example performs a primary sort on the <CodeContentPlaceHolder>74\</CodeContentPlaceHolder> objects by using the <CodeContentPlaceHolder>75\</CodeContentPlaceHolder> property. It then performs a secondary sort by using the <CodeContentPlaceHolder>76\</CodeContentPlaceHolder> property.  
+  
+ [!code[csrefQueryExpBasics#60](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_16.cs)]  
+  
+ The <CodeContentPlaceHolder>77\</CodeContentPlaceHolder> keyword is optional; it is the default sort order if no order is specified. For more information, see [orderby clause (C# Reference)](../vs140/orderby-clause--csharp-reference-.md).  
+  
+#### join Clause  
+ Use the <CodeContentPlaceHolder>78\</CodeContentPlaceHolder> clause to associate and/or combine elements from one data source with elements from another data source based on an equality comparison between specified keys in each element. In [!INCLUDE[vbteclinq](../vs140/includes/vbteclinq_md.md)], join operations are performed on sequences of objects whose elements are different types. After you have joined two sequences, you must use a <CodeContentPlaceHolder>79\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>80\</CodeContentPlaceHolder> statement to specify which element to store in the output sequence. You can also use an anonymous type to combine properties from each set of associated elements into a new type for the output sequence. The following example associates <CodeContentPlaceHolder>81\</CodeContentPlaceHolder> objects whose <CodeContentPlaceHolder>82\</CodeContentPlaceHolder> property matches one of the categories in the <CodeContentPlaceHolder>83\</CodeContentPlaceHolder> string array. Products whose <CodeContentPlaceHolder>84\</CodeContentPlaceHolder> does not match any string in <CodeContentPlaceHolder>85\</CodeContentPlaceHolder> are filtered out. The <CodeContentPlaceHolder>86\</CodeContentPlaceHolder> statement projects a new type whose properties are taken from both <CodeContentPlaceHolder>87\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>88\</CodeContentPlaceHolder>.  
+  
+ [!code[csrefQueryExpBasics#61](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_17.cs)]  
+  
+ You can also perform a group join by storing the results of the <CodeContentPlaceHolder>89\</CodeContentPlaceHolder> operation into a temporary variable by using the [into](../vs140/into--csharp-reference-.md) keyword. For more information, see [join clause (C# Reference)](../vs140/join-clause--csharp-reference-.md).  
+  
+#### let Clause  
+ Use the <CodeContentPlaceHolder>90\</CodeContentPlaceHolder> clause to store the result of an expression, such as a method call, in a new range variable. In the following example, the range variable <CodeContentPlaceHolder>91\</CodeContentPlaceHolder> stores the first element of the array of strings that is returned by <CodeContentPlaceHolder>92\</CodeContentPlaceHolder>.  
+  
+ [!code[csrefQueryExpBasics#62](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_18.cs)]  
+  
+ For more information, see [let (C# Reference)](../vs140/let-clause--csharp-reference-.md).  
+  
+### Subqueries in a Query Expression  
+ A query clause may itself contain a query expression, which is sometimes referred to as a *subquery*. Each subquery starts with its own <CodeContentPlaceHolder>93\</CodeContentPlaceHolder> clause that does not necessarily point to the same data source in the first <CodeContentPlaceHolder>94\</CodeContentPlaceHolder> clause. For example, the following query shows a query expression that is used in the select statement to retrieve the results of a grouping operation.  
+  
+ [!code[csrefQueryExpBasics#63](../vs140/codesnippet/CSharp/query-expression-basics--csharp-programming-guide-_19.cs)]  
+  
+ For more information, see [How to: Perform a Subquery on a Grouping Operation (C# Programming Guide)](../vs140/how-to--perform-a-subquery-on-a-grouping-operation--csharp-programming-guide-.md).  
+  
+## See Also  
+ [C# Programming Guide](../vs140/csharp-programming-guide.md)   
+ [LINQ Query Expressions (C# Programming Guide)](../vs140/linq-query-expressions--csharp-programming-guide-.md)   
+ [Language-Integrated Query (LINQ)](../vs140/linq--language-integrated-query-.md)   
+ [Query Keywords (C# Reference)](../vs140/query-keywords--csharp-reference-.md)   
+ [Standard Query Operators Overview](../vs140/standard-query-operators-overview.md)

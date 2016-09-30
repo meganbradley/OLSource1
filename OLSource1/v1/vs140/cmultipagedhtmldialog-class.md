@@ -1,0 +1,103 @@
+---
+title: "CMultiPageDHtmlDialog Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CMultiPageDHtmlDialog"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CMultiPageDHtmlDialog class"
+ms.assetid: 971accc1-824d-4df4-b4c1-b1a20e0f7e4f
+caps.latest.revision: 21
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CMultiPageDHtmlDialog Class
+A multipage dialog displays multiple HTML pages sequentially and handles the events from each page.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CMultiPageDHtmlDialog::CMultiPageDHtmlDialog](#cmultipagedhtmldialog__cmultipagedhtmldialog)|Constructs a multipage (wizard-style) DHTML dialog object.|  
+|[CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog](#cmultipagedhtmldialog__~cmultipagedhtmldialog)|Destroys a multipage DHTML dialog object.|  
+  
+## Remarks  
+ The mechanism for doing this is a [DHTML and URL event map](assetId:///2a7332f0-79d7-46e4-b816-0a618c46777a), which contains [embedded event maps](../vs140/begin_embed_dhtml_event_map.md) for each page.  
+  
+## Example  
+ This multipage dialog assumes three HTML resources that define simple wizard-like functionality. The first page has a <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> button, the second a **Prev** and <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> button, and the third a **Prev** button. When one of the buttons is pressed, a handler function calls [CDHtmlDialog::LoadFromResource](../vs140/cdhtmldialog-class.md#cdhtmldialog__loadfromresource) to load the appropriate new page.  
+  
+ The pertinent parts of the class declaration (in CMyMultiPageDlg.h):  
+  
+ [!code[NVC_MFCDocView#181](../vs140/codesnippet/CPP/cmultipagedhtmldialog-class_1.h)]  
+  
+ The pertinent parts of the class implementation (in CMyMultipageDlg.cpp):  
+  
+ [!code[NVC_MFCDocView#182](../vs140/codesnippet/CPP/cmultipagedhtmldialog-class_2.cpp)]  
+  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+  
+ <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+  
+ [CCmdTarget](../vs140/ccmdtarget-class.md)  
+  
+ <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+  
+ [CWnd](../vs140/cwnd-class.md)  
+  
+ <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>  
+  
+ [CDialog](../vs140/cdialog-class.md)  
+  
+ [CDHtmlDialog](../vs140/cdhtmldialog-class.md)  
+  
+ <CodeContentPlaceHolder>9\</CodeContentPlaceHolder>  
+  
+## Requirements  
+ **Header:** afxdhtml.h  
+  
+##  \<a name="cmultipagedhtmldialog__cmultipagedhtmldialog">\</a>  CMultiPageDHtmlDialog::CMultiPageDHtmlDialog  
+ Constructs a multipage (wizard-style) DHTML dialog object.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+ The null-terminated string that is the name of a dialog-box template resource.  
+  
+ <CodeContentPlaceHolder>11\</CodeContentPlaceHolder>  
+ The null-terminated string that is the name of an HTML resource.  
+  
+ <CodeContentPlaceHolder>12\</CodeContentPlaceHolder>  
+ A pointer to the parent or owner window object (of type [CWnd](../vs140/cwnd-class.md)) to which the dialog object belongs. If it is **NULL**, the dialog object's parent window is set to the main application window.  
+  
+ <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>  
+ Contains the ID number of a dialog-box template resource.  
+  
+ <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>  
+ Contains the ID number of an HTML resource.  
+  
+##  \<a name="cmultipagedhtmldialog___dtorcmultipagedhtmldialog">\</a>  CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog  
+ Destroys a multipage DHTML dialog object.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+## See Also  
+ [CDHtmlDialog](../vs140/cdhtmldialog-class.md)   
+ [Multipage DHTML and URL Event Maps (NIB)](assetId:///2a7332f0-79d7-46e4-b816-0a618c46777a)

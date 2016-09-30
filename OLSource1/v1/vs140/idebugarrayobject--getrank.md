@@ -1,0 +1,41 @@
+---
+title: "IDebugArrayObject::GetRank"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugArrayObject::GetRank"
+helpviewer_keywords: 
+  - "IDebugArrayObject::GetRank method"
+ms.assetid: 9948551a-e334-4ff6-979c-08dab633b9b6
+caps.latest.revision: 14
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDebugArrayObject::GetRank
+Gets the rank of the array, that is, the number of dimensions.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ [out] Returns the rank.  
+  
+## Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
+  
+## Remarks  
+ Use the [IDebugArrayObject::GetDimensions](../vs140/idebugarrayobject--getdimensions.md) method to retrieve the size of each dimension of the array object.  
+  
+## See Also  
+ [IDebugArrayObject](../vs140/idebugarrayobject.md)

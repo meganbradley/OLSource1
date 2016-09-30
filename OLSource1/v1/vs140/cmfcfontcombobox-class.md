@@ -1,0 +1,158 @@
+---
+title: "CMFCFontComboBox Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CMFCFontComboBox"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CMFCFontComboBox::DrawItem method"
+  - "CMFCFontComboBox::PreTranslateMessage method"
+  - "CMFCFontComboBox::MeasureItem method"
+  - "CMFCFontComboBox class"
+  - "CMFCFontComboBox::CompareItem method"
+ms.assetid: 9a53fb0c-7b45-486d-8187-2a4c723d9fbb
+caps.latest.revision: 28
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CMFCFontComboBox Class
+The <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> class creates a combo box control that contains a list of fonts.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CMFCFontComboBox::CMFCFontComboBox](#cmfcfontcombobox__cmfcfontcombobox)|Constructs a <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> object.|  
+|<CodeContentPlaceHolder>8\</CodeContentPlaceHolder>|Destructor.|  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|<CodeContentPlaceHolder>9\</CodeContentPlaceHolder>|Called by the framework to determine the relative position of a new item in the sorted list box of the current font combo box control. (Overrides [CComboBox::CompareItem](../vs140/ccombobox-class.md#ccombobox__compareitem).)|  
+|<CodeContentPlaceHolder>10\</CodeContentPlaceHolder>|Called by the framework to draw a specified item in the current font combo box control. (Overrides [CComboBox::DrawItem](../vs140/ccombobox-class.md#ccombobox__drawitem).)|  
+|[CMFCFontComboBox::GetSelFont](#cmfcfontcombobox__getselfont)|Retrieves information about the currently selected font.|  
+|<CodeContentPlaceHolder>11\</CodeContentPlaceHolder>|Called by the framework to inform Windows of the dimensions of the list box in the current font combo box control. (Overrides [CComboBox::MeasureItem](../vs140/ccombobox-class.md#ccombobox__measureitem).)|  
+|<CodeContentPlaceHolder>12\</CodeContentPlaceHolder>|Translates window messages before they are dispatched to the                                         [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and                                         [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. (Overrides [CWnd::PreTranslateMessage](../vs140/cwnd-class.md#cwnd__pretranslatemessage).)|  
+|[CMFCFontComboBox::SelectFont](#cmfcfontcombobox__selectfont)|Selects the font that matches the specified criteria from the font combo box.|  
+|[CMFCFontComboBox::Setup](#cmfcfontcombobox__setup)|Initializes the list of items in the font combo box.|  
+  
+### Data Members  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CMFCFontComboBox::m_bDrawUsingFont](#cmfcfontcombobox__m_bdrawusingfont)|Indicates to the framework which font to use to draw the item labels in the current font combo box.|  
+  
+## Remarks  
+ To use a <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> object in a dialog box, add a <CodeContentPlaceHolder>14\</CodeContentPlaceHolder> variable to the dialog box class. Then in the <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> method of the dialog box class, call the [CMFCFontComboBox::Setup](#cmfcfontcombobox__setup) method to initialize the list of items in the combo box control.  
+  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ [CCmdTarget](../vs140/ccmdtarget-class.md)  
+  
+ [CWnd](../vs140/cwnd-class.md)  
+  
+ [CComboBox](../vs140/ccombobox-class.md)  
+  
+ [CMFCFontComboBox](../vs140/cmfcfontcombobox-class.md)  
+  
+## Requirements  
+ **Header:** afxfontcombobox.h  
+  
+##  \<a name="cmfcfontcombobox__cmfcfontcombobox">\</a>  CMFCFontComboBox::CMFCFontComboBox  
+ Constructs a <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> object.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Return Value  
+  
+### Remarks  
+  
+##  \<a name="cmfcfontcombobox__getselfont">\</a>  CMFCFontComboBox::GetSelFont  
+ Retrieves information about the currently selected font.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+### Return Value  
+ A pointer to [CMFCFontInfo](../vs140/cmfcfontinfo-class.md) object that describes a font. It can be <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> if no font is selected in the combo box.  
+  
+### Remarks  
+  
+##  \<a name="cmfcfontcombobox__m_bdrawusingfont">\</a>  CMFCFontComboBox::m_bDrawUsingFont  
+ Indicates to the framework which font to use to draw the item labels in the current font combo box.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+### Remarks  
+ Set this member to <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> to direct the framework to use the same font to draw each item label. Set this member to <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> to direct the framework to draw each item label with the font whose name is the same as the label. The default value of this member is <CodeContentPlaceHolder>20\</CodeContentPlaceHolder>.  
+  
+##  \<a name="cmfcfontcombobox__selectfont">\</a>  CMFCFontComboBox::SelectFont  
+ Selects the font that matches the specified criteria from the font combo box.  
+  
+<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+### Parameters  
+ [in] <CodeContentPlaceHolder>21\</CodeContentPlaceHolder>  
+ Points to a font description object.  
+  
+ [in] <CodeContentPlaceHolder>22\</CodeContentPlaceHolder>  
+ Specifies a font name.  
+  
+ [in] <CodeContentPlaceHolder>23\</CodeContentPlaceHolder>  
+ Specifies a character set. The default value is DEFAULT_CHARSET. For more information, see the <CodeContentPlaceHolder>24\</CodeContentPlaceHolder> member of the                                 [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure.  
+  
+### Return Value  
+ <CodeContentPlaceHolder>25\</CodeContentPlaceHolder> if an item in the font combo box matches the specified font description object or font name and charset; otherwise, <CodeContentPlaceHolder>26\</CodeContentPlaceHolder>.  
+  
+### Remarks  
+ Use this method to select and scroll to the item in the font combo box that corresponds to the specified font.  
+  
+### Example  
+ The following example demonstrates how to use the <CodeContentPlaceHolder>27\</CodeContentPlaceHolder> method in the <CodeContentPlaceHolder>28\</CodeContentPlaceHolder> class. This example is part of the [New Controls sample](../vs140/visual-c---samples.md).  
+  
+ [!code[NVC_MFC_NewControls#34](../vs140/codesnippet/CPP/cmfcfontcombobox-class_1.h)]  
+[!code[NVC_MFC_NewControls#35](../vs140/codesnippet/CPP/cmfcfontcombobox-class_2.cpp)]  
+  
+##  \<a name="cmfcfontcombobox__setup">\</a>  CMFCFontComboBox::Setup  
+ Initializes the list of items in the font combo box.  
+  
+<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+### Parameters  
+ [in] <CodeContentPlaceHolder>29\</CodeContentPlaceHolder>  
+ Specifies the font type. The default value is the bitwise combination (OR) of DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE.  
+  
+ [in] <CodeContentPlaceHolder>30\</CodeContentPlaceHolder>  
+ Specifies the font character set. The default value is DEFAULT_CHARSET.  
+  
+ [in] <CodeContentPlaceHolder>31\</CodeContentPlaceHolder>  
+ Specifies the font pitch and family. The default value is DEFAULT_PITCH.  
+  
+### Return Value  
+ <CodeContentPlaceHolder>32\</CodeContentPlaceHolder> if the font combo box was initialized successfully; otherwise, <CodeContentPlaceHolder>33\</CodeContentPlaceHolder>.  
+  
+### Remarks  
+ This method initializes the font combo box by enumerating the currently installed fonts that match the specified parameters and inserting those font names in the font combo box.  
+  
+### Example  
+ The following example demonstrates how to use the <CodeContentPlaceHolder>34\</CodeContentPlaceHolder> method in the <CodeContentPlaceHolder>35\</CodeContentPlaceHolder> class. This example is part of the [New Controls sample](../vs140/visual-c---samples.md).  
+  
+ [!code[NVC_MFC_NewControls#34](../vs140/codesnippet/CPP/cmfcfontcombobox-class_1.h)]  
+[!code[NVC_MFC_NewControls#36](../vs140/codesnippet/CPP/cmfcfontcombobox-class_3.cpp)]  
+  
+## See Also  
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [Classes](../vs140/mfc-classes.md)   
+ [CMFCToolbarFontComboBox](../vs140/cmfctoolbarfontcombobox-class.md)   
+ [CMFCFontInfo](../vs140/cmfcfontinfo-class.md)

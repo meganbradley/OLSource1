@@ -1,0 +1,31 @@
+---
+title: "Compiler Error C3197"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C3197"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3197"
+ms.assetid: 4e385c3b-222e-425c-9612-46e83ed41650
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3197
+'keyword' : can only be used in definitions  
+  
+ A keyword was used in a declaration but is only valid in a definition.  
+  
+ The following sample generates C3197:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

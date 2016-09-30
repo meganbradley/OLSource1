@@ -1,0 +1,154 @@
+---
+title: "General Best Practices in the Concurrency Runtime"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Concurrency Runtime, general best practices"
+ms.assetid: ce5c784c-051e-44a6-be84-8b3e1139c18b
+caps.latest.revision: 16
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# General Best Practices in the Concurrency Runtime
+This document describes best practices that apply to multiple areas of the Concurrency Runtime.  
+  
+##  \<a name="top">\</a> Sections  
+ This document contains the following sections:  
+  
+-   [Use Cooperative Synchronization Constructs When Possible](#synchronization)  
+  
+-   [Avoid Lengthy Tasks That Do Not Yield](#yield)  
+  
+-   [Use Oversubscription to Offset Operations That Block or Have High Latency](#oversubscription)  
+  
+-   [Use Concurrent Memory Management Functions When Possible](#memory)  
+  
+-   [Use RAII to Manage the Lifetime of Concurrency Objects](#raii)  
+  
+-   [Do Not Create Concurrency Objects at Global Scope](#global-scope)  
+  
+-   [Do Not Use Concurrency Objects in Shared Data Segments](#shared-data)  
+  
+##  \<a name="synchronization">\</a> Use Cooperative Synchronization Constructs When Possible  
+ The Concurrency Runtime provides many concurrency-safe constructs that do not require an external synchronization object. For example, the [concurrency::concurrent_vector](../vs140/concurrent_vector-class.md) class provides concurrency-safe append and element access operations. However, for cases where you require exclusive access to a resource, the runtime provides the [concurrency::critical_section](../vs140/critical_section-class.md), [concurrency::reader_writer_lock](../vs140/reader_writer_lock-class.md), and [concurrency::event](../vs140/event-class.md) classes. These types behave cooperatively; therefore, the task scheduler can reallocate processing resources to another context as the first task waits for data. When possible, use these synchronization types instead of other synchronization mechanisms, such as those provided by the Windows API, which do not behave cooperatively. For more information about these synchronization types and a code example, see [Synchronization Data Structures](../vs140/synchronization-data-structures.md) and [Comparing Synchronization Data Structures to the Windows API](../vs140/comparing-synchronization-data-structures-to-the-windows-api.md).  
+  
+ [[Top](#top)]  
+  
+##  \<a name="yield">\</a> Avoid Lengthy Tasks That Do Not Yield  
+ Because the task scheduler behaves cooperatively, it does not provide fairness among tasks. Therefore, a task can prevent other tasks from starting. Although this is acceptable in some cases, in other cases this can cause deadlock or starvation.  
+  
+ The following example performs more tasks than the number of allocated processing resources. The first task does not yield to the task scheduler and therefore the second task does not start until the first task finishes.  
+  
+ [!code[concrt-cooperative-tasks#1](../vs140/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_1.cpp)]  
+  
+ This example produces the following output:  
+  
+ 1: 250000000 1: 500000000 1: 750000000 1: 1000000000 2: 250000000 2: 500000000 2: 750000000 2: 1000000000  
+  
+ There are several ways to enable cooperation between the two tasks. One way is to occasionally yield to the task scheduler in a long-running task. The following example modifies the <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> function to call the [concurrency::Context::Yield](../vs140/context--yield-method.md) method to yield execution to the task scheduler so that another task can run.  
+  
+ [!code[concrt-cooperative-tasks#2](../vs140/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_2.cpp)]  
+  
+ This example produces the following output:  
+  
+ **1: 250000000**  
+**2: 250000000**  
+**1: 500000000**  
+**2: 500000000**  
+**1: 750000000**  
+**2: 750000000**  
+**1: 1000000000**  
+**2: 1000000000** The <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> method yields only another active thread on the scheduler to which the current thread belongs, a lightweight task, or another operating system thread. This method does not yield to work that is scheduled to run in a [concurrency::task_group](../vs140/task_group-class.md) or [concurrency::structured_task_group](../vs140/structured_task_group-class.md) object but has not yet started.  
+  
+ There are other ways to enable cooperation among long-running tasks. You can break a large task into smaller subtasks. You can also enable oversubscription during a lengthy task. Oversubscription lets you create more threads than the available number of hardware threads. Oversubscription is especially useful when a lengthy task contains a high amount of latency, for example, reading data from disk or from a network connection. For more information about lightweight tasks and oversubscription, see [Task Scheduler (Concurrency Runtime)](../vs140/task-scheduler--concurrency-runtime-.md).  
+  
+ [[Top](#top)]  
+  
+##  \<a name="oversubscription">\</a> Use Oversubscription to Offset Operations That Block or Have High Latency  
+ The Concurrency Runtime provides synchronization primitives, such as [concurrency::critical_section](../vs140/critical_section-class.md), that enable tasks to cooperatively block and yield to each other. When one task cooperatively blocks or yields, the task scheduler can reallocate processing resources to another context as the first task waits for data.  
+  
+ There are cases in which you cannot use the cooperative blocking mechanism that is provided by the Concurrency Runtime. For example, an external library that you use might use a different synchronization mechanism. Another example is when you perform an operation that could have a high amount of latency, for example, when you use the Windows API <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> function to read data from a network connection. In these cases, oversubscription can enable other tasks to run when another task is idle. Oversubscription lets you create more threads than the available number of hardware threads.  
+  
+ Consider the following function, <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>, which downloads the file at the given URL. This example uses the [concurrency::Context::Oversubscribe](../vs140/context--oversubscribe-method.md) method to temporarily increase the number of active threads.  
+  
+ [!code[concrt-download-oversubscription#4](../vs140/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_3.cpp)]  
+  
+ Because the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> function performs a potentially latent operation, oversubscription can enable other tasks to run as the current task waits for data. For the complete version of this example, see [How to: Use Oversubscription to Offset Latency](../vs140/how-to--use-oversubscription-to-offset-latency.md).  
+  
+ [[Top](#top)]  
+  
+##  \<a name="memory">\</a> Use Concurrent Memory Management Functions When Possible  
+ Use the memory management functions, [concurrency::Alloc](../vs140/alloc-function.md) and [concurrency::Free](../vs140/free-function.md), when you have fine-grained tasks that frequently allocate small objects that have a relatively short lifetime. The Concurrency Runtime holds a separate memory cache for each running thread. The <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> functions allocate and free memory from these caches without the use of locks or memory barriers.  
+  
+ For more information about these memory management functions, see [Task Scheduler (Concurrency Runtime)](../vs140/task-scheduler--concurrency-runtime-.md). For an example that uses these functions, see [How to: Use Alloc and Free to Improve Memory Performance](../vs140/how-to--use-alloc-and-free-to-improve-memory-performance.md).  
+  
+ [[Top](#top)]  
+  
+##  \<a name="raii">\</a> Use RAII to Manage the Lifetime of Concurrency Objects  
+ The Concurrency Runtime uses exception handling to implement features such as cancellation. Therefore, write exception-safe code when you call into the runtime or call another library that calls into the runtime.  
+  
+ The *Resource Acquisition Is Initialization* (RAII) pattern is one way to safely manage the lifetime of a concurrency object under a given scope. Under the RAII pattern, a data structure is allocated on the stack. That data structure initializes or acquires a resource when it is created and destroys or releases that resource when the data structure is destroyed. The RAII pattern guarantees that the destructor is called before the enclosing scope exits. This pattern is useful when a function contains multiple <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> statements. This pattern also helps you write exception-safe code. When a <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> statement causes the stack to unwind, the destructor for the RAII object is called; therefore, the resource is always correctly deleted or released.  
+  
+ The runtime defines several classes that use the RAII pattern, for example, [concurrency::critical_section::scoped_lock](../vs140/critical_section--scoped_lock-class.md) and [concurrency::reader_writer_lock::scoped_lock](../vs140/reader_writer_lock--scoped_lock-class.md). These helper classes are known as *scoped locks*. These classes provide several benefits when you work with [concurrency::critical_section](../vs140/critical_section-class.md) or [concurrency::reader_writer_lock](../vs140/reader_writer_lock-class.md) objects. The constructor of these classes acquires access to the provided <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> object; the destructor releases access to that object. Because a scoped lock releases access to its mutual exclusion object automatically when it is destroyed, you do not manually unlock the underlying object.  
+  
+ Consider the following class, <CodeContentPlaceHolder>11\</CodeContentPlaceHolder>, which is defined by an external library and therefore cannot be modified.  
+  
+ [!code[concrt-account-transactions#1](../vs140/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_4.h)]  
+  
+ The following example performs multiple transactions on an <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> object in parallel. The example uses a <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> object to synchronize access to the <CodeContentPlaceHolder>14\</CodeContentPlaceHolder> object because the <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> class is not concurrency-safe. Each parallel operation uses a <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> object to guarantee that the <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> object is unlocked when the operation either succeeds or fails. When the account balance is negative, the <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> operation fails by throwing an exception.  
+  
+ [!code[concrt-account-transactions#2](../vs140/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_5.cpp)]  
+  
+ This example produces the following sample output:  
+  
+ **Balance before deposit: 1924**  
+**Balance after deposit: 2924**  
+**Balance before withdrawal: 2924**  
+**Balance after withdrawal: -76**  
+**Balance before withdrawal: -76**  
+**Error details:**  
+ **negative balance: -76** For additional examples that use the RAII pattern to manage the lifetime of concurrency objects, see [Walkthrough: Removing Work from a User-Interface Thread](../vs140/walkthrough--removing-work-from-a-user-interface-thread.md), [How to: Use the Context Class to Implement a Cooperative Semaphore](../vs140/how-to--use-the-context-class-to-implement-a-cooperative-semaphore.md), and [How to: Use Oversubscription to Offset Latency](../vs140/how-to--use-oversubscription-to-offset-latency.md).  
+  
+ [[Top](#top)]  
+  
+##  \<a name="global-scope">\</a> Do Not Create Concurrency Objects at Global Scope  
+ When you create a concurrency object at global scope you can cause issues such as deadlock or memory access violations to occur in your application.  
+  
+ For example, when you create a Concurrency Runtime object, the runtime creates a default scheduler for you if one was not yet created. A runtime object that is created during global object construction will accordingly cause the runtime to create this default scheduler. However, this process takes an internal lock, which can interfere with the initialization of other objects that support the Concurrency Runtime infrastructure. This internal lock might be required by another infrastructure object that has not yet been initialized, and can thus cause deadlock to occur in your application.  
+  
+ The following example demonstrates the creation of a global [concurrency::Scheduler](../vs140/scheduler-class.md) object. This pattern applies not only to the <CodeContentPlaceHolder>19\</CodeContentPlaceHolder> class but all other types that are provided by the Concurrency Runtime. We recommend that you do not follow this pattern because it can cause unexpected behavior in your application.  
+  
+ [!code[concrt-global-scheduler#1](../vs140/codesnippet/CPP/general-best-practices-in-the-concurrency-runtime_6.cpp)]  
+  
+ For examples of the correct way to create <CodeContentPlaceHolder>20\</CodeContentPlaceHolder> objects, see [Task Scheduler (Concurrency Runtime)](../vs140/task-scheduler--concurrency-runtime-.md).  
+  
+ [[Top](#top)]  
+  
+##  \<a name="shared-data">\</a> Do Not Use Concurrency Objects in Shared Data Segments  
+ The Concurrency Runtime does not support the use of concurrency objects in a shared data section, for example, a data section that is created by the [data_seg](../vs140/data_seg.md)<CodeContentPlaceHolder>21\</CodeContentPlaceHolder> directive. A concurrency object that is shared across process boundaries could put the runtime in an inconsistent or invalid state.  
+  
+ [[Top](#top)]  
+  
+## See Also  
+ [Concurrency Runtime Best Practices](../vs140/concurrency-runtime-best-practices.md)   
+ [Parallel Patterns Library (PPL)](../vs140/parallel-patterns-library--ppl-.md)   
+ [Asynchronous Agents Library](../vs140/asynchronous-agents-library.md)   
+ [Task Scheduler (Concurrency Runtime)](../vs140/task-scheduler--concurrency-runtime-.md)   
+ [Synchronization Data Structures](../vs140/synchronization-data-structures.md)   
+ [Comparing Synchronization Data Structures to the Windows API](../vs140/comparing-synchronization-data-structures-to-the-windows-api.md)   
+ [How to: Use Alloc and Free to Improve Memory Performance](../vs140/how-to--use-alloc-and-free-to-improve-memory-performance.md)   
+ [How to: Use Oversubscription to Offset Latency](../vs140/how-to--use-oversubscription-to-offset-latency.md)   
+ [How to: Use the Context Class to Implement a Cooperative Semaphore](../vs140/how-to--use-the-context-class-to-implement-a-cooperative-semaphore.md)   
+ [Walkthrough: Removing Work from a User-Interface Thread](../vs140/walkthrough--removing-work-from-a-user-interface-thread.md)   
+ [Best Practices in the Parallel Patterns Library](../vs140/best-practices-in-the-parallel-patterns-library.md)   
+ [Best Practices in the Asynchronous Agents Library](../vs140/best-practices-in-the-asynchronous-agents-library.md)

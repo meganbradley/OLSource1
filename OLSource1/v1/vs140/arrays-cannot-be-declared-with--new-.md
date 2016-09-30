@@ -1,0 +1,41 @@
+---
+title: "Arrays cannot be declared with &#39;New&#39;"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30053"
+  - "bc30053"
+helpviewer_keywords: 
+  - "BC30053"
+ms.assetid: aa55f3b7-2045-497b-9543-5ec6e2b74fe2
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Arrays cannot be declared with &#39;New&#39;
+The <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> keyword can appear only in the initialization part of an array declaration. This means <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> must be on the right side of the equal sign (<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>) so it can create a new array type to be assigned to the array variable.  
+  
+ The shortcut for class initialization is not available for arrays. The following two code lines are both valid and are equivalent because they initialize an object from a class.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ However, array initialization cannot use the same shortcut as class initialization.  
+  
+ Note that the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> clause for an array must contain both parentheses, <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>, and braces, <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>. The parentheses specify that the new type is an array, and the braces supply the initialization values. The compiler requires the braces even if they are empty, that is, even if you are not initializing any of the array values.  
+  
+ **Error ID:** BC30053  
+  
+### To correct this error  
+  
+-   Replace a statement such as <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> with a statement such as <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>.  
+  
+## See Also  
+ [Arrays](../vs140/arrays-in-visual-basic.md)   
+ [How to: Initialize an Array Variable in Visual Basic](../vs140/how-to--initialize-an-array-variable-in-visual-basic.md)

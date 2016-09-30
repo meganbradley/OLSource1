@@ -1,0 +1,40 @@
+---
+title: "set_difference (STL-CLR)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+H1: "set_difference (STL/CLR)"
+f1_keywords: 
+  - "cliext::set_difference"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "set_difference function [STL/CLR]"
+ms.assetid: 47a34d92-53d7-4065-9302-9e2e70e46c4d
+caps.latest.revision: 8
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# set_difference (STL-CLR)
+Unites all of the elements that belong to one sorted source range, but not to a second sorted source range, into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ This function behaves the same as the STL function <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>. For more information, see [set_difference](../vs140/set_difference.md).  
+  
+## Requirements  
+ **Header:** \<cliext/algorithm>  
+  
+ **Namespace:** cliext  
+  
+## See Also  
+ [algorithm (STL/CLR)](../vs140/algorithm--stl-clr-.md)

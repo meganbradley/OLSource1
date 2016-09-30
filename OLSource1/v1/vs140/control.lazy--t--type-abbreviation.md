@@ -1,0 +1,33 @@
+---
+title: "Control.lazy&lt;&#39;T&gt; Type Abbreviation"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-fsharp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+apiname: 
+  - "Control.lazy<'T> Type Abbreviation"
+apilocation: 
+  - "FSharp.Core.dll"
+apitype: "Assembly"
+f1_keywords: 
+  - "Microsoft.FSharp.Control.Lazy`1"
+dev_langs: 
+  - "FSharp"
+helpviewer_keywords: 
+  - "lazy type abbreviation [F#]"
+ms.assetid: 8034b272-272d-43fb-b6e1-b4788fc0c32c
+caps.latest.revision: 21
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Control.lazy&lt;&#39;T&gt; Type Abbreviation
+This type is an abbreviation for <xref:System.Lazy<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>1*>   
+ [Microsoft.FSharp.Control Namespace (F#)](../vs140/microsoft.fsharp.control-namespace--fsharp-.md)   
+ [System.Lazy Class (F#)](../vs140/system.lazy--t--class--fsharp-.md)   
+ [Lazy Computations](../vs140/lazy-computations--fsharp-.md)

@@ -1,0 +1,59 @@
+---
+title: "fp_contract"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vc-pragma.fp_contract"
+  - "fp_contract_CPP"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "pragmas, fp_contract"
+  - "fp_contract pragma"
+ms.assetid: 15b97338-6680-4287-ba2a-2dccc5b2ccf5
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# fp_contract
+Determines whether floating-point contraction will take place.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ By default, <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> is ON.  
+  
+ For more information on floating-point behavior, see [/fp (Specify Floating-Point Behavior)](../vs140/-fp--specify-floating-point-behavior-.md).  
+  
+ Other floating-point pragmas include:  
+  
+-   [fenv_access](../vs140/fenv_access.md)  
+  
+-   [float_control](../vs140/float_control.md)  
+  
+## Example  
+ The code generated from this sample does not use the Fused Multiply Add (**fma**) instruction on Itanium processors. If you comment out <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>, the generated code will use the **fma** instruction.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ **out=0.000000000000000e+000**  
+**out=6.152500152587891e+001**  
+**out=2.351000061035156e+002**  
+**out=5.207249755859375e+002**  
+**out=9.184000244140625e+002**  
+**out=1.428125000000000e+003**  
+**out=2.049899902343750e+003**  
+**out=2.783724853515625e+003**  
+**out=3.629600097656250e+003**  
+**out=4.587524902343750e+003**   
+## See Also  
+ [Pragma Directives and the __Pragma Keyword](../vs140/pragma-directives-and-the-__pragma-keyword.md)

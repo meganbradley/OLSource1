@@ -1,0 +1,33 @@
+---
+title: "Compiler Error C2387"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2387"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2387"
+ms.assetid: 6847b8e1-ffac-458d-ab88-0c92f72f2527
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C2387
+'type' : ambiguous base class  
+  
+ The compiler could not unambiguously resolve a function call because the function exists in more than one base class.  
+  
+ To resolve this error, either remove one of the base classes from the inheritance, or explicitly qualify the function call.  
+  
+ The following sample generates C2387:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

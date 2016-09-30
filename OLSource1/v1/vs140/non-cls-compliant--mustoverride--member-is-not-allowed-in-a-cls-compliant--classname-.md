@@ -1,0 +1,46 @@
+---
+title: "Non-CLS-compliant &#39;MustOverride&#39; member is not allowed in a CLS-compliant &lt;classname&gt;"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "bc40034"
+  - "vbc40034"
+helpviewer_keywords: 
+  - "BC40034"
+ms.assetid: 4eb36b3a-1bbe-4e99-9ecb-a12b8729b128
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Non-CLS-compliant &#39;MustOverride&#39; member is not allowed in a CLS-compliant &lt;classname&gt;
+A class is marked as <CodeContentPlaceHolder>0\</CodeContentPlaceHolder>, but it contains a <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> property or procedure that is marked as <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> or is not marked.  
+  
+ When a class is compliant with the [Common Language Specification](assetId:///4f0b77d0-4844-464f-af73-6e06bedeafc6) (CLS), an application that uses that class accesses only the members that are also marked as <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> and ignores the members that are not. However, the application cannot ignore a <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> property or procedure, because it must access that property or procedure to override it.  
+  
+ When you apply the \<xref:System.CLSCompliantAttribute*> to a programming element, you set the attribute's <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> parameter to either <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> to indicate compliance or noncompliance. There is no default for this parameter, and you must supply a value.  
+  
+ If you do not apply the \<xref:System.CLSCompliantAttribute*> to an element, it is considered to be noncompliant.  
+  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](../vs140/configuring-warnings-in-visual-basic.md).  
+  
+ **Error ID:** BC40034  
+  
+### To correct this error  
+  
+-   If you require CLS compliance and have control over the class source code, mark the member as <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>.  
+  
+-   If you require CLS compliance and do not have control over the class source code, or if it does not qualify to be compliant, define this member within a different class.  
+  
+-   If you require that this member remain noncompliant, remove the <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> keyword from its definition, remove the \<xref:System.CLSCompliantAttribute*> from the class definition, or mark the class as <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>.  
+  
+## See Also  
+ [MustOverride](../vs140/mustoverride--visual-basic-.md)   
+ [\<PAVE OVER> Writing CLS-Compliant Code](assetId:///4c705105-69a2-4e5e-b24e-0633bc32c7f3)

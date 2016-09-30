@@ -1,0 +1,60 @@
+---
+title: "Core.FuncConvert Class (F#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-fsharp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+apiname: 
+  - "Core.FuncConvert"
+apilocation: 
+  - "FSharp.Core.dll"
+apitype: "Assembly"
+f1_keywords: 
+  - "Microsoft.FSharp.Core.FuncConvert"
+dev_langs: 
+  - "FSharp"
+helpviewer_keywords: 
+  - "FuncConvert class [F#]"
+ms.assetid: 6891aadd-43e8-43a2-a362-c0c81e73aacf
+caps.latest.revision: 24
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Core.FuncConvert Class (F#)
+Helper functions for converting F# first class function values to and from .NET Framework representations of functions using delegates.  
+  
+ **Namespace/Module Path:** Microsoft.FSharp.Core  
+  
+ **Assembly:** FSharp.Core (in FSharp.Core.dll)  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+  
+## Static Members  
+  
+|Member|Description|  
+|------------|-----------------|  
+|[FuncFromTupled](../vs140/funcconvert.funcfromtupled--t1--t2--t3--t4--t5--u--method--fsharp-.md)|A utility function to convert function values from tupled to curried form.|  
+|[FuncFromTupled](../vs140/funcconvert.funcfromtupled--t1--t2--t3--t4--u--method--fsharp-.md)|A utility function to convert function values from tupled to curried form.|  
+|[FuncFromTupled](../vs140/funcconvert.funcfromtupled--t1--t2--t3--u--method--fsharp-.md)|A utility function to convert function values from tupled to curried form.|  
+|[FuncFromTupled](../vs140/funcconvert.funcfromtupled--t1--t2--u--method--fsharp-.md)|A utility function to convert function values from tupled to curried form.|  
+|[ToFSharpFunc](../vs140/funcconvert.tofsharpfunc--t--u--method--fsharp-.md)|Convert the given <xref:System.Converter<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>1*> delegate object to an F# function value.|  
+  
+## Platforms  
+ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2  
+  
+## Version Information  
+ **F# Core Library Versions**  
+  
+ Supported in: 2.0, 4.0, Portable  
+  
+## See Also  
+ [Microsoft.FSharp.Core Namespace (F#)](../vs140/microsoft.fsharp.core-namespace--fsharp-.md)

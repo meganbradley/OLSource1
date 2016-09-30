@@ -1,0 +1,43 @@
+---
+title: "IDiaStackWalkHelper::get_registerValue"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaStackWalkHelper2::get_registerValue method"
+ms.assetid: 46ac5eee-73a3-44a1-8635-6c58ba193cb6
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaStackWalkHelper::get_registerValue
+Retrieves the value of a register.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ [in] A value from the [CV_HREG_e Enumeration](../vs140/cv_hreg_e.md) enumeration specifying which register to get the value from.  
+  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ [out] Returns the current value of the register.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>; otherwise, returns an error code.  
+  
+## Remarks  
+ Despite the size of the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> parameter, an implementation should store only what the register normally holds. For example, an 8-bit register holds only the lowest 8-bits of the given value. This 8-bit value is expanded to 64-bits when returned from this method.  
+  
+## See Also  
+ [IDiaStackWalkHelper](../vs140/idiastackwalkhelper.md)   
+ [CV_HREG_e Enumeration](../vs140/cv_hreg_e.md)

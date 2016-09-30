@@ -1,0 +1,36 @@
+---
+title: "Compiler Warning (level 1) CS3027"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS3027"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS3027"
+ms.assetid: c515e623-3f5a-49fa-a878-f1d8e90fdc24
+caps.latest.revision: 7
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 1) CS3027
+'type_1' is not CLS-compliant because base interface 'type_2' is not CLS-compliant  
+  
+ A non-CLS compliant type cannot be a base type for a type that is CLS compliant.  
+  
+## Example  
+ The following sample contains an interface with a method that uses a non-CLS compliant type in its signature, making the type non-CLS compliant.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Example  
+ The following sample generates CS3027.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>

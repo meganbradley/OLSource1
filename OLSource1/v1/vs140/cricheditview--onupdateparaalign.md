@@ -1,0 +1,61 @@
+---
+title: "CRichEditView::OnUpdateParaAlign"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CRichEditView::OnUpdateParaAlign"
+  - "CRichEditView.OnUpdateParaAlign"
+  - "OnUpdateParaAlign"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CRichEditView class, operations"
+  - "OnUpdateParaAlign method"
+  - "PFA_LEFT"
+  - "PFA_CENTER"
+  - "PFA_RIGHT"
+ms.assetid: 9e7d4ded-7790-44a7-85ef-9402636de145
+caps.latest.revision: 16
+robots: noindex,nofollow
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CRichEditView::OnUpdateParaAlign
+The framework calls this function to update the command UI for paragraph effect commands.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ Pointer to a [CCmdUI](../vs140/ccmdui-class.md) object.  
+  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ The paragraph alignment to check. One of the following values:  
+  
+-   <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> Align the paragraphs with the left margin.  
+  
+-   <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> Align the paragraphs with the right margin.  
+  
+-   <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> Center the paragraphs between the margins.  
+  
+## Example  
+ [!code[NVC_MFCDocView#159](../vs140/codesnippet/CPP/cricheditview--onupdateparaalign_1.cpp)]  
+  
+## Requirements  
+ **Header:** afxrich.h  
+  
+## See Also  
+ [CRichEditView Class](../vs140/cricheditview-class.md)   
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [CRichEditView::GetParaFormatSelection](../vs140/cricheditview--getparaformatselection.md)   
+ [CRichEditView::OnParaAlign](../vs140/cricheditview--onparaalign.md)   
+ [CRichEditView::SetParaFormat](../vs140/cricheditview--setparaformat.md)

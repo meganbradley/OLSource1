@@ -1,0 +1,33 @@
+---
+title: "Compiler Error C3651"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C3651"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C3651"
+ms.assetid: a03e692e-c219-4654-9827-8415cfa5a22d
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C3651
+'member' : cannot be used as an explicit override, must be a member of a base class  
+  
+ An explicit override was specified, but the function being overridden was in a type that is not a base type.  
+  
+ For more information, see [Explicit Overrides](../vs140/explicit-overrides---c---component-extensions-.md).  
+  
+ The following sample generates C3651:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

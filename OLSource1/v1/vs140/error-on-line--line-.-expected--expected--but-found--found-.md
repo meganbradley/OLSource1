@@ -1,0 +1,32 @@
+---
+title: "Error on line &lt;line&gt;. Expected &#39;expected&#39; but found &#39;found&#39;"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vs.tasklisterror.projfile_lineerr"
+ms.assetid: d78934c9-6d57-42b2-9968-2b0aa4bf05e2
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Error on line &lt;line&gt;. Expected &#39;expected&#39; but found &#39;found&#39;
+This is a general XML parsing error when reading the project file. This error can occur for project files (.vbproj/.csproj) as well as per-user settings files (.vbproj.user/.csproj.user). More information will be provided by the project system in the parameters <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>.  
+  
+ This error is most likely caused by editing the project (or user) file by hand.  
+  
+ **To correct this error**  
+  
+-   Edit the project file again and restore it to a satisfactory condition.  
+  
+     Depending on the severity of the error, you may not be able to open the project.  
+  
+## See Also  
+ [NIB: Project Properties (Visual Studio)](assetId:///eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

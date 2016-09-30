@@ -1,0 +1,45 @@
+---
+title: "marker_importance Enumeration"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "cvmarkersobj/Concurrency::diagnostic::marker_importance"
+helpviewer_keywords: 
+  - "Concurrency::diagnostic::marker_importance enumeration"
+ms.assetid: d5524ea0-0227-4d8e-9122-332291042df5
+caps.latest.revision: 7
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# marker_importance Enumeration
+Represents the importance level of a Concurrency Visualizer marker.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Values  
+  
+|Name|Description|  
+|----------|-----------------|  
+|<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>|Specifies that the marker has critical importance.|  
+|<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>|Specifies that the marker has high importance.|  
+|<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>|Specifies that the marker has low importance.|  
+|<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>|Specifies that the marker has normal importance.|  
+  
+## Requirements  
+ **Header:** cvmarkersobj.h  
+  
+ **Namespace:** Concurrency::diagnostic  
+  
+## See Also  
+ [diagnostic Namespace](../vs140/diagnostic-namespace.md)

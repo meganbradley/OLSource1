@@ -1,0 +1,36 @@
+---
+title: "Compiler Error CS0843"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "CS0843"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0843"
+ms.assetid: 5d9e01f5-9581-46e4-8d1b-9c3ffc438570
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS0843
+Backing field for automatically implemented property 'name' must be fully assigned before control is returned to the caller. Consider calling the default constructor from a constructor initializer.  
+  
+ To assign a value to an automatically-implemented property from a constructor, you must first invoke the default constructor to create the object.  
+  
+### To correct this error  
+  
+1.  Add a call to the default constructor in a constructor initializer as shown in the following example. Note the use of <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>. For more information, see [this (C# Reference)](../vs140/this--csharp-reference-.md).  
+  
+## Example  
+ The following code generates CS0843:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

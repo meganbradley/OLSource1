@@ -1,0 +1,54 @@
+---
+title: "COleClientItem::CanCreateFromData"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "COleClientItem.CanCreateFromData"
+  - "CanCreateFromData"
+  - "COleClientItem::CanCreateFromData"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "COleClientItem class, creation"
+  - "CanCreateFromData method"
+ms.assetid: ab846d9b-2fd6-4b21-9589-bee422d55887
+caps.latest.revision: 14
+robots: noindex,nofollow
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# COleClientItem::CanCreateFromData
+Checks whether a container application can create an embedded object from the given <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> object.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ Pointer to the [COleDataObject](../vs140/coledataobject-class.md) object from which the OLE item is to be created.  
+  
+## Return Value  
+ Nonzero if the container can create an embedded object from the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> object; otherwise 0.  
+  
+## Remarks  
+ The <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> class is used in data transfers for retrieving data in various formats from the Clipboard, through drag and drop, or from an embedded OLE item.  
+  
+ Containers can use this function to decide to enable or disable their Edit Paste and Edit Paste Special commands.  
+  
+ For more information, see the article [Data Objects and Data Sources (OLE)](../vs140/data-objects-and-data-sources--ole-.md).  
+  
+## Requirements  
+ **Header:** afxole.h  
+  
+## See Also  
+ [COleClientItem Class](../vs140/coleclientitem-class.md)   
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)   
+ [COleDataObject Class](../vs140/coledataobject-class.md)

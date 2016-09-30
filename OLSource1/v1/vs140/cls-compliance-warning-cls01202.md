@@ -1,0 +1,33 @@
+---
+title: "CLS Compliance Warning CLS01202"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CLS01202"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CLS01202"
+ms.assetid: ab75e9c4-9d87-4bb4-ad8f-3e6ab5559de7
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CLS Compliance Warning CLS01202
+The visibility and accessibility of types and members shall be such that types in the signature of any member shall be visible and accessible whenever the member itself is visible and accessible. For example, a public event that is visible outside its assembly shall not have an argument whose type is visible only within the assembly.  
+  
+ The type of an event handler must have an accessibility that is greater than or equal to the accessibility of the event handler.  
+  
+ For more information CLS compliance checking, see [CLS Compliant Assemblies](assetId:///3320b57e-ea55-4697-a17d-f509a36a3c93).  
+  
+ The following sample generates CLS01202:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

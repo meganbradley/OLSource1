@@ -1,0 +1,40 @@
+---
+title: "swap_ranges (STL-CLR)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+H1: "swap_ranges (STL/CLR)"
+f1_keywords: 
+  - "cliext::swap_ranges"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "swap_ranges function [STL/CLR]"
+ms.assetid: 3fb39a84-b088-48f1-8bb7-2bbe68b048a9
+caps.latest.revision: 8
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# swap_ranges (STL-CLR)
+Exchanges the elements of one range with the elements of another, equal sized range.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ This function behaves the same as the STL function <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>. For more information, see [swap_ranges](../vs140/swap_ranges.md).  
+  
+## Requirements  
+ **Header:** \<cliext/algorithm>  
+  
+ **Namespace:** cliext  
+  
+## See Also  
+ [algorithm (STL/CLR)](../vs140/algorithm--stl-clr-.md)

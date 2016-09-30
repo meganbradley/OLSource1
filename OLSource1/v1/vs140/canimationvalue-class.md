@@ -1,0 +1,197 @@
+---
+title: "CAnimationValue Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "afxanimationcontroller/CAnimationValue"
+  - "CAnimationValue"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CAnimationValue class"
+ms.assetid: 78c5ae19-ede5-4f20-bfbe-68b467b603c2
+caps.latest.revision: 17
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CAnimationValue Class
+Implements the functionality of animation object that has one value.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CAnimationValue::CAnimationValue](#canimationvalue__canimationvalue)|Overloaded. Constructs a CAnimationValue object.|  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CAnimationValue::AddTransition](#canimationvalue__addtransition)|Adds a transition to be applied to a value.|  
+|[CAnimationValue::GetValue](#canimationvalue__getvalue)|Overloaded. Retrieves the current value.|  
+|[CAnimationValue::GetVariable](#canimationvalue__getvariable)|Provides access to encapsulated animation variable.|  
+|[CAnimationValue::SetDefaultValue](#canimationvalue__setdefaultvalue)|Sets default value.|  
+  
+### Protected Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CAnimationValue::GetAnimationVariableList](#canimationvalue__getanimationvariablelist)|Puts the encapsulated animation variable into a list. (Overrides [CAnimationBaseObject::GetAnimationVariableList](../vs140/canimationbaseobject-class.md#canimationbaseobject__getanimationvariablelist).)|  
+  
+### Public Operators  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CAnimationValue::operator DOUBLE](#canimationvalue__operator_double)|Provides conversion between CAnimationValue and DOUBLE.|  
+|[CAnimationValue::operator INT32](#canimationvalue__operator_int32)|Provides conversion between CAnimationValue and INT32.|  
+|[CAnimationValue::operator=](#canimationvalue__operator_eq)|Overloaded. Assigns an INT32 value to CAnimationValue.|  
+  
+### Protected Data Members  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CAnimationValue::m_value](#canimationvalue__m_value)|The encapsulated animation variable that represents animation value.|  
+  
+## Remarks  
+ The CAnimationValue class encapsulates a single CAnimationVariable object and can represent in applications a single animated value. For example, you can use this class for animated transparency (fade effect), angle (to rotate objects), or for any other case when you need to create an animation depending on a single animated value. To use this class in application, just instantiate an object of this class, add it to animation controller using CAnimationController::AddAnimationObject and call AddTransition for each transition to be applied to the value.  
+  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ [CAnimationBaseObject](../vs140/canimationbaseobject-class.md)  
+  
+ [CAnimationValue](../vs140/canimationvalue-class.md)  
+  
+## Requirements  
+ **Header:** afxanimationcontroller.h  
+  
+##  \<a name="canimationvalue__addtransition">\</a>  CAnimationValue::AddTransition  
+ Adds a transition to be applied to a value.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>11\</CodeContentPlaceHolder>  
+ A pointer to transition object.  
+  
+### Remarks  
+ Call this function to add a transition to internal list of transitions to be applied to an animation variable. When you add transitions, they are not applied immediately and stored in an internal list. Transitions are applied (added to a storyboard for a particular value) when you call CAnimationController::AnimateGroup.  
+  
+##  \<a name="canimationvalue__canimationvalue">\</a>  CAnimationValue::CAnimationValue  
+ Constructs a CAnimationValue object.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>12\</CodeContentPlaceHolder>  
+ Specifies default value.  
+  
+ <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>  
+ Specifies Group ID.  
+  
+ <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>  
+ Specifies Object ID.  
+  
+ <CodeContentPlaceHolder>15\</CodeContentPlaceHolder>  
+ specifies user-defined data.  
+  
+### Remarks  
+ Constructs CAnimationValue object with default properties: default value, Group ID and Object ID are set to 0.  
+  
+##  \<a name="canimationvalue__getanimationvariablelist">\</a>  CAnimationValue::GetAnimationVariableList  
+ Puts the encapsulated animation variable into a list.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>16\</CodeContentPlaceHolder>  
+ When the function returns, it contains a pointer to CAnimationVariable representing the animated value.  
+  
+##  \<a name="canimationvalue__getvalue">\</a>  CAnimationValue::GetValue  
+ Retrieves the current value.  
+  
+<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>17\</CodeContentPlaceHolder>  
+ Output. When the function returns it contains a current value of animation variable.  
+  
+ <CodeContentPlaceHolder>18\</CodeContentPlaceHolder>  
+ Output. When the function returns it contains a current value of animation variable.  
+  
+### Return Value  
+ TRUE if the current value was retrieved successfully; otherwise FALSE.  
+  
+### Remarks  
+ Call this function to retrieve the current value. This implementation calls the encapsulated COM object, and if the call fails, this method returns the default value that was previously set in constructor or with SetDefaultValue.  
+  
+##  \<a name="canimationvalue__getvariable">\</a>  CAnimationValue::GetVariable  
+ Provides access to encapsulated animation variable.  
+  
+<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+### Return Value  
+ A reference to encapsulated animation variable.  
+  
+### Remarks  
+ Use this method to access the encapsulated animation variable. From CAnimationVariable you get access to underlying IUIAnimationVariable object, whose pointer can be NULL if animation variable has not been created.  
+  
+##  \<a name="canimationvalue__m_value">\</a>  CAnimationValue::m_value  
+ The encapsulated animation variable that represents animation value.  
+  
+<CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+##  \<a name="canimationvalue__operator_double">\</a>  CAnimationValue::operator DOUBLE  
+ Provides conversion between CAnimationValue and DOUBLE.  
+  
+<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+### Return Value  
+ Current value of Animation Value.  
+  
+### Remarks  
+ Provides conversion between CAnimationValue and DOUBLE. This method internally calls GetValue and doesn't check for errors. If GetValue fails, the returned value will contain a default value previously set in constructor or with SetDefaultValue.  
+  
+##  \<a name="canimationvalue__operator_int32">\</a>  CAnimationValue::operator INT32  
+ Provides conversion between CAnimationValue and INT32.  
+  
+<CodeContentPlaceHolder>8\</CodeContentPlaceHolder>  
+### Return Value  
+ Current value of Animation Value as integer.  
+  
+### Remarks  
+ Provides conversion between CAnimationValue and INT32. This method internally calls GetValue and doesn't check for errors. If GetValue fails, the returned value will contain a default value previously set in constructor or with SetDefaultValue.  
+  
+##  \<a name="canimationvalue__operator_eq">\</a>  CAnimationValue::operator=  
+ Assigns a DOUBLE value to CAnimationValue.  
+  
+<CodeContentPlaceHolder>9\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>19\</CodeContentPlaceHolder>  
+ Specifies the value to be assigned to Animation Value.  
+  
+ <CodeContentPlaceHolder>20\</CodeContentPlaceHolder>  
+ Specifies the value to be assigned to Animation Value.  
+  
+### Remarks  
+ Assigns a DOUBLE value to CAnimationValue. This value is set as a default value for encapsulated animation variable. If you subscribed this animation object to events (ValueChanged or IntegerValueChanged), you need to re-enable these events.  
+  
+##  \<a name="canimationvalue__setdefaultvalue">\</a>  CAnimationValue::SetDefaultValue  
+ Sets default value.  
+  
+<CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>21\</CodeContentPlaceHolder>  
+ Specifies the default value.  
+  
+### Remarks  
+ Use this method to set a default value. A default value is returned to application when animation has not been started and/or underlying COM object has not been created. If the underlying COM object encapsulated in CAnimationVarible was already created, this method recreates it, therefore you might need to call EnableValueChanged/EnableIntegerValueChanged methods again.  
+  
+## See Also  
+ [MFC Classes](../vs140/mfc-classes.md)

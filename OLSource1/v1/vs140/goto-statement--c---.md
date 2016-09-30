@@ -1,0 +1,58 @@
+---
+title: "goto Statement (C++)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "language-reference"
+f1_keywords: 
+  - "goto_cpp"
+  - "goto"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "goto keyword [C++]"
+ms.assetid: 724c5deb-2de1-42d8-8ef1-23589d9bf5ed
+caps.latest.revision: 15
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# goto Statement (C++)
+The <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> statement unconditionally transfers control to the statement labeled by the specified identifier.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ The labeled statement designated by <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> must be in the current function. All <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> names are members of an internal namespace and therefore do not interfere with other identifiers.  
+  
+ A statement label is meaningful only to a <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> statement; otherwise, statement labels are ignored. Labels cannot be redeclared.  
+  
+ It is good programming style to use the <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>, and <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> statements instead of the <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> statement whenever possible. However, because the <CodeContentPlaceHolder>10\</CodeContentPlaceHolder> statement exits from only one level of a loop, you might have to use a <CodeContentPlaceHolder>11\</CodeContentPlaceHolder> statement to exit a deeply nested loop.  
+  
+ For more information about labels and the <CodeContentPlaceHolder>12\</CodeContentPlaceHolder> statement, see [Labeled Statements](../vs140/labeled-statements.md) and [Using Labels with the goto Statement](assetId:///6cd7c31a-9822-4241-8566-f79f51be48fe).  
+  
+## Example  
+ In this example, a <CodeContentPlaceHolder>13\</CodeContentPlaceHolder> statement transfers control to the point labeled <CodeContentPlaceHolder>14\</CodeContentPlaceHolder> when <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> equals 3.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ **Outer loop executing. i = 0**  
+ **Inner loop executing. j = 0**  
+ **Inner loop executing. j = 1**  
+**Outer loop executing. i = 1**  
+ **Inner loop executing. j = 0**  
+ **Inner loop executing. j = 1**  
+**Outer loop executing. i = 2**  
+ **Inner loop executing. j = 0**  
+ **Inner loop executing. j = 1**  
+**Outer loop executing. i = 3**  
+ **Inner loop executing. j = 0**  
+**Jumped to stop. i = 3**   
+## See Also  
+ [Jump Statements](../vs140/jump-statements--c---.md)   
+ [Keywords](../vs140/keywords--c---.md)

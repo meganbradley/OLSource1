@@ -1,0 +1,44 @@
+---
+title: "CMFCVisualManagerOffice2003::SetStatusBarOfficeXPLook"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "SetStatusBarOfficeXPLook"
+  - "CMFCVisualManagerOffice2003.SetStatusBarOfficeXPLook"
+  - "CMFCVisualManagerOffice2003::SetStatusBarOfficeXPLook"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "SetStatusBarOfficeXPLook method"
+ms.assetid: 85b856aa-a6a6-4738-a657-2e31d4659c09
+caps.latest.revision: 13
+robots: noindex,nofollow
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CMFCVisualManagerOffice2003::SetStatusBarOfficeXPLook
+Specifies that the Windows XP global theme should be used.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ [in] <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> if the Windows XP global theme should be used (the default), or <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> if not.  
+  
+## Remarks  
+  
+## Requirements  
+ **Header:** afxvisualmanageroffice2003.h  
+  
+## See Also  
+ [CMFCVisualManagerOffice2003 Class](../vs140/cmfcvisualmanageroffice2003-class.md)   
+ [Hierarchy Chart (MFC Feature Pack)](../vs140/hierarchy-chart.md)

@@ -1,0 +1,137 @@
+---
+title: "delegate  (C++ Component Extensions)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "language-reference"
+H1: "delegate  (C++ Component Extensions)"
+f1_keywords: 
+  - "delegate_cpp"
+  - "delegate"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "delegate keyword [C++]"
+ms.assetid: 03caf23d-7873-4a23-9b34-becf42aaf429
+caps.latest.revision: 28
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# delegate  (C++ Component Extensions)
+Declares a type that represents a function pointer.  
+  
+## All Runtimes  
+ Both the [!INCLUDE[wrt](../vs140/includes/wrt_md.md)] and common language runtime support delegates.  
+  
+### Remarks  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> is a context-sensitive keyword. For more information, see [Context-Sensitive Keywords](../vs140/context-sensitive-keywords---c---component-extensions-.md).  
+  
+ To detect at compile time if a type is a delegate, use the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> type trait. For more information, see [Compiler Support for Type Traits](../vs140/compiler-support-for-type-traits--c---component-extensions-.md).  
+  
+## Windows Runtime  
+ C++/CX supports delegates with the following syntax.  
+  
+### Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+### Parameters  
+ *access*  
+ (optional) The accessibility of the delegate, which can be <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> (the default) or <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>. The function prototype can also be qualified with the <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> keywords.  
+  
+ *return-type*  
+ The return type of the function prototype.  
+  
+ *delegate-type-identifier*  
+ The name of the declared delegate type.  
+  
+ *parameters*  
+ (Optional) The types and identifiers of the function prototype.  
+  
+### Remarks  
+ Use the *delegate-type-identifier* to declare an event with the same prototype as the delegate. For more information, see [Delegates (C++/CX)](assetId:///3175bf1c-86d8-4eda-8d8f-c5b6753d8e38).  
+  
+### Requirements  
+ Compiler option: **/ZW**  
+  
+## Common Language Runtime  
+ The common language runtime supports delegates with the following syntax.  
+  
+### Syntax  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Parameters  
+ *access*  
+ (optional) The accessibility of the delegate outside of the assembly can be public or private.  The default is private.  Inside a class, a delegate can have any accessibility.  
+  
+ *function_declaration*  
+ The signature of the function that can be bound to the delegate. The return type of a delegate can be any managed type. For interoperability reasons, it is recommended that the return type of a delegate be a CLS type.  
+  
+ To define an unbound delegate, the first parameter in *function_declaration* should be the type of the <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> pointer for the object. For more information, see [Unbound Delegates](../vs140/unbound-delegates.md).  
+  
+### Remarks  
+ Delegates are multicast: the "function pointer" can be bound to one or more methods within a managed class. The **delegate** keyword defines a multicast delegate type with a specific method signature.  
+  
+ A delegate can also be bound to a method of a value class, such as a static method.  
+  
+ A delegate has the following characteristics:  
+  
+-   It inherits from **System::MulticastDelegate**.  
+  
+-   It has a constructor that takes two arguments: a pointer to a managed class or **NULL** (in the case of binding to a static method) and a fully qualified method of the specified type.  
+  
+-   It has a method called <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>, whose signature matches the declared signature of the delegate.  
+  
+ When a delegate is invoked, its function(s) are called in the order they were attached.  
+  
+ The return value of a delegate is the return value from its last attached member function.  
+  
+ Delegates cannot be overloaded.  
+  
+ Delegates can be bound or unbound.  
+  
+ When you instantiate a bound delegate, the first argument shall be an object reference.  The second argument of a delegate instantiation shall either be the address of a method of a managed class object, or a pointer to a method of a value type.   The second argument of a delegate instantiation must name the method with the full class scope syntax and apply the address-of operator.  
+  
+ When you instantiate an unbound delegate, the first argument shall either be the address of a method of a managed class object, or a pointer to a method of a value type.   The argument must name the method with the full class scope syntax and apply the address-of operator.  
+  
+ When creating a delegate to a static or global function, only one parameter is required: the function (optionally, the address of the function).  
+  
+ For more information on delegates, see  
+  
+-   [Unbound Delegates](../vs140/unbound-delegates.md)  
+  
+-   [How to: Define and Use Delegates](../vs140/how-to--define-and-use-delegates--c---cli-.md)  
+  
+-   [Delegate to a Member of a Value Class](../vs140/how-to--associate-delegates-to-members-of-a-value-class.md)  
+  
+-   [Delegate to an Unmanaged Function](../vs140/how-to--associate-delegates-to-unmanaged-functions.md)  
+  
+-   [Composed Delegates](../vs140/how-to--compose-delegates.md)  
+  
+-   [How to: Pass a Delegate^ to a Native Function Expecting a Function Pointer](../vs140/how-to--pass-a-delegate^-to-a-native-function-expecting-a-function-pointer.md)  
+  
+-   [Generic Delegates (C++)](../vs140/generic-delegates--visual-c---.md)  
+  
+### Requirements  
+ Compiler option: **/clr**  
+  
+### Examples  
+ **Example**  
+  
+ The following example shows how to declare, initialize, and invoke delegates.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ **Output**  
+  
+ **in func1 8**   
+ **in func1 9**   
+ **in func2 9**   
+ **in func2 10**   
+ **in static func3 11**   
+## See Also  
+ [Component Extensions for Runtime Platforms](../vs140/component-extensions-for-runtime-platforms.md)

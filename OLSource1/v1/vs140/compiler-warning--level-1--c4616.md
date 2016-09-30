@@ -1,0 +1,31 @@
+---
+title: "Compiler Warning (level 1) C4616"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C4616"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C4616"
+ms.assetid: 71e15265-c5bc-42ce-a6a9-4879892472b1
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 1) C4616
+\#pragma warning : warning number 'number' not a valid compiler warning  
+  
+ The warning number specified in the [warning](../vs140/warning.md) pragma cannot be reassigned. The pragma was ignored.  
+  
+ The following sample generates C4616:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

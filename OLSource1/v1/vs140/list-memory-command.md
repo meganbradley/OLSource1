@@ -1,0 +1,76 @@
+---
+title: "List Memory Command"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "debug.listmemory"
+helpviewer_keywords: 
+  - "Debug.ListMemory command"
+  - "ListMemory command"
+  - "list memory command"
+ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
+caps.latest.revision: 15
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# List Memory Command
+Displays the contents of the specified range of memory.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Arguments  
+ <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+ Optional. The memory address from which to begin displaying memory.  
+  
+## Switches  
+ /ANSI&#124;Unicode  
+ Optional. Display the memory as characters corresponding to the bytes of memory, either ANSI or Unicode.  
+  
+ /Count:<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+ Optional. Determines how many bytes of memory to display, starting at <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>.  
+  
+ /Format:<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+ Optional. Format type for viewing memory information in the **Memory** window; may be OneByte, TwoBytes, FourBytes, EightBytes, Float (32-bit), or Double (64-bit). If OneByte is used, <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> is unavailable.  
+  
+ /Hex&#124;Signed&#124;Unsigned  
+ Optional. Specifies the format for viewing numbers: as signed, unsigned, or hexadecimal.  
+  
+## Remarks  
+ Instead of writing out a complete **Debug.ListMemory** command with all switches, you can invoke the command using predefined aliases with certain switches preset to specified values. For example, instead of entering:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ you can write:  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ Here is a list of the available aliases for the **Debug.ListMemory** command:  
+  
+|Alias|Command and Switches|  
+|-----------|--------------------------|  
+|**d**|Debug.ListMemory|  
+|**da**|Debug.ListMemory /Ansi|  
+|**db**|Debug.ListMemory /Format:OneByte|  
+|**dc**|Debug.ListMemory /Format:FourBytes /Ansi|  
+|**dd**|Debug.ListMemory /Format:FourBytes|  
+|**df**|Debug.ListMemory /Format:Float|  
+|**dq**|Debug.ListMemory /Format:EightBytes|  
+|**du**|Debug.ListMemory /Unicode|  
+  
+## Example  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+## See Also  
+ [List Call Stack Command](../vs140/list-call-stack-command.md)   
+ [List Threads Command](../vs140/list-threads-command.md)   
+ [Visual Studio Commands](../vs140/visual-studio-commands.md)   
+ [Command Window](../vs140/command-window.md)   
+ [Find/Command Box](../vs140/find-command-box.md)   
+ [Visual Studio Command Aliases](../vs140/visual-studio-command-aliases.md)

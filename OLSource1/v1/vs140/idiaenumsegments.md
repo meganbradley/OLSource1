@@ -1,0 +1,60 @@
+---
+title: "IDiaEnumSegments"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaEnumSegments interface"
+ms.assetid: 0c9edd5e-b9ce-43e1-a791-cd4c5d16d923
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaEnumSegments
+Enumerates the various segments contained in the data source.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Methods in Vtable Order  
+ The following table shows the methods of <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>.  
+  
+|Method|Description|  
+|------------|-----------------|  
+|[IDiaEnumSegments::get__NewEnum](../vs140/idiaenumsegments--get__newenum.md)|Retrieves the [IEnumVARIANT Interface](assetId:///139e3c93-faef-4003-9079-e0e94494db3e) version of this enumerator.|  
+|[IDiaEnumSegments::get_Count](../vs140/idiaenumsegments--get_count.md)|Retrieves the number of segments.|  
+|[IDiaEnumSegments::Item](../vs140/idiaenumsegments--item.md)|Retrieves a segment by means of an index.|  
+|[IDiaEnumSegments::Next](../vs140/idiaenumsegments--next.md)|Retrieves a specified number of segments in the enumeration sequence.|  
+|[IDiaEnumSegments::Skip](../vs140/idiaenumsegments--skip.md)|Skips a specified number of segments in an enumeration sequence.|  
+|[IDiaEnumSegments::Reset](../vs140/idiaenumsegments--reset.md)|Resets an enumeration sequence to the beginning.|  
+|[IDiaEnumSegments::Clone](../vs140/idiaenumsegments--clone.md)|Creates an enumerator that contains the same enumeration state as the current enumerator.|  
+  
+## Remarks  
+  
+## Notes for Callers  
+ Obtain this interface by calling the <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> method on an [IDiaTable](../vs140/idiatable.md) object. See the example for details.  
+  
+## Example  
+ This example shows how to obtain the <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> interface from a table. For a more complete example of using segments, see the [IDiaSegment](../vs140/idiasegment.md) interface.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## Requirements  
+ Header: Dia2.h  
+  
+ Library: diaguids.lib  
+  
+ DLL: msdia80.dll  
+  
+## See Also  
+ [Interfaces (Debug Interface Access SDK)](../vs140/interfaces--debug-interface-access-sdk-.md)   
+ [IDiaTable](../vs140/idiatable.md)   
+ [IDiaSegment](../vs140/idiasegment.md)

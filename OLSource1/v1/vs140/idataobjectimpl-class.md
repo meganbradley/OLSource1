@@ -1,0 +1,166 @@
+---
+title: "IDataObjectImpl Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "IDataObjectImpl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "data transfer [C++]"
+  - "data transfer [C++], Uniform Data Transfer"
+  - "IDataObjectImpl class"
+  - "IDataObject, ATL implementation"
+ms.assetid: b680f0f7-7795-40a1-a0f6-f48768201c89
+caps.latest.revision: 17
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDataObjectImpl Class
+This class provides methods for supporting Uniform Data Transfer and managing connections.  
+  
+> [!IMPORTANT]
+>  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../vs140/includes/wrt_md.md)].  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>11\</CodeContentPlaceHolder>  
+ Your class, derived from <CodeContentPlaceHolder>12\</CodeContentPlaceHolder>.  
+  
+## Members  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[IDataObjectImpl::DAdvise](../vs140/idataobjectimpl--dadvise.md)|Establishes a connection between the data object and an advise sink. This enables the advise sink to receive notifications of changes in the object.|  
+|[IDataObjectImpl::DUnadvise](../vs140/idataobjectimpl--dunadvise.md)|Terminates a connection previously established through <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>.|  
+|[IDataObjectImpl::EnumDAdvise](../vs140/idataobjectimpl--enumdadvise.md)|Creates an enumerator to iterate through the current advisory connections.|  
+|[IDataObjectImpl::EnumFormatEtc](../vs140/idataobjectimpl--enumformatetc.md)|Creates an enumerator to iterate through the **FORMATETC** structures supported by the data object. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::FireDataChange](../vs140/idataobjectimpl--firedatachange.md)|Sends a change notification back to each advise sink.|  
+|[IDataObjectImpl::GetCanonicalFormatEtc](../vs140/idataobjectimpl--getcanonicalformatetc.md)|Retrieves a logically equivalent **FORMATETC** structure to one that is more complex. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::GetData](../vs140/idataobjectimpl--getdata.md)|Transfers data from the data object to the client. The data is described in a **FORMATETC** structure and is transferred through a **STGMEDIUM** structure.|  
+|[IDataObjectImpl::GetDataHere](../vs140/idataobjectimpl--getdatahere.md)|Similar to <CodeContentPlaceHolder>14\</CodeContentPlaceHolder>, except the client must allocate the **STGMEDIUM** structure. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::QueryGetData](../vs140/idataobjectimpl--querygetdata.md)|Determines whether the data object supports a particular **FORMATETC** structure for transferring data. The ATL implementation returns **E_NOTIMPL**.|  
+|[IDataObjectImpl::SetData](../vs140/idataobjectimpl--setdata.md)|Transfers data from the client to the data object. The ATL implementation returns **E_NOTIMPL**.|  
+  
+## Remarks  
+ The [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) interface provides methods to support Uniform Data Transfer. <CodeContentPlaceHolder>15\</CodeContentPlaceHolder> uses the standard format structures [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) and [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) to retrieve and store data.  
+  
+ <CodeContentPlaceHolder>16\</CodeContentPlaceHolder> also manages connections to advise sinks to handle data change notifications. In order for the client to receive data change notifications from the data object, the client must implement the [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) interface on an object called an advise sink. When the client then calls **IDataObject::DAdvise**, a connection is established between the data object and the advise sink.  
+  
+ Class <CodeContentPlaceHolder>17\</CodeContentPlaceHolder> provides a default implementation of <CodeContentPlaceHolder>18\</CodeContentPlaceHolder> and implements **IUnknown** by sending information to the dump device in debug builds.  
+  
+ **Related Articles** [ATL Tutorial](../vs140/active-template-library--atl--tutorial.md), [Creating an ATL Project](../vs140/creating-an-atl-project.md)  
+  
+## Inheritance Hierarchy  
+ <CodeContentPlaceHolder>19\</CodeContentPlaceHolder>  
+  
+ <CodeContentPlaceHolder>20\</CodeContentPlaceHolder>  
+  
+## Requirements  
+ **Header:** atlctl.h  
+  
+##  \<a name="idataobjectimpl__dadvise">\</a>  IDataObjectImpl::DAdvise  
+ Establishes a connection between the data object and an advise sink.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Remarks  
+ This enables the advise sink to receive notifications of changes in the object.  
+  
+ To terminate the connection, call [DUnadvise](../vs140/idataobjectimpl--dunadvise.md).  
+  
+ See [IDataObject::DAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692579) in the [!INCLUDE[winSDK](../vs140/includes/winsdk_md.md)].  
+  
+##  \<a name="idataobjectimpl__dunadvise">\</a>  IDataObjectImpl::DUnadvise  
+ Terminates a connection previously established through [DAdvise](../vs140/idataobjectimpl--dadvise.md).  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+### Remarks  
+ See [IDataObject::DUnadvise](http://msdn.microsoft.com/library/windows/desktop/ms692448) in the [!INCLUDE[winSDK](../vs140/includes/winsdk_md.md)].  
+  
+##  \<a name="idataobjectimpl__enumdadvise">\</a>  IDataObjectImpl::EnumDAdvise  
+ Creates an enumerator to iterate through the current advisory connections.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+### Remarks  
+ See [IDataObject::EnumDAdvise](http://msdn.microsoft.com/library/windows/desktop/ms680127) in the [!INCLUDE[winSDK](../vs140/includes/winsdk_md.md)].  
+  
+##  \<a name="idataobjectimpl__enumformatetc">\</a>  IDataObjectImpl::EnumFormatEtc  
+ Creates an enumerator to iterate through the **FORMATETC** structures supported by the data object.  
+  
+<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+### Remarks  
+ See [IDataObject::EnumFormatEtc](http://msdn.microsoft.com/library/windows/desktop/ms683979) in the [!INCLUDE[winSDK](../vs140/includes/winsdk_md.md)].  
+  
+### Return Value  
+ Returns **E_NOTIMPL**.  
+  
+##  \<a name="idataobjectimpl__firedatachange">\</a>  IDataObjectImpl::FireDataChange  
+ Sends a change notification back to each advise sink that is currently being managed.  
+  
+<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+### Return Value  
+ A standard <CodeContentPlaceHolder>21\</CodeContentPlaceHolder> value.  
+  
+##  \<a name="idataobjectimpl__getcanonicalformatetc">\</a>  IDataObjectImpl::GetCanonicalFormatEtc  
+ Retrieves a logically equivalent **FORMATETC** structure to one that is more complex.  
+  
+<CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+### Return Value  
+ Returns **E_NOTIMPL**.  
+  
+### Remarks  
+ See [IDataObject::GetCanonicalFormatEtc](http://msdn.microsoft.com/library/windows/desktop/ms680685) in the [!INCLUDE[winSDK](../vs140/includes/winsdk_md.md)].  
+  
+##  \<a name="idataobjectimpl__getdata">\</a>  IDataObjectImpl::GetData  
+ Transfers data from the data object to the client.  
+  
+<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+### Remarks  
+ The *pformatetcIn* parameter must specify a storage medium type of **TYMED_MFPICT**.  
+  
+ See [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the [!INCLUDE[winSDK](../vs140/includes/winsdk_md.md)].  
+  
+##  \<a name="idataobjectimpl__getdatahere">\</a>  IDataObjectImpl::GetDataHere  
+ Similar to <CodeContentPlaceHolder>22\</CodeContentPlaceHolder>, except the client must allocate the **STGMEDIUM** structure.  
+  
+<CodeContentPlaceHolder>8\</CodeContentPlaceHolder>  
+### Return Value  
+ Returns **E_NOTIMPL**.  
+  
+### Remarks  
+ See [IDataObject::GetDataHere](http://msdn.microsoft.com/library/windows/desktop/ms687266) in the [!INCLUDE[winSDK](../vs140/includes/winsdk_md.md)].  
+  
+##  \<a name="idataobjectimpl__querygetdata">\</a>  IDataObjectImpl::QueryGetData  
+ Determines whether the data object supports a particular **FORMATETC** structure for transferring data.  
+  
+<CodeContentPlaceHolder>9\</CodeContentPlaceHolder>  
+### Return Value  
+ Returns **E_NOTIMPL**.  
+  
+### Remarks  
+ See [IDataObject::QueryGetData](http://msdn.microsoft.com/library/windows/desktop/ms680637) in the [!INCLUDE[winSDK](../vs140/includes/winsdk_md.md)].  
+  
+##  \<a name="idataobjectimpl__setdata">\</a>  IDataObjectImpl::SetData  
+ Transfers data from the client to the data object.  
+  
+<CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+### Return Value  
+ Returns **E_NOTIMPL**.  
+  
+### Remarks  
+ See [IDataObject::SetData](http://msdn.microsoft.com/library/windows/desktop/ms686626) in the [!INCLUDE[winSDK](../vs140/includes/winsdk_md.md)].  
+  
+## See Also  
+ [Class Overview](../vs140/atl-class-overview.md)

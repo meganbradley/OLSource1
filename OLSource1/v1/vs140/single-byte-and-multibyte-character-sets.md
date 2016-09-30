@@ -1,0 +1,38 @@
+---
+title: "Single-Byte and Multibyte Character Sets"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "c.character.multibyte"
+dev_langs: 
+  - "C++"
+  - "C"
+helpviewer_keywords: 
+  - "SBCS (single byte character set)"
+  - "MBCS [C++], about MBCS"
+  - "character sets [C++], multibyte"
+  - "character sets [C++], single byte"
+ms.assetid: 2cbc78ea-33c0-4cfb-b0df-7ce2458431ce
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Single-Byte and Multibyte Character Sets
+The ASCII character set defines characters in the range 0x00 – 0x7F. There are a number of other character sets, primarily European, that define the characters within the range 0x00 – 0x7F identically to the ASCII character set and also define an extended character set from 0x80 – 0xFF. Thus an 8-bit, single-byte-character set (<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>) is sufficient to represent the ASCII character set as well as the character sets for many European languages. However, some non-European character sets, such as Japanese Kanji, include many more characters than can be represented in a single-byte coding scheme, and therefore require multibyte-character set (<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>) encoding.  
+  
+> [!NOTE]
+>  Many <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> routines in the Microsoft run-time library handle multibyte bytes, characters, and strings as appropriate. Many multibyte-character sets define the ASCII character set as a subset. In many multibyte character sets, each character in the range 0x00 – 0x7F is identical to the character that has the same value in the ASCII character set. For example, in both <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> character strings, the one-byte <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> character ('\0') has value 0x00 and indicates the terminating null character.  
+  
+ A multibyte character set may consist of both one-byte and two-byte characters. Thus a multibyte-character string may contain a mixture of single-byte and double-byte characters. A two-byte multibyte character has a lead byte and a trail byte. In a particular multibyte-character set, the lead bytes fall within a certain range, as do the trail bytes. When these ranges overlap, it may be necessary to evaluate the particular context to determine whether a given byte is functioning as a lead byte or a trail byte.  
+  
+## See Also  
+ [Internationalization](../vs140/internationalization.md)   
+ [Run-Time Routines by Category](../vs140/run-time-routines-by-category.md)

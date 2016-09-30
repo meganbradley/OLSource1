@@ -1,0 +1,31 @@
+---
+title: "Compiler Warning (level 3) CS0169"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0169"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0169"
+ms.assetid: 04b0015f-658d-440a-b9ba-831178f1a180
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 3) CS0169
+The private field 'class member' is never used  
+  
+ A private variable was declared but never referenced. A common way to generate this warning is when you declare a private member of a class and do not use it.  
+  
+ The following sample generates CS0169:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

@@ -1,0 +1,31 @@
+---
+title: "Compiler Error CS1627"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS1627"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1627"
+ms.assetid: 58dd6e22-e9ed-4e5c-ae04-ce255f07064e
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS1627
+Expression expected after yield return  
+  
+ This error occurs if <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> is used without an expression. To avoid this error, insert the appropriate expression in the statement.  
+  
+ The following sample generates CS1627:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

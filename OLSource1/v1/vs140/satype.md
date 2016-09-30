@@ -1,0 +1,59 @@
+---
+title: "satype"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "language-reference"
+f1_keywords: 
+  - "vc-attr.satype"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "satype attribute"
+ms.assetid: 1716590b-6bcb-4aba-b1bc-82f7335f02c3
+caps.latest.revision: 17
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# satype
+Specifies the data type of the **SAFEARRAY** structure.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ *data_type*  
+ The data type for the **SAFEARRAY** data structure that is being passed as a parameter to an interface method.  
+  
+## Requirements  
+  
+### Attribute Context  
+  
+|||  
+|-|-|  
+|**Applies to**|Interface parameter, interface method|  
+|**Repeatable**|No|  
+|**Required attributes**|None|  
+|**Invalid attributes**|None|  
+  
+## Remarks  
+ The **satype** C++ attribute specifies the data type of the **SAFEARRAY**.  
+  
+> [!NOTE]
+>  A level of indirection is dropped from the **SAFEARRAY** pointer in the generated .idl file from how it is declared in the .cpp file.  
+  
+## Example  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## See Also  
+ [Compiler Attributes](../vs140/compiler-attributes.md)   
+ [Parameter Attributes](../vs140/parameter-attributes.md)   
+ [Method Attributes](../vs140/method-attributes.md)   
+ [id](../vs140/id.md)   
+ [Attributes Samples](assetId:///558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

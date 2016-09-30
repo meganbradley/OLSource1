@@ -1,0 +1,31 @@
+---
+title: "Compiler Error CS0556"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0556"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0556"
+ms.assetid: e2430c6e-784f-4ab2-88b9-f660d956e9e8
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS0556
+User-defined conversion must convert to or from the enclosing type  
+  
+ A user-defined conversion routine must convert to or from the class that contains the routine.  
+  
+ The following sample generates CS0556:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

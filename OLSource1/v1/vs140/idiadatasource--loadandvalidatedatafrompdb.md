@@ -1,0 +1,69 @@
+---
+title: "IDiaDataSource::loadAndValidateDataFromPdb"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaDataSource::loadAndValidateDataFromPdb method"
+ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaDataSource::loadAndValidateDataFromPdb
+Opens and verifies that the program database (.pdb) file matches the signature information provided, and  prepares the .pdb file as a debug data source.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ [in] The path to the .pdb file.  
+  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ [in] The GUID signature to verify against the .pdb file signature. Only .pdb files in [!INCLUDE[vcprvc](../vs140/includes/vcprvc_md.md)] and later have GUID signatures.  
+  
+ <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+ [in] The 32-bit signature to verify against the .pdb file signature.  
+  
+ <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+ [in] Age value to verify. The age does not necessarily correspond to any known time value, it is used to determine if a .pdb file is out of sync with a corresponding .exe file.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>; otherwise, returns an error code. The following table shows the possible return values for this method.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|E_PDB_NOT_FOUND|Failed to open the file, or the file has an invalid format.|  
+|E_PDB_FORMAT|Attempted to access a file with an obsolete format.|  
+|E_PDB_INVALID_SIG|Signature does not match.|  
+|E_PDB_INVALID_AGE|Age does not match.|  
+|E_INVALIDARG|Invalid parameter.|  
+|E_UNEXPECTED|The data source has already been prepared.|  
+  
+## Remarks  
+ A .pdb file contains both signature and age values. These values are replicated in the .exe or .dll file that matches the .pdb file. Before preparing the data source, this method verifies that the named .pdb file's signature and age match the values provided.  
+  
+ To load a .pdb file without validation, use the [IDiaDataSource::loadDataFromPdb](../vs140/idiadatasource--loaddatafrompdb.md) method.  
+  
+ To gain access to the data load process (through a callback mechanism), use the [IDiaDataSource::loadDataForExe](../vs140/idiadatasource--loaddataforexe.md) method.  
+  
+ To load a .pdb file directly from memory, use the [IDiaDataSource::loadDataFromIStream](../vs140/idiadatasource--loaddatafromistream.md) method.  
+  
+## Example  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## See Also  
+ [IDiaDataSource](../vs140/idiadatasource.md)   
+ [IDiaDataSource::loadDataForExe](../vs140/idiadatasource--loaddataforexe.md)   
+ [IDiaDataSource::loadDataFromPdb](../vs140/idiadatasource--loaddatafrompdb.md)   
+ [IDiaDataSource::loadDataFromIStream](../vs140/idiadatasource--loaddatafromistream.md)

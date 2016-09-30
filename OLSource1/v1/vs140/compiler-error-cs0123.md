@@ -1,0 +1,33 @@
+---
+title: "Compiler Error CS0123"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0123"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0123"
+ms.assetid: 57be2c58-6d87-40af-9376-cd7f91023044
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS0123
+No overload for 'method' matches delegate 'delegate'  
+  
+ An attempt to create a delegate failed because the correct signature was not used. Instances of a delegate must be declared with the same signature as the delegate declaration.  
+  
+ You can resolve this error by adjusting either the method or delegate signature. For more information, see [Delegates (C# Programmer's Reference)](../vs140/delegates--csharp-programming-guide-.md).  
+  
+ The following sample generates CS0123.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

@@ -1,0 +1,50 @@
+---
+title: "IDiaSourceFile::get_checksumType"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaSourceFile::get_checksumType method"
+ms.assetid: 4c363e61-a6a9-409a-9cc0-d06eb2bee645
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaSourceFile::get_checksumType
+Retrieves the checksum type.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ [out] Returns the checksum type.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>; otherwise, returns an error code.  
+  
+## Remarks  
+ The checksum type is a value that can be mapped to a checksum algorithm. For example, the standard PDB file format can typically have one of the following values:  
+  
+|Checksum Type|CryptoAPI Label|Description|  
+|-------------------|---------------------|-----------------|  
+|0|\<none>|No checksum present.|  
+|1|<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>|checksum generated with the MD5 hashing algorithm.|  
+|2|<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>|checksum generated with the SHA1 hashing algorithm.|  
+  
+ The <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> labels are from the <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> enumeration. For more information on hashing algorithms, consult the <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> section of the Microsoft [!INCLUDE[winsdkshort](../vs140/includes/winsdkshort_md.md)].  
+  
+ To obtain the actual checksum bytes for the source file, call the [IDiaSourceFile::get_checksum](../vs140/idiasourcefile--get_checksum.md) method.  
+  
+## See Also  
+ [IDiaSourceFile](../vs140/idiasourcefile.md)   
+ [IDiaSourceFile::get_checksum](../vs140/idiasourcefile--get_checksum.md)

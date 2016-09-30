@@ -1,0 +1,50 @@
+---
+title: "list::begin (STL-CLR)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+H1: "list::begin (STL/CLR)"
+f1_keywords: 
+  - "cliext::list::begin"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "begin member [STL/CLR]"
+ms.assetid: 3431467b-951a-498a-af8d-50f631da1646
+caps.latest.revision: 18
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# list::begin (STL-CLR)
+Designates the beginning of the controlled sequence.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ The member function returns a random-access iterator that designates the first element of the controlled sequence, or just beyond the end of an empty sequence. You use it to obtain an iterator that designates the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> beginning of the controlled sequence, but its status can change if the length of the controlled sequence changes.  
+  
+## Example  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+  **a b c**  
+**\*begin() = a**  
+**\*++begin() = b**  
+ **x y c**   
+## Requirements  
+ **Header:** \<cliext/list>  
+  
+ **Namespace:** cliext  
+  
+## See Also  
+ [list](../vs140/list--stl-clr-.md)   
+ [end](../vs140/list--end--stl-clr-.md)   
+ [front](../vs140/list--front--stl-clr-.md)   
+ [front_item](../vs140/list--front_item--stl-clr-.md)

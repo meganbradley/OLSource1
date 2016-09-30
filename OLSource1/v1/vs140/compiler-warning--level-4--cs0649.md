@@ -1,0 +1,31 @@
+---
+title: "Compiler Warning (level 4) CS0649"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0649"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0649"
+ms.assetid: 37137b18-12ed-4a0f-92e6-ee5fb0532ef3
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 4) CS0649
+Field 'field' is never assigned to, and will always have its default value 'value'  
+  
+ The compiler detected an uninitialized private or internal field declaration that is never assigned a value.  
+  
+ The following sample generates CS0649:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

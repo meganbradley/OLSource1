@@ -1,0 +1,31 @@
+---
+title: "Compiler Error C2878"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2878"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2878"
+ms.assetid: 83ee3de1-f554-49e8-a840-1f550cee7f69
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C2878
+'name' : a namespace or class of this name does not exist  
+  
+ You made reference to a namespace or class that is not defined.  
+  
+ The following sample generates C2878:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

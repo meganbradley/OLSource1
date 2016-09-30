@@ -1,0 +1,46 @@
+---
+title: "hash_map::const_reference (STL-CLR)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+H1: "hash_map::const_reference (STL/CLR)"
+f1_keywords: 
+  - "cliext::hash_map::const_reference"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "const_reference member [STL/CLR]"
+ms.assetid: c897979f-93f1-4531-9cfe-0636905cf79a
+caps.latest.revision: 18
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# hash_map::const_reference (STL-CLR)
+The type of a constant reference to an element.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Remarks  
+ The type describes a constant reference to an element.  
+  
+## Example  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+  **[a 1] [b 2] [c 3]**   
+## Requirements  
+ **Header:** \<cliext/hash_map>  
+  
+ **Namespace:** cliext  
+  
+## See Also  
+ [hash_map](../vs140/hash_map--stl-clr-.md)   
+ [reference](../vs140/hash_map--reference--stl-clr-.md)   
+ [value_type](../vs140/hash_map--value_type--stl-clr-.md)

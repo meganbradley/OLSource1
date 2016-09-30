@@ -1,0 +1,32 @@
+---
+title: "Compiler Warning (level 2) CS0464"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0464"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0464"
+ms.assetid: 3dff97d4-e1f6-4a71-91e2-68cffc38d49a
+caps.latest.revision: 19
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 2) CS0464
+Comparing with null of type 'type' always produces 'false'  
+  
+ This warning is produced when you perform a comparison between a nullable variable and null, and the comparison is not <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>. To resolve this error, verify if you really want to check a value for <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>. A comparison like <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> can be either true of false. A comparison like <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> is always false.  
+  
+## Example  
+ The following sample generates CS0464.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

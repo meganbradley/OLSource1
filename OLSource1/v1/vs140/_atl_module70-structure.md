@@ -1,0 +1,53 @@
+---
+title: "_ATL_MODULE70 Structure"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "_ATL_MODULE70"
+  - "ATL::_ATL_MODULE70"
+  - "ATL._ATL_MODULE70"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ATL_MODULE70 structure"
+  - "_ATL_MODULE70 structure"
+ms.assetid: b059b2c8-dfd1-4ac9-b07d-39df638cc7b3
+caps.latest.revision: 14
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# _ATL_MODULE70 Structure
+Contains data used by every ATL module.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ The size of the structure, used for versioning.  
+  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ Reference count to determine how long the module should stay alive.  
+  
+ **m_pTermFuncs**  
+ Tracks functions that have been registered to be called when ATL shuts down.  
+  
+ **m_csStaticDataInitAndTypeInfo**  
+ Used to coordinate access to internal data in multithreaded situations.  
+  
+## Remarks  
+ [_ATL_MODULE](../vs140/_atl_module.md) is defined as a typedef of <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>.  
+  
+## Requirements  
+ **Header:** atlbase.h  
+  
+## See Also  
+ [Structures](../vs140/atl-structures.md)

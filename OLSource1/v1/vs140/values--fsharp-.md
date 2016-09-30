@@ -1,0 +1,58 @@
+---
+title: "Values (F#)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-fsharp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+dev_langs: 
+  - "FSharp"
+helpviewer_keywords: 
+  - "let keyword [F#]"
+  - "mutability [F#]"
+  - "values [F#]"
+  - "variables [F#]"
+ms.assetid: 1cff5467-5801-428e-af01-34e1e954bea7
+caps.latest.revision: 22
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Values (F#)
+Values in F# are quantities that have a specific type; values can be integral or floating point numbers, characters or text, lists, sequences, arrays, tuples, discriminated unions, records, class types, or function values.  
+  
+## Binding a Value  
+ The term *binding* means associating a name with a definition. The <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> keyword binds a value, as in the following examples:  
+  
+ [!code[FsLangRef1#601](../vs140/codesnippet/FSharp/values--fsharp-_1.fs)]  
+  
+ The type of a value is inferred from the definition. For a primitive type, such as an integral or floating point number, the type is determined from the type of the literal. Therefore, in the previous example, the compiler infers the type of <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> to be <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>, whereas the compiler infers the type of <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> to be <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>. The type of a function value is determined from the return value in the function body. For more information about function value types, see [Functions (F#)](../vs140/functions--fsharp-.md). For more information about literal types, see [Literals (F#)](../vs140/literals--fsharp-.md).  
+  
+## Why Immutable?  
+ Immutable values are values that cannot be changed throughout the course of a program's execution. If you are used to languages such as C++, Visual Basic, or C#, you might find it surprising that F# puts primacy over immutable values rather than variables that can be assigned new values during the execution of a program. Immutable data is an important element of functional programming. In a multithreaded environment, shared mutable variables that can be changed by many different threads are difficult to manage. Also, with mutable variables, it can sometimes be hard to tell if a variable might be changed when it is passed to another function.  
+  
+ In pure functional languages, there are no variables, and functions behave strictly as mathematical functions. Where code in a procedural language uses a variable assignment to alter a value, the equivalent code in a functional language has an immutable value that is the input, an immutable function, and different immutable values as the output. This mathematical strictness allows for tighter reasoning about the behavior of the program. This tighter reasoning is what enables compilers to check code more stringently and to optimize more effectively, and helps make it easier for developers to understand and write correct code. Functional code is therefore likely to be easier to debug than ordinary procedural code.  
+  
+ F# is not a pure functional language, yet it fully supports functional programming. Using immutable values is a good practice because doing this allows your code to benefit from an important aspect of functional programming.  
+  
+## Mutable Variables  
+ You can use the keyword <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> to specify a variable that can be changed. Mutable variables in F# should generally have a limited scope, either as a field of a type or as a local value. Mutable variables with a limited scope are easier to control and are less likely to be modified in incorrect ways.  
+  
+ You can assign an initial value to a mutable variable by using the <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> keyword in the same way as you would define a value. However, the difference is that you can subsequently assign new values to mutable variables by using the <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> operator, as in the following example.  
+  
+ [!code[FsLangRef1#602](../vs140/codesnippet/FSharp/values--fsharp-_2.fs)]  
+  
+## Related Topics  
+  
+|Title|Description|  
+|-----------|-----------------|  
+|[Bindings: the let Keyword](../vs140/let-bindings--fsharp-.md)|Provides information about using the <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> keyword to bind names to values and functions.|  
+|[Functions (F#)](../vs140/functions--fsharp-.md)|Provides an overview of functions in F#.|  
+  
+## See Also  
+ [Null Values (F#)](../vs140/null-values--fsharp-.md)   
+ [F#Language Reference](../vs140/fsharp-language-reference.md)

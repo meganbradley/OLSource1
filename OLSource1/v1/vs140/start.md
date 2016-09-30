@@ -1,0 +1,71 @@
+---
+title: "Start"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
+caps.latest.revision: 17
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Start
+The **Start** option is a VSPerfCmd.exe option that initializes the profiler to the specified profiling method.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ Must be one of the following keywords:  
+  
+-   **TRACE** - Specifies the instrumentation method.  
+  
+-   **SAMPLE** - Specifies the sampling method.  
+  
+-   **COVERAGE** - Specifies code coverage.  
+  
+-   **CONCURRENCY** - Specifies the resource contention method.  
+  
+## Required Options  
+ The **Output** option must be specified when **Start** is specified on the command line.  
+  
+ **Output:** <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ Specifies the output file name.  
+  
+## Exclusive Options  
+ The following options can only be used with the **Start** option on a command line.  
+  
+ **CrossSession**&#124;**CS**  
+ Enables cross-process profiling. The option names **CrossSession** and **CS** are both supported.  
+  
+ **User:**[<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>]<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+ Enables client access to the monitor from the specified account.  
+  
+ **WinCounter:** <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> [**Automark**:<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>]  
+ **WinCounter** specifies a Windows performance counter to include as a mark in the profiling data file. **AutoMark** specifies the interval in milliseconds between collections of the data file.  
+  
+## Invalid Options  
+ The following options cannot be used with the **Start** option on a command line.  
+  
+ **Status**  
+ **Status** applies to those processes that are profiled. It lists processes and threads and their current profile state (On/Off). For example, if a process is stopped, **Status** will not indicate this in the report. **Status** will show that the process is either profiled or not.  
+  
+ **Shutdown**[**:**<CodeContentPlaceHolder>8\</CodeContentPlaceHolder>]  
+ Turns the profiler off.  
+  
+## Example  
+ The following example demonstrates how to use the VSPerfCmd.exe **Start** option to initialize the profiler.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## See Also  
+ [VSPerfCmd.exe Reference](../vs140/vsperfcmd.md)   
+ [Command-Line Profiling of Stand-Alone Applications](../vs140/command-line-profiling-of-stand-alone-applications.md)   
+ [Command-Line Profiling of ASP.NET Web Applications](../vs140/command-line-profiling-of-asp.net-web-applications.md)   
+ [Command-Line Profiling of Services](../vs140/command-line-profiling-of-services.md)

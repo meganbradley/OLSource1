@@ -1,0 +1,36 @@
+---
+title: "Leading &#39;.&#39; or &#39;!&#39; cannot appear in a constant expression"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vbc30995"
+  - "bc30995"
+helpviewer_keywords: 
+  - "BC30995"
+ms.assetid: eed62684-66db-4fdb-9da7-f1407a55b172
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Leading &#39;.&#39; or &#39;!&#39; cannot appear in a constant expression
+Member access (.) and dictionary member access (!) require an expression specifying the element that contains the member most of the time, including constant expressions. The following declaration is not valid.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ **Error ID:** BC30995  
+  
+### To correct this error  
+  
+-   Specify the instance that contains the member that you want to access.  
+  
+## See Also  
+ [Object Initializers](../vs140/object-initializers--named-and-anonymous-types--visual-basic-.md)   
+ [How to: Declare an Instance of an Anonymous Type (Visual Basic)](assetId:///119f616c-9bcd-4731-ac00-4285be5959f7)   
+ [Const Statement](../vs140/const-statement--visual-basic-.md)

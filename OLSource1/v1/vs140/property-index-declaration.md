@@ -1,0 +1,43 @@
+---
+title: "Property Index Declaration"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "indexers"
+  - "default indexers"
+  - "defaults, indexers"
+  - "indexed properties, C++"
+ms.assetid: d898fdbc-2106-4b6a-8c5c-9f511d80fc2f
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Property Index Declaration
+The syntax for declaring an indexed property has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../vs140/includes/cpp_current_long_md.md)].  
+  
+ The two primary shortcoming of the Managed Extensions language support of indexed properties is the inability to provide class-level subscripting; that is, all indexed properties are required to be given a name, and thus there is no way, for example, to provide a managed subscript operator that can be directly applied to a <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> or <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> class object. A second less significant shortcoming is that it is visually difficult to distinguish a property from an indexed property – the number of parameters is the only indication. Finally, indexed properties suffer from the same problems as those of non-indexed properties – the accessors are not treated as an atomic unit, but separated into individual methods.  For example:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ As you can see here, the indexers are distinguished only by the additional parameters to specify a two or single dimension index. In the new syntax, the indexers are distinguished by the bracket ([,]) following the name of the indexer and indicating the number and type of each index:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ To indicate a class level indexer that can be applied directly to objects of the class in the new syntax, the <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> keyword is reused to substitute for an explicit name. For example:  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ In the new syntax, when the default indexed property is specified, the two following names are reserved: <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>. This is because these are the underlying names generated for the default indexed property.  
+  
+ Note that there is no simple index syntax analogous to the simple property syntax.  
+  
+## See Also  
+ [Member Declarations within a Class or Interface](../vs140/member-declarations-within-a-class-or-interface--c---cli-.md)   
+ [How to: Use Indexed Properties](../vs140/how-to--use-indexed-properties.md)

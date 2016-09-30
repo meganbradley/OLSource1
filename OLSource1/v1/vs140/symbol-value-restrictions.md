@@ -1,0 +1,57 @@
+---
+title: "Symbol Value Restrictions"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vc.editors.symbol.restrictions.value"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "symbols, value restrictions"
+  - "restrictions, symbol values"
+ms.assetid: 32467ec3-690b-4cd0-a4d0-7d189a3296cb
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Symbol Value Restrictions
+A symbol value can be any integer expressed in the normal manner for #define preprocessor directives. Here are some examples of symbol values:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ Symbol values for resources (accelerators, bitmaps, cursors, dialog boxes, icons, menus, string tables, and version information) must be decimal numbers in the range from 0 to 32,767 (but cannot be hexadecimal). Symbol values for parts of resources, such as dialog box controls or individual strings in the string table, can be from 0 to 65,534 or from -32,768 to 32,767.  
+  
+ Resource symbols are 16 bit numbers. You may enter them as signed or unsigned, however, they are used internally as unsigned integers. So negative numbers will be cast to their corresponding positive value.  
+  
+ Here are some limitations of symbol values:  
+  
+-   The Visual Studio development environment and MFC use some number ranges for special purposes. All numbers with the most significant bit set (-32,768 to -1 or 32,768 to 65,534, depending on sign) are reserved by MFC.  
+  
+-   You cannot define a symbol value using other symbol strings. For example, the following symbol definition is not supported:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+-   You cannot use preprocessor macros with arguments as value definitions. For example:  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+     is not a valid expression regardless of what <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> evaluates to at compile time.  
+  
+-   Your application may have an existing file containing symbols defined with expressions. For more information on how to include the symbols as read-only symbols, see [Using Shared (Read Only) or Calculated Symbols](../vs140/including-shared--read-only--or-calculated-symbols.md).  
+  
+ For more information on number ranges, see [TN023: Standard MFC Resources](../vs140/tn023--standard-mfc-resources.md).  
+  
+ For information on adding resources to managed projects, please see [Resources in Applications](assetId:///8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](assetId:///bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+  
+## Requirements  
+ Win32  
+  
+## See Also  
+ [Changing a Symbol's Numeric Value](../vs140/changing-a-symbol-s-numeric-value.md)   
+ [Symbol Name Restrictions](../vs140/symbol-name-restrictions.md)   
+ [Predefined Symbol IDs](../vs140/predefined-symbol-ids.md)

@@ -1,0 +1,370 @@
+---
+title: "CWordArray Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "CWordArray"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "INT"
+  - "UINT"
+  - "indexed arrays"
+  - "arrays [C++], indexed"
+  - "WORD data type"
+  - "CWordArray class"
+ms.assetid: 2ba2c194-2c6c-40ff-9db4-e9dbe57e1f57
+caps.latest.revision: 24
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CWordArray Class
+Supports arrays of 16-bit words.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+ The member functions of <CodeContentPlaceHolder>26\</CodeContentPlaceHolder> are similar to the member functions of class [CObArray](../vs140/cobarray-class.md). Because of this similarity, you can use the <CodeContentPlaceHolder>27\</CodeContentPlaceHolder> reference documentation for member function specifics. Wherever you see a [CObject](../vs140/cobject-class.md) pointer as a function parameter or return value, substitute a **WORD**.  
+  
+ <CodeContentPlaceHolder>28\</CodeContentPlaceHolder>  
+  
+ for example, translates to  
+  
+ <CodeContentPlaceHolder>29\</CodeContentPlaceHolder>  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CObArray::CObArray](../vs140/cobarray-class.md#cobarray__cobarray)|Constructs an empty array.|  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CObArray::Add](../vs140/cobarray-class.md#cobarray__add)|Adds an element to the end of the array; grows the array if necessary.|  
+|[CObArray::Append](../vs140/cobarray-class.md#cobarray__append)|Appends another array to the array; grows the array if necessary.|  
+|[CObArray::Copy](../vs140/cobarray-class.md#cobarray__copy)|Copies another array to the array; grows the array if necessary.|  
+|[CObArray::ElementAt](../vs140/cobarray-class.md#cobarray__elementat)|Returns a temporary reference to the element pointer within the array.|  
+|[CObArray::FreeExtra](../vs140/cobarray-class.md#cobarray__freeextra)|Frees all unused memory above the current upper bound.|  
+|[CObArray::GetAt](../vs140/cobarray-class.md#cobarray__getat)|Returns the value at a given index.|  
+|[CObArray::GetCount](../vs140/cobarray-class.md#cobarray__getcount)|Gets the number of elements in this array.|  
+|[CObArray::GetData](../vs140/cobarray-class.md#cobarray__getdata)|Allows access to elements in the array. Can be **NULL**.|  
+|[CObArray::GetSize](../vs140/cobarray-class.md#cobarray__getsize)|Gets the number of elements in this array.|  
+|[CObArray::GetUpperBound](../vs140/cobarray-class.md#cobarray__getupperbound)|Returns the largest valid index.|  
+|[CObArray::InsertAt](../vs140/cobarray-class.md#cobarray__insertat)|Inserts an element (or all the elements in another array) at a specified index.|  
+|[CObArray::IsEmpty](../vs140/cobarray-class.md#cobarray__isempty)|Determines if the array is empty.|  
+|[CObArray::RemoveAll](../vs140/cobarray-class.md#cobarray__removeall)|Removes all the elements from this array.|  
+|[CObArray::RemoveAt](../vs140/cobarray-class.md#cobarray__removeat)|Removes an element at a specific index.|  
+|[CObArray::SetAt](../vs140/cobarray-class.md#cobarray__setat)|Sets the value for a given index; array not allowed to grow.|  
+|[CObArray::SetAtGrow](../vs140/cobarray-class.md#cobarray__setatgrow)|Sets the value for a given index; grows the array if necessary.|  
+|[CObArray::SetSize](../vs140/cobarray-class.md#cobarray__setsize)|Sets the number of elements to be contained in this array.|  
+  
+### Public Operators  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CObArray::operator &#91;&#93;](../vs140/cobarray-class.md#cobarray__operator_at)|Sets or gets the element at the specified index.|  
+  
+## Remarks  
+ <CodeContentPlaceHolder>30\</CodeContentPlaceHolder> incorporates the [IMPLEMENT_SERIAL](../vs140/implement_serial.md) macro to support serialization and dumping of its elements. If an array of words is stored to an archive, either with an overloaded insertion operator or with the [CObject::Serialize](../vs140/cobject-class.md#cobject__serialize) member function, each element is, in turn, serialized.  
+  
+> [!NOTE]
+>  Before using an array, use <CodeContentPlaceHolder>31\</CodeContentPlaceHolder> to establish its size and allocate memory for it. If you do not use <CodeContentPlaceHolder>32\</CodeContentPlaceHolder>, adding elements to your array causes it to be frequently reallocated and copied. Frequent reallocation and copying are inefficient and can fragment memory.  
+  
+ If you need a dump of individual elements in the array, you must set the depth of the dump context to 1 or greater.  
+  
+ For more information on using <CodeContentPlaceHolder>33\</CodeContentPlaceHolder>, see the article [Collections](../vs140/collections.md).  
+  
+## Inheritance Hierarchy  
+ [CObject](../vs140/cobject-class.md)  
+  
+ <CodeContentPlaceHolder>34\</CodeContentPlaceHolder>  
+  
+## Requirements  
+ **Header:** afxcoll.h  
+  
+##  \<a name="icommandsource_interface">\</a>  ICommandSource Interface  
+ Manages commands sent from a command source object to a user control.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Remarks  
+ When you host a user control in an MFC View, [CWinFormsView](../vs140/cwinformsview-class.md) routes commands and update command UI messages to the user control to allow it to handle MFC commands (for example, frame menu items and toolbar buttons). By implementing  , you give the user control a reference to the <CodeContentPlaceHolder>35\</CodeContentPlaceHolder> object.  
+  
+ See [How To: Add Command Routing to the Windows Forms Control](../vs140/how-to--add-command-routing-to-the-windows-forms-control.md) for an example of how to use <CodeContentPlaceHolder>36\</CodeContentPlaceHolder>.  
+  
+ For more information on using Windows Forms, see [Using Windows Forms in MFC](../vs140/using-a-windows-form-user-control-in-mfc.md).  
+  
+##  \<a name="icommandsource__addcommandhandler">\</a>  ICommandSource::AddCommandHandler  
+ Adds a command handler to a command source object.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>37\</CodeContentPlaceHolder>  
+ The command ID.  
+  
+ <CodeContentPlaceHolder>38\</CodeContentPlaceHolder>  
+ A handle to the command handler method.  
+  
+### Remarks  
+ This method adds the command handler <CodeContentPlaceHolder>39\</CodeContentPlaceHolder> to the command source object and maps the handler to <CodeContentPlaceHolder>40\</CodeContentPlaceHolder>.  
+  
+ See [How To: Add Command Routing to the Windows Forms Control](../vs140/how-to--add-command-routing-to-the-windows-forms-control.md) for an example of how to use <CodeContentPlaceHolder>41\</CodeContentPlaceHolder>.  
+  
+##  \<a name="icommandsource__addcommandrangehandler">\</a>  ICommandSource::AddCommandRangeHandler  
+ Adds a group of command handlers to a command source object.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>42\</CodeContentPlaceHolder>  
+ The beginning index of the command ID range.  
+  
+ <CodeContentPlaceHolder>43\</CodeContentPlaceHolder>  
+ The ending index of the command ID range.  
+  
+ <CodeContentPlaceHolder>44\</CodeContentPlaceHolder>  
+ A handle to the message handler method to which the commands are mapped.  
+  
+### Remarks  
+ This method maps a contiguous range of command IDs to a single message handler and adds it to the command source object. This is used for handling a group of related buttons with one method.  
+  
+##  \<a name="icommandsource__addcommandrangeuihandler">\</a>  ICommandSource::AddCommandRangeUIHandler  
+ Adds a group of user interface command message handlers to a command source object.  
+  
+<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>45\</CodeContentPlaceHolder>  
+ The beginning index of the command ID range.  
+  
+ <CodeContentPlaceHolder>46\</CodeContentPlaceHolder>  
+ The ending index of the command ID range.  
+  
+ <CodeContentPlaceHolder>47\</CodeContentPlaceHolder>  
+ A handle to the message handler method to which the commands are mapped.  
+  
+### Remarks  
+ This method maps a contiguous range of command IDs to a single user interface command message handler and adds it to the command source object. This is used for handling a group of related buttons with one method.  
+  
+##  \<a name="icommandsource__addcommanduihandler">\</a>  ICommandSource::AddCommandUIHandler  
+ Adds a user interface command message handler to a command source object.  
+  
+<CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>48\</CodeContentPlaceHolder>  
+ The command ID.  
+  
+ <CodeContentPlaceHolder>49\</CodeContentPlaceHolder>  
+ A handle to the user interface command message handler method.  
+  
+### Remarks  
+ This method adds the user interface command message handler <CodeContentPlaceHolder>50\</CodeContentPlaceHolder> to the command source object and maps the handler to <CodeContentPlaceHolder>51\</CodeContentPlaceHolder>.  
+  
+##  \<a name="icommandsource__postcommand">\</a>  ICommandSource::PostCommand  
+ Posts a message without waiting for it to be processed.  
+  
+<CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>52\</CodeContentPlaceHolder>  
+ The command ID of the message to be posted.  
+  
+### Remarks  
+ This method asynchronously posts the message mapped to the ID specified by <CodeContentPlaceHolder>53\</CodeContentPlaceHolder>. It calls [CWnd::PostMessage](../vs140/cwnd-class.md#cwnd__postmessage) to place the message in the window's message queue and then returns without waiting for the corresponding window to process the message.  
+  
+##  \<a name="icommandsource__removecommandhandler">\</a>  ICommandSource::RemoveCommandHandler  
+ Removes a command handler from a command source object.  
+  
+<CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>54\</CodeContentPlaceHolder>  
+ The command ID.  
+  
+### Remarks  
+ This method removes the command handler mapped to <CodeContentPlaceHolder>55\</CodeContentPlaceHolder> from the command source object.  
+  
+##  \<a name="icommandsource__removecommandrangehandler">\</a>  ICommandSource::RemoveCommandRangeHandler  
+ Removes a group of command handlers from a command source object.  
+  
+<CodeContentPlaceHolder>8\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>56\</CodeContentPlaceHolder>  
+ The beginning index of the command ID range.  
+  
+ <CodeContentPlaceHolder>57\</CodeContentPlaceHolder>  
+ The ending index of the command ID range.  
+  
+### Remarks  
+ This method removes a group of message handlers, mapped to the command IDs specifed by <CodeContentPlaceHolder>58\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>59\</CodeContentPlaceHolder>, from the command source object.  
+  
+##  \<a name="icommandsource__removecommandrangeuihandler">\</a>  ICommandSource::RemoveCommandRangeUIHandler  
+ Removes a group of user interface command message handlers from a command source object.  
+  
+<CodeContentPlaceHolder>9\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>60\</CodeContentPlaceHolder>  
+ The beginning index of the command ID range.  
+  
+ <CodeContentPlaceHolder>61\</CodeContentPlaceHolder>  
+ The ending index of the command ID range.  
+  
+### Remarks  
+ This method removes a group of user interface command message handlers, mapped to the command IDs specifed by <CodeContentPlaceHolder>62\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>63\</CodeContentPlaceHolder>, from the command source object.  
+  
+##  \<a name="icommandsource__removecommanduihandler">\</a>  ICommandSource::RemoveCommandUIHandler  
+ Removes a user interface command message handler from a command source object.  
+  
+<CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>64\</CodeContentPlaceHolder>  
+ The command ID.  
+  
+### Remarks  
+ This method removes the user interface command message handler mapped to <CodeContentPlaceHolder>65\</CodeContentPlaceHolder> from the command source object.  
+  
+##  \<a name="icommandsource__sendcommand">\</a>  ICommandSource::SendCommand  
+ Sends a message and waits for it to be processed before returning.  
+  
+<CodeContentPlaceHolder>11\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>66\</CodeContentPlaceHolder>  
+ The command ID of the message to be sent.  
+  
+### Remarks  
+ This method synchronously sends the message mapped to the ID specified by <CodeContentPlaceHolder>67\</CodeContentPlaceHolder>. It calls [CWnd::SendMessage](../vs140/cwnd-class.md#cwnd__sendmessage) to place the message in the window's message queue and waits until that window procedure has processed the message before returning.  
+  
+##  \<a name="icommandtarget_interface">\</a>  ICommandTarget Interface  
+ Provides a user control with an interface to receive commands from a command source object.  
+  
+<CodeContentPlaceHolder>12\</CodeContentPlaceHolder>  
+### Remarks  
+ When you host a user control in an MFC View, [CWinFormsView](../vs140/cwinformsview-class.md) routes commands and update command UI messages to the user control to allow it to handle MFC commands (for example, frame menu items and toolbar buttons). By implementing <CodeContentPlaceHolder>68\</CodeContentPlaceHolder>, you give the user control a reference to the  object.  
+  
+ See [How To: Add Command Routing to the Windows Forms Control](../vs140/how-to--add-command-routing-to-the-windows-forms-control.md) for an example of how to use <CodeContentPlaceHolder>69\</CodeContentPlaceHolder>.  
+  
+ For more information on using Windows Forms, see [Using Windows Forms in MFC](../vs140/using-a-windows-form-user-control-in-mfc.md).  
+  
+##  \<a name="icommandtarget__initialize">\</a>  ICommandTarget::Initialize  
+ Initializes the command target object.  
+  
+<CodeContentPlaceHolder>13\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>70\</CodeContentPlaceHolder>  
+ A handle to the command source object.  
+  
+### Remarks  
+ When you host a user control in an MFC View, [CWinFormsView](../vs140/cwinformsview-class.md) routes commands and update command UI messages to the user control to allow it to handle MFC commands.  
+  
+ This method initializes the command target object and associates it with the specified command source object <CodeContentPlaceHolder>71\</CodeContentPlaceHolder>. It should be called in the user control class implementation. At initialization, you should register command handlers with the command source object by calling [ICommandSource::AddCommandHandler](../vs140/icommandsource-interface.md) in the <CodeContentPlaceHolder>72\</CodeContentPlaceHolder> implementation. See [How To: Add Command Routing to the Windows Forms Control](../vs140/how-to--add-command-routing-to-the-windows-forms-control.md) for an example of how to use <CodeContentPlaceHolder>73\</CodeContentPlaceHolder> to do this.  
+  
+##  \<a name="icommandui_interface">\</a>  ICommandUI Interface  
+ Manages user interface commands.  
+  
+<CodeContentPlaceHolder>14\</CodeContentPlaceHolder>  
+### Remarks  
+ This interface provides methods and properties that manage user interface commands. <CodeContentPlaceHolder>74\</CodeContentPlaceHolder> is similar to [CCmdUI](../vs140/ccmdui-class.md), except that <CodeContentPlaceHolder>75\</CodeContentPlaceHolder> is used for MFC applications that interoperate with .NET components.  
+  
+ <CodeContentPlaceHolder>76\</CodeContentPlaceHolder> is used within an <CodeContentPlaceHolder>77\</CodeContentPlaceHolder> handler in an  -derived class. When a user of an application activates (selects or clicks) a menu, each menu item is displayed as enabled or disabled. The target of each menu command provides this information by implementing an <CodeContentPlaceHolder>78\</CodeContentPlaceHolder> handler. For each of the command user interface objects in your application, use the Properties window to create a message-map entry and function prototype for each handler.  
+  
+ For more information on how the <CodeContentPlaceHolder>79\</CodeContentPlaceHolder> interface is used in command routing, see [How To: Add Command Routing to the Windows Forms Control](../vs140/how-to--add-command-routing-to-the-windows-forms-control.md).  
+  
+ For more information on using Windows Forms, see [Using Windows Forms in MFC](../vs140/using-a-windows-form-user-control-in-mfc.md).  
+  
+ For more information on how user interface commands are managed in MFC, see [CCmdUI](../vs140/ccmdui-class.md).  
+  
+##  \<a name="icommandui__check">\</a>  ICommandUI::Check  
+ Sets the user interface item for this command to the appropriate check state.  
+  
+<CodeContentPlaceHolder>15\</CodeContentPlaceHolder>  
+### Remarks  
+ This property sets the user interface item for this command to the appropriate check state. Set <CodeContentPlaceHolder>80\</CodeContentPlaceHolder> to the following values:  
+  
+|Term|Definition|  
+|----------|----------------|  
+|0|Uncheck|  
+|1|Check|  
+|2|Set indeterminate|  
+  
+##  \<a name="icommandui__continuerouting">\</a>  ICommandUI::ContinueRouting  
+ Tells the command routing mechanism to continue routing the current message down the chain of handlers.  
+  
+<CodeContentPlaceHolder>16\</CodeContentPlaceHolder>  
+### Remarks  
+ This is an advanced member function that should be used in conjunction with an [ON_COMMAND_EX](../vs140/on_command_ex.md) handler that returns <CodeContentPlaceHolder>81\</CodeContentPlaceHolder>. For more information, see Technical Note [TN006: Message Maps](../vs140/tn006--message-maps.md).  
+  
+##  \<a name="icommandui__enabled">\</a>  ICommandUI::Enabled  
+ Enables or disables the user interface item for this command.  
+  
+<CodeContentPlaceHolder>17\</CodeContentPlaceHolder>  
+### Remarks  
+ This property enables or disables the user interface item for this command. Set <CodeContentPlaceHolder>82\</CodeContentPlaceHolder> to <CodeContentPlaceHolder>83\</CodeContentPlaceHolder> to enable the item, <CodeContentPlaceHolder>84\</CodeContentPlaceHolder> to disable it.  
+  
+##  \<a name="icommandui__id">\</a>  ICommandUI::ID  
+ Gets the ID of the user interface object represented by the <CodeContentPlaceHolder>85\</CodeContentPlaceHolder> object.  
+  
+<CodeContentPlaceHolder>18\</CodeContentPlaceHolder>  
+### Remarks  
+ This property gets the ID (a handle) of the menu item, toolbar button, or other user interface object represented by the <CodeContentPlaceHolder>86\</CodeContentPlaceHolder> object.  
+  
+##  \<a name="icommandui__index">\</a>  ICommandUI::Index  
+ Gets the index of the user interface object represented by the <CodeContentPlaceHolder>87\</CodeContentPlaceHolder> object.  
+  
+<CodeContentPlaceHolder>19\</CodeContentPlaceHolder>  
+### Remarks  
+ This property gets the index (a handle) of the menu item, toolbar button, or other user interface object represented by the <CodeContentPlaceHolder>88\</CodeContentPlaceHolder> object.  
+  
+##  \<a name="icommandui__radio">\</a>  ICommandUI::Radio  
+ Sets the user interface item for this command to the appropriate check state.  
+  
+<CodeContentPlaceHolder>20\</CodeContentPlaceHolder>  
+### Remarks  
+ This property sets the user interface item for this command to the appropriate check state. Set <CodeContentPlaceHolder>89\</CodeContentPlaceHolder> to <CodeContentPlaceHolder>90\</CodeContentPlaceHolder> to enable the item; otherwise <CodeContentPlaceHolder>91\</CodeContentPlaceHolder>.  
+  
+##  \<a name="icommandui__text">\</a>  ICommandUI::Text  
+ Sets the text of the user interface item for this command.  
+  
+<CodeContentPlaceHolder>21\</CodeContentPlaceHolder>  
+### Remarks  
+ This property sets the text of the user interface item for this command. Set <CodeContentPlaceHolder>92\</CodeContentPlaceHolder> to a text string handle.  
+  
+##  \<a name="iview_interface">\</a>  IView Interface  
+ Implements several methods that [CWinFormsView](../vs140/cwinformsview-class.md) uses to send view notifications to a managed control.  
+  
+<CodeContentPlaceHolder>22\</CodeContentPlaceHolder>  
+### Remarks  
+ <CodeContentPlaceHolder>93\</CodeContentPlaceHolder> implements several methods that <CodeContentPlaceHolder>94\</CodeContentPlaceHolder> uses to forward common view notifications to a hosted managed control. These are [OnInitialUpdate](../vs140/iview-interface.md), [OnUpdate](../vs140/iview-interface.md) and [OnActivateView](../vs140/iview-interface.md).  
+  
+ <CodeContentPlaceHolder>95\</CodeContentPlaceHolder> is similar to [CView](../vs140/cview-class.md), but is used only with managed views and controls.  
+  
+ For more information on using Windows Forms, see [Using Windows Forms in MFC](../vs140/using-a-windows-form-user-control-in-mfc.md).  
+  
+##  \<a name="iview__onactivateview">\</a>  IView::OnActivateView  
+ Called by MFC when a view is activated or deactivated.  
+  
+<CodeContentPlaceHolder>23\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>96\</CodeContentPlaceHolder>  
+ Indicates whether the view is being activated or deactivated.  
+  
+##  \<a name="iview__oninitialupdate">\</a>  IView::OnInitialUpdate  
+ Called by the framework after the view is first attached to the document, but before the view is initially displayed.  
+  
+<CodeContentPlaceHolder>24\</CodeContentPlaceHolder>  
+##  \<a name="iview__onupdate">\</a>  IView::OnUpdate  
+ Called by MFC after the view's document has been modified.  
+  
+<CodeContentPlaceHolder>25\</CodeContentPlaceHolder>  
+### Remarks  
+ This function allows the view to update its display to reflect modifications.  
+  
+## See Also  
+ [MFC Sample COLLECT](../vs140/visual-c---samples.md)   
+ [Base Class](../vs140/cobject-class.md)   
+ [Hierarchy Chart](../vs140/hierarchy-chart.md)

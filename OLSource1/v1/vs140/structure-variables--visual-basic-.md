@@ -1,0 +1,55 @@
+---
+title: "Structure Variables (Visual Basic)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "structures, variables"
+  - "structures, structure variables"
+  - "variables [Visual Basic], structure variables"
+  - "structure variables"
+ms.assetid: 156872f8-aabc-4454-8e2d-f2253c3c13c9
+caps.latest.revision: 15
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Structure Variables (Visual Basic)
+Once you have created a structure, you can declare procedure-level and module-level variables as that type. For example, you can create a structure that records information about a computer system. The following example demonstrates this.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ You can now declare variables of that type. The following declaration illustrates this.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+> [!NOTE]
+>  In classes and modules, structures declared using the [Dim Statement (Visual Basic)](../vs140/dim-statement--visual-basic-.md) default to public access. If you intend a structure to be private, make sure you declare it using the [Private (Visual Basic)](../vs140/private--visual-basic-.md) keyword.  
+  
+## Access to Structure Values  
+ To assign and retrieve values from the elements of a structure variable, you use the same syntax as you use to set and get properties on an object. You place the member access operator (<CodeContentPlaceHolder>4\</CodeContentPlaceHolder>) between the structure variable name and the element name. The following example accesses elements of the variables previously declared as type <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+## Assigning Structure Variables  
+ You can also assign one variable to another if both are of the same structure type. This copies all the elements of one structure to the corresponding elements in the other. The following declaration illustrates this.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ If a structure element is a reference type, such as a <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>, <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>, or array, the pointer to the data is copied. In the previous example, if <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> had included an object variable, then the preceding example would have copied the pointer from <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> to <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>, and a change to the object's data through one structure would be in effect when accessed through the other structure.  
+  
+## See Also  
+ [Data Types in Visual Basic](../vs140/data-types-in-visual-basic.md)   
+ [Elementary Data Types](../vs140/elementary-data-types--visual-basic-.md)   
+ [Composite Data Types](../vs140/composite-data-types--visual-basic-.md)   
+ [Value Types and Reference Types](../vs140/value-types-and-reference-types.md)   
+ [Structures: Your Own Data Types](../vs140/structures--visual-basic-.md)   
+ [Troubleshooting Data Types](../vs140/troubleshooting-data-types--visual-basic-.md)   
+ [How to: Declare a Structure](../vs140/how-to--declare-a-structure--visual-basic-.md)   
+ [Structures and Other Programming Elements](../vs140/structures-and-other-programming-elements--visual-basic-.md)   
+ [Structures and Classes](../vs140/structures-and-classes--visual-basic-.md)   
+ [Structure Statement](../vs140/structure-statement.md)

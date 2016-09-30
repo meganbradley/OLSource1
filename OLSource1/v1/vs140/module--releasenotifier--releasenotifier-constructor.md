@@ -1,0 +1,42 @@
+---
+title: "Module::ReleaseNotifier::ReleaseNotifier Constructor"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "module/Microsoft::WRL::Module::ReleaseNotifier::ReleaseNotifier"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ReleaseNotifier, constructor"
+ms.assetid: 889a3c9a-2366-44a1-ba7d-a59c1885e7f3
+caps.latest.revision: 7
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Module::ReleaseNotifier::ReleaseNotifier Constructor
+Initializes a new instance of the Module::ReleaseNotifier class.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> to delete this instance when the Release method is called; <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> to not delete this instance.  
+  
+## Exceptions  
+  
+## Requirements  
+ **Header:** module.h  
+  
+ **Namespace:** Microsoft::WRL  
+  
+## See Also  
+ [Module::ReleaseNotifier Class](../vs140/module--releasenotifier-class.md)

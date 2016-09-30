@@ -1,0 +1,47 @@
+---
+title: "Troubleshooting Exceptions: System.BadImageFormatException"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "JScript"
+  - "VB"
+  - "CSharp"
+  - "C++"
+helpviewer_keywords: 
+  - "BadImageFormatException class"
+ms.assetid: 8d2b385a-3d6d-4dfa-8546-7ece562867e3
+caps.latest.revision: 25
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Troubleshooting Exceptions: System.BadImageFormatException
+A \<xref:System.BadImageFormatException*> exception is thrown when the file image of a DLL or executable program is not valid.  
+  
+## Associated Tips  
+ **If your application uses 32-bit components, make sure that it always runs as a 32-bit application.**  
+ If the **Platform target** property for your application project is set to <CodeContentPlaceHolder>0\</CodeContentPlaceHolder>, the compiled application can be run in either 64-bit or 32-bit mode. When it runs as a 64-bit application, the just-in-time (JIT) compiler produces 64-bit native code. If the application depends on a 32-bit managed or unmanaged component, that component will fail to load in 64-bit mode. To correct this problem, set the project's **Platform target** property to <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> and recompile.  
+  
+ **Make sure that you are not using a component that was created with a different version of the .NET Framework.**  
+ This exception is thrown when an application or component that was developed by using the [!INCLUDE[net_v10_short](../vs140/includes/net_v10_short_md.md)] or the [!INCLUDE[net_v11_short](../vs140/includes/net_v11_short_md.md)] attempts to load an assembly that was developed by using the [!INCLUDE[net_v20SP1_short](../vs140/includes/net_v20sp1_short_md.md)] or later, or when an application that was developed by using the [!INCLUDE[net_v20SP1_short](../vs140/includes/net_v20sp1_short_md.md)] or the [!INCLUDE[net_v35_short](../vs140/includes/net_v35_short_md.md)] attempts to load an assembly that was developed by using the [!INCLUDE[net_v40_short](../vs140/includes/net_v40_short_md.md)]. The \<xref:System.BadImageFormatException*> exception may be reported as a compile-time error, or the exception may be thrown at run time. See the \<xref:System.BadImageFormatException*> class for an example.  
+  
+ **Make sure that the file image is a valid managed assembly or module.**  
+ This exception is thrown when an unmanaged dynamic link library or executable is passed to the \<xref:System.Reflection.Assembly.Load*> method for loading.  
+  
+ For more information, Visual Basic users can refer to [Troubleshooting Interoperability](../vs140/troubleshooting-interoperability--visual-basic-.md).  
+  
+## Remarks  
+ Reflecting on C++ executable files may throw this exception. This is most likely caused by the C++ compiler stripping the relocation addresses or the .Reloc section from the executable file. To preserve the .relocation address in a C++ executable file, specify **/fixed:no** when linking.  
+  
+ For more causes of this exception, see the \<xref:System.BadImageFormatException*> class.  
+  
+## See Also  
+ \<xref:System.BadImageFormatException*>   
+ [How to: Find Out More About an Exception with the Exception Assistant](../vs140/how-to--use-the-exception-assistant.md)

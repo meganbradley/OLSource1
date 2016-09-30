@@ -1,0 +1,36 @@
+---
+title: "IDiaEnumSymbolsByAddr::Clone"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IDiaEnumSymbolsByAddr::Clone method"
+ms.assetid: f4582c69-bc3f-4a26-bcca-b641102b85fe
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaEnumSymbolsByAddr::Clone
+Makes a copy of an object.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ ppenum  
+ [out] Returns an [IDiaEnumSymbolsByAddr](../vs140/idiaenumsymbolsbyaddr.md) object that contains a duplicate of the enumerator. The symbols are not duplicated, only the enumerator.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>; otherwise, returns an error code.  
+  
+## See Also  
+ [IDiaEnumSymbolsByAddr](../vs140/idiaenumsymbolsbyaddr.md)

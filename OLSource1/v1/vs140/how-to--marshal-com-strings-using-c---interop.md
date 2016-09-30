@@ -1,0 +1,44 @@
+---
+title: "How to: Marshal COM Strings Using C++ Interop"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "get-started-article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "interop [C++], strings"
+  - "marshaling [C++], strings"
+  - "C++ Interop, strings"
+  - "data marshaling [C++], strings"
+  - "COM [C++], marshaling strings"
+ms.assetid: 06590759-bf99-4e34-a3a9-4527ea592cc2
+caps.latest.revision: 19
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# How to: Marshal COM Strings Using C++ Interop
+This topic demonstrates how a BSTR (the basic string format favored in COM programming) can be passed from a managed to an unmanaged function, and vice versa. For interoperating with other strings types, see the following topics:  
+  
+-   [How to: Marshal Unicode Strings Using C++ Interop](../vs140/how-to--marshal-unicode-strings-using-c---interop.md)  
+  
+-   [How to: Marshal ANSI Strings Using C++ Interop](../vs140/how-to--marshal-ansi-strings-using-c---interop.md)  
+  
+ The following code examples use the [managed, unmanaged](../vs140/managed--unmanaged.md) #pragma directives to implement managed and unmanaged functions in the same file, but these functions interoperate in the same manner if defined in separate files. Files containing only unmanaged functions do not need to be compiled with [/clr (Common Language Runtime Compilation)](../vs140/-clr--common-language-runtime-compilation-.md).  
+  
+## Example  
+ The following example demonstrates how a BSTR (a string format used in COM programming) can be passed from a managed to an unmanaged function. The calling managed function uses \<xref:System.Runtime.InteropServices.Marshal.StringToBSTR*> to obtain the address of a BSTR representation of the contents of a .NET System.String. This pointer is pinned using [pin_ptr](../vs140/pin_ptr--c---cli-.md) to ensure that its physical address is not changed during a garbage collection cycle while the unmanaged function executes. The garbage collector is prohibited from moving the memory until the [pin_ptr](../vs140/pin_ptr--c---cli-.md) goes out of scope.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Example  
+ The following example demonstrates how a BSTR can be passed from an unmanaged to an unmanaged function. The receiving managed function can either use the string in as a BSTR or use \<xref:System.Runtime.InteropServices.Marshal.PtrToStringBSTR*> to convert it to a \<xref:System.String*> for use with other managed functions. Because the memory representing the BSTR is allocated on the unmanaged heap, no pinning is necessary, because there is no garbage collection on the unmanaged heap.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+## See Also  
+ [Using C++ Interop Features](../vs140/using-c---interop--implicit-pinvoke-.md)

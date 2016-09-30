@@ -1,0 +1,32 @@
+---
+title: "Compiler Warning (level 2) CS0279"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS0279"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS0279"
+ms.assetid: 5e5faa8f-3d5b-4999-aa62-ff7f131a3e04
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Warning (level 2) CS0279
+'type name' does not implement the 'pattern name' pattern. 'method name' is either static or not public.  
+  
+ There are several statements in C# that rely on defined patterns, such as <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>. For example, <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> relies on the collection class implementing the enumerable pattern. This error occurs when the compiler is unable to make the match due to a method being declared <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> or not <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>. Methods in patterns are required to be instances of classes, and to be public.  
+  
+## Example  
+ The following example generates CS0279:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

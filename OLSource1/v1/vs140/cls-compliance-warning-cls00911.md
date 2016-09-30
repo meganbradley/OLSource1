@@ -1,0 +1,36 @@
+---
+title: "CLS Compliance Warning CLS00911"
+ms.custom: na
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CLS00911"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CLS00911"
+ms.assetid: d1a4721a-a3a6-4de0-bc14-a0b3c5e6dd78
+caps.latest.revision: 11
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CLS Compliance Warning CLS00911
+Literal static fields of an enum shall have the type of the enum itself  
+  
+ Make sure that literal static fields of an enum have type of the enum itself.  
+  
+ For more information CLS compliance checking, see [CLS Compliant Assemblies](assetId:///3320b57e-ea55-4697-a17d-f509a36a3c93).  
+  
+ The following declaration (using MSIL assembly language) shows what could cause CLS00911:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ By making the enum field be of the enum type, you can resolve this warning:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>

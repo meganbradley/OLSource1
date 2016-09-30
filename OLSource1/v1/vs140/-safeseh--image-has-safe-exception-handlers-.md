@@ -1,0 +1,62 @@
+---
+title: "-SAFESEH (Image has Safe Exception Handlers)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+H1: "/SAFESEH (Image has Safe Exception Handlers)"
+f1_keywords: 
+  - "/SAFESEH"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/SAFESEH linker option"
+  - "-SAFESEH linker option"
+  - "SAFESEH linker option"
+ms.assetid: 7722ff99-b833-4c65-a855-aaca902ffcb7
+caps.latest.revision: 20
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# -SAFESEH (Image has Safe Exception Handlers)
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+ When **/SAFESEH** is specified, the linker will only produce an image if it can also produce a table of the image's safe exception handlers. This table specifies for the operating system which exception handlers are valid for the image.  
+  
+ **/SAFESEH** is only valid when linking for x86 targets. **/SAFESEH** is not supported for platforms that already have the exception handlers noted. For example, on [!INCLUDE[vcprx64](../vs140/includes/vcprx64_md.md)] and ARM, all exception handlers are noted in the PDATA. ML64.exe has support for adding annotations that emit SEH information (XDATA and PDATA) into the image, allowing you to unwind through ml64 functions. See [MASM for X64 (ml64.exe)](../vs140/masm-for-x64--ml64.exe-.md) for more information.  
+  
+ If **/SAFESEH** is not specified, the linker will produce an image with a table of safe exceptions handlers if all modules are compatible with the safe exception handling feature. If any modules were not compatible with safe exception handling feature, the resulting image will not contain a table of safe exception handlers. If [/SUBSYSTEM](../vs140/-subsystem--specify-subsystem-.md) specifies WINDOWSCE or one of the EFI_* options, the linker will not attempt to produce an image with a table of safe exceptions handlers, as neither of those subsystems can make use of the information.  
+  
+ If **/SAFESEH:NO** is specified, the linker will not produce an image with a table of safe exceptions handlers even if all modules are compatible with the safe exception handling feature.  
+  
+ The most common reason for the linker not to be able to produce an image is because one or more of the input files (modules) to the linker was not compatible with the safe exception handlers feature. A common reason for a module to not be compatible with safe exception handlers is because it was created with a compiler from a previous version of Visual C++.  
+  
+ You can also register a function as a structured exception handler by using [.SAFESEH](../vs140/.safeseh.md).  
+  
+ It is not possible to mark an existing binary as having safe exception handlers (or no exception handlers); information on safe exception handling must be added at build time.  
+  
+ The linker's ability to build a table of safe exception handlers depends on the application using the C runtime library. If you link with [/NODEFAULTLIB](../vs140/-nodefaultlib--ignore-libraries-.md) and you want a table of safe exception handlers, you need to supply a load config struct (such as can be found in loadcfg.c CRT source file) that contains all the entries defined for Visual C++. For example:  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### To set this linker option in the Visual Studio development environment  
+  
+1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../vs140/working-with-project-properties.md).  
+  
+2.  Select the **Linker** folder.  
+  
+3.  Select the **Command Line** property page.  
+  
+4.  Enter the option into the **Additional Options** box.  
+  
+### To set this linker option programmatically  
+  
+-   See \<xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions*>.  
+  
+## See Also  
+ [Setting Linker Options](../vs140/setting-linker-options.md)   
+ [Linker Options](../vs140/linker-options.md)

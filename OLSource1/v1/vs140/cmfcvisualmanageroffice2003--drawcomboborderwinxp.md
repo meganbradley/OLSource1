@@ -1,0 +1,59 @@
+---
+title: "CMFCVisualManagerOffice2003::DrawComboBorderWinXP"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "DrawComboBorderWinXP"
+  - "CMFCVisualManagerOffice2003::DrawComboBorderWinXP"
+  - "CMFCVisualManagerOffice2003.DrawComboBorderWinXP"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "DrawComboBorderWinXP method"
+ms.assetid: 4d8aceb8-033e-4189-ae28-f42950989b9a
+caps.latest.revision: 13
+robots: noindex,nofollow
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CMFCVisualManagerOffice2003::DrawComboBorderWinXP
+Draws the combo box border using the current Windows XP theme.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ [in] <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ A pointer to a device context.  
+  
+ [in] <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ Bounding rectangle of the combo box border.  
+  
+ [in] <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ Specifies whether the combo box border is disabled.  
+  
+ [in] <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+ Specifies whether the combo box border is dropped down.  
+  
+ [in] <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+ Specifies whether the combo box border is highlighted.  
+  
+## Return Value  
+ Returns <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> if the theme API is enabled or <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> if not.  
+  
+## Remarks  
+  
+## Requirements  
+ **Header:** afxvisualmanageroffice2003.h  
+  
+## See Also  
+ [CMFCVisualManagerOffice2003 Class](../vs140/cmfcvisualmanageroffice2003-class.md)   
+ [Hierarchy Chart (MFC Feature Pack)](../vs140/hierarchy-chart.md)

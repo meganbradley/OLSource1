@@ -1,0 +1,53 @@
+---
+title: "IDiaSession::findInlineeLinesByLinenum"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+ms.assetid: cf32ae7c-a0c8-4800-bc8f-d64fdd15fb06
+caps.latest.revision: 7
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# IDiaSession::findInlineeLinesByLinenum
+Retrieves an enumeration that allows a client to iterate through the line number information of all functions that are inlined, directly or indirectly, in the specified source file and line number.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ [in] An [IDiaSymbol](../vs140/idiasymbol.md) object that represents the compiland in which to search for the line numbers. This parameter cannot be <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>.  
+  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ [in] An [IDiaSourceFile](../vs140/idiasourcefile.md) object that represents the source file in which to search. This parameter cannot be <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>.  
+  
+ <CodeContentPlaceHolder>5\</CodeContentPlaceHolder>  
+ [in] Specifies a one-based line number.  
+  
+> [!NOTE]
+>  You cannot use zero to specify all lines (use the [IDiaSession::findLines](../vs140/idiasession--findlines.md) method to find all lines).  
+  
+ <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>  
+ [in] Specifies the column number. Use zero to specify all columns. A column is a byte offset into a line.  
+  
+ <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>  
+ [out] Returns an [IDiaEnumLineNumbers](../vs140/idiaenumlinenumbers.md) object that contains a list of the line numbers that were retrieved.  
+  
+## Return Value  
+ If successful, returns <CodeContentPlaceHolder>8\</CodeContentPlaceHolder>; otherwise, returns an error code.  
+  
+## See Also  
+ [IDiaSession](../vs140/idiasession.md)   
+ [IDiaSourceFile](../vs140/idiasourcefile.md)   
+ [IDiaSymbol](../vs140/idiasymbol.md)   
+ [SymTagEnum Enumeration](../vs140/symtagenum.md)   
+ [IDiaEnumLineNumbers](../vs140/idiaenumlinenumbers.md)

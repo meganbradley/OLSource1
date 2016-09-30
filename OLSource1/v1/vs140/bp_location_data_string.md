@@ -1,0 +1,55 @@
+---
+title: "BP_LOCATION_DATA_STRING"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "BP_LOCATION_DATA_STRING"
+helpviewer_keywords: 
+  - "BP_LOCATION_DATA_STRING structure"
+ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
+caps.latest.revision: 14
+ms.author: "gregvanl"
+translation.priority.mt: 
+  - "de-de"
+  - "ja-jp"
+---
+# BP_LOCATION_DATA_STRING
+Used for setting data breakpoints that are based on a string that the user can enter from the integrated development environment (IDE).  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ The [IDebugThread2](../vs140/idebugthread2.md) object that represents the thread on which the breakpoint occurs.  
+  
+ <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ The context of the breakpoint within the code, typically a method or function name as seen on a call stack.  
+  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ The data string the user enters to set the breakpoint.  
+  
+ <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>  
+ The number of elements in the data string in which the breakpoint occurs.  
+  
+## Remarks  
+ This structure is a member of the [BP_LOCATION](../vs140/bp_location.md) structure as part of a union.  
+  
+## Requirements  
+ Header: msdbg.h  
+  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+  
+## See Also  
+ [Structures and Unions](../vs140/structures-and-unions.md)   
+ [BP_LOCATION](../vs140/bp_location.md)   
+ [IDebugThread2](../vs140/idebugthread2.md)

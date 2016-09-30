@@ -1,0 +1,47 @@
+---
+title: "Using Lambdas, Function Objects, and Restricted Functions"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+ms.assetid: 25346cc9-869d-4ada-aad3-e2228cad3d6c
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Using Lambdas, Function Objects, and Restricted Functions
+The C++ AMP code that you want to run on the accelerator is specified as an argument in a call to the [parallel_for_each](../vs140/parallel_for_each-function--c---amp-.md) method. You can provide either a lambda expression or a function object (functor) as that argument. Additionally, the lambda expression or function object can call a C++ AMP-restricted function. This topic uses an array addition algorithm to demonstrate lambdas, function objects, and restricted functions. The following example shows the algorithm without C++ AMP code. Two 1-dimensional arrays of equal length are created. The corresponding integer elements are added and stored in a third 1-dimensional array. C++ AMP is not used.  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Lambda Expression  
+ Using a lambda expression is the most direct way to use C++ AMP to rewrite the code.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ The lambda expression must include one indexing parameter and must include <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>. In the example, the [array_view](../vs140/array_view-class.md)<CodeContentPlaceHolder>5\</CodeContentPlaceHolder> object has a rank of 1. Therefore, the parameter to the lambda statement is an [index](../vs140/index-class.md) object that has rank 1. At runtime, the lambda expression is executed once for each element in the [array_view](../vs140/array_view-class.md) object. For more information, see [Lambda Expression Syntax](../vs140/lambda-expression-syntax.md).  
+  
+## Function Object  
+ You can factor the accelerator code into a function object.  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+ The function object must include a constructor and must include an overload of the function call operator. The function call operator must include one indexing parameter. An instance of the function object is passed as the second argument to the [parallel_for_each](../vs140/parallel_for_each-function--c---amp-.md) method. In this example, three [array_view](../vs140/array_view-class.md) objects are passed to the function object constructor. The [array_view](../vs140/array_view-class.md) object <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> has a rank of 1. Therefore, the parameter to the function call operator is an [index](../vs140/index-class.md) object that has rank 1. At runtime, the function is executed once for each element in the [array_view](../vs140/array_view-class.md) object. For more information, see [Function Call (C++)](../vs140/function-call--c---.md) and [Function Objects](../vs140/function-objects-in-the-stl.md).  
+  
+## C++ AMP-Restricted Function  
+ You can further factor the accelerator code by creating a restricted function and calling it from a lambda expression or a function object. The following code example demonstrates how to call a restricted function from a lambda expression.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ The restricted function must include <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> and conform to the restrictions that are described in [Restriction Clause (C++ AMP)](../vs140/restrict--c---amp-.md).  
+  
+## See Also  
+ [C++ Accelerated Massive Parallelism (C++ AMP)](../vs140/c---amp--c---accelerated-massive-parallelism-.md)   
+ [Lambda Expression Syntax](../vs140/lambda-expression-syntax.md)   
+ [Function Call (C++)](../vs140/function-call--c---.md)   
+ [Function Objects](../vs140/function-objects-in-the-stl.md)   
+ [Restriction Clause (C++ AMP)](../vs140/restrict--c---amp-.md)

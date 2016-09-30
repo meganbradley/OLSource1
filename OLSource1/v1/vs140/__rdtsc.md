@@ -1,0 +1,57 @@
+---
+title: "__rdtsc"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "__rdtsc"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "__rdtsc intrinsic"
+  - "rdtsc instruction"
+  - "Read Time Stamp Counter instruction"
+ms.assetid: e31d0e51-c9bb-42ca-bbe9-a81ffe662387
+caps.latest.revision: 19
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# __rdtsc
+**Microsoft Specific**  
+  
+ Generates the <CodeContentPlaceHolder>2\</CodeContentPlaceHolder> instruction, which returns the processor time stamp. The processor time stamp records the number of clock cycles since the last reset.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Return Value  
+ A 64-bit unsigned integer representing a tick count.  
+  
+## Requirements  
+  
+|Intrinsic|Architecture|  
+|---------------|------------------|  
+|<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>|x86, [!INCLUDE[vcprx64](../vs140/includes/vcprx64_md.md)]|  
+  
+ **Header file** \<intrin.h>  
+  
+## Remarks  
+ This routine is available only as an intrinsic.  
+  
+ The interpretation of the TSC value in this generation of hardware differs from that in earlier versions of [!INCLUDE[vcprx64](../vs140/includes/vcprx64_md.md)]. See hardware manuals for more information.  
+  
+## Example  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ **3363423610155519 ticks**   
+## END Microsoft Specific  
+  
+## See Also  
+ [Compiler Intrinsics](../vs140/compiler-intrinsics.md)

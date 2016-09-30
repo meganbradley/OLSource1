@@ -1,0 +1,75 @@
+---
+title: "User-Defined Constants (Visual Basic)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "constants, circular references"
+  - "Const statement [Visual Basic], user-defined constants"
+  - "user-defined constants"
+  - "scope, constants"
+  - "constants, user-defined"
+  - "circular references between constants"
+ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
+caps.latest.revision: 23
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# User-Defined Constants (Visual Basic)
+A constant is a meaningful name that takes the place of a number or string that does not change. Constants store values that, as the name implies, remain constant throughout the execution of an application. You can use constants that are defined by the controls or components you work with, or you can create your own. Constants you create yourself are described as *user-defined*.  
+  
+ You declare a constant with the <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> statement, using the same guidelines you would for creating a variable name. If <CodeContentPlaceHolder>1\</CodeContentPlaceHolder> is <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>, you must explicitly declare the constant type.  
+  
+## Const Statement Usage  
+ A <CodeContentPlaceHolder>3\</CodeContentPlaceHolder> statement can represent a mathematical or date/time quantity:  
+  
+ [!code[VbEnumsTask#10](../vs140/codesnippet/VisualBasic/user-defined-constants--visual-basic-_1.vb)]  
+  
+ It also can define <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> constants:  
+  
+ [!code[VbEnumsTask#13](../vs140/codesnippet/VisualBasic/user-defined-constants--visual-basic-_2.vb)]  
+  
+ The expression on the right side of the equal sign ( <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> ) is often a number or literal string, but it also can be an expression that results in a number or string (although that expression cannot contain calls to functions). You can even define constants in terms of previously defined constants:  
+  
+ [!code[VbEnumsTask#15](../vs140/codesnippet/VisualBasic/user-defined-constants--visual-basic-_3.vb)]  
+  
+## Scope of User-Defined Constants  
+ A <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> statement's scope is the same as that of a variable declared in the same location. You can specify scope in any of the following ways:  
+  
+-   To create a constant that exists only within a procedure, declare it within that procedure.  
+  
+-   To create a constant available to all procedures within a class, but not to any code outside that module, declare it in the declarations section of the class.  
+  
+-   To create a constant that is available to all members of an assembly, but not to outside clients of the assembly, declare it using the <CodeContentPlaceHolder>7\</CodeContentPlaceHolder> keyword in the declarations section of the class.  
+  
+-   To create a constant available throughout the application, declare it using the <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> keyword in the declarations section the class.  
+  
+ For more information, see [How to: Declare A Constant](../vs140/how-to--declare-a-constant--visual-basic-.md).  
+  
+### Avoiding Circular References  
+ Because constants can be defined in terms of other constants, it is possible to inadvertently create a *cycle*, or circular reference, between two or more constants. A cycle occurs when you have two or more public constants, each of which is defined in terms of the other, as in the following example:  
+  
+ [!code[VbEnumsTask#16](../vs140/codesnippet/VisualBasic/user-defined-constants--visual-basic-_4.vb)]  
+[!code[VbEnumsTask#17](../vs140/codesnippet/VisualBasic/user-defined-constants--visual-basic-_5.vb)]  
+  
+ If a cycle occurs, [!INCLUDE[vbprvb](../vs140/includes/vbprvb_md.md)] generates a compiler error.  
+  
+## See Also  
+ [Const Statement](../vs140/const-statement--visual-basic-.md)   
+ [Constant and Literal Data Types](../vs140/constant-and-literal-data-types--visual-basic-.md)   
+ [Constants and Enumerations](../vs140/constants-and-enumerations-in-visual-basic.md)   
+ [Constants and Enumerations](../vs140/constants-and-enumerations--visual-basic-.md)   
+ [Enumerations Overview](../vs140/enumerations-overview--visual-basic-.md)   
+ [Constants Overview (Visual Basic)](../vs140/constants-overview--visual-basic-.md)   
+ [How to: Declare an Enumeration](../vs140/how-to--declare-enumerations--visual-basic-.md)   
+ [Enumerations and Name Qualification](../vs140/enumerations-and-name-qualification--visual-basic-.md)   
+ [Option Strict Statement](../vs140/option-strict-statement.md)

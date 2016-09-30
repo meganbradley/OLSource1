@@ -1,0 +1,34 @@
+---
+title: "&#39;&lt;methodname&gt;&#39; cannot override a method that has been shadowed"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31406"
+  - "bc31406"
+helpviewer_keywords: 
+  - "BC31406"
+ms.assetid: 08ed11a6-3399-49fa-ac6e-c5df1328a24e
+caps.latest.revision: 13
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# &#39;&lt;methodname&gt;&#39; cannot override a method that has been shadowed
+A method attempted to override a method that shadows another member.  
+  
+ **Error ID:** BC31406  
+  
+### To correct this error  
+  
+-   Use the <CodeContentPlaceHolder>0\</CodeContentPlaceHolder> modifier to override shadowed members.  
+  
+## See Also  
+ [Shadows](../vs140/shadows--visual-basic-.md)   
+ [Overrides](../vs140/overrides--visual-basic-.md)

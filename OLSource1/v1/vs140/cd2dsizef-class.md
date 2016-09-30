@@ -1,0 +1,88 @@
+---
+title: "CD2DSizeF Class"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "reference"
+f1_keywords: 
+  - "afxrendertarget/CD2DSizeF"
+  - "CD2DSizeF"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CD2DSizeF class"
+ms.assetid: f486a1e1-997d-4286-8cb9-26369dc82055
+caps.latest.revision: 18
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# CD2DSizeF Class
+A wrapper for D2D1_SIZE_F.  
+  
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## Members  
+  
+### Public Constructors  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CD2DSizeF::CD2DSizeF](#cd2dsizef__cd2dsizef)|Overloaded. Constructs a <CodeContentPlaceHolder>4\</CodeContentPlaceHolder> object from <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> object.|  
+  
+### Public Methods  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CD2DSizeF::IsNull](#cd2dsizef__isnull)|Returns a <CodeContentPlaceHolder>6\</CodeContentPlaceHolder> value that indicates whether an expression contains no valid data ( <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>).|  
+  
+### Public Operators  
+  
+|Name|Description|  
+|----------|-----------------|  
+|[CD2DSizeF::operator CSize](#cd2dsizef__operator_csize)|Converts <CodeContentPlaceHolder>8\</CodeContentPlaceHolder> to <CodeContentPlaceHolder>9\</CodeContentPlaceHolder> object.|  
+  
+## Inheritance Hierarchy  
+ <CodeContentPlaceHolder>10\</CodeContentPlaceHolder>  
+  
+ [CD2DSizeF](../vs140/cd2dsizef-class.md)  
+  
+## Requirements  
+ **Header:** afxrendertarget.h  
+  
+##  \<a name="cd2dsizef__cd2dsizef">\</a>  CD2DSizeF::CD2DSizeF  
+ Constructs a CD2DSizeF object from CSize object.  
+  
+<CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+### Parameters  
+ <CodeContentPlaceHolder>11\</CodeContentPlaceHolder>  
+ source size  
+  
+ <CodeContentPlaceHolder>12\</CodeContentPlaceHolder>  
+ source width  
+  
+ <CodeContentPlaceHolder>13\</CodeContentPlaceHolder>  
+ source height  
+  
+##  \<a name="cd2dsizef__isnull">\</a>  CD2DSizeF::IsNull  
+ Returns a Boolean value that indicates whether an expression contains no valid data (Null).  
+  
+<CodeContentPlaceHolder>2\</CodeContentPlaceHolder>  
+### Return Value  
+ TRUE if width and height are empty; otherwise FALSE.  
+  
+##  \<a name="cd2dsizef__operator_csize">\</a>  CD2DSizeF::operator CSize  
+ Converts CD2DSizeF to CSize object.  
+  
+<CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+### Return Value  
+ Current value of D2D size.  
+  
+## See Also  
+ [MFC Classes](../vs140/mfc-classes.md)

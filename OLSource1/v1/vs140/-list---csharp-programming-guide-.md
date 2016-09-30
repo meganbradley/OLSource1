@@ -1,0 +1,55 @@
+---
+title: "&lt;list&gt; (C# Programming Guide)"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "list"
+  - "<list>"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "list C# XML tag"
+  - "listheader C# XML tag"
+  - "<listheader> C# XML tag"
+  - "item C# XML tag"
+  - "<item> C# XML tag"
+  - "<list> C# XML tag"
+ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
+caps.latest.revision: 15
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# &lt;list&gt; (C# Programming Guide)
+## Syntax  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+#### Parameters  
+ <CodeContentPlaceHolder>1\</CodeContentPlaceHolder>  
+ A term to define, which will be defined in <CodeContentPlaceHolder>2\</CodeContentPlaceHolder>.  
+  
+ <CodeContentPlaceHolder>3\</CodeContentPlaceHolder>  
+ Either an item in a bullet or numbered list or the definition of a <CodeContentPlaceHolder>4\</CodeContentPlaceHolder>.  
+  
+## Remarks  
+ The \<listheader> block is used to define the heading row of either a table or definition list. When defining a table, you only need to supply an entry for term in the heading.  
+  
+ Each item in the list is specified with an \<item> block. When creating a definition list, you will need to specify both <CodeContentPlaceHolder>5\</CodeContentPlaceHolder> and <CodeContentPlaceHolder>6\</CodeContentPlaceHolder>. However, for a table, bulleted list, or numbered list, you only need to supply an entry for <CodeContentPlaceHolder>7\</CodeContentPlaceHolder>.  
+  
+ A list or table can have as many \<item> blocks as needed.  
+  
+ Compile with [/doc](../vs140/-doc--csharp-compiler-options-.md) to process documentation comments to a file.  
+  
+## Example  
+ [!code[csProgGuideDocComments#6](../vs140/codesnippet/CSharp/-list---csharp-programming-guide-_1.cs)]  
+  
+## See Also  
+ [C# Programming Guide](../vs140/csharp-programming-guide.md)   
+ [Recommended Tags for Documentation Comments](../vs140/recommended-tags-for-documentation-comments--csharp-programming-guide-.md)

@@ -1,0 +1,31 @@
+---
+title: "Compiler Error C2970"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: na
+ms.topic: "error-reference"
+f1_keywords: 
+  - "C2970"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2970"
+ms.assetid: 21d90348-20d3-438c-b278-efdbfb93a7d2
+caps.latest.revision: 12
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error C2970
+'class' : template parameter 'param' : 'arg' : an expression involving objects with internal linkage cannot be used as a non-type argument  
+  
+ You cannot use the name or address of a static variable as a template argument. The template class expects a const value that can be evaluated at compile time.  
+  
+ The following sample generates C2970:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>

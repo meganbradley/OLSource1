@@ -1,0 +1,40 @@
+---
+title: "Compiler Error CS1920"
+ms.custom: na
+ms.date: "09/22/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "CS1920"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "CS1920"
+ms.assetid: efb4782f-a222-4fb5-9e79-8bd2d380520b
+caps.latest.revision: 10
+translation.priority.ht: 
+  - "de-de"
+  - "ja-jp"
+---
+# Compiler Error CS1920
+Element initializer cannot be empty.  
+  
+ A collection initializer consists of a sequence of element initializers. The element initializers do not have to be enclosed in braces unless they contain an assignment expression. However, if you do supply braces, they cannot be empty. If the element initializer is an object initializer, the braces may be empty as long as the initializer contains a new object creation expression.  
+  
+### To correct this error  
+  
+-   Add the missing expression between the braces.  
+  
+-   If the expression is intended to be an object initializer, add the new object creation expression in front of the braces.  
+  
+## Example  
+ The following example generates CS1920:  
+  
+<CodeContentPlaceHolder>0\</CodeContentPlaceHolder>  
+## See Also  
+ [Object and Collection Initializers (C# Programming Guide)](../vs140/object-and-collection-initializers--csharp-programming-guide-.md)
