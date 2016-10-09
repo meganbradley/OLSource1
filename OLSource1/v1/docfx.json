@@ -26,6 +26,7 @@
     "template": [
       "op.html"
     ],
+	"xref": ["msdn.4.5.2.zip"],
     "dest": "OLSource1/v1"
   }
 }
