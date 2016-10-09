@@ -1,0 +1,52 @@
+---
+title: "Can&#39;t open &#39;&lt;filename&gt;&#39; for writing"
+ms.custom: na
+ms.date: "10/03/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vbc2012"
+  - "bc2012"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "BC2012"
+ms.assetid: 73270fe4-a638-42c7-be21-5e156e2b18f6
+caps.latest.revision: 11
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Can&#39;t open &#39;&lt;filename&gt;&#39; for writing
+The specified file cannot be opened for writing, perhaps because it has already been opened.  
+  
+ **Error ID:** BC2012  
+  
+### To correct this error  
+  
+1.  Close the file and reopen it.  
+  
+2.  Check the file's permissions.  
+  
+## See Also  
+ \<xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText*>   
+ \<xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes*>   
+ [Writing to Files](../VS_visualbasic/writing-to-files-in-visual-basic.md)

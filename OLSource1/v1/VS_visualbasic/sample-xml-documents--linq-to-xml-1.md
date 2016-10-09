@@ -1,0 +1,49 @@
+---
+title: "Sample XML Documents (LINQ to XML)1"
+ms.custom: na
+ms.date: "10/03/2016"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+H1: "Sample XML Documents (LINQ to XML)"
+dev_langs: 
+  - "VB"
+ms.assetid: a734cc4e-d95d-4631-91a2-81618c8ad894
+caps.latest.revision: 3
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Sample XML Documents (LINQ to XML)1
+The following example files are used in the code samples and code snippets throughout the [!INCLUDE[sqltecxlinq](../VS_visualbasic/includes/sqltecxlinq_md.md)] documentation.  
+  
+> [!NOTE]
+>  The example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious. No association with any real company, organization, product, domain name, e-mail address, logo, person, places, or events is intended or should be inferred.  
+  
+## In This Section  
+  
+|Topic|Description|  
+|-----------|-----------------|  
+|[Sample XML File: Typical Purchase Order (LINQ to XML)](../VS_visualbasic/sample-xml-file--typical-purchase-order--linq-to-xml-2.md)|An XML document that contains a typical purchase order.|  
+|[Sample XML File: Typical Purchase Order in a Namespace](../VS_visualbasic/sample-xml-file--typical-purchase-order-in-a-namespace3.md)|An XML document in a namespace that contains a typical purchase order.|  
+|[Sample XML File: Multiple Purchase Orders (LINQ to XML)](../VS_visualbasic/sample-xml-file--multiple-purchase-orders--linq-to-xml-3.md)|An XML document that contains multiple purchase orders.|  
+|[Sample XML File: Multiple Purchase Orders in a Namespace](../VS_visualbasic/sample-xml-file--multiple-purchase-orders-in-a-namespace3.md)|An XML document in a namespace that contains multiple purchase orders.|  
+|[Sample XML File: Test Configuration (LINQ to XML)](../VS_visualbasic/sample-xml-file--test-configuration--linq-to-xml-2.md)|An XML document that contains some pseudo test configuration data.|  
+|[Sample XML File: Test Configuration in a Namespace](../VS_visualbasic/sample-xml-file--test-configuration-in-a-namespace3.md)|An XML document in a namespace that contains some pseudo test configuration data.|  
+|[Sample XML File: Customers and Orders (LINQ to XML)](../VS_visualbasic/sample-xml-file--customers-and-orders--linq-to-xml-1.md)|An XML document that contains customers and orders.|  
+|[Sample XSD File: Customers and Orders](../VS_visualbasic/sample-xsd-file--customers-and-orders2.md)|An Xml Schema Definition (XSD) that validates the [Sample XML File: Customers and Orders (LINQ to XML)](../Topic/Sample%20XML%20File:%20Customers%20and%20Orders%20\(LINQ%20to%20XML\)3.md).|  
+|[Sample XML File: Customers and Orders in a Namespace](../VS_visualbasic/sample-xml-file--customers-and-orders-in-a-namespace1.md)|An XML document in a namespace that contains customers and orders.|  
+|[Sample XML File: Numerical Data (LINQ to XML)](../VS_visualbasic/sample-xml-file--numerical-data--linq-to-xml-2.md)|An XML document that contains data suitable for summing and grouping.|  
+|[Sample XML File: Numerical Data in a Namespace](../VS_visualbasic/sample-xml-file--numerical-data-in-a-namespace1.md)|An XML document in a namespace that contains data suitable for summing and grouping.|  
+|[Sample XML File: Books (LINQ to XML)](../VS_visualbasic/sample-xml-file--books--linq-to-xml-3.md)|An XML document that contains a catalog of books.|  
+|[Sample XML File: Consolidated Purchase Orders](../VS_visualbasic/sample-xml-file--consolidated-purchase-orders3.md)|Presents an XML document that contains purchase orders that are in different namespaces.|  
+  
+## See Also  
+ [Programming Guide (LINQ to XML) (Visual Basic)](../VS_visualbasic/programming-guide--linq-to-xml---visual-basic-.md)

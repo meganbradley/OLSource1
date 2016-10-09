@@ -1,0 +1,53 @@
+---
+title: "My.Request Object"
+ms.custom: na
+ms.date: "10/03/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "My.MyWebExtension.Request"
+  - "My.Request"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "My.Request object"
+ms.assetid: 93d5f0e2-6b60-4a2c-8652-d90216f6ad10
+caps.latest.revision: 9
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# My.Request Object
+Gets the \<xref:System.Web.HttpRequest> object for the requested page.  
+  
+## Remarks  
+ The `My.Request` object contains information about the current HTTP request.  
+  
+ The `My.Request` object is available only for ASP.NET applications.  
+  
+## Example  
+ The following example gets the header collection from the `My.Request` object and uses the `My.Response` object to write it to the ASP.NET page.  
+  
+ [!code[VbVbalrMyWeb#1](../VS_visualbasic/codesnippet/VisualBasic/my.request-object_1.aspx)]  
+  
+## See Also  
+ \<xref:System.Web.HttpRequest>   
+ [My.Response Object](../VS_visualbasic/my.response-object.md)

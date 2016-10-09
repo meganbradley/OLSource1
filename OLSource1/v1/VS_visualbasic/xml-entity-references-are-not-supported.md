@@ -1,0 +1,50 @@
+---
+title: "XML entity references are not supported"
+ms.custom: na
+ms.date: "10/03/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-visual-basic"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "vbc31180"
+  - "bc31180"
+dev_langs: 
+  - "VB"
+helpviewer_keywords: 
+  - "BC31180"
+ms.assetid: 2a393327-d8e2-4187-85b1-642b4f53b4ae
+caps.latest.revision: 6
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# XML entity references are not supported
+An entity reference (for example, `©`) that is not defined in the XML 1.0 specification is included as a value for an XML literal. Only `&`, `"`, `<`, `>`, and `'` XML entity references are supported in XML literals.  
+  
+ **Error ID:** BC31180  
+  
+### To correct this error  
+  
+-   Remove the unsupported entity reference.  
+  
+## See Also  
+ [XML Literals and the XML 1.0 Specification](../VS_visualbasic/xml-literals-and-the-xml-1.0-specification--visual-basic-.md)   
+ [XML Literals](../VS_visualbasic/xml-literals--visual-basic-.md)   
+ [XML](../VS_visualbasic/xml-in-visual-basic.md)
