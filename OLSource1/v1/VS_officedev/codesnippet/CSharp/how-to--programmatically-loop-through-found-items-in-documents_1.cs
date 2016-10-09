@@ -1,0 +1,1 @@
+            Word.Range rng = this.Content; 

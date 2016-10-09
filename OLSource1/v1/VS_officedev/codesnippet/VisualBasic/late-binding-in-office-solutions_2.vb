@@ -1,0 +1,1 @@
+        Dim dynamicRange As Excel.Range = Globals.Sheet1.Cells(1, 1)

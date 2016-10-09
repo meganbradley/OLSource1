@@ -1,0 +1,2 @@
+        Dim newDocPath As String = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments) + "\test\MyOtherDrawing.vsd"
+        Me.Application.ActiveDocument.SaveAsEx(newDocPath, CShort(Microsoft.Office.Interop.Visio.VisOpenSaveArgs.visSaveAsRO) + CShort(Microsoft.Office.Interop.Visio.VisOpenSaveArgs.visSaveAsListInMRU))

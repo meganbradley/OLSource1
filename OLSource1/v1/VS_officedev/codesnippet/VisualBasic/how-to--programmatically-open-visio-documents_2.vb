@@ -1,0 +1,2 @@
+            Dim docPath As String = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments) + "\test\MyDrawing.vsd"
+            Me.Application.Documents.OpenEx(docPath, CShort(Microsoft.Office.Interop.Visio.VisOpenSaveArgs.visOpenDocked) + CShort(Microsoft.Office.Interop.Visio.VisOpenSaveArgs.visOpenRO))

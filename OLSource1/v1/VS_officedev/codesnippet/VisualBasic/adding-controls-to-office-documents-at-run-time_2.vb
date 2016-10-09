@@ -1,0 +1,1 @@
+        Globals.Sheet1.Controls.Remove("ChartSource")

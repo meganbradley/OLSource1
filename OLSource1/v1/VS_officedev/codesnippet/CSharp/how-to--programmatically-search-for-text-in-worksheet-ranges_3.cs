@@ -1,0 +1,1 @@
+            while(currentFind != null) 

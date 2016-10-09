@@ -1,0 +1,1 @@
+        Static previousRow As Integer = 0

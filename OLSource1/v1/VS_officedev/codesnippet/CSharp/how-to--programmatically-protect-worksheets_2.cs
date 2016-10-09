@@ -1,0 +1,1 @@
+            ((Excel.Worksheet)Application.ActiveSheet).Protect(getPasswordFromUser, true);

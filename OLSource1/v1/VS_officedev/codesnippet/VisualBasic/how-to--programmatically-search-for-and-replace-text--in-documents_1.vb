@@ -1,0 +1,1 @@
+        Dim findText As String = "find me"

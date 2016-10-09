@@ -1,0 +1,1 @@
+            rng.Collapse(Word.WdCollapseDirection.wdCollapseEnd);

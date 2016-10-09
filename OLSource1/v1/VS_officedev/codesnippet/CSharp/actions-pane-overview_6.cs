@@ -1,0 +1,1 @@
+           this.CommandBars["Task Pane"].Width = 200;

@@ -1,0 +1,1 @@
+            Excel.Range currentCell = this.Application.ActiveCell;

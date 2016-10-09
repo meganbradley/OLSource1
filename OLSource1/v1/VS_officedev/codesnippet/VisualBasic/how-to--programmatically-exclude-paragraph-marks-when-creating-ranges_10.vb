@@ -1,0 +1,1 @@
+        secondRange.Delete()

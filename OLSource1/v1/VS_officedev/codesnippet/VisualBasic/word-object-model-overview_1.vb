@@ -1,0 +1,1 @@
+        Me.Paragraphs(1).Range.Select()

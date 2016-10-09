@@ -1,0 +1,1 @@
+    Private WithEvents inspectors As Outlook.Inspectors

@@ -1,0 +1,1 @@
+            Globals.Sheet1.Visible = Excel.XlSheetVisibility.xlSheetHidden;

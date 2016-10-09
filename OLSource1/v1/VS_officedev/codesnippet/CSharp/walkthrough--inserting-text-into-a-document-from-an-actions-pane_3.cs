@@ -1,0 +1,1 @@
+        private InsertTextControl insertText = new InsertTextControl();

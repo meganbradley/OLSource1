@@ -1,0 +1,1 @@
+            this.Application.Documents.Add(@"C:\Test\SampleTemplate.dotx");

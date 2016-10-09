@@ -1,0 +1,1 @@
+            rng.Tables.Add(document.Paragraphs[2].Range, 3, 2, ref missing, ref missing);

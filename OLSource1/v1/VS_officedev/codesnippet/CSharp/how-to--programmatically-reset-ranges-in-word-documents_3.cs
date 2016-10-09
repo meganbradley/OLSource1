@@ -1,0 +1,1 @@
+            rng.SetRange(this.Sentences[2].Start, this.Sentences[5].End); 

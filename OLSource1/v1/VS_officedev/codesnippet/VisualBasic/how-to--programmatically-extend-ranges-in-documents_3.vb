@@ -1,0 +1,1 @@
+        rng.MoveStart(Unit:=Word.WdUnits.wdCharacter, Count:=7)

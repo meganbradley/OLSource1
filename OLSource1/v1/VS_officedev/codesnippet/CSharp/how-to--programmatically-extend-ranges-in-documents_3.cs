@@ -1,0 +1,1 @@
+            rng.MoveStart(Word.WdUnits.wdCharacter, 7);

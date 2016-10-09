@@ -1,0 +1,1 @@
+        rng.Tables.Add(Range:=Me.Paragraphs.Item(2).Range, NumRows:=3, NumColumns:=2)

@@ -1,0 +1,1 @@
+            Dim nodeInfo As IListNodeInfo = node.Annotations.GetValue(Of IListNodeInfo)()

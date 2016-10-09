@@ -1,0 +1,1 @@
+        rng.SetRange(Start:=Me.Sentences(2).Start, End:=Me.Sentences(5).End)

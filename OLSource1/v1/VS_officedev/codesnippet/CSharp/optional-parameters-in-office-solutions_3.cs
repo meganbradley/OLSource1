@@ -1,0 +1,1 @@
+            Globals.ThisDocument.CheckSpelling(ignoreUppercase: true);

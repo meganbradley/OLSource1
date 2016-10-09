@@ -1,0 +1,1 @@
+            this.rangeStyles.Style = "Normal";

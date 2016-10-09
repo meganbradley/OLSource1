@@ -1,0 +1,1 @@
+            if (previousRow != 0)

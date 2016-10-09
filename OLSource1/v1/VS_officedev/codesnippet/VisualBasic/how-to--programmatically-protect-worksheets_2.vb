@@ -1,0 +1,1 @@
+        CType(Application.ActiveSheet, Excel.Worksheet).Protect(getPasswordFromUser, AllowSorting:=True)

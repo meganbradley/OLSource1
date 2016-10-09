@@ -1,0 +1,1 @@
+        Dim newTable As Word.Table = Me.Application.ActiveDocument.Tables.Item(1)

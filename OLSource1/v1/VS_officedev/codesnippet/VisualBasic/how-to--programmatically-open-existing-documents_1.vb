@@ -1,0 +1,1 @@
+        Me.Application.Documents.Open("C:\Test\NewDocument.docx")

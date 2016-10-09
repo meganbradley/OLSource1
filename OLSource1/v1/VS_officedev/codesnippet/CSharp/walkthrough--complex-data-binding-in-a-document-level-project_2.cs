@@ -1,0 +1,1 @@
+            this.button1.Click += new EventHandler(button1_Click);

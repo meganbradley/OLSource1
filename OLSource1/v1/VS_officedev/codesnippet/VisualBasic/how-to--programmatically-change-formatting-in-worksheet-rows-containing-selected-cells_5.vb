@@ -1,0 +1,1 @@
+            If currentCell.Row <> previousRow Then

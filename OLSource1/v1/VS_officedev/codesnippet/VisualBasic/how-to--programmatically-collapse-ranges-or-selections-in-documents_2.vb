@@ -1,0 +1,1 @@
+        Dim rng As Word.Range = Me.Application.ActiveDocument.Paragraphs(1).Range

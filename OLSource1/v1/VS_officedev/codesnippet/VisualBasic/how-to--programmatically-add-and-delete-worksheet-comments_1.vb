@@ -1,0 +1,1 @@
+        Me.dateComment.AddComment("Comment added " & DateTime.Now)

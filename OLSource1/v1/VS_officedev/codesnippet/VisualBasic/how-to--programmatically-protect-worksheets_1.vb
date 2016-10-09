@@ -1,0 +1,1 @@
+        Globals.Sheet1.Protect(getPasswordFromUser, AllowSorting:=True)

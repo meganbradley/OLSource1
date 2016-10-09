@@ -1,0 +1,1 @@
+            this.Protect(getPasswordFromUser, missing, missing);

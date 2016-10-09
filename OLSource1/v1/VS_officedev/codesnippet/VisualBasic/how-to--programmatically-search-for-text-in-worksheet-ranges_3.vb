@@ -1,0 +1,1 @@
+        While Not currentFind Is Nothing

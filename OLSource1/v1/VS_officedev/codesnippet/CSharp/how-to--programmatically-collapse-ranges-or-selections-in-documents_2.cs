@@ -1,0 +1,1 @@
+            Word.Range rng = this.Application.ActiveDocument.Paragraphs[1].Range;

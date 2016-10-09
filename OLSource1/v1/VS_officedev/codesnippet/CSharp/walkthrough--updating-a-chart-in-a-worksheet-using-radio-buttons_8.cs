@@ -1,0 +1,1 @@
+            this.ChartOptions1.SelectionChanged += new EventHandler(ChartOptions1_SelectionChanged);

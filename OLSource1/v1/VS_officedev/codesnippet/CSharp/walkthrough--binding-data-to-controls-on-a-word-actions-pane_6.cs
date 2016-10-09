@@ -1,0 +1,1 @@
+            this.Insert.Click += new EventHandler(Insert_Click);

@@ -1,0 +1,1 @@
+            this.Application.Selection.InlineShapes.AddPicture(@"C:\SamplePicture.jpg");

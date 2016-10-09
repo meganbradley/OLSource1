@@ -1,0 +1,1 @@
+            Word.Table newTable = this.Tables[1];

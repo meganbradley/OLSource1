@@ -1,0 +1,1 @@
+            this.Application.CommandBars["Task Pane"].Visible = false;

@@ -1,0 +1,1 @@
+        firstRange.MoveEnd(Unit:=Word.WdUnits.wdCharacter, Count:=1)

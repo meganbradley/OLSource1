@@ -1,0 +1,1 @@
+        Me.Application.CommandBars("Task Pane").Visible = False

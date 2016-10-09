@@ -1,0 +1,1 @@
+        Dim currentCell As Excel.Range = Me.Application.ActiveCell

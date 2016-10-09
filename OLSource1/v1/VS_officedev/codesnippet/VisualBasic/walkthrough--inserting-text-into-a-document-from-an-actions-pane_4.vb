@@ -1,0 +1,1 @@
+        Me.ActionsPane.Controls.Add(insertText)

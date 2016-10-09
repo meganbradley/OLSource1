@@ -1,0 +1,1 @@
+    Dim hello As New HelloControl

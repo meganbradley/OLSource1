@@ -1,0 +1,1 @@
+Imports Microsoft.VisualStudio.Tools.Applications

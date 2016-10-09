@@ -1,0 +1,1 @@
+        MessageBox.Show("Characters: " & Me.Application.ActiveDocument.Characters.Count.ToString())

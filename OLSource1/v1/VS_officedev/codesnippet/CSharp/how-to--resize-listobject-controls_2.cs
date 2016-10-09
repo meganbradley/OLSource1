@@ -1,0 +1,1 @@
+            list1.Resize(this.Range["A1", "C5"]);

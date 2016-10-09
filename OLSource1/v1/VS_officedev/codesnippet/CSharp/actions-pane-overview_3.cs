@@ -1,0 +1,1 @@
+            this.Application.DisplayDocumentActionTaskPane = false;

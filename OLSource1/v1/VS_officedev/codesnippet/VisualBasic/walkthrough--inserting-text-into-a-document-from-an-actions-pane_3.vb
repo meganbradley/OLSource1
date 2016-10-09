@@ -1,0 +1,1 @@
+    Dim insertText As New InsertTextControl

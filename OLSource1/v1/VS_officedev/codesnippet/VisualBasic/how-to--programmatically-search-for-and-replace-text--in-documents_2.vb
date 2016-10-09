@@ -1,0 +1,1 @@
+        Application.Selection.Find.ClearFormatting()

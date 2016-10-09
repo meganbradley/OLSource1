@@ -1,0 +1,1 @@
+        previousRow = currentCell.Row

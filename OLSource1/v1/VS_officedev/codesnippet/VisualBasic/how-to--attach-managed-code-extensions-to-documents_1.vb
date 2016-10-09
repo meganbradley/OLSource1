@@ -1,0 +1,2 @@
+Imports Microsoft.VisualStudio.Tools.Applications
+Imports Microsoft.VisualStudio.Tools.Applications.Runtime

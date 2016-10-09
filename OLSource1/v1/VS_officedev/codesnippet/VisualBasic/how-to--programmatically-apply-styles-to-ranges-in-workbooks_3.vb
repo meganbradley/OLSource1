@@ -1,0 +1,1 @@
+        Me.rangeStyles.Style = "Normal"

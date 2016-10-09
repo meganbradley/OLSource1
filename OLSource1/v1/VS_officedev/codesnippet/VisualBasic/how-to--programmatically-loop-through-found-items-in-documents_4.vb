@@ -1,0 +1,1 @@
+        MessageBox.Show("Strings found: " & intFound.ToString())

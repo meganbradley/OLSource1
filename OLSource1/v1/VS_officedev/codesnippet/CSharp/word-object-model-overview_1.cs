@@ -1,0 +1,1 @@
+            this.Paragraphs[1].Range.Select();

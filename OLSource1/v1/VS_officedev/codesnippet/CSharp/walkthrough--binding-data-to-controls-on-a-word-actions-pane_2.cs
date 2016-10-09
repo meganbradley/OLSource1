@@ -1,0 +1,1 @@
+            this.Load += new EventHandler(ActionsControl_Load);

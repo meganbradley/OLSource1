@@ -1,0 +1,1 @@
+        Me.Application.Documents.Add()

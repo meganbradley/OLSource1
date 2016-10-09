@@ -1,0 +1,1 @@
+        Dim currentSelection As Word.Selection = Application.Selection

@@ -1,0 +1,1 @@
+        Me.Application.ActiveDocument.Tables.Item(1).Rows.Add()

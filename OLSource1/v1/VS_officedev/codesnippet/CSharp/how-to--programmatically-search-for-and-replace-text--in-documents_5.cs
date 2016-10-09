@@ -1,0 +1,1 @@
+            Word.Range rng = this.Paragraphs[2].Range; 

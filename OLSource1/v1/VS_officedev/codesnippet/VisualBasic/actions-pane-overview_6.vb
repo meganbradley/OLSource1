@@ -1,0 +1,1 @@
+        Me.CommandBars("Task Pane").Width = 200

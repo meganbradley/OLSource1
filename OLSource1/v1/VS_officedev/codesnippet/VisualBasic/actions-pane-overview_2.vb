@@ -1,0 +1,1 @@
+        Me.Application.TaskPanes(Word.WdTaskPanes.wdTaskPaneDocumentActions).Visible = False

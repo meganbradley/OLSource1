@@ -1,0 +1,1 @@
+            Document doc;  // Class is ambiguous

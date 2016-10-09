@@ -1,0 +1,1 @@
+        Dim castRange As Excel.Range = CType(Globals.Sheet1.Cells(1, 1), Excel.Range)

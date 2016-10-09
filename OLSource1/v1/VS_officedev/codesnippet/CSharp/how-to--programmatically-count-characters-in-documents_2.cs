@@ -1,0 +1,1 @@
+            MessageBox.Show("Characters: " + this.Characters.Count.ToString());

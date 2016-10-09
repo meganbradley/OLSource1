@@ -1,0 +1,1 @@
+        Application.Documents("NewDocument.docx").Close(Word.WdSaveOptions.wdDoNotSaveChanges)

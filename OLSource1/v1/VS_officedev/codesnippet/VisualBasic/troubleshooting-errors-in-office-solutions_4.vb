@@ -1,0 +1,1 @@
+        Dim doc As Document  ' Class is ambiguous

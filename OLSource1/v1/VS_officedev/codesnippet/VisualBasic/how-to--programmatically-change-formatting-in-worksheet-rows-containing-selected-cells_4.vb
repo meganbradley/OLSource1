@@ -1,0 +1,1 @@
+        If previousRow <> 0 Then

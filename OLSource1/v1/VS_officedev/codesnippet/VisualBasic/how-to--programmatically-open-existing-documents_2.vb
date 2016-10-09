@@ -1,0 +1,1 @@
+        Me.Application.Documents.Open(FileName:="C:\Test\NewDocument.docx", ReadOnly:=True)

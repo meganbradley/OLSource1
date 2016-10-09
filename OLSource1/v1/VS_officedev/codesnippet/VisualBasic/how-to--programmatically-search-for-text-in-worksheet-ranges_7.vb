@@ -1,0 +1,1 @@
+            currentFind = Fruits.FindNext(currentFind)

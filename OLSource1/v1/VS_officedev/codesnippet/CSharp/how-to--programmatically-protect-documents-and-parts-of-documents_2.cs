@@ -1,0 +1,1 @@
+            this.bookmark1.Range.Editors.Add(Word.WdEditorType.wdEditorEveryone);
