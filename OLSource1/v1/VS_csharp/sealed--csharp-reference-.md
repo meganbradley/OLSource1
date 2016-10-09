@@ -1,0 +1,95 @@
+---
+title: "sealed (C# Reference)"
+ms.custom: na
+ms.date: "10/03/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "sealed"
+  - "sealed_CSharpKeyword"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "sealed keyword [C#]"
+ms.assetid: 8e4ed5d3-10be-47db-9488-0da2008e6f3f
+caps.latest.revision: 30
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# sealed (C# Reference)
+When applied to a class, the `sealed` modifier prevents other classes from inheriting from it. In the following example, class `B` inherits from class `A`, but no class can inherit from class `B`.  
+  
+```  
+class A {}      
+sealed class B : A {}  
+```  
+  
+ You can also use the `sealed` modifier on a method or property that overrides a virtual method or property in a base class. This enables you to allow classes to derive from your class and prevent them from overriding specific virtual methods or properties.  
+  
+## Example  
+ In the following example, `Z` inherits from `Y` but `Z` cannot override the virtual function `F` that is declared in `X` and sealed in `Y`.  
+  
+ [!code[csrefKeywordsModifiers#16](../VS_csharp/codesnippet/CSharp/sealed--csharp-reference-_1.cs)]  
+  
+ When you define new methods or properties in a class, you can prevent deriving classes from overriding them by not declaring them as [virtual](../VS_csharp/virtual--csharp-reference-.md).  
+  
+ It is an error to use the [abstract](../VS_csharp/abstract--csharp-reference-.md) modifier with a sealed class, because an abstract class must be inherited by a class that provides an implementation of the abstract methods or properties.  
+  
+ When applied to a method or property, the `sealed` modifier must always be used with [override](../VS_csharp/override--csharp-reference-.md).  
+  
+ Because structs are implicitly sealed, they cannot be inherited.  
+  
+ For more information, see [Inheritance](../VS_csharp/inheritance--csharp-programming-guide-.md).  
+  
+ For more examples, see [Abstract and Sealed Classes and Class Members](../VS_csharp/abstract-and-sealed-classes-and-class-members--csharp-programming-guide-.md).  
+  
+## Example  
+ [!code[csrefKeywordsModifiers#17](../VS_csharp/codesnippet/CSharp/sealed--csharp-reference-_2.cs)]  
+  
+ In the previous example, you might try to inherit from the sealed class by using the following statement:  
+  
+ `class MyDerivedC: SealedClass {}   // Error`  
+  
+ The result is an error message:  
+  
+ `'MyDerivedC' cannot inherit from sealed class 'SealedClass'.`  
+  
+## C# Language Specification  
+ [!INCLUDE[CSharplangspec](../VS_csharp/includes/csharplangspec_md.md)]  
+  
+## Remarks  
+ To determine whether to seal a class, method, or property, you should generally consider the following two points:  
+  
+-   The potential benefits that deriving classes might gain through the ability to customize your class.  
+  
+-   The potential that deriving classes could modify your classes in such a way that they would no longer work correctly or as expected.  
+  
+## See Also  
+ [C# Reference](../VS_csharp/csharp-reference.md)   
+ [C# Programming Guide](../VS_csharp/csharp-programming-guide.md)   
+ [C# Keywords](../VS_csharp/csharp-keywords.md)   
+ [Static Classes and Static Class Members](../VS_csharp/static-classes-and-static-class-members--csharp-programming-guide-.md)   
+ [Abstract and Sealed Classes and Class Members](../VS_csharp/abstract-and-sealed-classes-and-class-members--csharp-programming-guide-.md)   
+ [Access Modifiers](../VS_csharp/access-modifiers--csharp-programming-guide-.md)   
+ [Modifiers](../VS_csharp/modifiers--csharp-reference-.md)   
+ [override](../VS_csharp/override--csharp-reference-.md)   
+ [virtual](../VS_csharp/virtual--csharp-reference-.md)

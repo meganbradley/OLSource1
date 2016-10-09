@@ -1,0 +1,59 @@
+---
+title: "Nested Types (C# Programming Guide)"
+ms.custom: na
+ms.date: "10/03/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "nested types [C#]"
+ms.assetid: f2e1b315-e3d1-48ce-977f-7bae0960ba99
+caps.latest.revision: 13
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Nested Types (C# Programming Guide)
+A type defined within a [class](../VS_csharp/class--csharp-reference-.md) or [struct](../VS_csharp/struct--csharp-reference-.md) is called a nested type. For example:  
+  
+ [!code[csProgGuideObjects#68](../VS_csharp/codesnippet/CSharp/nested-types--csharp-programming-guide-_1.cs)]  
+  
+ Regardless of whether the outer type is a class or a struct, nested types default to [private](../VS_csharp/private--csharp-reference-.md), but can be made [public](../VS_csharp/public--csharp-reference-.md), protected internal, [protected](../VS_csharp/protected--csharp-reference-.md), [internal](../VS_csharp/internal--csharp-reference-.md), or [private](../VS_csharp/private--csharp-reference-.md). In the previous example, `Nested` is inaccessible to external types, but can be made public like this:  
+  
+ [!code[csProgGuideObjects#69](../VS_csharp/codesnippet/CSharp/nested-types--csharp-programming-guide-_2.cs)]  
+  
+ The nested, or inner type can access the containing, or outer type. To access the containing type, pass it as a constructor to the nested type. For example:  
+  
+ [!code[csProgGuideObjects#70](../VS_csharp/codesnippet/CSharp/nested-types--csharp-programming-guide-_3.cs)]  
+  
+ A nested type has access to all of the members that are accessible to its containing type. It can access private and protected members of the containing type, including any inherited protected members.  
+  
+ In the previous declaration, the full name of class `Nested` is `Container.Nested`. This is the name used to create a new instance of the nested class, as follows:  
+  
+ [!code[csProgGuideObjects#71](../VS_csharp/codesnippet/CSharp/nested-types--csharp-programming-guide-_4.cs)]  
+  
+## See Also  
+ [C# Programming Guide](../VS_csharp/csharp-programming-guide.md)   
+ [Classes and Structs](../VS_csharp/classes-and-structs--csharp-programming-guide-.md)   
+ [Access Modifiers](../VS_csharp/access-modifiers--csharp-programming-guide-.md)   
+ [Constructors](../VS_csharp/constructors--csharp-programming-guide-.md)

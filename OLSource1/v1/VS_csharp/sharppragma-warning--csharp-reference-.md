@@ -1,0 +1,87 @@
+---
+title: "#pragma warning (C# Reference)"
+ms.custom: na
+ms.date: "10/03/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: na
+ms.suite: na
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: na
+ms.topic: "article"
+f1_keywords: 
+  - "#pragma warning"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "#pragma warning [C#]"
+ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
+caps.latest.revision: 17
+ms.author: "shoag"
+manager: "wpickett"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# #pragma warning (C# Reference)
+`#pragma warning` can enable or disable certain warnings.  
+  
+## Syntax  
+  
+```  
+#pragma warning disable warning-list  
+#pragma warning restore warning-list  
+```  
+  
+#### Parameters  
+ `warning-list`  
+ A comma-separated list of warning numbers. The "CS" prefix is optional.  
+  
+ When no warning numbers are specified, `disable` disables all warnings and `restore` enables all warnings.  
+  
+> [!NOTE]
+>  To find warning numbers in Visual Studio, build your project and then look for the warning numbers in the **Output** window.  
+  
+## Example  
+  
+```  
+// pragma_warning.cs  
+using System;  
+  
+#pragma warning disable 414, CS3021  
+[CLSCompliant(false)]  
+public class C  
+{  
+    int i = 1;  
+    static void Main()  
+    {  
+    }  
+}  
+#pragma warning restore CS3021  
+[CLSCompliant(false)]  // CS3021  
+public class D  
+{  
+    int i = 1;  
+    public static void F()  
+    {  
+    }  
+}  
+```  
+  
+## See Also  
+ [C# Reference](../VS_csharp/csharp-reference.md)   
+ [C# Programming Guide](../VS_csharp/csharp-programming-guide.md)   
+ [C# Preprocessor Directives](../VS_csharp/csharp-preprocessor-directives.md)   
+ [C# Compiler Errors](../VS_csharp/csharp-compiler-errors.md)
