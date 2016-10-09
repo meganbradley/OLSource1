@@ -39,15 +39,26 @@ Aggregate element [As type] In collection _
   
 ## Parts  
   
-|||  
-|-|-|  
-|Term|Definition|  
-|`element`|Required. Variable used to iterate through the elements of the collection.|  
-|`type`|Optional. The type of `element`. If no type is specified, the type of `element` is inferred from `collection`.|  
-|`collection`|Required. Refers to the collection to operate on.|  
-|`clause`|Optional. One or more query clauses, such as a `Where` clause, to refine the query result to apply the aggregate clause or clauses to.|  
-|`expressionList`|Required. One or more comma-delimited expressions that identify an aggregate function to apply to the collection. You can apply an alias to an aggregate function to specify a member name for the query result. If no alias is supplied, the name of the aggregate function is used. For examples, see the section about aggregate functions later in this topic.|  
-  
+<table>
+<tr>
+<td>Term</td><td>Definition</td>  
+</tr>
+<tr>
+<td>`element`</td><td>Required. Variable used to iterate through the elements of the collection.</td>  
+</tr>
+<tr>
+<td>`type`</td><td>Optional. The type of `element`. If no type is specified, the type of `element` is inferred from `collection`.</td>
+</tr>
+<tr>
+<td>`collection`</td><td>Required. Refers to the collection to operate on.</td>  
+</tr>
+<tr>
+<td>`clause`</td><td>Optional. One or more query clauses, such as a `Where` clause, to refine the query result to apply the aggregate clause or clauses to.</td>
+</tr>
+<tr>
+<td>`expressionList`</td><td>Required. One or more comma-delimited expressions that identify an aggregate function to apply to the collection. You can apply an alias to an aggregate function to specify a member name for the query result. If no alias is supplied, the name of the aggregate function is used. For examples, see the section about aggregate functions later in this topic.</td> 
+</tr>
+</table>
 ## Remarks  
  The `Aggregate` clause can be used to include aggregate functions in your queries. Aggregate functions perform checks and computations over a set of values and return a single value. You can access the computed value by using a member of the query result type. The standard aggregate functions that you can use are the `All`, `Any`, `Average`, `Count`, `LongCount`, `Max`, `Min`, and `Sum` functions. These functions are familiar to developers who are familiar with aggregates in SQL. They are described in the following section of this topic.  
   
@@ -58,19 +69,39 @@ Aggregate element [As type] In collection _
 ## Aggregate Functions  
  The following list describes the standard aggregate functions that can be used with the `Aggregate` clause.  
   
-|||  
-|-|-|  
-|Function|Description|  
-|`All`|Returns `true` if all elements in the collection satisfy a specified condition; otherwise returns `false`. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#5](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_1.vb)]|  
-|`Any`|Returns `true` if any element in the collection satisfies a specified condition; otherwise returns `false`. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#6](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_2.vb)]|  
-|`Average`|Computes the average of all elements in the collection, or a computes supplied expression for all elements in the collection. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#7](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_3.vb)]|  
-|`Count`|Counts the number of elements in the collection. You can supply an optional `Boolean` expression to count only the number of elements in the collection that satisfy a condition. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#8](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_4.vb)]|  
-|`Group`|Refers to query results that are grouped as a result of a `Group By` or `Group Join` clause. The `Group` function is valid only in the `Into` clause of a `Group By` or `Group Join` clause. For more information and examples, see [Group By Clause (Visual Basic)](../vs140/group-by-clause--visual-basic-.md) and [Group Join Clause (Visual Basic)](../vs140/group-join-clause--visual-basic-.md).|  
-|`LongCount`|Counts the number of elements in the collection. You can supply an optional `Boolean` expression to count only the number of elements in the collection that satisfy a condition. Returns the result as a `Long`. For an example, see the `Count` aggregate function.|  
-|`Max`|Computes the maximum value from the collection, or computes a supplied expression for all elements in the collection. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#9](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_5.vb)]|  
-|`Min`|Computes the minimum value from the collection, or computes a supplied expression for all elements in the collection. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#10](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_6.vb)]|  
-|`Sum`|Computes the sum of all elements in the collection, or computes a supplied expression for all elements in the collection. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#15](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_7.vb)]|  
-  
+<table>
+<tr>
+<td>Function</td><td>Description</td>
+</tr>
+<tr>
+<td>`All`</td><td>Returns `true` if all elements in the collection satisfy a specified condition; otherwise returns `false`. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#5](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_1.vb)]</td>  
+</tr>
+<tr>
+<td>`Any`</td><td>Returns `true` if any element in the collection satisfies a specified condition; otherwise returns `false`. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#6](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_2.vb)]</td> 
+</tr>
+<tr>
+<td>`Average`</td><td>Computes the average of all elements in the collection, or a computes supplied expression for all elements in the collection. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#7](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_3.vb)]</td>
+</tr>
+<tr>
+<td>`Count`</td><td>Counts the number of elements in the collection. You can supply an optional `Boolean` expression to count only the number of elements in the collection that satisfy a condition. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#8](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_4.vb)]</td>  
+</tr>
+<tr>
+<td>`Group`</td><td>Refers to query results that are grouped as a result of a `Group By` or `Group Join` clause. The `Group` function is valid only in the `Into` clause of a `Group By` or `Group Join` clause. For more information and examples, see [Group By Clause (Visual Basic)](../vs140/group-by-clause--visual-basic-.md) and [Group Join Clause (Visual Basic)](../vs140/group-join-clause--visual-basic-.md).</td>
+</tr>
+<tr>
+<td>`LongCount`</td><td>Counts the number of elements in the collection. You can supply an optional `Boolean` expression to count only the number of elements in the collection that satisfy a condition. Returns the result as a `Long`. For an example, see the `Count` aggregate function.</td>  
+</tr>
+<tr>
+<td>`Max`</td><td>Computes the maximum value from the collection, or computes a supplied expression for all elements in the collection. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#9](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_5.vb)]</td> 
+</tr>
+<tr>
+<td>`Min`</td><td>Computes the minimum value from the collection, or computes a supplied expression for all elements in the collection. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#10](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_6.vb)]</td>  
+</tr>
+<tr>
+<td>`Sum`</td><td>Computes the sum of all elements in the collection, or computes a supplied expression for all elements in the collection. Following is an example:<br /><br /> [!code[VbSimpleQuerySamples#15](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_7.vb)]</td>  
+</tr>
+</table>  
+
 ## Example  
  The following code example shows how to use the `Aggregate` clause to apply aggregate functions to a query result.  
   
