@@ -1,7 +1,7 @@
 ---
 title: "How to: Order the Results of a Join Clause (C# Programming Guide)"
 ms.custom: na
-ms.date: "10/03/2016"
+ms.date: "10/10/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: na
 ms.suite: na

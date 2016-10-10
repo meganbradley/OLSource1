@@ -1,7 +1,7 @@
 ---
 title: "How to: Create and Use Assemblies Using the Command Line (C#)"
 ms.custom: na
-ms.date: "10/03/2016"
+ms.date: "10/10/2016"
 ms.reviewer: na
 ms.suite: na
 ms.technology: 

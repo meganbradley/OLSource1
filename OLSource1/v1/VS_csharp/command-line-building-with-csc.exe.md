@@ -1,7 +1,7 @@
 ---
 title: "Command-line Building With csc.exe"
 ms.custom: na
-ms.date: "10/03/2016"
+ms.date: "10/10/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: na
 ms.suite: na
@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "builds [C#]"
   - "command line [C#]"
 ms.assetid: 66e70056-dd20-453c-a9b3-507e0478b015
-caps.latest.revision: 25
+caps.latest.revision: 26
 ms.author: "shoag"
 manager: "wpickett"
 translation.priority.ht: 
@@ -42,7 +42,7 @@ translation.priority.ht:
     <para>If you use the <ui>Visual Studio Command Prompt</ui> window, all the necessary environment variables are set for you. In Windows 7, you can access that window from the <ui>Start</ui> menu by opening the Microsoft Visual Studio <placeholder>Version</placeholder>\Visual Studio Tools folder. In Windows 8, the Visual Studio Command Prompt is called the <ui>Developer Command Prompt for VS2012</ui>, and you can find it by searching from the Start screen.</para>
     <para>If you use a standard Command Prompt window, you must adjust your path before you can invoke csc.exe from any subdirectory on your computer. You also must run vsvars32.bat to set the appropriate environment variables to support command-line builds. For more information about vsvars32.bat, including instructions for how to find and run it, see \<link xlink:href="7EC09480-5612-4F6A-8D00-AD90EA9BCA5D">How to: Set Environment Variables</link>.</para>
     <para>If you're working on a computer that has only the <token>winsdklong</token>, you can use the C# compiler at the <ui>SDK Command Prompt</ui>, which you open from the <ui>Microsoft .NET Framework SDK</ui> menu option.</para>
-    <para>You can also use MSBuild to build C# programs programmatically. For more information, see \<link xlink:href="e39f13f7-1e1d-4435-95ca-0c222bca071c">MSBuild</link>.</para>
+    <para>You can also use MSBuild to build C# programs programmatically. For more information, see MSBuild.</para>
     <para>The csc.exe executable file usually is located in the Microsoft.NET\Framework\<placeholder>Version</placeholder> folder under the Windows directory. Its location might vary depending on the exact configuration of a particular computer. If more than one version of the .NET Framework is installed on your computer, you'll find multiple versions of this file. For more information about such installations, see \<legacyLink xlink:href="1A87CC6A-1C4B-4C38-B878-FAA9B3BEAE3C">Determining Which Version of the .NET Framework Is Installed</legacyLink>.</para>
     <alert class="tip">
       <para>When you build a project by using the Visual Studio IDE, you can display the <ui>csc</ui> command and its associated compiler options in the <ui>Output</ui> window. To display this information, follow the instructions in \<link xlink:href="75d38b76-26d6-4f43-bbe7-cbacd7cc81e7">How to: View, Save, and Configure Build Log Files</link> to change the verbosity level of the log data to <ui>Normal</ui> or <ui>Detailed</ui>. After you rebuild your project, search the <ui>Output</ui> window for <ui>csc</ui> to find the invocation of the C# compiler.</para>

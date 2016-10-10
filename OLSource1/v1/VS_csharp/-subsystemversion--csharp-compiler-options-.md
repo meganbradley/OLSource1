@@ -1,7 +1,7 @@
 ---
 title: "-subsystemversion (C# Compiler Options)"
 ms.custom: na
-ms.date: "10/03/2016"
+ms.date: "10/10/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: na
 ms.suite: na
@@ -13,7 +13,7 @@ H1: "/subsystemversion (C# Compiler Options)"
 dev_langs: 
   - "CSharp"
 ms.assetid: a99fce81-9d92-4813-9874-bee777041445
-caps.latest.revision: 17
+caps.latest.revision: 18
 ms.author: "shoag"
 manager: "wpickett"
 translation.priority.ht: 
@@ -179,5 +179,5 @@ translation.priority.ht:
   </languageReferenceRemarks>
   <relatedTopics>
     \<link xlink:href="d3403556-1816-4546-a782-e8223a772e44">C# Compiler Options</link>
-\<link xlink:href="962912ac-8931-49bf-a88c-0200b6e37362">MSBuild Properties</link></relatedTopics>
+</relatedTopics>
 </developerReferenceWithSyntaxDocument>

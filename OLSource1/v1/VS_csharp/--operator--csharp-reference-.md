@@ -1,5 +1,5 @@
 ---
-title: "&gt; Operator (C# Reference)"
+title: "% Operator (C# Reference)"
 ms.custom: na
 ms.date: "10/03/2016"
 ms.prod: "visual-studio-dev14"
@@ -10,14 +10,14 @@ ms.technology:
 ms.tgt_pltfrm: na
 ms.topic: "article"
 f1_keywords: 
-  - ">_CSharpKeyword"
+  - "%_CSharpKeyword"
 dev_langs: 
   - "CSharp"
 helpviewer_keywords: 
-  - "> operator [C#]"
-  - "greater than operator (>) [C#]"
-ms.assetid: 26d3cb69-9c0b-4cc5-858b-5be1abd6659d
-caps.latest.revision: 16
+  - "modulus operator [C#]"
+  - "% operator [C#]"
+ms.assetid: 3b74f4f9-fd9c-45e7-84fa-c8d71a0dfad7
+caps.latest.revision: 15
 ms.author: "shoag"
 manager: "wpickett"
 translation.priority.ht: 
@@ -35,17 +35,19 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# &gt; Operator (C# Reference)
-All numeric and enumeration types define a "greater than" relational operator (`>`) that returns `true` if the first operand is greater than the second, `false` otherwise.  
+# % Operator (C# Reference)
+The `%` operator computes the remainder after dividing its first operand by its second. All numeric types have predefined remainder operators.  
   
 ## Remarks  
- User-defined types can overload the `>` operator (see [operator](../VS_csharp/operator--csharp-reference-2.md)). If `>` is overloaded, [<](../VS_csharp/--operator--csharp-reference-.md) must also be overloaded. When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
+ User-defined types can overload the `%` operator (see [operator](../VS_csharp/operator--csharp-reference-2.md)). When a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
   
 ## Example  
- [!code[csRefOperators#29](../VS_csharp/codesnippet/CSharp/--operator--csharp-reference-_1.cs)]  
+ [!code[csRefOperators#9](../VS_csharp/codesnippet/CSharp/--operator--csharp-reference-_1.cs)]  
+  
+## Comments  
+ Note the round-off errors associated with the double type.  
   
 ## See Also  
  [C# Reference](../VS_csharp/csharp-reference.md)   
  [C# Programming Guide](../VS_csharp/csharp-programming-guide.md)   
- [C# Operators](../VS_csharp/csharp-operators.md)   
- [explicit](../VS_csharp/explicit--csharp-reference-.md)
+ [C# Operators](../VS_csharp/csharp-operators.md)

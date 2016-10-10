@@ -37,9 +37,9 @@ translation.priority.ht:
 # Compiler Warning (level 1) CS1699
 Use command line option "compiler_option" or appropriate project settings instead of "attribute_name"  
   
- In order to sign an assembly, it is necessary to specify a key file. Prior to [!INCLUDE[csprcsext](../Token/csprcsext_md.md)], you specified the key file using CLR attributes in source code. These attributes are now deprecated.  
+ In order to sign an assembly, it is necessary to specify a key file. Prior to [!INCLUDE[csprcsext](../VS_csharp/includes/csprcsext_md.md)], you specified the key file using CLR attributes in source code. These attributes are now deprecated.  
   
- Beginning in [!INCLUDE[csprcsext](../Token/csprcsext_md.md)], you should use the **Signing Page** of the **Project Designer** or the Assembly Linker to specify the key file.  
+ Beginning in [!INCLUDE[csprcsext](../VS_csharp/includes/csprcsext_md.md)], you should use the **Signing Page** of the **Project Designer** or the Assembly Linker to specify the key file.  
   
  The **Signing Page** of the **Project Designer** is the preferred method; for more information, see [Signing Page, Project Designer](../Topic/Signing%20Page,%20Project%20Designer.md) and [Managing Assembly and Manifest Signing](../Topic/Managing%20Assembly%20and%20Manifest%20Signing.md).  
   

@@ -1,7 +1,7 @@
 ---
 title: "How to: Use Lambda Expressions in a Query (C# Programming Guide)"
 ms.custom: na
-ms.date: "10/03/2016"
+ms.date: "10/10/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: na
 ms.suite: na
