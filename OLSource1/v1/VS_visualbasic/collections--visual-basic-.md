@@ -1,7 +1,7 @@
 ---
 title: "Collections (Visual Basic)"
 ms.custom: na
-ms.date: "10/03/2016"
+ms.date: "10/10/2016"
 ms.reviewer: na
 ms.suite: na
 ms.technology: 
@@ -11,7 +11,7 @@ ms.topic: "get-started-article"
 dev_langs: 
   - "VB"
 ms.assetid: 5f7749f3-aaf2-4319-b63c-bfa72e1e2b7a
-caps.latest.revision: 3
+caps.latest.revision: 4
 ms.author: "shoag"
 manager: "wpickett"
 translation.priority.mt: 
@@ -197,7 +197,7 @@ End Class</code>
     <section address="BKMK_KindsOfCollections">
     <title>Kinds of Collections</title>
     <content>
-      <para>Many common collections are provided by the .NET Framework. For a complete list, see \<link xlink:href="d97ad2aa-c360-4056-856f-19b8134e547c">collections namespace</link>.  Each type of collection is designed for a specific purpose.</para>
+      <para>Many common collections are provided by the .NET Framework. For a complete list, see collections namespace.  Each type of collection is designed for a specific purpose.</para>
       <para>Some of the common collection classes are described in this section:</para>
       <list class="bullet">
         <listItem>

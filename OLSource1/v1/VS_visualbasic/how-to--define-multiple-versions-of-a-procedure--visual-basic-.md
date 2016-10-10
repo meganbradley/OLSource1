@@ -1,7 +1,7 @@
 ---
 title: "How to: Define Multiple Versions of a Procedure (Visual Basic)"
 ms.custom: na
-ms.date: "10/03/2016"
+ms.date: "10/10/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: na
 ms.suite: na

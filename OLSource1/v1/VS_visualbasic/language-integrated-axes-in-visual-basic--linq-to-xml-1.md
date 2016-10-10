@@ -1,7 +1,7 @@
 ---
 title: "Language-Integrated Axes in Visual Basic (LINQ to XML)1"
 ms.custom: na
-ms.date: "10/03/2016"
+ms.date: "10/10/2016"
 ms.reviewer: na
 ms.suite: na
 ms.technology: 

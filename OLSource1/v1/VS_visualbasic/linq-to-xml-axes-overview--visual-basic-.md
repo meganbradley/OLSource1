@@ -1,7 +1,7 @@
 ---
 title: "LINQ to XML Axes Overview (Visual Basic)"
 ms.custom: na
-ms.date: "10/03/2016"
+ms.date: "10/10/2016"
 ms.reviewer: na
 ms.suite: na
 ms.technology: 

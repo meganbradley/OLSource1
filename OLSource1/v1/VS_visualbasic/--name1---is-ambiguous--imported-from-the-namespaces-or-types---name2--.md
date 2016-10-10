@@ -1,7 +1,7 @@
 ---
 title: "&#39;&lt;name1&gt;&#39; is ambiguous, imported from the namespaces or types &#39;&lt;name2&gt;&#39;"
 ms.custom: na
-ms.date: "10/03/2016"
+ms.date: "10/10/2016"
 ms.prod: "visual-studio-dev14"
 ms.reviewer: na
 ms.suite: na

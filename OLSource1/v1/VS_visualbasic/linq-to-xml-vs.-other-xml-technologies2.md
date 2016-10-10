@@ -1,7 +1,7 @@
 ---
 title: "LINQ to XML vs. Other XML Technologies2"
 ms.custom: na
-ms.date: "10/04/2016"
+ms.date: "10/10/2016"
 ms.reviewer: na
 ms.suite: na
 ms.technology: 
