@@ -80,17 +80,28 @@ Aggregate element [As type] In collection _
 </tr>
 <tr>
 <td>`Any`</td><td>Returns `true` if any element in the collection satisfies a specified condition; otherwise returns `false`. Following is an example:<br /><br /> 
-[!code[VbSimpleQuerySamples#6](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_2.vb)]
+
+```vb
+        Dim customerList1 = Aggregate order In orders
+                            Into AllOrdersOver100 = All(order.Total >= 100)
+```
+
 </td> 
 </tr>
 <tr>
 <td>`Average`</td><td>Computes the average of all elements in the collection, or a computes supplied expression for all elements in the collection. Following is an example:<br /><br /> 
-[!code[VbSimpleQuerySamples#7](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_3.vb)]
+```vb
+        Dim customerList1 = Aggregate order In orders
+                            Into AllOrdersOver100 = All(order.Total >= 100)
+```
 </td>
 </tr>
 <tr>
 <td>`Count`</td><td>Counts the number of elements in the collection. You can supply an optional `Boolean` expression to count only the number of elements in the collection that satisfy a condition. Following is an example:<br /><br /> 
-[!code[VbSimpleQuerySamples#8](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_4.vb)]
+```vb
+        Dim customerList1 = Aggregate order In orders
+                            Into AllOrdersOver100 = All(order.Total >= 100)
+```
 </td>  
 </tr>
 <tr>
@@ -101,17 +112,26 @@ Aggregate element [As type] In collection _
 </tr>
 <tr>
 <td>`Max`</td><td>Computes the maximum value from the collection, or computes a supplied expression for all elements in the collection. Following is an example:<br /><br /> 
-[!code[VbSimpleQuerySamples#9](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_5.vb)]
+```vb
+        Dim customerList1 = Aggregate order In orders
+                            Into AllOrdersOver100 = All(order.Total >= 100)
+```
 </td> 
 </tr>
 <tr>
 <td>`Min`</td><td>Computes the minimum value from the collection, or computes a supplied expression for all elements in the collection. Following is an example:<br /><br /> 
-[!code[VbSimpleQuerySamples#10](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_6.vb)]
+```vb
+        Dim customerList1 = Aggregate order In orders
+                            Into AllOrdersOver100 = All(order.Total >= 100)
+```
 </td>  
 </tr>
 <tr>
 <td>`Sum`</td><td>Computes the sum of all elements in the collection, or computes a supplied expression for all elements in the collection. Following is an example:<br /><br /> 
-[!code[VbSimpleQuerySamples#15](../vs140/codesnippet/VisualBasic/aggregate-clause--visual-basic-_7.vb)]
+```vb
+        Dim customerList1 = Aggregate order In orders
+                            Into AllOrdersOver100 = All(order.Total >= 100)
+```
 </td>  
 </tr>
 </table>  
